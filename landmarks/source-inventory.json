@@ -1,0 +1,150 @@
+{
+  "kind": "theorem18-landmark1-source-inventory",
+  "landmark_1_proved": true,
+  "full_theorem_1_8_proved": false,
+  "project_source_sha256": {
+    "landmarks/ArtinLandmarks.lean": "1be1ffb1e3042d4e7973c8cac884b524f2f4e1af09c3f6672558690ceeb2b1f4",
+    "landmarks/ArtinLandmarks/Covering.lean": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94",
+    "landmarks/ArtinLandmarks/Dominant.lean": "408a97cc6f49b5868d5eafc6aae733b8ae26a1d314b26c81235f5bf493339da4",
+    "landmarks/ArtinLandmarks/RegularStabilizer.lean": "aeeee397f0fe48325c9f62eee8607e80a1836cb123dc9a022cd8d954c92fd93f"
+  },
+  "configuration_sha256": {
+    "landmarks/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "landmarks/lakefile.toml": "391a36c1e67ff796ab7487d7e2100eb52b7532c71a1eab2f6bed73839f3839a0",
+    "landmarks/lake-manifest.json": "a8415b907a1da8ff6c0a0c936fef67eb0f3315213afff0d1963653b72a8c5679"
+  },
+  "vendor_provenance_sha256": "5d30ae8493968f7fb58bbaa7e78514a0afc15501d62abd940061906c3483581a",
+  "parent_verification_path": "docs/theorem18/github-evidence/run-43492004104/lean-theorem18-foundations-verification.json",
+  "parent_verification_sha256": "79f91cb45e5ada75c39968f29b93cc228d0fd38914903cb432c1b8664a332b1d",
+  "declarations": [
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.coefficientEvaluation"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.exists_regular_linearCombination"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.quotientComplementIsCancelSMul"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.complementT2Space"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.complementLocallyCompactSpace"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.isCoveringMap_orbitProjection"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.orbitFundamentalGroupMap"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.orbitMonodromy"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Covering.lean",
+      "name": "ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.IsDominant"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.zeroIndices"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.evaluation_nonpos_of_nonpos"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.dominant_fixed_iff"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.canonicalDominant"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.canonicalDominant_apply_simpleRoot"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.canonicalDominant_isDominant"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.zeroIndices_canonicalDominant"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.canonicalDominant_mem_relativeSubspace"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.canonicalDominant_fixed_iff"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/Dominant.lean",
+      "name": "ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.positiveRoots"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.positiveRoots_finite"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.positiveRootSum"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.roots_eq_geometricRoots"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.geometricReflection_positiveRootSum"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.exists_dominant_dualAction"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.realRelativeRegular"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.flatPointwiseStabilizer"
+    },
+    {
+      "source": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "name": "ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff"
+    }
+  ],
+  "scope": "Actual finite-type normalizer quotient covering and geometric fundamental-group exactness, with raw opposite-group monodromy. No remaining main-theorem comparison/asphericity is assumed or claimed."
+}

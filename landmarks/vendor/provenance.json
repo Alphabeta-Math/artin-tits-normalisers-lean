@@ -1,0 +1,205 @@
+{
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "upstream_lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "upstream_mathlib_revision": "e8ba86fa9744dd8d90f48c1752bc735f61a4ca81",
+  "project_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "license": {
+    "identifier": "Apache-2.0",
+    "path": "LICENSE.TauCeti",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  "modifications": [
+    {
+      "upstream_module": "TauCeti.GroupTheory.Coxeter.Geometric.RankTwo",
+      "local_module": "ArtinLandmarkVendor.Geometric.RankTwo",
+      "upstream_path": "TauCeti/GroupTheory/Coxeter/Geometric/RankTwo.lean",
+      "local_path": "ArtinLandmarkVendor/Geometric/RankTwo.lean",
+      "mathematical_declaration_namespaces": "unchanged",
+      "import_patches": []
+    },
+    {
+      "upstream_module": "TauCeti.GroupTheory.Coxeter.Geometric.Sign",
+      "local_module": "ArtinLandmarkVendor.Geometric.Sign",
+      "upstream_path": "TauCeti/GroupTheory/Coxeter/Geometric/Sign.lean",
+      "local_path": "ArtinLandmarkVendor/Geometric/Sign.lean",
+      "mathematical_declaration_namespaces": "unchanged",
+      "import_patches": [
+        {
+          "old": "import TauCeti.GroupTheory.Coxeter.Geometric.RankTwo",
+          "new": "import ArtinLandmarkVendor.Geometric.RankTwo",
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "modules": [
+    "ArtinLandmarkVendor.Geometric.RankTwo",
+    "ArtinLandmarkVendor.Geometric.Sign"
+  ],
+  "files_sha256": {
+    "ArtinLandmarkVendor/Geometric/RankTwo.lean": "53d4bcbfb2dd83abf8a4adb53091c982e191ca3a69be95e751e20306e26591f3",
+    "ArtinLandmarkVendor/Geometric/Sign.lean": "c0b7e5f1e0bfa9aa67a1df7b5cc11e65625987089e9909f0366b88068d58bc09"
+  },
+  "module_sources_and_imports": {
+    "ArtinLandmarkVendor.Geometric.RankTwo": {
+      "local_path": "ArtinLandmarkVendor/Geometric/RankTwo.lean",
+      "local_sha256": "53d4bcbfb2dd83abf8a4adb53091c982e191ca3a69be95e751e20306e26591f3",
+      "upstream_module": "TauCeti.GroupTheory.Coxeter.Geometric.RankTwo",
+      "upstream_path": "TauCeti/GroupTheory/Coxeter/Geometric/RankTwo.lean",
+      "upstream_sha256": "53d4bcbfb2dd83abf8a4adb53091c982e191ca3a69be95e751e20306e26591f3",
+      "preserved_upstream_bytes": "upstream/TauCeti/GroupTheory/Coxeter/Geometric/RankTwo.lean.txt",
+      "imports": [
+        "TauCeti.GroupTheory.Coxeter.Geometric.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "import_patches": [],
+      "local_bytes": 6779,
+      "upstream_bytes": 6779
+    },
+    "ArtinLandmarkVendor.Geometric.Sign": {
+      "local_path": "ArtinLandmarkVendor/Geometric/Sign.lean",
+      "local_sha256": "c0b7e5f1e0bfa9aa67a1df7b5cc11e65625987089e9909f0366b88068d58bc09",
+      "upstream_module": "TauCeti.GroupTheory.Coxeter.Geometric.Sign",
+      "upstream_path": "TauCeti/GroupTheory/Coxeter/Geometric/Sign.lean",
+      "upstream_sha256": "fa162d417fcd0e91ec061056ac696119ee263c3fba15e4f22540016202596bf1",
+      "preserved_upstream_bytes": "upstream/TauCeti/GroupTheory/Coxeter/Geometric/Sign.lean.txt",
+      "imports": [
+        "Mathlib.Data.Finsupp.Order",
+        "Mathlib.GroupTheory.Coxeter.Length",
+        "TauCeti.GroupTheory.Coxeter.Geometric.Basic",
+        "TauCeti.GroupTheory.Coxeter.Parabolic",
+        "TauCeti.GroupTheory.Coxeter.Dihedral",
+        "ArtinLandmarkVendor.Geometric.RankTwo"
+      ],
+      "import_patches": [
+        {
+          "old": "import TauCeti.GroupTheory.Coxeter.Geometric.RankTwo",
+          "new": "import ArtinLandmarkVendor.Geometric.RankTwo",
+          "occurrences": 1
+        }
+      ],
+      "local_bytes": 14307,
+      "upstream_bytes": 14315
+    }
+  },
+  "new_source_bytes": 21086,
+  "existing_parent_module_references": {
+    "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds": {
+      "path": "TauCeti/Analysis/SpecialFunctions/Trigonometric/Bounds.lean",
+      "sha256": "43a7fb657f636da46773c8916fd026746032d0a67bb3c34b8845740c1147af84",
+      "bytes": 10024,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+        "Mathlib.Analysis.SpecialFunctions.Arcosh",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "already_vendored_exact": true
+    },
+    "TauCeti.GroupTheory.Coxeter.Geometric.Basic": {
+      "path": "TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean",
+      "sha256": "b23a8a8c2360a905a8a4165f888f89852b3b8260a6e7373f5cd0013f493f6688",
+      "bytes": 28381,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+        "Mathlib.GroupTheory.Coxeter.Basic",
+        "Mathlib.LinearAlgebra.BilinearForm.Basic",
+        "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+        "Mathlib.RepresentationTheory.Basic",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "already_vendored_exact": true
+    },
+    "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle": {
+      "path": "TauCeti/Analysis/SpecialFunctions/Trigonometric/Angle.lean",
+      "sha256": "8aaf3231569ffbb2e8dbbe38d579ee6a38d7e015e24ff9e965bc95afe2300bce",
+      "bytes": 9792,
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.Angle"
+      ],
+      "already_vendored_exact": true
+    },
+    "TauCeti.GroupTheory.Coxeter.Dihedral": {
+      "path": "TauCeti/GroupTheory/Coxeter/Dihedral.lean",
+      "sha256": "85eb558388e2fbfc4e7f7e0b1f1035d3e59060c57aaa974da924a1de3f10a47c",
+      "bytes": 19179,
+      "imports": [
+        "Mathlib.Data.List.Chain",
+        "TauCeti.GroupTheory.Coxeter.Parabolic"
+      ],
+      "already_vendored_exact": true
+    },
+    "TauCeti.GroupTheory.Coxeter.Parabolic": {
+      "path": "TauCeti/GroupTheory/Coxeter/Parabolic.lean",
+      "sha256": "31bcef698020593737d30dbbece69e2b36d519434018b1f2339b5be20689efa2",
+      "bytes": 30971,
+      "imports": [
+        "TauCeti.GroupTheory.Coxeter.StrongExchange",
+        "Mathlib.Tactic.Group"
+      ],
+      "already_vendored_exact": true
+    },
+    "TauCeti.GroupTheory.Coxeter.StrongExchange": {
+      "path": "TauCeti/GroupTheory/Coxeter/StrongExchange.lean",
+      "sha256": "461c7af79d7c4bd446ad8f1606a43743f1284000b2dc370faa55a9bbe18cbf1e",
+      "bytes": 31206,
+      "imports": [
+        "Mathlib.Data.List.Chain",
+        "Mathlib.GroupTheory.Coxeter.Inversion",
+        "TauCeti.GroupTheory.Coxeter.Basic",
+        "Mathlib.Data.List.GetD",
+        "Mathlib.Tactic.Group"
+      ],
+      "already_vendored_exact": true
+    },
+    "TauCeti.GroupTheory.Coxeter.Basic": {
+      "path": "TauCeti/GroupTheory/Coxeter/Basic.lean",
+      "sha256": "1fd4bf1d07ff9c34139165ee0b611b27f2a21b1226518fee03c92e82815bccee",
+      "bytes": 4829,
+      "imports": [
+        "Mathlib.GroupTheory.Coxeter.Basic"
+      ],
+      "already_vendored_exact": true
+    }
+  },
+  "direct_mathlib_import_roots": [
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic",
+    "Mathlib.Data.Finsupp.Order",
+    "Mathlib.GroupTheory.Coxeter.Length"
+  ],
+  "whole_closure_mathlib_import_roots": [
+    "Mathlib.Analysis.SpecialFunctions.Arcosh",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Angle",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds",
+    "Mathlib.Analysis.SpecialFunctions.Trigonometric.Chebyshev.Basic",
+    "Mathlib.Data.Finsupp.Order",
+    "Mathlib.Data.List.Chain",
+    "Mathlib.Data.List.GetD",
+    "Mathlib.GroupTheory.Coxeter.Basic",
+    "Mathlib.GroupTheory.Coxeter.Inversion",
+    "Mathlib.GroupTheory.Coxeter.Length",
+    "Mathlib.LinearAlgebra.BilinearForm.Basic",
+    "Mathlib.LinearAlgebra.Finsupp.LinearCombination",
+    "Mathlib.RepresentationTheory.Basic",
+    "Mathlib.Tactic.Group"
+  ],
+  "whole_closure_module_count": 9,
+  "whole_closure_source_bytes": 155476,
+  "scope": "Two mechanically relocated upstream modules only. RankTwo source bytes are unchanged. Sign has exactly one import-path substitution; no mathematical declaration namespace, statement or proof is edited. Seven unchanged TauCeti dependencies are supplied by the parent package.",
+  "acceptance": {
+    "status": "Provenance is not acceptance; hash-bound statement reviews and actual verification records are required.",
+    "statement_reviews": [
+      "landmarks/reviews/landmark1-a.json",
+      "landmarks/reviews/landmark1-b.json"
+    ],
+    "verification_record": "landmarks/evidence/landmark1-local/verification.json",
+    "scope": "Sign/RankTwo suppliers for landmark1 only; full Theorem1.8 remains unproved."
+  },
+  "upstream_files_sha256": {
+    "TauCeti/GroupTheory/Coxeter/Geometric/RankTwo.lean": "53d4bcbfb2dd83abf8a4adb53091c982e191ca3a69be95e751e20306e26591f3",
+    "TauCeti/GroupTheory/Coxeter/Geometric/Sign.lean": "fa162d417fcd0e91ec061056ac696119ee263c3fba15e4f22540016202596bf1"
+  }
+}

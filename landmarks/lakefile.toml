@@ -1,0 +1,18 @@
+name = "artin-landmarks"
+version = "0.1.0"
+defaultTargets = ["ArtinLandmarks"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "artin-normalisers"
+path = ".."
+
+[[lean_lib]]
+name = "ArtinLandmarks"
+
+[[lean_lib]]
+name = "ArtinLandmarkVendor"
+srcDir = "vendor"
+leanOptions = { autoImplicit = true }

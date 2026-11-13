@@ -1,0 +1,44 @@
+name: Lean sequential landmarks
+
+on:
+  push:
+    paths:
+      - 'landmarks/**'
+      - '.github/workflows/landmarks.yml'
+  pull_request:
+    paths:
+      - 'landmarks/**'
+      - '.github/workflows/landmarks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  landmark1:
+    runs-on: ubuntu-latest
+    env:
+      LEAN_NUM_THREADS: '2'
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - name: Fetch the pinned parent and landmark prerequisites
+        run: python3 landmarks/scripts/cache_prerequisites.py
+      - name: Verify actual landmark 1 statements and proofs
+        run: python3 landmarks/scripts/verify.py --output landmarks/evidence/landmark1-ci
+      - name: Preserve actual verification records, including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-landmark1-verification
+          path: landmarks/evidence/landmark1-ci/
+          if-no-files-found: warn
+          retention-days: 90

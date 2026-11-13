@@ -1,0 +1,78 @@
+ArtinNormalisers.Landmark1.dominant_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I)
+  {φ : ArtinNormalisers.Theorem18.Dual I} (hφ : ArtinNormalisers.Landmark1.IsDominant φ) (w : M.Group) :
+  ((ArtinNormalisers.Theorem18.dualAction M) w) φ = φ ↔
+    w ∈ ArtinNormalisers.Artin.coxeterParabolic M (ArtinNormalisers.Landmark1.zeroIndices φ)
+ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  (w : M.Group) :
+  (∀ (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)), ((ArtinNormalisers.Theorem18.dualAction M) w) ↑φ = ↑φ) ↔
+    w ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Landmark1.exists_dominant_dualAction.{u_1} {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group]
+  (φ : ArtinNormalisers.Theorem18.Dual I) :
+  ∃ u, ArtinNormalisers.Landmark1.IsDominant (((ArtinNormalisers.Theorem18.dualAction M) u) φ)
+ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J))
+  (hφ : ArtinNormalisers.Landmark1.realRelativeRegular M J φ) (g : M.Group) :
+  ((ArtinNormalisers.Theorem18.dualAction M) g) ↑φ = ↑φ ↔ g ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J) (g : M.Group) :
+  ((ArtinNormalisers.Theorem18.dualAction M) g) ↑(↑p).1 = ↑(↑p).1 ∧
+      ((ArtinNormalisers.Theorem18.dualAction M) g) ↑(↑p).2 = ↑(↑p).2 ↔
+    g ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (q : ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+  (p : ArtinNormalisers.Theorem18.Complement M J) : q • p = p ↔ q = 1
+ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] :
+  IsQuotientCoveringMap (ArtinNormalisers.Theorem18.orbitProjection M J)
+    (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J) :
+  Function.Injective ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J p) ∧
+    (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J p).range =
+        (ArtinNormalisers.Landmark1.orbitMonodromy M J p).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Landmark1.orbitMonodromy M J p)
+'ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+LandmarkAudit.lean:57:26: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat MessageData 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  MessageData
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LandmarkAudit.lean:74:21: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat MessageData 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  MessageData
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LandmarkAudit.lean:74:5: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  BEq MessageData
+
+Hint: Adding the command `deriving instance BEq for Lean.MessageData` may allow Lean to derive the missing instance.
+LandmarkAudit.lean:58:27: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat MessageData 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  MessageData
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LandmarkAudit.lean:74:43: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  OfNat MessageData 0
+numerals are polymorphic in Lean, but the numeral `0` cannot be used in a context where the expected type is
+  MessageData
+due to the absence of the instance above
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LandmarkAudit.lean:74:26: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  BEq MessageData
+
+Hint: Adding the command `deriving instance BEq for Lean.MessageData` may allow Lean to derive the missing instance.
+LandmarkAudit.lean:66:40: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HAdd MessageData ℕ MessageData
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+LandmarkAudit.lean:67:42: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  HAdd MessageData ℕ MessageData
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.

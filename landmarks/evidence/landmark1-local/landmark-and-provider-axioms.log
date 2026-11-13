@@ -1,0 +1,2284 @@
+ArtinNormalisers.Landmark1.dominant_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I)
+  {φ : ArtinNormalisers.Theorem18.Dual I} (hφ : ArtinNormalisers.Landmark1.IsDominant φ) (w : M.Group) :
+  ((ArtinNormalisers.Theorem18.dualAction M) w) φ = φ ↔
+    w ∈ ArtinNormalisers.Artin.coxeterParabolic M (ArtinNormalisers.Landmark1.zeroIndices φ)
+ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  (w : M.Group) :
+  (∀ (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)), ((ArtinNormalisers.Theorem18.dualAction M) w) ↑φ = ↑φ) ↔
+    w ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Landmark1.exists_dominant_dualAction.{u_1} {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group]
+  (φ : ArtinNormalisers.Theorem18.Dual I) :
+  ∃ u, ArtinNormalisers.Landmark1.IsDominant (((ArtinNormalisers.Theorem18.dualAction M) u) φ)
+ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J))
+  (hφ : ArtinNormalisers.Landmark1.realRelativeRegular M J φ) (g : M.Group) :
+  ((ArtinNormalisers.Theorem18.dualAction M) g) ↑φ = ↑φ ↔ g ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J) (g : M.Group) :
+  ((ArtinNormalisers.Theorem18.dualAction M) g) ↑(↑p).1 = ↑(↑p).1 ∧
+      ((ArtinNormalisers.Theorem18.dualAction M) g) ↑(↑p).2 = ↑(↑p).2 ↔
+    g ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (q : ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+  (p : ArtinNormalisers.Theorem18.Complement M J) : q • p = p ↔ q = 1
+ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] :
+  IsQuotientCoveringMap (ArtinNormalisers.Theorem18.orbitProjection M J)
+    (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  [Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J) :
+  Function.Injective ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J p) ∧
+    (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J p).range =
+        (ArtinNormalisers.Landmark1.orbitMonodromy M J p).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Landmark1.orbitMonodromy M J p)
+'ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact' depends on axioms: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox _private.TauCeti.Topology.Homotopy.Cube.OpenBox.0.TauCeti.cubeLiftDen.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialDen: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation_mem_artinRelationsSet: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.reverse_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.IsReduced.isLeftDescent_wordProd_cons: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.piOptionEquivProdHomeomorph_mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_ne_one: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_zpow_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.instFunLike: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.zeroIndices_canonicalDominant: ∀ {I : Type u_1}
+  (J : Set I), ArtinNormalisers.Landmark1.zeroIndices (ArtinNormalisers.Landmark1.canonicalDominant J) = J
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.zeroIndices_canonicalDominant: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopy.cast.congr_simp: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.mem_artinRelationsSet._simp_1: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.mapDomain_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic GenLoop.apply_symm_of_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.injective_map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary.eq_1: [propext, Classical.choice, Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.IsDominant: {I : Type u_1} →
+  ArtinNormalisers.Theorem18.Dual I → Prop
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.IsDominant: [propext, Classical.choice, Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRoots_finite: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group], (ArtinNormalisers.Landmark1.positiveRoots M).Finite
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRoots_finite: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_full: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_zero_one_snd_mem_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRepProdParabolicEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.dense_boundary: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval Set.Icc.coe_addNSMul: [propext]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopyAlong: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.isPathConnected_cube: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.instContractibleSpaceForallElemRealUnitInterval_tauCeti: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaHomeomorph_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic Path.Homotopic.Quotient.cast_mem_arrows_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_eq_continuousMap_const_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.subsingleton_of_isEmpty: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_le_of_simplyConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic IsClopen.hasHomotopyExtensionProperty: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_rightDescent_mem_of_mem_parabolic_of_ne_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeContraction: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.homotopicWith_uncurry_trans_trans_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.isEilenbergMacLaneSpaceOne_fundamentalGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_half_sq_lt_one_of_abs_lt: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.exists_nonneg_geometricRepresentation_of_mem_parabolic_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.commute_simple_of_eq_two: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.update_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.unitBallHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.simple_mul_simple_pow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_iff_exists_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.eq_minimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_add_toReal_eq_add_pi_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.one_le_cubeLiftDen: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoidFunctor.homotopicMapsNatIso_app: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mk_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.homotopicRel_of_retracing: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricRepresentation_apply_mem_geometricRoots_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod_map_fst_map_snd: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mono: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_def: [propext, Classical.choice, Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.zeroIndices.eq_1: ∀ {I : Type u_1}
+  (φ : ArtinNormalisers.Theorem18.Dual I),
+  ArtinNormalisers.Landmark1.zeroIndices φ = {i | φ (ArtinNormalisers.Theorem18.simpleRoot i) = 0}
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.zeroIndices.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.exists_wordProd_alternatingWord_mul_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_openBoxContractionTo: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.coefficientEvaluation: {I : Type u_1} →
+  (J : Set I) →
+    ↥(ArtinNormalisers.Theorem18.relativeSubspace J) × ↥(ArtinNormalisers.Theorem18.relativeSubspace J) →
+      ArtinNormalisers.Theorem18.Vector I → ℝ × ℝ →ₗ[ℝ] ℝ
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.coefficientEvaluation: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_self_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.isPathConnected_cubeBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.unitBallHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piCurryHomeomorph_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_sub_mul_sin_sq_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.pathConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.mk: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.map_codRestrict: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering GenLoop.map_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.ofHomotopyRel: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval Set.abs_projIcc_le: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_of_forall_mem_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.coe_map: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.subsingleton_homotopyGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J) (g : M.Group),
+  ((ArtinNormalisers.Theorem18.dualAction M) g) ↑(↑p).1 = ↑(↑p).1 ∧
+      ((ArtinNormalisers.Theorem18.dualAction M) g) ↑(↑p).2 = ↑(↑p).2 ↔
+    g ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_lt_cos_mul_cos_add_cos_div_sin_mul_sin: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval Set.Icc.continuous_addNSMul: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map: [propext, Classical.choice, Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_apply_simpleRoot: ∀ {I : Type u_1}
+  (J : Set I) (i : I),
+  (ArtinNormalisers.Landmark1.canonicalDominant J) (ArtinNormalisers.Theorem18.simpleRoot i) = if i ∈ J then 0 else 1
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_apply_simpleRoot: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.map_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.map_injective: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_of_subpath_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale_one: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo _private.ArtinLandmarkVendor.Geometric.RankTwo.0.CoxeterMatrix.dihedralCoeff.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball _private.TauCeti.Topology.Homotopy.Extension.Ball.0.TauCeti.ballRadialDen.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.surjective_map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelationsSet: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.lift: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeContraction_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isEilenbergMacLaneSpaceOne_totalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exchangeCondition_right: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDen_def: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_of_subpath_trans._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.collar_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering GenLoop.map_homotopic_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.rec: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.braidWord: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_symm_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.braidEquivalent_of_isReduced_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.existsUnique_continuousMap_lifts_of_range_le_subgroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_cubeHomeomorphClosedBall_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.openBoxContraction.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_mapOfEq_of_comp_eq_id: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mk_const_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isAspherical_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord_two: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaConstHomeomorph_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricForm_self_of_mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolicProdEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph_symm_apply_none: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.map_fst_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation_def: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong._sizeOf_inst: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.eq_of_trans_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_map_of_comp_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_iff_isLeftInversion._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.truncateOfLE_range_subset: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic_of_isReduced: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin CoxeterSystem.braidWord.eq_1: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeBoundarySetoid: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isEilenbergMacLaneSpaceOne_fundamentalGroup_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_or_of_forall_mem_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group],
+  IsQuotientCoveringMap (ArtinNormalisers.Theorem18.orbitProjection M J)
+    (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_homotopy_forall_mem_of_isSimplyConnected: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_one: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path unitInterval.exists_vertex_family: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.piOptionEquivProdHomeomorph_symm_mem_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_of_eq_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_lt_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group] (q : ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+  (p : ArtinNormalisers.Theorem18.Complement M J), q • p = p ↔ q = 1
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialDen_def: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.dist_apply_cubeCenter: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exchangeCondition: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_fin_one_iff: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_left_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.cos_pos_of_mem_uIoo: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupPiMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_fixed_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (w : M.Group),
+  ((ArtinNormalisers.Theorem18.dualAction M) w) (ArtinNormalisers.Landmark1.canonicalDominant J) =
+      ArtinNormalisers.Landmark1.canonicalDominant J ↔
+    w ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_fixed_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_extension: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.nonempty_homeomorph_cube_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_homotopic: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.isReduced_cons_of_not_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.trans_apply_of_eq_two_mul: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeBoundarySetoid_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.transport: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.lift_gen: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic _private.TauCeti.Topology.Homotopy.Extension.Basic.0.TauCeti.tent.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.homotopic_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_mem_openBox: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_induction_on: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering HomotopyGroup.map_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.zeroIndices: {I : Type u_1} →
+  ArtinNormalisers.Theorem18.Dual I → Set I
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.zeroIndices: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.image: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.openBoxContractionTo.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path IsSimplyConnected.isPathHomotopyTrivial: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionSwapFun.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.subsingleton_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_update: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_zero_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isAspherical_totalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isEilenbergMacLaneSpaceOne_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_add_two: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_isDominant: ∀ {I : Type u_1}
+  (J : Set I), ArtinNormalisers.Landmark1.IsDominant (ArtinNormalisers.Landmark1.canonicalDominant J)
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_isDominant: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (w : M.Group),
+  (∀ (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)), ((ArtinNormalisers.Theorem18.dualAction M) w) ↑φ = ↑φ) ↔
+    w ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functorOfEndHom_map: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.injective: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_of_isRightInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_extension_of_isClosed: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition._sizeOf_1: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.map_comp: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_fst_le: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_symm_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionParity.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isEilenbergMacLaneSpaceOne_fundamentalGroup_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.map_eval_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.complementLocallyCompactSpace: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group], LocallyCompactSpace (ArtinNormalisers.Theorem18.Complement M J)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.complementLocallyCompactSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.codRestrict: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.isOpen_iff_preimage_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.exists_int_eq_add_of_cos_sin_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitFundamentalGroupMap: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      (p : ArtinNormalisers.Theorem18.Complement M J) →
+        FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) p →*
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+            (ArtinNormalisers.Theorem18.orbitProjection M J p)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitFundamentalGroupMap: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic GenLoop.ofProd_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.zero_mem_cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange _private.TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange.0.TauCeti.transportFamily.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_lt_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.isCoveringMap_orbitProjection: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group], IsCoveringMap (ArtinNormalisers.Theorem18.orbitProjection M J)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.isCoveringMap_orbitProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoid.nonempty_hom: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_of_path_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering GenLoop.map_homotopic_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.induction_on: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.sphereHomeomorphOfFinrankEq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.map_homotopyGroupEquivOfPath: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRootSum: {I : Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → ArtinNormalisers.Theorem18.Vector I
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRootSum: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functorOfEndHom_obj: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.closedBallHomeomorphOfFinrankEq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piCurryHomeomorph: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._aux_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.bijective_map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonpos_of_step_of_sub_pi_le: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_pi_mul_ne_zero_of_mem_Ioo_of_ne_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_pow_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.instFunLike._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjEquivalence: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [inst : Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J),
+  Function.Injective ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J p) ∧
+    (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J p).range =
+        (ArtinNormalisers.Landmark1.orbitMonodromy M J p).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Landmark1.orbitMonodromy M J p)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.nonempty_fundamentalGroupMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_iff_isRightInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_right_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.homotopicWith_trans_trans_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin _private.TauCeti.GroupTheory.Coxeter.Artin.0.TauCeti.artinRelationsSet.eq_1: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.exponentSum_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_comp._proof_1: [propext]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_eq_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.mem_cylinderExtensionDomain_of_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_eq_empty: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_transAt: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.append_left: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_continuousMap_const_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mk_zero_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map.congr_simp: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append_right: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.orderOf_simple_mul_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.length_eq_orderOf_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic Path.homotopic_refl_of_forall_mem_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.exists_cosine_rule_parameter: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricRepresentation_single_neg_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeCenter: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_mul_self: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.wordProd_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.eq_of_joined: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.recOn: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.map_snd_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_nonpos_of_pi_le_of_le_two_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant.eq_1: ∀ {I : Type u_1} (J : Set I),
+  ArtinNormalisers.Landmark1.canonicalDominant J =
+    ArtinNormalisers.Theorem18.dualCoordinates.symm fun i => if i ∈ J then 0 else 1
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_le_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_spec: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_cubeScale: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.inv_mul_minimalCosetRep_mem._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.existsUnique_continuousMap_lifts_of_subsingleton_fundamentalGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.homotopic_of_continuous_square: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_braid: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterSystem.geometricRepresentation_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.not_isRightDescent_mul_of_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.fullyFaithfulSingleObjFunctor: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.sizeOf_spec: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonpos_of_step_of_add_pi_le: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.id.eq_1: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.mem_pathComponent: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDen_le_two: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRepProdParabolicEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.fromPath_mk_out: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricRepresentation_apply_mem_geometricRoots_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_of_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.bijective_map_iff_bijective_mapOfEq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.rec: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.abs_sub_half_le_cubeRadius: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.injEq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_pi_div_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.zero_mem_cubeBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_comp._proof_1: []
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.cubeHomeomorphClosedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.mem_cylinderExtensionDomain_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.pos_or_neg_of_mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_zero._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_map_eval: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering HomotopyGroup.map_bijective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piCurryHomeomorph_symm_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.ctorIdx: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic _private.TauCeti.GroupTheory.Coxeter.Parabolic.0.CoxeterSystem.parabolic.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord_three: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.recOn: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_comp: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.eq_of_inv_mul_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.orderOf_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_eq_bot_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_apply_eq_one_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.ctorIdx: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_eq_bot_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_symm_mem_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.minimalCosetRep_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map.congr_simp: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path IsPathHomotopyTrivial.nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_of_eq_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.isOpenEmbedding_inclusion_comp_unitBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_comm_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.pi1EquivFundamentalGroup_map: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_openBoxContraction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.mapOfEq_range_eq_bot_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.mem_artinRelationsSet: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.refl_of_forall_mem_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.simple_mul_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.exists_functor_map_asHom_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_of_subpath_trans._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_le_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functor_singleObj_ext_of_map_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.prodMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.complementT2Space: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I), T2Space (ArtinNormalisers.Theorem18.Complement M J)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.complementT2Space: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition._sizeOf_inst: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.matsumoto: [propext, Classical.choice, Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.coefficientEvaluation._proof_1: SMulCommClass ℝ ℝ ℝ
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.coefficientEvaluation._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_comp: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_single_self: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph_symm_apply_some: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitMonodromy._proof_2: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (p : ArtinNormalisers.Theorem18.Complement M J),
+  ArtinNormalisers.Theorem18.orbitProjection M J p = ArtinNormalisers.Theorem18.orbitProjection M J p
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitMonodromy._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply_symm_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.cast_subpath_eq_codRestrict._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.map_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.instIsEmptyOfNatNat: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.single_mem_geometricRoots._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic _private.TauCeti.GroupTheory.Coxeter.Geometric.Basic.0.CoxeterMatrix.geometricForm.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.IsReduced.isChain_ne: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_id: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_mul_gen_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.of_eq_gen: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.cast_subpath_eq_codRestrict: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_eq_self: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_continuousMap_const_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.trans_apply_of_eq_two_mul_sub_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_isReduced_wordProd_eq_of_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toIcoMod_eq_toIcoMod_iff_coe_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.rec: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.isConj_wordProd_append_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path IsPathHomotopyTrivial: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_map: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_iff_isLeftInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.image_unitBallHomeomorph_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionSwapHom.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.pow_length_eq_one_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_homotopy_apply_eq_of_trans_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange ContinuousMap.bijective_map_iff_of_path: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.transport_apply_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.isLiftable_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.isReduced_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.symm: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.symm: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.nonempty_homeomorph_Icc_prod_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_map: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.recOn: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricReflection_apply_mem_geometricRoots_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_trans_homotopic_trans_of_homotopicWith: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.closure_range_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_add_toReal_eq_add_pi_or_eq_sub_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.of_basepoint: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto CoxeterSystem.isReduced_braidWord: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Covering IsCoveringMap.genLoopHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.HomotopyAlong.refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_homotopy_of_restrict: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic ContinuousMap.fundamentalGroupoid_map_obj_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd_mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto CoxeterSystem.isReduced_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange ContinuousMap.surjective_map_iff_of_path: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricRepresentation_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.collar: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_cubeRadius: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.codRestrict.congr_simp: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_continuousMap_const: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.of_mulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.trans: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_monotone_range_subpath_subset: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.inj: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.map_refl: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_option_iff: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolicProdEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_zero: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.subpath_self: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.coefficientEvaluation.eq_1: ∀ {I : Type u_1}
+  (J : Set I) (p : ↥(ArtinNormalisers.Theorem18.relativeSubspace J) × ↥(ArtinNormalisers.Theorem18.relativeSubspace J))
+  (r : ArtinNormalisers.Theorem18.Vector I),
+  ArtinNormalisers.Landmark1.coefficientEvaluation J p r = ↑p.1 r • LinearMap.fst ℝ ℝ ℝ + ↑p.2 r • LinearMap.snd ℝ ℝ ℝ
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.coefficientEvaluation.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.transport_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.noConfusionType: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.casesOn: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.subpath_subpath_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.prodBoundary: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.existsUnique_isMinimalCosetRep_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk._flat_ctor: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk._flat_ctor: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.isEquivalence_singleObjFunctor: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_apply_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.casesOn: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.continuous_map: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.subsingleton_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball _private.TauCeti.Topology.Homotopy.Extension.Ball.0.TauCeti.ballRadialProjection.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.isAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.cubeScale.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_or_of_isReduced: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.prod_map_eq: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.length_le_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitMonodromy._proof_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J))).Normal
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitMonodromy._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_zero_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_of_mem_parabolic_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append_left: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDen: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isAspherical_of_subsingleton_homotopyGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaConstHomeomorph_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_ne_one._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_le_one: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.prodMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_comp: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_sphereHomeomorphOfFinrankEq_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.subsingleton_fundamentalGroup_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.preimage_appendHomeomorph_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitMonodromy: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      [Finite M.Group] →
+        (p : ArtinNormalisers.Theorem18.Complement M J) →
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+              (ArtinNormalisers.Theorem18.orbitProjection M J p) →*
+            (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)ᵐᵒᵖ
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitMonodromy: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_le_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonneg_of_step_of_le_sub_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.mem_parabolic_iff_exists_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.norm_cubeHomeomorphClosedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.geometricReflection_positiveRootSum: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (i : I),
+  (M.geometricReflection i) (ArtinNormalisers.Landmark1.positiveRootSum M) =
+    ArtinNormalisers.Landmark1.positiveRootSum M - 2 • ArtinNormalisers.Theorem18.simpleRoot i
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.geometricReflection_positiveRootSum: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_add_toReal_eq_sub_pi_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_transport_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.mem_pathComponent_of_mem: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.map_id: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_eq_one_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball ContinuousMap.nullhomotopic_iff_exists_extension_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic GenLoop.ofProd: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_map_fst_map_snd: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.of_isBraidMove: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.eq_zero_or_eq_one_or_mem_boundary_of_mem_cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.length_eq: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path isPathHomotopyTrivial_def: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.piMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant._proof_1: SMulCommClass ℝ ℝ ℝ
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.continuous_cubeLiftDeform: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.exists_dominant_dualAction: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group] (φ : ArtinNormalisers.Theorem18.Dual I),
+  ∃ u, ArtinNormalisers.Landmark1.IsDominant (((ArtinNormalisers.Theorem18.dualAction M) u) φ)
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.exists_dominant_dualAction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.nonempty_homeomorph_closedBall_of_convex: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.single_mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.dominant_fixed_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) {φ : ArtinNormalisers.Theorem18.Dual I},
+  ArtinNormalisers.Landmark1.IsDominant φ →
+    ∀ (w : M.Group),
+      ((ArtinNormalisers.Theorem18.dualAction M) w) φ = φ ↔
+        w ∈ ArtinNormalisers.Artin.coxeterParabolic M (ArtinNormalisers.Landmark1.zeroIndices φ)
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.dominant_fixed_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange ContinuousMap.injective_map_iff_of_path: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.casesOn: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_minimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.of_trans_symm: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_of_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.piMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.image_unitBallHomeomorph_ball: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.symm_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_def: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.length_eq: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_id: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.refl_cast: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_self_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.closedBallHomeomorphProd.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.neg_mem_geometricRoots_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjEquivalence_functor: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.simplyConnectedSpace_of_subsingleton_fundamentalGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) [Finite M.Group]
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ArtinNormalisers.Landmark1.realRelativeRegular M J φ →
+    ∀ (g : M.Group),
+      ((ArtinNormalisers.Theorem18.dualAction M) g) ↑φ = ↑φ ↔ g ∈ ArtinNormalisers.Artin.coxeterParabolic M J
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_partition_with_property: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.piMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.prod_map_eq: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.prodMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_le_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exists_isReduced_sublist: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_sub_sq_mul_sin_sq_le_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.symm_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_of_isLeftInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t_zero: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.mul_sin_sq_lt_one_of_abs_le: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.existsUnique_reducedWordLift: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.continuous_cubeLiftTime: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.realRelativeRegular: {I : Type u_1} →
+  CoxeterMatrix I → (J : Set I) → ↥(ArtinNormalisers.Theorem18.relativeSubspace J) → Prop
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.realRelativeRegular: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Covering IsCoveringMap.genLoopHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_eq_zero_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.simple_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.image_of_isClosed: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle TauCeti.dvd_of_cos_two_mul_pi_div_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product TauCeti.instSimplyConnectedSpaceProd: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_fin_succ_iff: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_sq_lt_one_of_abs_lt: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_symmAt: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_apply._proof_1: [propext]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_of_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_add_two_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.update_mem_boundary: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.continuous_ballRadialProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.exists_pos_cosh_mul_sin_mul_sin_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale_zero: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.map_trans_cast: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.norm_cubeHomeomorphClosedBall_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.exists_mem_parabolic_pair_mul_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_nonneg: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_le_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.sign_sub_pos_iff_toReal_lt_of_sign_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.strongExchange_right: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.toHomotopy: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.subsingleton_homotopyGroup_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_id: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic _private.TauCeti.GroupTheory.Coxeter.Geometric.Basic.0.CoxeterMatrix.geometricReflection.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant: {I : Type u_1} →
+  Set I → ArtinNormalisers.Theorem18.Dual I
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_faithful: [propext,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.HomotopyAlong.trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_continuousMap_const_apply_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.deletionCondition: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_pow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path _private.TauCeti.Topology.Homotopy.Path.0.Path.initialSegmentFamily.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.braidEquivalent_iff_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.eq_single_or_eq_neg_single_of_mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.image_unitBallHomeomorph_sphere: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi: [propext, Classical.choice, Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.realRelativeRegular._proof_1: SMulCommClass ℝ
+  ℝ ℝ
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.realRelativeRegular._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.symmAt.eq_1: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.subsingleton_homotopyGroup_of_isAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_iff_isRightInversion._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_single_single: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsQuotientCoveringMap.isEilenbergMacLaneSpaceOne: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Covering IsCoveringMap.apply_genLoopHomeomorph_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricForm_geometricRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.hom_ext: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_id_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_const: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong._sizeOf_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.subpath_apply_mem: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.of_basepoint: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functorOfEndHom: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph Homeomorph.unitBall_symm_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaHomeomorph_symm_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_one._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_mapDomain_mapDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_single_self: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic Path.Homotopic.Quotient.cast_mem_arrows_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map _private.TauCeti.Topology.Homotopy.GenLoop.Map.0.GenLoop.map.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_mem: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox _private.TauCeti.Topology.Homotopy.Cube.OpenBox.0.TauCeti.cubeLiftTime.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.quotientComplementIsCancelSMul: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group],
+  IsCancelSMul (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J) (ArtinNormalisers.Theorem18.Complement M J)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.quotientComplementIsCancelSMul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.noConfusionType: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering HomotopyGroup.map_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.map_fst_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaConstHomeomorph: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl.eq_1: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.sum_parabolic_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.mapOfEq_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRoots.eq_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I),
+  ArtinNormalisers.Landmark1.positiveRoots M = {r | r ∈ ArtinNormalisers.Theorem18.roots M ∧ 0 < r}
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRoots.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.length_mul_of_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_cubeHomeomorphClosedBall_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.exponentSum: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_eq_sin_div: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation_mul_simple_single: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.prod_map_gen_braidWord: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.bijOn_geometricReflection_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.hasHomotopyExtensionProperty_sphere_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.existsUnique_mem_parabolic_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.HomotopyAlong.transAt: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.image_of_isEmbedding: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.abs_coe_le_one: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_fromPath_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.sizeOf_spec: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_wordProd_eq_of_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.isReduced_cons_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.neg_mem_geometricRoots_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_zpow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.map_snd_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.exists_regular_linearCombination: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) [Finite M.Group] (p : ArtinNormalisers.Theorem18.Complement M J),
+  ∃ a b, ArtinNormalisers.Landmark1.realRelativeRegular M J (a • (↑p).1 + b • (↑p).2)
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.exists_regular_linearCombination: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.essSurj_singleObjFunctor: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.le_pi_div_two_mul_sin: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_obj: [propext, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.mem_cylinderExtensionDomain_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.strongExchange: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupPiMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.subpath_cast_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.ne_zero_of_mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.codRestrict_coe: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.cos_pi_div_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_fromPath: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.length_mul_of_forall_not_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox _private.TauCeti.Topology.Homotopy.Cube.OpenBox.0.TauCeti.cubeLiftDeform.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.refl: [Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_cubeScale: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_le_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball ContinuousMap.HomotopicWith.exists_homotopicRel_range_subset: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_le_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterMatrix.dihedralCoeff_nonneg: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoid.instIsConnected: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.map_eval_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_left_cancel: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transAt_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.update_piOptionEquivProdHomeomorph_symm_some: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi_map_eval: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic _private.TauCeti.GroupTheory.Coxeter.Parabolic.0.CoxeterSystem.minimalCosetRep.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricRoots: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonneg_of_step_of_le_add_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeContraction_apply_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_sub_sq_le_one_sub_sq_mul_sin_sq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.instHomotopyLikeForallElemRealUnitIntervalValContinuousMapMemSetGenLoop: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaHomeomorph: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_lt_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.exists_abs_sub_int_lt_of_cos_lt: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.map_nullhomotopic_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.nonempty_homotopyGroupMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.isClosed_boundary: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMapOn.injective_of_range_subset: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path _private.TauCeti.Topology.Homotopy.Path.0.Path.conjHomotopyFun.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.append_right: [propext,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRoots: {I : Type u_1} →
+  CoxeterMatrix I → Set (ArtinNormalisers.Theorem18.Vector I)
+LANDMARK_AXIOMS ArtinLandmarks.RegularStabilizer ArtinNormalisers.Landmark1.positiveRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.isClosed_cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_time: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_lt_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_closedBallHomeomorphOfFinrankEq_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.evaluation_nonpos_of_nonpos: ∀ {I : Type u_1}
+  {φ : ArtinNormalisers.Theorem18.Dual I},
+  ArtinNormalisers.Landmark1.IsDominant φ → ∀ {v : ArtinNormalisers.Theorem18.Vector I}, v ≤ 0 → φ v ≤ 0
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.evaluation_nonpos_of_nonpos: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.pi: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_apply_of_ne: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_def: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_rfl: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t_castSucc_le_succ: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.eq_two_mul_of_abs_toReal_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeCenter_apply: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.hom_ext_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.continuous_initialSegmentFamily_uncurry: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_mem_relativeSubspace: ∀
+  {I : Type u_1} (J : Set I),
+  ArtinNormalisers.Landmark1.canonicalDominant J ∈ ArtinNormalisers.Theorem18.relativeSubspace J
+LANDMARK_AXIOMS ArtinLandmarks.Dominant ArtinNormalisers.Landmark1.canonicalDominant_mem_relativeSubspace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_inv: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.cubeCenter.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom.congr_simp: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoid.map_comp_map: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_sub_of_sign_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricReflection_pos_of_mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_right_cancel: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.isClosed: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_mono: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.RankTwo CoxeterSystem.rankTwo_nonnegative: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.append_mem_boundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_map_of_comp_eq_id: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval Set.Icc.exists_eventually_addNSMul_eq_right: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.subpath_zero_one: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.simple_mul_eq_mul_simple_of_length_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.coe_subpath: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.geometricRepresentation_single_pos_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_TYPE ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitFundamentalGroupMap._proof_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (p : ArtinNormalisers.Theorem18.Complement M J),
+  { toFun := ArtinNormalisers.Theorem18.orbitProjection M J, continuous_toFun := ⋯ } p =
+    { toFun := ArtinNormalisers.Theorem18.orbitProjection M J, continuous_toFun := ⋯ } p
+LANDMARK_AXIOMS ArtinLandmarks.Covering ArtinNormalisers.Landmark1.orbitFundamentalGroupMap._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mem_prodBoundary_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.exists_homotopy_extension_of_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_mul_pow: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.inj: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.of_conj_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_eq_bot_of_simplyConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.injEq: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_def: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS ArtinLandmarkVendor.Geometric.Sign CoxeterSystem.mem_geometricRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.prod: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t_last: [propext, Classical.choice, Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.inv_mul_minimalCosetRep_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+LANDMARK_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+Audited 40 landmark declarations and 763 supplier declarations
+LANDMARK 1 ONLY: full Theorem 1.8 remains unproved

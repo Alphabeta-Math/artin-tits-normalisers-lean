@@ -1,0 +1,7 @@
+✔ [5615/5627] Built ArtinLandmarkVendor.Geometric.RankTwo (1.1s)
+✔ [5617/5627] Built ArtinLandmarkVendor.Geometric.Sign (998ms)
+✔ [5619/5627] Built ArtinLandmarks.Dominant (867ms)
+✔ [5621/5627] Built ArtinLandmarks.RegularStabilizer (938ms)
+✔ [5623/5627] Built ArtinLandmarks.Covering (1.1s)
+✔ [5625/5627] Built ArtinLandmarks (780ms)
+Build completed successfully (5627 jobs).

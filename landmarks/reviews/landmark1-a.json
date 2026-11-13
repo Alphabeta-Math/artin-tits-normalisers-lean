@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "reviewer": "landmark1-a",
+  "date": "2026-11-14",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "verdict": "accept-landmark1",
+  "final": true,
+  "landmark_1_proved": true,
+  "full_theorem_1_8_proved": false,
+  "project_source_sha256": {
+    "landmarks/ArtinLandmarks.lean": "1be1ffb1e3042d4e7973c8cac884b524f2f4e1af09c3f6672558690ceeb2b1f4",
+    "landmarks/ArtinLandmarks/Covering.lean": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94",
+    "landmarks/ArtinLandmarks/Dominant.lean": "408a97cc6f49b5868d5eafc6aae733b8ae26a1d314b26c81235f5bf493339da4",
+    "landmarks/ArtinLandmarks/RegularStabilizer.lean": "aeeee397f0fe48325c9f62eee8607e80a1836cb123dc9a022cd8d954c92fd93f"
+  },
+  "configuration_sha256": {
+    "landmarks/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "landmarks/lakefile.toml": "391a36c1e67ff796ab7487d7e2100eb52b7532c71a1eab2f6bed73839f3839a0",
+    "landmarks/lake-manifest.json": "a8415b907a1da8ff6c0a0c936fef67eb0f3315213afff0d1963653b72a8c5679"
+  },
+  "new_provider_source_sha256": {
+    "ArtinLandmarkVendor/Geometric/RankTwo.lean": "53d4bcbfb2dd83abf8a4adb53091c982e191ca3a69be95e751e20306e26591f3",
+    "ArtinLandmarkVendor/Geometric/Sign.lean": "c0b7e5f1e0bfa9aa67a1df7b5cc11e65625987089e9909f0366b88068d58bc09"
+  },
+  "vendor_provenance_sha256": "5d30ae8493968f7fb58bbaa7e78514a0afc15501d62abd940061906c3483581a",
+  "parent_verification_sha256": "79f91cb45e5ada75c39968f29b93cc228d0fd38914903cb432c1b8664a332b1d",
+  "declarations": [
+    "ArtinNormalisers.Landmark1.coefficientEvaluation",
+    "ArtinNormalisers.Landmark1.exists_regular_linearCombination",
+    "ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff",
+    "ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff",
+    "ArtinNormalisers.Landmark1.quotientComplementIsCancelSMul",
+    "ArtinNormalisers.Landmark1.complementT2Space",
+    "ArtinNormalisers.Landmark1.complementLocallyCompactSpace",
+    "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection",
+    "ArtinNormalisers.Landmark1.isCoveringMap_orbitProjection",
+    "ArtinNormalisers.Landmark1.orbitFundamentalGroupMap",
+    "ArtinNormalisers.Landmark1.orbitMonodromy",
+    "ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact",
+    "ArtinNormalisers.Landmark1.IsDominant",
+    "ArtinNormalisers.Landmark1.zeroIndices",
+    "ArtinNormalisers.Landmark1.evaluation_nonpos_of_nonpos",
+    "ArtinNormalisers.Landmark1.dominant_fixed_iff",
+    "ArtinNormalisers.Landmark1.canonicalDominant",
+    "ArtinNormalisers.Landmark1.canonicalDominant_apply_simpleRoot",
+    "ArtinNormalisers.Landmark1.canonicalDominant_isDominant",
+    "ArtinNormalisers.Landmark1.zeroIndices_canonicalDominant",
+    "ArtinNormalisers.Landmark1.canonicalDominant_mem_relativeSubspace",
+    "ArtinNormalisers.Landmark1.canonicalDominant_fixed_iff",
+    "ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff",
+    "ArtinNormalisers.Landmark1.positiveRoots",
+    "ArtinNormalisers.Landmark1.positiveRoots_finite",
+    "ArtinNormalisers.Landmark1.positiveRootSum",
+    "ArtinNormalisers.Landmark1.roots_eq_geometricRoots",
+    "ArtinNormalisers.Landmark1.geometricReflection_positiveRootSum",
+    "ArtinNormalisers.Landmark1.exists_dominant_dualAction",
+    "ArtinNormalisers.Landmark1.realRelativeRegular",
+    "ArtinNormalisers.Landmark1.flatPointwiseStabilizer",
+    "ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff"
+  ],
+  "declarations_by_file": {
+    "landmarks/ArtinLandmarks.lean": [],
+    "landmarks/ArtinLandmarks/Covering.lean": [
+      "ArtinNormalisers.Landmark1.coefficientEvaluation",
+      "ArtinNormalisers.Landmark1.exists_regular_linearCombination",
+      "ArtinNormalisers.Landmark1.complement_pair_stabilizer_iff",
+      "ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff",
+      "ArtinNormalisers.Landmark1.quotientComplementIsCancelSMul",
+      "ArtinNormalisers.Landmark1.complementT2Space",
+      "ArtinNormalisers.Landmark1.complementLocallyCompactSpace",
+      "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection",
+      "ArtinNormalisers.Landmark1.isCoveringMap_orbitProjection",
+      "ArtinNormalisers.Landmark1.orbitFundamentalGroupMap",
+      "ArtinNormalisers.Landmark1.orbitMonodromy",
+      "ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact"
+    ],
+    "landmarks/ArtinLandmarks/Dominant.lean": [
+      "ArtinNormalisers.Landmark1.IsDominant",
+      "ArtinNormalisers.Landmark1.zeroIndices",
+      "ArtinNormalisers.Landmark1.evaluation_nonpos_of_nonpos",
+      "ArtinNormalisers.Landmark1.dominant_fixed_iff",
+      "ArtinNormalisers.Landmark1.canonicalDominant",
+      "ArtinNormalisers.Landmark1.canonicalDominant_apply_simpleRoot",
+      "ArtinNormalisers.Landmark1.canonicalDominant_isDominant",
+      "ArtinNormalisers.Landmark1.zeroIndices_canonicalDominant",
+      "ArtinNormalisers.Landmark1.canonicalDominant_mem_relativeSubspace",
+      "ArtinNormalisers.Landmark1.canonicalDominant_fixed_iff",
+      "ArtinNormalisers.Landmark1.pointwise_flat_fixed_iff"
+    ],
+    "landmarks/ArtinLandmarks/RegularStabilizer.lean": [
+      "ArtinNormalisers.Landmark1.positiveRoots",
+      "ArtinNormalisers.Landmark1.positiveRoots_finite",
+      "ArtinNormalisers.Landmark1.positiveRootSum",
+      "ArtinNormalisers.Landmark1.roots_eq_geometricRoots",
+      "ArtinNormalisers.Landmark1.geometricReflection_positiveRootSum",
+      "ArtinNormalisers.Landmark1.exists_dominant_dualAction",
+      "ArtinNormalisers.Landmark1.realRelativeRegular",
+      "ArtinNormalisers.Landmark1.flatPointwiseStabilizer",
+      "ArtinNormalisers.Landmark1.realRelativeRegular_fixed_iff"
+    ]
+  },
+  "explicit_declaration_count": 32,
+  "private_source_helpers_included": true,
+  "all_declarations_verdict": "accept",
+  "scope": "First selected landmark only: genuine dominant and regular-point stabilizers, full ambient pair stabilizer for the actual relative complexified complement, freeness of its actual Coxeter normalizer quotient action, actual orbit quotient covering, and its genuine fundamental-group short exact sequence with raw opposite-group monodromy. All finite Coxeter matrices and arbitrary J, including rank zero and full J.",
+  "source_reading": {
+    "article": "Reread original article arXiv:2509.21915v3, section3.3, Lemmas3.23–3.24, complement(3.26) and cover/exact sequence(3.28), PDFpp12–13 through frozen extraction. Prior visual page13 reading and exact-space contract remain in statement-a.md; no fresh visual reading claimed here.",
+    "project": "Read complete final Dominant, RegularStabilizer, Covering and aggregate sources, all definitions, instances, statements, private helpers and proof bodies. Extracted all32 source-qualified declarations independently and matched inventory.",
+    "suppliers": "Read both complete relocated RankTwo and Sign sources, including proof bodies, checked actual root-sign/descent theorem and reflection bijection on distinct positive roots. Independently verified preserved originals against pinned upstream Git objects and local bytes against only the recorded one-import substitution.",
+    "mathlib": "Inspected actual covering quotient theorem hypotheses: continuous action, proper discontinuity, local compactness, Hausdorffness and freeness. Existing parent geometry/action/quotient and generic covering sequence were independently reviewed previously and their hashes remain unchanged.",
+    "limits": "No independent reading of the cited Bourbaki/Deligne source texts, no whole-mathlib audit, no claim to have executed new Lean/compiler/kernel commands, and no consultation of reviewer-b."
+  },
+  "semantic_checks": {
+    "actual_parent_complement_topology_action_orbit_map": true,
+    "no_assumed_chamber_stabilizer": true,
+    "no_assumed_point_stabilizer": true,
+    "no_assumed_freeness_or_actual_orbit_cover": true,
+    "positive_root_sum_uses_distinct_actual_roots": true,
+    "dominant_orbit_maximum_and_length_induction_proved": true,
+    "conjugate_vanishing_roots_annihilate_actual_relative_flat": true,
+    "actual_real_pair_generic_linear_combination_proved": true,
+    "finite_group_only_for_finite_type_conclusions": true,
+    "no_proper_J_positive_rank_or_nonempty_index_hypothesis": true,
+    "raw_endpoint_monodromy_target": "Coxeter normalizer quotient opposite group",
+    "aggregate_imports_full_new_proof_chain": true
+  },
+  "signed_provider_patch": {
+    "upstream_revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+    "rank_two_mathematical_and_source_bytes": "unchanged",
+    "sign_exactly_one_import_path_patch": {
+      "old": "import TauCeti.GroupTheory.Coxeter.Geometric.RankTwo",
+      "new": "import ArtinLandmarkVendor.Geometric.RankTwo",
+      "occurrences": 1
+    },
+    "mathematical_declaration_namespaces_statements_and_proofs": "unchanged",
+    "all_seven_referenced_parent_supplier_hashes_verified": true
+  },
+  "independently_executed_checks": [
+    {
+      "kind": "read-only hash/configuration and declaration inventory verification",
+      "result": "All4 project-source hashes and3 package-config hashes match; all32 actual declaration names match inventory."
+    },
+    {
+      "kind": "read-only supplier original/local byte comparison",
+      "result": "Both originals match pinned upstream Git objects and hashes; RankTwo unchanged; Sign exactly the single declared import replacement."
+    },
+    {
+      "kind": "read-only parent verification binding",
+      "result": "Archived parent verification digest matches, ok:true and full theorem:false; all65 archived parent input hashes independently recomputed unchanged."
+    },
+    {
+      "kind": "read-only actual audit module-set verification",
+      "result": "Final log covers exactly38 expected defining modules:3 scientific project modules and35 supplier modules; no error diagnostics."
+    }
+  ],
+  "inspected_root_evidence": {
+    "build": "Root reported lake build ArtinLandmarks passed; reviewer did not execute the command.",
+    "audit_log": "/tmp/landmark1-pre-review-audit-v2.log",
+    "audit_log_sha256": "072c21e47fb15c78ef2fe4327841155a6b0d1a9d311ec76f78aafa743162103b",
+    "audit_exit_code": "0 as reported by root; successful actual log inspected",
+    "landmark_declarations_audited": 40,
+    "supplier_declarations_audited": 763,
+    "defining_modules_audited": 38,
+    "final_sequence_theorem_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "resolved_harness_issue": "Initial audit counter-inference failure retained in development evidence; Nat annotations only in harness resolved it without scientific-source changes."
+  },
+  "not_independently_executed": [
+    "Lean compilation",
+    "transitive axiom audit command",
+    "kernel replay",
+    "clean rebuild",
+    "full mathlib replay"
+  ],
+  "mathematical_repairs_required": [],
+  "remaining_scope_limits": [
+    "No comparison of arrangement fundamental groups with Artin normalizer groups.",
+    "No proof that the geometric and algebraic exact sequences commute over the conventional terminal group.",
+    "No arrangement asphericity or K(pi,1) theorem.",
+    "No topological-Artin/presentation equivalence.",
+    "No claim of any of the four later selected landmarks or full Theorem1.8."
+  ],
+  "reviewer_b_consulted": false,
+  "historical_parent_proofs_reviews_and_configuration_unchanged": true,
+  "original_article_error_asserted": false,
+  "report": "landmarks/reviews/landmark1-a.md"
+}
