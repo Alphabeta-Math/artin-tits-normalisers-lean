@@ -85,7 +85,12 @@ Lean is pinned to `v4.36.0-rc2`, mathlib to
 `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9`, and the Lake manifest binds every
 transitive package revision. The local record's starting Git HEAD predates this
 implementation; its exact input hashes bind the checked working tree instead.
-The fresh GitHub run will independently bind the committed source snapshot.
+The fresh GitHub run
+[43484468188](https://github.com/lazyinspirit/workflow-engines/actions/runs/43484468188)
+passed in 7m59s against commit `b41b7634c78cd3927dd2216246203535ad93d248`.
+All 24 command exits are zero; its 32 input hashes and all downloaded log hashes
+match the committed origin package. The run metadata, complete compressed log
+and artifact are archived in `full/github-evidence/run-43484468188/`.
 
 ## Reproduce and archive
 
@@ -97,6 +102,9 @@ python3 scripts/verify.py --output evidence/full-reproduction
 ```
 
 The scoped GitHub workflow runs those commands on a fresh runner, with review
-and source/provenance checks mandatory. Its actual run result, logs and artifact
-will be archived under `full/github-evidence/` after execution. No unrelated
-engine or serving content was changed for this proof.
+and source/provenance checks mandatory. Its successful records are durably
+archived under `full/github-evidence/`. The owner subsequently requested the
+dedicated public repository
+[artin-tits-normalisers-lean](https://github.com/lazyinspirit/artin-tits-normalisers-lean);
+its unchanged mathematical source and adapted standalone packaging have their
+own verification records. No unrelated engine or serving content was changed.

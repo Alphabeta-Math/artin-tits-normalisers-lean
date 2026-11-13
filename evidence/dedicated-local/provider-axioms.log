@@ -1,0 +1,468 @@
+TauCeti.ArtinGroup.{u_1} {B : Type u_1} (M : CoxeterMatrix B) : Type u_1
+TauCeti.ArtinGroup.gen.{u_1} {B : Type u_1} (M : CoxeterMatrix B) (i : B) : TauCeti.ArtinGroup M
+TauCeti.ArtinGroup.toCoxeterGroup.{u_1, u_3} {B : Type u_1} {W : Type u_3} [Group W] {M : CoxeterMatrix B}
+  (cs : CoxeterSystem M W) : TauCeti.ArtinGroup M →* W
+TauCeti.ArtinGroup.toCoxeterGroup_surjective.{u_1, u_3} {B : Type u_1} {W : Type u_3} [Group W] {M : CoxeterMatrix B}
+  (cs : CoxeterSystem M W) : Function.Surjective ⇑(TauCeti.ArtinGroup.toCoxeterGroup cs)
+TauCeti.ArtinGroup.prod_map_gen_braidWord.{u_1} {B : Type u_1} (M : CoxeterMatrix B) (i i' : B) :
+  (List.map (TauCeti.ArtinGroup.gen M) (CoxeterSystem.braidWord M i i')).prod =
+    (List.map (TauCeti.ArtinGroup.gen M) (CoxeterSystem.braidWord M i' i)).prod
+TauCeti.matsumoto.{u_1, u_2, u_3} {B : Type u_1} {W : Type u_2} [Group W] {M : CoxeterMatrix B} (cs : CoxeterSystem M W)
+  {G : Type u_3} [Monoid G] (f : B → G)
+  (hbraid :
+    ∀ (i j : B), (List.map f (CoxeterSystem.braidWord M i j)).prod = (List.map f (CoxeterSystem.braidWord M j i)).prod)
+  {ω ω' : List B} (hω : cs.IsReduced ω) (hω' : cs.IsReduced ω') (hprod : cs.wordProd ω = cs.wordProd ω') :
+  (List.map f ω).prod = (List.map f ω').prod
+CoxeterSystem.parabolic.{u_1, u_2} {B : Type u_1} {W : Type u_2} [Group W] {M : CoxeterMatrix B}
+  (cs : CoxeterSystem M W) (J : Set B) : Subgroup W
+CoxeterSystem.exists_isMinimalCosetRep.{u_1, u_2} {B : Type u_1} {W : Type u_2} [Group W] {M : CoxeterMatrix B}
+  (cs : CoxeterSystem M W) (J : Set B) (w : W) : ∃ v ∈ cs.parabolic J, cs.IsMinimalCosetRep J (w * v)
+CoxeterSystem.length_mul_of_isMinimalCosetRep.{u_1, u_2} {B : Type u_1} {W : Type u_2} [Group W] {M : CoxeterMatrix B}
+  (cs : CoxeterSystem M W) {J : Set B} {u : W} (hu : cs.IsMinimalCosetRep J u) {v : W} (hv : v ∈ cs.parabolic J) :
+  cs.length (u * v) = cs.length u + cs.length v
+CoxeterSystem.exists_isReduced_wordProd_eq_of_mem_parabolic.{u_1, u_2} {B : Type u_1} {W : Type u_2} [Group W]
+  {M : CoxeterMatrix B} (cs : CoxeterSystem M W) {J : Set B} {w : W} (hw : w ∈ cs.parabolic J) :
+  ∃ ω, cs.IsReduced ω ∧ (∀ i ∈ ω, i ∈ J) ∧ cs.wordProd ω = w
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation_mem_artinRelationsSet: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.reverse_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.IsReduced.isLeftDescent_wordProd_cons: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_ne_one: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_zpow_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.mem_artinRelationsSet._simp_1: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.mapDomain_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRepProdParabolicEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.subsingleton_of_isEmpty: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_rightDescent_mem_of_mem_parabolic_of_ne_one: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.commute_simple_of_eq_two: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.simple_mul_simple_pow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.eq_minimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.exists_wordProd_alternatingWord_mul_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_self_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.mk: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_of_forall_mem_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelationsSet: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.lift: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exchangeCondition_right: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.braidWord: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.braidEquivalent_of_isReduced_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord_two: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolicProdEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation_def: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_iff_isLeftInversion._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic_of_isReduced: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin CoxeterSystem.braidWord.eq_1: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_or_of_forall_mem_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_of_eq_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exchangeCondition: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.isReduced_cons_of_not_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.lift_gen: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_induction_on: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionSwapFun.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_of_isRightInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionParity.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.induction_on: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_pow_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_iff_isRightInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin _private.TauCeti.GroupTheory.Coxeter.Artin.0.TauCeti.artinRelationsSet.eq_1: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.exponentSum_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.append_left: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append_right: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.orderOf_simple_mul_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.length_eq_orderOf_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_mul_self: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.wordProd_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.inv_mul_minimalCosetRep_mem._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_braid: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.not_isRightDescent_mul_of_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRepProdParabolicEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.rec: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic _private.TauCeti.GroupTheory.Coxeter.Parabolic.0.CoxeterSystem.parabolic.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord_three: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.eq_of_inv_mul_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.orderOf_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.minimalCosetRep_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_comm_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.mem_artinRelationsSet: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.simple_mul_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.matsumoto: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_single_self: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic _private.TauCeti.GroupTheory.Coxeter.Geometric.Basic.0.CoxeterMatrix.geometricForm.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.IsReduced.isChain_ne: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_mul_gen_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.of_eq_gen: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_isReduced_wordProd_eq_of_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.isConj_wordProd_append_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_iff_isLeftInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionSwapHom.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.pow_length_eq_one_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.isLiftable_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.isReduced_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.symm: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.symm: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.recOn: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.closure_range_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto CoxeterSystem.isReduced_braidWord: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto CoxeterSystem.isReduced_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.trans: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolicProdEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.existsUnique_isMinimalCosetRep_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.casesOn: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_or_of_isReduced: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.prod_map_eq: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.length_le_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_of_mem_parabolic_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append_left: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_ne_one._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_le_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.mem_parabolic_iff_exists_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.of_isBraidMove: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.length_eq: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_minimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.length_eq: [propext, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_self_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.prod_map_eq: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exists_isReduced_sublist: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_of_isLeftInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.existsUnique_reducedWordLift: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.simple_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_add_two_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.exists_mem_parabolic_pair_mul_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_le_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.strongExchange_right: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic _private.TauCeti.GroupTheory.Coxeter.Geometric.Basic.0.CoxeterMatrix.geometricReflection.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.deletionCondition: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_pow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.braidEquivalent_iff_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_iff_isRightInversion._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_single_single: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricForm_geometricRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.hom_ext: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_mapDomain_mapDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_single_self: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.sum_parabolic_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.length_mul_of_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.exponentSum: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation_mul_simple_single: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.prod_map_gen_braidWord: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.existsUnique_mem_parabolic_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_wordProd_eq_of_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.isReduced_cons_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_zpow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.strongExchange: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_one: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.length_mul_of_forall_not_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.refl: [Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic _private.TauCeti.GroupTheory.Coxeter.Parabolic.0.CoxeterSystem.minimalCosetRep.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.append_right: [propext,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_apply_of_ne: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.hom_ext_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_mono: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup: [propext, Classical.choice, Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.simple_mul_eq_mul_simple_of_length_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_mul_pow: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.inv_mul_minimalCosetRep_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+PROVIDER_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+Audited 171 supplier declarations; axiom allowlist passed
