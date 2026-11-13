@@ -1,0 +1,20 @@
+{
+  "kind": "github-landmark1-verification-archive",
+  "repository": "lazyinspirit/artin-tits-normalisers-lean",
+  "run_id": 43498322108,
+  "source_commit": "ae95c1a4828f2bfc6f1b4880c861c41bc620468a",
+  "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43498322108",
+  "conclusion": "success",
+  "landmark_1_proved": true,
+  "full_theorem_1_8_proved": false,
+  "archived_at": "2026-11-13T20:08:48.358460+00:00",
+  "artifact_id": 14073750424,
+  "artifact_zip_sha256": "d8481016cb292ab41929bde89818de39e3fb7e38bafe83c5e17f77866d05cb80",
+  "commands_checked": 11,
+  "kernel_replays": 5,
+  "inputs_checked": 85,
+  "unchanged_parent_inputs": 65,
+  "audited_modules": 38,
+  "axiom_audit_summary": "Audited 40 landmark declarations and 763 supplier declarations",
+  "all_input_review_command_log_hashes_match": true
+}

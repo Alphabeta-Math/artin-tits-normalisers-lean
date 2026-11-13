@@ -115,6 +115,18 @@ GitHub workflow repeats the new verification from a fresh checkout and
 archives its actual records. Its successful run will be linked only after
 completion.
 
+The fresh [GitHub run 43498322108](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43498322108)
+has now **succeeded** on source commit
+`ae95c1a4828f2bfc6f1b4880c861c41bc620468a`. All 11 commands and five
+individual module replays passed. The downloaded record matches all 85
+current input hashes, both review receipts and every command-log digest;
+all 65 parent inputs remain unchanged. The permanent
+[archive](github-evidence/run-43498322108/README.md) retains the complete raw
+artifact ZIP, readable verification JSON, compressed full Actions output,
+metadata, archive checks and checksums. The local pre-commit input hashes
+and the fresh CI source commit identify the checked mathematics explicitly.
+This is completion of landmark 1, not of Theorem 1.8.
+
 ## Next landmark
 
 Landmark 2 is the reduced ribbon groupoid and its actual Artin-normalizer
