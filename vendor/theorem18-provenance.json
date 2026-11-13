@@ -1,0 +1,390 @@
+{
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "purpose": "Unchanged minimal whole-module import closure for TauCeti.IsAspherical, TauCeti.IsEilenbergMacLaneSpaceOne, and IsCoveringMap.isAspherical.",
+  "root_modules": [
+    "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering"
+  ],
+  "upstream_lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "project_lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "upstream_mathlib_revision": "e8ba86fa9744dd8d90f48c1752bc735f61a4ca81",
+  "project_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "license": {
+    "identifier": "Apache-2.0",
+    "upstream_path": "LICENSE",
+    "existing_vendor_path": "vendor/LICENSE.TauCeti",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "copyright_and_author_headers": "Preserved byte-for-byte in every module."
+  },
+  "modifications": [],
+  "modules": [
+    "TauCeti.AlgebraicTopology.EilenbergMacLane.Basic",
+    "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering",
+    "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+    "TauCeti.AlgebraicTopology.FundamentalGroup.Product",
+    "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+    "TauCeti.Analysis.Normed.Module.Ball.Homeomorph",
+    "TauCeti.CategoryTheory.Groupoid.SingleObj",
+    "TauCeti.Topology.Homotopy.Covering",
+    "TauCeti.Topology.Homotopy.Cube.Basic",
+    "TauCeti.Topology.Homotopy.Cube.OpenBox",
+    "TauCeti.Topology.Homotopy.Cube.Radius",
+    "TauCeti.Topology.Homotopy.Extension.Ball",
+    "TauCeti.Topology.Homotopy.Extension.Basic",
+    "TauCeti.Topology.Homotopy.GenLoop.Covering",
+    "TauCeti.Topology.Homotopy.GenLoop.Map",
+    "TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Covering",
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Map",
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Product",
+    "TauCeti.Topology.Homotopy.Path",
+    "TauCeti.Topology.PiCurry",
+    "TauCeti.Topology.UnitInterval"
+  ],
+  "files_sha256": {
+    "TauCeti/AlgebraicTopology/EilenbergMacLane/Basic.lean": "3e44a7116f624a8984e88dcca177f6f80ca566aa33e5dbe07eaca28f5f6d6efa",
+    "TauCeti/AlgebraicTopology/EilenbergMacLane/Covering.lean": "bd5738fac0ea6506438d7d2f25f53c967f08fac0845dbaf42148c6fbc8301232",
+    "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8",
+    "TauCeti/AlgebraicTopology/FundamentalGroup/Product.lean": "21088cd5caba5de6548bb20ececf9e5efd51222f8f300c6e6ac769c3a23a5fc3",
+    "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+    "TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean": "341012061fcf52ac3e95318f17dd13f40f93e15b631d7a0218fdb1a45cbc2d5c",
+    "TauCeti/CategoryTheory/Groupoid/SingleObj.lean": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f",
+    "TauCeti/Topology/Homotopy/Covering.lean": "180b4b4986d1f7928ebf478ef5b3a9788a8345eec3381fa3e409469f5e10f2fd",
+    "TauCeti/Topology/Homotopy/Cube/Basic.lean": "d47877282082a81fca05e4849a644a3e82e17c1f7e30d42282ab32814b1ab17d",
+    "TauCeti/Topology/Homotopy/Cube/OpenBox.lean": "67a6b62fcaf731dfe223efe6f4bd17b4c90e5698029948ef18092509c3334afa",
+    "TauCeti/Topology/Homotopy/Cube/Radius.lean": "5a7396d737e3d6701f53c36da8ce260088df6b1c2f5611c94b85e05dba9cc4f8",
+    "TauCeti/Topology/Homotopy/Extension/Ball.lean": "61651b1102c76c45bfa138845e307d9a88407d4d6d5643c15cfd74170c80eaaf",
+    "TauCeti/Topology/Homotopy/Extension/Basic.lean": "cc8bc6b26ae0c72e6fa227d87514099f5c8518144b5928e9bf5671f1498b3c20",
+    "TauCeti/Topology/Homotopy/GenLoop/Covering.lean": "18605e241a593384ff9f3a851ad43218e442db54ba64a1c0f6a57d01cd3c505e",
+    "TauCeti/Topology/Homotopy/GenLoop/Map.lean": "5c9af11ee60bf2976cac31420b3a3eac13294c3c08b8b545612d0ff8f7350ce9",
+    "TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean": "fb60626e4e08f26f0eab093d3933453ef282d90b187afd3b1103890caf9bc644",
+    "TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean": "0d778d590e3e38acbce7e78a43a9d10fe91e1da6254c6a80b81a26f0be3b50e8",
+    "TauCeti/Topology/Homotopy/HomotopyGroup/Covering.lean": "c8142d2fc1eb53411d7ccf13fe4b861fb2e5f0b694c2ecf50df846cdcb48c0d1",
+    "TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean": "cbc31a7de7227e46ecf33e940775423cdb094dac683c6fa0395d4a4e06b46abd",
+    "TauCeti/Topology/Homotopy/HomotopyGroup/Product.lean": "66fa521875a4af1a8db3bcd9ea542ced6fe5144f1309412a9efc647ae17cb1fd",
+    "TauCeti/Topology/Homotopy/Path.lean": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+    "TauCeti/Topology/PiCurry.lean": "b2058fb9b64716eddae65e22daa0bbab7f9f5b1f1031f9f33b855fe93a799b21",
+    "TauCeti/Topology/UnitInterval.lean": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402"
+  },
+  "module_sources_and_imports": {
+    "TauCeti.AlgebraicTopology.EilenbergMacLane.Basic": {
+      "upstream_path": "TauCeti/AlgebraicTopology/EilenbergMacLane/Basic.lean",
+      "vendor_path": "vendor/TauCeti/AlgebraicTopology/EilenbergMacLane/Basic.lean",
+      "bytes": 9255,
+      "sha256": "3e44a7116f624a8984e88dcca177f6f80ca566aa33e5dbe07eaca28f5f6d6efa",
+      "imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroup.Product",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Product"
+      ]
+    },
+    "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering": {
+      "upstream_path": "TauCeti/AlgebraicTopology/EilenbergMacLane/Covering.lean",
+      "vendor_path": "vendor/TauCeti/AlgebraicTopology/EilenbergMacLane/Covering.lean",
+      "bytes": 8305,
+      "sha256": "bd5738fac0ea6506438d7d2f25f53c967f08fac0845dbaf42148c6fbc8301232",
+      "imports": [
+        "Mathlib.Algebra.Group.Equiv.Opposite",
+        "Mathlib.Algebra.Group.Subgroup.Ker",
+        "TauCeti.AlgebraicTopology.EilenbergMacLane.Basic",
+        "TauCeti.Topology.Homotopy.Covering",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Covering"
+      ]
+    },
+    "TauCeti.AlgebraicTopology.FundamentalGroup.Basic": {
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+      "vendor_path": "vendor/TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+      "bytes": 16272,
+      "sha256": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8",
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+        "TauCeti.CategoryTheory.Groupoid.SingleObj",
+        "TauCeti.Topology.Homotopy.Path"
+      ]
+    },
+    "TauCeti.AlgebraicTopology.FundamentalGroup.Product": {
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/Product.lean",
+      "vendor_path": "vendor/TauCeti/AlgebraicTopology/FundamentalGroup/Product.lean",
+      "bytes": 4612,
+      "sha256": "21088cd5caba5de6548bb20ececf9e5efd51222f8f300c6e6ac769c3a23a5fc3",
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+        "Mathlib.Topology.Homotopy.Product"
+      ]
+    },
+    "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+      "vendor_path": "vendor/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+      "bytes": 4875,
+      "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+        "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+        "Mathlib.CategoryTheory.IsConnected"
+      ]
+    },
+    "TauCeti.Analysis.Normed.Module.Ball.Homeomorph": {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean",
+      "vendor_path": "vendor/TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean",
+      "bytes": 15870,
+      "sha256": "341012061fcf52ac3e95318f17dd13f40f93e15b631d7a0218fdb1a45cbc2d5c",
+      "imports": [
+        "Mathlib.Analysis.Convex.GaugeRescale",
+        "Mathlib.Analysis.Normed.Module.Ball.Homeomorph",
+        "Mathlib.Analysis.Normed.Module.Convex",
+        "Mathlib.Topology.Algebra.Module.FiniteDimension",
+        "Mathlib.Topology.UnitInterval"
+      ]
+    },
+    "TauCeti.CategoryTheory.Groupoid.SingleObj": {
+      "upstream_path": "TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+      "vendor_path": "vendor/TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+      "bytes": 7637,
+      "sha256": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f",
+      "imports": [
+        "Mathlib.CategoryTheory.Groupoid",
+        "Mathlib.CategoryTheory.SingleObj"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Covering": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Covering.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Covering.lean",
+      "bytes": 12125,
+      "sha256": "180b4b4986d1f7928ebf478ef5b3a9788a8345eec3381fa3e409469f5e10f2fd",
+      "imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+        "Mathlib.Topology.Homotopy.Lifting"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Cube.Basic": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Cube/Basic.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Cube/Basic.lean",
+      "bytes": 20544,
+      "sha256": "d47877282082a81fca05e4849a644a3e82e17c1f7e30d42282ab32814b1ab17d",
+      "imports": [
+        "Mathlib.Topology.Homotopy.HomotopyGroup",
+        "Mathlib.Topology.Connected.PathConnected",
+        "Mathlib.Topology.Homotopy.Contractible",
+        "TauCeti.Topology.PiCurry"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Cube.OpenBox": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Cube/OpenBox.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Cube/OpenBox.lean",
+      "bytes": 9836,
+      "sha256": "67a6b62fcaf731dfe223efe6f4bd17b4c90e5698029948ef18092509c3334afa",
+      "imports": [
+        "TauCeti.Topology.Homotopy.Cube.Radius",
+        "TauCeti.Topology.Homotopy.Extension.Ball"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Cube.Radius": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Cube/Radius.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Cube/Radius.lean",
+      "bytes": 18129,
+      "sha256": "5a7396d737e3d6701f53c36da8ce260088df6b1c2f5611c94b85e05dba9cc4f8",
+      "imports": [
+        "Mathlib.Topology.Homotopy.HomotopyGroup",
+        "TauCeti.Analysis.Normed.Module.Ball.Homeomorph",
+        "TauCeti.Topology.Homotopy.Cube.Basic"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Extension.Ball": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Extension/Ball.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Extension/Ball.lean",
+      "bytes": 13941,
+      "sha256": "61651b1102c76c45bfa138845e307d9a88407d4d6d5643c15cfd74170c80eaaf",
+      "imports": [
+        "TauCeti.Topology.Homotopy.Extension.Basic",
+        "Mathlib.Analysis.Convex.Contractible",
+        "Mathlib.Analysis.Normed.Module.Convex"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Extension.Basic": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Extension/Basic.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Extension/Basic.lean",
+      "bytes": 23772,
+      "sha256": "cc8bc6b26ae0c72e6fa227d87514099f5c8518144b5928e9bf5671f1498b3c20",
+      "imports": [
+        "Mathlib.Topology.Homotopy.Basic"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.GenLoop.Covering": {
+      "upstream_path": "TauCeti/Topology/Homotopy/GenLoop/Covering.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/GenLoop/Covering.lean",
+      "bytes": 8399,
+      "sha256": "18605e241a593384ff9f3a851ad43218e442db54ba64a1c0f6a57d01cd3c505e",
+      "imports": [
+        "Mathlib.Topology.Homotopy.Lifting",
+        "TauCeti.Topology.Homotopy.GenLoop.Map",
+        "TauCeti.Topology.Homotopy.Cube.Basic"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.GenLoop.Map": {
+      "upstream_path": "TauCeti/Topology/Homotopy/GenLoop/Map.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/GenLoop/Map.lean",
+      "bytes": 3685,
+      "sha256": "5c9af11ee60bf2976cac31420b3a3eac13294c3c08b8b545612d0ff8f7350ce9",
+      "imports": [
+        "Mathlib.Topology.Homotopy.HomotopyGroup"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange": {
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean",
+      "bytes": 27900,
+      "sha256": "fb60626e4e08f26f0eab093d3933453ef282d90b187afd3b1103890caf9bc644",
+      "imports": [
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Collar": {
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean",
+      "bytes": 13990,
+      "sha256": "0d778d590e3e38acbce7e78a43a9d10fe91e1da6254c6a80b81a26f0be3b50e8",
+      "imports": [
+        "TauCeti.Topology.Homotopy.Cube.OpenBox"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Covering": {
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/Covering.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Covering.lean",
+      "bytes": 7491,
+      "sha256": "c8142d2fc1eb53411d7ccf13fe4b861fb2e5f0b694c2ecf50df846cdcb48c0d1",
+      "imports": [
+        "TauCeti.Topology.Homotopy.Cube.Basic",
+        "TauCeti.Topology.Homotopy.GenLoop.Covering",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Map": {
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean",
+      "bytes": 13276,
+      "sha256": "cbc31a7de7227e46ecf33e940775423cdb094dac683c6fa0395d4a4e06b46abd",
+      "imports": [
+        "TauCeti.Topology.Homotopy.GenLoop.Map"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.HomotopyGroup.Product": {
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/Product.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Product.lean",
+      "bytes": 12433,
+      "sha256": "66fa521875a4af1a8db3bcd9ea542ced6fe5144f1309412a9efc647ae17cb1fd",
+      "imports": [
+        "Mathlib.Topology.Homotopy.Product",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+      ]
+    },
+    "TauCeti.Topology.Homotopy.Path": {
+      "upstream_path": "TauCeti/Topology/Homotopy/Path.lean",
+      "vendor_path": "vendor/TauCeti/Topology/Homotopy/Path.lean",
+      "bytes": 41149,
+      "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+      "imports": [
+        "Mathlib.Topology.Subpath",
+        "Mathlib.Topology.Homotopy.Contractible",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+        "Mathlib.Topology.Connected.LocallyPathConnected",
+        "TauCeti.Topology.UnitInterval",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+      ]
+    },
+    "TauCeti.Topology.PiCurry": {
+      "upstream_path": "TauCeti/Topology/PiCurry.lean",
+      "vendor_path": "vendor/TauCeti/Topology/PiCurry.lean",
+      "bytes": 6956,
+      "sha256": "b2058fb9b64716eddae65e22daa0bbab7f9f5b1f1031f9f33b855fe93a799b21",
+      "imports": [
+        "Mathlib.Topology.Homeomorph.Lemmas"
+      ]
+    },
+    "TauCeti.Topology.UnitInterval": {
+      "upstream_path": "TauCeti/Topology/UnitInterval.lean",
+      "vendor_path": "vendor/TauCeti/Topology/UnitInterval.lean",
+      "bytes": 4607,
+      "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+      "imports": [
+        "Mathlib.Topology.UnitInterval",
+        "Mathlib.Topology.Order.ProjIcc"
+      ]
+    }
+  },
+  "mathlib_import_roots": [
+    "Mathlib.Algebra.Group.Equiv.Opposite",
+    "Mathlib.Algebra.Group.Subgroup.Ker",
+    "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+    "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+    "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+    "Mathlib.Analysis.Convex.Contractible",
+    "Mathlib.Analysis.Convex.GaugeRescale",
+    "Mathlib.Analysis.Normed.Module.Ball.Homeomorph",
+    "Mathlib.Analysis.Normed.Module.Convex",
+    "Mathlib.CategoryTheory.Groupoid",
+    "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+    "Mathlib.CategoryTheory.IsConnected",
+    "Mathlib.CategoryTheory.SingleObj",
+    "Mathlib.Topology.Algebra.Module.FiniteDimension",
+    "Mathlib.Topology.Connected.LocallyPathConnected",
+    "Mathlib.Topology.Connected.PathConnected",
+    "Mathlib.Topology.Homeomorph.Lemmas",
+    "Mathlib.Topology.Homotopy.Basic",
+    "Mathlib.Topology.Homotopy.Contractible",
+    "Mathlib.Topology.Homotopy.HomotopyGroup",
+    "Mathlib.Topology.Homotopy.Lifting",
+    "Mathlib.Topology.Homotopy.Product",
+    "Mathlib.Topology.Order.ProjIcc",
+    "Mathlib.Topology.Subpath",
+    "Mathlib.Topology.UnitInterval"
+  ],
+  "source_file_count": 23,
+  "source_bytes": 305059,
+  "historical_provenance_file": "vendor/provenance.json",
+  "historical_provenance_sha256": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5",
+  "historical_sources_unchanged": true,
+  "mathlib_compatibility": {
+    "requirement": "Compile unchanged sources against project pins; see verification record.",
+    "evidence_path": "evidence/theorem18-local/verification.json"
+  },
+  "acceptance": {
+    "status": "Provenance alone is not acceptance; require hash-bound statement reviews, successful build, transitive axiom audit and module kernel replay.",
+    "review_paths": [
+      "docs/theorem18/reviews/foundations-a.json",
+      "docs/theorem18/reviews/foundations-b.json"
+    ],
+    "verification_path": "evidence/theorem18-local/verification.json",
+    "full_theorem_1_8_proved": false
+  },
+  "selected_declarations": [
+    {
+      "name": "TauCeti.IsAspherical",
+      "module": "TauCeti.AlgebraicTopology.EilenbergMacLane.Basic",
+      "statement": "def IsAspherical (X : Type u) [TopologicalSpace X] (x : X) : Prop := PathConnectedSpace X \u2227 \u2200 n : \u2115, Subsingleton (\u03c0_ (n + 2) X x)",
+      "public_api": "TauCeti.isAspherical_iff; TauCeti.IsAspherical.mk; TauCeti.IsAspherical.pathConnectedSpace; TauCeti.IsAspherical.subsingleton_homotopyGroup"
+    },
+    {
+      "name": "TauCeti.IsEilenbergMacLaneSpaceOne",
+      "module": "TauCeti.AlgebraicTopology.EilenbergMacLane.Basic",
+      "statement": "def IsEilenbergMacLaneSpaceOne (G : Type u) [Group G] (X : Type v) [TopologicalSpace X] (x : X) : Prop := IsAspherical X x \u2227 Nonempty (FundamentalGroup X x \u2243* G)",
+      "public_api": "TauCeti.isEilenbergMacLaneSpaceOne_iff; TauCeti.IsEilenbergMacLaneSpaceOne.mk"
+    },
+    {
+      "name": "IsCoveringMap.isAspherical",
+      "module": "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering",
+      "statement": "theorem IsCoveringMap.isAspherical {E X : Type*} [TopologicalSpace E] [TopologicalSpace X] {p : E \u2192 X} {e : E} {x : X} (hp : IsCoveringMap p) (hp_surj : Function.Surjective p) (he : p e = x) (h : TauCeti.IsAspherical E e) : TauCeti.IsAspherical X x",
+      "hypotheses_note": "No extra connectivity, local compactness, Hausdorff, local path connectedness, simple connectedness, or finiteness hypothesis. Source asphericity h already packages PathConnectedSpace E."
+    },
+    {
+      "name": "IsCoveringMap.mapOfEq_injective",
+      "module": "TauCeti.Topology.Homotopy.Covering",
+      "statement": "theorem IsCoveringMap.mapOfEq_injective {E X : Type*} [TopologicalSpace E] [TopologicalSpace X] {p : E \u2192 X} {e : E} {x : X} (hp : IsCoveringMap p) (he : p e = x) : Function.Injective (FundamentalGroup.mapOfEq \u27e8p, hp.continuous\u27e9 he)",
+      "hypotheses_note": "Already in the required unchanged closure; does not assume simply connected total space."
+    }
+  ],
+  "usage_note": "The upstream public definitions are not marked @[expose]; downstream proofs should use their public iff lemmas, constructors and projection theorems instead of assuming they unfold across module boundaries."
+}

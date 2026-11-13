@@ -1,0 +1,19 @@
+{
+  "kind": "theorem18-foundations-source-inventory",
+  "full_theorem_1_8_proved": false,
+  "project_source_sha256": {
+    "ArtinTheorem18.lean": "ff079b93a23f8c3e2e9535ad54ae71dae12923dcbebc4c4c17923550d593e914",
+    "ArtinNormalisers/Theorem18/ArrangementTopology.lean": "e17eb88a02201854c545aa4be4a397f0457845921903676d362b5c94e66e272e",
+    "ArtinNormalisers/Theorem18/CoveringSequence.lean": "5173fd6df5bac7b17fb33344e9d042a5d8d4e258bd22bb087ab02f882584d9f3",
+    "ArtinNormalisers/Theorem18/Geometry.lean": "310a600d1d1a1b36aefa9190b2705d48f5115fd26e701a4569a7e791bad36098",
+    "ArtinNormalisers/Theorem18/NormalizerAction.lean": "54b0dc36cf3ef6c399119c8a641e759b1d0474bf94d650c208314f4c4d3c99aa"
+  },
+  "new_vendor_provenance_sha256": "e4442d85498d9894d93e4c91ac313b116b6a46c4a527d9995dd20dd308bba0fd",
+  "historical_source_inventory_sha256": "4e09907e8289d6ad65111da7950cd8a64dcc2422db58cd9934c13da83b9df5f4",
+  "scope": "Actual geometry, quotient action and orbit space, nonemptiness/path connectedness, generic covering exactness and higher-homotopy covering suppliers only. Full comparison and asphericity unproved.",
+  "configuration_sha256": {
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "a4f4bede07139843865bb695f0c939825a54aefcdb5c5e403c067eec83a116ac",
+    "lake-manifest.json": "2b09091fec88c9bc3930b46b4ed3013c2f1d22ed539cc1b7e9cc8380fefb52ba"
+  }
+}

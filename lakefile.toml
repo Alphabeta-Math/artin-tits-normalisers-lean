@@ -17,5 +17,9 @@ name = "ArtinNormalisers"
 name = "ArtinNormalisersFull"
 
 [[lean_lib]]
+name = "ArtinTheorem18"
+
+[[lean_lib]]
 name = "TauCeti"
 srcDir = "vendor"
+leanOptions = { autoImplicit = true }

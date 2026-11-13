@@ -25,7 +25,8 @@ env.setdefault("LEAN_NUM_THREADS", "2")
 
 def science_inputs():
     files = [ROOT / "ArtinNormalisers.lean", ROOT / "ArtinNormalisersFull.lean",
-             *sorted(ROOT.glob("ArtinNormalisers/**/*.lean"))]
+             *sorted(p for p in ROOT.glob("ArtinNormalisers/**/*.lean")
+                     if "Theorem18" not in p.parts)]
     return {str(f.relative_to(ROOT)): hashlib.sha256(f.read_bytes()).hexdigest()
             for f in files}
 
@@ -74,10 +75,9 @@ def check_reviews():
     module_files = {m.replace(".", "/") + ".lean" for m in provenance["modules"]}
     if module_files != set(provenance["files_sha256"]):
         raise RuntimeError("Supplier module/file inventories disagree")
-    actual_vendor = {str(p.relative_to(ROOT / "vendor"))
-                     for p in ROOT.glob("vendor/TauCeti/**/*.lean")}
-    if actual_vendor != module_files:
-        raise RuntimeError("Missing or extra supplier modules")
+    # Other theorem targets have separate suppliers and acceptance records.
+    # The exact historical closure is bound above, including all source bytes.
+    # It is not enlarged by unrelated files now present in vendor/.
     record["source_inventory_sha256"] = hashlib.sha256(inventory_file.read_bytes()).hexdigest()
     record["vendor_provenance_sha256"] = provenance_digest
     record["upstream_supplier_revision"] = provenance["revision"]
@@ -110,7 +110,8 @@ def save():
 provenance = json.loads((ROOT / "vendor/provenance.json").read_text())
 project_modules = ["ArtinNormalisers." + str(p.relative_to(ROOT / "ArtinNormalisers"))
                    .removesuffix(".lean").replace("/", ".")
-                   for p in sorted(ROOT.glob("ArtinNormalisers/**/*.lean"))]
+                   for p in sorted(ROOT.glob("ArtinNormalisers/**/*.lean"))
+                   if "Theorem18" not in p.parts]
 commands = [
     ("lean-version", ["lean", "--version"]),
     ("lake-version", ["lake", "--version"]),

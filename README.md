@@ -3,7 +3,37 @@
 Public repository for formalizing results from Garnier, Heng, Licata and Yacobi,
 *Normalisers of parabolic subgroups of Artin–Tits groups and Tits cone intersections*,
 arXiv:2509.21915v3. The completed result currently covered is the full algebraic
-Lemma 2.8.
+Lemma 2.8. Work on Theorem 1.8 is recorded separately below.
+
+## Theorem 1.8: foundations in progress
+
+**Theorem 1.8 is not yet proved.** The new optional `ArtinTheorem18` target
+defines the actual relative dual-space arrangement complement and natural
+normalizer quotient action, with their actual subspace/orbit topologies.
+It proves openness, nonemptiness and path connectedness of the finite-type
+complement, continuity of the action, and generic covering exactness.
+
+The GitHub prerequisite search found usable mathlib covering monodromy and
+TauCeti higher-homotopy covering-transfer results. The additional 23 unchanged
+TauCeti modules have separate [provenance](vendor/theorem18-provenance.json),
+[statement reviews](docs/theorem18/reviews/) and verification. Ordinary Artin
+Salvetti proofs found on GitHub do not identify this restricted complement;
+they are not imported without that missing comparison.
+
+The main missing proofs are the finite chamber/stabilizer geometry, freeness
+of the quotient action, ribbon-groupoid identification, the equivariant
+geometric fundamental-group comparison, and Deligne asphericity. The full
+[plan](docs/theorem18/PLAN.md) retains every conclusion of the article.
+No desired comparison or asphericity is inserted as an axiom.
+
+To reproduce the separate prerequisite checks after fetching dependencies:
+
+```bash
+python3 scripts/verify_theorem18.py --output evidence/theorem18-reproduction
+```
+
+A passing prerequisite record explicitly sets `full_theorem_1_8_proved` to
+`false`. The existing verifier below continues to certify only Lemma 2.8.
 
 ## Lemma 2.8: the full algebraic normalizer exact sequence
 
@@ -65,7 +95,7 @@ The remaining normalizer-lifting argument is now proved:
 5. Descend to the quotient, combine surjectivity with the kernel theorem, and
    use the injective subgroup inclusion to obtain the short exact sequence.
 
-Ten unchanged TauCeti modules are vendored at the exact revision recorded in
+The algebraic target uses ten unchanged TauCeti modules at the exact revision recorded in
 [`vendor/provenance.json`](vendor/provenance.json). They supply the concrete
 Artin presentation, Matsumoto, standard parabolic minima/lengths and their
 proof prerequisites. Their source hashes, Apache-2.0 license and original

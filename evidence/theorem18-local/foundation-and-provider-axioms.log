@@ -1,0 +1,2965 @@
+ArtinNormalisers.Theorem18.quotientCovering_fundamentalGroup_shortExact.{u_1, u_2, u_3} {E : Type u_1} {X : Type u_2}
+  [TopologicalSpace E] [TopologicalSpace X] {p : E → X} {G : Type u_3} [Group G] [MulAction G E]
+  (hp : IsQuotientCoveringMap p G) {x : X} (e : ↑(p ⁻¹' {x})) [PathConnectedSpace E] :
+  Function.Injective ⇑(FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯) ∧
+    (FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯).range =
+        (hp.fundamentalGroupToMulOpposite e).ker ∧
+      Function.Surjective ⇑(hp.fundamentalGroupToMulOpposite e)
+ArtinNormalisers.Theorem18.Complement.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) : Type u_1
+ArtinNormalisers.Theorem18.OrbitSpace.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) : Type u_1
+ArtinNormalisers.Theorem18.isOpen_complementSet.{u_1} {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group]
+  (J : Set I) : IsOpen (ArtinNormalisers.Theorem18.complementSet M J)
+ArtinNormalisers.Theorem18.mem_relativeSubspace_iff_fixed.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  (φ : ArtinNormalisers.Theorem18.Dual I) :
+  φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J ↔
+    ∀ w ∈ ArtinNormalisers.Artin.coxeterParabolic M J, ((ArtinNormalisers.Theorem18.dualAction M) w) φ = φ
+ArtinNormalisers.Theorem18.quotientComplementAction.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) :
+  ArtinNormalisers.Artin.coxeterNormalizerQuotient M J →* Equiv.Perm (ArtinNormalisers.Theorem18.Complement M J)
+ArtinNormalisers.Theorem18.isPathConnected_complementSet.{u_2} {I : Type u_2} (M : CoxeterMatrix I) [Finite M.Group]
+  (J : Set I) : IsPathConnected (ArtinNormalisers.Theorem18.complementSet M J)
+TauCeti.isAspherical_iff.{u} {X : Type u} [TopologicalSpace X] {x : X} :
+  TauCeti.IsAspherical X x ↔ PathConnectedSpace X ∧ ∀ (n : ℕ), Subsingleton (HomotopyGroup.Pi (n + 2) X x)
+TauCeti.isEilenbergMacLaneSpaceOne_iff.{u, v} {G : Type u} [Group G] {X : Type v} [TopologicalSpace X] {x : X} :
+  TauCeti.IsEilenbergMacLaneSpaceOne G X x ↔ TauCeti.IsAspherical X x ∧ Nonempty (FundamentalGroup X x ≃* G)
+IsCoveringMap.isAspherical.{u_1, u_2} {E : Type u_1} {X : Type u_2} [TopologicalSpace E] [TopologicalSpace X]
+  {p : E → X} {e : E} {x : X} (hp : IsCoveringMap p) (hp' : Function.Surjective p) (he : p e = x)
+  (h : TauCeti.IsAspherical E e) : TauCeti.IsAspherical X x
+IsCoveringMap.homotopyGroupPiMulEquiv.{u_2, u_3} {X : Type u_2} {E : Type u_3} [TopologicalSpace X] [TopologicalSpace E]
+  {p : E → X} (hp : IsCoveringMap p) (e : E) (n : ℕ) : HomotopyGroup.Pi (n + 2) E e ≃* HomotopyGroup.Pi (n + 2) X (p e)
+TauCeti.FundamentalGroup.map_range_eq_bot_of_subsingleton.{u_2, u_3} {X : Type u_2} [TopologicalSpace X] {A : Type u_3}
+  [TopologicalSpace A] {a₀ : A} [Subsingleton (FundamentalGroup A a₀)] (f : C(A, X)) :
+  (FundamentalGroup.map f a₀).range = ⊥
+TauCeti.FundamentalGroup.map_range_le_of_subsingleton.{u_2, u_3} {X : Type u_2} [TopologicalSpace X] {A : Type u_3}
+  [TopologicalSpace A] {a₀ : A} [Subsingleton (FundamentalGroup A a₀)] (f : C(A, X))
+  (H : Subgroup (FundamentalGroup X (f a₀))) : (FundamentalGroup.map f a₀).range ≤ H
+TauCeti.FundamentalGroup.mapOfEq_range_eq_bot_of_subsingleton.{u_2, u_3} {X : Type u_2} [TopologicalSpace X]
+  {A : Type u_3} [TopologicalSpace A] {a₀ : A} [Subsingleton (FundamentalGroup A a₀)] (f : C(A, X)) {x : X}
+  (h : f a₀ = x) : (FundamentalGroup.mapOfEq f h).range = ⊥
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox _private.TauCeti.Topology.Homotopy.Cube.OpenBox.0.TauCeti.cubeLiftDen.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialDen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_5: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation_mem_artinRelationsSet: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.reverse_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.IsReduced.isLeftDescent_wordProd_cons: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.piOptionEquivProdHomeomorph_mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_ne_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_zpow_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement.eq_1: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] {ι : Type u_2} (f : ι → E →ₗ[ℝ] ℝ),
+  ArtinNormalisers.Theorem18.pairComplement f = {p | ∀ (a : ι), ArtinNormalisers.Theorem18.pairEvaluation (f a) p ≠ 0}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.instFunLike: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopy.cast.congr_simp: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_8: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)) (c : ℝ)
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑(c • φ) ∈ ArtinNormalisers.Theorem18.relativeSubspace J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_8: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace._proof_2: ∀
+  {I : Type u_1} (J : Set I), 0 ∈ {φ | ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairEvaluation: {E :
+    Type u_1} →
+  [inst : AddCommGroup E] → [inst_1 : _root_.Module ℝ E] → (E →ₗ[ℝ] ℝ) → E × E → ℂ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairEvaluation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.mem_artinRelationsSet._simp_1: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.mapDomain_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic GenLoop.apply_symm_of_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.injective_map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary.eq_1: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_full: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_zero_one_snd_mem_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRepProdParabolicEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualTopologicalSpace: {I : Type u_1} →
+  TopologicalSpace (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualTopologicalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.dense_boundary: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval Set.Icc.coe_addNSMul: [propext]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopyAlong: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.isPathConnected_cube: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.instContractibleSpaceForallElemRealUnitInterval_tauCeti: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaHomeomorph_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.continuous_pairAffineLine: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] [ContinuousAdd E]
+  [ContinuousSMul ℝ E] (p q : E × E), Continuous (ArtinNormalisers.Theorem18.pairAffineLine p q)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.continuous_pairAffineLine: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic Path.Homotopic.Quotient.cast_mem_arrows_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_eq_continuousMap_const_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.subsingleton_of_isEmpty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_le_of_simplyConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic IsClopen.hasHomotopyExtensionProperty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_rightDescent_mem_of_mem_parabolic_of_ne_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeContraction: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.homotopicWith_uncurry_trans_trans_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.isEilenbergMacLaneSpaceOne_fundamentalGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_restrictedHyperplane: ∀
+  {I : Type u_1} (J : Set I) (r : ArtinNormalisers.Theorem18.Vector I)
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  φ ∈ ArtinNormalisers.Theorem18.restrictedHyperplane J r ↔ ↑φ r = 0
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_restrictedHyperplane: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation: [propext, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.isOpenQuotientMap_orbitProjection: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I), IsOpenQuotientMap (ArtinNormalisers.Theorem18.orbitProjection M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.isOpenQuotientMap_orbitProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_half_sq_lt_one_of_abs_lt: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.commute_simple_of_eq_two: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.update_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.unitBallHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.simple_mul_simple_pow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_iff_exists_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.eq_minimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_add_toReal_eq_add_pi_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root.eq_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (w : M.Group) (i : I),
+  ArtinNormalisers.Theorem18.root M w i =
+    (M.toCoxeterSystem.geometricRepresentation w) (ArtinNormalisers.Theorem18.simpleRoot i)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.one_le_cubeLiftDen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedArrangement: {I : Type u_1} →
+  CoxeterMatrix I → (J : Set I) → Set (Submodule ℝ ↥(ArtinNormalisers.Theorem18.relativeSubspace J))
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedArrangement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoidFunctor.homotopicMapsNatIso_app: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mk_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.homotopicRel_of_retracing: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_9: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)) (c : ℝ)
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑(c • φ), ⋯⟩ =
+    (RingHom.id ℝ) c • ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑φ, ⋯⟩
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_9: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod_map_fst_map_snd: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._proof_5: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (s : Set (Set (ArtinNormalisers.Theorem18.Complement M J))),
+  (∀ t ∈ s, ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1 M J t) →
+    ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1 M J (⋃₀ s)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mono: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._proof_3: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1 M J Set.univ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → (J : Set I) → Set (ArtinNormalisers.Theorem18.Complement M J) → Prop
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_def: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.exists_wordProd_alternatingWord_mul_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_openBoxContractionTo: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementUnivUnique._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I), (0, 0) ∈ ArtinNormalisers.Theorem18.complementSet M Set.univ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementUnivUnique._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.Vector: Type u_2 → Type (max u_2 0)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.Vector: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_self_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.isPathConnected_cubeBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.unitBallHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.OrbitSpace: {I : Type u_1} →
+  CoxeterMatrix I → Set I → Type u_1
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.OrbitSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piCurryHomeomorph_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_sub_mul_sin_sq_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.pathConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.mk: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.map_codRestrict: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering GenLoop.map_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.ofHomotopyRel: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval Set.abs_projIcc_le: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_of_forall_mem_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.coe_map: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.subsingleton_homotopyGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_lt_cos_mul_cos_add_cos_div_sin_mul_sin: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine: {E :
+    Type u_1} →
+  [inst : AddCommGroup E] → [_root_.Module ℝ E] → E × E → E × E → ℂ → E × E
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval Set.Icc.continuous_addNSMul: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.map_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root_one: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (i : I), ArtinNormalisers.Theorem18.root M 1 i = ArtinNormalisers.Theorem18.simpleRoot i
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.map_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_relativeSubspace._simp_1: ∀
+  {I : Type u_1} (J : Set I) (φ : ArtinNormalisers.Theorem18.Dual I),
+  (φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J) = ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_relativeSubspace._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_of_subpath_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale_one: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotient_smul_eq: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (q : ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  q • p = ((ArtinNormalisers.Theorem18.quotientComplementAction M J) q) p
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotient_smul_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball _private.TauCeti.Topology.Homotopy.Extension.Ball.0.TauCeti.ballRadialDen.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementSet: {I : Type u_1} →
+  CoxeterMatrix I →
+    (J : Set I) →
+      Set (↥(ArtinNormalisers.Theorem18.relativeSubspace J) × ↥(ArtinNormalisers.Theorem18.relativeSubspace J))
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementSet: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.surjective_map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelationsSet: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.lift: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeContraction_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isEilenbergMacLaneSpaceOne_totalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exchangeCondition_right: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDen_def: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_of_subpath_trans._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.complementPathConnectedSpace: ∀
+  {I : Type u_2} (M : CoxeterMatrix I) [Finite M.Group] (J : Set I),
+  PathConnectedSpace (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.complementPathConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.collar_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering GenLoop.map_homotopic_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.rec: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.braidWord: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_symm_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.braidEquivalent_of_isReduced_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.existsUnique_continuousMap_lifts_of_range_le_subgroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_cubeHomeomorphClosedBall_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.openBoxContraction.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_mapOfEq_of_comp_eq_id: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mk_const_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isAspherical_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_3: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  (fun p =>
+        ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).1,
+            ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).2),
+          ⋯⟩)
+      ((fun p =>
+          ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).1,
+              ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).2),
+            ⋯⟩)
+        p) =
+    p
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitProjection: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) → ArtinNormalisers.Theorem18.Complement M J → ArtinNormalisers.Theorem18.OrbitSpace M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord_two: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedArrangement_proper: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {H : Submodule ℝ ↥(ArtinNormalisers.Theorem18.relativeSubspace J)},
+  H ∈ ArtinNormalisers.Theorem18.restrictedArrangement M J → H ≠ ⊤
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedArrangement_proper: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientRepresentation: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      Representation ℝ (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+        ↥(ArtinNormalisers.Theorem18.relativeSubspace J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaConstHomeomorph_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolicProdEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph_symm_apply_none: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.map_fst_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.artinRelation_def: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong._sizeOf_inst: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.eq_of_trans_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_map_of_comp_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.quotientCovering_fundamentalGroup_shortExact: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {G : Type u_3}
+  [inst_2 : Group G] [inst_3 : MulAction G E] (hp : IsQuotientCoveringMap p G) {x : X} (e : ↑(p ⁻¹' {x}))
+  [PathConnectedSpace E],
+  Function.Injective ⇑(FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯) ∧
+    (FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯).range =
+        (hp.fundamentalGroupToMulOpposite e).ker ∧
+      Function.Surjective ⇑(hp.fundamentalGroupToMulOpposite e)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.quotientCovering_fundamentalGroup_shortExact: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_iff_isLeftInversion._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.truncateOfLE_range_subset: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic_of_isReduced: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      Representation ℝ ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)
+        ↥(ArtinNormalisers.Theorem18.relativeSubspace J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin CoxeterSystem.braidWord.eq_1: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementContinuousConstSMul: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ContinuousConstSMul (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J) (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementContinuousConstSMul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.parabolic_le_normalizerRepresentation_ker: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  (ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf (ArtinNormalisers.Theorem18.CoxeterNormalizer M J) ≤
+    MonoidHom.ker (ArtinNormalisers.Theorem18.normalizerRepresentation M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.parabolic_le_normalizerRepresentation_ker: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeBoundarySetoid: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isEilenbergMacLaneSpaceOne_fundamentalGroup_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientRepresentation._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J))).Normal
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientRepresentation._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_or_of_forall_mem_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_homotopy_forall_mem_of_isSimplyConnected: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_one: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path unitInterval.exists_vertex_family: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.piOptionEquivProdHomeomorph_symm_mem_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_of_eq_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_lt_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialDen_def: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.dist_apply_cubeCenter: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots.eq_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Theorem18.retainedRoots M J = {r | r ∈ ArtinNormalisers.Theorem18.roots M ∧ ∃ φ, ↑φ r ≠ 0}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation._proof_1: SMulCommClass
+  ℝ ℝ ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exchangeCondition: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_fin_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_left_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.cos_pos_of_mem_uIoo: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupPiMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_extension: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.nonempty_homeomorph_cube_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_1: ∀
+  {I : Type u_1} (φ : ArtinNormalisers.Theorem18.Dual I),
+  (fun a => Finsupp.linearCombination ℝ a) ((fun φ i => φ (ArtinNormalisers.Theorem18.simpleRoot i)) φ) = φ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_homotopic: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.isReduced_cons_of_not_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.trans_apply_of_eq_two_mul: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeBoundarySetoid_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.transport: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.lift_gen: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic _private.TauCeti.Topology.Homotopy.Extension.Basic.0.TauCeti.tent.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.homotopic_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_mem_openBox: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  (((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).1,
+      ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).2) ∈
+    ArtinNormalisers.Theorem18.complementSet M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_induction_on: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.isPathConnected_pairComplement: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] [ContinuousAdd E]
+  [ContinuousSMul ℝ E] {ι : Type u_2} [Finite ι] (f : ι → E →ₗ[ℝ] ℝ),
+  (∀ (a : ι), ∃ x, (f a) x ≠ 0) → IsPathConnected (ArtinNormalisers.Theorem18.pairComplement f)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.isPathConnected_pairComplement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualT2Space: ∀ {I : Type u_1},
+  T2Space (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualT2Space: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizer_preserves_complement: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  {p : ↥(ArtinNormalisers.Theorem18.relativeSubspace J) × ↥(ArtinNormalisers.Theorem18.relativeSubspace J)},
+  p ∈ ArtinNormalisers.Theorem18.complementSet M J →
+    (((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) p.1,
+        ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) p.2) ∈
+      ArtinNormalisers.Theorem18.complementSet M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizer_preserves_complement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering HomotopyGroup.map_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.image: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.openBoxContractionTo.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path IsSimplyConnected.isPathHomotopyTrivial: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionSwapFun.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.subsingleton_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_update: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_zero_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isAspherical_totalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isEilenbergMacLaneSpaceOne_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement_nonempty: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] {ι : Type u_2} [Finite ι] (f : ι → E →ₗ[ℝ] ℝ),
+  (∀ (a : ι), ∃ x, (f a) x ≠ 0) → (ArtinNormalisers.Theorem18.pairComplement f).Nonempty
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement_nonempty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functorOfEndHom_map: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedArrangement.eq_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Theorem18.restrictedArrangement M J =
+    ArtinNormalisers.Theorem18.restrictedHyperplane J '' ArtinNormalisers.Theorem18.retainedRoots M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedArrangement.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.injective: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_of_isRightInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace_empty: ∀ {I : Type u_1},
+  ArtinNormalisers.Theorem18.relativeSubspace ∅ = ⊤
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_extension_of_isClosed: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.roots_finite: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group], (ArtinNormalisers.Theorem18.roots M).Finite
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.roots_finite: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition._sizeOf_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.map_comp: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_fst_le: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_symm_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot_retained_of_not_mem: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {i : I},
+  i ∉ J → ArtinNormalisers.Theorem18.simpleRoot i ∈ ArtinNormalisers.Theorem18.retainedRoots M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot_retained_of_not_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionParity.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.isOpen_complementSet: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group] (J : Set I), IsOpen (ArtinNormalisers.Theorem18.complementSet M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.isOpen_complementSet: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.isEilenbergMacLaneSpaceOne_fundamentalGroup_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.map_eval_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.codRestrict: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_2: SMulCommClass ℝ
+  ℝ ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.isOpen_iff_preimage_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.exists_int_eq_add_of_cos_sin_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.properlyDiscontinuous_quotientComplementAction: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) [Finite M.Group],
+  ProperlyDiscontinuousSMul (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J)
+    (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.properlyDiscontinuous_quotientComplementAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic GenLoop.ofProd_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.zero_mem_cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange _private.TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange.0.TauCeti.transportFamily.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_lt_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoid.nonempty_hom: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append: [propext,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairEvaluation_affineLine: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] (f : E →ₗ[ℝ] ℝ) (p q : E × E) (z : ℂ),
+  ArtinNormalisers.Theorem18.pairEvaluation f (ArtinNormalisers.Theorem18.pairAffineLine p q z) =
+    ArtinNormalisers.Theorem18.pairEvaluation f p +
+      z * (ArtinNormalisers.Theorem18.pairEvaluation f q - ArtinNormalisers.Theorem18.pairEvaluation f p)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairEvaluation_affineLine: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_of_path_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering GenLoop.map_homotopic_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.induction_on: [Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedHyperplane: {I : Type u_1} →
+  (J : Set I) → ArtinNormalisers.Theorem18.Vector I → Submodule ℝ ↥(ArtinNormalisers.Theorem18.relativeSubspace J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedHyperplane: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.sphereHomeomorphOfFinrankEq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.map_homotopyGroupEquivOfPath: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_4: ∀
+  {I : Type u_1} (x x_1 : ArtinNormalisers.Theorem18.Dual I),
+  (fun i => (x + x_1) (ArtinNormalisers.Theorem18.simpleRoot i)) = fun i =>
+    (x + x_1) (ArtinNormalisers.Theorem18.simpleRoot i)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functorOfEndHom_obj: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.closedBallHomeomorphOfFinrankEq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementAction: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      ArtinNormalisers.Artin.coxeterNormalizerQuotient M J →* Equiv.Perm (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piCurryHomeomorph: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._aux_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.bijective_map_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonpos_of_step_of_sub_pi_le: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_pi_mul_ne_zero_of_mem_Ioo_of_ne_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_pow_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.instFunLike._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjEquivalence: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.nonempty_fundamentalGroupMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.continuous_evaluation: ∀ {I : Type u_1}
+  (v : ArtinNormalisers.Theorem18.Vector I), Continuous fun φ => φ v
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.continuous_evaluation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_iff_isRightInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_right_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.homotopicWith_trans_trans_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin _private.TauCeti.GroupTheory.Coxeter.Artin.0.TauCeti.artinRelationsSet.eq_1: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.exponentSum_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_comp._proof_1: [propext]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_eq_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.mem_cylinderExtensionDomain_of_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_eq_empty: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_transAt: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.append_left: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_continuousMap_const_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mk_zero_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map.congr_simp: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_restrictedHyperplane._simp_1: ∀
+  {I : Type u_1} (J : Set I) (r : ArtinNormalisers.Theorem18.Vector I)
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  (φ ∈ ArtinNormalisers.Theorem18.restrictedHyperplane J r) = (↑φ r = 0)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_restrictedHyperplane._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append_right: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.orderOf_simple_mul_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.length_eq_orderOf_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.quotientCovering_fundamentalGroup_range_eq_ker: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {G : Type u_3}
+  [inst_2 : Group G] [inst_3 : MulAction G E] (hp : IsQuotientCoveringMap p G) {x : X} (e : ↑(p ⁻¹' {x})),
+  (FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯).range = (hp.fundamentalGroupToMulOpposite e).ker
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.quotientCovering_fundamentalGroup_range_eq_ker: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic Path.homotopic_refl_of_forall_mem_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_5: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  {
+      toFun := fun p =>
+        ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) 1) (↑p).1,
+            ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) 1) (↑p).2),
+          ⋯⟩,
+      invFun := fun p =>
+        ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) 1⁻¹) (↑p).1,
+            ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) 1⁻¹) (↑p).2),
+          ⋯⟩,
+      left_inv := ⋯, right_inv := ⋯ } =
+    1
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.exists_cosine_rule_parameter: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeCenter: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_mul_self: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_eq_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace._proof_1: ∀
+  {I : Type u_1} (J : Set I) {a b : ArtinNormalisers.Theorem18.Dual I},
+  a ∈ {φ | ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0} →
+    b ∈ {φ | ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0} →
+      a + b ∈ {φ | ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.wordProd_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_apply: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (w : M.Group) (φ : ArtinNormalisers.Theorem18.Dual I)
+  (v : ArtinNormalisers.Theorem18.Vector I),
+  (((ArtinNormalisers.Theorem18.dualAction M) w) φ) v = φ ((M.toCoxeterSystem.geometricRepresentation w⁻¹) v)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement: {E :
+    Type u_1} →
+  [inst : AddCommGroup E] → [inst_1 : _root_.Module ℝ E] → {ι : Type u_2} → (ι → E →ₗ[ℝ] ℝ) → Set (E × E)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.eq_of_joined: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.recOn: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.map_snd_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_nonpos_of_pi_le_of_le_two_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_7: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (φ ψ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑(φ + ψ), ⋯⟩ =
+    ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑φ, ⋯⟩ + ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑ψ, ⋯⟩
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_7: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_le_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_spec: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_cubeScale: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.inv_mul_minimalCosetRep_mem._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.existsUnique_continuousMap_lifts_of_subsingleton_fundamentalGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.homotopic_of_continuous_square: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_braid: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.not_isRightDescent_mul_of_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.fullyFaithfulSingleObjFunctor: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.sizeOf_spec: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonpos_of_step_of_add_pi_le: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.mem_pairComplement_iff._simp_1: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] {ι : Type u_2} (f : ι → E →ₗ[ℝ] ℝ) (p : E × E),
+  (p ∈ ArtinNormalisers.Theorem18.pairComplement f) = ∀ (a : ι), ¬((f a) p.1 = 0 ∧ (f a) p.2 = 0)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.mem_pairComplement_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.id.eq_1: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinatesHomeomorph: {I :
+    Type u_1} →
+  ArtinNormalisers.Theorem18.Dual I ≃ₜ (I → ℝ)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinatesHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.mem_pathComponent: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDen_le_two: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRepProdParabolicEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine_zero: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] (p q : E × E),
+  ArtinNormalisers.Theorem18.pairAffineLine p q 0 = p
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.fromPath_mk_out: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_of_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.bijective_map_iff_bijective_mapOfEq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.rec: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.abs_sub_half_le_cubeRadius: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.injEq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_pi_div_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.zero_mem_cubeBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_comp._proof_1: []
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.cubeHomeomorphClosedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_relativeSubspace: ∀ {I : Type u_1}
+  (J : Set I) (φ : ArtinNormalisers.Theorem18.Dual I),
+  φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J ↔ ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_relativeSubspace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.mem_cylinderExtensionDomain_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_zero._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_map_eval: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering HomotopyGroup.map_bijective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piCurryHomeomorph_symm_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.ctorIdx: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic _private.TauCeti.GroupTheory.Coxeter.Parabolic.0.CoxeterSystem.parabolic.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic TauCeti.prod_map_alternatingWord_three: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.recOn: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_3: SMulCommClass
+  ℝ ℝ ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_comp: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.eq_of_inv_mul_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.orderOf_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_eq_bot_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.geometricAction_mem_roots: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (w : M.Group) {r : ArtinNormalisers.Theorem18.Vector I},
+  r ∈ ArtinNormalisers.Theorem18.roots M →
+    (M.toCoxeterSystem.geometricRepresentation w) r ∈ ArtinNormalisers.Theorem18.roots M
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.geometricAction_mem_roots: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation._proof_2: SMulCommClass
+  ℝ ℝ ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_apply_eq_one_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.ctorIdx: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_eq_bot_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_symm_mem_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.minimalCosetRep_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map.congr_simp: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path IsPathHomotopyTrivial.nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.isOpenEmbedding_inclusion_comp_unitBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_comm_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.pi1EquivFundamentalGroup_map: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_openBoxContraction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates: {I : Type u_1} →
+  ArtinNormalisers.Theorem18.Dual I ≃ₗ[ℝ] I → ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.mapOfEq_range_eq_bot_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.mem_artinRelationsSet: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.refl_of_forall_mem_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep.simple_mul_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.exists_functor_map_asHom_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation: {I :
+    Type u_2} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      ↑(ArtinNormalisers.Theorem18.retainedRoots M J) → ↥(ArtinNormalisers.Theorem18.relativeSubspace J) →ₗ[ℝ] ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_of_subpath_trans._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.mem_relativeSubspace_iff_fixed: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (φ : ArtinNormalisers.Theorem18.Dual I),
+  φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J ↔
+    ∀ w ∈ ArtinNormalisers.Artin.coxeterParabolic M J, ((ArtinNormalisers.Theorem18.dualAction M) w) φ = φ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.mem_relativeSubspace_iff_fixed: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_le_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.roots: {I : Type u_1} →
+  CoxeterMatrix I → Set (ArtinNormalisers.Theorem18.Vector I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.roots: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functor_singleObj_ext_of_map_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.prodMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition._sizeOf_inst: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.matsumoto: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_comp: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_single_self: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph_symm_apply_some: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply_symm_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.cast_subpath_eq_codRestrict._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.map_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.instIsEmptyOfNatNat: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic _private.TauCeti.GroupTheory.Coxeter.Geometric.Basic.0.CoxeterMatrix.geometricForm.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.IsReduced.isChain_ne: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_id: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_mul_gen_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.of_eq_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.cast_subpath_eq_codRestrict: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.IsMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_eq_self: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_continuousMap_const_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.trans_apply_of_eq_two_mul_sub_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_isReduced_wordProd_eq_of_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toIcoMod_eq_toIcoMod_iff_coe_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root_ne_zero: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (w : M.Group) (i : I), ArtinNormalisers.Theorem18.root M w i ≠ 0
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root_ne_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.rec: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Basic CoxeterSystem.isConj_wordProd_append_comm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path IsPathHomotopyTrivial: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_map: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_iff_isLeftInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.image_unitBallHomeomorph_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange _private.TauCeti.GroupTheory.Coxeter.StrongExchange.0.CoxeterSystem.reflectionSwapHom.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.pow_length_eq_one_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_homotopy_apply_eq_of_trans_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange ContinuousMap.bijective_map_iff_of_path: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.finite_index: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group], Finite I
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.finite_index: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_empty: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I), ArtinNormalisers.Theorem18.retainedRoots M ∅ = ArtinNormalisers.Theorem18.roots M
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_empty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.transport_apply_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.isLiftable_geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.isReduced_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace._proof_3: ∀
+  {I : Type u_1} (J : Set I) (c : ℝ) {x : ArtinNormalisers.Theorem18.Dual I},
+  x ∈ {φ | ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0} →
+    c • x ∈ {φ | ∀ j ∈ J, φ (ArtinNormalisers.Theorem18.simpleRoot j) = 0}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → (J : Set I) → TopologicalSpace (ArtinNormalisers.Theorem18.OrbitSpace M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.symm: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.symm: [Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  { toFun := fun φ => ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑1) ↑φ, ⋯⟩, map_add' := ⋯, map_smul' := ⋯ } = 1
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.nonempty_homeomorph_Icc_prod_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_map: [propext, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_5: ∀
+  {I : Type u_1} (x : ℝ) (x_1 : ArtinNormalisers.Theorem18.Dual I),
+  (fun i => (x • x_1) (ArtinNormalisers.Theorem18.simpleRoot i)) = fun i =>
+    (x • x_1) (ArtinNormalisers.Theorem18.simpleRoot i)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.recOn: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_trans_homotopic_trans_of_homotopicWith: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.closure_range_gen: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.geometricAction_mem_retainedRoots: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  {r : ArtinNormalisers.Theorem18.Vector I},
+  r ∈ ArtinNormalisers.Theorem18.retainedRoots M J →
+    (M.toCoxeterSystem.geometricRepresentation ↑w) r ∈ ArtinNormalisers.Theorem18.retainedRoots M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.geometricAction_mem_retainedRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_add_toReal_eq_add_pi_or_eq_sub_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.of_basepoint: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.isClosed_relativeSubspace: ∀
+  {I : Type u_1} (J : Set I), IsClosed ↑(ArtinNormalisers.Theorem18.relativeSubspace J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.isClosed_relativeSubspace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto CoxeterSystem.isReduced_braidWord: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Covering IsCoveringMap.genLoopHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.HomotopyAlong.refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.exists_homotopy_of_restrict: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinatesHomeomorph._proof_1: ∀
+  {I : Type u_1}, Topology.IsInducing ⇑ArtinNormalisers.Theorem18.dualCoordinates.toEquiv
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinatesHomeomorph._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_orbitProjection: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I), Continuous (ArtinNormalisers.Theorem18.orbitProjection M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_orbitProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.Dual: Type u_2 → Type (max u_2 0)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.Dual: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic ContinuousMap.fundamentalGroupoid_map_obj_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd_mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.covering_fundamentalGroup_map_injective: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X}
+  (hp : IsCoveringMap p) (e : E), Function.Injective ⇑(FundamentalGroup.map { toFun := p, continuous_toFun := ⋯ } e)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.covering_fundamentalGroup_map_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piOptionEquivProdHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto CoxeterSystem.isReduced_alternatingWord: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange ContinuousMap.surjective_map_iff_of_path: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J) →* Equiv.Perm (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prodEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.collar: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.continuous_cubeRadius: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementUnivUnique._proof_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (p : ArtinNormalisers.Theorem18.Complement M Set.univ), p = ⟨(0, 0), ⋯⟩
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementUnivUnique._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace_univ: ∀ {I : Type u_1},
+  ArtinNormalisers.Theorem18.relativeSubspace Set.univ = ⊥
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.codRestrict.congr_simp: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_continuousMap_const: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.of_mulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.trans: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_monotone_range_subpath_subset: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.inj: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement_retainedEvaluation: ∀
+  {I : Type u_2} (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Theorem18.pairComplement (ArtinNormalisers.Theorem18.retainedEvaluation M J) =
+    ArtinNormalisers.Theorem18.complementSet M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairComplement_retainedEvaluation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.map_refl: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_option_iff: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolicProdEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot: {I : Type u_1} →
+  I → ArtinNormalisers.Theorem18.Vector I
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_zero: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.subpath_self: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.transport_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.noConfusionType: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.casesOn: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.subpath_subpath_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.existsUnique_isMinimalCosetRep_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk._flat_ctor: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk._flat_ctor: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.isEquivalence_singleObjFunctor: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.covering_fundamentalGroup_mapOfEq_injective: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X}
+  (hp : IsCoveringMap p) {e : E} {x : X} (he : p e = x),
+  Function.Injective ⇑(FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } he)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.CoveringSequence ArtinNormalisers.Theorem18.covering_fundamentalGroup_mapOfEq_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_apply_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.casesOn: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.continuous_map: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_complementSet_iff_arrangement: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I)
+  (p : ↥(ArtinNormalisers.Theorem18.relativeSubspace J) × ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  p ∈ ArtinNormalisers.Theorem18.complementSet M J ↔
+    ∀ H ∈ ArtinNormalisers.Theorem18.restrictedArrangement M J, ¬(p.1 ∈ H ∧ p.2 ∈ H)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.mem_complementSet_iff_arrangement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.subsingleton_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.collarHomotopy: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball _private.TauCeti.Topology.Homotopy.Extension.Ball.0.TauCeti.ballRadialProjection.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.isAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.cubeScale.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.eq_alternatingWord_or_of_isReduced: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.prod_map_eq: [propext,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_6: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (φ ψ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑(φ + ψ) ∈ ArtinNormalisers.Theorem18.relativeSubspace J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_6: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_4: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  (fun p =>
+        ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).1,
+            ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).2),
+          ⋯⟩)
+      ((fun p =>
+          ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).1,
+              ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).2),
+            ⋯⟩)
+        p) =
+    p
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.length_le_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_zero_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_of_mem_parabolic_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.append_left: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDen: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.isAspherical_of_subsingleton_homotopyGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction: {I : Type u_1} →
+  (M : CoxeterMatrix I) → Representation ℝ M.Group (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root: {I : Type u_1} →
+  (M : CoxeterMatrix I) → M.Group → I → ArtinNormalisers.Theorem18.Vector I
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.root: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaConstHomeomorph_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._proof_3: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1 M J Set.univ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_ne_one._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.roots.eq_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I), ArtinNormalisers.Theorem18.roots M = {r | ∃ w i, ArtinNormalisers.Theorem18.root M w i = r}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.roots.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_le_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementSet.eq_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Theorem18.complementSet M J =
+    {p | ∀ r ∈ ArtinNormalisers.Theorem18.retainedRoots M J, ¬(↑p.1 r = 0 ∧ ↑p.2 r = 0)}
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementSet.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.prodMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_comp: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualTopologicalAddGroup: ∀
+  {I : Type u_1}, IsTopologicalAddGroup (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualTopologicalAddGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_sphereHomeomorphOfFinrankEq_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.subsingleton_fundamentalGroup_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.preimage_appendHomeomorph_boundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_dualAction: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (w : M.Group), Continuous ⇑((ArtinNormalisers.Theorem18.dualAction M) w)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_dualAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot_not_retained_of_mem: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {j : I},
+  j ∈ J → ArtinNormalisers.Theorem18.simpleRoot j ∉ ArtinNormalisers.Theorem18.retainedRoots M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot_not_retained_of_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupMulEquivOfPath_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.Complement: {I : Type u_1} →
+  CoxeterMatrix I → Set I → Type u_1
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.Complement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_le_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonneg_of_step_of_le_sub_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → (J : Set I) → Set (ArtinNormalisers.Theorem18.OrbitSpace M J) → Prop
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.mem_parabolic_iff_exists_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.norm_cubeHomeomorphClosedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.CoxeterNormalizer: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → Set I → Subgroup M.Group
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.CoxeterNormalizer: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_6: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w z : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)),
+  {
+      toFun := fun p =>
+        ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) (w * z)) (↑p).1,
+            ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) (w * z)) (↑p).2),
+          ⋯⟩,
+      invFun := fun p =>
+        ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) (w * z)⁻¹) (↑p).1,
+            ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) (w * z)⁻¹) (↑p).2),
+          ⋯⟩,
+      left_inv := ⋯, right_inv := ⋯ } =
+    {
+        toFun := fun p =>
+          ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).1,
+              ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).2),
+            ⋯⟩,
+        invFun := fun p =>
+          ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).1,
+              ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w⁻¹) (↑p).2),
+            ⋯⟩,
+        left_inv := ⋯, right_inv := ⋯ } *
+      {
+        toFun := fun p =>
+          ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) z) (↑p).1,
+              ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) z) (↑p).2),
+            ⋯⟩,
+        invFun := fun p =>
+          ⟨(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) z⁻¹) (↑p).1,
+              ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) z⁻¹) (↑p).2),
+            ⋯⟩,
+        left_inv := ⋯, right_inv := ⋯ }
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_6: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_4: ∀
+  {I : Type u_1} (M : CoxeterMatrix I), SubmonoidClass (Subgroup M.Group) M.Group
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_add_toReal_eq_sub_pi_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_transport_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_mem_relativeSubspace: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {w : M.Group},
+  w ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J) →
+    ∀ {φ : ArtinNormalisers.Theorem18.Dual I},
+      φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J →
+        ((ArtinNormalisers.Theorem18.dualAction M) w) φ ∈ ArtinNormalisers.Theorem18.relativeSubspace J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_mem_relativeSubspace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.mem_pathComponent_of_mem: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation_apply_val: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ↑(((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) φ) = ((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑φ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation_apply_val: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.map_id: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_eq_one_of_subsingleton: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball ContinuousMap.nullhomotopic_iff_exists_extension_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic GenLoop.ofProd: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_map_fst_map_snd: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.of_isBraidMove: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.eq_zero_or_eq_one_or_mem_boundary_of_mem_cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.length_eq: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._proof_5: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (s : Set (Set (ArtinNormalisers.Theorem18.OrbitSpace M J))),
+  (∀ t ∈ s, ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1 M J t) →
+    ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1 M J (⋃₀ s)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._proof_5: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path isPathHomotopyTrivial_def: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.piMulEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.continuous_cubeLiftDeform: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.nonempty_homeomorph_closedBall_of_convex: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._proof_4: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (s t : Set (ArtinNormalisers.Theorem18.Complement M J)),
+  ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1 M J s →
+    ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1 M J t →
+      ArtinNormalisers.Theorem18.complementTopologicalSpace._aux_1 M J (s ∩ t)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace: {I : Type u_1} →
+  Set I → Submodule ℝ (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.relativeSubspace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContraction_mem_prodBoundary: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange ContinuousMap.injective_map_iff_of_path: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.casesOn: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementAction_mk: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  ((ArtinNormalisers.Theorem18.quotientComplementAction M J)
+        ((QuotientGroup.mk'
+            ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+              (ArtinNormalisers.Theorem18.CoxeterNormalizer M J)))
+          w))
+      p =
+    ((ArtinNormalisers.Theorem18.normalizerComplementAction M J) w) p
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementAction_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_minimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.of_trans_symm: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedHyperplane._proof_2: RingHomCompTriple
+  (RingHom.id ℝ) (RingHom.id ℝ) (RingHom.id ℝ)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedHyperplane._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_of_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots: {I : Type u_1} →
+  CoxeterMatrix I → Set I → Set (ArtinNormalisers.Theorem18.Vector I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualContinuousSMul: ∀ {I : Type u_1},
+  ContinuousSMul ℝ (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualContinuousSMul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.piMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.image_unitBallHomeomorph_ball: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.symm_symm: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_def: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_normalizerComplementAction: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)),
+  Continuous ⇑((ArtinNormalisers.Theorem18.normalizerComplementAction M J) w)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_normalizerComplementAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.length_eq: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_id: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.refl_cast: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep_eq_self_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.closedBallHomeomorphProd.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjEquivalence_functor: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.simplyConnectedSpace_of_subsingleton_fundamentalGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transport_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.exists_partition_with_property: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.piMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.prod_map_eq: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product FundamentalGroup.prodMulEquiv_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_le_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.exists_isReduced_sublist: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_sub_sq_mul_sin_sq_le_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.symm_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_leftInvSeq_of_isLeftInversion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t_zero: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.mul_sin_sq_lt_one_of_abs_le: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.existsUnique_reducedWordLift: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.continuous_cubeLiftTime: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.piEquiv_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Covering IsCoveringMap.genLoopHomeomorph: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_eq_zero_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.fundamentalGroupEquivFiber: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.simple_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → (J : Set I) → TopologicalSpace (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementTopologicalSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.image_of_isClosed: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle TauCeti.dvd_of_cos_two_mul_pi_div_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Product TauCeti.instSimplyConnectedSpaceProd: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_refl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.boundary_fin_succ_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.sin_sq_lt_one_of_abs_lt: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_symmAt: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_apply._proof_1: [propext]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_of_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.isPathConnected_complementSet: ∀
+  {I : Type u_2} (M : CoxeterMatrix I) [Finite M.Group] (J : Set I),
+  IsPathConnected (ArtinNormalisers.Theorem18.complementSet M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.isPathConnected_complementSet: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_add_two_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.update_mem_boundary: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.continuous_ballRadialProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.minimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.exists_pos_cosh_mul_sin_mul_sin_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeScale_zero: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.map_trans_cast: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.norm_cubeHomeomorphClosedBall_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.exists_mem_parabolic_pair_mul_of_isLeftDescent_pair: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_nonneg: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_le_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.sign_sub_pos_iff_toReal_lt_of_sign_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.strongExchange_right: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.toHomotopy: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.subsingleton_homotopyGroup_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom_id: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic _private.TauCeti.GroupTheory.Coxeter.Geometric.Basic.0.CoxeterMatrix.geometricReflection.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_faithful: [propext,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.HomotopyAlong.trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_pairing: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (w : M.Group) (φ : ArtinNormalisers.Theorem18.Dual I)
+  (r : ArtinNormalisers.Theorem18.Vector I),
+  (((ArtinNormalisers.Theorem18.dualAction M) w) φ) ((M.toCoxeterSystem.geometricRepresentation w) r) = φ r
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_pairing: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementMulAction: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      MulAction (ArtinNormalisers.Artin.coxeterNormalizerQuotient M J) (ArtinNormalisers.Theorem18.Complement M J)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientComplementMulAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_continuousMap_const_apply_eq_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.deletionCondition: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_pow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path _private.TauCeti.Topology.Homotopy.Path.0.Path.initialSegmentFamily.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedHyperplane._proof_1: SMulCommClass
+  ℝ ℝ ℝ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.restrictedHyperplane._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Matsumoto TauCeti.braidEquivalent_iff_wordProd_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.pathTowardZero._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.image_unitBallHomeomorph_sphere: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.symmAt.eq_1: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsCoveringMap.subsingleton_homotopyGroup_of_isAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.mem_rightInvSeq_iff_isRightInversion._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_single_single: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine.eq_1: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] (p q : E × E) (z : ℂ),
+  ArtinNormalisers.Theorem18.pairAffineLine p q z =
+    (p.1 + z.re • (q.1 - p.1) + z.im • -(q.2 - p.2), p.2 + z.im • (q.1 - p.1) + z.re • (q.2 - p.2))
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Covering IsQuotientCoveringMap.isEilenbergMacLaneSpaceOne: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Covering IsCoveringMap.apply_genLoopHomeomorph_symm_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricForm_geometricRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.hom_ext: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_id_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map_const: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong._sizeOf_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.subpath_apply_mem: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.of_basepoint: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.functorOfEndHom: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph Homeomorph.unitBall_symm_apply_coe: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaHomeomorph_symm_apply: [propext, Classical.choice, Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualContinuousNeg: ∀ {I : Type u_1},
+  ContinuousNeg (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualContinuousNeg: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_finite: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group] (J : Set I), (ArtinNormalisers.Theorem18.retainedRoots M J).Finite
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_finite: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_univ: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I), ArtinNormalisers.Theorem18.retainedRoots M Set.univ = ∅
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_one._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_mapDomain_mapDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl_trans_eq_reparam._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupEquivOfPath_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementUnivUnique: {I : Type u_1} →
+  (M : CoxeterMatrix I) → Unique (ArtinNormalisers.Theorem18.Complement M Set.univ)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementUnivUnique: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricForm_single_self: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairEvaluation.eq_1: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] (f : E →ₗ[ℝ] ℝ) (p : E × E),
+  ArtinNormalisers.Theorem18.pairEvaluation f p = { re := f p.1, im := f p.2 }
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairEvaluation.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic Path.Homotopic.Quotient.cast_mem_arrows_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map _private.TauCeti.Topology.Homotopy.GenLoop.Map.0.GenLoop.map.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_quotientComplementAction: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (q : ArtinNormalisers.Artin.coxeterNormalizerQuotient M J),
+  Continuous ⇑((ArtinNormalisers.Theorem18.quotientComplementAction M J) q)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_quotientComplementAction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.homotopyGroupTransport_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftTime_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox _private.TauCeti.Topology.Homotopy.Cube.OpenBox.0.TauCeti.cubeLiftTime.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.noConfusionType: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering HomotopyGroup.map_surjective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.map_fst_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaConstHomeomorph: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent: [Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot.eq_1: ∀ {I : Type u_1}
+  (i : I), ArtinNormalisers.Theorem18.simpleRoot i = Finsupp.single i 1
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.simpleRoot.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.refl.eq_1: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.sum_parabolic_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMap.mapOfEq_injective: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation._proof_3: RingHomCompTriple
+  (RingHom.id ℝ) (RingHom.id ℝ) (RingHom.id ℝ)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.retainedEvaluation._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.length_mul_of_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_cubeHomeomorphClosedBall_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.instTopologicalSpace._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.exponentSum: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterSystem.geometricRepresentation_mul_simple_single: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualContinuousAdd: ∀ {I : Type u_1},
+  ContinuousAdd (ArtinNormalisers.Theorem18.Dual I)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualContinuousAdd: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.prod_map_gen_braidWord: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi_homotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.hasHomotopyExtensionProperty_sphere_closedBall: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.existsUnique_mem_parabolic_mul: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.HomotopyAlong.transAt: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.image_of_isEmbedding: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.abs_coe_le_one: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_fromPath_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_comp_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  (((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).1,
+      ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) (↑p).2) ∈
+    ArtinNormalisers.Theorem18.complementSet M J
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerComplementAction._proof_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.sizeOf_spec: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_wordProd_eq_of_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._proof_4: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (s t : Set (ArtinNormalisers.Theorem18.OrbitSpace M J)),
+  ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1 M J s →
+    ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1 M J t →
+      ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._aux_1 M J (s ∩ t)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.orbitSpaceTopologicalSpace._proof_4: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.isReduced_cons_of_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.closedBallHomeomorphProd_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.gen_zpow_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.map_snd_prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.essSurj_singleObjFunctor: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_normalizerRepresentation: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)),
+  Continuous ⇑((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.continuous_normalizerRepresentation: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.le_pi_div_two_mul_sin: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.CategoryTheory.Groupoid.SingleObj TauCeti.Groupoid.singleObjFunctor_obj: [propext, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.mem_cylinderExtensionDomain_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.strongExchange: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Covering IsCoveringMap.homotopyGroupPiMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.subpath_cast_trans: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.complementSet_nonempty: ∀
+  {I : Type u_2} (M : CoxeterMatrix I) [Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Theorem18.complementSet M J).Nonempty
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.complementSet_nonempty: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.codRestrict_coe: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.cos_pi_div_pos: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_fromPath: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.length_mul_of_forall_not_isLeftDescent: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox _private.TauCeti.Topology.Homotopy.Cube.OpenBox.0.TauCeti.cubeLiftDeform.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.BraidEquivalent.refl: [Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_cubeScale: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_le_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.prod_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball ContinuousMap.HomotopicWith.exists_homotopicRel_range_subset: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.noConfusion: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_le_one_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoid.instIsConnected: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.map_eval_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_left_cancel: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.GenLoop.homotopic_transAt_transport: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.update_piOptionEquivProdHomeomorph_symm_some: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product GenLoop.pi_map_eval: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_simple_fixed_iff: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (i : I) (φ : ArtinNormalisers.Theorem18.Dual I),
+  ((ArtinNormalisers.Theorem18.dualAction M) (M.simple i)) φ = φ ↔ φ (ArtinNormalisers.Theorem18.simpleRoot i) = 0
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.dualAction_simple_fixed_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic _private.TauCeti.GroupTheory.Coxeter.Parabolic.0.CoxeterSystem.minimalCosetRep.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.nonneg_of_step_of_le_add_pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeContraction_apply_zero: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.one_sub_sq_le_one_sub_sq_mul_sin_sq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.instHomotopyLikeForallElemRealUnitIntervalValContinuousMapMemSetGenLoop: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.PiCurry TauCeti.piSigmaHomeomorph: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.pi_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_symm_lt_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds TauCeti.exists_abs_sub_int_lt_of_cos_lt: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w z : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J)),
+  { toFun := fun φ => ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑(w * z)) ↑φ, ⋯⟩, map_add' := ⋯, map_smul' := ⋯ } =
+    { toFun := fun φ => ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑w) ↑φ, ⋯⟩, map_add' := ⋯, map_smul' := ⋯ } *
+      { toFun := fun φ => ⟨((ArtinNormalisers.Theorem18.dualAction M) ↑z) ↑φ, ⋯⟩, map_add' := ⋯, map_smul' := ⋯ }
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.normalizerRepresentation._proof_2: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.map_nullhomotopic_of_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange TauCeti.nonempty_homotopyGroupMulEquiv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.isClosed_boundary: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Covering IsCoveringMapOn.injective_of_range_subset: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path _private.TauCeti.Topology.Homotopy.Path.0.Path.conjHomotopyFun.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.BraidEquivalence CoxeterSystem.IsBraidMove.append_right: [propext,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (r : ArtinNormalisers.Theorem18.Vector I),
+  r ∈ ArtinNormalisers.Theorem18.retainedRoots M J ↔
+    r ∈ ArtinNormalisers.Theorem18.roots M ∧ ArtinNormalisers.Theorem18.restrictedHyperplane J r ≠ ⊤
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.retainedRoots_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.isClosed_cylinderExtensionDomain: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_time: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph ContinuousLinearEquiv.norm_unitBallHomeomorph_lt_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.Normed.Module.Ball.Homeomorph TauCeti.coe_closedBallHomeomorphOfFinrankEq_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsEilenbergMacLaneSpaceOne.pi: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Geometric.Basic CoxeterMatrix.geometricReflection_apply_apply_of_ne: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.initialSegmentFamily_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Ball TauCeti.ballRadialProjection_def: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_rfl: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.openBoxContractionTo: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.parabolic_le_normalizerComplementAction_ker: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  (ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf (ArtinNormalisers.Theorem18.CoxeterNormalizer M J) ≤
+    (ArtinNormalisers.Theorem18.normalizerComplementAction M J).ker
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.parabolic_le_normalizerComplementAction_ker: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t_castSucc_le_succ: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.eq_two_mul_of_abs_toReal_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Product HomotopyGroup.prod_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeCenter_apply: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.hom_ext_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.continuous_initialSegmentFamily_uncurry: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientRepresentation_mk: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (w : ↥(ArtinNormalisers.Theorem18.CoxeterNormalizer M J))
+  (φ : ↥(ArtinNormalisers.Theorem18.relativeSubspace J)),
+  ((ArtinNormalisers.Theorem18.quotientRepresentation M J)
+        ((QuotientGroup.mk'
+            ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+              (ArtinNormalisers.Theorem18.CoxeterNormalizer M J)))
+          w))
+      φ =
+    ((ArtinNormalisers.Theorem18.normalizerRepresentation M J) w) φ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.NormalizerAction ArtinNormalisers.Theorem18.quotientRepresentation_mk: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_inv: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_3: ∀
+  {I : Type u_1} (a : I → ℝ),
+  (fun φ i => φ (ArtinNormalisers.Theorem18.simpleRoot i)) ((fun a => Finsupp.linearCombination ℝ a) a) = a
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.dualCoordinates._proof_3: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius _private.TauCeti.Topology.Homotopy.Cube.Radius.0.TauCeti.cubeCenter.eq_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.mapHom.congr_simp: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic FundamentalGroupoid.map_comp_map: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.mem_pairComplement_iff: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] {ι : Type u_2} (f : ι → E →ₗ[ℝ] ℝ) (p : E × E),
+  p ∈ ArtinNormalisers.Theorem18.pairComplement f ↔ ∀ (a : ι), ¬((f a) p.1 = 0 ∧ (f a) p.2 = 0)
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.mem_pairComplement_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle Real.Angle.toReal_sub_of_sign_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.trans_right_cancel: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.HasHomotopyExtensionProperty.isClosed: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.parabolic_mono: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.exists_isMinimalCosetRep: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic Cube.append_mem_boundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Map HomotopyGroup.map_map_of_comp_eq_id: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval Set.Icc.exists_eventually_addNSMul_eq_right: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.joinedIn_pairComplement: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] [ContinuousAdd E]
+  [ContinuousSMul ℝ E] {ι : Type u_2} [Finite ι] (f : ι → E →ₗ[ℝ] ℝ) {p q : E × E},
+  p ∈ ArtinNormalisers.Theorem18.pairComplement f →
+    q ∈ ArtinNormalisers.Theorem18.pairComplement f → JoinedIn (ArtinNormalisers.Theorem18.pairComplement f) p q
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.joinedIn_pairComplement: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementSet_univ: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I), ArtinNormalisers.Theorem18.complementSet M Set.univ = Set.univ
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.Geometry ArtinNormalisers.Theorem18.complementSet_univ: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.GenLoop.Map GenLoop.map: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.Quotient.subpath_zero_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_TYPE ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine_one: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] (p q : E × E),
+  ArtinNormalisers.Theorem18.pairAffineLine p q 1 = q
+FOUNDATION_AXIOMS ArtinNormalisers.Theorem18.ArrangementTopology ArtinNormalisers.Theorem18.pairAffineLine_one: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.cubeSplitHomeomorph_mem_prodBoundary_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.StrongExchange CoxeterSystem.simple_mul_eq_mul_simple_of_length_eq: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.coe_subpath: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic FundamentalGroup.mapOfEq_congr: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Radius TauCeti.cubeRadius_eq_one_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.isMinimalCosetRep_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.Basic TauCeti.Cube.mem_prodBoundary_iff._simp_1: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.exists_homotopy_extension_of_retraction: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Extension.Basic TauCeti.hasHomotopyExtensionProperty_iff: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Dihedral CoxeterSystem.wordProd_alternatingWord_eq_mul_pow: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.HomotopyGroup.Collar TauCeti.GenLoop.HomotopyAlong.mk.inj: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Path Path.Homotopic.of_conj_nullhomotopic: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.FundamentalGroup.Basic TauCeti.FundamentalGroup.map_range_eq_bot_of_simplyConnectedSpace: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.mk.injEq: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.Homotopy.Cube.OpenBox TauCeti.cubeLiftDeform_def: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.AlgebraicTopology.EilenbergMacLane.Basic TauCeti.IsAspherical.prod: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Artin TauCeti.ArtinGroup.toCoxeterGroup: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.Topology.UnitInterval unitInterval.Partition.t_last: [propext, Classical.choice, Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.inv_mul_minimalCosetRep_mem: [propext,
+ Classical.choice,
+ Quot.sound]
+FOUNDATION_AXIOMS TauCeti.GroupTheory.Coxeter.Parabolic CoxeterSystem.simple_mem_parabolic: [propext,
+ Classical.choice,
+ Quot.sound]
+Audited 145 new foundation declarations and 733 supplier declarations
+PREREQUISITES ONLY: Theorem 1.8 is not proved by this audit
