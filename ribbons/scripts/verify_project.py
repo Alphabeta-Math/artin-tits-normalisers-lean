@@ -247,7 +247,10 @@ def main() -> int:
                                                 "--porcelain", "--untracked-files=no"])
         if read_log(status).strip():
             raise RuntimeError("Pinned mathlib has tracked modifications")
-        run("build-project", ["lake", "build", "ArtinRibbons"])
+        # The audited supplier inventory deliberately includes both pinned roots.
+        # Two optional supplier modules are not imported by the project aggregate;
+        # a cold checkout must build them explicitly before artifact binding.
+        run("build-project", ["lake", "build", "ArtinRibbons", *provenance["roots"]])
         unchanged(full_hash=True)
         audit = run("project-axioms-and-statements", ["lake", "env", "lean", "ProjectAudit.lean"])
         declarations = rows(audit, "PROJECT_DECL_JSON ")

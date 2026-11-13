@@ -1,0 +1,19 @@
+{
+  "archive_validation_passed": true,
+  "ci_verification_passed": false,
+  "source_commit": "3ba48146bcf17e2d141928f64c6171261b0a7037",
+  "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43513688458",
+  "artifact_digest_matches": true,
+  "source_input_count": 835,
+  "project_build_and_audit_passed": true,
+  "project_unique_declarations": 999,
+  "project_physical_occurrences": 1000,
+  "project_kernel_replays_performed": false,
+  "fresh_provider_replays_performed": false,
+  "failure": "FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean/OAI/Topology/ArtinGroups/Cancellation/SphericalPositiveCancelLeft.olean'",
+  "missing_build_targets": [
+    "OAI.Topology.ArtinGroups.Cancellation.SphericalPositiveCancelLeft",
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple"
+  ],
+  "correction": "Build both pinned supplier roots explicitly, in addition to the project aggregate, before artifact binding/audits/replay."
+}

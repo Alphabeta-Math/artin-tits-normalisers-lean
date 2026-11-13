@@ -45,11 +45,13 @@ component without changing its actual arrows.
 3. All 24 project modules passed fresh exact kernel replay. The prior
    completed 359-supplier replay certificate was reused only after every
    current bound input/artifact/executable/log hash passed validation.
-4. The [complete local verifier](../../../ribbons/evidence/landmark2-local-final/verification.json)
+4. The [complete local verifier](../../../ribbons/evidence/landmark2-local-buildfix/verification.json)
    passed. Earlier failed accounting attempts and interrupted development
    replays remain accurately recorded, with their old snapshots preserved.
-5. The source commit will trigger fresh GitHub CI with a fresh rebuild and
-   all 359 supplier replays. Its actual result and raw records will be
+5. The corrected source commit will trigger fresh GitHub CI, explicitly
+   building both supplier roots and performing all 359 supplier replays.
+   The first cold CI run passed the project build/audit but exposed two
+   omitted supplier build targets; its failed record is archived separately. Its actual result and raw records will be
    archived separately; no future CI success is presumed here.
 
 ## Landmark 3 obligations preserved

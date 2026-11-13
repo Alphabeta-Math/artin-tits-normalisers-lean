@@ -98,7 +98,7 @@ These providers supply positive Artin prerequisites, not a preexisting
 ribbon-normalizer theorem or geometric arrangement comparison.
 
 The 23 scientific modules contain 4,855 source lines; their aggregate also
-compiled. The [final local verification](../../../ribbons/evidence/landmark2-local-final/verification.json)
+compiled. The [final local verification](../../../ribbons/evidence/landmark2-local-buildfix/verification.json)
 passed, binding the exact proof/configuration/vendor/review inputs and all
 65 unchanged parent context hashes. The [source inventory](../../../ribbons/source-inventory.json)
 and [reviews A](../../../ribbons/reviews/landmark2-a.md) and
@@ -134,12 +134,24 @@ parts and checks their exact type/proof/universe identity; it retains the
 snapshots and failed records are preserved. This was an instrumentation
 coverage repair, not a change to a mathematical statement or proof.
 
-Fresh CI will rebuild from the committed pins and replay all 359 providers
-with two workers, in addition to the new project replay battery. Its result
-will be archived after it actually succeeds. Kernel replay uses the bundled
-Lean kernel relative to imported environments, including pinned mathlib;
-it is not a second kernel or a fresh replay of all mathlib. No geometric
-comparison, asphericity, or full Theorem 1.8 completion follows.
+The [first fresh CI run](github-evidence/run-43513688458/README.md)
+failed after the cold project build and the full project declaration audit
+passed. The driver attempted to bind the full 359-provider inventory, while
+the aggregate's import closure built only 357. The two optional supplier
+modules were present in the local development cache, hiding the omission.
+The driver now explicitly builds both pinned supplier roots as well as the
+project aggregate. The failed run's actual artifact, logs and source hashes
+remain archived; no kernel replay success is inferred from that run.
+The corrected complete local verification linked above passed. Mathematical
+sources and accepted statement-review hashes are unchanged.
+
+Fresh CI will rebuild with the corrected explicit supplier targets and
+replay all 359 providers with two workers, in addition to the new project
+replay battery. Its result will be archived after it actually succeeds.
+Kernel replay uses the bundled Lean kernel relative to imported environments,
+including pinned mathlib; it is not a second kernel or a fresh replay of all
+mathlib. No geometric comparison, asphericity, or full Theorem 1.8 completion
+follows.
 
 ## Consulted-source findings retained
 

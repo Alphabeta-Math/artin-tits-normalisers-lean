@@ -27,7 +27,7 @@ source, compiled artifact, executable and log hash checks. Individual commands:
 
 ```bash
 cd ribbons
-lake build ArtinRibbons
+lake build ArtinRibbons OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange
 lake env lean ProviderAudit.lean
 lake env lean ProviderPhysicalAudit.lean
 python3 scripts/replay_providers.py --workers 2
