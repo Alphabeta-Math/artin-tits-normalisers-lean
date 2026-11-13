@@ -92,6 +92,17 @@ Git HEAD alone, identify the checked inputs. The workflow performs both
 verification scopes on GitHub and uploads separate artifacts. Its run/archive
 record is linked separately once the run has actually completed.
 
+The fresh [GitHub run 43492004104](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43492004104)
+has now **succeeded** on source commit
+`4e6e7851a9ced34df49584e6bdb77f701698f2f5`. Both scopes passed: 56 commands
+and 44 individual module replays in total. The downloaded CI records match
+all 62 algebraic-context input hashes and all 65 foundation-context input
+hashes, their review receipts, and every command-log digest. The permanent
+[archive](github-evidence/run-43492004104/README.md) retains both complete
+artifact ZIPs, readable verification JSON, full compressed Actions output,
+run/job/artifact metadata, archive-validation results and SHA-256 checksums.
+Its records still explicitly state that full Theorem 1.8 is unproved.
+
 Kernel replay is the official single-module checker relative to imported
 mathlib environments. It is not a second independent kernel implementation,
 nor a fresh replay of all mathlib. Failed development attempts and the resolved

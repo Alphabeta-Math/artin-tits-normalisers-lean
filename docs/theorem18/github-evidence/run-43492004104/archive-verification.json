@@ -1,0 +1,31 @@
+{
+  "kind": "github-ci-proof-foundations-archive",
+  "repository": "lazyinspirit/artin-tits-normalisers-lean",
+  "run_id": 43492004104,
+  "source_commit": "4e6e7851a9ced34df49584e6bdb77f701698f2f5",
+  "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43492004104",
+  "conclusion": "success",
+  "archived_at": "2026-11-13T19:31:01.503705+00:00",
+  "full_theorem_1_8_proved": false,
+  "scope": "Completed algebraic Lemma2.8 and Theorem1.8 foundations only, not the full geometric main theorem.",
+  "artifacts_verified": [
+    {
+      "artifact": "lean-lemma28-full-verification",
+      "artifact_id": 14070856061,
+      "zip_sha256": "a98d8b19b8fae4a0534e1bda59d74c9ae128323353f5c5ee818a8f6c10dcd5cb",
+      "successful_commands": 24,
+      "kernel_replays": 17,
+      "input_hashes_checked": 62,
+      "all_input_review_log_hashes_match": true
+    },
+    {
+      "artifact": "lean-theorem18-foundations",
+      "artifact_id": 14069819262,
+      "zip_sha256": "0d9b3e021a073dd4b89133de1baade9e71d13aa5f382464181c94a40d8d2c7ef",
+      "successful_commands": 32,
+      "kernel_replays": 27,
+      "input_hashes_checked": 65,
+      "all_input_review_log_hashes_match": true
+    }
+  ]
+}

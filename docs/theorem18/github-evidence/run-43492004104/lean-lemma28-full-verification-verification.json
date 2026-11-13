@@ -1,0 +1,391 @@
+{
+  "kind": "lean-lemma28-full-algebraic-verification",
+  "started_at": "2026-11-13T19:26:08.932486+00:00",
+  "repository_head": "4e6e7851a9ced34df49584e6bdb77f701698f2f5",
+  "input_sha256": {
+    "ArtinNormalisers/Artin/Basic.lean": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+    "ArtinNormalisers/Artin/CoxeterNormalizer.lean": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c",
+    "ArtinNormalisers/Artin/ExactSequence.lean": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+    "ArtinNormalisers/Artin/NormalizerLift.lean": "d0a1c617b470e5ce36c41a60ad82b29eac825d9b84cf57106138beccf0922849",
+    "ArtinNormalisers/Kernel.lean": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff",
+    "ArtinNormalisers/NormalizerMap.lean": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+    "ArtinNormalisers/QuotientMap.lean": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6",
+    "ArtinNormalisers/Theorem18/ArrangementTopology.lean": "e17eb88a02201854c545aa4be4a397f0457845921903676d362b5c94e66e272e",
+    "ArtinNormalisers/Theorem18/CoveringSequence.lean": "5173fd6df5bac7b17fb33344e9d042a5d8d4e258bd22bb087ab02f882584d9f3",
+    "ArtinNormalisers/Theorem18/Geometry.lean": "310a600d1d1a1b36aefa9190b2705d48f5115fd26e701a4569a7e791bad36098",
+    "ArtinNormalisers/Theorem18/NormalizerAction.lean": "54b0dc36cf3ef6c399119c8a641e759b1d0474bf94d650c208314f4c4d3c99aa",
+    "ArtinNormalisers.lean": "ad0b9f18a334eed2aa41c85618bb635ddf2cfefcd5947a79264fa7e618962461",
+    "ArtinNormalisersFull.lean": "b2b839a8c2a3cf673a94ae70b1073bd62fdc65668585f69d7b08b2b36f791d36",
+    "ArtinTheorem18.lean": "ff079b93a23f8c3e2e9535ad54ae71dae12923dcbebc4c4c17923550d593e914",
+    "Audit.lean": "31d3edeec4587356a5b9372882e48572fb2e78f57e1f20004bcd4a4297664f0c",
+    "FullAudit.lean": "df469c3aa4ec9ec90e598e834157896f123990097995122aa1eba76e377fe569",
+    "ProviderAudit.lean": "94a84315a9d3c7458c6295a0a4dad1fba486c79dc014bed4e52ffc86cc9ff61c",
+    "README.md": "2d0ca3b14c6e7a08eb1b49bf5ed76ef40b440dc265884ead37f285ba82147b9a",
+    "Theorem18Audit.lean": "b58c1c440b3d8cc92f47e0d0b95990a738014dacf323d0bee7e94c13a1439ec7",
+    "lake-manifest.json": "2b09091fec88c9bc3930b46b4ed3013c2f1d22ed539cc1b7e9cc8380fefb52ba",
+    "lakefile.toml": "a4f4bede07139843865bb695f0c939825a54aefcdb5c5e403c067eec83a116ac",
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "scripts/cache_prerequisites.py": "34a20053840369e6486124f2f2670836fb86ebf53fb4277c1640e37f51f6b39f",
+    "scripts/verify.py": "0d95890f25bb17bb48bc9bf82c3c36fc80dc2526624d78e93ed6978cb8f944b0",
+    "scripts/verify_theorem18.py": "4d8f90b74dfbf6a138c380eb14298d66b8743e28663517f2274e04d1641550a3",
+    "vendor/LICENSE.TauCeti": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "vendor/README.md": "7596c8c9aa07a1592ceb7f9675fec70ccf49c44d220ba67e8ff4e9627814708e",
+    "vendor/TauCeti/AlgebraicTopology/EilenbergMacLane/Basic.lean": "3e44a7116f624a8984e88dcca177f6f80ca566aa33e5dbe07eaca28f5f6d6efa",
+    "vendor/TauCeti/AlgebraicTopology/EilenbergMacLane/Covering.lean": "bd5738fac0ea6506438d7d2f25f53c967f08fac0845dbaf42148c6fbc8301232",
+    "vendor/TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8",
+    "vendor/TauCeti/AlgebraicTopology/FundamentalGroup/Product.lean": "21088cd5caba5de6548bb20ececf9e5efd51222f8f300c6e6ac769c3a23a5fc3",
+    "vendor/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+    "vendor/TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean": "341012061fcf52ac3e95318f17dd13f40f93e15b631d7a0218fdb1a45cbc2d5c",
+    "vendor/TauCeti/Analysis/SpecialFunctions/Trigonometric/Angle.lean": "8aaf3231569ffbb2e8dbbe38d579ee6a38d7e015e24ff9e965bc95afe2300bce",
+    "vendor/TauCeti/Analysis/SpecialFunctions/Trigonometric/Bounds.lean": "43a7fb657f636da46773c8916fd026746032d0a67bb3c34b8845740c1147af84",
+    "vendor/TauCeti/CategoryTheory/Groupoid/SingleObj.lean": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f",
+    "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+    "vendor/TauCeti/GroupTheory/Coxeter/Basic.lean": "1fd4bf1d07ff9c34139165ee0b611b27f2a21b1226518fee03c92e82815bccee",
+    "vendor/TauCeti/GroupTheory/Coxeter/BraidEquivalence.lean": "62e4342533ee2ac57fbf17be11ef3fa365e3596313f7c620a3c66013236b7d9f",
+    "vendor/TauCeti/GroupTheory/Coxeter/Dihedral.lean": "85eb558388e2fbfc4e7f7e0b1f1035d3e59060c57aaa974da924a1de3f10a47c",
+    "vendor/TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean": "b23a8a8c2360a905a8a4165f888f89852b3b8260a6e7373f5cd0013f493f6688",
+    "vendor/TauCeti/GroupTheory/Coxeter/Matsumoto.lean": "64892e2cdee487ad98c98b4e9ca0f078ca3529d7eca2121187e0d3ed9df3f627",
+    "vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean": "31bcef698020593737d30dbbece69e2b36d519434018b1f2339b5be20689efa2",
+    "vendor/TauCeti/GroupTheory/Coxeter/StrongExchange.lean": "461c7af79d7c4bd446ad8f1606a43743f1284000b2dc370faa55a9bbe18cbf1e",
+    "vendor/TauCeti/Topology/Homotopy/Covering.lean": "180b4b4986d1f7928ebf478ef5b3a9788a8345eec3381fa3e409469f5e10f2fd",
+    "vendor/TauCeti/Topology/Homotopy/Cube/Basic.lean": "d47877282082a81fca05e4849a644a3e82e17c1f7e30d42282ab32814b1ab17d",
+    "vendor/TauCeti/Topology/Homotopy/Cube/OpenBox.lean": "67a6b62fcaf731dfe223efe6f4bd17b4c90e5698029948ef18092509c3334afa",
+    "vendor/TauCeti/Topology/Homotopy/Cube/Radius.lean": "5a7396d737e3d6701f53c36da8ce260088df6b1c2f5611c94b85e05dba9cc4f8",
+    "vendor/TauCeti/Topology/Homotopy/Extension/Ball.lean": "61651b1102c76c45bfa138845e307d9a88407d4d6d5643c15cfd74170c80eaaf",
+    "vendor/TauCeti/Topology/Homotopy/Extension/Basic.lean": "cc8bc6b26ae0c72e6fa227d87514099f5c8518144b5928e9bf5671f1498b3c20",
+    "vendor/TauCeti/Topology/Homotopy/GenLoop/Covering.lean": "18605e241a593384ff9f3a851ad43218e442db54ba64a1c0f6a57d01cd3c505e",
+    "vendor/TauCeti/Topology/Homotopy/GenLoop/Map.lean": "5c9af11ee60bf2976cac31420b3a3eac13294c3c08b8b545612d0ff8f7350ce9",
+    "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean": "fb60626e4e08f26f0eab093d3933453ef282d90b187afd3b1103890caf9bc644",
+    "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean": "0d778d590e3e38acbce7e78a43a9d10fe91e1da6254c6a80b81a26f0be3b50e8",
+    "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Covering.lean": "c8142d2fc1eb53411d7ccf13fe4b861fb2e5f0b694c2ecf50df846cdcb48c0d1",
+    "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean": "cbc31a7de7227e46ecf33e940775423cdb094dac683c6fa0395d4a4e06b46abd",
+    "vendor/TauCeti/Topology/Homotopy/HomotopyGroup/Product.lean": "66fa521875a4af1a8db3bcd9ea542ced6fe5144f1309412a9efc647ae17cb1fd",
+    "vendor/TauCeti/Topology/Homotopy/Path.lean": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+    "vendor/TauCeti/Topology/PiCurry.lean": "b2058fb9b64716eddae65e22daa0bbab7f9f5b1f1031f9f33b855fe93a799b21",
+    "vendor/TauCeti/Topology/UnitInterval.lean": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+    "vendor/TauCeti.lean": "e6b5a45e38ce3617154498b1aced611bff7c609af4ece0a77d18c619fa8e00a8",
+    "vendor/provenance.json": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5"
+  },
+  "scope": "Full short exact sequence for standard presentation-defined Artin groups; topological/presentation equivalence not formalized",
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "elapsed_seconds": 0.046,
+      "log_sha256": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d"
+    },
+    {
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lake-version.log",
+      "elapsed_seconds": 0.056,
+      "log_sha256": "9c331af6911624c7a89515780097e2528e2da79e1c87311ed8a4b2b53910e65f"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "log": "mathlib-revision.log",
+      "elapsed_seconds": 0.002,
+      "log_sha256": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b"
+    },
+    {
+      "argv": [
+        "lake",
+        "clean",
+        "artin-normalisers"
+      ],
+      "exit_code": 0,
+      "log": "clean.log",
+      "elapsed_seconds": 1.041,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "ArtinNormalisersFull"
+      ],
+      "exit_code": 0,
+      "log": "build.log",
+      "elapsed_seconds": 18.473,
+      "log_sha256": "b44a96bd6d757e99127509da9069d7c8c9cf4b0b2e4eee3af9ac124e945db996"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "FullAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "project-axioms.log",
+      "elapsed_seconds": 2.912,
+      "log_sha256": "d72b1bccbfd002c30f8787641c281a409b912dab666ec252ee626ce33a454da0"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "ProviderAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "provider-axioms.log",
+      "elapsed_seconds": 2.733,
+      "log_sha256": "30fe1a870f58612c21981b0d66534b7ecf54861204c5601faf3b3f23eb52c841"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-Analysis-SpecialFunctions-Trigonometric-Angle.log",
+      "elapsed_seconds": 4.768,
+      "log_sha256": "d502da01f417fa0ab2dc0b134b4ef67ae53f418dd79b1757e9c238a2ffeea3f7"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-Analysis-SpecialFunctions-Trigonometric-Bounds.log",
+      "elapsed_seconds": 4.78,
+      "log_sha256": "8d9fb6624ed55afa07b7e9fe897cb6c147bff977e31edc989b127c57519576a3"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Artin"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Artin.log",
+      "elapsed_seconds": 4.431,
+      "log_sha256": "2cc81a02ab2c9cf1faf4c5b0d0d4933c23b6f9ab40253ad12dc61a50d14b227e"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Basic"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Basic.log",
+      "elapsed_seconds": 4.344,
+      "log_sha256": "6772ec812bbdc73e0454767726b2e9b6680a0381b1c6b4e595662ac18b4472f2"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.BraidEquivalence"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-BraidEquivalence.log",
+      "elapsed_seconds": 4.429,
+      "log_sha256": "112a924c15d829504bcf579208534f74284ed3a9bb96c322a093ba123370d864"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Dihedral"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Dihedral.log",
+      "elapsed_seconds": 4.439,
+      "log_sha256": "379db9f85962078062cebe2602d207eb114e2f9b7f41163671e7b9efcea21998"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Geometric.Basic"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Geometric-Basic.log",
+      "elapsed_seconds": 4.866,
+      "log_sha256": "836d02f7abf00ef9d81ed938980111b0469977f004ad961252add2e5bd027970"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Matsumoto"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Matsumoto.log",
+      "elapsed_seconds": 4.659,
+      "log_sha256": "ac2e5cb4b06e815d03cb30358da35890a2332daa46bcbd2d60bccfca85be6455"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Parabolic"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Parabolic.log",
+      "elapsed_seconds": 4.587,
+      "log_sha256": "68c2f7efc780ad6109a8e6da74800353edadebe37998b8ebf8fcce651ecb3320"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.StrongExchange"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-StrongExchange.log",
+      "elapsed_seconds": 4.595,
+      "log_sha256": "ef83cba1d3930e21c7d823d398f1ac2758aa715898644ae60966f989768c2293"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.Basic"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-Basic.log",
+      "elapsed_seconds": 4.447,
+      "log_sha256": "0964f3cee5f025a4ac3814bd1a9300074f97f13b05be5a4bb0f90f8a1162f73f"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.CoxeterNormalizer"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-CoxeterNormalizer.log",
+      "elapsed_seconds": 4.451,
+      "log_sha256": "797e4bfe330b3d71db6e1a081d45590f97abecf35d12abd4e2674acef1e749ba"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.ExactSequence"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-ExactSequence.log",
+      "elapsed_seconds": 4.767,
+      "log_sha256": "8f5d54774dbe79c0ff622d129484a517ee35fd94aa04842950c84f4bfd77d853"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.NormalizerLift"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-NormalizerLift.log",
+      "elapsed_seconds": 4.694,
+      "log_sha256": "11a45dc125f35f4616662da36ae01778da75027c14c5338fd69149ec5041c1d4"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Kernel"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Kernel.log",
+      "elapsed_seconds": 4.397,
+      "log_sha256": "9ec2d3fbf0ad309cb84ec037a131ad86a0c3326d65f6c1d522ea4f6077ec6964"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.NormalizerMap"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-NormalizerMap.log",
+      "elapsed_seconds": 4.357,
+      "log_sha256": "7f086e86981444be8db5e3aa0e52dc935ce5dff49de293c5343b329c77c493df"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.QuotientMap"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-QuotientMap.log",
+      "elapsed_seconds": 4.32,
+      "log_sha256": "e50440b80023e68ccef798f905a8fd8b99c3604e6acc6529c508c429bc51ab9c"
+    }
+  ],
+  "ok": true,
+  "source_inventory_sha256": "4e09907e8289d6ad65111da7950cd8a64dcc2422db58cd9934c13da83b9df5f4",
+  "vendor_provenance_sha256": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5",
+  "upstream_supplier_revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "independent_reviews": [
+    {
+      "reviewer": "reviewer-a",
+      "verdict": "accept",
+      "json_sha256": "0149028129b0dd5c64d2929a731ae79aaf4f4c783776a2314b590d8bf521a986"
+    },
+    {
+      "reviewer": "reviewer-b",
+      "verdict": "accepted",
+      "json_sha256": "98d79a860c2eebb12cd965e9700d0c6980509f2e547de55db643b2b7d7b61bd4"
+    }
+  ],
+  "finished_at": "2026-11-13T19:27:51.587410+00:00"
+}
