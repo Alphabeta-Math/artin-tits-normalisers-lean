@@ -14,5 +14,11 @@ the unchanged upstream/source hashes.
 The old source-bound records under `evidence/full-local/` and
 `docs/full/github-evidence/run-43484468188/` describe the origin repository's
 successful checks. They do not certify the adapted standalone script/README
-inputs. The dedicated repository's own GitHub verification will be archived
-separately after execution.
+inputs. The dedicated repository's own
+[GitHub run 43486289665](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43486289665)
+passed in 2m29s against commit `afb0f7bfa6dc36458da7322b7ed9e4b93cbbce35`.
+All 24 commands exited zero. All 32 input-file hashes and both independent
+review receipts match the standalone package; all downloaded log hashes match
+the actual artifact's record. The artifact, complete compressed Actions log,
+run metadata and checksums are retained under
+`docs/full/github-evidence/run-43486289665/` beyond artifact retention expiry.

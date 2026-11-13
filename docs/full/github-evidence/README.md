@@ -1,5 +1,16 @@
 # Full-lemma GitHub verification archive
 
+The standalone public repository's own
+[run 43486289665](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43486289665)
+passed all 24 commands in 2m29s at source commit
+`afb0f7bfa6dc36458da7322b7ed9e4b93cbbce35`. Its source/input and review-receipt
+hashes match this package, and all downloaded tool-output hashes match its
+verification record. `run-43486289665/` retains its artifact, complete compressed
+log, metadata and checksums.
+
+The following is the origin repository's earlier successful run, preserved as
+historical evidence for its recorded source snapshot:
+
 [Run 43484468188](https://github.com/lazyinspirit/workflow-engines/actions/runs/43484468188)
 passed against `b41b7634c78cd3927dd2216246203535ad93d248` in 7m59s. Its actual
 artifact records all 24 commands with exit 0, two accepted independently bound

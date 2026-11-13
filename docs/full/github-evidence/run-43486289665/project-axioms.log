@@ -1,0 +1,335 @@
+ArtinNormalisers.Artin.Group.{u_1} {I : Type u_1} (M : CoxeterMatrix I) : Type u_1
+ArtinNormalisers.Artin.projection.{u_1} {I : Type u_1} (M : CoxeterMatrix I) : ArtinNormalisers.Artin.Group M →* M.Group
+ArtinNormalisers.Artin.parabolic.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) :
+  Subgroup (ArtinNormalisers.Artin.Group M)
+ArtinNormalisers.Artin.coxeterParabolic.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) : Subgroup M.Group
+ArtinNormalisers.Artin.map_parabolic.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) :
+  Subgroup.map (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.parabolic M J) =
+    ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Artin.exists_normalizer_lift.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {w : M.Group}
+  (hw : w ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J)) :
+  ∃ a ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J), (ArtinNormalisers.Artin.projection M) a = w
+ArtinNormalisers.Artin.normalizerQuotientMap.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  ArtinNormalisers.Artin.normalizerQuotient M J →* ArtinNormalisers.Artin.coxeterNormalizerQuotient M J
+ArtinNormalisers.Artin.pureNormalizerImage.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  Subgroup (ArtinNormalisers.Artin.normalizerQuotient M J)
+ArtinNormalisers.Artin.lemma_2_8.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+    (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range =
+        (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)
+'ArtinNormalisers.Artin.lemma_2_8' depends on axioms: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.CoxeterNormalizer ArtinNormalisers.Coxeter.exists_conjugate_simple_of_minimal: ∀
+  {I : Type u_1} {W : Type u_2} [inst : Group W] {M : CoxeterMatrix I} (cs : CoxeterSystem M W) {J : Set I} {d : W},
+  d ∈ Subgroup.normalizer ↑(cs.parabolic J) →
+    cs.IsMinimalCosetRep J d → ∀ {i : I}, i ∈ J → ∃ j ∈ J, d * cs.simple i * d⁻¹ = cs.simple j
+PROJECT_AXIOMS ArtinNormalisers.Coxeter.exists_conjugate_simple_of_minimal: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap._proof_5: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (x x_1 : ↥(f.ker ⊓ Subgroup.normalizer ↑A)),
+  ↑(x * x_1) ∈ ↑(Subgroup.normalizer ↑A).toSubmonoid
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap._proof_5: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.pureNormalizerInclusion: {I : Type u_3} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) → ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) →* ArtinNormalisers.Artin.normalizerQuotient M J
+PROJECT_AXIOMS ArtinNormalisers.Artin.pureNormalizerInclusion: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.map_parabolic: ∀ {I : Type u_1} (M : CoxeterMatrix I)
+  (J : Set I),
+  Subgroup.map (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.parabolic M J) =
+    ArtinNormalisers.Artin.coxeterParabolic M J
+PROJECT_AXIOMS ArtinNormalisers.Artin.map_parabolic: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.pureNormalizerInclusion_range: ∀ {I : Type u_3}
+  (M : CoxeterMatrix I) (J : Set I),
+  (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range = (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker
+PROJECT_AXIOMS ArtinNormalisers.Artin.pureNormalizerInclusion_range: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.QuotientMap ArtinNormalisers.quotientMap._proof_1: ∀ {G : Type u_2} {H : Type u_1}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G),
+  ((Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A))).Normal
+PROJECT_AXIOMS ArtinNormalisers.quotientMap._proof_1: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.pureNormalizerImage: {I : Type u_3} →
+  (M : CoxeterMatrix I) → (J : Set I) → Subgroup (ArtinNormalisers.Artin.normalizerQuotient M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.pureNormalizerImage: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.closure_range_generator: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I), Subgroup.closure (Set.range (ArtinNormalisers.Artin.generator M)) = ⊤
+PROJECT_AXIOMS ArtinNormalisers.Artin.closure_range_generator: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap._proof_4: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G), ⟨↑1, ⋯⟩ = ⟨↑1, ⋯⟩
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap._proof_4: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.normalizerQuotientMap_kernel: ∀ {I : Type u_3}
+  (M : CoxeterMatrix I) (J : Set I),
+  (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker = ArtinNormalisers.Artin.pureNormalizerImage M J
+PROJECT_AXIOMS ArtinNormalisers.Artin.normalizerQuotientMap_kernel: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.pureNormalizerImage_eq_range: ∀ {I : Type u_3}
+  (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Artin.pureNormalizerImage M J =
+    (ArtinNormalisers.articleKernelMap (ArtinNormalisers.Artin.projection M)
+        (ArtinNormalisers.Artin.parabolic M J)).range
+PROJECT_AXIOMS ArtinNormalisers.Artin.pureNormalizerImage_eq_range: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.pure: {I : Type u_1} →
+  (M : CoxeterMatrix I) → Subgroup (ArtinNormalisers.Artin.Group M)
+PROJECT_AXIOMS ArtinNormalisers.Artin.pure: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.CoxeterNormalizer ArtinNormalisers.Coxeter.exists_inverse_conjugate_simple_of_minimal: ∀
+  {I : Type u_1} {W : Type u_2} [inst : Group W] {M : CoxeterMatrix I} (cs : CoxeterSystem M W) {J : Set I} {d : W},
+  d ∈ Subgroup.normalizer ↑(cs.parabolic J) →
+    cs.IsMinimalCosetRep J d → ∀ {i : I}, i ∈ J → ∃ j ∈ J, d⁻¹ * cs.simple i * d = cs.simple j
+PROJECT_AXIOMS ArtinNormalisers.Coxeter.exists_inverse_conjugate_simple_of_minimal: [propext,
+ Classical.choice,
+ Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.NormalizerLift ArtinNormalisers.Artin.coxeterParabolic_eq: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I), ArtinNormalisers.Artin.coxeterParabolic M J = M.toCoxeterSystem.parabolic J
+PROJECT_AXIOMS ArtinNormalisers.Artin.coxeterParabolic_eq: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.parabolic: {I : Type u_1} →
+  (M : CoxeterMatrix I) → Set I → Subgroup (ArtinNormalisers.Artin.Group M)
+PROJECT_AXIOMS ArtinNormalisers.Artin.parabolic: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.coxeterParabolic.eq_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I), ArtinNormalisers.Artin.coxeterParabolic M J = Subgroup.closure (M.simple '' J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.coxeterParabolic.eq_1: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.projection_wordProd: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (w : List I),
+  (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.wordProd M w) = M.toCoxeterSystem.wordProd w
+PROJECT_AXIOMS ArtinNormalisers.Artin.projection_wordProd: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.projection_surjective: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I), Function.Surjective ⇑(ArtinNormalisers.Artin.projection M)
+PROJECT_AXIOMS ArtinNormalisers.Artin.projection_surjective: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.lemma_2_8: ∀ {I : Type u_3}
+  (M : CoxeterMatrix I) (J : Set I),
+  Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+    (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range =
+        (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.lemma_2_8: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap._proof_6: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (x x_1 : ↥(f.ker ⊓ Subgroup.normalizer ↑A)),
+  ⟨↑(x * x_1), ⋯⟩ = ⟨↑(x * x_1), ⋯⟩
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap._proof_6: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.normalizerQuotient: {I : Type u_3} →
+  CoxeterMatrix I → Set I → Type u_3
+PROJECT_AXIOMS ArtinNormalisers.Artin.normalizerQuotient: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.normalizerQuotientOf: {G : Type u_1} →
+  [inst : Group G] → Subgroup G → Type u_1
+PROJECT_AXIOMS ArtinNormalisers.normalizerQuotientOf: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.parabolic.eq_1: ∀ {I : Type u_1} (M : CoxeterMatrix I)
+  (J : Set I), ArtinNormalisers.Artin.parabolic M J = Subgroup.closure (ArtinNormalisers.Artin.generator M '' J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.parabolic.eq_1: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap._proof_4: ∀ {G : Type u_2} {H : Type u_1}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G), ⟨f ↑1, ⋯⟩ = 1
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap._proof_4: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap_maps_subgroup: ∀ {G : Type u_1}
+  {H : Type u_2} [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G),
+  A.subgroupOf (Subgroup.normalizer ↑A) ≤
+    Subgroup.comap (ArtinNormalisers.normalizerMap f A)
+      ((Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A)))
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap_maps_subgroup: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.Group: {I : Type u_1} → CoxeterMatrix I → Type u_1
+PROJECT_AXIOMS ArtinNormalisers.Artin.Group: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.projection_generator: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (i : I),
+  (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.generator M i) = M.simple i
+PROJECT_AXIOMS ArtinNormalisers.Artin.projection_generator: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.projection: {I : Type u_1} →
+  (M : CoxeterMatrix I) → ArtinNormalisers.Artin.Group M →* M.Group
+PROJECT_AXIOMS ArtinNormalisers.Artin.projection: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.CoxeterNormalizer ArtinNormalisers.Coxeter.minimal_inv_of_mem_normalizer: ∀
+  {I : Type u_1} {W : Type u_2} [inst : Group W] {M : CoxeterMatrix I} (cs : CoxeterSystem M W) {J : Set I} {d : W},
+  d ∈ Subgroup.normalizer ↑(cs.parabolic J) → cs.IsMinimalCosetRep J d → cs.IsMinimalCosetRep J d⁻¹
+PROJECT_AXIOMS ArtinNormalisers.Coxeter.minimal_inv_of_mem_normalizer: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelImage_eq: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G),
+  ArtinNormalisers.articleKernelImage f A =
+    Subgroup.map (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) (f.ker.subgroupOf (Subgroup.normalizer ↑A))
+PROJECT_AXIOMS ArtinNormalisers.articleKernelImage_eq: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.NormalizerLift ArtinNormalisers.Artin.wordProd_mem_normalizer_of_minimal: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {d : M.Group},
+  d ∈ Subgroup.normalizer ↑(M.toCoxeterSystem.parabolic J) →
+    M.toCoxeterSystem.IsMinimalCosetRep J d →
+      ∀ {δ : List I},
+        M.toCoxeterSystem.IsReduced δ →
+          M.toCoxeterSystem.wordProd δ = d →
+            ArtinNormalisers.Artin.wordProd M δ ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.wordProd_mem_normalizer_of_minimal: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap._proof_2: ∀ {G : Type u_2} {H : Type u_1}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (n : ↥(Subgroup.normalizer ↑A)),
+  f ↑n ∈ Subgroup.normalizer ↑(Subgroup.map f A)
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap._proof_2: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap._proof_6: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (x y : ↥(Subgroup.normalizer ↑A)),
+  ⟨f ↑(x * y), ⋯⟩ = ⟨f ↑x, ⋯⟩ * ⟨f ↑y, ⋯⟩
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap._proof_6: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.quotientMapTo_kernel: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (B : Subgroup H) (h : Subgroup.map f A = B),
+  (ArtinNormalisers.quotientMapTo f A B h).ker = ArtinNormalisers.articleKernelImage f A
+PROJECT_AXIOMS ArtinNormalisers.quotientMapTo_kernel: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.normalizerQuotientMap: {I : Type u_3} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) → ArtinNormalisers.Artin.normalizerQuotient M J →* ArtinNormalisers.Artin.coxeterNormalizerQuotient M J
+PROJECT_AXIOMS ArtinNormalisers.Artin.normalizerQuotientMap: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.normalizerQuotientMap_surjective: ∀
+  {I : Type u_3} (M : CoxeterMatrix I) (J : Set I),
+  Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.normalizerQuotientMap_surjective: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.QuotientMap ArtinNormalisers.quotientMap: {G : Type u_1} →
+  {H : Type u_2} →
+    [inst : Group G] →
+      [inst_1 : Group H] →
+        (f : G →* H) →
+          (A : Subgroup G) →
+            ↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A) →*
+              ↥(Subgroup.normalizer ↑(Subgroup.map f A)) ⧸
+                (Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A))
+PROJECT_AXIOMS ArtinNormalisers.quotientMap: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.coxeterNormalizerQuotient: {I : Type u_3} →
+  CoxeterMatrix I → Set I → Type u_3
+PROJECT_AXIOMS ArtinNormalisers.Artin.coxeterNormalizerQuotient: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap: {G : Type u_1} →
+  {H : Type u_2} →
+    [inst : Group G] →
+      [inst_1 : Group H] →
+        (f : G →* H) → (A : Subgroup G) → ↥(Subgroup.normalizer ↑A) →* ↥(Subgroup.normalizer ↑(Subgroup.map f A))
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.NormalizerLift ArtinNormalisers.Artin.exists_normalizer_lift: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) {w : M.Group},
+  w ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J) →
+    ∃ a ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J), (ArtinNormalisers.Artin.projection M) a = w
+PROJECT_AXIOMS ArtinNormalisers.Artin.exists_normalizer_lift: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.quotientMapTo_mk: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (B : Subgroup H) (h : Subgroup.map f A = B)
+  (n : ↥(Subgroup.normalizer ↑A)),
+  (ArtinNormalisers.quotientMapTo f A B h) ((QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) n) =
+    (QuotientGroup.mk' (B.subgroupOf (Subgroup.normalizer ↑B))) ⟨f ↑n, ⋯⟩
+PROJECT_AXIOMS ArtinNormalisers.quotientMapTo_mk: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.normalizerQuotientMap_mk._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (n : ↥(Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))),
+  (ArtinNormalisers.Artin.projection M) ↑n ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.normalizerQuotientMap_mk._proof_1: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.QuotientMap ArtinNormalisers.quotientMap_mk: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (n : ↥(Subgroup.normalizer ↑A)),
+  (ArtinNormalisers.quotientMap f A) ((QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) n) =
+    (QuotientGroup.mk' ((Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A))))
+      ((ArtinNormalisers.normalizerMap f A) n)
+PROJECT_AXIOMS ArtinNormalisers.quotientMap_mk: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.coxeterParabolic: {I : Type u_1} →
+  (M : CoxeterMatrix I) → Set I → Subgroup M.Group
+PROJECT_AXIOMS ArtinNormalisers.Artin.coxeterParabolic: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap._proof_3: ∀ {G : Type u_2} {H : Type u_1}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G), f ↑1 ∈ Subgroup.normalizer ↑(Subgroup.map f A)
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap._proof_3: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap._proof_3: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G), ↑1 ∈ ↑(Subgroup.normalizer ↑A).toSubmonoid
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap._proof_3: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.normalizerQuotientMap_mk: ∀ {I : Type u_3}
+  (M : CoxeterMatrix I) (J : Set I) (n : ↥(Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))),
+  (ArtinNormalisers.Artin.normalizerQuotientMap M J)
+      ((QuotientGroup.mk'
+          ((ArtinNormalisers.Artin.parabolic M J).subgroupOf
+            (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))))
+        n) =
+    (QuotientGroup.mk'
+        ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+          (Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J))))
+      ⟨(ArtinNormalisers.Artin.projection M) ↑n, ⋯⟩
+PROJECT_AXIOMS ArtinNormalisers.Artin.normalizerQuotientMap_mk: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap._proof_2: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (n : ↥(f.ker ⊓ Subgroup.normalizer ↑A)),
+  ↑n ∈ ↑(Subgroup.normalizer ↑A).toSubmonoid
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap._proof_2: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.kernel_eq_image: ∀ {G : Type u_1} {H : Type u_2} [inst : Group G]
+  [inst_1 : Group H] (f : G →* H) (A : Subgroup G),
+  (ArtinNormalisers.quotientMap f A).ker =
+    Subgroup.map (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) (f.ker.subgroupOf (Subgroup.normalizer ↑A))
+PROJECT_AXIOMS ArtinNormalisers.kernel_eq_image: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.kernel_eq_articleKernelImage: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G),
+  (ArtinNormalisers.quotientMap f A).ker = ArtinNormalisers.articleKernelImage f A
+PROJECT_AXIOMS ArtinNormalisers.kernel_eq_articleKernelImage: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.quotientMapTo: {G : Type u_1} →
+  {H : Type u_2} →
+    [inst : Group G] →
+      [inst_1 : Group H] →
+        (f : G →* H) →
+          (A : Subgroup G) →
+            (B : Subgroup H) →
+              Subgroup.map f A = B → ArtinNormalisers.normalizerQuotientOf A →* ArtinNormalisers.normalizerQuotientOf B
+PROJECT_AXIOMS ArtinNormalisers.quotientMapTo: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap._proof_5: ∀ {G : Type u_2} {H : Type u_1}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (x y : ↥(Subgroup.normalizer ↑A)),
+  f ↑(x * y) ∈ Subgroup.normalizer ↑(Subgroup.map f A)
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap._proof_5: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.CoxeterNormalizer ArtinNormalisers.Coxeter.exists_minimal_normalizer: ∀
+  {I : Type u_1} {W : Type u_2} [inst : Group W] {M : CoxeterMatrix I} (cs : CoxeterSystem M W) {J : Set I} {w : W},
+  w ∈ Subgroup.normalizer ↑(cs.parabolic J) →
+    ∃ d, ∃ v ∈ cs.parabolic J, d = w * v ∧ d ∈ Subgroup.normalizer ↑(cs.parabolic J) ∧ cs.IsMinimalCosetRep J d
+PROJECT_AXIOMS ArtinNormalisers.Coxeter.exists_minimal_normalizer: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.braid_relation: ∀ {I : Type u_1} (M : CoxeterMatrix I)
+  (i j : I),
+  ArtinNormalisers.Artin.wordProd M (CoxeterSystem.alternatingWord i j (M.M i j)) =
+    ArtinNormalisers.Artin.wordProd M (CoxeterSystem.alternatingWord j i (M.M i j))
+PROJECT_AXIOMS ArtinNormalisers.Artin.braid_relation: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.pureNormalizerInclusion_injective: ∀
+  {I : Type u_3} (M : CoxeterMatrix I) (J : Set I),
+  Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.pureNormalizerInclusion_injective: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.Artin.pureNormalizerInclusion._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.parabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))).Normal
+PROJECT_AXIOMS ArtinNormalisers.Artin.pureNormalizerInclusion._proof_1: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.NormalizerLift ArtinNormalisers.Artin.mem_normalizer_of_generator_relations: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (a : ArtinNormalisers.Artin.Group M),
+  (∀ i ∈ J, ∃ j ∈ J, a * ArtinNormalisers.Artin.generator M i = ArtinNormalisers.Artin.generator M j * a) →
+    (∀ i ∈ J, ∃ j ∈ J, ArtinNormalisers.Artin.generator M i * a = a * ArtinNormalisers.Artin.generator M j) →
+      a ∈ Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J)
+PROJECT_AXIOMS ArtinNormalisers.Artin.mem_normalizer_of_generator_relations: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.CoxeterNormalizer ArtinNormalisers.Coxeter.isReduced_append_simple_of_minimal: ∀
+  {I : Type u_1} {W : Type u_2} [inst : Group W] {M : CoxeterMatrix I} (cs : CoxeterSystem M W) {J : Set I} {d : W},
+  cs.IsMinimalCosetRep J d →
+    ∀ {ω : List I}, cs.IsReduced ω → cs.wordProd ω = d → ∀ {i : I}, i ∈ J → cs.IsReduced (ω ++ [i])
+PROJECT_AXIOMS ArtinNormalisers.Coxeter.isReduced_append_simple_of_minimal: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.ExactSequence ArtinNormalisers.quotientMapTo_mk._proof_1: ∀ {G : Type u_2}
+  {H : Type u_1} [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (B : Subgroup H),
+  Subgroup.map f A = B → ∀ (n : ↥(Subgroup.normalizer ↑A)), f ↑n ∈ Subgroup.normalizer ↑B
+PROJECT_AXIOMS ArtinNormalisers.quotientMapTo_mk._proof_1: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.quotientMap_mem_ker_iff: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G)
+  (x : ↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A)),
+  x ∈ (ArtinNormalisers.quotientMap f A).ker ↔
+    ∃ n, (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) n = x ∧ f ↑n = 1
+PROJECT_AXIOMS ArtinNormalisers.quotientMap_mem_ker_iff: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap._proof_1: ∀ {G : Type u_1} [inst : Group G],
+  SubmonoidClass (Subgroup G) G
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap._proof_1: [propext]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.wordProd: {I : Type u_1} →
+  (M : CoxeterMatrix I) → List I → ArtinNormalisers.Artin.Group M
+PROJECT_AXIOMS ArtinNormalisers.Artin.wordProd: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.wordProd.eq_1: ∀ {I : Type u_1} (M : CoxeterMatrix I)
+  (w : List I), ArtinNormalisers.Artin.wordProd M w = (List.map (ArtinNormalisers.Artin.generator M) w).prod
+PROJECT_AXIOMS ArtinNormalisers.Artin.wordProd.eq_1: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap_apply: ∀ {G : Type u_1} {H : Type u_2}
+  [inst : Group G] [inst_1 : Group H] (f : G →* H) (A : Subgroup G) (n : ↥(Subgroup.normalizer ↑A)),
+  ↑((ArtinNormalisers.normalizerMap f A) n) = f ↑n
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap_apply: [propext, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.NormalizerMap ArtinNormalisers.normalizerMap._proof_1: ∀ {G : Type u_1} [inst : Group G],
+  SubmonoidClass (Subgroup G) G
+PROJECT_AXIOMS ArtinNormalisers.normalizerMap._proof_1: [propext]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelMap: {G : Type u_1} →
+  {H : Type u_2} →
+    [inst : Group G] →
+      [inst_1 : Group H] →
+        (f : G →* H) →
+          (A : Subgroup G) →
+            ↥(f.ker ⊓ Subgroup.normalizer ↑A) →* ↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A)
+PROJECT_AXIOMS ArtinNormalisers.articleKernelMap: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.CoxeterNormalizer ArtinNormalisers.Coxeter.isReduced_prepend_simple_of_minimal: ∀
+  {I : Type u_1} {W : Type u_2} [inst : Group W] {M : CoxeterMatrix I} (cs : CoxeterSystem M W) {J : Set I} {d : W},
+  d ∈ Subgroup.normalizer ↑(cs.parabolic J) →
+    cs.IsMinimalCosetRep J d →
+      ∀ {ω : List I}, cs.IsReduced ω → cs.wordProd ω = d → ∀ {i : I}, i ∈ J → cs.IsReduced (i :: ω)
+PROJECT_AXIOMS ArtinNormalisers.Coxeter.isReduced_prepend_simple_of_minimal: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Artin.Basic ArtinNormalisers.Artin.generator: {I : Type u_1} →
+  (M : CoxeterMatrix I) → I → ArtinNormalisers.Artin.Group M
+PROJECT_AXIOMS ArtinNormalisers.Artin.generator: [propext, Classical.choice, Quot.sound]
+PROJECT_TYPE ArtinNormalisers.Kernel ArtinNormalisers.articleKernelImage: {G : Type u_1} →
+  {H : Type u_2} →
+    [inst : Group G] →
+      [inst_1 : Group H] →
+        (G →* H) → (A : Subgroup G) → Subgroup (↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A))
+PROJECT_AXIOMS ArtinNormalisers.articleKernelImage: [propext, Classical.choice, Quot.sound]
+Audited 69 project declarations; axiom allowlist passed

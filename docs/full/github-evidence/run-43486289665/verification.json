@@ -1,0 +1,361 @@
+{
+  "kind": "lean-lemma28-full-algebraic-verification",
+  "started_at": "2026-11-13T18:50:18.515658+00:00",
+  "repository_head": "afb0f7bfa6dc36458da7322b7ed9e4b93cbbce35",
+  "input_sha256": {
+    "ArtinNormalisers/Artin/Basic.lean": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+    "ArtinNormalisers/Artin/CoxeterNormalizer.lean": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c",
+    "ArtinNormalisers/Artin/ExactSequence.lean": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+    "ArtinNormalisers/Artin/NormalizerLift.lean": "d0a1c617b470e5ce36c41a60ad82b29eac825d9b84cf57106138beccf0922849",
+    "ArtinNormalisers/Kernel.lean": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff",
+    "ArtinNormalisers/NormalizerMap.lean": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+    "ArtinNormalisers/QuotientMap.lean": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6",
+    "ArtinNormalisers.lean": "ad0b9f18a334eed2aa41c85618bb635ddf2cfefcd5947a79264fa7e618962461",
+    "ArtinNormalisersFull.lean": "b2b839a8c2a3cf673a94ae70b1073bd62fdc65668585f69d7b08b2b36f791d36",
+    "Audit.lean": "31d3edeec4587356a5b9372882e48572fb2e78f57e1f20004bcd4a4297664f0c",
+    "FullAudit.lean": "df469c3aa4ec9ec90e598e834157896f123990097995122aa1eba76e377fe569",
+    "ProviderAudit.lean": "94a84315a9d3c7458c6295a0a4dad1fba486c79dc014bed4e52ffc86cc9ff61c",
+    "README.md": "27885d3f31537c63e0b2672f32ce1b9ae41ee9405a8eade4cdc6bb7e9c16d205",
+    "lake-manifest.json": "2b09091fec88c9bc3930b46b4ed3013c2f1d22ed539cc1b7e9cc8380fefb52ba",
+    "lakefile.toml": "bee4e135be96ccd69bdc08b58649c012c1ad14e95bf72d49eb40a4b0ec104768",
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "scripts/cache_prerequisites.py": "34a20053840369e6486124f2f2670836fb86ebf53fb4277c1640e37f51f6b39f",
+    "scripts/verify.py": "3c6a2b0cdaf2b4e426de465281765e32e4d0889d8fa4d16a1582f7c2e59696ac",
+    "vendor/LICENSE.TauCeti": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "vendor/README.md": "45b10be775b3012987acfdaf79c9f2eef80ce527d77209b73b957d4b65a53a2a",
+    "vendor/TauCeti/Analysis/SpecialFunctions/Trigonometric/Angle.lean": "8aaf3231569ffbb2e8dbbe38d579ee6a38d7e015e24ff9e965bc95afe2300bce",
+    "vendor/TauCeti/Analysis/SpecialFunctions/Trigonometric/Bounds.lean": "43a7fb657f636da46773c8916fd026746032d0a67bb3c34b8845740c1147af84",
+    "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+    "vendor/TauCeti/GroupTheory/Coxeter/Basic.lean": "1fd4bf1d07ff9c34139165ee0b611b27f2a21b1226518fee03c92e82815bccee",
+    "vendor/TauCeti/GroupTheory/Coxeter/BraidEquivalence.lean": "62e4342533ee2ac57fbf17be11ef3fa365e3596313f7c620a3c66013236b7d9f",
+    "vendor/TauCeti/GroupTheory/Coxeter/Dihedral.lean": "85eb558388e2fbfc4e7f7e0b1f1035d3e59060c57aaa974da924a1de3f10a47c",
+    "vendor/TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean": "b23a8a8c2360a905a8a4165f888f89852b3b8260a6e7373f5cd0013f493f6688",
+    "vendor/TauCeti/GroupTheory/Coxeter/Matsumoto.lean": "64892e2cdee487ad98c98b4e9ca0f078ca3529d7eca2121187e0d3ed9df3f627",
+    "vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean": "31bcef698020593737d30dbbece69e2b36d519434018b1f2339b5be20689efa2",
+    "vendor/TauCeti/GroupTheory/Coxeter/StrongExchange.lean": "461c7af79d7c4bd446ad8f1606a43743f1284000b2dc370faa55a9bbe18cbf1e",
+    "vendor/TauCeti.lean": "e6b5a45e38ce3617154498b1aced611bff7c609af4ece0a77d18c619fa8e00a8",
+    "vendor/provenance.json": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5"
+  },
+  "scope": "Full short exact sequence for standard presentation-defined Artin groups; topological/presentation equivalence not formalized",
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "elapsed_seconds": 0.035,
+      "log_sha256": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d"
+    },
+    {
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lake-version.log",
+      "elapsed_seconds": 0.042,
+      "log_sha256": "9c331af6911624c7a89515780097e2528e2da79e1c87311ed8a4b2b53910e65f"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "log": "mathlib-revision.log",
+      "elapsed_seconds": 0.002,
+      "log_sha256": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b"
+    },
+    {
+      "argv": [
+        "lake",
+        "clean",
+        "artin-normalisers"
+      ],
+      "exit_code": 0,
+      "log": "clean.log",
+      "elapsed_seconds": 0.62,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "ArtinNormalisersFull"
+      ],
+      "exit_code": 0,
+      "log": "build.log",
+      "elapsed_seconds": 15.551,
+      "log_sha256": "981d18e3ad3d92b55b55f2025f8a8f10a9d44a051860e1260ff363eee5c0986e"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "FullAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "project-axioms.log",
+      "elapsed_seconds": 2.148,
+      "log_sha256": "d72b1bccbfd002c30f8787641c281a409b912dab666ec252ee626ce33a454da0"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "ProviderAudit.lean"
+      ],
+      "exit_code": 0,
+      "log": "provider-axioms.log",
+      "elapsed_seconds": 2.075,
+      "log_sha256": "30fe1a870f58612c21981b0d66534b7ecf54861204c5601faf3b3f23eb52c841"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-Analysis-SpecialFunctions-Trigonometric-Angle.log",
+      "elapsed_seconds": 3.73,
+      "log_sha256": "d502da01f417fa0ab2dc0b134b4ef67ae53f418dd79b1757e9c238a2ffeea3f7"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-Analysis-SpecialFunctions-Trigonometric-Bounds.log",
+      "elapsed_seconds": 3.843,
+      "log_sha256": "8d9fb6624ed55afa07b7e9fe897cb6c147bff977e31edc989b127c57519576a3"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Artin"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Artin.log",
+      "elapsed_seconds": 3.602,
+      "log_sha256": "2cc81a02ab2c9cf1faf4c5b0d0d4933c23b6f9ab40253ad12dc61a50d14b227e"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Basic"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Basic.log",
+      "elapsed_seconds": 3.528,
+      "log_sha256": "6772ec812bbdc73e0454767726b2e9b6680a0381b1c6b4e595662ac18b4472f2"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.BraidEquivalence"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-BraidEquivalence.log",
+      "elapsed_seconds": 3.648,
+      "log_sha256": "112a924c15d829504bcf579208534f74284ed3a9bb96c322a093ba123370d864"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Dihedral"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Dihedral.log",
+      "elapsed_seconds": 3.661,
+      "log_sha256": "379db9f85962078062cebe2602d207eb114e2f9b7f41163671e7b9efcea21998"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Geometric.Basic"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Geometric-Basic.log",
+      "elapsed_seconds": 3.941,
+      "log_sha256": "836d02f7abf00ef9d81ed938980111b0469977f004ad961252add2e5bd027970"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Matsumoto"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Matsumoto.log",
+      "elapsed_seconds": 3.777,
+      "log_sha256": "ac2e5cb4b06e815d03cb30358da35890a2332daa46bcbd2d60bccfca85be6455"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Parabolic"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-Parabolic.log",
+      "elapsed_seconds": 3.666,
+      "log_sha256": "68c2f7efc780ad6109a8e6da74800353edadebe37998b8ebf8fcce651ecb3320"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.StrongExchange"
+      ],
+      "exit_code": 0,
+      "log": "replay-TauCeti-GroupTheory-Coxeter-StrongExchange.log",
+      "elapsed_seconds": 3.676,
+      "log_sha256": "ef83cba1d3930e21c7d823d398f1ac2758aa715898644ae60966f989768c2293"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.Basic"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-Basic.log",
+      "elapsed_seconds": 3.502,
+      "log_sha256": "0964f3cee5f025a4ac3814bd1a9300074f97f13b05be5a4bb0f90f8a1162f73f"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.CoxeterNormalizer"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-CoxeterNormalizer.log",
+      "elapsed_seconds": 3.533,
+      "log_sha256": "797e4bfe330b3d71db6e1a081d45590f97abecf35d12abd4e2674acef1e749ba"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.ExactSequence"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-ExactSequence.log",
+      "elapsed_seconds": 3.749,
+      "log_sha256": "8f5d54774dbe79c0ff622d129484a517ee35fd94aa04842950c84f4bfd77d853"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Artin.NormalizerLift"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Artin-NormalizerLift.log",
+      "elapsed_seconds": 3.77,
+      "log_sha256": "11a45dc125f35f4616662da36ae01778da75027c14c5338fd69149ec5041c1d4"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Kernel"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-Kernel.log",
+      "elapsed_seconds": 3.491,
+      "log_sha256": "9ec2d3fbf0ad309cb84ec037a131ad86a0c3326d65f6c1d522ea4f6077ec6964"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.NormalizerMap"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-NormalizerMap.log",
+      "elapsed_seconds": 3.418,
+      "log_sha256": "7f086e86981444be8db5e3aa0e52dc935ce5dff49de293c5343b329c77c493df"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.QuotientMap"
+      ],
+      "exit_code": 0,
+      "log": "replay-ArtinNormalisers-QuotientMap.log",
+      "elapsed_seconds": 3.429,
+      "log_sha256": "e50440b80023e68ccef798f905a8fd8b99c3604e6acc6529c508c429bc51ab9c"
+    }
+  ],
+  "ok": true,
+  "source_inventory_sha256": "4e09907e8289d6ad65111da7950cd8a64dcc2422db58cd9934c13da83b9df5f4",
+  "vendor_provenance_sha256": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5",
+  "upstream_supplier_revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "independent_reviews": [
+    {
+      "reviewer": "reviewer-a",
+      "verdict": "accept",
+      "json_sha256": "0149028129b0dd5c64d2929a731ae79aaf4f4c783776a2314b590d8bf521a986"
+    },
+    {
+      "reviewer": "reviewer-b",
+      "verdict": "accepted",
+      "json_sha256": "98d79a860c2eebb12cd965e9700d0c6980509f2e547de55db643b2b7d7b61bd4"
+    }
+  ],
+  "finished_at": "2026-11-13T18:51:41.058902+00:00"
+}
