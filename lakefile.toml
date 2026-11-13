@@ -1,0 +1,21 @@
+name = "artin-normalisers"
+version = "0.1.0"
+defaultTargets = ["ArtinNormalisersFull"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9"
+
+[[lean_lib]]
+name = "ArtinNormalisers"
+
+[[lean_lib]]
+name = "ArtinNormalisersFull"
+
+[[lean_lib]]
+name = "TauCeti"
+srcDir = "vendor"

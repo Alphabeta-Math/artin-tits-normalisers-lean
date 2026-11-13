@@ -1,0 +1,7 @@
+Note: curl 8.18 runs parallel downloads without retries.
+Current branch: HEAD
+Using cache from origin: (some leanprover-community/mathlib4)
+Decompressing 1151 already-cached file(s) (1273 already decompressed)
+No files to download
+Decompressed 1151 already-cached file(s)
+Completed successfully in 2590 ms!

@@ -1,0 +1,5 @@
+✔ [1906/1914] Built ArtinNormalisers.NormalizerMap (458ms)
+✔ [1908/1914] Built ArtinNormalisers.QuotientMap (396ms)
+✔ [1910/1914] Built ArtinNormalisers.Kernel (486ms)
+✔ [1912/1914] Built ArtinNormalisers (336ms)
+Build completed successfully (1914 jobs).

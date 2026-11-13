@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "upstream_lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "upstream_mathlib_revision": "e8ba86fa9744dd8d90f48c1752bc735f61a4ca81",
+  "project_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "modifications": [],
+  "files_sha256": {
+    "TauCeti/Analysis/SpecialFunctions/Trigonometric/Angle.lean": "8aaf3231569ffbb2e8dbbe38d579ee6a38d7e015e24ff9e965bc95afe2300bce",
+    "TauCeti/Analysis/SpecialFunctions/Trigonometric/Bounds.lean": "43a7fb657f636da46773c8916fd026746032d0a67bb3c34b8845740c1147af84",
+    "TauCeti/GroupTheory/Coxeter/Artin.lean": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+    "TauCeti/GroupTheory/Coxeter/Basic.lean": "1fd4bf1d07ff9c34139165ee0b611b27f2a21b1226518fee03c92e82815bccee",
+    "TauCeti/GroupTheory/Coxeter/BraidEquivalence.lean": "62e4342533ee2ac57fbf17be11ef3fa365e3596313f7c620a3c66013236b7d9f",
+    "TauCeti/GroupTheory/Coxeter/Dihedral.lean": "85eb558388e2fbfc4e7f7e0b1f1035d3e59060c57aaa974da924a1de3f10a47c",
+    "TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean": "b23a8a8c2360a905a8a4165f888f89852b3b8260a6e7373f5cd0013f493f6688",
+    "TauCeti/GroupTheory/Coxeter/Matsumoto.lean": "64892e2cdee487ad98c98b4e9ca0f078ca3529d7eca2121187e0d3ed9df3f627",
+    "TauCeti/GroupTheory/Coxeter/Parabolic.lean": "31bcef698020593737d30dbbece69e2b36d519434018b1f2339b5be20689efa2",
+    "TauCeti/GroupTheory/Coxeter/StrongExchange.lean": "461c7af79d7c4bd446ad8f1606a43743f1284000b2dc370faa55a9bbe18cbf1e"
+  },
+  "modules": [
+    "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle",
+    "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds",
+    "TauCeti.GroupTheory.Coxeter.Artin",
+    "TauCeti.GroupTheory.Coxeter.Basic",
+    "TauCeti.GroupTheory.Coxeter.BraidEquivalence",
+    "TauCeti.GroupTheory.Coxeter.Dihedral",
+    "TauCeti.GroupTheory.Coxeter.Geometric.Basic",
+    "TauCeti.GroupTheory.Coxeter.Matsumoto",
+    "TauCeti.GroupTheory.Coxeter.Parabolic",
+    "TauCeti.GroupTheory.Coxeter.StrongExchange"
+  ]
+}

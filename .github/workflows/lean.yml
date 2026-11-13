@@ -1,0 +1,61 @@
+name: Lean article proofs
+
+on:
+  push:
+    paths:
+      - '*.lean'
+      - 'ArtinNormalisers/**'
+      - 'vendor/**'
+      - 'scripts/**'
+      - 'lean-toolchain'
+      - 'lakefile.toml'
+      - 'lake-manifest.json'
+      - 'README.md'
+      - 'docs/full/reviews/**'
+      - 'docs/full/source-inventory.json'
+      - '.github/workflows/lean.yml'
+  pull_request:
+    paths:
+      - '*.lean'
+      - 'ArtinNormalisers/**'
+      - 'vendor/**'
+      - 'scripts/**'
+      - 'lean-toolchain'
+      - 'lakefile.toml'
+      - 'lake-manifest.json'
+      - 'README.md'
+      - 'docs/full/reviews/**'
+      - 'docs/full/source-inventory.json'
+      - '.github/workflows/lean.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      LEAN_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - name: Fetch the actual pinned prerequisite closure
+        run: python3 scripts/cache_prerequisites.py
+      - name: Build, bind independent reviews, audit axioms and replay proofs
+        run: python3 scripts/verify.py --output evidence/full-ci
+      - name: Archive real verification records, including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: lean-lemma28-full-verification
+          path: evidence/full-ci/
+          if-no-files-found: warn
+          retention-days: 90

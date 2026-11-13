@@ -1,0 +1,31 @@
+ArtinNormalisers/Kernel.lean:19:6: error: Tactic `apply` failed: could not unify the conclusion of `(QuotientGroup.eq_one_iff ((normalizerMap f A) g)).mp`
+  (normalizerMap f A) g ∈ ?m.85
+with the goal
+  f ↑g ∈ Subgroup.map f A
+
+Note: The full type of `(QuotientGroup.eq_one_iff ((normalizerMap f A) g)).mp` is
+  ↑((normalizerMap f A) g) = 1 → (normalizerMap f A) g ∈ ?m.85
+
+G : Type u_1
+H : Type u_2
+inst✝¹ : Group G
+inst✝ : Group H
+f : G →* H
+A : Subgroup G
+g : ↥(Subgroup.normalizer ↑A)
+hx : (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) g ∈ (quotientMap f A).ker
+⊢ f ↑g ∈ Subgroup.map f A
+ArtinNormalisers/Kernel.lean:53:5: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Min (Type u_1)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+ArtinNormalisers/Kernel.lean:55:28: error(lean.invalidField): Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression
+  n
+has type `G` which does not have the necessary form.
+ArtinNormalisers/Kernel.lean:60:4: warning: declaration uses `sorry`
+ArtinNormalisers/Kernel.lean:71:11: error: Tactic `rcases` failed: `a✝ : (↑(articleKernelImage f A)).1 x` is not an inductive datatype
+ArtinNormalisers/Kernel.lean:75:10: error: Invalid `⟨...⟩` notation: The expected type
+  (↑(articleKernelImage f A)).1 ((QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) n)
+is not an inductive type
+
+Note: This notation can only be used when the expected type is an inductive type with a single constructor

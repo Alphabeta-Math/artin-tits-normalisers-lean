@@ -1,0 +1,7 @@
+⚠ [1906/1914] Replayed ArtinNormalisers.NormalizerMap
+warning: ArtinNormalisers/NormalizerMap.lean: imports `Mathlib.GroupTheory.QuotientGroup.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [1907/1914] Ran ArtinNormalisers.NormalizerMap:irArts
+warning: ArtinNormalisers/NormalizerMap.lean: imports `Mathlib.GroupTheory.QuotientGroup.Basic` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [1910/1914] Built ArtinNormalisers.Kernel (944ms)
+✔ [1912/1914] Built ArtinNormalisers (569ms)
+Build completed successfully (1914 jobs).

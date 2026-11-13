@@ -1,0 +1,12 @@
+✔ [4864/4886] Built TauCeti.GroupTheory.Coxeter.Basic (814ms)
+✔ [4866/4886] Built TauCeti.GroupTheory.Coxeter.BraidEquivalence (766ms)
+✔ [4868/4886] Built TauCeti.GroupTheory.Coxeter.Artin (937ms)
+✔ [4870/4886] Built TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle (1.5s)
+✔ [4872/4886] Built TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds (1.5s)
+✔ [4874/4886] Built TauCeti.GroupTheory.Coxeter.StrongExchange (1.1s)
+✔ [4876/4886] Built TauCeti.GroupTheory.Coxeter.Parabolic (887ms)
+✔ [4878/4886] Built TauCeti.GroupTheory.Coxeter.Geometric.Basic (1.3s)
+✔ [4880/4886] Built TauCeti.GroupTheory.Coxeter.Dihedral (709ms)
+✔ [4882/4886] Built TauCeti.GroupTheory.Coxeter.Matsumoto (722ms)
+✔ [4884/4886] Built TauCeti (581ms)
+Build completed successfully (4886 jobs).

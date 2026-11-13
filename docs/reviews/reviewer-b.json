@@ -1,0 +1,69 @@
+{
+  "reviewer": "reviewer-b",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "verdict": "accepted",
+  "scope": "All eleven definitions and theorems in the four bound Lean files; semantic correspondence to the general group-theoretic kernel argument of Lemma 2.8, not full Artin-specific short exactness.",
+  "independent_of_reviewer_a": true,
+  "review_report": "research/lean-lemma28/reviews/reviewer-b.md",
+  "declarations": [
+    "ArtinNormalisers.normalizerMap",
+    "ArtinNormalisers.normalizerMap_apply",
+    "ArtinNormalisers.normalizerMap_maps_subgroup",
+    "ArtinNormalisers.quotientMap",
+    "ArtinNormalisers.quotientMap_mk",
+    "ArtinNormalisers.quotientMap_mem_ker_iff",
+    "ArtinNormalisers.kernel_eq_image",
+    "ArtinNormalisers.articleKernelMap",
+    "ArtinNormalisers.articleKernelImage",
+    "ArtinNormalisers.articleKernelImage_eq",
+    "ArtinNormalisers.kernel_eq_articleKernelImage"
+  ],
+  "source_sha256": {
+    "ArtinNormalisers.lean": "ad0b9f18a334eed2aa41c85618bb635ddf2cfefcd5947a79264fa7e618962461",
+    "ArtinNormalisers/NormalizerMap.lean": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+    "ArtinNormalisers/QuotientMap.lean": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6",
+    "ArtinNormalisers/Kernel.lean": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff"
+  },
+  "actual_source_reading": {
+    "article": {
+      "identifier": "arXiv:2509.21915v3",
+      "path": ".research-workflow/artin-tits-normalisers-2509-21915-20261113/article.txt",
+      "medium": "original article's extracted PDF text",
+      "locators": [
+        "PDF p. 6, Lemma 2.8, displayed short exact sequence (2.9), and complete proof",
+        "PDF p. 1, normalizer quotient definitions (1.2)",
+        "PDF p. 3, pure image definition (1.7)",
+        "PDF p. 5, exact sequence (2.4) and positive-lift paragraph"
+      ],
+      "entire_article_read": false,
+      "rendered_pdf_inspected": false
+    },
+    "final_lean_sources_read_in_full": [
+      "formalizations/artin-normalisers/ArtinNormalisers.lean",
+      "formalizations/artin-normalisers/ArtinNormalisers/NormalizerMap.lean",
+      "formalizations/artin-normalisers/ArtinNormalisers/QuotientMap.lean",
+      "formalizations/artin-normalisers/ArtinNormalisers/Kernel.lean"
+    ],
+    "mathlib_api_sources_inspected": [
+      "/tmp/artin-mathlib-audit/Mathlib/Algebra/Group/Subgroup/Basic.lean: normalizer image containment and normality inside the normalizer",
+      "/tmp/artin-mathlib-audit/Mathlib/Algebra/Group/Subgroup/Map.lean: subgroupOf construction and membership",
+      "/tmp/artin-mathlib-audit/Mathlib/GroupTheory/QuotientGroup/Defs.lean: quotient projection, representative equality, identity test, lift, quotient map, kernels, and surjectivity hypotheses"
+    ]
+  },
+  "verification_actions": {
+    "reviewer_independently_recomputed_all_four_source_hashes": true,
+    "reviewer_reread_final_modules_after_module_migration": true,
+    "reviewer_checked_all_eleven_statement_semantics": true,
+    "reviewer_ran_compilation": false,
+    "compilation_evidence": "The orchestrator relayed the author's warning-free compilation of the aggregate root module at these exact four source hashes. This reviewer independently checked the hashes and mathematical statements, without running a separate compilation.",
+    "reviewer_edited_proof_sources": false
+  },
+  "limits": [
+    "Formalizes the general group-theoretic kernel argument and the existential pure-representative characterization.",
+    "Does not formalize Artin-Tits or Coxeter presentations, standard parabolics, pi(A_J)=W_J, or ker(pi)=P.",
+    "Does not prove surjectivity of the induced normalizer-quotient map or full Lemma 2.8 short exactness.",
+    "The dihedral counterexample in the report only refutes a general surjectivity inference, not the Artin-specific article theorem.",
+    "Does not certify root-owned Audit.lean, verification scripts, or every transitive mathlib dependency."
+  ]
+}

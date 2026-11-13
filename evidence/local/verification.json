@@ -1,0 +1,141 @@
+{
+  "kind": "lean-lemma28-kernel-verification",
+  "started_at": "2026-11-13T18:00:50.470370+00:00",
+  "repository_head": "435a3e697d47e15df544c620efbbe9935cc12764",
+  "input_sha256": {
+    "ArtinNormalisers/Kernel.lean": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff",
+    "ArtinNormalisers/NormalizerMap.lean": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+    "ArtinNormalisers/QuotientMap.lean": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6",
+    "ArtinNormalisers.lean": "ad0b9f18a334eed2aa41c85618bb635ddf2cfefcd5947a79264fa7e618962461",
+    "Audit.lean": "31d3edeec4587356a5b9372882e48572fb2e78f57e1f20004bcd4a4297664f0c",
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lakefile.toml": "7250f6e33ab5e47863a5e28739f78a2124f6be35d444535ffabe3688d98f138d",
+    "lake-manifest.json": "2b09091fec88c9bc3930b46b4ed3013c2f1d22ed539cc1b7e9cc8380fefb52ba",
+    "scripts/verify.py": "57b1719c49ee8e4c0c5adcdbfb0a712b813c22e9766b0c2eff6db04651cf1df5",
+    "README.md": "522553448ae0085a8ba1fb03a85363c49a6087d9cadc3fac423255e59b97b645"
+  },
+  "scope": "Generalized kernel argument only; no Artin construction or surjectivity claim",
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lean-version.log",
+      "elapsed_seconds": 0.031,
+      "log_sha256": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d"
+    },
+    {
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "log": "lake-version.log",
+      "elapsed_seconds": 0.03,
+      "log_sha256": "9c331af6911624c7a89515780097e2528e2da79e1c87311ed8a4b2b53910e65f"
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "log": "mathlib-revision.log",
+      "elapsed_seconds": 0.001,
+      "log_sha256": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b"
+    },
+    {
+      "argv": [
+        "lake",
+        "clean",
+        "artin-normalisers"
+      ],
+      "exit_code": 0,
+      "log": "clean.log",
+      "elapsed_seconds": 0.521,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "ArtinNormalisers"
+      ],
+      "exit_code": 0,
+      "log": "build.log",
+      "elapsed_seconds": 2.514,
+      "log_sha256": "e021812d31668f20b2be1d67f157b9da7c3683b6924c9452aa8305daee3cda7f"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "-DwarningAsError=true",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "log": "axioms.log",
+      "elapsed_seconds": 1.044,
+      "log_sha256": "2d481aba162f13fb705bbbf131a0783d4e85d940464801c701e37c935b1a2507"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.NormalizerMap"
+      ],
+      "exit_code": 0,
+      "log": "kernel-replay-normalizermap.log",
+      "elapsed_seconds": 2.465,
+      "log_sha256": "7f086e86981444be8db5e3aa0e52dc935ce5dff49de293c5343b329c77c493df"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.QuotientMap"
+      ],
+      "exit_code": 0,
+      "log": "kernel-replay-quotientmap.log",
+      "elapsed_seconds": 2.478,
+      "log_sha256": "e50440b80023e68ccef798f905a8fd8b99c3604e6acc6529c508c429bc51ab9c"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinNormalisers.Kernel"
+      ],
+      "exit_code": 0,
+      "log": "kernel-replay-kernel.log",
+      "elapsed_seconds": 2.518,
+      "log_sha256": "9ec2d3fbf0ad309cb84ec037a131ad86a0c3326d65f6c1d522ea4f6077ec6964"
+    }
+  ],
+  "ok": true,
+  "independent_reviews": [
+    {
+      "reviewer": "reviewer-a",
+      "verdict": "accept",
+      "json_sha256": "83d7d67377f4f6b13f95c5b26f1b48ce6f16487e81628d5f0776787aceed8c9b"
+    },
+    {
+      "reviewer": "reviewer-b",
+      "verdict": "accepted",
+      "json_sha256": "750e9638cb316796394cbf4c7acfcd68896233c2f7385f14adcacbe256b73f9f"
+    }
+  ],
+  "finished_at": "2026-11-13T18:01:02.077343+00:00"
+}

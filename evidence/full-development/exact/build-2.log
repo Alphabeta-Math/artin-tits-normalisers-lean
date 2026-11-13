@@ -1,0 +1,191 @@
+ArtinNormalisers/Artin/ExactSequence.lean:54:29: error(lean.unknownIdentifier): Unknown identifier `normalizerQuotientOf`
+
+Note: A private declaration `normalizerQuotientOf` (from the current module) exists but would need to be public to access here.
+ArtinNormalisers/Artin/ExactSequence.lean:58:36: error(lean.unknownIdentifier): Unknown identifier `normalizerQuotientOf`
+
+Note: A private declaration `normalizerQuotientOf` (from the current module) exists but would need to be public to access here.
+ArtinNormalisers/Artin/ExactSequence.lean:63:28: error: Function expected at
+  normalizerQuotient
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotient` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:63:54: error: Function expected at
+  coxeterNormalizerQuotient
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `coxeterNormalizerQuotient` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:64:2: error(lean.unknownIdentifier): Unknown identifier `quotientMapTo`
+
+Note: A private declaration `quotientMapTo` (from the current module) exists but would need to be public to access here.
+ArtinNormalisers/Artin/ExactSequence.lean:72:4: error: Function expected at
+  normalizerQuotientMap
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotientMap` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:86:36: error: Function expected at
+  normalizerQuotient
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotient` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:92:4: error: Function expected at
+  pureNormalizerImage
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerImage` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:96:30: error: Function expected at
+  pureNormalizerImage
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerImage` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:96:57: error: Function expected at
+  normalizerQuotient
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotient` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:97:3: error: Function expected at
+  pureNormalizerImage
+but this term has type
+  x✝¹
+
+Note: Expected a function because this term is being applied to the argument
+  M
+ArtinNormalisers/Artin/ExactSequence.lean:100:24: error: Function expected at
+  pureNormalizerInclusion
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerInclusion` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:101:3: error(lean.unknownIdentifier): Unknown identifier `pureNormalizerImage`
+ArtinNormalisers/Artin/ExactSequence.lean:105:5: error: Function expected at
+  normalizerQuotientMap
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotientMap` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:105:38: error: Function expected at
+  pureNormalizerImage
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerImage` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:106:35: error(lean.unknownIdentifier): Unknown identifier `M`
+ArtinNormalisers/Artin/ExactSequence.lean:106:49: error(lean.unknownIdentifier): Unknown identifier `M`
+ArtinNormalisers/Artin/ExactSequence.lean:106:51: error(lean.unknownIdentifier): Unknown identifier `J`
+ArtinNormalisers/Artin/ExactSequence.lean:106:72: error(lean.unknownIdentifier): Unknown identifier `M`
+ArtinNormalisers/Artin/ExactSequence.lean:106:74: error(lean.unknownIdentifier): Unknown identifier `J`
+ArtinNormalisers/Artin/ExactSequence.lean:107:19: error(lean.unknownIdentifier): Unknown identifier `M`
+ArtinNormalisers/Artin/ExactSequence.lean:107:21: error(lean.unknownIdentifier): Unknown identifier `J`
+ArtinNormalisers/Artin/ExactSequence.lean:110:5: error: Function expected at
+  pureNormalizerInclusion
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerInclusion` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:110:43: error: Function expected at
+  normalizerQuotientMap
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotientMap` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:111:6: error(lean.unknownIdentifier): Unknown identifier `normalizerQuotientMap_kernel`
+ArtinNormalisers/Artin/ExactSequence.lean:110:77: error: unsolved goals
+x✝¹ : Sort u_4
+pureNormalizerInclusion : x✝¹
+x✝ : Sort u_5
+normalizerQuotientMap : x✝
+⊢ sorry = sorry
+ArtinNormalisers/Artin/ExactSequence.lean:117:25: error: Function expected at
+  normalizerQuotientMap
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotientMap` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:120:23: error(lean.unknownIdentifier): Unknown identifier `M`
+ArtinNormalisers/Artin/ExactSequence.lean:120:25: error(lean.unknownIdentifier): Unknown identifier `J`
+ArtinNormalisers/Artin/ExactSequence.lean:121:55: error(lean.unknownIdentifier): Unknown identifier `M.Group`
+ArtinNormalisers/Artin/ExactSequence.lean:121:45: error(lean.unknownIdentifier): Unknown identifier `M`
+ArtinNormalisers/Artin/ExactSequence.lean:121:47: error(lean.unknownIdentifier): Unknown identifier `J`
+ArtinNormalisers/Artin/ExactSequence.lean:137:24: error: Function expected at
+  pureNormalizerInclusion
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerInclusion` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:138:7: error: Function expected at
+  pureNormalizerInclusion
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `pureNormalizerInclusion` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:138:45: error: Function expected at
+  normalizerQuotientMap
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotientMap` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:139:29: error: Function expected at
+  normalizerQuotientMap
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  M
+
+Hint: The identifier `normalizerQuotientMap` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+ArtinNormalisers/Artin/ExactSequence.lean:140:3: error(lean.unknownIdentifier): Unknown identifier `pureNormalizerInclusion_injective`
+ArtinNormalisers/Artin/ExactSequence.lean:140:2: error: Invalid `⟨...⟩` notation: The expected type of this term could not be determined

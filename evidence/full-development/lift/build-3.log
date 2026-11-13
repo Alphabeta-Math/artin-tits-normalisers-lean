@@ -1,0 +1,27 @@
+✖ [4888/4889] Building ArtinNormalisers.Artin.NormalizerLift (822ms)
+trace: .> LEAN_PATH=/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Cli/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/batteries/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Qq/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/aesop/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/importGraph/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/plausible/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/mathlib/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/lib/lean /home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/ArtinNormalisers/Artin/NormalizerLift.lean -o /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/lib/lean/ArtinNormalisers/Artin/NormalizerLift.olean -i /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/lib/lean/ArtinNormalisers/Artin/NormalizerLift.ilean -c /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/ir/ArtinNormalisers/Artin/NormalizerLift.c --setup /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/ir/ArtinNormalisers/Artin/NormalizerLift.setup.json --json
+error: ArtinNormalisers/Artin/NormalizerLift.lean:29:10: Invalid projection: Projections cannot be used on functions, and
+  Subgroup.closure_le
+has function type
+  ∀ (K : Subgroup ?m.25) {k : Set ?m.25}, Subgroup.closure k ≤ K ↔ k ⊆ ↑K
+error: ArtinNormalisers/Artin/NormalizerLift.lean:30:4: No goals to be solved
+error: ArtinNormalisers/Artin/NormalizerLift.lean:35:4: Type mismatch: After simplification, term
+  Subgroup.subset_closure (Exists.intro i ⟨hi, rfl⟩)
+ has type
+  M.simple i ∈ ↑(Subgroup.closure (M.simple '' J))
+but is expected to have type
+  M.simple i ∈ coxeterParabolic M J
+error: ArtinNormalisers/Artin/NormalizerLift.lean:45:10: Invalid projection: Projections cannot be used on functions, and
+  Subgroup.closure_le
+has function type
+  ∀ (K : Subgroup ?m.69) {k : Set ?m.69}, Subgroup.closure k ≤ K ↔ k ⊆ ↑K
+error: ArtinNormalisers/Artin/NormalizerLift.lean:46:4: No goals to be solved
+error: ArtinNormalisers/Artin/NormalizerLift.lean:67:4: Type mismatch: After simplification, term
+  Subgroup.subset_closure (Exists.intro j ⟨hj, rfl⟩)
+ has type
+  generator M j ∈ ↑(Subgroup.closure (generator M '' J))
+but is expected to have type
+  generator M j ∈ Subgroup.closure (generator M '' J)
+Some required targets logged failures:
+- ArtinNormalisers.Artin.NormalizerLift
+error: build failed

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "reviewer": "reviewer-a",
+  "task": "lemma28_statement_review_a",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "date": "2026-11-14",
+  "final": true,
+  "verdict": "accept",
+  "declarations": [
+    "ArtinNormalisers.normalizerMap",
+    "ArtinNormalisers.normalizerMap_apply",
+    "ArtinNormalisers.normalizerMap_maps_subgroup",
+    "ArtinNormalisers.quotientMap",
+    "ArtinNormalisers.quotientMap_mk",
+    "ArtinNormalisers.quotientMap_mem_ker_iff",
+    "ArtinNormalisers.kernel_eq_image",
+    "ArtinNormalisers.articleKernelMap",
+    "ArtinNormalisers.articleKernelImage",
+    "ArtinNormalisers.articleKernelImage_eq",
+    "ArtinNormalisers.kernel_eq_articleKernelImage"
+  ],
+  "declaration_verdict": "accept_all_11",
+  "source_reading": {
+    "article": "Garnier–Heng–Licata–Yacobi, Normalisers of parabolic subgroups of Artin–Tits groups and Tits cone intersections, arXiv:2509.21915v3",
+    "locators": [
+      "PDF page 6, Lemma 2.8, equation (2.9), entire proof",
+      "PDF page 3, equation (1.7), definition of N(P,J)",
+      "PDF pages 1 and 5, normaliser quotient and Artin/Coxeter/parabolic context"
+    ],
+    "description": "Independently read article.txt source passages and visually inspected original PDF page-6 image; read every exact final Lean declaration and proof body; inspected pinned mathlib subgroup, normaliser, kernel, range and quotient sources. Did not consult reviewer-b.",
+    "mathlib_commit": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+    "limits": "Not a whole-article review; no independent Artin-specific surjectivity proof or positive-lift construction. Article-specific groups and their identifications are not formalised."
+  },
+  "source_sha256": {
+    "ArtinNormalisers.lean": "ad0b9f18a334eed2aa41c85618bb635ddf2cfefcd5947a79264fa7e618962461",
+    "ArtinNormalisers/NormalizerMap.lean": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+    "ArtinNormalisers/QuotientMap.lean": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6",
+    "ArtinNormalisers/Kernel.lean": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff"
+  },
+  "independent_tool_checks": [
+    {
+      "command": "lake build ArtinNormalisers",
+      "exit_code": 0,
+      "observed_result": "Build completed successfully (1914 jobs).",
+      "limit": "Ordinary build in existing package environment; reviewer did not clean first."
+    },
+    {
+      "command": "lake env lean Audit.lean",
+      "exit_code": 0,
+      "observed_result": "All eleven expected signatures printed; Audited 24 project declarations; axiom allowlist passed.",
+      "axiom_allowlist": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    {
+      "command": "sha256sum on all four reviewed source modules",
+      "exit_code": 0,
+      "observed_result": "All independently computed hashes match source_sha256."
+    }
+  ],
+  "owner_reported_check": "Owner relayed author's successful warning-free root compilation before this reviewer independently ran the two commands recorded above.",
+  "not_independently_executed": ["clean rebuild", "leanchecker", "full imported mathlib proof replay"],
+  "scope": "Accepts all four definitions and seven theorem declarations as the induced-map and kernel argument underlying Lemma 2.8, without a surjectivity assumption. Does not establish surjectivity of quotientMap, the full short exact sequence, or the full Lemma 2.8.",
+  "original_article_error_asserted": false,
+  "report": "research/lean-lemma28/reviews/reviewer-a.md"
+}

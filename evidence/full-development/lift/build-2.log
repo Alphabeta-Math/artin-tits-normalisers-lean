@@ -1,0 +1,93 @@
+✖ [4888/4889] Building ArtinNormalisers.Artin.NormalizerLift (853ms)
+trace: .> LEAN_PATH=/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Cli/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/batteries/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Qq/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/aesop/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/importGraph/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/plausible/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/mathlib/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/lib/lean /home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/ArtinNormalisers/Artin/NormalizerLift.lean -o /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/lib/lean/ArtinNormalisers/Artin/NormalizerLift.olean -i /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/lib/lean/ArtinNormalisers/Artin/NormalizerLift.ilean -c /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/ir/ArtinNormalisers/Artin/NormalizerLift.c --setup /home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/build/ir/ArtinNormalisers/Artin/NormalizerLift.setup.json --json
+error: ArtinNormalisers/Artin/NormalizerLift.lean:29:10: Unknown constant `Subgroup.closure_le.mpr`
+error: ArtinNormalisers/Artin/NormalizerLift.lean:30:4: No goals to be solved
+error: ArtinNormalisers/Artin/NormalizerLift.lean:51:4: Type mismatch: After simplification, term
+  Subgroup.subset_closure (Exists.intro j ⟨hj, rfl⟩)
+ has type
+  generator M j ∈ ↑(Subgroup.closure (generator M '' J))
+but is expected to have type
+  generator M j ∈ parabolic M J
+error: ArtinNormalisers/Artin/NormalizerLift.lean:77:6: Type mismatch: After simplification, term
+  hij
+ has type
+  d * M.simple i = M.simple j * d
+but is expected to have type
+  cs.wordProd δ * (cs.simple i * cs.wordProd []) = cs.simple j * cs.wordProd δ
+error: ArtinNormalisers/Artin/NormalizerLift.lean:85:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  cs.simple j
+in the target expression
+  d * M.simple i = M.simple j * d
+
+case hf
+I : Type u_1
+M : CoxeterMatrix I
+J : Set I
+d : M.Group
+hd : d ∈ Subgroup.normalizer ↑(M.toCoxeterSystem.parabolic J)
+hmin : M.toCoxeterSystem.IsMinimalCosetRep J d
+δ : List I
+hδ : M.toCoxeterSystem.IsReduced δ
+hprod : M.toCoxeterSystem.wordProd δ = d
+cs : CoxeterSystem M M.Group := M.toCoxeterSystem
+hbraid :
+  ∀ (i i' : I),
+    (List.map (TauCeti.ArtinGroup.gen M) (CoxeterSystem.braidWord M i i')).prod =
+      (List.map (TauCeti.ArtinGroup.gen M) (CoxeterSystem.braidWord M i' i)).prod
+hrel : ∀ i ∈ J, ∀ j ∈ J, d * M.simple i = M.simple j * d → wordProd M δ * generator M i = generator M j * wordProd M δ
+i : I
+hi : i ∈ J
+j : I
+hj : j ∈ J
+hij : d * cs.simple i * d⁻¹ = cs.simple j
+⊢ d * M.simple i = M.simple j * d
+error: ArtinNormalisers/Artin/NormalizerLift.lean:92:8: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  cs.simple j
+in the target expression
+  d * M.simple j = M.simple i * d
+
+case hb
+I : Type u_1
+M : CoxeterMatrix I
+J : Set I
+d : M.Group
+hd : d ∈ Subgroup.normalizer ↑(M.toCoxeterSystem.parabolic J)
+hmin : M.toCoxeterSystem.IsMinimalCosetRep J d
+δ : List I
+hδ : M.toCoxeterSystem.IsReduced δ
+hprod : M.toCoxeterSystem.wordProd δ = d
+cs : CoxeterSystem M M.Group := M.toCoxeterSystem
+hbraid :
+  ∀ (i i' : I),
+    (List.map (TauCeti.ArtinGroup.gen M) (CoxeterSystem.braidWord M i i')).prod =
+      (List.map (TauCeti.ArtinGroup.gen M) (CoxeterSystem.braidWord M i' i)).prod
+hrel : ∀ i ∈ J, ∀ j ∈ J, d * M.simple i = M.simple j * d → wordProd M δ * generator M i = generator M j * wordProd M δ
+i : I
+hi : i ∈ J
+hd' : d⁻¹ ∈ Subgroup.normalizer ↑(cs.parabolic J)
+hmin' : cs.IsMinimalCosetRep J d⁻¹
+j : I
+hj : j ∈ J
+hij : d⁻¹ * cs.simple i * d⁻¹⁻¹ = cs.simple j
+⊢ d * M.simple j = M.simple i * d
+error: ArtinNormalisers/Artin/NormalizerLift.lean:102:71: Type mismatch
+  hw
+has type
+  w ∈ Subgroup.normalizer ↑(coxeterParabolic M J)
+but is expected to have type
+  w ∈ Subgroup.normalizer ↑(cs.parabolic J)
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  CoxeterSystem.parabolic ↦ 8
+error: ArtinNormalisers/Artin/NormalizerLift.lean:109:4: Type mismatch
+  Subgroup.inv_mem (cs.parabolic J) hv
+has type
+  v⁻¹ ∈ cs.parabolic J
+but is expected to have type
+  v⁻¹ ∈ coxeterParabolic M J
+
+Note: The following definitions were not unfolded because their definition is not exposed:
+  CoxeterSystem.parabolic ↦ 8
+Some required targets logged failures:
+- ArtinNormalisers.Artin.NormalizerLift
+error: build failed

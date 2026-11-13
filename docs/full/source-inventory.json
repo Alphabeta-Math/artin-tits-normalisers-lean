@@ -1,0 +1,271 @@
+{
+  "project_source_sha256": {
+    "ArtinNormalisers.lean": "ad0b9f18a334eed2aa41c85618bb635ddf2cfefcd5947a79264fa7e618962461",
+    "ArtinNormalisersFull.lean": "b2b839a8c2a3cf673a94ae70b1073bd62fdc65668585f69d7b08b2b36f791d36",
+    "ArtinNormalisers/Artin/Basic.lean": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+    "ArtinNormalisers/Artin/CoxeterNormalizer.lean": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c",
+    "ArtinNormalisers/Artin/ExactSequence.lean": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+    "ArtinNormalisers/Artin/NormalizerLift.lean": "d0a1c617b470e5ce36c41a60ad82b29eac825d9b84cf57106138beccf0922849",
+    "ArtinNormalisers/Kernel.lean": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff",
+    "ArtinNormalisers/NormalizerMap.lean": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+    "ArtinNormalisers/QuotientMap.lean": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6"
+  },
+  "declarations": [
+    {
+      "name": "ArtinNormalisers.Artin.Group",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.generator",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.closure_range_generator",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.wordProd",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.braid_relation",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.projection",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.projection_generator",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.projection_wordProd",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.projection_surjective",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.parabolic",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.coxeterParabolic",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.map_parabolic",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pure",
+      "file": "ArtinNormalisers/Artin/Basic.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Coxeter.minimal_inv_of_mem_normalizer",
+      "file": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Coxeter.exists_conjugate_simple_of_minimal",
+      "file": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Coxeter.exists_inverse_conjugate_simple_of_minimal",
+      "file": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Coxeter.isReduced_append_simple_of_minimal",
+      "file": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Coxeter.isReduced_prepend_simple_of_minimal",
+      "file": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Coxeter.exists_minimal_normalizer",
+      "file": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.normalizerQuotientOf",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.quotientMapTo",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.quotientMapTo_mk",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.quotientMapTo_kernel",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotient",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.coxeterNormalizerQuotient",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotientMap",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotientMap_mk",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pureNormalizerImage",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pureNormalizerImage_eq_range",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pureNormalizerInclusion",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pureNormalizerInclusion_injective",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotientMap_kernel",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pureNormalizerInclusion_range",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotientMap_surjective",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.lemma_2_8",
+      "file": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.coxeterParabolic_eq",
+      "file": "ArtinNormalisers/Artin/NormalizerLift.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.conjugate_mem_parabolic",
+      "file": "ArtinNormalisers/Artin/NormalizerLift.lean",
+      "private": true
+    },
+    {
+      "name": "ArtinNormalisers.Artin.mem_normalizer_of_generator_relations",
+      "file": "ArtinNormalisers/Artin/NormalizerLift.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.wordProd_mem_normalizer_of_minimal",
+      "file": "ArtinNormalisers/Artin/NormalizerLift.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.Artin.exists_normalizer_lift",
+      "file": "ArtinNormalisers/Artin/NormalizerLift.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.quotientMap_mem_ker_iff",
+      "file": "ArtinNormalisers/Kernel.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.kernel_eq_image",
+      "file": "ArtinNormalisers/Kernel.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.articleKernelMap",
+      "file": "ArtinNormalisers/Kernel.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.articleKernelImage",
+      "file": "ArtinNormalisers/Kernel.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.articleKernelImage_eq",
+      "file": "ArtinNormalisers/Kernel.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.kernel_eq_articleKernelImage",
+      "file": "ArtinNormalisers/Kernel.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.normalizerMap",
+      "file": "ArtinNormalisers/NormalizerMap.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.normalizerMap_apply",
+      "file": "ArtinNormalisers/NormalizerMap.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.normalizerMap_maps_subgroup",
+      "file": "ArtinNormalisers/NormalizerMap.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.quotientMap",
+      "file": "ArtinNormalisers/QuotientMap.lean",
+      "private": false
+    },
+    {
+      "name": "ArtinNormalisers.quotientMap_mk",
+      "file": "ArtinNormalisers/QuotientMap.lean",
+      "private": false
+    }
+  ],
+  "vendor_provenance_sha256": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5"
+}

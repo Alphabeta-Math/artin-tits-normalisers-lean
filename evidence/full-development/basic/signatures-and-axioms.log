@@ -1,0 +1,28 @@
+ArtinNormalisers.Artin.Group.{u_1} {I : Type u_1} (M : CoxeterMatrix I) : Type u_1
+ArtinNormalisers.Artin.generator.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (i : I) : ArtinNormalisers.Artin.Group M
+ArtinNormalisers.Artin.closure_range_generator.{u_1} {I : Type u_1} (M : CoxeterMatrix I) :
+  Subgroup.closure (Set.range (ArtinNormalisers.Artin.generator M)) = ⊤
+ArtinNormalisers.Artin.wordProd.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (w : List I) : ArtinNormalisers.Artin.Group M
+ArtinNormalisers.Artin.braid_relation.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (i j : I) :
+  ArtinNormalisers.Artin.wordProd M (CoxeterSystem.alternatingWord i j (M.M i j)) =
+    ArtinNormalisers.Artin.wordProd M (CoxeterSystem.alternatingWord j i (M.M i j))
+ArtinNormalisers.Artin.projection.{u_1} {I : Type u_1} (M : CoxeterMatrix I) : ArtinNormalisers.Artin.Group M →* M.Group
+ArtinNormalisers.Artin.projection_generator.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (i : I) :
+  (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.generator M i) = M.simple i
+ArtinNormalisers.Artin.projection_wordProd.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (w : List I) :
+  (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.wordProd M w) = M.toCoxeterSystem.wordProd w
+ArtinNormalisers.Artin.projection_surjective.{u_1} {I : Type u_1} (M : CoxeterMatrix I) :
+  Function.Surjective ⇑(ArtinNormalisers.Artin.projection M)
+ArtinNormalisers.Artin.parabolic.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) :
+  Subgroup (ArtinNormalisers.Artin.Group M)
+ArtinNormalisers.Artin.coxeterParabolic.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) : Subgroup M.Group
+ArtinNormalisers.Artin.map_parabolic.{u_1} {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) :
+  Subgroup.map (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Artin.parabolic M J) =
+    ArtinNormalisers.Artin.coxeterParabolic M J
+ArtinNormalisers.Artin.pure.{u_1} {I : Type u_1} (M : CoxeterMatrix I) : Subgroup (ArtinNormalisers.Artin.Group M)
+'ArtinNormalisers.Artin.closure_range_generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArtinNormalisers.Artin.braid_relation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArtinNormalisers.Artin.projection_generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArtinNormalisers.Artin.projection_wordProd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArtinNormalisers.Artin.projection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ArtinNormalisers.Artin.map_parabolic' depends on axioms: [propext, Classical.choice, Quot.sound]

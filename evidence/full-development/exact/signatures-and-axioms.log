@@ -1,0 +1,20 @@
+ArtinNormalisers.Artin.normalizerQuotientMap.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  ArtinNormalisers.Artin.normalizerQuotient M J →* ArtinNormalisers.Artin.coxeterNormalizerQuotient M J
+ArtinNormalisers.Artin.pureNormalizerImage.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  Subgroup (ArtinNormalisers.Artin.normalizerQuotient M J)
+ArtinNormalisers.Artin.pureNormalizerInclusion.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) →* ArtinNormalisers.Artin.normalizerQuotient M J
+ArtinNormalisers.Artin.normalizerQuotientMap_kernel.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker = ArtinNormalisers.Artin.pureNormalizerImage M J
+ArtinNormalisers.Artin.normalizerQuotientMap_surjective.{u_3} {I : Type u_3} (M : CoxeterMatrix I) (J : Set I) :
+  Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)
+theorem ArtinNormalisers.Artin.lemma_2_8.{u_3} : ∀ {I : Type u_3} (M : CoxeterMatrix I) (J : Set I),
+  Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+    (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range =
+        (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J) :=
+fun {I} M J =>
+  ⟨ArtinNormalisers.Artin.pureNormalizerInclusion_injective M J,
+    ⟨ArtinNormalisers.Artin.pureNormalizerInclusion_range M J,
+      ArtinNormalisers.Artin.normalizerQuotientMap_surjective M J⟩⟩
+'ArtinNormalisers.Artin.lemma_2_8' depends on axioms: [propext, Classical.choice, Quot.sound]

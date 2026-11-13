@@ -1,0 +1,51 @@
+The following diagnostics are copied from actual development tool output.
+They are not rerun diagnostics for the final source.
+
+Command: /home/lazyinspirit/.elan/bin/lake env lean ArtinNormalisers/NormalizerMap.lean
+Exit: 1
+ArtinNormalisers/NormalizerMap.lean:1:0: error: object file '/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/importGraph/.lake/build/lib/lean/ImportGraph/Lean/Syntax.olean' of module ImportGraph.Lean.Syntax does not exist
+
+Command: /home/lazyinspirit/.elan/bin/lake env lean ArtinNormalisers/NormalizerMap.lean
+Exit: 1
+ArtinNormalisers/NormalizerMap.lean:11:4: error: Invalid field notation: Function `Subgroup.normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `A`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+ArtinNormalisers/NormalizerMap.lean:11:20: error: Invalid field notation: Function `Subgroup.normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `Subgroup.map
+  f A`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+ArtinNormalisers/NormalizerMap.lean:17:63: error: Invalid field notation: Function `Subgroup.normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `A`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+ArtinNormalisers/NormalizerMap.lean:22:17: error: Invalid field notation: Function `Subgroup.normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `A`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+ArtinNormalisers/NormalizerMap.lean:23:28: error: Invalid field notation: Function `Subgroup.normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `Subgroup.map
+  f A`
+
+Note: Such a parameter must be explicit, or implicit with a unique name, to be used by field notation
+
+Command: /home/lazyinspirit/.elan/bin/lake env lean ArtinNormalisers/NormalizerMap.lean
+Exit: 1
+ArtinNormalisers/NormalizerMap.lean:11:52: error: Application type mismatch: The argument
+  Subgroup.map f A
+has type
+  Subgroup H
+but is expected to have type
+  Set ?m.7
+in the application
+  Subgroup.normalizer (Subgroup.map f A)
+ArtinNormalisers/NormalizerMap.lean:18:5: error(lean.unknownIdentifier): Unknown identifier `normalizerMap`
+
+Note: It is not possible to treat `normalizerMap` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+ArtinNormalisers/NormalizerMap.lean:18:34: error: Application type mismatch: The argument
+  n
+has type
+  ↥(Subgroup.normalizer ?m.6)
+but is expected to have type
+  G
+in the application
+  f n
+ArtinNormalisers/NormalizerMap.lean:23:68: error(lean.unknownIdentifier): Unknown identifier `normalizerMap`
+
+Note: It is not possible to treat `normalizerMap` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.

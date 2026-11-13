@@ -1,0 +1,10 @@
+{
+  "module": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+  "source_sha256": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c",
+  "build_command": "lake build ArtinNormalisers.Artin.CoxeterNormalizer",
+  "successful_build_log": "build-3.log",
+  "mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "axiom_audit": "owned by parent task; not performed in this helper task",
+  "kernel_replay": "owned by parent task; not performed in this helper task"
+}

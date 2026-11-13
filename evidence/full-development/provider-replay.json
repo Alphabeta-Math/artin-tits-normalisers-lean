@@ -1,0 +1,135 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.298,
+      "log": "evidence/full-development/provider-replay-Analysis-SpecialFunctions-Trigonometric-Angle.log",
+      "log_sha256": "d502da01f417fa0ab2dc0b134b4ef67ae53f418dd79b1757e9c238a2ffeea3f7"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.247,
+      "log": "evidence/full-development/provider-replay-Analysis-SpecialFunctions-Trigonometric-Bounds.log",
+      "log_sha256": "8d9fb6624ed55afa07b7e9fe897cb6c147bff977e31edc989b127c57519576a3"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Artin"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.063,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-Artin.log",
+      "log_sha256": "2cc81a02ab2c9cf1faf4c5b0d0d4933c23b6f9ab40253ad12dc61a50d14b227e"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Basic"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.021,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-Basic.log",
+      "log_sha256": "6772ec812bbdc73e0454767726b2e9b6680a0381b1c6b4e595662ac18b4472f2"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.BraidEquivalence"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.03,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-BraidEquivalence.log",
+      "log_sha256": "112a924c15d829504bcf579208534f74284ed3a9bb96c322a093ba123370d864"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Dihedral"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.077,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-Dihedral.log",
+      "log_sha256": "379db9f85962078062cebe2602d207eb114e2f9b7f41163671e7b9efcea21998"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Geometric.Basic"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.312,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-Geometric-Basic.log",
+      "log_sha256": "836d02f7abf00ef9d81ed938980111b0469977f004ad961252add2e5bd027970"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Matsumoto"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.2,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-Matsumoto.log",
+      "log_sha256": "ac2e5cb4b06e815d03cb30358da35890a2332daa46bcbd2d60bccfca85be6455"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.Parabolic"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.071,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-Parabolic.log",
+      "log_sha256": "68c2f7efc780ad6109a8e6da74800353edadebe37998b8ebf8fcce651ecb3320"
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "TauCeti.GroupTheory.Coxeter.StrongExchange"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 3.097,
+      "log": "evidence/full-development/provider-replay-GroupTheory-Coxeter-StrongExchange.log",
+      "log_sha256": "ef83cba1d3930e21c7d823d398f1ac2758aa715898644ae60966f989768c2293"
+    }
+  ],
+  "ok": true
+}

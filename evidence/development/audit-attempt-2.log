@@ -1,0 +1,62 @@
+ArtinNormalisers.normalizerMap.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) : ↥(Subgroup.normalizer ↑A) →* ↥(Subgroup.normalizer ↑(Subgroup.map f A))
+ArtinNormalisers.normalizerMap_apply.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) (n : ↥(Subgroup.normalizer ↑A)) : ↑((ArtinNormalisers.normalizerMap f A) n) = f ↑n
+ArtinNormalisers.normalizerMap_maps_subgroup.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) :
+  A.subgroupOf (Subgroup.normalizer ↑A) ≤
+    Subgroup.comap (ArtinNormalisers.normalizerMap f A)
+      ((Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A)))
+ArtinNormalisers.quotientMap.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) :
+  ↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A) →*
+    ↥(Subgroup.normalizer ↑(Subgroup.map f A)) ⧸ (Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A))
+ArtinNormalisers.quotientMap_mk.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) (n : ↥(Subgroup.normalizer ↑A)) :
+  (ArtinNormalisers.quotientMap f A) ((QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) n) =
+    (QuotientGroup.mk' ((Subgroup.map f A).subgroupOf (Subgroup.normalizer ↑(Subgroup.map f A))))
+      ((ArtinNormalisers.normalizerMap f A) n)
+ArtinNormalisers.quotientMap_mem_ker_iff.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) (x : ↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A)) :
+  x ∈ (ArtinNormalisers.quotientMap f A).ker ↔
+    ∃ n, (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) n = x ∧ f ↑n = 1
+ArtinNormalisers.kernel_eq_image.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) :
+  (ArtinNormalisers.quotientMap f A).ker =
+    Subgroup.map (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) (f.ker.subgroupOf (Subgroup.normalizer ↑A))
+ArtinNormalisers.articleKernelMap.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) :
+  ↥(f.ker ⊓ Subgroup.normalizer ↑A) →* ↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A)
+ArtinNormalisers.articleKernelImage.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) : Subgroup (↥(Subgroup.normalizer ↑A) ⧸ A.subgroupOf (Subgroup.normalizer ↑A))
+ArtinNormalisers.articleKernelImage_eq.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) :
+  ArtinNormalisers.articleKernelImage f A =
+    Subgroup.map (QuotientGroup.mk' (A.subgroupOf (Subgroup.normalizer ↑A))) (f.ker.subgroupOf (Subgroup.normalizer ↑A))
+ArtinNormalisers.kernel_eq_articleKernelImage.{u_1, u_2} {G : Type u_1} {H : Type u_2} [Group G] [Group H] (f : G →* H)
+  (A : Subgroup G) : (ArtinNormalisers.quotientMap f A).ker = ArtinNormalisers.articleKernelImage f A
+AXIOMS ArtinNormalisers.articleKernelImage_eq: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelMap._proof_5: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap._proof_2: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap._proof_6: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.quotientMap: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.quotientMap._proof_1: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelMap._proof_4: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.quotientMap_mk: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap._proof_3: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelMap._proof_3: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelMap._proof_2: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.kernel_eq_image: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.kernel_eq_articleKernelImage: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap._proof_5: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelMap._proof_6: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.quotientMap_mem_ker_iff: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelMap._proof_1: [propext]
+AXIOMS ArtinNormalisers.normalizerMap_apply: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap._proof_1: [propext]
+AXIOMS ArtinNormalisers.articleKernelMap: [propext, Classical.choice, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap._proof_4: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.normalizerMap_maps_subgroup: [propext, Quot.sound]
+AXIOMS ArtinNormalisers.articleKernelImage: [propext, Classical.choice, Quot.sound]
+Audited 24 project declarations; axiom allowlist passed

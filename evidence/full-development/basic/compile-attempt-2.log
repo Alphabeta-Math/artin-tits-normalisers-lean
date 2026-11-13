@@ -1,0 +1,7 @@
+ArtinNormalisers/Artin/Basic.lean:76:28: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Set.mem_image, projection_generator]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
