@@ -1,7 +1,8 @@
 # Landmark 2: proved reduced ribbon normalizers and complete lcm relations
 
 Status: proved. Both independent GPT-6.1 Sol/high statement reviews and the
-complete local source-bound verification passed. Fresh GitHub CI is pending.
+complete local source-bound verification passed. [Fresh GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592)
+also passed; its complete artifact and raw logs are permanently archived.
 The development proves the spherical algebraic normalizer
 identification and a complete presentation by fixed actual pair-lcm relations.
 It does not assert completion of Theorem 1.8 or the later geometric comparison.
@@ -145,13 +146,24 @@ remain archived; no kernel replay success is inferred from that run.
 The corrected complete local verification linked above passed. Mathematical
 sources and accepted statement-review hashes are unchanged.
 
-Fresh CI will rebuild with the corrected explicit supplier targets and
-replay all 359 providers with two workers, in addition to the new project
-replay battery. Its result will be archived after it actually succeeds.
+[Fresh CI succeeded](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592)
+on source commit `986b1f59aa1091c6a8905e924bece53e02f7dbaf`, rebuilding
+from the pinned context with both supplier roots and replaying all 359
+providers afresh with two workers. All 24 project exact-module replays,
+the unique/physical axiom audits and both independent statement-review
+bindings passed. The [permanent archive](github-evidence/run-43516856592/README.md)
+contains the original artifact ZIP, complete compressed Actions log,
+run/job/artifact metadata and readable verification JSON. Its ZIP digest
+matches GitHub metadata; all 835 current source/config/review input hashes,
+65 unchanged parent inputs, both review receipts and 420 raw command-log
+hashes were checked against the downloaded artifact.
+
 Kernel replay uses the bundled Lean kernel relative to imported environments,
 including pinned mathlib; it is not a second kernel or a fresh replay of all
-mathlib. No geometric comparison, asphericity, or full Theorem 1.8 completion
-follows.
+mathlib. The archive records compiled CI artifact hashes and the runner's
+unchanged checks; it does not copy every compiled binary or compare those
+remote binaries with a local rebuild. No geometric comparison, asphericity,
+or full Theorem 1.8 completion follows.
 
 ## Consulted-source findings retained
 

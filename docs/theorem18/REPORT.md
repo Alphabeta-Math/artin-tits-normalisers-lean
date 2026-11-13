@@ -5,7 +5,9 @@ normalizer quotient covering and its geometric exact sequence.
 [Landmark 2](landmarks/milestone2-REPORT.md) now proves the actual reduced
 ribbon normalizer quotient isomorphism, semidirect splitting and complete
 chosen-lcm groupoid presentation. Both independent reviews and complete
-local verification passed; fresh CI is pending. The report below retains
+local verification and [fresh CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592) passed.
+The complete [records](landmarks/github-evidence/run-43516856592/README.md)
+are archived. The report below retains
 the earlier foundational milestone's scope. Remaining work is tracked in
 the [five-landmark plan](landmarks/PLAN.md).
 

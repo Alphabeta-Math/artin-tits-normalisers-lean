@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "run_id": 43516856592,
+  "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592",
+  "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+  "landmark_2_proved": true,
+  "full_theorem_1_8_proved": false,
+  "artifact_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+  "github_artifact_digest_matches": true,
+  "current_source_input_count": 835,
+  "parent_input_count": 65,
+  "independent_review_count": 2,
+  "project_unique_declarations": 999,
+  "project_physical_occurrences": 1000,
+  "project_exact_replays": 24,
+  "provider_modules": 359,
+  "provider_unique_declarations": 6133,
+  "provider_exact_replays": 359,
+  "checked_raw_log_count": 420,
+  "limitations": [
+    "Compiled CI artifact hashes remain recorded, not rechecked against local compiled binaries.",
+    "Bundled Lean kernel relative to imported environments; not a second kernel or fresh full-mathlib replay."
+  ]
+}

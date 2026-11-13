@@ -1,7 +1,7 @@
 # Landmark 2 closeout and the next geometric bridge
 
 Status: proved; final local verification and both independent statement
-reviews passed. Fresh GitHub CI is pending. The aggregate is
+reviews passed. Fresh GitHub CI passed and its complete records are archived. The aggregate is
 [`ArtinRibbons.Landmark2`](../../../ribbons/ArtinRibbons/Landmark2.lean).
 The exact implemented scope and retained source findings are in
 [`milestone2-REPORT.md`](milestone2-REPORT.md).
@@ -48,11 +48,12 @@ component without changing its actual arrows.
 4. The [complete local verifier](../../../ribbons/evidence/landmark2-local-buildfix/verification.json)
    passed. Earlier failed accounting attempts and interrupted development
    replays remain accurately recorded, with their old snapshots preserved.
-5. The corrected source commit will trigger fresh GitHub CI, explicitly
+5. [Fresh GitHub CI passed](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592)
+   on source commit `986b1f59aa1091c6a8905e924bece53e02f7dbaf`, explicitly
    building both supplier roots and performing all 359 supplier replays.
-   The first cold CI run passed the project build/audit but exposed two
-   omitted supplier build targets; its failed record is archived separately. Its actual result and raw records will be
-   archived separately; no future CI success is presumed here.
+   The [permanent evidence archive](github-evidence/run-43516856592/README.md)
+   preserves all logs and successful records. The first cold CI failure
+   and its actual correction remain archived separately.
 
 ## Landmark 3 obligations preserved
 
