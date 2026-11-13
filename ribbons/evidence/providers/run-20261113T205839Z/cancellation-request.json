@@ -1,0 +1,8 @@
+{
+  "requested_at": "2026-11-13T21:02:23.234300+00:00",
+  "reason": "Root authorized a fresh local four-worker pass to replace this sequential partial run.",
+  "script_pid": 2337399,
+  "completed_before_signal": 28,
+  "signal": "SIGINT",
+  "prior_run_success_claim": false
+}

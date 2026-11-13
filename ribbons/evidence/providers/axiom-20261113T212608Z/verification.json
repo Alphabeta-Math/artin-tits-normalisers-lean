@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "ProviderAudit.lean"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+  "started_at": "2026-11-13T21:26:08.907570+00:00",
+  "audit_source_sha256": "121d32f3b49e1b48ad70461342c602fe9e3f8ae6085db497f2d0d6655a2104b0",
+  "inputs_sha256": "22264885b975d6ca3bbfabf5b0a84bdd60abeaec1efb91368b078509b345f3f4",
+  "expected_modules": 359,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "replay_certificate": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/providers/run-20261113T210310Z/verification.json",
+  "replay_certificate_sha256": "415aa11ce83acbc2e9e8d85199deb34ce2ecb6d7b1cae60bbf9e069c763fc5c8",
+  "full_landmark_2_proved": false,
+  "exit_code": 0,
+  "duration_seconds": 15.987064832006581,
+  "raw_log_sha256": "7064f848d85c9563834044b2ba1145ee96ee67e34469ac415f27ac1d1a3645d8",
+  "actual_module_count": 359,
+  "audited_declaration_count": 6133,
+  "type_record_count": 6133,
+  "axiom_record_count": 6133,
+  "coverage_sha256": "9f760cf53596e0f96816af2068395560222212786d06b8dc6f31110bb60407a4",
+  "inputs_unchanged": true,
+  "errors": [],
+  "ended_at": "2026-11-13T21:26:25.100285+00:00"
+}

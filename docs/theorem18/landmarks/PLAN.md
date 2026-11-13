@@ -96,7 +96,7 @@ The new code has its own statement reviews and build/axiom/replay records.
 | Landmark | Current status |
 | --- | --- |
 | 1: Actual quotient covering | Proved; both statement reviews, local verification and [fresh GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43498322108) passed |
-| 2: Reduced ribbon normalizer | Not yet proved |
+| 2: Reduced ribbon normalizer | [Proved](milestone2-REPORT.md); both independent reviews and complete local verification passed; fresh CI pending |
 | 3: Equivariant geometric comparison | Not yet proved |
 | 4: Compatible exact sequences | Not yet proved |
 | 5: Deligne asphericity/full theorem | Not yet proved |

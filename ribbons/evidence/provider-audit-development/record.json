@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "ProviderAudit.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 16.276844733016333,
+  "log_sha256": "1401255e032fd5156e4eb483e35560d7865c8abd1975bdd3429742cc798c7ee3",
+  "finished_at": "2026-11-13T20:35:57.526548+00:00"
+}

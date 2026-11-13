@@ -1,0 +1,1410 @@
+{
+  "kind": "theorem18-landmark2-project-recheck",
+  "ok": false,
+  "status": "failed",
+  "started_at": "2026-11-13T21:31:23.151005+00:00",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+  "scope": "All 23 actual ArtinRibbons scientific modules and their aggregate",
+  "full_theorem_1_8_proved": false,
+  "provider_kernel_replay_performed": false,
+  "semantic_statement_review_performed": false,
+  "limitations": [
+    "Uses the bundled Lean kernel relative to imported environments, not an independent kernel.",
+    "Does not freshly replay mathlib, parent or provider declarations; those have separate verification.",
+    "The import-only aggregate legitimately has zero declarations; all 23 scientific leaves must be nonempty."
+  ],
+  "replay_workers": 2,
+  "expected_modules": [
+    "ArtinRibbons.AtomicCoxeter",
+    "ArtinRibbons.CofinalRibbons",
+    "ArtinRibbons.CoxeterProjection",
+    "ArtinRibbons.DeltaDivisibility",
+    "ArtinRibbons.FractionNormalForms",
+    "ArtinRibbons.Fundamental",
+    "ArtinRibbons.Landmark2",
+    "ArtinRibbons.NormalizerSplitting",
+    "ArtinRibbons.ParabolicReduction",
+    "ArtinRibbons.Positive",
+    "ArtinRibbons.PositiveEmbedding",
+    "ArtinRibbons.PositiveReindex",
+    "ArtinRibbons.PositiveRibbons",
+    "ArtinRibbons.PositiveSupport",
+    "ArtinRibbons.Presentation",
+    "ArtinRibbons.ReducedRibbons",
+    "ArtinRibbons.RibbonGroupoid",
+    "ArtinRibbons.RibbonLcm",
+    "ArtinRibbons.RibbonPositiveCalculus",
+    "ArtinRibbons.RibbonRelations",
+    "ArtinRibbons.RibbonUniversal",
+    "ArtinRibbons.RibbonWords",
+    "ArtinRibbons.SphericalPositive",
+    "ArtinRibbons"
+  ],
+  "expected_scientific_module_count": 23,
+  "expected_exact_replay_count": 24,
+  "commands": [
+    {
+      "label": "lean-version",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:23.194946+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:23.791224+00:00",
+      "duration_seconds": 0.596,
+      "log": "logs/lean-version.log",
+      "log_sha256": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d"
+    },
+    {
+      "label": "lake-version",
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:23.791594+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:23.847523+00:00",
+      "duration_seconds": 0.056,
+      "log": "logs/lake-version.log",
+      "log_sha256": "9c331af6911624c7a89515780097e2528e2da79e1c87311ed8a4b2b53910e65f"
+    },
+    {
+      "label": "mathlib-revision",
+      "argv": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:23.847944+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:23.849636+00:00",
+      "duration_seconds": 0.002,
+      "log": "logs/mathlib-revision.log",
+      "log_sha256": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b"
+    },
+    {
+      "label": "mathlib-tracked-status",
+      "argv": [
+        "git",
+        "-C",
+        ".lake/packages/mathlib",
+        "status",
+        "--porcelain",
+        "--untracked-files=no"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:23.849941+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:23.856048+00:00",
+      "duration_seconds": 0.006,
+      "log": "logs/mathlib-tracked-status.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "build-project",
+      "argv": [
+        "lake",
+        "build",
+        "ArtinRibbons"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:23.856286+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:36.300634+00:00",
+      "duration_seconds": 12.444,
+      "log": "logs/build-project.log",
+      "log_sha256": "de824f0dfc78c3e72333655be86788eddf1902eb2cedf3bb6e3ae89a19c4f100"
+    },
+    {
+      "label": "project-axioms-and-statements",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "ProjectAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:36.330845+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:43.422527+00:00",
+      "duration_seconds": 7.092,
+      "log": "logs/project-axioms-and-statements.log",
+      "log_sha256": "dc6f8fe99a054133930f8f16e0bf76983de8cd9022c02f625b64064c511bb2fe"
+    },
+    {
+      "label": "deps-00-ArtinRibbons.AtomicCoxeter",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/AtomicCoxeter.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:43.427832+00:00",
+      "module": "ArtinRibbons.AtomicCoxeter",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:43.874912+00:00",
+      "duration_seconds": 0.447,
+      "log": "logs/deps-00-ArtinRibbons.AtomicCoxeter.log",
+      "log_sha256": "e93f0509ca23776a5191eb5bcec388269c743483a7454f4cfae63c19701392a9"
+    },
+    {
+      "label": "deps-01-ArtinRibbons.CofinalRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/CofinalRibbons.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:43.875353+00:00",
+      "module": "ArtinRibbons.CofinalRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:44.331887+00:00",
+      "duration_seconds": 0.457,
+      "log": "logs/deps-01-ArtinRibbons.CofinalRibbons.log",
+      "log_sha256": "99c64821cd4cdb9aecc4df4cc62dc7bbd66ce4bd7b398751cda1ad1979fc4186"
+    },
+    {
+      "label": "deps-02-ArtinRibbons.CoxeterProjection",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/CoxeterProjection.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:44.332400+00:00",
+      "module": "ArtinRibbons.CoxeterProjection",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:44.776261+00:00",
+      "duration_seconds": 0.444,
+      "log": "logs/deps-02-ArtinRibbons.CoxeterProjection.log",
+      "log_sha256": "1cda72247bc16d7d00825e58e0c48770cac1bf35e219fd50f6c00f1867c1e5d9"
+    },
+    {
+      "label": "deps-03-ArtinRibbons.DeltaDivisibility",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/DeltaDivisibility.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:44.776708+00:00",
+      "module": "ArtinRibbons.DeltaDivisibility",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:45.267469+00:00",
+      "duration_seconds": 0.491,
+      "log": "logs/deps-03-ArtinRibbons.DeltaDivisibility.log",
+      "log_sha256": "5e8f41eb2c119e54ded0574a59248a63287a8ebfc690cce6a84a6674826b2083"
+    },
+    {
+      "label": "deps-04-ArtinRibbons.FractionNormalForms",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/FractionNormalForms.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:45.267926+00:00",
+      "module": "ArtinRibbons.FractionNormalForms",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:45.733805+00:00",
+      "duration_seconds": 0.466,
+      "log": "logs/deps-04-ArtinRibbons.FractionNormalForms.log",
+      "log_sha256": "0b0e15f99565a5cb30214b1b59cc81aa9b95b0c171279e5268ee0a959e235f4a"
+    },
+    {
+      "label": "deps-05-ArtinRibbons.Fundamental",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/Fundamental.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:45.734327+00:00",
+      "module": "ArtinRibbons.Fundamental",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:46.197013+00:00",
+      "duration_seconds": 0.463,
+      "log": "logs/deps-05-ArtinRibbons.Fundamental.log",
+      "log_sha256": "c1d80edf7f2c6b9914ca29ace7580eac78538670df6207546051cb22337d10c5"
+    },
+    {
+      "label": "deps-06-ArtinRibbons.Landmark2",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/Landmark2.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:46.197453+00:00",
+      "module": "ArtinRibbons.Landmark2",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:46.675894+00:00",
+      "duration_seconds": 0.478,
+      "log": "logs/deps-06-ArtinRibbons.Landmark2.log",
+      "log_sha256": "b5c5e4bb15b1c425742f1d038a758006d38eac81323a429256dc19bd1270a015"
+    },
+    {
+      "label": "deps-07-ArtinRibbons.NormalizerSplitting",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/NormalizerSplitting.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:46.676457+00:00",
+      "module": "ArtinRibbons.NormalizerSplitting",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:47.161795+00:00",
+      "duration_seconds": 0.485,
+      "log": "logs/deps-07-ArtinRibbons.NormalizerSplitting.log",
+      "log_sha256": "b04ab32d288b962f098388c41445c5a6ab951b24732a61a0e03bd1b8b16fcbde"
+    },
+    {
+      "label": "deps-08-ArtinRibbons.ParabolicReduction",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/ParabolicReduction.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:47.162266+00:00",
+      "module": "ArtinRibbons.ParabolicReduction",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:47.628566+00:00",
+      "duration_seconds": 0.466,
+      "log": "logs/deps-08-ArtinRibbons.ParabolicReduction.log",
+      "log_sha256": "0acefcedd354b3755ab8bf24e893513a87c5dad87474216356ddea3d3a9f3eb6"
+    },
+    {
+      "label": "deps-09-ArtinRibbons.Positive",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/Positive.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:47.629035+00:00",
+      "module": "ArtinRibbons.Positive",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:48.105610+00:00",
+      "duration_seconds": 0.477,
+      "log": "logs/deps-09-ArtinRibbons.Positive.log",
+      "log_sha256": "dfbe12c455d71f50f3ad9757664f4ef7c354ed84c1cdc12f9312a101783d415c"
+    },
+    {
+      "label": "deps-10-ArtinRibbons.PositiveEmbedding",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/PositiveEmbedding.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:48.106099+00:00",
+      "module": "ArtinRibbons.PositiveEmbedding",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:48.570892+00:00",
+      "duration_seconds": 0.465,
+      "log": "logs/deps-10-ArtinRibbons.PositiveEmbedding.log",
+      "log_sha256": "428d89e4c48b95e35c8999b4a42415c12a9b5ee860380751526ad38b1ffbe583"
+    },
+    {
+      "label": "deps-11-ArtinRibbons.PositiveReindex",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/PositiveReindex.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:48.571358+00:00",
+      "module": "ArtinRibbons.PositiveReindex",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:49.031945+00:00",
+      "duration_seconds": 0.461,
+      "log": "logs/deps-11-ArtinRibbons.PositiveReindex.log",
+      "log_sha256": "0acefcedd354b3755ab8bf24e893513a87c5dad87474216356ddea3d3a9f3eb6"
+    },
+    {
+      "label": "deps-12-ArtinRibbons.PositiveRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/PositiveRibbons.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:49.032508+00:00",
+      "module": "ArtinRibbons.PositiveRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:49.476658+00:00",
+      "duration_seconds": 0.444,
+      "log": "logs/deps-12-ArtinRibbons.PositiveRibbons.log",
+      "log_sha256": "7c500477ddbbd3ecf03cfa476577af9708a7bc24b0ae77bd7d8abcfdb1a841ee"
+    },
+    {
+      "label": "deps-13-ArtinRibbons.PositiveSupport",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/PositiveSupport.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:49.477188+00:00",
+      "module": "ArtinRibbons.PositiveSupport",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:49.924916+00:00",
+      "duration_seconds": 0.448,
+      "log": "logs/deps-13-ArtinRibbons.PositiveSupport.log",
+      "log_sha256": "12c74f5a241a8cde88f1e28206aa10d20c7bbb17ad8d4e8974d0f1eba1459ff6"
+    },
+    {
+      "label": "deps-14-ArtinRibbons.Presentation",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/Presentation.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:49.925498+00:00",
+      "module": "ArtinRibbons.Presentation",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:50.383423+00:00",
+      "duration_seconds": 0.458,
+      "log": "logs/deps-14-ArtinRibbons.Presentation.log",
+      "log_sha256": "74a341bb476f0999d41d8c4fbd10ea4be6ae80e5709ae2071620d7e4c912a21a"
+    },
+    {
+      "label": "deps-15-ArtinRibbons.ReducedRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/ReducedRibbons.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:50.383957+00:00",
+      "module": "ArtinRibbons.ReducedRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:50.826149+00:00",
+      "duration_seconds": 0.442,
+      "log": "logs/deps-15-ArtinRibbons.ReducedRibbons.log",
+      "log_sha256": "27e23759fc755503020614a4def4c2d2cee4a2df5792d1c150c84c2acfd0d119"
+    },
+    {
+      "label": "deps-16-ArtinRibbons.RibbonGroupoid",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/RibbonGroupoid.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:50.826660+00:00",
+      "module": "ArtinRibbons.RibbonGroupoid",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:51.269584+00:00",
+      "duration_seconds": 0.443,
+      "log": "logs/deps-16-ArtinRibbons.RibbonGroupoid.log",
+      "log_sha256": "46298c896de9b4387bb0d2b5c2f34c431279a756c2c9bf70c73e8320b50f673b"
+    },
+    {
+      "label": "deps-17-ArtinRibbons.RibbonLcm",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/RibbonLcm.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:51.270067+00:00",
+      "module": "ArtinRibbons.RibbonLcm",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:51.718036+00:00",
+      "duration_seconds": 0.448,
+      "log": "logs/deps-17-ArtinRibbons.RibbonLcm.log",
+      "log_sha256": "2b9235cd7aa81ab1b410dbbf329d7061b87e481280f55d3799156e0b7c8454e7"
+    },
+    {
+      "label": "deps-18-ArtinRibbons.RibbonPositiveCalculus",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/RibbonPositiveCalculus.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:51.718586+00:00",
+      "module": "ArtinRibbons.RibbonPositiveCalculus",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:52.156835+00:00",
+      "duration_seconds": 0.438,
+      "log": "logs/deps-18-ArtinRibbons.RibbonPositiveCalculus.log",
+      "log_sha256": "2ad5f2a3620f7fd53ed7ac28140e6a3fc1d53241a7269e790feaee2ca39349a1"
+    },
+    {
+      "label": "deps-19-ArtinRibbons.RibbonRelations",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/RibbonRelations.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:52.157326+00:00",
+      "module": "ArtinRibbons.RibbonRelations",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:52.603181+00:00",
+      "duration_seconds": 0.446,
+      "log": "logs/deps-19-ArtinRibbons.RibbonRelations.log",
+      "log_sha256": "e93f0509ca23776a5191eb5bcec388269c743483a7454f4cfae63c19701392a9"
+    },
+    {
+      "label": "deps-20-ArtinRibbons.RibbonUniversal",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/RibbonUniversal.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:52.603659+00:00",
+      "module": "ArtinRibbons.RibbonUniversal",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:53.055408+00:00",
+      "duration_seconds": 0.452,
+      "log": "logs/deps-20-ArtinRibbons.RibbonUniversal.log",
+      "log_sha256": "d2ca1c469f7a059f4c9cd3dea703c05e2db57b53d7b6e3c1ed7fd987f37ebe9d"
+    },
+    {
+      "label": "deps-21-ArtinRibbons.RibbonWords",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/RibbonWords.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:53.056017+00:00",
+      "module": "ArtinRibbons.RibbonWords",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:53.528731+00:00",
+      "duration_seconds": 0.473,
+      "log": "logs/deps-21-ArtinRibbons.RibbonWords.log",
+      "log_sha256": "2aeade8fcfd3e07317af8fe436202d066ace825f6435bfc55453011f74a4f84e"
+    },
+    {
+      "label": "deps-22-ArtinRibbons.SphericalPositive",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/SphericalPositive.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:53.529200+00:00",
+      "module": "ArtinRibbons.SphericalPositive",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:53.980440+00:00",
+      "duration_seconds": 0.451,
+      "log": "logs/deps-22-ArtinRibbons.SphericalPositive.log",
+      "log_sha256": "1c18a6d4af67329b0cb6ef8f68a772e84d41a8671f9a62edf3b8af0b79ae967c"
+    },
+    {
+      "label": "deps-23-ArtinRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--deps",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:53.980954+00:00",
+      "module": "ArtinRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:31:54.429395+00:00",
+      "duration_seconds": 0.448,
+      "log": "logs/deps-23-ArtinRibbons.log",
+      "log_sha256": "6e501d0787506e43da6d7951662154144b96e80b66c0d2ff520a1b7eda96543d"
+    },
+    {
+      "label": "replay-00-ArtinRibbons.AtomicCoxeter",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.AtomicCoxeter"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:56.079945+00:00",
+      "module": "ArtinRibbons.AtomicCoxeter",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:00.174072+00:00",
+      "duration_seconds": 4.094,
+      "log": "logs/replay-00-ArtinRibbons.AtomicCoxeter.log",
+      "log_sha256": "118fefc2ec4b8b4f3c8a281837403f59fd57336f8cc1e65f7120acc95cd54cab"
+    },
+    {
+      "label": "replay-01-ArtinRibbons.CofinalRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.CofinalRibbons"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:31:56.080188+00:00",
+      "module": "ArtinRibbons.CofinalRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:00.456717+00:00",
+      "duration_seconds": 4.377,
+      "log": "logs/replay-01-ArtinRibbons.CofinalRibbons.log",
+      "log_sha256": "db70222b145d6ca04f82bd57dea6597ffbce0c05f88450ee005aaeb5ec9f8c5b"
+    },
+    {
+      "label": "replay-02-ArtinRibbons.CoxeterProjection",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.CoxeterProjection"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:00.176559+00:00",
+      "module": "ArtinRibbons.CoxeterProjection",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:03.598780+00:00",
+      "duration_seconds": 3.422,
+      "log": "logs/replay-02-ArtinRibbons.CoxeterProjection.log",
+      "log_sha256": "a674514117e7383bfb3610ba4b45ba5f00bf691f3510028ba005a885d8c271b2"
+    },
+    {
+      "label": "replay-03-ArtinRibbons.DeltaDivisibility",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.DeltaDivisibility"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:00.457352+00:00",
+      "module": "ArtinRibbons.DeltaDivisibility",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:03.715654+00:00",
+      "duration_seconds": 3.258,
+      "log": "logs/replay-03-ArtinRibbons.DeltaDivisibility.log",
+      "log_sha256": "0ef2fc14a2a75561bbe0f164ddb35f186fcf3eb314bde58eb8223141b6416305"
+    },
+    {
+      "label": "replay-04-ArtinRibbons.FractionNormalForms",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.FractionNormalForms"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:03.599478+00:00",
+      "module": "ArtinRibbons.FractionNormalForms",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:07.058502+00:00",
+      "duration_seconds": 3.459,
+      "log": "logs/replay-04-ArtinRibbons.FractionNormalForms.log",
+      "log_sha256": "ef2cbc5bd51aaac46cd8917e69080c852b495b5f037071e69e7e95e1dc905878"
+    },
+    {
+      "label": "replay-05-ArtinRibbons.Fundamental",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.Fundamental"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:03.716167+00:00",
+      "module": "ArtinRibbons.Fundamental",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:07.160968+00:00",
+      "duration_seconds": 3.445,
+      "log": "logs/replay-05-ArtinRibbons.Fundamental.log",
+      "log_sha256": "0734add386786a8df9e4b06cbdf6ce45f9f8a52feec04a87147fb4cb032fbcb8"
+    },
+    {
+      "label": "replay-06-ArtinRibbons.Landmark2",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.Landmark2"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:07.059186+00:00",
+      "module": "ArtinRibbons.Landmark2",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:10.659293+00:00",
+      "duration_seconds": 3.6,
+      "log": "logs/replay-06-ArtinRibbons.Landmark2.log",
+      "log_sha256": "2221f541a59e01382dcb533afa4a86e8e786f2ac9a6de0f446996b692cb6268e"
+    },
+    {
+      "label": "replay-07-ArtinRibbons.NormalizerSplitting",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.NormalizerSplitting"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:07.161474+00:00",
+      "module": "ArtinRibbons.NormalizerSplitting",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:11.020699+00:00",
+      "duration_seconds": 3.859,
+      "log": "logs/replay-07-ArtinRibbons.NormalizerSplitting.log",
+      "log_sha256": "b0ce3675527b94043f6145bd9166d16c82be71a8a47e50f1d26fa83a040d272a"
+    },
+    {
+      "label": "replay-08-ArtinRibbons.ParabolicReduction",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.ParabolicReduction"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:10.659927+00:00",
+      "module": "ArtinRibbons.ParabolicReduction",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:23.304793+00:00",
+      "duration_seconds": 12.645,
+      "log": "logs/replay-08-ArtinRibbons.ParabolicReduction.log",
+      "log_sha256": "866caf4838727fd6f844506c69dee71d4e9e9711d42caf11ae3a0a4a5136fdac"
+    },
+    {
+      "label": "replay-09-ArtinRibbons.Positive",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.Positive"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:11.021196+00:00",
+      "module": "ArtinRibbons.Positive",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:23.311928+00:00",
+      "duration_seconds": 12.291,
+      "log": "logs/replay-09-ArtinRibbons.Positive.log",
+      "log_sha256": "5e6e532998da01f2c6cd34746a2330324432236612d81ff9c6f19d3787863aba"
+    },
+    {
+      "label": "replay-11-ArtinRibbons.PositiveReindex",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.PositiveReindex"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:23.312586+00:00",
+      "module": "ArtinRibbons.PositiveReindex",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:27.199229+00:00",
+      "duration_seconds": 3.887,
+      "log": "logs/replay-11-ArtinRibbons.PositiveReindex.log",
+      "log_sha256": "b80d4c98d4afca8941f4ebb923a66935f578ed83f333e637519ae814d795da25"
+    },
+    {
+      "label": "replay-10-ArtinRibbons.PositiveEmbedding",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.PositiveEmbedding"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:23.305370+00:00",
+      "module": "ArtinRibbons.PositiveEmbedding",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:27.250733+00:00",
+      "duration_seconds": 3.945,
+      "log": "logs/replay-10-ArtinRibbons.PositiveEmbedding.log",
+      "log_sha256": "8234000fd2189f793becdae011ec2c7ec7ce70b4a649d5edd3ca8d84f5b72c13"
+    },
+    {
+      "label": "replay-13-ArtinRibbons.PositiveSupport",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.PositiveSupport"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:27.251220+00:00",
+      "module": "ArtinRibbons.PositiveSupport",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:30.366887+00:00",
+      "duration_seconds": 3.116,
+      "log": "logs/replay-13-ArtinRibbons.PositiveSupport.log",
+      "log_sha256": "762628c38520f32f52245fa1361870b3935f619f356612668354ba66dbfe9f28"
+    },
+    {
+      "label": "replay-12-ArtinRibbons.PositiveRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.PositiveRibbons"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:27.199818+00:00",
+      "module": "ArtinRibbons.PositiveRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:30.702839+00:00",
+      "duration_seconds": 3.503,
+      "log": "logs/replay-12-ArtinRibbons.PositiveRibbons.log",
+      "log_sha256": "86d6a4782e1495094bad070c7bad4034ef60a4c7e2ddd7048be2fc983ad22f7d"
+    },
+    {
+      "label": "replay-14-ArtinRibbons.Presentation",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.Presentation"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:30.367515+00:00",
+      "module": "ArtinRibbons.Presentation",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:33.409088+00:00",
+      "duration_seconds": 3.042,
+      "log": "logs/replay-14-ArtinRibbons.Presentation.log",
+      "log_sha256": "a1114126df9589625680bb6e60badc9b4f4a2731f369f74d840039f5e5fd77ee"
+    },
+    {
+      "label": "replay-15-ArtinRibbons.ReducedRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.ReducedRibbons"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:30.703406+00:00",
+      "module": "ArtinRibbons.ReducedRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:33.737200+00:00",
+      "duration_seconds": 3.034,
+      "log": "logs/replay-15-ArtinRibbons.ReducedRibbons.log",
+      "log_sha256": "f1639bc65a1496abfcd4532c94d6ccafcf68f4c4b765c3094ab53b0817db214d"
+    },
+    {
+      "label": "replay-16-ArtinRibbons.RibbonGroupoid",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.RibbonGroupoid"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:33.409971+00:00",
+      "module": "ArtinRibbons.RibbonGroupoid",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:36.498296+00:00",
+      "duration_seconds": 3.088,
+      "log": "logs/replay-16-ArtinRibbons.RibbonGroupoid.log",
+      "log_sha256": "6b31f4141fcc8f8a36fec7678d9680f24399c761b6f425e35e282d96df4b8849"
+    },
+    {
+      "label": "replay-17-ArtinRibbons.RibbonLcm",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.RibbonLcm"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:33.737735+00:00",
+      "module": "ArtinRibbons.RibbonLcm",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:36.832114+00:00",
+      "duration_seconds": 3.094,
+      "log": "logs/replay-17-ArtinRibbons.RibbonLcm.log",
+      "log_sha256": "bfd697fc585a5268d00882753c22bc7bc3360d911a40b7b5e16f1606dbe13f63"
+    },
+    {
+      "label": "replay-18-ArtinRibbons.RibbonPositiveCalculus",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.RibbonPositiveCalculus"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:36.498969+00:00",
+      "module": "ArtinRibbons.RibbonPositiveCalculus",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:39.581427+00:00",
+      "duration_seconds": 3.082,
+      "log": "logs/replay-18-ArtinRibbons.RibbonPositiveCalculus.log",
+      "log_sha256": "0a6cc7394473fcf4e5c964ac774b7e1e296c4b86fad7b2c08926d7b219a826f9"
+    },
+    {
+      "label": "replay-19-ArtinRibbons.RibbonRelations",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.RibbonRelations"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:36.832665+00:00",
+      "module": "ArtinRibbons.RibbonRelations",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:39.916480+00:00",
+      "duration_seconds": 3.084,
+      "log": "logs/replay-19-ArtinRibbons.RibbonRelations.log",
+      "log_sha256": "705ab90f11a6518dcefd166a4c1d68929871ae0ba357f2dc42b56c0f6ad05723"
+    },
+    {
+      "label": "replay-20-ArtinRibbons.RibbonUniversal",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.RibbonUniversal"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:39.582008+00:00",
+      "module": "ArtinRibbons.RibbonUniversal",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:42.916897+00:00",
+      "duration_seconds": 3.335,
+      "log": "logs/replay-20-ArtinRibbons.RibbonUniversal.log",
+      "log_sha256": "6d1aeea102fcad59c77b7e7d56234b5ffcca9e8f32fa6c10a79ab6a7d2f9648a"
+    },
+    {
+      "label": "replay-21-ArtinRibbons.RibbonWords",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.RibbonWords"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:39.917085+00:00",
+      "module": "ArtinRibbons.RibbonWords",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:43.272409+00:00",
+      "duration_seconds": 3.355,
+      "log": "logs/replay-21-ArtinRibbons.RibbonWords.log",
+      "log_sha256": "34c483f493540536fea5f9a412ef1e88dce4d8042cdb771cd74280758e8c4226"
+    },
+    {
+      "label": "replay-22-ArtinRibbons.SphericalPositive",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons.SphericalPositive"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:42.917539+00:00",
+      "module": "ArtinRibbons.SphericalPositive",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:46.239839+00:00",
+      "duration_seconds": 3.322,
+      "log": "logs/replay-22-ArtinRibbons.SphericalPositive.log",
+      "log_sha256": "c8f852e9f79b195ecb0afd53eaf160f3d907c0c69f90026f35d6cba9462832e5"
+    },
+    {
+      "label": "replay-23-ArtinRibbons",
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--run",
+        "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/evidence/landmark2-local/project/ExactReplay.lean",
+        "ArtinRibbons"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+      "started_at": "2026-11-13T21:32:43.273015+00:00",
+      "module": "ArtinRibbons",
+      "exit_code": 0,
+      "finished_at": "2026-11-13T21:32:46.692720+00:00",
+      "duration_seconds": 3.42,
+      "log": "logs/replay-23-ArtinRibbons.log",
+      "log_sha256": "9f7c77857cd2be9bec13065b523c6b39c2e4f1fa6916e17c8da14290541f7244"
+    }
+  ],
+  "repository_head": "3a7db9fee76d17e6853f185bf887c6260c18814a",
+  "project_source_sha256": {
+    "ribbons/ArtinRibbons.lean": "d763fd19780cdb2aed6ee0b215f01cd9ad4d4ccb3794defd9630f42277a93e8d",
+    "ribbons/ArtinRibbons/AtomicCoxeter.lean": "ceb1062ad36adc85ad3d1881f0c1dac898eca5f2ffd8766563aebaaaa17e2030",
+    "ribbons/ArtinRibbons/CofinalRibbons.lean": "798d2c8d57ba2b21a840e972d38c9f9fbea17b72bbe25f3570b17f3e33f0d23a",
+    "ribbons/ArtinRibbons/CoxeterProjection.lean": "a6d32269fd65204290ae7656eb7d8931150e18a1dc430c7c50ae1011205aa910",
+    "ribbons/ArtinRibbons/DeltaDivisibility.lean": "9745034e8c34a21af83f76d196147c379ce2b4fb520faafcf33a90b708b0258c",
+    "ribbons/ArtinRibbons/FractionNormalForms.lean": "098f2ebaaca09e3c9c2b23cc0d75671d6bf64eeef0338e2a2edb1b2bc4b24f81",
+    "ribbons/ArtinRibbons/Fundamental.lean": "31af15bb2f724d52c32811fa588d79e67f9bed540cca68b651aaaf1571ce725c",
+    "ribbons/ArtinRibbons/Landmark2.lean": "0fcb9db16ee03c6814f7edcc34e46ce09178fa0583a1bf340c687385b6436bb9",
+    "ribbons/ArtinRibbons/NormalizerSplitting.lean": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c",
+    "ribbons/ArtinRibbons/ParabolicReduction.lean": "9eab9f076a668e640a7f8a433da8ea5630f9f18f8c8b430f13709ff02c3acfb9",
+    "ribbons/ArtinRibbons/Positive.lean": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+    "ribbons/ArtinRibbons/PositiveEmbedding.lean": "e3c99b5d680624880a89cd776d3508ff4201703d5a5806e760071f277fad1802",
+    "ribbons/ArtinRibbons/PositiveReindex.lean": "373da7768f9c965a027319eb12e7ba5818b170735355ff9c1ae97256e728fd29",
+    "ribbons/ArtinRibbons/PositiveRibbons.lean": "addf21b6027f0bbad264890d4e4f3048888738f28175d7567a8c3d369d045e7c",
+    "ribbons/ArtinRibbons/PositiveSupport.lean": "96160e94b39c1ac5ed2bb09cc2626e1a43980854596b070273681aa2bc710bc7",
+    "ribbons/ArtinRibbons/Presentation.lean": "f40c1c393705172803299a13a3bd81bf4fdfff18f40718f45aed07101562d5a0",
+    "ribbons/ArtinRibbons/ReducedRibbons.lean": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+    "ribbons/ArtinRibbons/RibbonGroupoid.lean": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+    "ribbons/ArtinRibbons/RibbonLcm.lean": "2be9ece462f5b1542075d44c683269ced9ba92f4bd2b4502f4e0cf5bfb48fcaa",
+    "ribbons/ArtinRibbons/RibbonPositiveCalculus.lean": "2108bdce858679cb2ce3de88cd24ccad121df11476055bf93ed0bb5cbaa673a9",
+    "ribbons/ArtinRibbons/RibbonRelations.lean": "4f85cb104225d482983eb4e224a5881756837ee40665f912d6815f2f00fdb14d",
+    "ribbons/ArtinRibbons/RibbonUniversal.lean": "109fae82d1193fd3200a6b47e7d4302dd7d0c7b0463b9f4d16e19cb8588b54ef",
+    "ribbons/ArtinRibbons/RibbonWords.lean": "ef1ed56588571633cd42326d12210b394bc5f808ac38fb5404c08c17708fb639",
+    "ribbons/ArtinRibbons/SphericalPositive.lean": "9020135c6b1fa1a27ba7c0e0403e9b12b9785cacf8eeb7ebfabfb900136a9d8b"
+  },
+  "source_inventory_sha256": "77e633cf6b1651d83d77eb8f669d8c2b85e2ce1ff9370a7bd331e1c3c8df341b",
+  "provider_provenance_sha256": "e1a68e31cfbfc80def6b29868f63161545308eb888642cb3af85f2425a77f904",
+  "parent_verification_sha256": "79f91cb45e5ada75c39968f29b93cc228d0fd38914903cb432c1b8664a332b1d",
+  "duration_seconds": 83.576,
+  "actual_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "audited_modules": [
+    "ArtinRibbons",
+    "ArtinRibbons.AtomicCoxeter",
+    "ArtinRibbons.CofinalRibbons",
+    "ArtinRibbons.CoxeterProjection",
+    "ArtinRibbons.DeltaDivisibility",
+    "ArtinRibbons.FractionNormalForms",
+    "ArtinRibbons.Fundamental",
+    "ArtinRibbons.Landmark2",
+    "ArtinRibbons.NormalizerSplitting",
+    "ArtinRibbons.ParabolicReduction",
+    "ArtinRibbons.Positive",
+    "ArtinRibbons.PositiveEmbedding",
+    "ArtinRibbons.PositiveReindex",
+    "ArtinRibbons.PositiveRibbons",
+    "ArtinRibbons.PositiveSupport",
+    "ArtinRibbons.Presentation",
+    "ArtinRibbons.ReducedRibbons",
+    "ArtinRibbons.RibbonGroupoid",
+    "ArtinRibbons.RibbonLcm",
+    "ArtinRibbons.RibbonPositiveCalculus",
+    "ArtinRibbons.RibbonRelations",
+    "ArtinRibbons.RibbonUniversal",
+    "ArtinRibbons.RibbonWords",
+    "ArtinRibbons.SphericalPositive"
+  ],
+  "audited_declaration_count": 999,
+  "audited_declarations_sha256": "5391cf8a7f11b28f494149b4261a5e16ac1f948526f71dc755692ad2b8776e07",
+  "inputs_sha256": "7cee0ecb7ea03bd0737db66ec9931311b8052315abd1e2bce61850b2e0c33dd9",
+  "bound_input_count": 1236,
+  "compiled_interface_count": 392,
+  "exact_replays": [
+    {
+      "module": "ArtinRibbons",
+      "ok": true,
+      "declarations_expected": 0,
+      "runner_output": [
+        {
+          "declarations": 0,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.AtomicCoxeter",
+      "ok": true,
+      "declarations_expected": 11,
+      "runner_output": [
+        {
+          "declarations": 11,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.AtomicCoxeter"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.CofinalRibbons",
+      "ok": true,
+      "declarations_expected": 63,
+      "runner_output": [
+        {
+          "declarations": 63,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.CofinalRibbons"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.CoxeterProjection",
+      "ok": true,
+      "declarations_expected": 12,
+      "runner_output": [
+        {
+          "declarations": 12,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.CoxeterProjection"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.DeltaDivisibility",
+      "ok": true,
+      "declarations_expected": 44,
+      "runner_output": [
+        {
+          "declarations": 44,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.DeltaDivisibility"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.FractionNormalForms",
+      "ok": true,
+      "declarations_expected": 82,
+      "runner_output": [
+        {
+          "declarations": 82,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.FractionNormalForms"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.Fundamental",
+      "ok": true,
+      "declarations_expected": 81,
+      "runner_output": [
+        {
+          "declarations": 81,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.Fundamental"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.Landmark2",
+      "ok": true,
+      "declarations_expected": 3,
+      "runner_output": [
+        {
+          "declarations": 3,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.Landmark2"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.NormalizerSplitting",
+      "ok": true,
+      "declarations_expected": 50,
+      "runner_output": [
+        {
+          "declarations": 50,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.NormalizerSplitting"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.ParabolicReduction",
+      "ok": true,
+      "declarations_expected": 14,
+      "runner_output": [
+        {
+          "declarations": 14,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.ParabolicReduction"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.Positive",
+      "ok": true,
+      "declarations_expected": 32,
+      "runner_output": [
+        {
+          "declarations": 32,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.Positive"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.PositiveEmbedding",
+      "ok": true,
+      "declarations_expected": 19,
+      "runner_output": [
+        {
+          "declarations": 19,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.PositiveEmbedding"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.PositiveReindex",
+      "ok": true,
+      "declarations_expected": 21,
+      "runner_output": [
+        {
+          "declarations": 21,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.PositiveReindex"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.PositiveRibbons",
+      "ok": true,
+      "declarations_expected": 38,
+      "runner_output": [
+        {
+          "declarations": 38,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.PositiveRibbons"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.PositiveSupport",
+      "ok": true,
+      "declarations_expected": 43,
+      "runner_output": [
+        {
+          "declarations": 43,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.PositiveSupport"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.Presentation",
+      "ok": true,
+      "declarations_expected": 31,
+      "runner_output": [
+        {
+          "declarations": 31,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.Presentation"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.ReducedRibbons",
+      "ok": true,
+      "declarations_expected": 53,
+      "runner_output": [
+        {
+          "declarations": 53,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.ReducedRibbons"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.RibbonGroupoid",
+      "ok": true,
+      "declarations_expected": 67,
+      "runner_output": [
+        {
+          "declarations": 67,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.RibbonGroupoid"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.RibbonLcm",
+      "ok": true,
+      "declarations_expected": 45,
+      "runner_output": [
+        {
+          "declarations": 45,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.RibbonLcm"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.RibbonPositiveCalculus",
+      "ok": true,
+      "declarations_expected": 35,
+      "runner_output": [
+        {
+          "declarations": 35,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.RibbonPositiveCalculus"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.RibbonRelations",
+      "ok": true,
+      "declarations_expected": 48,
+      "runner_output": [
+        {
+          "declarations": 48,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.RibbonRelations"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.RibbonUniversal",
+      "ok": true,
+      "declarations_expected": 111,
+      "runner_output": [
+        {
+          "declarations": 111,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.RibbonUniversal"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.RibbonWords",
+      "ok": false,
+      "declarations_expected": 63,
+      "runner_output": [
+        {
+          "declarations": 64,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.RibbonWords"
+        }
+      ]
+    },
+    {
+      "module": "ArtinRibbons.SphericalPositive",
+      "ok": true,
+      "declarations_expected": 33,
+      "runner_output": [
+        {
+          "declarations": 33,
+          "exact": true,
+          "kernel_replay_passed": true,
+          "module": "ArtinRibbons.SphericalPositive"
+        }
+      ]
+    }
+  ],
+  "error": "RuntimeError: One or more exact module replays failed or had incomplete declaration coverage",
+  "finished_at": "2026-11-13T21:32:46.727179+00:00"
+}

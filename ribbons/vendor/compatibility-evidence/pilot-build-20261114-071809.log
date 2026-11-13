@@ -1,0 +1,218 @@
+⚠ [18238/18297] Built OAI.Topology.ArtinGroups.Model (31s)
+warning: vendor/OAI/Topology/ArtinGroups/Model.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18239/18297] Ran OAI.Topology.ArtinGroups.Model:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Model.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18240/18297] Built OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver (32s)
+warning: vendor/OAI/Topology/ArtinGroups/Quivers/ReversibleQuiver.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18241/18297] Ran OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Quivers/ReversibleQuiver.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18242/18297] Built OAI.Topology.ArtinGroups.DeligneDefinitions (3.8s)
+warning: vendor/OAI/Topology/ArtinGroups/DeligneDefinitions.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18243/18297] Ran OAI.Topology.ArtinGroups.DeligneDefinitions:irArts
+warning: vendor/OAI/Topology/ArtinGroups/DeligneDefinitions.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18244/18297] Built OAI.Topology.ArtinGroups.Coxeter.AltList (3.0s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AltList.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18245/18297] Ran OAI.Topology.ArtinGroups.Coxeter.AltList:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AltList.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18246/18297] Built OAI.Topology.ArtinGroups.Coxeter.Signs (4.2s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/Signs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18247/18297] Ran OAI.Topology.ArtinGroups.Coxeter.Signs:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/Signs.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18248/18297] Built OAI.Topology.ArtinGroups.Geometry.Reflect (4.5s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean:32:13: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean:38:13: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean:44:13: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean:55:19: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean:87:19: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+⚠ [18249/18297] Ran OAI.Topology.ArtinGroups.Geometry.Reflect:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Reflect.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18250/18297] Built OAI.Topology.ArtinGroups.Harmonic.CosetVertex (4.2s)
+warning: vendor/OAI/Topology/ArtinGroups/Harmonic/CosetVertex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18297] Ran OAI.Topology.ArtinGroups.Harmonic.CosetVertex:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Harmonic/CosetVertex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18297] Built OAI.Topology.ArtinGroups.Coxeter.AltNext (3.6s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AltNext.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18297] Ran OAI.Topology.ArtinGroups.Coxeter.AltNext:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AltNext.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18297] Built OAI.Topology.ArtinGroups.Coxeter.Parabolic (3.8s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/Parabolic.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18297] Ran OAI.Topology.ArtinGroups.Coxeter.Parabolic:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/Parabolic.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18297] Built OAI.Topology.ArtinGroups.Geometry.TrigPhasePower (3.8s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhasePower.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18297] Ran OAI.Topology.ArtinGroups.Geometry.TrigPhasePower:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhasePower.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18258/18297] Built OAI.Topology.ArtinGroups.Coxeter.InverseParabolicMinimum (3.1s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/InverseParabolicMinimum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18259/18297] Ran OAI.Topology.ArtinGroups.Coxeter.InverseParabolicMinimum:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/InverseParabolicMinimum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18260/18297] Built OAI.Topology.ArtinGroups.Coxeter.RightParabolicDecomposition (3.1s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/RightParabolicDecomposition.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18261/18297] Ran OAI.Topology.ArtinGroups.Coxeter.RightParabolicDecomposition:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/RightParabolicDecomposition.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18262/18297] Built OAI.Topology.ArtinGroups.Geometry.Cartan (4.3s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Cartan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18263/18297] Ran OAI.Topology.ArtinGroups.Geometry.Cartan:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/Cartan.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18264/18297] Built OAI.Topology.ArtinGroups.Geometry.DihedralScalar (3.1s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/DihedralScalar.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18265/18297] Ran OAI.Topology.ArtinGroups.Geometry.DihedralScalar:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/DihedralScalar.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18266/18297] Built OAI.Topology.ArtinGroups.Geometry.TrigPhaseSqPrimitive (3.4s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhaseSqPrimitive.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhaseSqPrimitive.lean:27:19: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhaseSqPrimitive.lean:28:15: `Module.End.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M]
+    (f g : Module.End R M) (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhaseSqPrimitive.lean:52:17: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhaseSqPrimitive.lean:66:16: `Module.End.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : One F} [self : IsOneApplyEqSelf F]
+    (x : α), 1 x = x
+instead of
+  ∀ {R : Type u_1} {M : Type u_4} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (x : M), 1 x = x
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+⚠ [18267/18297] Ran OAI.Topology.ArtinGroups.Geometry.TrigPhaseSqPrimitive:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/TrigPhaseSqPrimitive.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18268/18297] Built OAI.Topology.ArtinGroups.Coxeter.AlternatingNextRoot (2.8s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AlternatingNextRoot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AlternatingNextRoot.lean:24:49: `LinearEquiv.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_5} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (f g : M ≃ₗ[R] M)
+    (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+⚠ [18269/18297] Ran OAI.Topology.ArtinGroups.Coxeter.AlternatingNextRoot:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AlternatingNextRoot.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18270/18297] Built OAI.Topology.ArtinGroups.Coxeter.AltListPairDescent (2.7s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AltListPairDescent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18271/18297] Ran OAI.Topology.ArtinGroups.Coxeter.AltListPairDescent:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/AltListPairDescent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✖ [18272/18297] Building OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty (2.6s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+trace: .> LEAN_PATH=/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Cli/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/batteries/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Qq/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/aesop/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/importGraph/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/plausible/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/mathlib/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean /home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/vendor/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.lean -o /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.olean -i /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.ilean -c /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/ir/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.c --setup /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/ir/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.setup.json --json
+error: vendor/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.lean:20:2: Invalid alternative name `h`: Expected `ind`
+error: vendor/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.lean:19:2: Alternative `ind` has not been provided
+⚠ [18274/18297] Ran OAI.Topology.ArtinGroups.Harmonic.ReducedExpression
+warning: vendor/OAI/Topology/ArtinGroups/Harmonic/ReducedExpression.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18276/18297] Ran OAI.Topology.ArtinGroups.Realizations.CellDeligne
+warning: vendor/OAI/Topology/ArtinGroups/Realizations/CellDeligne.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18278/18297] Ran OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRelations
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/PositiveBraidRelations.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18280/18297] Ran OAI.Topology.ArtinGroups.Harmonic.PositiveDegreeHom
+warning: vendor/OAI/Topology/ArtinGroups/Harmonic/PositiveDegreeHom.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18282/18297] Built OAI.Topology.ArtinGroups.Geometry.RootCoeffAltExtension (2.9s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/RootCoeffAltExtension.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18283/18297] Ran OAI.Topology.ArtinGroups.Geometry.RootCoeffAltExtension:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/RootCoeffAltExtension.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18284/18297] Built OAI.Topology.ArtinGroups.Coxeter.WeakPrefix (2.8s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/WeakPrefix.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18285/18297] Ran OAI.Topology.ArtinGroups.Coxeter.WeakPrefix:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/WeakPrefix.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18286/18297] Built OAI.Topology.ArtinGroups.Coxeter.CommonWeakPrefixMaximal (2.5s)
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/CommonWeakPrefixMaximal.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18287/18297] Ran OAI.Topology.ArtinGroups.Coxeter.CommonWeakPrefixMaximal:irArts
+warning: vendor/OAI/Topology/ArtinGroups/Coxeter/CommonWeakPrefixMaximal.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✖ [18288/18297] Building OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent (2.8s)
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+trace: .> LEAN_PATH=/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Cli/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/batteries/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Qq/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/aesop/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/importGraph/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/plausible/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/mathlib/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean /home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/vendor/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean -o /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.olean -i /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.ilean -c /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/ir/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.c --setup /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/ir/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.setup.json --json
+error: vendor/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean:23:2: Invalid alternative name `h`: Expected `ind`
+error: vendor/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean:22:2: Alternative `ind` has not been provided
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean:81:13: `LinearEquiv.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant has a different type:
+  ∀ {F : Type u_1} {α : outParam (Type u_2)} {inst : FunLike F α α} {inst_1 : Mul F} [self : IsMulApplyEqComp F]
+    (f g : F) (x : α), (f * g) x = f (g x)
+instead of
+  ∀ {R : Type u_1} {M : Type u_5} [inst : Semiring R] [inst_1 : AddCommMonoid M] [inst_2 : Module R M] (f g : M ≃ₗ[R] M)
+    (x : M), (f * g) x = f (g x)
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+⚠ [18290/18297] Ran OAI.Topology.ArtinGroups.Geometry.RootNonposDescent
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/RootNonposDescent.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18292/18297] Ran OAI.Topology.ArtinGroups.Geometry.LongestMulSelf
+warning: vendor/OAI/Topology/ArtinGroups/Geometry/LongestMulSelf.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18294/18297] Ran OAI.Topology.ArtinGroups.Harmonic.PositiveSimpleLiftMul
+warning: vendor/OAI/Topology/ArtinGroups/Harmonic/PositiveSimpleLiftMul.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18296/18297] Ran OAI.Topology.ArtinGroups.Harmonic.PositivePrefix
+warning: vendor/OAI/Topology/ArtinGroups/Harmonic/PositivePrefix.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Some required targets logged failures:
+- OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty
+- OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent
+error: build failed

@@ -1,0 +1,11 @@
+--- upstream-original/OAI/Topology/ArtinGroups/Harmonic/FusionLabel.lean
++++ OAI/Topology/ArtinGroups/Harmonic/FusionLabel.lean
+@@ -42,7 +42,7 @@
+   unfold fusionWeight
+   rw [← Finset.mul_prod_erase _ _ (Finset.mem_univ e)]
+   simp only [Function.update_self]
+-  congr 1
++  apply congrArg (fun x : ℝ => stringWeight (m e) j * x)
+   apply Finset.prod_congr rfl
+   intro f hf
+   rw [Function.update_of_ne (Finset.mem_erase.mp hf).1]

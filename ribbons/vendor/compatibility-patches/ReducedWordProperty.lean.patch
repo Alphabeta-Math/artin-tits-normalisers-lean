@@ -1,0 +1,11 @@
+--- upstream-original/OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.lean
++++ OAI/Topology/ArtinGroups/Coxeter/ReducedWordProperty.lean
+@@ -17,7 +17,7 @@
+     exact hall u.length u v rfl hu hv he
+   intro n
+   induction n using Nat.strong_induction_on with
+-  | h n ih =>
++  | ind n ih =>
+     intro u v hlen hu hv he
+     cases u with
+     | nil =>

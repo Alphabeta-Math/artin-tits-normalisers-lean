@@ -1,0 +1,11 @@
+--- upstream-original/OAI/Topology/ArtinGroups/Complexes/PlacementSignedWeight.lean
++++ OAI/Topology/ArtinGroups/Complexes/PlacementSignedWeight.lean
+@@ -82,7 +82,7 @@
+         signedGeneratorVector Q B.complex=signedGeneratorVector Q F.complex := by
+     intro n
+     induction n using Nat.strong_induction_on with
+-    | h n ih =>
++    | ind n ih =>
+       intro B hn
+       by_cases hm : B.complex.IsMinimal Q
+       · exact ⟨B,hm,⟨HomotopyEquivalence.refl Q B.complex⟩,rfl⟩

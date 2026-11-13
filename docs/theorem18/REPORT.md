@@ -1,10 +1,13 @@
 # Theorem 1.8: verified prerequisites, incomplete main theorem
 
-Subsequent progress: [landmark 1](landmarks/REPORT.md) now proves the actual
-normalizer quotient action is free and its orbit map is a quotient covering,
-with the geometric fundamental-group exact sequence. The report below retains
-the scope and limits of the earlier foundational milestone. The remaining
-work is now tracked in the [five-landmark plan](landmarks/PLAN.md).
+Subsequent progress: [landmark 1](landmarks/REPORT.md) proves the actual
+normalizer quotient covering and its geometric exact sequence.
+[Landmark 2](landmarks/milestone2-REPORT.md) now proves the actual reduced
+ribbon normalizer quotient isomorphism, semidirect splitting and complete
+chosen-lcm groupoid presentation. Both independent reviews and complete
+local verification passed; fresh CI is pending. The report below retains
+the earlier foundational milestone's scope. Remaining work is tracked in
+the [five-landmark plan](landmarks/PLAN.md).
 
 **Theorem 1.8 is not proved.** This milestone establishes actual geometric
 foundations and usable generic topology suppliers. It does not replace the

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+  "exit_code": 1,
+  "duration_seconds": 103.42145228385925,
+  "log": "/tmp/artin-landmark2-search/embedding-build-20261114-072203.log"
+}

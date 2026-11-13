@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+  "exit_code": 0,
+  "duration_seconds": 7.421013116836548,
+  "log": "/tmp/artin-landmark2-search/restriction-build-20261114-073948.log",
+  "input_snapshot": "/tmp/artin-landmark2-search/restriction-build-20261114-073948.inputs.json"
+}

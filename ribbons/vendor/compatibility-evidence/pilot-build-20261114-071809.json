@@ -1,0 +1,11 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "OAI.Topology.ArtinGroups.Harmonic.PositivePrefix"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+  "exit_code": 1,
+  "duration_seconds": 61.73639154434204,
+  "log": "/tmp/artin-landmark2-search/pilot-build-20261114-071809.log"
+}

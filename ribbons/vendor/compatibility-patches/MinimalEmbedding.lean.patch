@@ -1,0 +1,11 @@
+--- upstream-original/OAI/Topology/ArtinGroups/Complexes/MinimalEmbedding.lean
++++ OAI/Topology/ArtinGroups/Complexes/MinimalEmbedding.lean
+@@ -21,7 +21,7 @@
+             ∀ i, F.complex.placement i = B.complex.placement (e i) := by
+     intro n
+     induction n using Nat.strong_induction_on with
+-    | h n ih =>
++    | ind n ih =>
+       intro B hn
+       by_cases hm : B.complex.IsMinimal Q
+       · exact ⟨B, hm, ⟨HomotopyEquivalence.refl Q B.complex⟩,

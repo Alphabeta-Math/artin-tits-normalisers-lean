@@ -1,0 +1,11 @@
+--- upstream-original/OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean
++++ OAI/Topology/ArtinGroups/Geometry/RootNonnegAscent.lean
+@@ -20,7 +20,7 @@
+       ∀ k, 0 ≤ representation cs w (Pi.single s 1) k from H _ w rfl s hs
+   intro n
+   induction n using Nat.strong_induction_on with
+-  | h n ih =>
++  | ind n ih =>
+     intro w hn s hs
+     by_cases hw : w=1
+     · subst w

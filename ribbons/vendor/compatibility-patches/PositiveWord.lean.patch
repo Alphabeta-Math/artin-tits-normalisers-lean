@@ -1,0 +1,11 @@
+--- upstream-original/OAI/Topology/ArtinGroups/Harmonic/PositiveWord.lean
++++ OAI/Topology/ArtinGroups/Harmonic/PositiveWord.lean
+@@ -99,7 +99,7 @@
+       ∃ v,good v ∧ inv v ∧ ∀ j,¬move v j := by
+     intro n
+     induction n using Nat.strong_induction_on with
+-    | h n ih=>
++    | ind n ih=>
+       intro w hm hw hv
+       by_cases hz:∀ j,¬move w j
+       · exact ⟨w,hw,hv,hz⟩

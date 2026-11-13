@@ -1,0 +1,1 @@
+Historical validation failure: all 24 kernel commands exited zero, but RibbonWords compiled 64 constants and the defining-module audit counted 63. This is not a successful final verification. These snapshots retain the original driver/harness/inventory bytes for the failed record. Mathematical sources were unchanged.

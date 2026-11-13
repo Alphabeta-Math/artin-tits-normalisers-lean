@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "started_at": "2026-11-13T21:42:08.484685+00:00",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "ProviderPhysicalAudit.lean"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+  "inputs_sha256": "0e54da16519a14af134ee44bd55de314387c6f796022c8ba325223b54ee1b261",
+  "harness_sha256": "2415d4890aa3d3bfdc72fbb86679136da7fa8318715d5414de590893a4ee0a1a",
+  "kernel_replay_repeated": false,
+  "full_landmark_2_proved": false,
+  "exit_code": 0,
+  "duration_seconds": 45.701675377989886,
+  "raw_log_sha256": "db0a5c4033465ecfe797f5224b1fb371104a49f3e441ff2edca5debddc295e19",
+  "errors": [],
+  "actual_module_count": 359,
+  "distinct_physical_names": 6133,
+  "physical_occurrences": 6193,
+  "duplicate_count": 60,
+  "summary": [
+    {
+      "all_physical_type_value_universe_parameters_identical": true,
+      "canonical_axioms_checked": true,
+      "canonical_declarations": 6133,
+      "distinct_physical_names": 6133,
+      "identical_theorem_duplicates": 60,
+      "modules": 359,
+      "physical_occurrences": 6193
+    }
+  ],
+  "coverage_sha256": "54188c61a0f56c34cc4ae89b07f14a7145af65f9964567272c76d7cdc4f9ee76",
+  "inputs_unchanged": true,
+  "ended_at": "2026-11-13T21:42:54.288805+00:00"
+}
