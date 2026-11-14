@@ -1,8 +1,9 @@
 # Landmark 4: compatible normalizer and fundamental-group exact sequences
 
 Status: landmark 4 is mathematically accepted after both independent final
-reviews and the complete local build/audit/replay battery. Clean final-mode
-GitHub CI and permanent archival closeout are pending. Deligne asphericity
+reviews and the complete local build/audit/replay battery. [Clean final-mode
+GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974)
+and the [permanent archival closeout](milestone4-closeout.json) passed. Deligne asphericity
 and full Theorem 1.8 remain unproved. See [report](milestone4-REPORT.md).
 
 ## Exact target and source

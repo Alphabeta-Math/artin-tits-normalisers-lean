@@ -3,7 +3,10 @@
 Status: all 12 scientific modules and the aggregate target compile. The
 complete local technical battery passed and both independent main reviews
 accepted the exact frozen sources. [Root mathematical acceptance](milestone4-root-acceptance.json)
-is recorded. Fresh clean final-mode CI is pending; no CI success is claimed here.
+is recorded. [Fresh clean final-mode CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974)
+passed for source `e7703926f3e486c0fca3a0fe292ab56d6411c248`. The
+[permanent archive](github-evidence/run-43573814974/README.md) and
+[closeout receipt](milestone4-closeout.json) retain the actual evidence.
 The two-proof basepoint supplier cohort has separate completed verification,
 independent reviews and root acceptance, described below.
 
@@ -139,7 +142,7 @@ The central [proof-source register](../../provenance/GITHUB-PROOF-SOURCES.md)
 and preserved earlier proof histories remain the provenance entrypoints.
 Old accepted scientific/configuration/review inputs are not reauthored by
 this package. Supplier acceptance is separate from the now accepted main M4 reviews
-and the pending clean-CI closeout.
+and the completed clean-CI closeout.
 
 ## Verification checkpoint and reproduction
 
@@ -163,8 +166,21 @@ inventory and the actual statements/evidence. Their prose reports retain
 reading and execution limits. The technical receipt SHA-256 is
 `f76ea11b92312db7bb62780118600b2b37ebdcb16cef0dc42a218cf8a9c061ec`.
 
-Final-mode verification will repeat the required checks on a clean GitHub
-runner. Its success is pending, rather than inferred from local verification.
+Final-mode verification repeated the required checks on a clean GitHub runner
+and passed. The [actual receipt](github-evidence/run-43573814974/verification.json)
+records all 57 successful commands, all 13 project and one provider exact-module
+replays, the 151 project declarations and two selected supplier declarations.
+The archive validator checked all 57 raw command-log hashes, both final reviews
+and 996 current repository inputs, including the 955 older accepted inputs.
+The original ZIP digest matches GitHub artifact metadata:
+
+`a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424`.
+
+The original ZIP, full compressed Actions log, run/job/artifact metadata and
+archive-validation record are committed in the permanent archive. CI compiled
+artifact hashes remain recorded rather than compared to unrelated local
+binaries. Historical local/precommit records and pending-status observations
+remain unchanged; this later closeout provides the clean-run result.
 
 From `sequences/`, the documented reproduction sequence is:
 

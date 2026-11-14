@@ -1,0 +1,38 @@
+{
+  "archive_checked_current_input_count": 996,
+  "archive_checked_raw_log_count": 57,
+  "artifact_digest_matches_github": true,
+  "ci_archive_directory": "docs/theorem18/landmarks/github-evidence/run-43573814974",
+  "ci_archive_sha256": {
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/README.md": "9e8595a23edcaa56fd3d0d648749c236fcbbe443a8e06393a738b2df7202d97e",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/SHA256SUMS": "51e94e4bb7d0c43a7327e690d0d0e186bbd365541c161c9763d4cfbd13031787",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/actions.log.gz": "071419854e7c67cab98c04d3eb69f2f1b3a2f33b643527c66f8dd82f62e14d1c",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/archive-verification.json": "25e91b419126ee1fc96c2c06afe0cc1a790702e52c06c4edd27ce3b8b05607ba",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/artifacts.json": "ab09bc312f84fddb951d09956e8e8a39592361555e985d4d9c7c827a120ff81d",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/jobs.json": "13cd6006ea87321f444f9a908f3a77b603abd614870ee4b73f31e6a4fb41daaa",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/landmark4-verification.zip": "a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/run.json": "71799b02fa9d4128db82e988e12489fa8449eb61384e08c1b2a753bb5e48712c",
+    "docs/theorem18/landmarks/github-evidence/run-43573814974/verification.json": "4fc286c0849d7bede42fab6d5702abd52bc98a42449e34ce10d3cc1b18c3ca83"
+  },
+  "clean_ci_passed": true,
+  "closed_at": "2026-11-14T08:21:37.737514+00:00",
+  "full_landmark_4_proved": true,
+  "full_theorem_1_8_proved": false,
+  "github_run_id": 43573814974,
+  "github_run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974",
+  "independent_statement_reviews_accepted": 2,
+  "kind": "theorem18-landmark4-closeout",
+  "limits": [
+    "CI compiled hashes recorded, not compared to unrelated local compiled binaries.",
+    "Bundled kernel relative to imported environments; old accepted suppliers and Mathlib not freshly replayed."
+  ],
+  "local_mathematical_acceptance_sha256": "b2a37b24fc9e7f2a3ac3fcaa5f1673e231afbea9843fe2ea8e3d3dde1123bd8f",
+  "project_exact_replays": 13,
+  "proof_scope": "Theorem6.7: actual pure and normalizer fundamental-group equivalences, both actual exact rows and commuting squares at every complement basepoint with identity on the same Coxeter quotient; normalized ordinary and positive FG-op conventions, exact positive ribbon path formula. No asphericity or K(pi,1) conclusion.",
+  "provider_exact_replays": 1,
+  "remaining_landmarks": [
+    5
+  ],
+  "source_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+  "source_inventory_sha256": "7048b5d1bb1926eb499bdad1bd27fd76ca7c47299bd5f92a2416ec3f1c808a2c"
+}

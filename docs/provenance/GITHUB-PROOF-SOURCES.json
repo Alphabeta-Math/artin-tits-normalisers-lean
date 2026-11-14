@@ -11703,7 +11703,15 @@
       }
     },
     {
-      "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/archive-verification.json",
+        "sha256": "25e91b419126ee1fc96c2c06afe0cc1a790702e52c06c4edd27ce3b8b05607ba"
+      },
+      "clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone4-closeout.json",
+        "sha256": "10c2034e373051142e55b0f7402ab3e13db6658bd8234ee978cc3c0246764cba"
+      },
+      "clean_github_ci_status": "passed",
       "full_theorem_1_8_proved": false,
       "independent_reviews_sha256": {
         "sequences/reviews/landmark4-a.json": "9a5f0b64e2a8e87c652d03c2d7dcb15e3e4737ada9a41c47149dae5d24e72235",
@@ -11733,10 +11741,14 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 2,
-  "base_repository_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+  "base_repository_commit": "4a4e2360ae8b5355ed0417577532ba06b26817ff",
   "compiled_M4_dependency_graph": {
     "baseline_archives_unchanged": true,
-    "clean_CI_status": "pending; root-owned CI archive separate",
+    "clean_CI_closeout": {
+      "path": "docs/theorem18/landmarks/milestone4-closeout.json",
+      "sha256": "10c2034e373051142e55b0f7402ab3e13db6658bd8234ee978cc3c0246764cba"
+    },
+    "clean_CI_status": "passed",
     "counts": {
       "physical_project_aliases": 2,
       "physical_project_occurrences": 2528,
@@ -24501,8 +24513,12 @@
     "unchanged_old_inputs": 855
   },
   "current_M4": {
-    "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
-    "compiled_graph_status": "Complete source-bound published-commit M4 graph and independent metadata validation passed; clean CI pending",
+    "clean_CI_closeout": {
+      "path": "docs/theorem18/landmarks/milestone4-closeout.json",
+      "sha256": "10c2034e373051142e55b0f7402ab3e13db6658bd8234ee978cc3c0246764cba"
+    },
+    "clean_github_ci_status": "passed",
+    "compiled_graph_status": "Complete source-bound M4 graph/publication integrity validation and clean final-mode CI passed",
     "configuration_sha256": {
       "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960",
       "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
@@ -24545,12 +24561,38 @@
       "path": "sequences/source-inventory.json",
       "sha256": "7048b5d1bb1926eb499bdad1bd27fd76ca7c47299bd5f92a2416ec3f1c808a2c"
     },
-    "status": "Root mathematically accepted full M4 exact-sequence comparison; clean CI pending; full Theorem1.8/asphericity not claimed",
+    "status": "Root mathematically accepted full M4 exact-sequence comparison; clean final-mode CI passed; full Theorem1.8/asphericity not claimed",
     "technical_ok": true,
     "technical_verification": {
       "path": "sequences/evidence/landmark4-technical-20261114T075200Z/verification.json",
       "sha256": "f76ea11b92312db7bb62780118600b2b37ebdcb16cef0dc42a218cf8a9c061ec"
     }
+  },
+  "current_M4_clean_CI": {
+    "archive_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/archive-verification.json",
+      "sha256": "25e91b419126ee1fc96c2c06afe0cc1a790702e52c06c4edd27ce3b8b05607ba"
+    },
+    "artifact_sha256": "a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424",
+    "checked_current_inputs": 996,
+    "checked_raw_logs": 57,
+    "closeout": {
+      "path": "docs/theorem18/landmarks/milestone4-closeout.json",
+      "sha256": "10c2034e373051142e55b0f7402ab3e13db6658bd8234ee978cc3c0246764cba"
+    },
+    "final_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/verification.json",
+      "sha256": "4fc286c0849d7bede42fab6d5702abd52bc98a42449e34ce10d3cc1b18c3ca83"
+    },
+    "full_theorem_1_8_proved": false,
+    "project_exact_replays": 13,
+    "project_physical_declarations": 151,
+    "provider_declarations": 2,
+    "provider_exact_replays": 1,
+    "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974",
+    "source_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+    "status": "passed",
+    "unchanged_historical_inputs": 955
   },
   "current_m3_development": {
     "accepted": true,
@@ -28722,7 +28764,7 @@
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "1982e7ca97e7635f258daa048cd478cae2fdd146fc48f7f005141f3e9dd4de55"
+    "sha256": "b458fdfb18ecb834bd6e4154e93342177ce77d1e3cf2972d786473c34dc62231"
   },
   "github_actions_tooling": [
     {
@@ -30225,6 +30267,7 @@
     "https://github.com/lazyinspirit/artin-tits-normalisers-lean": {
       "exact_revisions": [
         "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
+        "4a4e2360ae8b5355ed0417577532ba06b26817ff",
         "59941e65aece274beb65a3f5c668616a69c0e292",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
         "e7703926f3e486c0fca3a0fe292ab56d6411c248"
@@ -31994,6 +32037,10 @@
         "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974"
       },
       "commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone4-closeout.json",
+        "sha256": "10c2034e373051142e55b0f7402ab3e13db6658bd8234ee978cc3c0246764cba"
+      },
       "exact_repository_source_bindings": 1014,
       "historical_non_scientific_metadata_differences": [],
       "milestone_project_source_files": 13,
