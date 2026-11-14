@@ -319,7 +319,7 @@ def main():
   validation=published.parent/'validation.json'
   if validation.exists():
    validated=json.loads(validation.read_text());assert validated['ok'] and validated['binding_sha256']==sha(published)
-  publication_records.append({'commit':publication['commit'],'binding':ref(published.relative_to(ROOT)),'validation':ref(validation.relative_to(ROOT)) if validation.exists() else None,'exact_repository_source_bindings':publication['exact_source_binding_count'],'milestone_project_source_files':publication.get('M3_project_source_count',publication.get('M4_project_source_count')),'historical_non_scientific_metadata_differences':list(publication['non_scientific_historical_metadata_differences']),'clean_github_ci':publication['clean_github_ci'],'observation_policy':'Append-only publication binding; original precommit graphs/execution/attribution are not rewritten.'})
+  publication_records.append({'commit':publication['commit'],'binding':ref(published.relative_to(ROOT)),'validation':ref(validation.relative_to(ROOT)) if validation.exists() else None,'exact_repository_source_bindings':publication['exact_source_binding_count'],'milestone_project_source_files':publication.get('M3_project_source_count',publication.get('M4_project_source_count',publication.get('M5-prerequisites_project_source_count'))),'historical_non_scientific_metadata_differences':list(publication['non_scientific_historical_metadata_differences']),'clean_github_ci':publication['clean_github_ci'],'observation_policy':'Append-only publication binding; original precommit graphs/execution/attribution are not rewritten.'})
  ledger['source_publication_bindings']=publication_records
  if (OUT/'m3/validation.json').exists():
   validation=json.loads((OUT/'m3/validation.json').read_text());assert validation['ok']
@@ -408,6 +408,8 @@ def main():
  if isinstance(m5_checkpoint.get('new_compiled_dependency_graph'),dict):
   g=m5_checkpoint['new_compiled_dependency_graph'];n=g['counts']
   rendered=rendered.replace('a new versioned prerequisite graph will follow only after the final source frontier and verification are ready.', f"the separate [M5 prerequisite graph](M5-EXPORT.md) records {n['project_roots']} project roots, {n['reachable_declarations']} reachable declarations and {n['references']} references with complete physical occurrence/alias accounting. This graph is a source observation, not full-target acceptance.")
+ if m5_checkpoint.get('source_publication'):
+  rendered += '\nThe prerequisite source is published at `3165671b648d24521a78d71aac47bd61d0500251`: [1,141 exact Git blob bindings](publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json) and [metadata validation](publications/3165671b648d24521a78d71aac47bd61d0500251/validation.json). All eight project files and frozen source/configuration/provider/review inputs match. The sole exception is the historical mutable registry JSON snapshot; no mathematical source differs. The immutable precommit graph remains unchanged. Clean [prerequisite CI43579352641](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641) is pending; no full asphericity claim is inferred.\n'
  (OUT/'GITHUB-PROOF-SOURCES.md').write_text(rendered)
  print(json.dumps({'accepted_repositories':2,'accepted_module_counts':{c['id']:c['module_count'] for c in cohorts},'search_reports':len(records),'promoted_inventories':len(promoted),'graph_status':ledger['compiled_dependency_graph']['status']}))
 

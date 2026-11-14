@@ -1,0 +1,21 @@
+{
+  "Lean_commands_executed": false,
+  "M5-prerequisites_project_source_files": 8,
+  "actual_Git_tree_matches_preserved_output": true,
+  "all_frozen_source_config_provider_review_bindings_match": true,
+  "all_raw_blobs_match_Git_object_IDs": true,
+  "all_repository_owned_observed_snapshots_accounted_for": true,
+  "allowed_historical_non_scientific_differences": [
+    "docs/provenance/GITHUB-PROOF-SOURCES.json"
+  ],
+  "baseline_archive_unchanged": true,
+  "binding_sha256": "73a0ad996ad03ae92624705b249acd0ff442b2190835aeaa1387aecce942cad5",
+  "clean_CI_result_asserted": false,
+  "commit": "3165671b648d24521a78d71aac47bd61d0500251",
+  "exact_source_bindings": 1141,
+  "kind": "publication-blob-integrity-validation",
+  "limits": "Validates exact source-publication and evidence integrity; clean CI and mathematical acceptance remain separate records.",
+  "ok": true,
+  "post_publication_observer_inputs_preserved_without_false_Git_links": [],
+  "validator_sha256": "04be4d1337a77b2f7629ccc0a60329c074bfc2113b7844fa6f1b96e849a5dbdd"
+}

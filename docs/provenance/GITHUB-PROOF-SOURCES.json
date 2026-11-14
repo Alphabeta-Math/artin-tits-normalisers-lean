@@ -15204,7 +15204,7 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 2,
-  "base_repository_commit": "22301de0ff626dbfb3d8ae66a6bccc50317de702",
+  "base_repository_commit": "3165671b648d24521a78d71aac47bd61d0500251",
   "compiled_M4_dependency_graph": {
     "baseline_archives_unchanged": true,
     "clean_CI_closeout": {
@@ -28160,6 +28160,26 @@
     "source_inventory": {
       "path": "asphericity/source-inventory.json",
       "sha256": "e2b38ddcc4aacfeec5a55634cbc684684311dc81c0b7ecc44858c84bf187230b"
+    },
+    "source_publication": {
+      "binding": {
+        "path": "docs/provenance/publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json",
+        "sha256": "73a0ad996ad03ae92624705b249acd0ff442b2190835aeaa1387aecce942cad5"
+      },
+      "clean_CI_at_binding_creation": {
+        "status": "pending/in progress (root supplied); no successful CI result asserted",
+        "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+      },
+      "commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "exact_git_blob_bindings": 1141,
+      "historical_metadata_exceptions": [
+        "docs/provenance/GITHUB-PROOF-SOURCES.json"
+      ],
+      "precommit_observation_unchanged": true,
+      "validation": {
+        "path": "docs/provenance/publications/3165671b648d24521a78d71aac47bd61d0500251/validation.json",
+        "sha256": "4a48f64f790f7ea8890a55836c8bf5ffc5e0c546abb511fbc83a58c0bbf6c19e"
+      }
     },
     "status": "Root-accepted asphericity prerequisites only; clean CI separate and full actual-space target remains unproved",
     "supplier_complete_file_patch_license_endpoint_inventory": {
@@ -86102,7 +86122,7 @@
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "745a963eb381b2d2d229c0ad4114fc897a4b2a1e9ef041a3316a6f13a2894b54"
+    "sha256": "1ee568118cb33aee480a62a00f356c48eb4dfaed8b0417a6629bccecadbeb901"
   },
   "github_actions_tooling": [
     {
@@ -87814,7 +87834,7 @@
     "https://github.com/lazyinspirit/artin-tits-normalisers-lean": {
       "exact_revisions": [
         "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
-        "22301de0ff626dbfb3d8ae66a6bccc50317de702",
+        "3165671b648d24521a78d71aac47bd61d0500251",
         "59941e65aece274beb65a3f5c668616a69c0e292",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
         "e7703926f3e486c0fca3a0fe292ab56d6411c248"
@@ -89869,6 +89889,27 @@
     }
   ],
   "source_publication_bindings": [
+    {
+      "binding": {
+        "path": "docs/provenance/publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json",
+        "sha256": "73a0ad996ad03ae92624705b249acd0ff442b2190835aeaa1387aecce942cad5"
+      },
+      "clean_github_ci_at_binding_creation": {
+        "status": "pending/in progress (root supplied); no successful CI result asserted",
+        "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+      },
+      "commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "exact_repository_source_bindings": 1141,
+      "historical_non_scientific_metadata_differences": [
+        "docs/provenance/GITHUB-PROOF-SOURCES.json"
+      ],
+      "milestone_project_source_files": 8,
+      "observation_policy": "Append-only publication binding; original precommit graphs/execution/attribution are not rewritten.",
+      "validation": {
+        "path": "docs/provenance/publications/3165671b648d24521a78d71aac47bd61d0500251/validation.json",
+        "sha256": "4a48f64f790f7ea8890a55836c8bf5ffc5e0c546abb511fbc83a58c0bbf6c19e"
+      }
+    },
     {
       "binding": {
         "path": "docs/provenance/publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json",

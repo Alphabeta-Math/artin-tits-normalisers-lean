@@ -181,6 +181,39 @@ def build(root: Path):
             "scope": "Complete actual project constants through the implemented prerequisite checkpoint; full M5 and actual arrangement asphericity remain unproved",
             "old_graphs_unchanged": True,
         }
+    publication = (
+        root
+        / "docs/provenance/publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json"
+    )
+    if publication.exists():
+        bound = json.loads(publication.read_text())
+        validation_path = publication.with_name("validation.json")
+        validation = json.loads(validation_path.read_text())
+        assert (
+            bound["ok"]
+            and validation["ok"]
+            and validation["binding_sha256"]
+            == ref(str(publication.relative_to(root)))["sha256"]
+        )
+        assert bound["accepted_asphericity_prerequisites"] is True and all(
+            bound[k] is False
+            for k in [
+                "full_landmark_5_proved",
+                "full_theorem_1_8_proved",
+                "actual_arrangement_asphericity_proved",
+            ]
+        )
+        checkpoint["source_publication"] = {
+            "commit": bound["commit"],
+            "binding": ref(str(publication.relative_to(root))),
+            "validation": ref(str(validation_path.relative_to(root))),
+            "exact_git_blob_bindings": bound["exact_source_binding_count"],
+            "historical_metadata_exceptions": list(
+                bound["non_scientific_historical_metadata_differences"]
+            ),
+            "clean_CI_at_binding_creation": bound["clean_github_ci"],
+            "precommit_observation_unchanged": True,
+        }
     return records, repositories, checkpoint
 
 

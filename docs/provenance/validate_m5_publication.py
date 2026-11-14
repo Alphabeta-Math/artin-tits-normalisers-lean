@@ -126,11 +126,19 @@ def main():
     )
     require(
         set(metadata)
-        == {
-            "docs/provenance/ExportM5-prerequisitesDependencies.lean",
+        <= {
+            "docs/provenance/ExportM5Dependencies.lean",
             "docs/provenance/run_m5_export.py",
         },
         "Unexpected post-publication observer metadata",
+    )
+    require(
+        {
+            "docs/provenance/ExportM5Dependencies.lean",
+            "docs/provenance/run_m5_export.py",
+        }
+        <= set(exact) | set(metadata),
+        "Observer inputs missing from publication accounting",
     )
     for source, row in metadata.items():
         require(
@@ -160,6 +168,8 @@ def main():
         "provider_assembly_sha256",
         "provider_verification_source_sha256",
         "provider_statement_reviews_sha256",
+        "provider_reused_source_sha256",
+        "provider_evidence_sha256",
         "historical_reviews_sha256",
         "provider_statement_reviews_sha256",
     ]:

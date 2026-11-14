@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "docs/provenance/validate_m5_publication.py",
+    "--binding",
+    "docs/provenance/publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+  "exit_code": 1,
+  "validator_sha256": "8d05be65e434a5c837d1cc658173230cd701b5f08768c3d5241dfb11239c6f82",
+  "observed_exception": "RuntimeError: Unexpected post-publication observer metadata",
+  "diagnostic_source": "Actual exec tool response; final exception copied from that response, not a rerun or reconstructed full log",
+  "cause": "Copied validator required exactly two observer-only post-publication exceptions from M4; M5 observer files were already committed and have zero exceptions. A copied allowed-path string also retained the prose milestone suffix."
+}

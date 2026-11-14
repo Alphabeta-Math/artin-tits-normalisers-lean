@@ -257,7 +257,7 @@ def main():
     missing = [p for p in expected if p not in tree]
     observer_metadata = {}
     allowed_metadata = {
-        "docs/provenance/ExportM5-prerequisitesDependencies.lean",
+        "docs/provenance/ExportM5Dependencies.lean",
         "docs/provenance/run_m5_export.py",
     }
     for path in missing:
