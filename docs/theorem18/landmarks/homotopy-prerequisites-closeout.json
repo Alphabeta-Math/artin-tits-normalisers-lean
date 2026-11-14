@@ -1,0 +1,66 @@
+{
+  "accepted_homotopy_prerequisites": true,
+  "actual_arrangement_asphericity_proved": false,
+  "actual_clean_command": {
+    "argv": [
+      "lake",
+      "clean",
+      "artin-homotopy"
+    ],
+    "cwd": "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/homotopy",
+    "elapsed_seconds": 0.747,
+    "exit_code": 0,
+    "label": "clean-new-package",
+    "log": "logs/clean-new-package.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "archive_checked_current_input_count": 1264,
+  "archive_checked_raw_log_count": 93,
+  "artifact_digest_matches_github": true,
+  "ci_archive_directory": "docs/theorem18/landmarks/github-evidence/run-43590812660",
+  "ci_archive_sha256": {
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/README.md": "f5883683581d355273f808d146ab2c061a3b78a31795648de56270f190919bc2",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/SHA256SUMS": "643e4566ce28243b1d8758ba83f6655f03f59cf86b7307867043a7513a5eafb1",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/actions.log.gz": "c93d6ea8500abccc1282aa9cd3e9be5e824da776a74e566bc81d12cd9bafe816",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/archive-verification.json": "8b1a28b845c65d2006a1252149ade2ed453f485270c88b521950b89e04139f9a",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/artifacts.json": "08685bb553d8050319ec432f9b621b3fac8525487b5b870b708329966033a101",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/homotopy-prerequisites-verification.zip": "c98958bdd7e89e604a7a5d095e525cacea4d58b3ecfa77db5ee6aea3fdc22195",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/jobs.json": "e573728b1bcc47e0452a7876dd1a41d853e791e061304c5e91f236124f2272ec",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/review-a.json": "9c0adb9a0c764f6c6fa1761f8ef63a6654bcf2b790977a028fa97f40983e8a72",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/review-a.md": "d42ba8fd616ad4e68747982e7cc4d51f5eada498eff49983272e19b8615c87b3",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/review-b.json": "ca4571ff3e173afdf9b96024f6e773215258157cd1cb6f20ad475f5172e72e39",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/review-b.md": "74d1a4e626081bbec2b532102e8194546a5becb10211899faab1e97ed9a39734",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/run.json": "0e08e1f88f70ba83c678fc153c44e00fb0c1bdc727fe9605d8e46e08eb21e1a4",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/source-inventory.json": "c1b4f7a4689f7cc0f3549dd962d186ef57de57a55a39721dc66d990f868c8441",
+    "docs/theorem18/landmarks/github-evidence/run-43590812660/verification.json": "b2e5ed0715a52ff165bd3f5ee51f1299c4d4a3914e1bbf9ffd86d4ce7a3c4f9b"
+  },
+  "clean_ci_passed": true,
+  "clean_skipped_in_final_ci": false,
+  "closed_at": "2026-11-14T12:03:20.823669+00:00",
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "github_run_id": 43590812660,
+  "github_run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43590812660",
+  "independent_statement_reviews_accepted": 2,
+  "kind": "theorem18-homotopy-prerequisites-closeout",
+  "limits": [
+    "Prerequisites only: actual arrangement asphericity, full M5 and Theorem 1.8 remain unproved.",
+    "CI compiled/toolchain hashes recorded, not compared to unrelated local binaries.",
+    "Bundled kernel relative to imported environments; old accepted suppliers and Mathlib not freshly replayed."
+  ],
+  "local_mathematical_acceptance_sha256": "ab605fb0d02f5207a80b08f4e8ca5247e522cc2ea439cbb157df8d2dc2e835c4",
+  "new_provider_declarations": 338,
+  "project_canonical_declarations": 239,
+  "project_exact_replays": 11,
+  "project_physical_occurrences": 239,
+  "proof_scope": "Actual compatible metric/local connector and named cover nerve with constructed classifier, return and one-sided composite homotopy; actual finite-cube homotopy injection; arbitrary positive reduced ribbon lcms and greatest common/simple prefixes with correct generated tails; actual root/face opposition, closure-incidence and independently algebraic residue-divisor bijection; actual tube chamber intervals. Original spaces, finite actual Coxeter group, arbitrary index universe/J, including rank zero. No nerve higher vanishing, actual universal-cover contraction, actual arrangement asphericity, two-sided nerve equivalence or full Theorem1.8.",
+  "provider_exact_replays": 21,
+  "remaining_landmarks": [
+    5
+  ],
+  "remaining_obligation": "Complete actual small-chain higher nullity and actual all-dimensional universal-cover comparison; then transfer to both original spaces and assemble full Theorem1.8 with M4 diagrams.",
+  "source_commit": "9dacc8befce702eed601430c776da385cab07343",
+  "source_inventory_sha256": "c1b4f7a4689f7cc0f3549dd962d186ef57de57a55a39721dc66d990f868c8441",
+  "two_sided_nerve_homotopy_equivalence_proved": false,
+  "unchanged_historical_inputs": 1117
+}

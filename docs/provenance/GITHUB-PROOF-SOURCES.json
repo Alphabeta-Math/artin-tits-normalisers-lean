@@ -19059,7 +19059,7 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 3,
-  "base_repository_commit": "9dacc8befce702eed601430c776da385cab07343",
+  "base_repository_commit": "939a60cda48bfc267b35f794c9656d318243e0c1",
   "compiled_M4_dependency_graph": {
     "baseline_archives_unchanged": true,
     "clean_CI_closeout": {
@@ -32512,10 +32512,100 @@
     "status": "passed",
     "unchanged_historical_inputs": 996
   },
+  "current_homotopy_clean_CI": {
+    "accepted_homotopy_prerequisites": true,
+    "actual_arrangement_asphericity_proved": false,
+    "actual_clean_command": {
+      "argv": [
+        "lake",
+        "clean",
+        "artin-homotopy"
+      ],
+      "cwd": "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/homotopy",
+      "elapsed_seconds": 0.747,
+      "exit_code": 0,
+      "label": "clean-new-package",
+      "log": "logs/clean-new-package.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "archive_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43590812660/archive-verification.json",
+      "sha256": "8b1a28b845c65d2006a1252149ade2ed453f485270c88b521950b89e04139f9a"
+    },
+    "artifact_sha256": "c98958bdd7e89e604a7a5d095e525cacea4d58b3ecfa77db5ee6aea3fdc22195",
+    "checked_current_inputs": 1264,
+    "checked_raw_logs": 93,
+    "clean_skipped": false,
+    "closeout": {
+      "path": "docs/theorem18/landmarks/homotopy-prerequisites-closeout.json",
+      "sha256": "5de78e9b975ef214f30836227f7b555c3ab4faf57119f61c67c1775e731de4ad"
+    },
+    "final_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43590812660/verification.json",
+      "sha256": "b2e5ed0715a52ff165bd3f5ee51f1299c4d4a3914e1bbf9ffd86d4ce7a3c4f9b"
+    },
+    "full_landmark_5_proved": false,
+    "full_theorem_1_8_proved": false,
+    "limits": "Actual final-mode prerequisite CI only; old suppliers/Mathlib were not freshly replayed, and actual arrangement asphericity/full M5/Theorem 1.8 remain unproved.",
+    "project_declarations": 239,
+    "project_exact_replays": 11,
+    "provider_declarations": 338,
+    "provider_exact_replays": 21,
+    "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43590812660",
+    "source_commit": "9dacc8befce702eed601430c776da385cab07343",
+    "status": "passed",
+    "two_sided_nerve_homotopy_equivalence_proved": false,
+    "unchanged_historical_inputs": 1117
+  },
   "current_homotopy_prerequisites": {
     "accepted_homotopy_prerequisites": true,
     "actual_arrangement_asphericity_proved": false,
-    "clean_github_ci_status": "pending; no clean CI success claimed by this local checkpoint acceptance",
+    "clean_CI": {
+      "accepted_homotopy_prerequisites": true,
+      "actual_arrangement_asphericity_proved": false,
+      "actual_clean_command": {
+        "argv": [
+          "lake",
+          "clean",
+          "artin-homotopy"
+        ],
+        "cwd": "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/homotopy",
+        "elapsed_seconds": 0.747,
+        "exit_code": 0,
+        "label": "clean-new-package",
+        "log": "logs/clean-new-package.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43590812660/archive-verification.json",
+        "sha256": "8b1a28b845c65d2006a1252149ade2ed453f485270c88b521950b89e04139f9a"
+      },
+      "artifact_sha256": "c98958bdd7e89e604a7a5d095e525cacea4d58b3ecfa77db5ee6aea3fdc22195",
+      "checked_current_inputs": 1264,
+      "checked_raw_logs": 93,
+      "clean_skipped": false,
+      "closeout": {
+        "path": "docs/theorem18/landmarks/homotopy-prerequisites-closeout.json",
+        "sha256": "5de78e9b975ef214f30836227f7b555c3ab4faf57119f61c67c1775e731de4ad"
+      },
+      "final_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43590812660/verification.json",
+        "sha256": "b2e5ed0715a52ff165bd3f5ee51f1299c4d4a3914e1bbf9ffd86d4ce7a3c4f9b"
+      },
+      "full_landmark_5_proved": false,
+      "full_theorem_1_8_proved": false,
+      "limits": "Actual final-mode prerequisite CI only; old suppliers/Mathlib were not freshly replayed, and actual arrangement asphericity/full M5/Theorem 1.8 remain unproved.",
+      "project_declarations": 239,
+      "project_exact_replays": 11,
+      "provider_declarations": 338,
+      "provider_exact_replays": 21,
+      "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43590812660",
+      "source_commit": "9dacc8befce702eed601430c776da385cab07343",
+      "status": "passed",
+      "two_sided_nerve_homotopy_equivalence_proved": false,
+      "unchanged_historical_inputs": 1117
+    },
+    "clean_github_ci_status": "passed",
     "compiled_dependency_graph": {
       "counts": {
         "physical_project_aliases": 3,
@@ -32524,6 +32614,10 @@
         "reachable_declarations": 48582,
         "reachable_modules": 1898,
         "references": 1123853
+      },
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/homotopy-prerequisites-closeout.json",
+        "sha256": "5de78e9b975ef214f30836227f7b555c3ab4faf57119f61c67c1775e731de4ad"
       },
       "execution": {
         "path": "docs/provenance/homotopy/run-20261114T113600Z/execution.json",
@@ -32633,6 +32727,10 @@
         "sha256": "94e285c3549316d66a91428636754b213b6296f518baf5e1d1a22639e93a69cc"
       },
       "commit": "9dacc8befce702eed601430c776da385cab07343",
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/homotopy-prerequisites-closeout.json",
+        "sha256": "5de78e9b975ef214f30836227f7b555c3ab4faf57119f61c67c1775e731de4ad"
+      },
       "exact_Git_blob_bindings": 1288,
       "historical_metadata_mismatches": [],
       "observer_only_metadata_exceptions": [
@@ -32644,7 +32742,7 @@
         "sha256": "2bc0167f406291ab60b4e7c14a7d4b072b764638047bb30e0292e7436b32517c"
       }
     },
-    "status": "Root-accepted actual homotopy/ribbon prerequisites; clean final-mode CI pending",
+    "status": "Root-accepted actual homotopy/ribbon prerequisites; clean final-mode CI passed; all four full-target flags remain false",
     "technical_verification": {
       "path": "homotopy/evidence/prerequisites-technical-20261114T111954Z/verification.json",
       "sha256": "4828247ec5f99fa54c8acc0936dba434aed0fed8fba261a0a011ea4263663bba"
@@ -98407,7 +98505,7 @@
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "99dd5350e35c8937b6efa14fc74d21e31760cdbfce712814ee7720783ce07d12"
+    "sha256": "69ee47939efbf19a0880efff2a9c6cf0c9d23ffadb0c636ccb6999aabcd113f6"
   },
   "github_actions_tooling": [
     {
@@ -100195,6 +100293,7 @@
         "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
         "3165671b648d24521a78d71aac47bd61d0500251",
         "59941e65aece274beb65a3f5c668616a69c0e292",
+        "939a60cda48bfc267b35f794c9656d318243e0c1",
         "9dacc8befce702eed601430c776da385cab07343",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
         "e7703926f3e486c0fca3a0fe292ab56d6411c248"
@@ -102409,6 +102508,10 @@
         "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43590812660"
       },
       "commit": "9dacc8befce702eed601430c776da385cab07343",
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/homotopy-prerequisites-closeout.json",
+        "sha256": "5de78e9b975ef214f30836227f7b555c3ab4faf57119f61c67c1775e731de4ad"
+      },
       "exact_repository_source_bindings": 1288,
       "historical_non_scientific_metadata_differences": [],
       "milestone_project_source_files": 11,

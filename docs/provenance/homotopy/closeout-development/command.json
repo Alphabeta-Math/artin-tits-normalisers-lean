@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "python3",
+    "docs/provenance/refresh_ledger.py"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+  "environment": {
+    "ARTIN_PROVENANCE_SYSROOT": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2"
+  },
+  "exit_code": 0,
+  "log": "docs/provenance/homotopy/closeout-development/refresh.log",
+  "log_sha256": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+  "immutable_files_checked": 161,
+  "immutable_files_unchanged": true,
+  "Lean_commands_executed": false
+}

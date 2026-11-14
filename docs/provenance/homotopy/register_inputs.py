@@ -221,4 +221,220 @@ def build(root: Path):
             ),
             "CI_status_at_binding_creation": bound["clean_github_ci"],
         }
+    closeout_path = (
+        root / "docs/theorem18/landmarks/homotopy-prerequisites-closeout.json"
+    )
+    if closeout_path.exists():
+        checkpoint["clean_CI"] = validate_closeout(root, closeout_path)
+        checkpoint["clean_github_ci_status"] = "passed"
+        checkpoint["status"] = (
+            "Root-accepted actual homotopy/ribbon prerequisites; clean final-mode CI passed; all four full-target flags remain false"
+        )
+        checkpoint["compiled_dependency_graph"]["current_clean_CI_closeout"] = (
+            checkpoint["clean_CI"]["closeout"]
+        )
+        checkpoint["source_publication"]["current_clean_CI_closeout"] = checkpoint[
+            "clean_CI"
+        ]["closeout"]
     return supplier, checkpoint
+
+
+def validate_closeout(root: Path, closeout_path: Path):
+    """Validate an ACTUAL root archive receipt; never run Lean or rewrite history."""
+
+    def load(path):
+        return json.loads((root / path).read_text())
+
+    def ref(path):
+        return {
+            "path": str(path),
+            "sha256": hashlib.sha256((root / path).read_bytes()).hexdigest(),
+        }
+
+    false_flags = [
+        "two_sided_nerve_homotopy_equivalence_proved",
+        "full_landmark_5_proved",
+        "actual_arrangement_asphericity_proved",
+        "full_theorem_1_8_proved",
+    ]
+    closed = json.loads(closeout_path.read_text())
+    assert (
+        closed["clean_ci_passed"] is True
+        and closed["accepted_homotopy_prerequisites"] is True
+    )
+    assert all(closed[k] is False for k in false_flags)
+    acceptance_path = (
+        "docs/theorem18/landmarks/homotopy-prerequisites-root-acceptance.json"
+    )
+    inventory_path = "homotopy/source-inventory.json"
+    assert (
+        closed["local_mathematical_acceptance_sha256"] == ref(acceptance_path)["sha256"]
+    )
+    assert closed["source_inventory_sha256"] == ref(inventory_path)["sha256"]
+    acceptance, inventory = load(acceptance_path), load(inventory_path)
+    assert acceptance["accepted_homotopy_prerequisites"] is True
+    assert inventory["accepted_homotopy_prerequisites"] is False
+    assert all(
+        record[k] is False for record in [acceptance, inventory] for k in false_flags
+    )
+    for key, binding in acceptance["source_bindings"].items():
+        assert inventory[key] == binding, key
+    for path, digest in acceptance["independent_reviews_sha256"].items():
+        assert ref(path)["sha256"] == digest
+    directory = Path(closed["ci_archive_directory"])
+    assert not directory.is_absolute() and ".." not in directory.parts
+    archive_path, final_path = (
+        directory / "archive-verification.json",
+        directory / "verification.json",
+    )
+    for path, digest in closed["ci_archive_sha256"].items():
+        assert ref(path)["sha256"] == digest, path
+    assert (
+        str(archive_path) in closed["ci_archive_sha256"]
+        and str(final_path) in closed["ci_archive_sha256"]
+    )
+    archive, final, run = (
+        load(archive_path),
+        load(final_path),
+        load(directory / "run.json"),
+    )
+    assert archive["ok"] is True and final["ok"] is True
+    assert (
+        archive["accepted_homotopy_prerequisites"] is True
+        and final["accepted_homotopy_prerequisites"] is True
+    )
+    assert all(record[k] is False for record in [archive, final] for k in false_flags)
+    assert final["mode"] == "final" and final["inputs_unchanged"] is True
+    assert final["semantic_acceptance_claimed"] is True
+    assert (
+        closed["source_commit"]
+        == archive["source_commit"]
+        == final["repository_head"]
+        == run["head_sha"]
+        == "9dacc8befce702eed601430c776da385cab07343"
+    )
+    assert run["conclusion"] == "success" and run["status"] == "completed"
+    assert closed["github_run_id"] == archive["run_id"] == run["id"] == 43590812660
+    assert closed["github_run_url"] == archive["run_url"] == run["html_url"]
+    assert (
+        archive["github_artifact_digest_matches"] is True
+        and closed["artifact_digest_matches_github"] is True
+    )
+    archives = [path for path in closed["ci_archive_sha256"] if path.endswith(".zip")]
+    assert (
+        len(archives) == 1 and ref(archives[0])["sha256"] == archive["artifact_sha256"]
+    )
+    assert (
+        len(archive["checked_source_sha256"])
+        == archive["current_source_input_count"]
+        == closed["archive_checked_current_input_count"]
+    )
+    for path, digest in archive["checked_source_sha256"].items():
+        assert ref(path)["sha256"] == digest, path
+    assert (
+        archive["checked_source_sha256"][inventory_path]
+        == closed["source_inventory_sha256"]
+    )
+    historical = load(
+        "docs/theorem18/landmarks/github-evidence/run-43579352641/archive-verification.json"
+    )["checked_source_sha256"]
+    assert final["accepted_context_input_sha256"] == historical
+    assert len(historical) == archive["historical_input_count"] == 1117
+    for path, digest in historical.items():
+        assert archive["checked_source_sha256"][path] == digest
+    for key, binding in final["source_bindings"].items():
+        assert inventory[key] == binding, key
+    for key in archive["review_binding_keys"]:
+        assert acceptance["source_bindings"][key] == inventory[key]
+        binding = inventory[key]
+        if isinstance(binding, dict):
+            for path, digest in binding.items():
+                assert archive["checked_source_sha256"][path] == digest, (key, path)
+    assert (
+        archive["independent_review_count"]
+        == closed["independent_statement_reviews_accepted"]
+        == 2
+    )
+    assert (
+        final["project_statement_reviews_sha256"]
+        == acceptance["independent_reviews_sha256"]
+    )
+    assert archive["project_summary"] == inventory["physical_summary"]
+    assert (
+        archive["project_summary"]["canonical_project_declarations"]
+        == archive["project_summary"]["physical_occurrences"]
+        == 239
+    )
+    provider = load("homotopy/evidence/providers/coverage.json")
+    assert final["provider_physical_summary"] == provider["summary"]
+    assert (
+        provider["summary"]["canonical_declarations"]
+        == provider["summary"]["physical_occurrences"]
+        == archive["provider_declarations"]
+        == 338
+    )
+    counts = {
+        module: len(names)
+        for module, names in inventory[
+            "compiled_declaration_occurrences_by_module"
+        ].items()
+    }
+    assert (
+        len(counts)
+        == closed["project_exact_replays"]
+        == archive["project_exact_replays"]
+        == 11
+    )
+    counts.update(
+        {row["module"]: row["declarations"] for row in provider["physical_modules"]}
+    )
+    assert closed["provider_exact_replays"] == archive["provider_exact_replays"] == 21
+    assert len(final["exact_replays"]) == len(counts) == 32
+    assert {row["module"] for row in final["exact_replays"]} == set(counts)
+    for row in final["exact_replays"]:
+        result = row["result"]
+        assert (
+            row["physical_declarations_expected"]
+            == result["declarations"]
+            == counts[row["module"]]
+        )
+        assert (
+            result["module"] == row["module"]
+            and result["exact"] is True
+            and result["kernel_replay_passed"] is True
+        )
+    assert (
+        len(final["commands"])
+        == archive["checked_raw_log_count"]
+        == closed["archive_checked_raw_log_count"]
+        == 93
+    )
+    assert all(row["exit_code"] == 0 for row in final["commands"])
+    assert (
+        final["clean_skipped"] is False and closed["clean_skipped_in_final_ci"] is False
+    )
+    clean = [row for row in final["commands"] if row["label"] == "clean-new-package"]
+    assert len(clean) == 1 and clean[0]["argv"] == ["lake", "clean", "artin-homotopy"]
+    assert clean[0] == archive["actual_clean_command"] == closed["actual_clean_command"]
+
+    return {
+        "status": "passed",
+        "closeout": ref(str(closeout_path.relative_to(root))),
+        "archive_verification": ref(archive_path),
+        "final_verification": ref(final_path),
+        "source_commit": closed["source_commit"],
+        "run_url": closed["github_run_url"],
+        "artifact_sha256": archive["artifact_sha256"],
+        "checked_current_inputs": archive["current_source_input_count"],
+        "unchanged_historical_inputs": 1117,
+        "checked_raw_logs": 93,
+        "project_exact_replays": 11,
+        "provider_exact_replays": 21,
+        "project_declarations": 239,
+        "provider_declarations": 338,
+        "accepted_homotopy_prerequisites": True,
+        **{key: False for key in false_flags},
+        "clean_skipped": False,
+        "actual_clean_command": clean[0],
+        "limits": "Actual final-mode prerequisite CI only; old suppliers/Mathlib were not freshly replayed, and actual arrangement asphericity/full M5/Theorem 1.8 remain unproved.",
+    }
