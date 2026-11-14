@@ -1,0 +1,11 @@
+../docs/provenance/ExportDependencies.lean:27:65: error: Application type mismatch: The argument
+  m.toString.startsWith
+has type
+  (pat : ?m.7) → [String.Slice.Pattern.ForwardPattern pat] → Bool
+but is expected to have type
+  String → Bool
+in the application
+  @Array.any String #["ArtinNormalisers.", "ArtinLandmarks.", "ArtinRibbons."] m.toString.startsWith
+../docs/provenance/ExportDependencies.lean:49:0: error: Aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.

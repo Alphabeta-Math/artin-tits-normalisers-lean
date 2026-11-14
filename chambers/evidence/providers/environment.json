@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-11-14T05:13:43.633481+00:00",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "which",
+        "lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "stdout": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean\n",
+      "stderr": "",
+      "duration_seconds": 0.43363461800618097,
+      "resolved_binary": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean",
+      "sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "which",
+        "leanchecker"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "stdout": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker\n",
+      "stderr": "",
+      "duration_seconds": 0.41411798101034947,
+      "resolved_binary": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker",
+      "sha256": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "stdout": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n",
+      "stderr": "",
+      "duration_seconds": 0.43996404099743813
+    }
+  ],
+  "all_exit_zero": true
+}

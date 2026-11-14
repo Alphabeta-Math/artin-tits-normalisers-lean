@@ -1,0 +1,54 @@
+{
+  "authorization": "Explicit root task: accept the nine TauCeti Cech suppliers after both independent GPT-6.1 Sol/high accept-supplier-cohort receipts; main M3 remains unaccepted.",
+  "build_to_audit_metadata_transition": {
+    "all_actual_supplier_and_configuration_inputs_match": true,
+    "audit_modules": 9,
+    "audit_replay_all_current_inputs_match": true,
+    "audit_replay_current_bound_input_count": 1800,
+    "build_bound_input_count": 829,
+    "build_current_metadata_differences": {
+      "chambers/evidence/providers/run_checks.py": {
+        "audit_replay_current_sha256": "8c251b6bbdc77f3836e4f107cba8d5df593dbb11cd007387581dfdda376abca9",
+        "build_record_sha256": "bc3ad8a471e8c2785e9604028242fbc0619102296445de80e6265bdbd22f01a9"
+      },
+      "chambers/vendor/provenance.json": {
+        "audit_replay_current_sha256": "167019908d3ec84e54c1ff285fee81d01151094771a3cd6d41659af743028df1",
+        "build_record_sha256": "4f7104a34b1affac058c160d3a0297910cc8bcf39281dff59ee676fdece362c9"
+      }
+    },
+    "build_targets": 9,
+    "exact_kernel_replay_processes": 9,
+    "executed_by_reviewer": false,
+    "independent_kernel_implementation": false,
+    "kernel_relative_to_imported_mathlib_and_accepted_parent_providers": true
+  },
+  "canonical_declarations": 232,
+  "cohort": "landmark3-tauceti-cech",
+  "full_landmark_3_proved": false,
+  "full_theorem_1_8_proved": false,
+  "independent_reviews": [
+    {
+      "path": "chambers/reviews/providers-a.json",
+      "prose_path": "chambers/reviews/providers-a.md",
+      "prose_sha256": "bec5fc7fced26a4cf6ae6bd15e0df9a98147457071195ef4d910fd2a59559de3",
+      "sha256": "43b7a3857d599ee7d90c4222d70c15eae1b6658feeb29c3debe9d54453c14be0"
+    },
+    {
+      "path": "chambers/reviews/providers-b.json",
+      "prose_path": "chambers/reviews/providers-b.md",
+      "prose_sha256": "60b2867fcd3c4077eeb56658fd352e3da6bc5c6ad14f6581ab3f869e59c6faef",
+      "sha256": "54229c3c551344080e5aae719a36ed4366f2023cab69e535589460a320164bb1"
+    }
+  ],
+  "module_count": 9,
+  "physical_occurrences": 232,
+  "recorded_at": "2026-11-14T05:36:02.894973+00:00",
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "root_disposition": "accept-supplier-cohort",
+  "scope_limit": "Supplier only. Existing accepted-root term graph remains throughM2 and is not claimed to traverse the new232 supplier declarations.",
+  "technical_verification": {
+    "path": "chambers/evidence/providers/verification.json",
+    "sha256": "ed4209e3f3ebe82327897008bae351f95a760870623038ed9637e0e129592b5c"
+  },
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9"
+}

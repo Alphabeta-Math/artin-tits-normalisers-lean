@@ -1,0 +1,13 @@
+--- upstream/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean
++++ active/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Glue.lean
+@@ -5,8 +5,8 @@
+ -/
+ module
+ 
+-public import TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration
+-public import TauCeti.Topology.MetricSpace.Lebesgue
++public import ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration
++public import ArtinChamberVendor.Topology.MetricSpace.Lebesgue
+ public import Mathlib.Analysis.Convex.Contractible
+ public import Mathlib.CategoryTheory.Functor.OfSequence
+ 

@@ -1,0 +1,45 @@
+name: Lean geometric chamber landmark
+
+on:
+  push:
+    paths:
+      - 'chambers/**'
+      - '.github/workflows/chambers.yml'
+  pull_request:
+    paths:
+      - 'chambers/**'
+      - '.github/workflows/chambers.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  landmark3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      LEAN_NUM_THREADS: '2'
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - name: Fetch inherited committed pins and whole Mathlib cache
+        run: python3 chambers/scripts/cache_prerequisites.py
+      - name: Verify frozen M3 statements and replay only new mathematics
+        run: python3 chambers/scripts/verify.py --execute --mode final --output chambers/evidence/landmark3-ci
+      - name: Preserve source-bound commands and failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-landmark3-verification
+          path: chambers/evidence/landmark3-ci/
+          if-no-files-found: warn
+          retention-days: 90

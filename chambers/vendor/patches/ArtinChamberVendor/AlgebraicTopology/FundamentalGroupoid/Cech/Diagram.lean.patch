@@ -1,0 +1,11 @@
+--- upstream/TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean
++++ active/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean
+@@ -6,7 +6,7 @@
+ module
+ 
+ public import Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic
+-public import TauCeti.Topology.Category.TopCat.Cech.Diagram
++public import ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram
+ 
+ /-!
+ # The fundamental-groupoid Čech diagram of a family of open sets

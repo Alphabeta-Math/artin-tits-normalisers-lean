@@ -1,0 +1,92 @@
+{
+  "kind": "M3-infrastructure-static-preparation",
+  "started_at": "2026-11-14T06:18:40.218744+00:00",
+  "inputs_before_sha256": {
+    "chambers/scripts/verify.py": "08c8596d89b4d08895bd708621c5bf461dcadf57fb050a1018693c40e7cc8ff2",
+    "chambers/scripts/cache_prerequisites.py": "0ca16dc93b0a96de84e47048b8091f546e2813d61a84319e4d97e99c7c5cc1d5",
+    "chambers/ProjectAudit.lean": "eba36bbd87800f619c568b0e5472727037fca3896d75e10b8009c05f12818f7a",
+    ".github/workflows/chambers.yml": "e18f3c367706e9a6012dad4b995f05cd0eb6726fec3098ca93bc74573ee72e5a",
+    "chambers/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "chambers/lakefile.toml": "35683c8bd5b86b7c3e10169c91678810db1d762f492071d41e4d573a3b3dcbf6",
+    "chambers/lake-manifest.json": "e9e97c7ff7ad2eddb4a831b045a85e3a880f4daacb6343498e54cf5c9cc9f287"
+  },
+  "full_landmark_3_proved": false,
+  "full_theorem_1_8_proved": false,
+  "Lean_or_kernel_commands_executed": false,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-c",
+        "import ast,pathlib; [ast.parse(pathlib.Path(p).read_text(),filename=p) for p in [\"chambers/scripts/verify.py\",\"chambers/scripts/cache_prerequisites.py\"]]"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.02107,
+      "log": "chambers/evidence/infrastructure-preparation/python-syntax.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "ruff",
+        "check",
+        "--select",
+        "F",
+        "chambers/scripts/verify.py",
+        "chambers/scripts/cache_prerequisites.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.00978,
+      "log": "chambers/evidence/infrastructure-preparation/python-static-errors.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "argv": [
+        "python3",
+        "chambers/scripts/cache_prerequisites.py",
+        "--plan"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.03156,
+      "log": "chambers/evidence/infrastructure-preparation/cache-plan.log",
+      "log_sha256": "4b78edd2eca26182bc840810b5681e4783b788ac26fbc8a8603a6d8a4a48a415"
+    },
+    {
+      "argv": [
+        "python3",
+        "chambers/scripts/verify.py",
+        "--plan"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06414,
+      "log": "chambers/evidence/infrastructure-preparation/verification-plan.log",
+      "log_sha256": "d32d7211955e120a78c90fb1ebc0b323805f39ac2393f6a648b8013f010fad8d"
+    }
+  ],
+  "limitations": [
+    "Static infrastructure checks only. ProjectAudit.lean has not been compiled/executed by this task.",
+    "Live M3 mathematical sources remain under development; no final battery or source-inventory freeze was attempted.",
+    "Draft CI workflow requires root review before use."
+  ],
+  "development_failure": {
+    "argv": [
+      "python3",
+      "chambers/scripts/verify.py",
+      "--write-audit"
+    ],
+    "exit_code": 1,
+    "actual_error": "RuntimeError: Stale supplier review provenance",
+    "cause": "Provenance path variable was shadowed by a supplier patch path; corrected before successful static checks."
+  },
+  "inputs_after_sha256": {
+    "chambers/scripts/verify.py": "08c8596d89b4d08895bd708621c5bf461dcadf57fb050a1018693c40e7cc8ff2",
+    "chambers/scripts/cache_prerequisites.py": "0ca16dc93b0a96de84e47048b8091f546e2813d61a84319e4d97e99c7c5cc1d5",
+    "chambers/ProjectAudit.lean": "eba36bbd87800f619c568b0e5472727037fca3896d75e10b8009c05f12818f7a",
+    ".github/workflows/chambers.yml": "e18f3c367706e9a6012dad4b995f05cd0eb6726fec3098ca93bc74573ee72e5a",
+    "chambers/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "chambers/lakefile.toml": "35683c8bd5b86b7c3e10169c91678810db1d762f492071d41e4d573a3b3dcbf6",
+    "chambers/lake-manifest.json": "e9e97c7ff7ad2eddb4a831b045a85e3a880f4daacb6343498e54cf5c9cc9f287"
+  },
+  "inputs_unchanged": true,
+  "ok": true,
+  "finished_at": "2026-11-14T06:18:40.345703+00:00"
+}

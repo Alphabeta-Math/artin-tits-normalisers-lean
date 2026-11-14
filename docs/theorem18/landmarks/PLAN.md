@@ -58,15 +58,24 @@ Garside hypotheses and the literal normalizer/ribbon maps.
 
 ## 3. The equivariant geometric groupoid comparison
 
-Construct the actual restricted arrangement's chamber/Deligne groupoid and
-prove the equivariant comparison with `FundamentalGroupoid (Complement M J)`.
-Prove the orbit groupoid agrees with the reduced ribbon groupoid and with the
-fundamental groupoid of the actual orbit space, compatibly with their covering
-maps. The source chain is Lemma 6.6, Proposition 6.3 and their prerequisites.
+The compiled implementation uses the interval groupoid on the actual
+restricted chambers: positive arrows for all ordered chamber pairs, with
+self and sign-`Between` relations. It proves the equivariant comparison with
+`FundamentalGroupoid (Complement M J)`, the actual signed ribbon covering onto
+the `J`-associate reduced ribbon component, its equivalence with the actual
+orbit space's fundamental groupoid, and the strict covering square. Both
+actual action cocones satisfy the groupoid orbit-colimit universal property.
+The source chain is Lemma 6.6, Proposition 6.3 and their prerequisites.
 
 A combinatorial Salvetti or nerve model is usable only with a proved comparison
 to the actual complement. Oppositely directed positive crossings are separate
-arrows, not inverses.
+arrows, not inverses. The implemented interval alternative is compared directly
+with these actual objects; an identification with the paper's literal
+adjacent-gallery presentation is not asserted. The Coxeter endpoint formula
+is proved for all signed ribbon arrows with the same actual quotient
+`N_W(W_J)/W_J`. Both final independent reviews and root mathematical acceptance
+are recorded; final-mode verification and fresh clean CI are pending. See the
+[report](milestone3-REPORT.md).
 
 ## 4. The compatible normalizer/fundamental-group exact sequences
 
@@ -88,16 +97,18 @@ Corollary 6.14 and completes Theorem 1.8 without assuming its conclusions.
 
 ## Tracking and package boundary
 
-The new work lives in the independent `landmarks/` Lake package, requiring the
-parent package by path with the same pinned Lean/mathlib dependencies. This
-preserves the parent source/configuration hashes and historical proof records.
-The new code has its own statement reviews and build/axiom/replay records.
+The sequential developments live in independent `landmarks/`, `ribbons/` and
+`chambers/` Lake packages, requiring earlier packages by path with the same
+pinned Lean/mathlib dependencies. This preserves the parent and earlier
+accepted source/configuration hashes and historical proof records. Each new
+cohort has its own statement reviews and build/axiom/replay records. Accepted
+supplier cohorts do not by themselves establish a milestone's main statement.
 
 | Landmark | Current status |
 | --- | --- |
 | 1: Actual quotient covering | Proved; both statement reviews, local verification and [fresh GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43498322108) passed |
 | 2: Reduced ribbon normalizer | [Proved](milestone2-REPORT.md); both independent reviews, complete local verification and [fresh CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592) passed |
-| 3: Equivariant geometric comparison | Not yet proved |
+| 3: Equivariant geometric comparison | [Proved and mathematically accepted](milestone3-REPORT.md); both final independent reviews and complete local technical battery passed; final mode and fresh clean CI pending ([closeout plan](milestone3-PLAN.md)) |
 | 4: Compatible exact sequences | Not yet proved |
 | 5: Deligne asphericity/full theorem | Not yet proved |
 

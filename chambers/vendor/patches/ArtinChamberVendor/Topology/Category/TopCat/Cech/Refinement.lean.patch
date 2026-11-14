@@ -1,0 +1,13 @@
+--- upstream/TauCeti/Topology/Category/TopCat/Cech/Refinement.lean
++++ active/ArtinChamberVendor/Topology/Category/TopCat/Cech/Refinement.lean
+@@ -5,8 +5,8 @@
+ -/
+ module
+ 
+-public import TauCeti.Topology.Category.TopCat.Cech.Diagram
+-import all TauCeti.Topology.Category.TopCat.Cech.Diagram
++public import ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram
++import all ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram
+ 
+ /-!
+ # Refinements of topological Čech diagrams

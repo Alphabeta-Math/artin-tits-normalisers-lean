@@ -1,0 +1,644 @@
+{
+  "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit": {
+    "count": 9,
+    "lines": 2504,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit": {
+        "sha256": "73a0bbcd052c6988eac1fedc40cc3b1d0b124d9d16aed8bed17859e1b78a4d21",
+        "lines": 154,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram": {
+        "sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Diagram": {
+        "sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+        "lines": 145,
+        "imports": [
+          "Mathlib.Topology.Category.TopCat.Opens",
+          "Mathlib.Topology.Sets.OpenCover"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue": {
+        "sha256": "a2ba1b2fb84296ee7bff70ff525d7c3c057aa7d85af1eb39a4c7965938b80377",
+        "lines": 705,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "TauCeti.Topology.MetricSpace.Lebesgue",
+          "Mathlib.Analysis.Convex.Contractible",
+          "Mathlib.CategoryTheory.Functor.OfSequence"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration": {
+        "sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+        "lines": 356,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+        "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+          "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+          "Mathlib.CategoryTheory.IsConnected"
+        ]
+      },
+      "TauCeti.Topology.Homotopy.Path": {
+        "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+        "lines": 759,
+        "imports": [
+          "Mathlib.Topology.Subpath",
+          "Mathlib.Topology.Homotopy.Contractible",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "Mathlib.Topology.Connected.LocallyPathConnected",
+          "TauCeti.Topology.UnitInterval",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+        ]
+      },
+      "TauCeti.Topology.UnitInterval": {
+        "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+        "lines": 114,
+        "imports": [
+          "Mathlib.Topology.UnitInterval",
+          "Mathlib.Topology.Order.ProjIcc"
+        ]
+      },
+      "TauCeti.Topology.MetricSpace.Lebesgue": {
+        "sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+        "lines": 69,
+        "imports": [
+          "Mathlib.Topology.MetricSpace.Basic",
+          "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+        ]
+      }
+    }
+  },
+  "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Map": {
+    "count": 5,
+    "lines": 565,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Map": {
+        "sha256": "713f5e404300f9eafb6733957d8ca7f4c0405c5fb781196f205dfaed8e02a8c8",
+        "lines": 103,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Map"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram": {
+        "sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Diagram": {
+        "sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+        "lines": 145,
+        "imports": [
+          "Mathlib.Topology.Category.TopCat.Opens",
+          "Mathlib.Topology.Sets.OpenCover"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Map": {
+        "sha256": "ef1d358f959a44be06e126ed69e2c485a94c4e81c0783c995df1cd566da669bc",
+        "lines": 99,
+        "imports": [
+          "TauCeti.Topology.Category.TopCat.Cech.Refinement",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Refinement": {
+        "sha256": "91b2b9985603187a4a6b7c2fb025a5bf72725d0a1725523c79861add35972a86",
+        "lines": 117,
+        "imports": [
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      }
+    }
+  },
+  "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Ext": {
+    "count": 7,
+    "lines": 1638,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Ext": {
+        "sha256": "d5c31811b121a99ccaf928c868488c1875906d128debaaad1f2817e92890e2a1",
+        "lines": 62,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram": {
+        "sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Diagram": {
+        "sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+        "lines": 145,
+        "imports": [
+          "Mathlib.Topology.Category.TopCat.Opens",
+          "Mathlib.Topology.Sets.OpenCover"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration": {
+        "sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+        "lines": 356,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+        "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+          "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+          "Mathlib.CategoryTheory.IsConnected"
+        ]
+      },
+      "TauCeti.Topology.Homotopy.Path": {
+        "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+        "lines": 759,
+        "imports": [
+          "Mathlib.Topology.Subpath",
+          "Mathlib.Topology.Homotopy.Contractible",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "Mathlib.Topology.Connected.LocallyPathConnected",
+          "TauCeti.Topology.UnitInterval",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+        ]
+      },
+      "TauCeti.Topology.UnitInterval": {
+        "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+        "lines": 114,
+        "imports": [
+          "Mathlib.Topology.UnitInterval",
+          "Mathlib.Topology.Order.ProjIcc"
+        ]
+      }
+    }
+  },
+  "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Refinement": {
+    "count": 4,
+    "lines": 435,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Refinement": {
+        "sha256": "8f6a2df9e04787c15efc3f74723e122411696a8a11dd0596fd9e555d4c827f6e",
+        "lines": 72,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Refinement"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram": {
+        "sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Diagram": {
+        "sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+        "lines": 145,
+        "imports": [
+          "Mathlib.Topology.Category.TopCat.Opens",
+          "Mathlib.Topology.Sets.OpenCover"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Refinement": {
+        "sha256": "91b2b9985603187a4a6b7c2fb025a5bf72725d0a1725523c79861add35972a86",
+        "lines": 117,
+        "imports": [
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      }
+    }
+  },
+  "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout": {
+    "count": 9,
+    "lines": 2753,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout": {
+        "sha256": "c02e1384d24a5593b1ff4640d172f3df4130cb76c2cfde4730841b3971882375",
+        "lines": 459,
+        "imports": [
+          "Mathlib.CategoryTheory.Groupoid.Grpd.Basic",
+          "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "TauCeti.CategoryTheory.InducedCategory"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet": {
+        "sha256": "a1042c00f42a45b5025582a4abafe90155b6b8c3ddb115fb153cccf8e72d1aa4",
+        "lines": 110,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+        "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+          "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+          "Mathlib.CategoryTheory.IsConnected"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue": {
+        "sha256": "a2ba1b2fb84296ee7bff70ff525d7c3c057aa7d85af1eb39a4c7965938b80377",
+        "lines": 705,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "TauCeti.Topology.MetricSpace.Lebesgue",
+          "Mathlib.Analysis.Convex.Contractible",
+          "Mathlib.CategoryTheory.Functor.OfSequence"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration": {
+        "sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+        "lines": 356,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.Topology.Homotopy.Path": {
+        "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+        "lines": 759,
+        "imports": [
+          "Mathlib.Topology.Subpath",
+          "Mathlib.Topology.Homotopy.Contractible",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "Mathlib.Topology.Connected.LocallyPathConnected",
+          "TauCeti.Topology.UnitInterval",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+        ]
+      },
+      "TauCeti.Topology.UnitInterval": {
+        "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+        "lines": 114,
+        "imports": [
+          "Mathlib.Topology.UnitInterval",
+          "Mathlib.Topology.Order.ProjIcc"
+        ]
+      },
+      "TauCeti.Topology.MetricSpace.Lebesgue": {
+        "sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+        "lines": 69,
+        "imports": [
+          "Mathlib.Topology.MetricSpace.Basic",
+          "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+        ]
+      },
+      "TauCeti.CategoryTheory.InducedCategory": {
+        "sha256": "dfb0de06348e85f1c9315835a1032577e5522106f8ca452f8f19cc1d06655e7e",
+        "lines": 80,
+        "imports": [
+          "Mathlib.CategoryTheory.EqToHom",
+          "Mathlib.CategoryTheory.InducedCategory"
+        ]
+      }
+    }
+  },
+  "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Presentation.Cover": {
+    "count": 19,
+    "lines": 5316,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Presentation.Cover": {
+        "sha256": "929c520214e7328c8e1e86c4a3db326261c54f8a59bb7326b297a472e20cab3c",
+        "lines": 195,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Cover",
+          "Mathlib.GroupTheory.QuotientGroup.Defs"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Cover": {
+        "sha256": "9764da6e4c0f3281db4cb9002ff82a22585fdb8a1ebe92b2121b09e6fd655417",
+        "lines": 358,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "TauCeti.CategoryTheory.Groupoid.ConnectedFunctor"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic": {
+        "sha256": "9d31c86c78fc42088db18c36021e75467d24ddcd6986b08d009b959ecb0ed63b",
+        "lines": 839,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "Mathlib.Algebra.Category.Grp.Basic",
+          "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs",
+          "Mathlib.CategoryTheory.Limits.Shapes.WidePullbacks",
+          "Mathlib.GroupTheory.Coprod.Basic",
+          "Mathlib.GroupTheory.CoprodI",
+          "TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph",
+          "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic",
+          "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+          "TauCeti.AlgebraicTopology.NotSimplyConnected",
+          "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "TauCeti.Topology.Connected.PathConnected"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroup.Basic": {
+        "sha256": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8",
+        "lines": 304,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+        "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+          "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+          "Mathlib.CategoryTheory.IsConnected"
+        ]
+      },
+      "TauCeti.CategoryTheory.Groupoid.SingleObj": {
+        "sha256": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f",
+        "lines": 173,
+        "imports": [
+          "Mathlib.CategoryTheory.Groupoid",
+          "Mathlib.CategoryTheory.SingleObj"
+        ]
+      },
+      "TauCeti.Topology.Homotopy.Path": {
+        "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+        "lines": 759,
+        "imports": [
+          "Mathlib.Topology.Subpath",
+          "Mathlib.Topology.Homotopy.Contractible",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "Mathlib.Topology.Connected.LocallyPathConnected",
+          "TauCeti.Topology.UnitInterval",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+        ]
+      },
+      "TauCeti.Topology.UnitInterval": {
+        "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+        "lines": 114,
+        "imports": [
+          "Mathlib.Topology.UnitInterval",
+          "Mathlib.Topology.Order.ProjIcc"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph": {
+        "sha256": "d6cdbac38e11e48d02b8b7990114f2ccc4a2080e84634de6dffaf97122299bc5",
+        "lines": 169,
+        "imports": [
+          "Mathlib.Topology.Homeomorph.Lemmas",
+          "Mathlib.Algebra.Category.Grp.Basic",
+          "TauCeti.AlgebraicTopology.FundamentalGroup.Basic"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration": {
+        "sha256": "3573e8ad0e979175b061e56488a6c69d2c719cb1e5767f74925457ec9b351ebb",
+        "lines": 206,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration": {
+        "sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+        "lines": 356,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout": {
+        "sha256": "c02e1384d24a5593b1ff4640d172f3df4130cb76c2cfde4730841b3971882375",
+        "lines": 459,
+        "imports": [
+          "Mathlib.CategoryTheory.Groupoid.Grpd.Basic",
+          "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "TauCeti.CategoryTheory.InducedCategory"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet": {
+        "sha256": "a1042c00f42a45b5025582a4abafe90155b6b8c3ddb115fb153cccf8e72d1aa4",
+        "lines": 110,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue": {
+        "sha256": "a2ba1b2fb84296ee7bff70ff525d7c3c057aa7d85af1eb39a4c7965938b80377",
+        "lines": 705,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "TauCeti.Topology.MetricSpace.Lebesgue",
+          "Mathlib.Analysis.Convex.Contractible",
+          "Mathlib.CategoryTheory.Functor.OfSequence"
+        ]
+      },
+      "TauCeti.Topology.MetricSpace.Lebesgue": {
+        "sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+        "lines": 69,
+        "imports": [
+          "Mathlib.Topology.MetricSpace.Basic",
+          "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+        ]
+      },
+      "TauCeti.CategoryTheory.InducedCategory": {
+        "sha256": "dfb0de06348e85f1c9315835a1032577e5522106f8ca452f8f19cc1d06655e7e",
+        "lines": 80,
+        "imports": [
+          "Mathlib.CategoryTheory.EqToHom",
+          "Mathlib.CategoryTheory.InducedCategory"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.NotSimplyConnected": {
+        "sha256": "600d3448f4714817b324be971a888dfb7e493ae84f14e490f0c002c943b8aaac",
+        "lines": 85,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "Mathlib.Analysis.Convex.Contractible",
+          "TauCeti.AlgebraicTopology.FundamentalGroup.Basic"
+        ]
+      },
+      "TauCeti.Topology.Connected.PathConnected": {
+        "sha256": "3710c4307bf68f72ce480364be50491f63710fddc18fed311b05611d00e18b18",
+        "lines": 93,
+        "imports": [
+          "Mathlib.Topology.Connected.PathConnected",
+          "Mathlib.Order.PartialSups",
+          "Mathlib.Order.SuccPred.Nat"
+        ]
+      },
+      "TauCeti.CategoryTheory.Groupoid.ConnectedFunctor": {
+        "sha256": "c34f2d2fb93bda940d50516de24f56188f1d69df112046854e7db57f034cee98",
+        "lines": 141,
+        "imports": [
+          "Mathlib.CategoryTheory.Groupoid"
+        ]
+      }
+    }
+  },
+  "cech-four-roots": {
+    "count": 14,
+    "lines": 2957,
+    "missing": [],
+    "modules": {
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit": {
+        "sha256": "73a0bbcd052c6988eac1fedc40cc3b1d0b124d9d16aed8bed17859e1b78a4d21",
+        "lines": 154,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram": {
+        "sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Diagram": {
+        "sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+        "lines": 145,
+        "imports": [
+          "Mathlib.Topology.Category.TopCat.Opens",
+          "Mathlib.Topology.Sets.OpenCover"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue": {
+        "sha256": "a2ba1b2fb84296ee7bff70ff525d7c3c057aa7d85af1eb39a4c7965938b80377",
+        "lines": 705,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "TauCeti.Topology.MetricSpace.Lebesgue",
+          "Mathlib.Analysis.Convex.Contractible",
+          "Mathlib.CategoryTheory.Functor.OfSequence"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration": {
+        "sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+        "lines": 356,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "TauCeti.Topology.Homotopy.Path"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+        "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+        "lines": 101,
+        "imports": [
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+          "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+          "Mathlib.CategoryTheory.IsConnected"
+        ]
+      },
+      "TauCeti.Topology.Homotopy.Path": {
+        "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+        "lines": 759,
+        "imports": [
+          "Mathlib.Topology.Subpath",
+          "Mathlib.Topology.Homotopy.Contractible",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+          "Mathlib.Topology.Connected.LocallyPathConnected",
+          "TauCeti.Topology.UnitInterval",
+          "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+        ]
+      },
+      "TauCeti.Topology.UnitInterval": {
+        "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+        "lines": 114,
+        "imports": [
+          "Mathlib.Topology.UnitInterval",
+          "Mathlib.Topology.Order.ProjIcc"
+        ]
+      },
+      "TauCeti.Topology.MetricSpace.Lebesgue": {
+        "sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+        "lines": 69,
+        "imports": [
+          "Mathlib.Topology.MetricSpace.Basic",
+          "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Map": {
+        "sha256": "713f5e404300f9eafb6733957d8ca7f4c0405c5fb781196f205dfaed8e02a8c8",
+        "lines": 103,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Map"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Map": {
+        "sha256": "ef1d358f959a44be06e126ed69e2c485a94c4e81c0783c995df1cd566da669bc",
+        "lines": 99,
+        "imports": [
+          "TauCeti.Topology.Category.TopCat.Cech.Refinement",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.Topology.Category.TopCat.Cech.Refinement": {
+        "sha256": "91b2b9985603187a4a6b7c2fb025a5bf72725d0a1725523c79861add35972a86",
+        "lines": 117,
+        "imports": [
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Ext": {
+        "sha256": "d5c31811b121a99ccaf928c868488c1875906d128debaaad1f2817e92890e2a1",
+        "lines": 62,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+        ]
+      },
+      "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Refinement": {
+        "sha256": "8f6a2df9e04787c15efc3f74723e122411696a8a11dd0596fd9e555d4c827f6e",
+        "lines": 72,
+        "imports": [
+          "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+          "TauCeti.Topology.Category.TopCat.Cech.Refinement"
+        ]
+      }
+    }
+  }
+}

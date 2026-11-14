@@ -1,0 +1,769 @@
+{
+  "exact_committed_project_modules": 37,
+  "git_cwd": "repository root",
+  "git_tree_command": [
+    "git",
+    "ls-tree",
+    "-r",
+    "--full-tree",
+    "--name-only",
+    "b793bf9dd4c5c9637d8dde51c6a635f849b943c4"
+  ],
+  "graph_path": "docs/provenance/m3/run-20261114T065009Z/graph.json.gz",
+  "graph_sha256": "585acaaa5c6ef4b9320d63f1c23524c9358ef8a57ccdb91a93eea2878b5d0858",
+  "kind": "immutable-source-attribution-supplement",
+  "module_source_attribution_overrides": {
+    "ArtinChambers.ActualArrangement": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ActualArrangement.lean",
+      "source_sha256": "7655d68bc60ccea16b66a95d438da94a0feae2b1fc446d3b394f4a2444da2437",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ActualComparison": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ActualComparison.lean",
+      "source_sha256": "858d1ed8efb372d9210d8989daa5bc26f2ef07c78e9b98d366cec5a847309d16",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ActualTubes": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ActualTubes.lean",
+      "source_sha256": "d9a2d2ccc57576fc24c8b311602b7932bb508378b5d02a7a0821e863cb9d4f4b",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.Arrangement": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/Arrangement.lean",
+      "source_sha256": "e994fee8544ffea068e2218b652bf49edc47ca415e66b4af25b13eafc68411f1",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.CechCover": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/CechCover.lean",
+      "source_sha256": "ee7ac3bb50b23a2e7376114f34e91ea0009c6ce48cd5599fa2a249c0c4fe3b33",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ChamberAction": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ChamberAction.lean",
+      "source_sha256": "1dc4c09413adbcade355aa96f05b6aced3d62282cc7926005ddbf5e0c2f51f0f",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ChamberLabels": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ChamberLabels.lean",
+      "source_sha256": "bb2d51929698bfa083a9ba86710c6b23c537e94ba64e0ae313a0ffb29de6768c",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ChamberPoints": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ChamberPoints.lean",
+      "source_sha256": "c4d3a26d4f1f25a1b01ec6204314449a4337857da0e31448bbb9673dd4ebeff4",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ChamberTransport": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ChamberTransport.lean",
+      "source_sha256": "8f6e41b1549693274395378008a76a449b2a54fe2a5b26708b5daf8089f13223",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.CoverComparison": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/CoverComparison.lean",
+      "source_sha256": "cb786e05eb495e1e68e8a32ecbc4da39dabb9c8d79954d2509dd1d5e794d3ef3",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.CoverQuotient": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/CoverQuotient.lean",
+      "source_sha256": "719b23898e697a3fbbe352d80e26c400a73e3daeefddeac4c15b371efff465b9",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.CoveringGroupoid": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/CoveringGroupoid.lean",
+      "source_sha256": "db3908e21b8adcedde4e2833811f1422d974f32f803914cc720ee5ab0a110f3a",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.Dominant": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/Dominant.lean",
+      "source_sha256": "b0169ce71bd68691d008f0cada853440277890063229c22880dfa4a64df8bef0",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.FaceProjection": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/FaceProjection.lean",
+      "source_sha256": "cba7ed1195b7e40be965de76dbcb233805dca4336eaa685c2fa83f829062c1dd",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.FacetTransport": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/FacetTransport.lean",
+      "source_sha256": "b208bacc8b4aae7490191f2bd7d1f59925b0f53cf1662b8a952052267852cafd",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.FamilyFunctor": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/FamilyFunctor.lean",
+      "source_sha256": "686647ee845de28baa38b1885c03f65d6b0fff27e5e7aa78091f7daa975b2198",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.FamilyGroupoid": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/FamilyGroupoid.lean",
+      "source_sha256": "33bc29d0160356eaeb65d5c3140d5bd025e6261dd024086724fb95e65b634696",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.ForwardEquivariance": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/ForwardEquivariance.lean",
+      "source_sha256": "9e3f5243fc5e7ba690d0583c5cbe0ef1abe70e6b35d4426a5d2cd3339e66a4b4",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.GroupoidCover": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/GroupoidCover.lean",
+      "source_sha256": "29e5fcf6a54138699ed11db465f48c0069a280507995b2c97d2b059b54574ae0",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.IntervalAction": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/IntervalAction.lean",
+      "source_sha256": "c73fae29b222cb0373c4197234b0f4009aafdfd201cb7f5f4ee044a562aa8f66",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.IntervalEquivalence": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/IntervalEquivalence.lean",
+      "source_sha256": "8b0772faa981737b6242ef8867fb406d6fa1d2b419ab9f0502da19da7199fb25",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.IntervalForward": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/IntervalForward.lean",
+      "source_sha256": "266f702787c4b72a86bcd096fdda6cb4124a26f8abef0a749c2efea1bfddeafb",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.IntervalGroupoid": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/IntervalGroupoid.lean",
+      "source_sha256": "ad354c494dac2be0463846dd57fbd49594c57f6a438f2638875054cd985a96ed",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.InversionLength": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/InversionLength.lean",
+      "source_sha256": "63ccc4b6b6dd077871c8155e9342798624ea54645285a8ae3761dfac9c3aa558",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.Landmark3": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/Landmark3.lean",
+      "source_sha256": "10b972bb3569b3fc944be367ada50b00dde2f87f40f2937d339c6557dda261ee",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.OrbitColimit": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/OrbitColimit.lean",
+      "source_sha256": "405db94933efde3edefd5d3692fd3956a7bcad00bc92d1269e9abc8575986847",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.OrbitGroupoid": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/OrbitGroupoid.lean",
+      "source_sha256": "1c83781a116b0cb8572cacbcbcce837c6add63ebe1a380f3fcd15a8703fd6dec",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.PositiveTransport": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/PositiveTransport.lean",
+      "source_sha256": "13455de8bdda1548bbb9c7b1f55f5f56dad3eb63932437b41186a74c2e286917",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RegularCriterion": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RegularCriterion.lean",
+      "source_sha256": "eef56162de16884c14d288b0c8f4d19f451fbc35202d4bd903dff0cb4390dc51",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RibbonComponent": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RibbonComponent.lean",
+      "source_sha256": "dd9b23bcea5b0a7a0ac580ba2f34223da07b3e8e3d96cefd30e46d71ce7c450b",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RibbonCover": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RibbonCover.lean",
+      "source_sha256": "402c1189303aa67cb2ca6069e385ed71e9765fc24c7d1e8247ef6ff846d70133",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RibbonDeckLabels": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RibbonDeckLabels.lean",
+      "source_sha256": "d3c6a6e0efd989e0211fdff4af3c33b899d2d118a9819ed727cf5aebde5ec67c",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RibbonLiftCompatibility": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RibbonLiftCompatibility.lean",
+      "source_sha256": "ac67fd75d30f6ac6b33adaebb9fa52d5879f1f92cccdddcbb9d44eeead91128b",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RibbonLiftUniqueness": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RibbonLiftUniqueness.lean",
+      "source_sha256": "3f65b88a6a5c03af20127cdcf427df4bbd000329cb9da6b0bfd05baca29236a5",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.RibbonLifting": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/RibbonLifting.lean",
+      "source_sha256": "f1305753aab9ca75f1e9971881e8a125a8dceb38ecd9944557460c1943c634cb",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.SignCells": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/SignCells.lean",
+      "source_sha256": "ad0b4d62161d0621c931b22adcb518f9f75aaa78086b158239333988dbc02472",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.TubeCover": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/TubeCover.lean",
+      "source_sha256": "bdef04d49295e12347c87ce6fbca8f51fddbcbe3812ea5066cbc78cb5e77e2c7",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.TubeDescent": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/TubeDescent.lean",
+      "source_sha256": "a348c25f70277ee4c219d595a164cfee59a16c92895dc2e09af1186caec0f398",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.TubeIntersections": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/TubeIntersections.lean",
+      "source_sha256": "7f427029e9c5b4ac4ccc62955fb4f6a2dcd334dabf85c97b972974cdfab09d76",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.Tubes": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/Tubes.lean",
+      "source_sha256": "2857e3ab39bf16e5423dc16fbab71f76c72aec4caf0bceadbe2b21c01b447ff0",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.WeakIntervals": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/WeakIntervals.lean",
+      "source_sha256": "fa135a5da1bc702fd0dffc90d43699b4ab8a9f5166c51ca196353c41ea2116f6",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinChambers.WeakInversions": {
+      "exact_bytes_at_observed_head": false,
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "chambers/ArtinChambers/WeakInversions.lean",
+      "source_sha256": "598a6fd41c1f3d22e3fe1f2dcf57764588a158f2f15a02af3bb79ab0451a1ebb",
+      "source_status": "uncommitted source snapshot at observed base HEAD; SHA256 is authoritative"
+    },
+    "ArtinLandmarks.Covering": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/landmarks/ArtinLandmarks/Covering.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "landmarks/ArtinLandmarks/Covering.lean",
+      "source_sha256": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94",
+      "source_status": "committed exact source"
+    },
+    "ArtinLandmarks.Dominant": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/landmarks/ArtinLandmarks/Dominant.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "landmarks/ArtinLandmarks/Dominant.lean",
+      "source_sha256": "408a97cc6f49b5868d5eafc6aae733b8ae26a1d314b26c81235f5bf493339da4",
+      "source_status": "committed exact source"
+    },
+    "ArtinLandmarks.RegularStabilizer": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "landmarks/ArtinLandmarks/RegularStabilizer.lean",
+      "source_sha256": "aeeee397f0fe48325c9f62eee8607e80a1836cb123dc9a022cd8d954c92fd93f",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Artin.Basic": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Artin/Basic.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Artin/Basic.lean",
+      "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Artin.CoxeterNormalizer": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Artin/CoxeterNormalizer.lean",
+      "source_sha256": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Artin.ExactSequence": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Artin/ExactSequence.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Artin/ExactSequence.lean",
+      "source_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Artin.NormalizerLift": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Artin/NormalizerLift.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Artin/NormalizerLift.lean",
+      "source_sha256": "d0a1c617b470e5ce36c41a60ad82b29eac825d9b84cf57106138beccf0922849",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Kernel": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Kernel.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Kernel.lean",
+      "source_sha256": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.NormalizerMap": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/NormalizerMap.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/NormalizerMap.lean",
+      "source_sha256": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.QuotientMap": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/QuotientMap.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/QuotientMap.lean",
+      "source_sha256": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Theorem18.ArrangementTopology": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Theorem18/ArrangementTopology.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Theorem18/ArrangementTopology.lean",
+      "source_sha256": "e17eb88a02201854c545aa4be4a397f0457845921903676d362b5c94e66e272e",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Theorem18.CoveringSequence": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Theorem18/CoveringSequence.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Theorem18/CoveringSequence.lean",
+      "source_sha256": "5173fd6df5bac7b17fb33344e9d042a5d8d4e258bd22bb087ab02f882584d9f3",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Theorem18.Geometry": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Theorem18/Geometry.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Theorem18/Geometry.lean",
+      "source_sha256": "310a600d1d1a1b36aefa9190b2705d48f5115fd26e701a4569a7e791bad36098",
+      "source_status": "committed exact source"
+    },
+    "ArtinNormalisers.Theorem18.NormalizerAction": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ArtinNormalisers/Theorem18/NormalizerAction.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ArtinNormalisers/Theorem18/NormalizerAction.lean",
+      "source_sha256": "54b0dc36cf3ef6c399119c8a641e759b1d0474bf94d650c208314f4c4d3c99aa",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.AtomicCoxeter": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/AtomicCoxeter.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/AtomicCoxeter.lean",
+      "source_sha256": "ceb1062ad36adc85ad3d1881f0c1dac898eca5f2ffd8766563aebaaaa17e2030",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.CofinalRibbons": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/CofinalRibbons.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/CofinalRibbons.lean",
+      "source_sha256": "798d2c8d57ba2b21a840e972d38c9f9fbea17b72bbe25f3570b17f3e33f0d23a",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.CoxeterProjection": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/CoxeterProjection.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/CoxeterProjection.lean",
+      "source_sha256": "a6d32269fd65204290ae7656eb7d8931150e18a1dc430c7c50ae1011205aa910",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.DeltaDivisibility": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/DeltaDivisibility.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/DeltaDivisibility.lean",
+      "source_sha256": "9745034e8c34a21af83f76d196147c379ce2b4fb520faafcf33a90b708b0258c",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.FractionNormalForms": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/FractionNormalForms.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/FractionNormalForms.lean",
+      "source_sha256": "098f2ebaaca09e3c9c2b23cc0d75671d6bf64eeef0338e2a2edb1b2bc4b24f81",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.Fundamental": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/Fundamental.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/Fundamental.lean",
+      "source_sha256": "31af15bb2f724d52c32811fa588d79e67f9bed540cca68b651aaaf1571ce725c",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.Landmark2": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/Landmark2.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/Landmark2.lean",
+      "source_sha256": "0fcb9db16ee03c6814f7edcc34e46ce09178fa0583a1bf340c687385b6436bb9",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.NormalizerSplitting": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/NormalizerSplitting.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/NormalizerSplitting.lean",
+      "source_sha256": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.ParabolicReduction": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/ParabolicReduction.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/ParabolicReduction.lean",
+      "source_sha256": "9eab9f076a668e640a7f8a433da8ea5630f9f18f8c8b430f13709ff02c3acfb9",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.Positive": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/Positive.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/Positive.lean",
+      "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.PositiveEmbedding": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/PositiveEmbedding.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/PositiveEmbedding.lean",
+      "source_sha256": "e3c99b5d680624880a89cd776d3508ff4201703d5a5806e760071f277fad1802",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.PositiveReindex": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/PositiveReindex.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/PositiveReindex.lean",
+      "source_sha256": "373da7768f9c965a027319eb12e7ba5818b170735355ff9c1ae97256e728fd29",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.PositiveRibbons": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/PositiveRibbons.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/PositiveRibbons.lean",
+      "source_sha256": "addf21b6027f0bbad264890d4e4f3048888738f28175d7567a8c3d369d045e7c",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.PositiveSupport": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/PositiveSupport.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/PositiveSupport.lean",
+      "source_sha256": "96160e94b39c1ac5ed2bb09cc2626e1a43980854596b070273681aa2bc710bc7",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.Presentation": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/Presentation.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/Presentation.lean",
+      "source_sha256": "f40c1c393705172803299a13a3bd81bf4fdfff18f40718f45aed07101562d5a0",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.ReducedRibbons": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/ReducedRibbons.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+      "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.RibbonGroupoid": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+      "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.RibbonLcm": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/RibbonLcm.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/RibbonLcm.lean",
+      "source_sha256": "2be9ece462f5b1542075d44c683269ced9ba92f4bd2b4502f4e0cf5bfb48fcaa",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.RibbonPositiveCalculus": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/RibbonPositiveCalculus.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/RibbonPositiveCalculus.lean",
+      "source_sha256": "2108bdce858679cb2ce3de88cd24ccad121df11476055bf93ed0bb5cbaa673a9",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.RibbonRelations": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/RibbonRelations.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/RibbonRelations.lean",
+      "source_sha256": "4f85cb104225d482983eb4e224a5881756837ee40665f912d6815f2f00fdb14d",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.RibbonUniversal": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/RibbonUniversal.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/RibbonUniversal.lean",
+      "source_sha256": "109fae82d1193fd3200a6b47e7d4302dd7d0c7b0463b9f4d16e19cb8588b54ef",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.RibbonWords": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/RibbonWords.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/RibbonWords.lean",
+      "source_sha256": "ef1ed56588571633cd42326d12210b394bc5f808ac38fb5404c08c17708fb639",
+      "source_status": "committed exact source"
+    },
+    "ArtinRibbons.SphericalPositive": {
+      "exact_bytes_at_observed_head": true,
+      "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/b793bf9dd4c5c9637d8dde51c6a635f849b943c4/ribbons/ArtinRibbons/SphericalPositive.lean",
+      "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "role": "locally authored project",
+      "source_path": "ribbons/ArtinRibbons/SphericalPositive.lean",
+      "source_sha256": "9020135c6b1fa1a27ba7c0e0403e9b12b9785cacf8eeb7ebfabfb900136a9d8b",
+      "source_status": "committed exact source"
+    }
+  },
+  "observed_base_git_head": "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
+  "proof_nodes_or_edges_changed": false,
+  "reason": "Original observer queried Git tree from the chambers subdirectory without --full-tree; its conservative uncommitted classification also covered older committed files. This separate supplement corrects only source attribution. All raw graphs, annotated graph and execution bytes remain unchanged.",
+  "uncommitted_project_modules": 42
+}

@@ -1,0 +1,4979 @@
+{
+  "modules": {
+    "OAI.Topology.ArtinGroups.Realizations.SalvettiProjection": [
+      43,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.CellUnion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.CellUnion": [
+      166,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightPrincipalProjection",
+        "OAI.Topology.ArtinGroups.Harmonic.PrincipalOrderIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightPrincipalProjection": [
+      46,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightAffineValue"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightAffineValue": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver",
+        "OAI.Topology.ArtinGroups.Realizations.WeightInclusion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver": [
+      350,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightInclusion": [
+      129,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.ConeWeights"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.ConeWeights": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightCarrier",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightCarrier": [
+      115,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeights"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.OrderWeights": [
+      105,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightMap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightMap": [
+      79,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NerveChain"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NerveChain": [
+      127,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.RealizeSimplex",
+        "OAI.Topology.ArtinGroups.Realizations.WeightDim",
+        "OAI.Topology.ArtinGroups.Harmonic.SimplexSupport"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.RealizeSimplex": [
+      410,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightDim": [
+      85,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeights"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SimplexSupport": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeights"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PrincipalOrderIso": [
+      129,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.LiftedDeckOrderHom",
+        "OAI.Topology.ArtinGroups.Realizations.WeightUpperCone",
+        "OAI.Topology.ArtinGroups.Coxeter.AmbientCoxeterFace"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LiftedDeckOrderHom": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.SalvettiCoverContractible"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.SalvettiCoverContractible": [
+      21,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.RestrictedLiftedContractible",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalTypeReindex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.RestrictedLiftedContractible": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.TypedRightCoset",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveUpperBoundaryRank",
+        "OAI.Topology.ArtinGroups.Realizations.DirectedCoverSequence",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveRegionDeckIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.TypedRightCoset": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinReindex",
+        "OAI.Topology.ArtinGroups.Harmonic.LiftedDeck",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleLower2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ArtinReindex": [
+      125,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.EarlierLowerOrderIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EarlierLowerOrderIso": [
+      62,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.EarlierUpperContractible",
+        "OAI.Topology.ArtinGroups.Realizations.WeightColor",
+        "OAI.Topology.ArtinGroups.Realizations.NegativeBlockContractible"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.EarlierUpperContractible": [
+      23,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderMap",
+        "OAI.Topology.ArtinGroups.Harmonic.EarlierUpper"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NerveOrderMap": [
+      127,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PrismSimplexZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PrismSimplexZero": [
+      127,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NervePrismValue"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NervePrismValue": [
+      109,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NervePrismPatch",
+        "OAI.Topology.ArtinGroups.Harmonic.PredAboveSuccSucc"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NervePrismPatch": [
+      71,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.RealizeSimplex",
+        "OAI.Topology.ArtinGroups.Harmonic.PrismGrid",
+        "OAI.Topology.ArtinGroups.Harmonic.PrismFlag"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PrismGrid": [
+      102,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PrismFlag": [
+      185,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PrismPrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PrismPrefix": [
+      151,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PredAboveSuccSucc": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PrismGrid",
+        "OAI.Topology.ArtinGroups.Harmonic.PrismFlag"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EarlierUpper": [
+      101,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetSignUpperTie"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetSignUpperTie": [
+      101,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.TieCode",
+        "OAI.Topology.ArtinGroups.Harmonic.SecondaryAsSum",
+        "OAI.Topology.ArtinGroups.Harmonic.IncidentNonnegRowPositive"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.TieCode": [
+      82,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Block",
+        "OAI.Topology.ArtinGroups.Harmonic.Coset"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Block": [
+      145,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetSum",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveComponent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetSum": [
+      85,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Harmonic",
+        "OAI.Topology.ArtinGroups.Harmonic.MultiplicitySum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Harmonic": [
+      101,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamily"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FrameFamily": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusionRange"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusionRange": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionZeroLabel",
+        "OAI.Topology.ArtinGroups.Harmonic.SignedLetter",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayMinimalApply"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionZeroLabel": [
+      44,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UnfoldedCartanSymm",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionMultiplicity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.UnfoldedCartanSymm": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Extend",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Extend": [
+      175,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection": [
+      105,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureCoefficientCohomology",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientSocle",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PureCoefficientCohomology": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.SummandSecondary"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.SummandSecondary": [
+      81,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.RestrictExtendLayerMul",
+        "OAI.Topology.ArtinGroups.Complexes.LeftMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.RestrictExtendLayerMul": [
+      45,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.SecondaryLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.SecondaryLayer": [
+      109,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.DifferentialMulExtendLayer",
+        "OAI.Topology.ArtinGroups.Complexes.Capped",
+        "OAI.Topology.ArtinGroups.Complexes.MatrixOneMulExtend",
+        "OAI.Topology.ArtinGroups.Quivers.VertexLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.DifferentialMulExtendLayer": [
+      106,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ExtendLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ExtendLayer": [
+      129,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.LinearMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.LinearMatrix": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDetector",
+        "OAI.Topology.ArtinGroups.Complexes.DiagonalVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDetector": [
+      55,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimension",
+        "OAI.Topology.ArtinGroups.Harmonic.InjectiveFinrankOne"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDimension": [
+      67,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CorrectionBoundary",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeHomTransformReflect",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CorrectionBoundary": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ReindexHomOperator",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpaceMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReindexHomOperator": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveHomTransform",
+        "OAI.Topology.ArtinGroups.Complexes.HomOperator"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveHomTransform": [
+      170,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpace"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TestTransform",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.TestTransform": [
+      122,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CotestPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.CotestPlacement": [
+      135,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TestPlacement",
+        "OAI.Topology.ArtinGroups.Quivers.Dual"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.TestPlacement": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot",
+        "OAI.Topology.ArtinGroups.Quivers.TestIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot": [
+      190,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerScalar",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul",
+        "OAI.Topology.ArtinGroups.Cancellation.CornerRemainder"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.CornerScalar": [
+      101,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.GeneratorPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.GeneratorPlacement": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.VertexHom"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.VertexHom": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.SmulMul": [
+      221,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Level": [
+      132,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.GeneratorPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.CornerRemainder": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.TestIndex": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerPath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.CornerPath": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Path"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.Path": [
+      194,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.Dual": [
+      92,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerPath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseTwistIndex": [
+      66,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Quivers.SelfCornerEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.Reindex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CoconePlacement": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TestIndex",
+        "OAI.Topology.ArtinGroups.Quivers.CotestPlacement",
+        "OAI.Topology.ArtinGroups.Complexes.ConePlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ConePlacement": [
+      82,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.SelfCornerEquiv": [
+      115,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CotestPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Reindex": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.Reduction": [
+      117,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.GeneratorPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomSpace": [
+      154,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot",
+        "OAI.Topology.ArtinGroups.Quivers.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.Level": [
+      164,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Harmonic.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomOperator": [
+      90,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TraceLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.TraceLinear": [
+      100,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpace"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomSpaceMul": [
+      100,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TraceLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NegativeHomTransformReflect": [
+      81,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.NormalizedInverseTwistHomotopy",
+        "OAI.Topology.ArtinGroups.Complexes.NormalizedReverseTwistHomotopy",
+        "OAI.Topology.ArtinGroups.Complexes.ReindexHomOperator",
+        "OAI.Topology.ArtinGroups.Complexes.InverseHomMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NormalizedInverseTwistHomotopy": [
+      68,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistIdentity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Identity": [
+      174,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot",
+        "OAI.Topology.ArtinGroups.Cancellation.Retained"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.Retained": [
+      156,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseTwistIdentity": [
+      160,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistPlacement",
+        "OAI.Topology.ArtinGroups.Diagrams.Index"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseTwistPlacement": [
+      179,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Diagrams.Index": [
+      71,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NormalizedReverseTwistHomotopy": [
+      68,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Complexes.ReverseTwistProjectionCommute"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReverseTwistProjectionCommute": [
+      113,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistIdentity",
+        "OAI.Topology.ArtinGroups.Complexes.ReverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.ReverseTwistProjection",
+        "OAI.Topology.ArtinGroups.Diagrams.ReverseDifferential"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReverseTwistDifferential": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.ReverseTwistIndexEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReverseTwistIndexEquiv": [
+      70,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReverseTwistProjection": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Diagrams.ReverseDifferential": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Diagrams.Index"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseHomMatrix": [
+      147,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ReverseTwistProjectionCommute",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveHomTransform"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices": [
+      126,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.InjectiveFinrankOne": [
+      29,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.DiagonalVertex": [
+      182,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Quivers.Path",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpaceMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Capped": [
+      148,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.RestrictLayer",
+        "OAI.Topology.ArtinGroups.Quivers.PathTwoSelf"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.RestrictLayer": [
+      104,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.PathZero",
+        "OAI.Topology.ArtinGroups.Complexes.ExtendLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.PathZero": [
+      197,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.LinearMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.PathTwoSelf": [
+      126,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.PathTwo"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.PathTwo": [
+      146,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ExtendLayer",
+        "OAI.Topology.ArtinGroups.Quivers.CoefficientMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.CoefficientMatrix": [
+      66,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.PathZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.MatrixOneMulExtend": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.RestrictLayer",
+        "OAI.Topology.ArtinGroups.Quivers.PathTwo"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.VertexLinear": [
+      115,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.PathTwoSelf"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LeftMatrix": [
+      52,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureHomSpaceHomogeneous"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PureHomSpaceHomogeneous": [
+      67,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.VertexLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CoefficientSocle": [
+      188,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureHomSpaceHomogeneous",
+        "OAI.Topology.ArtinGroups.Complexes.HomInternalSupport"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomInternalSupport": [
+      101,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomStep"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomStep": [
+      116,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.LinearMatrix",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpaceDuality"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomSpaceDuality": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpacePairing"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomSpacePairing": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Dual",
+        "OAI.Topology.ArtinGroups.Quivers.TraceLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorVector": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.EqualColorPair"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.EqualColorPair": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureTotalHomEuler",
+        "OAI.Topology.ArtinGroups.Complexes.CornerPath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PureTotalHomEuler": [
+      44,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomInternalSupport",
+        "OAI.Topology.ArtinGroups.Complexes.PureUpperBoundariesZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PureUpperBoundariesZero": [
+      43,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureHomSpaceHomogeneous",
+        "OAI.Topology.ArtinGroups.Complexes.HomStep"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CornerPath": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomPath",
+        "OAI.Topology.ArtinGroups.Complexes.HomInternalSupport"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomPath": [
+      125,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerPath",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpace"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionMultiplicity": [
+      47,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitMultiplicity",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLowCount",
+        "OAI.Topology.ArtinGroups.Complexes.TotalVectorLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitMultiplicity": [
+      105,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitModel",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverCartan",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVectorPureLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitModel": [
+      90,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InitialHomSpaceNegative",
+        "OAI.Topology.ArtinGroups.Complexes.SupportedCoefficientCycles",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketAction",
+        "OAI.Topology.ArtinGroups.Complexes.LayerTotalHomDimension"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InitialHomSpaceNegative": [
+      39,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.MinimalModel": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Initial",
+        "OAI.Topology.ArtinGroups.Quivers.LinearMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Initial": [
+      57,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimension2",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimensionZeroHom"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDimension2": [
+      69,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UnfoldedPresentation",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimension"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.UnfoldedPresentation": [
+      48,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Model",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteHomotopySetoid"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Model": [
+      59,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.FiniteHomotopySetoid": [
+      118,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistHomotopy",
+        "OAI.Topology.ArtinGroups.Complexes.NormalizedInverseTwistHomotopy",
+        "OAI.Topology.ArtinGroups.Complexes.NormalizedReverseTwistHomotopy",
+        "OAI.Topology.ArtinGroups.Complexes.CommuteTwistSwap",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCorePlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistHomotopy": [
+      237,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Complexes.ConeMap",
+        "OAI.Topology.ArtinGroups.Quivers.TestTransform"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ConeMap": [
+      129,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Quivers.TestTransform"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CommuteTwistSwap": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.BraidCorePlacement": [
+      109,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidSecondPivot",
+        "OAI.Topology.ArtinGroups.Quivers.ExtArrow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.BraidSecondPivot": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential2",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidFirstPivot",
+        "OAI.Topology.ArtinGroups.Quivers.EdgeContraction",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCoreFirstTarget"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential2": [
+      33,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.BlockPivot",
+        "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.BlockPivot": [
+      221,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential": [
+      131,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Cancellation.BlockPivot"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.BraidFirstPivot": [
+      37,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Cancellation.BlockPivot",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCoreIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.BraidCoreIndex": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Quivers.SelfCornerEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.Reindex",
+        "OAI.Topology.ArtinGroups.Quivers.SimpleEdge"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.SimpleEdge": [
+      48,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerPath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.EdgeContraction": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCoreIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.BraidCoreFirstTarget": [
+      146,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseTwistDifferential",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCoreIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ExtArrow": [
+      22,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SimpleEdge"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDimensionZeroHom": [
+      38,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InitialProjective"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InitialProjective": [
+      124,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimension"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.SupportedCoefficientCycles": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.SecondaryLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionPacketAction": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketOrbit",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverSimpleEdge",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionPacketOrbit": [
+      130,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.ComplexInitial",
+        "OAI.Topology.ArtinGroups.Functors.ComplexPureLayer",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketPerm",
+        "OAI.Topology.ArtinGroups.Realizations.FusionWeightSplit"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ComplexInitial": [
+      32,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Initial",
+        "OAI.Topology.ArtinGroups.Quivers.Iso",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Functors.ReversibleQuiverMap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.Iso": [
+      116,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.GeneratorPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex": [
+      101,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteHomotopySetoid",
+        "OAI.Topology.ArtinGroups.Complexes.PacketConsEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketConsEquiv": [
+      100,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Quivers.PacketIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.PacketIndex": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TestPlacement",
+        "OAI.Topology.ArtinGroups.Complexes.ConePlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ReversibleQuiverMap": [
+      136,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Iso",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex",
+        "OAI.Topology.ArtinGroups.Functors.TestIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Sum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Sum": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteSum2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.FiniteSum2": [
+      118,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteSum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.FiniteSum": [
+      114,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul",
+        "OAI.Topology.ArtinGroups.Quivers.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.TestIndex": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Path",
+        "OAI.Topology.ArtinGroups.Functors.Placement",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Quivers.Iso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.Path": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerPath",
+        "OAI.Topology.ArtinGroups.Quivers.Iso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.Placement": [
+      111,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Quivers.Iso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ComplexPureLayer": [
+      79,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.SupportedCycles",
+        "OAI.Topology.ArtinGroups.Functors.Placement",
+        "OAI.Topology.ArtinGroups.Functors.ReversibleQuiverMap",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayComplexMinimal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.SupportedCycles": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Placement",
+        "OAI.Topology.ArtinGroups.Functors.TestIndex",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector",
+        "OAI.Topology.ArtinGroups.Diagrams.CongrEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.UnitTestVector": [
+      185,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CornerPath",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual",
+        "OAI.Topology.ArtinGroups.Diagrams.SupportedKernel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual": [
+      232,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureCoefficientCohomology",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientSocle"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Diagrams.SupportedKernel": [
+      135,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.TokenTestVector": [
+      217,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CornerPath",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual",
+        "OAI.Topology.ArtinGroups.Diagrams.SupportedKernel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Diagrams.CongrEquiv": [
+      14,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Diagrams.SupportedKernel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence": [
+      59,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Complexes.Refl",
+        "OAI.Topology.ArtinGroups.Complexes.PureSupportedCycles"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Refl": [
+      136,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ConeMap",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Complexes.Reindex",
+        "OAI.Topology.ArtinGroups.Quivers.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PureSupportedCycles": [
+      114,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector",
+        "OAI.Topology.ArtinGroups.Diagrams.TransposeConjugateEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Diagrams.TransposeConjugateEquiv": [
+      26,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Diagrams.SupportedKernel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LevelArrayComplexMinimal": [
+      39,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.Sum",
+        "OAI.Topology.ArtinGroups.Complexes.SumTestEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistFiberEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteHomotopySetoid",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistFiberEquiv": [
+      62,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.VertexMinimal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.VertexMinimal": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorArray": [
+      56,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Level",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.SumTestEquiv": [
+      130,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteSum",
+        "OAI.Topology.ArtinGroups.Complexes.Refl",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionPacketPerm": [
+      136,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.ReversibleQuiverMap",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionFactorStep",
+        "OAI.Topology.ArtinGroups.Complexes.OptionSumEquiv",
+        "OAI.Topology.ArtinGroups.Functors.WordPacketPermAppend"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionFactorStep": [
+      119,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Iso",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionRest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionRest": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.StringAdjacent",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.StringAdjacent": [
+      142,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.QuantumNumber",
+        "OAI.Topology.ArtinGroups.Functors.WordOrbitSocleAdjacency",
+        "OAI.Topology.ArtinGroups.Functors.WordOrbitCountAdjacency"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.QuantumNumber": [
+      143,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.WordOrbitSocleAdjacency": [
+      78,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LayerIndexEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.LayerSocleDimensionSum",
+        "OAI.Topology.ArtinGroups.Functors.SignedPacketPerm",
+        "OAI.Topology.ArtinGroups.Harmonic.EigenvectorProportional",
+        "OAI.Topology.ArtinGroups.Harmonic.SumNeighborsSubtype"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.LayerIndexEquiv": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence",
+        "OAI.Topology.ArtinGroups.Functors.HomDualSupportedCycles",
+        "OAI.Topology.ArtinGroups.Functors.ColorPacketPerm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.HomDualSupportedCycles": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector",
+        "OAI.Topology.ArtinGroups.Diagrams.TransposeConjugateEquiv",
+        "OAI.Topology.ArtinGroups.Functors.LeftSocleIndexEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.LeftSocleIndexEquiv": [
+      92,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Functors.LeftHomPlacement",
+        "OAI.Topology.ArtinGroups.Functors.HomSupportedCyclesEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.LeftHomPlacement": [
+      121,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LeftHomIndex",
+        "OAI.Topology.ArtinGroups.Quivers.ScalarCornerMatrixDegree"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.LeftHomIndex": [
+      135,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.SectorInverse",
+        "OAI.Topology.ArtinGroups.Functors.CoordinateExpansion",
+        "OAI.Topology.ArtinGroups.Realizations.MulBlockDiagonal'Entry"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.SectorInverse": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Evaluation"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.Evaluation": [
+      179,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Index",
+        "OAI.Topology.ArtinGroups.Functors.PathSwitchEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.Index": [
+      313,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.VertexLinear",
+        "OAI.Topology.ArtinGroups.Functors.PathImage"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.PathImage": [
+      411,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.DiagonalVertex",
+        "OAI.Topology.ArtinGroups.Quivers.StringArrow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.StringArrow": [
+      317,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Crossing",
+        "OAI.Topology.ArtinGroups.Quivers.VertexIdMulPath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Crossing": [
+      145,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.VertexIdMulPath": [
+      81,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCoreFirstTarget"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.PathSwitchEquiv": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.BasePath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.BasePath": [
+      209,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.PathImage",
+        "OAI.Topology.ArtinGroups.Functors.PathMarked"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.PathMarked": [
+      70,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Path",
+        "OAI.Topology.ArtinGroups.Harmonic.LeftSector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LeftSector": [
+      106,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Crossing"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.CoordinateExpansion": [
+      59,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Evaluation"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.MulBlockDiagonal'Entry": [
+      32,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ScalarCornerMatrixDegree": [
+      44,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.ScalarPivot",
+        "OAI.Topology.ArtinGroups.Quivers.TestIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.HomSupportedCyclesEquiv": [
+      53,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LeftHomIndex",
+        "OAI.Topology.ArtinGroups.Diagrams.SupportedKernel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ColorPacketPerm": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Functors.PacketTwistComparison"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.PacketTwistComparison": [
+      55,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.PacketSwitchMatrix",
+        "OAI.Topology.ArtinGroups.Functors.ConeIndexEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.ReindexConeIsomorphism"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.PacketSwitchMatrix": [
+      140,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.HomSwitchMap",
+        "OAI.Topology.ArtinGroups.Functors.LeftPacketIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.HomSwitchMap": [
+      114,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LeftHomPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.LeftPacketIndex": [
+      130,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteSum",
+        "OAI.Topology.ArtinGroups.Quivers.PacketIndex",
+        "OAI.Topology.ArtinGroups.Functors.LeftHomPlacement"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ConeIndexEquiv": [
+      66,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Functors.Index",
+        "OAI.Topology.ArtinGroups.Complexes.Refl"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReindexConeIsomorphism": [
+      31,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Complexes.Refl"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LayerSocleDimensionSum": [
+      52,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Sum",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.SumTestEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.SignedPacketPerm": [
+      83,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex",
+        "OAI.Topology.ArtinGroups.Functors.SeedEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.SeedEquiv": [
+      60,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Initial",
+        "OAI.Topology.ArtinGroups.Complexes.Sum",
+        "OAI.Topology.ArtinGroups.Functors.ColorPacketPerm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EigenvectorProportional": [
+      59,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Crossing"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SumNeighborsSubtype": [
+      50,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Crossing"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.WordOrbitCountAdjacency": [
+      60,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LevelGeneratorEquiv",
+        "OAI.Topology.ArtinGroups.Functors.SignedPacketPerm",
+        "OAI.Topology.ArtinGroups.Harmonic.EigenvectorProportional",
+        "OAI.Topology.ArtinGroups.Harmonic.SumNeighborsSubtype"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.LevelGeneratorEquiv": [
+      74,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LayerIndexEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayComplexMinimal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionVertex": [
+      89,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Quivers.ExtArrow",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionLabel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionLabel": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.QuantumNumber"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.OptionSumEquiv": [
+      127,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.WordPacketPermAppend": [
+      46,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.SignedPacketPerm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.FusionWeightSplit": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionRest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverSimpleEdge": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UnfoldedPresentation",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketPermAction": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UnfoldedPresentation",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LayerTotalHomDimension": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimensionZeroCycles"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDimensionZeroCycles": [
+      54,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.FrameModelLayerMiddle",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.FrameModelLayerMiddle": [
+      52,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.DifferentialMulExtendLayer",
+        "OAI.Topology.ArtinGroups.Complexes.RestrictLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverCartan": [
+      23,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionVertex",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionFold"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionFold": [
+      142,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetVertex",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionLabel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetVertex": [
+      327,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.DeligneDefinitions",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.DeligneDefinitions": [
+      24,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Model"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorVectorPureLayer": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLowCount": [
+      30,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketOrbit",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpressionOrbit",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionExpressionOrbit": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.ComplexInitial",
+        "OAI.Topology.ArtinGroups.Realizations.FusionWeightSplit",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpressionAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionExpressionAction": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.ComplexLowerTruncation",
+        "OAI.Topology.ArtinGroups.Functors.ComplexPureLayer",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketPerm",
+        "OAI.Topology.ArtinGroups.Harmonic.LayerExpression"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ComplexLowerTruncation": [
+      35,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Placement",
+        "OAI.Topology.ArtinGroups.Functors.ReversibleQuiverMap",
+        "OAI.Topology.ArtinGroups.Complexes.LowerTruncation"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LowerTruncation": [
+      38,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UpperBound",
+        "OAI.Topology.ArtinGroups.Complexes.DownClosed",
+        "OAI.Topology.ArtinGroups.Complexes.LowMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.UpperBound": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.PacketTwistRaisedGenerator",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeTwistLoweredGenerator"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketTwistRaisedGenerator": [
+      134,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.LengthCases",
+        "OAI.Topology.ArtinGroups.Quivers.PacketIndex",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalGeneratorDualCycle",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDualRestrict",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalEmbedding"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.LengthCases": [
+      18,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Path"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.MinimalGeneratorDualCycle": [
+      72,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.VertexLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDualRestrict": [
+      41,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.MinimalEmbedding": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NegativeTwistLoweredGenerator": [
+      119,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ReducedNegativeAmplitudeTwist",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalGeneratorDualCycle",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDualRestrict",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientSocleRestrictLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReducedNegativeAmplitudeTwist": [
+      70,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalEmbedding",
+        "OAI.Topology.ArtinGroups.Quivers.LengthCases",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeAmplitudeCoreIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NegativeAmplitudeCoreIndex": [
+      127,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CotestPlacement",
+        "OAI.Topology.ArtinGroups.Complexes.ActedIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ActedIndex": [
+      133,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TestPlacement",
+        "OAI.Topology.ArtinGroups.Complexes.Reindex",
+        "OAI.Topology.ArtinGroups.Cancellation.BlockPivot",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.Identity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CoefficientSocleRestrictLayer": [
+      31,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientSocle"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.DownClosed": [
+      161,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential2",
+        "OAI.Topology.ArtinGroups.Complexes.BlockClosed",
+        "OAI.Topology.ArtinGroups.Complexes.Identity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.BlockClosed": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LowMatrix": [
+      134,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Level",
+        "OAI.Topology.ArtinGroups.Complexes.DownClosed"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LayerExpression": [
+      126,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.StringAdjacent",
+        "OAI.Topology.ArtinGroups.Functors.TruncationIndexEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.LowerTruncationSum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.TruncationIndexEquiv": [
+      67,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.LayerIndexEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.LowerTruncation"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LowerTruncationSum": [
+      40,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Sum",
+        "OAI.Topology.ArtinGroups.Complexes.LowerTruncation",
+        "OAI.Topology.ArtinGroups.Complexes.SumTruncationEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.SumTruncationEquiv": [
+      39,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.SumTestEquiv",
+        "OAI.Topology.ArtinGroups.Complexes.DownClosed"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLow": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CanonicalWordLow",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpressionAction",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionAppend"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CanonicalWordLow": [
+      68,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseWordAction",
+        "OAI.Topology.ArtinGroups.Complexes.TargetLow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseWordAction": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWordLowerBound",
+        "OAI.Topology.ArtinGroups.Complexes.PlacedProjective"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveWordLowerBound": [
+      50,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistLowerBound",
+        "OAI.Topology.ArtinGroups.Complexes.ReducedNoTopDivisor",
+        "OAI.Topology.ArtinGroups.Complexes.OutsideCap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistLowerBound": [
+      83,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ReducedAmplitudeTwistLevel",
+        "OAI.Topology.ArtinGroups.Complexes.TokenShift",
+        "OAI.Topology.ArtinGroups.Complexes.Test",
+        "OAI.Topology.ArtinGroups.Complexes.UpperBound",
+        "OAI.Topology.ArtinGroups.Complexes.LayerVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReducedAmplitudeTwistLevel": [
+      70,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Identity",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalEmbedding",
+        "OAI.Topology.ArtinGroups.Complexes.ActedIndex",
+        "OAI.Topology.ArtinGroups.Quivers.LengthCases"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TokenShift": [
+      150,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OrthogonalVertices",
+        "OAI.Topology.ArtinGroups.Cancellation.ReducedDifferential2",
+        "OAI.Topology.ArtinGroups.Complexes.Identity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Test": [
+      59,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.NormalizedInverseTwistHomotopy",
+        "OAI.Topology.ArtinGroups.Complexes.TokenShift"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LayerVector": [
+      141,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Complexes.BottomScalarCycleZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.BottomScalarCycleZero": [
+      65,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Harmonic.Level",
+        "OAI.Topology.ArtinGroups.Quivers.CornerScalar"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ReducedNoTopDivisor": [
+      51,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTopDivisor",
+        "OAI.Topology.ArtinGroups.Coxeter.OrdinaryCoxeterMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTopDivisor": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TestExact"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TestExact": [
+      71,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteHomotopySetoid",
+        "OAI.Topology.ArtinGroups.Complexes.TestUpperBound",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupportedCochainShift"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TestUpperBound": [
+      114,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistOtherTest2",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupportedTokenShift",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistOtherTest3",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorTokenTest",
+        "OAI.Topology.ArtinGroups.Complexes.Test"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistOtherTest2": [
+      145,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TestComplexVertexDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.TwistNewTestIndex",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupported"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TestComplexVertexDifferential": [
+      68,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.UnitTestVector",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientSocleRestrictLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TwistNewTestIndex": [
+      119,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Quivers.TestIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ScalarSupported": [
+      110,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Harmonic.Level",
+        "OAI.Topology.ArtinGroups.Quivers.CornerScalar"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ScalarSupportedTokenShift": [
+      79,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TokenShift",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupported"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistOtherTest3": [
+      130,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TestComplexVertexDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.TwistNewTestIndex",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupported"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorTokenTest": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector",
+        "OAI.Topology.ArtinGroups.Complexes.TestComplexVertexDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupported"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ScalarSupportedCochainShift": [
+      92,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TestComplexVertexDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarSupported",
+        "OAI.Topology.ArtinGroups.Complexes.ArrowShift"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ArrowShift": [
+      195,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.BraidCoreFirstTarget",
+        "OAI.Topology.ArtinGroups.Complexes.TokenShift"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.OrdinaryCoxeterMatrix": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.OutsideCap": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UpperBound",
+        "OAI.Topology.ArtinGroups.Complexes.TestExact"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PlacedProjective": [
+      124,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UpperBound"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TargetLow": [
+      109,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimensionZeroCycles",
+        "OAI.Topology.ArtinGroups.Complexes.LowerTruncation"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionAppend": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TotalVectorLayer": [
+      52,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVectorPureLayer",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeTwistModern",
+        "OAI.Topology.ArtinGroups.Complexes.TotalVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NegativeTwistModern": [
+      169,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood",
+        "OAI.Topology.ArtinGroups.Complexes.LayerConeEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeConeIndex",
+        "OAI.Topology.ArtinGroups.Complexes.HighConeIndex",
+        "OAI.Topology.ArtinGroups.Complexes.EmptyTestIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseWordAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LayerConeEquivalence": [
+      39,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseMatrix",
+        "OAI.Topology.ArtinGroups.Complexes.Cone"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseMatrix": [
+      224,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Cone": [
+      182,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomotopyConeMap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomotopyConeMap": [
+      270,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NegativeConeIndex": [
+      105,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CotestPlacement",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Complexes.Refl",
+        "OAI.Topology.ArtinGroups.Quivers.SignDiagonal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.SignDiagonal": [
+      108,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul",
+        "OAI.Topology.ArtinGroups.Quivers.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HighConeIndex": [
+      90,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.DownClosed"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.EmptyTestIndex": [
+      63,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InverseWordAction",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TotalVector": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CanonicalWordLow",
+        "OAI.Topology.ArtinGroups.Complexes.CochainSignSubOne"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CochainSignSubOne": [
+      175,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel",
+        "OAI.Topology.ArtinGroups.Harmonic.RowReflect",
+        "OAI.Topology.ArtinGroups.Complexes.PlacementSignedWeight"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RowReflect": [
+      105,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.Cartan",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionFold"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.Cartan": [
+      81,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.TrigPhasePower"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.TrigPhasePower": [
+      45,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.Reflect"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.Reflect": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PlacementSignedWeight": [
+      122,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Cancellation.Retained",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteHomotopySetoid",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray",
+        "OAI.Topology.ArtinGroups.Complexes.HomSpace"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SignedLetter": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PacketWord",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PacketWord": [
+      90,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteFusionEdge",
+        "OAI.Topology.ArtinGroups.Harmonic.DimensionPosMultiplicityPos"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FiniteFusionEdge": [
+      106,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.HarmonicExtension",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionFold"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.HarmonicExtension": [
+      320,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.DimensionPosMultiplicityPos": [
+      96,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UnfoldedCartanSymm",
+        "OAI.Topology.ArtinGroups.Harmonic.DimensionNonneg",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionSignedPacketExterior"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.DimensionNonneg": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Extend",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionColorRegion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionColorRegion": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitMultiplicity",
+        "OAI.Topology.ArtinGroups.Realizations.FusionWeightedHom",
+        "OAI.Topology.ArtinGroups.Complexes.ColorBoundary"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.FusionWeightedHom": [
+      80,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitModel",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimensionRetract"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDimensionRetract": [
+      81,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ColorBoundary": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual",
+        "OAI.Topology.ArtinGroups.Complexes.BlockClosed"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionSignedPacketExterior": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitMultiplicity",
+        "OAI.Topology.ArtinGroups.Harmonic.FinsuppMapDomainFiber",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermExterior"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FinsuppMapDomainFiber": [
+      20,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketPermExterior": [
+      68,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Complexes.Initial",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ArtinAction": [
+      62,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalPair",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalPacketWordProperty",
+        "OAI.Topology.ArtinGroups.Coxeter.AlternatingLiftProd"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalPair": [
+      14,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Model",
+        "OAI.Topology.ArtinGroups.Coxeter.AltListReduced"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AltListReduced": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.InverseParabolicMinimum",
+        "OAI.Topology.ArtinGroups.Coxeter.RightParabolicDecomposition",
+        "OAI.Topology.ArtinGroups.Geometry.RootCoeffAltExtension"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.InverseParabolicMinimum": [
+      32,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.Parabolic"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.Parabolic": [
+      169,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.Signs"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.Signs": [
+      224,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.RightParabolicDecomposition": [
+      39,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.Parabolic"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.RootCoeffAltExtension": [
+      74,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.Parabolic",
+        "OAI.Topology.ArtinGroups.Coxeter.AlternatingNextRoot"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AlternatingNextRoot": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.DihedralScalar",
+        "OAI.Topology.ArtinGroups.Coxeter.AltNext"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.DihedralScalar": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.Cartan"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AltNext": [
+      27,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltList"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AltList": [
+      131,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalPacketWordProperty": [
+      47,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusion",
+        "OAI.Topology.ArtinGroups.Coxeter.AltListMap",
+        "OAI.Topology.ArtinGroups.Coxeter.OrdinaryTwistBraid",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordPerm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltListPairDescent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AltListPairDescent": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.Parabolic",
+        "OAI.Topology.ArtinGroups.Coxeter.AltList",
+        "OAI.Topology.ArtinGroups.Geometry.TrigPhaseSqPrimitive"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.TrigPhaseSqPrimitive": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.Cartan"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusion": [
+      93,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverSimpleEdge",
+        "OAI.Topology.ArtinGroups.Coxeter.OrdinaryCoxeterMatrix",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedColorOrthogonal",
+        "OAI.Topology.ArtinGroups.Coxeter.WordProdEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedColorOrthogonal": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedHom",
+        "OAI.Topology.ArtinGroups.Geometry.RootRowOrthogonalWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedHom": [
+      135,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonposDescent",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.RootNonposDescent": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedMatrix": [
+      141,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalFoldedMatrix",
+        "OAI.Topology.ArtinGroups.Harmonic.RowReflect",
+        "OAI.Topology.ArtinGroups.Geometry.RestrictionLength",
+        "OAI.Topology.ArtinGroups.Geometry.RootPair"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalFoldedMatrix": [
+      89,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteFusionEdge",
+        "OAI.Topology.ArtinGroups.Geometry.CartanOffNonpos",
+        "OAI.Topology.ArtinGroups.Geometry.SphericalCartanPos"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.CartanOffNonpos": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.HarmonicExtension",
+        "OAI.Topology.ArtinGroups.Geometry.StrictChamber"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.StrictChamber": [
+      56,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.InvariantForm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.InvariantForm": [
+      150,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.Cartan"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.SphericalCartanPos": [
+      25,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Model",
+        "OAI.Topology.ArtinGroups.Geometry.Form"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.Form": [
+      163,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.Cartan"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.RestrictionLength": [
+      60,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.CartanRestricted"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.CartanRestricted": [
+      117,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.SmulMul",
+        "OAI.Topology.ArtinGroups.Geometry.CoordinateExtension",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent",
+        "OAI.Topology.ArtinGroups.Coxeter.RestrictedMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.CoordinateExtension": [
+      139,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.SphericalCartanPos"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.RestrictedMatrix": [
+      28,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.RootPair": [
+      122,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.RootRowOrthogonalWord": [
+      51,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootPair"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.WordProdEquiv": [
+      72,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RestrictionLength"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AltListMap": [
+      14,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltList"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.OrdinaryTwistBraid": [
+      36,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltList",
+        "OAI.Topology.ArtinGroups.Coxeter.OrdinaryCoxeterMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordPerm": [
+      26,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordAction": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketPerm",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionAppend",
+        "OAI.Topology.ArtinGroups.Harmonic.RowReflect",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermEnumeration"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketPermEnumeration": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermReindex",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AlternatingLiftProd": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltList",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketPerm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LevelArrayMinimalApply": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayComplexMinimal",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.MultiplicitySum": [
+      53,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamily",
+        "OAI.Topology.ArtinGroups.Complexes.FiniteFamilyLevelSupport",
+        "OAI.Topology.ArtinGroups.Realizations.FiniteWeightedNatSums"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.FiniteFamilyLevelSupport": [
+      30,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayMinimalApply"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.FiniteWeightedNatSums": [
+      44,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveComponent": [
+      112,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Harmonic"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Coset": [
+      95,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Candidate"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Candidate": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Harmonic",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordLeft"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordLeft": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteArtinPositiveLeft",
+        "OAI.Topology.ArtinGroups.Harmonic.InitialProbe",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeFixedDiagonal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FiniteArtinPositiveLeft": [
+      24,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveLiftSimple"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveLiftSimple": [
+      139,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ReducedExpression",
+        "OAI.Topology.ArtinGroups.Geometry.LongestMulSelf"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ReducedExpression": [
+      103,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.DeligneDefinitions",
+        "OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.LongestMulSelf": [
+      26,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonposDescent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.InitialProbe": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordInitial",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionTest",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionZeroLabel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordInitial": [
+      83,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordAppend",
+        "OAI.Topology.ArtinGroups.Complexes.InitialProbeTestUpper"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordAppend": [
+      120,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeCoreInclusion",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionOrthogonal",
+        "OAI.Topology.ArtinGroups.Harmonic.RestrictedArtinHom",
+        "OAI.Topology.ArtinGroups.Harmonic.MaximalReducedPositivePrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeCoreInclusion": [
+      111,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWord": [
+      146,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePacket",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePacket": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusion",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalPair",
+        "OAI.Topology.ArtinGroups.Coxeter.AltListMap",
+        "OAI.Topology.ArtinGroups.Coxeter.AlternatingLiftProd",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeSimpleEdge"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ProbeSimpleEdge": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltList",
+        "OAI.Topology.ArtinGroups.Coxeter.OrdinaryCoxeterMatrix",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ProbeVertex": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.OffDiagonalVertexZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.OffDiagonalVertexZero": [
+      80,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.InitialProjective",
+        "OAI.Topology.ArtinGroups.Complexes.HomStep",
+        "OAI.Topology.ArtinGroups.Complexes.HomPath"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveWord": [
+      141,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ComplexPacketLowerBound",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinActionWordArtin",
+        "OAI.Topology.ArtinGroups.Complexes.LayerSocleDimensionLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ComplexPacketLowerBound": [
+      89,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistLowerBound"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ArtinActionWordArtin": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ReducedExpression",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinAction",
+        "OAI.Topology.ArtinGroups.Complexes.InverseWordActionAppend",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeTwistCapDisjoint"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InverseWordActionAppend": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.ReducedWordProperty",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermEnumeration",
+        "OAI.Topology.ArtinGroups.Coxeter.AltListMap",
+        "OAI.Topology.ArtinGroups.Coxeter.OrdinaryTwistBraid",
+        "OAI.Topology.ArtinGroups.Complexes.HighestLocalGeneratorTest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HighestLocalGeneratorTest": [
+      167,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.NegativeTwistCapDisjoint": [
+      96,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HighestLocalGeneratorTest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LayerSocleDimensionLayer": [
+      54,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureLayerSelf"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PureLayerSelf": [
+      93,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ColorBoundary",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarKernel",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeTwistModern"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ScalarKernel": [
+      276,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PlacedProjective",
+        "OAI.Topology.ArtinGroups.Complexes.Shift"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Shift": [
+      139,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection",
+        "OAI.Topology.ArtinGroups.Complexes.HomMono"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomMono": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TargetLow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionOrthogonal": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermEnumeration"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RestrictedArtinHom": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RestrictionLength",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveLiftSimple"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.MaximalReducedPositivePrefix": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ReducedExpression"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.InitialProbeTestUpper": [
+      47,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.OutsideCap",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarExactNotZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ScalarExactNotZero": [
+      57,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.Initial",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Complexes.TestExact"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionTest": [
+      50,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeFixedDiagonal": [
+      48,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CandidateBlockNonpos",
+        "OAI.Topology.ArtinGroups.Complexes.ProbeFixedNoDiagonal",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArrayZeroLevel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CandidateBlockNonpos": [
+      83,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FoldedSphericalPos",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeOrbitAbsent",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayBelow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FoldedSphericalPos": [
+      107,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CandidateCapped"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CandidateCapped": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeRaiseLower"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeRaiseLower": [
+      109,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CappedCandidate",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeCoreTermNonpos",
+        "OAI.Topology.ArtinGroups.Harmonic.WordArtinSubtypeMem"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CappedCandidate": [
+      82,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusionRangeMono",
+        "OAI.Topology.ArtinGroups.Harmonic.GroupProbeEuler"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusionRangeMono": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.FrameFamilyWeightedLevel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.FrameFamilyWeightedLevel": [
+      30,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamily"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.GroupProbeEuler": [
+      71,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.FrameFamilyWeightedLevel",
+        "OAI.Topology.ArtinGroups.Geometry.ConvexHullSupportedComp",
+        "OAI.Topology.ArtinGroups.Geometry.ProbeConvexEuler",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeActionLevelExterior"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ConvexHullSupportedComp": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.ConvexWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ConvexWord": [
+      150,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.ChamberInequalitiesConvexHull",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionZeroLabel",
+        "OAI.Topology.ArtinGroups.Harmonic.RootInclusionRange"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ChamberInequalitiesConvexHull": [
+      52,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.StrictChamber"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RootInclusionRange": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinActionWordArtin",
+        "OAI.Topology.ArtinGroups.Realizations.WeightedReflectedHigh",
+        "OAI.Topology.ArtinGroups.Harmonic.RootExtension",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalLowSupport"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightedReflectedHigh": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CappedReflectedHigh",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionMultiplicity",
+        "OAI.Topology.ArtinGroups.Harmonic.NegativePrepend",
+        "OAI.Topology.ArtinGroups.Harmonic.RowReflectWordReverse"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CappedReflectedHigh": [
+      45,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedFullWordMem",
+        "OAI.Topology.ArtinGroups.Complexes.CanonicalLowReflectedHigh",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeTwistModern"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnfoldedFullWordMem": [
+      65,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.CanonicalReducedWordLow",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusion",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLowExpansion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.CanonicalReducedWordLow": [
+      57,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UnfoldedCartanSymm",
+        "OAI.Topology.ArtinGroups.Complexes.ColorSupport",
+        "OAI.Topology.ArtinGroups.Complexes.ColorReduction",
+        "OAI.Topology.ArtinGroups.Complexes.ScalarKernel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ColorSupport": [
+      131,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.WordInverseModel",
+        "OAI.Topology.ArtinGroups.Complexes.Shift"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.WordInverseModel": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CanonicalWordLow",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveWord": [
+      95,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRel",
+        "OAI.Topology.ArtinGroups.Complexes.HomMono"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ColorReduction": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLowExpansion": [
+      26,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLow",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.CanonicalLowReflectedHigh": [
+      33,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TotalVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.NegativePrepend": [
+      37,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketOrbit",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionLow",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordAction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RowReflectWordReverse": [
+      92,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TotalVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RootExtension": [
+      121,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedMatrix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CanonicalLowSupport": [
+      54,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedFullWordMem",
+        "OAI.Topology.ArtinGroups.Harmonic.CanonicalFusionMultiplicity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ProbeConvexEuler": [
+      100,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.ConvexInclusion",
+        "OAI.Topology.ArtinGroups.Functors.GeneratorVectorComplex",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeActionEmbeddedHom",
+        "OAI.Topology.ArtinGroups.Complexes.FamilySubobjectMiddleLower"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ConvexInclusion": [
+      56,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PureLayerSelf",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionColorRegion",
+        "OAI.Topology.ArtinGroups.Geometry.ConvexWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.GeneratorVectorComplex": [
+      29,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector",
+        "OAI.Topology.ArtinGroups.Functors.ZigzagLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ZigzagLinear": [
+      190,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeActionEmbeddedHom": [
+      65,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.TermwiseSplitInjection",
+        "OAI.Topology.ArtinGroups.Harmonic.MapPacket",
+        "OAI.Topology.ArtinGroups.Complexes.TotalHomDimensionReading",
+        "OAI.Topology.ArtinGroups.Realizations.QuotientFinrankKer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.TermwiseSplitInjection": [
+      115,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModelEquivalence",
+        "OAI.Topology.ArtinGroups.Functors.ProbeEmbeddingMap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.ProbeEmbeddingMap": [
+      116,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Functors.TestIndex2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.TestIndex2": [
+      83,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Path2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.Path2": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CornerPath",
+        "OAI.Topology.ArtinGroups.Functors.ZigzagLinear"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.MapPacket": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinAction",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePacket",
+        "OAI.Topology.ArtinGroups.Functors.HomDimensionFlexible"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.HomDimensionFlexible": [
+      60,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.SignedPerm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.SignedPerm": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.ProbeEmbeddingMap",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimensionDual"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HomDimensionDual": [
+      89,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeSwapIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ProbeSwapIso": [
+      157,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Functors.ComplexInitial",
+        "OAI.Topology.ArtinGroups.Functors.ComplexPureLayer",
+        "OAI.Topology.ArtinGroups.Harmonic.FinsuppMapDomainFiber",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermExterior",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.TotalHomDimensionReading": [
+      49,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomInternalSupport",
+        "OAI.Topology.ArtinGroups.Harmonic.PlacementLevelFiberSum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PlacementLevelFiberSum": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Level"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.QuotientFinrankKer": [
+      166,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerScalar",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.FamilySubobjectMiddleLower": [
+      49,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.SubobjectMiddleLowerBound"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.SubobjectMiddleLowerBound": [
+      67,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TermwiseSplitInjection"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeActionLevelExterior": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverCartan",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVectorPureLayer",
+        "OAI.Topology.ArtinGroups.Harmonic.FinsuppMapDomainFiber",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermExterior",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePacketExterior",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeCartanCore"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePacketExterior": [
+      96,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.ZigzagLinear",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePacket",
+        "OAI.Topology.ArtinGroups.Functors.TwistProdGeneratorExterior"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.TwistProdGeneratorExterior": [
+      28,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ProbeCartanCore": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeCoreTermNonpos": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PacketWord",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeActionLevelExterior",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVectorPos"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorVectorPos": [
+      16,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.WordArtinSubtypeMem": [
+      80,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWord",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamilyCapTop"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FrameFamilyCapTop": [
+      65,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketTwistRaisedGenerator2",
+        "OAI.Topology.ArtinGroups.Harmonic.MapPacket",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePacketExterior",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamilyTopProportional",
+        "OAI.Topology.ArtinGroups.Functors.TopZeroProbeSocle"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketTwistRaisedGenerator2": [
+      160,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FrameFamilyTopProportional": [
+      38,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionProfilePositiveEvery",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamily"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionProfilePositiveEvery": [
+      81,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDual",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitMultiplicity"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Functors.TopZeroProbeSocle": [
+      60,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.TermwiseSplitInjection",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArrayZeroCap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorArrayZeroCap": [
+      57,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood",
+        "OAI.Topology.ArtinGroups.Realizations.QuotientFinrankKer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeOrbitAbsent": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.MapPacket",
+        "OAI.Topology.ArtinGroups.Harmonic.PlacementLevelFiberSum",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeActionLevelExterior",
+        "OAI.Topology.ArtinGroups.Complexes.ProbeHomDimensionGenerator"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ProbeHomDimensionGenerator": [
+      23,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDimensionDual"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LevelArrayBelow": [
+      25,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayMinimalApply"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ProbeFixedNoDiagonal": [
+      90,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex",
+        "OAI.Topology.ArtinGroups.Complexes.IsolatedIndexCycle",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeLeaf"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.IsolatedIndexCycle": [
+      62,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.HomDetector",
+        "OAI.Topology.ArtinGroups.Complexes.DiagonalVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Quivers.ProbeLeaf": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.GeneratorArray2",
+        "OAI.Topology.ArtinGroups.Complexes.Initial",
+        "OAI.Topology.ArtinGroups.Quivers.ProbeVertex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.GeneratorArrayZeroLevel": [
+      31,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayMinimalApply"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SecondaryAsSum": [
+      83,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Block",
+        "OAI.Topology.ArtinGroups.Harmonic.Incidence",
+        "OAI.Topology.ArtinGroups.Harmonic.HarmonicUpperAntitone"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Incidence": [
+      85,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveComponent",
+        "OAI.Topology.ArtinGroups.Harmonic.Coset",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetProfile"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetProfile": [
+      53,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveSupportComponent",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetSum",
+        "OAI.Topology.ArtinGroups.Geometry.SphericalCartanPos2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveSupportComponent": [
+      289,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.HarmonicExtension"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.SphericalCartanPos2": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RestrictionLength",
+        "OAI.Topology.ArtinGroups.Geometry.CartanForm"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.CartanForm": [
+      160,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.CartanOffNonpos",
+        "OAI.Topology.ArtinGroups.Geometry.RootNonnegAscent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.HarmonicUpperAntitone": [
+      51,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.HarmonicExtension"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.IncidentNonnegRowPositive": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveComponentPositive",
+        "OAI.Topology.ArtinGroups.Harmonic.Incidence"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveComponentPositive": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveSupportComponent",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveComponent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightColor": [
+      121,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleUnique"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleUnique": [
+      37,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightEarlierLower"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightEarlierLower": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightJoinKey",
+        "OAI.Topology.ArtinGroups.Realizations.WeightDual"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightJoinKey": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.ContractionPoint"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.ContractionPoint": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Initial"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Initial": [
+      134,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.UnionCarrier",
+        "OAI.Topology.ArtinGroups.Harmonic.InsertOldIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.UnionCarrier": [
+      117,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+        "OAI.Topology.ArtinGroups.Realizations.WeightMapCover"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph": [
+      95,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightInclusion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightMapCover": [
+      68,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.ConeWeights"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.InsertOldIso": [
+      85,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightVertexRetract",
+        "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightVertexRetract": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightAttach",
+        "OAI.Topology.ArtinGroups.Harmonic.LateDelay"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightAttach": [
+      120,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightLinearLinkInverse",
+        "OAI.Topology.ArtinGroups.Harmonic.ConeAttachmentRel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightLinearLinkInverse": [
+      141,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightOld"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightOld": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver",
+        "OAI.Topology.ArtinGroups.Realizations.WeightInclusion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ConeAttachmentRel": [
+      159,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LateDelay": [
+      125,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.EarlyDelay"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EarlyDelay": [
+      84,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightDual": [
+      49,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightCarrier",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NegativeBlockContractible": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SpecialResidueRank",
+        "OAI.Topology.ArtinGroups.Harmonic.NullPatch2",
+        "OAI.Topology.ArtinGroups.Harmonic.EligibleLeftNonempty"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SpecialResidueRank": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueZeroLowerIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueZeroLowerIso": [
+      63,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.DeligneRankBound"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.DeligneRankBound": [
+      85,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleUnique",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueActiveEmpty",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueEarlierLowerIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueActiveEmpty": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueSingleOpen",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueActive"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueSingleOpen": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetExteriorCap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetExteriorCap": [
+      66,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueAllowed",
+        "OAI.Topology.ArtinGroups.Harmonic.MultiplicityZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueAllowed": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Coset"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.MultiplicityZero": [
+      51,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.FrameFamilyWeightedLevel"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueActive": [
+      182,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderMap",
+        "OAI.Topology.ArtinGroups.Harmonic.HarmonicUpperAntitone",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueAllowed"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueEarlierLowerIso": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightEarlierLower",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueEarlierLower",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueActive",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueRank"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueEarlierLower": [
+      149,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderRetractionEquiv",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueAllowed"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NerveOrderRetractionEquiv": [
+      33,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Functors.Index",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderMap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueRank": [
+      155,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Incidence",
+        "OAI.Topology.ArtinGroups.Harmonic.TieCode",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueHeightZeroVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ResidueHeightZeroVector": [
+      95,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetVectorNullPatch",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetExteriorCap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetVectorNullPatch": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ResidueAllowed",
+        "OAI.Topology.ArtinGroups.Harmonic.FoldedCartan",
+        "OAI.Topology.ArtinGroups.Harmonic.MultiplicityZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FoldedCartan": [
+      54,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.IsolatedHarmonicLayer",
+        "OAI.Topology.ArtinGroups.Harmonic.FrameFamily"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.IsolatedHarmonicLayer": [
+      62,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetOrbitCap",
+        "OAI.Topology.ArtinGroups.Harmonic.Contradiction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetOrbitCap": [
+      58,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetOrbit"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetOrbit": [
+      122,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.IsolatedIterationData"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.IsolatedIterationData": [
+      124,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ComplexPacketLowerBound",
+        "OAI.Topology.ArtinGroups.Complexes.BottomSocleZero",
+        "OAI.Topology.ArtinGroups.Harmonic.IsolatedBoundaryAbsent",
+        "OAI.Topology.ArtinGroups.Harmonic.UnfoldedInclusionRange",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitColorSecondary",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitColorTop",
+        "OAI.Topology.ArtinGroups.Complexes.PacketTwistRaisedGenerator2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.BottomSocleZero": [
+      47,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistOtherTest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistOtherTest": [
+      89,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.TestComplexVertexDifferential",
+        "OAI.Topology.ArtinGroups.Complexes.TwistNewTestIndex",
+        "OAI.Topology.ArtinGroups.Complexes.BottomScalarCycleInjective",
+        "OAI.Topology.ArtinGroups.Complexes.BottomSocleZeroTest",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistLowerBound"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.BottomScalarCycleInjective": [
+      82,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.Reduction",
+        "OAI.Topology.ArtinGroups.Harmonic.Level",
+        "OAI.Topology.ArtinGroups.Quivers.CornerScalar"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.BottomSocleZeroTest": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.LayerVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.IsolatedBoundaryAbsent": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.DimensionPosMultiplicityPos",
+        "OAI.Topology.ArtinGroups.Geometry.ConvexInclusion",
+        "OAI.Topology.ArtinGroups.Geometry.InteriorConvexHullReindex",
+        "OAI.Topology.ArtinGroups.Harmonic.NullPatch",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitColorSubobject"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.InteriorConvexHullReindex": [
+      33,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.NullPatch": [
+      42,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitColorSubobject": [
+      69,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionSubobjectCartanInequality"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionSubobjectCartanInequality": [
+      135,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.DimensionNonneg"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitColorSecondary": [
+      60,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionColorRegion",
+        "OAI.Topology.ArtinGroups.Quivers.ClosedNeighborhood"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionOrbitColorTop": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionProfilePositiveEvery",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionColorRegion",
+        "OAI.Topology.ArtinGroups.Complexes.ColorRestrictionTopZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ColorRestrictionTopZero": [
+      50,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ColorBoundary"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Contradiction": [
+      51,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.IsolatedIterationData",
+        "OAI.Topology.ArtinGroups.Harmonic.Stage"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Stage": [
+      90,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FamilySocleFiniteTermination",
+        "OAI.Topology.ArtinGroups.Harmonic.IsolatedIterationData",
+        "OAI.Topology.ArtinGroups.Harmonic.IntegerUpward",
+        "OAI.Topology.ArtinGroups.Harmonic.BottomWordNil",
+        "OAI.Topology.ArtinGroups.Realizations.WeightedCounts"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FamilySocleFiniteTermination": [
+      49,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.IntegerUpward": [
+      25,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.BottomWordNil": [
+      44,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistModern",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveWord",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionColorWord"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistModern": [
+      98,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.NegativeTwistModern",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveConeIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveConeIndex": [
+      94,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.TestPlacement",
+        "OAI.Topology.ArtinGroups.Complexes.CoconePlacement",
+        "OAI.Topology.ArtinGroups.Complexes.Refl",
+        "OAI.Topology.ArtinGroups.Quivers.SignDiagonal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionColorWord": [
+      111,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionQuiverCartan",
+        "OAI.Topology.ArtinGroups.Complexes.ComplexPacketLowerBound",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionExpandedWordAction",
+        "OAI.Topology.ArtinGroups.Harmonic.RowReflectWordReverse",
+        "OAI.Topology.ArtinGroups.Complexes.LowerTruncationLayerFloor"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.LowerTruncationLayerFloor": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.LevelArrayComplexMinimal",
+        "OAI.Topology.ArtinGroups.Complexes.TotalVectorLayer"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightedCounts": [
+      102,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PacketPermPreservesOpen",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionPacketLayerExterior",
+        "OAI.Topology.ArtinGroups.Harmonic.IsolatedIterationData",
+        "OAI.Topology.ArtinGroups.Harmonic.IntegerUpward"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketPermPreservesOpen": [
+      27,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.BottomSocleZero",
+        "OAI.Topology.ArtinGroups.Complexes.ComplexPacketPreserves"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.ComplexPacketPreserves": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalModel",
+        "OAI.Topology.ArtinGroups.Complexes.BasedComplexComplex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.FusionPacketLayerExterior": [
+      70,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionSignedPacketExterior",
+        "OAI.Topology.ArtinGroups.Complexes.PacketLayerLowerTruncation",
+        "OAI.Topology.ArtinGroups.Harmonic.FusionColorWord",
+        "OAI.Topology.ArtinGroups.Complexes.PacketTwistTopZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketLayerLowerTruncation": [
+      92,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ComplexPacketLowerBound",
+        "OAI.Topology.ArtinGroups.Complexes.LayerSocleDimensionLayer",
+        "OAI.Topology.ArtinGroups.Complexes.Cone2",
+        "OAI.Topology.ArtinGroups.Complexes.HighConeRetainedPure"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.Cone2": [
+      65,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveWordActionAppend",
+        "OAI.Topology.ArtinGroups.Complexes.LayerConeEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveConeIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HighConeRetainedPure": [
+      148,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveTwistRaisedGenerator",
+        "OAI.Topology.ArtinGroups.Complexes.LayerConeEquivalence",
+        "OAI.Topology.ArtinGroups.Complexes.HighConeIndex",
+        "OAI.Topology.ArtinGroups.Complexes.PositiveConeIndex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PositiveTwistRaisedGenerator": [
+      118,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.ReducedAmplitudeTwistLevel",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector",
+        "OAI.Topology.ArtinGroups.Complexes.MinimalGeneratorDualCycle",
+        "OAI.Topology.ArtinGroups.Complexes.CoefficientTopDualRestrict"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.PacketTwistTopZero": [
+      131,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Complexes.UpperBound",
+        "OAI.Topology.ArtinGroups.Complexes.HighDualCycleZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Complexes.HighDualCycleZero": [
+      142,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.CornerScalar",
+        "OAI.Topology.ArtinGroups.Quivers.LengthCases",
+        "OAI.Topology.ArtinGroups.Quivers.TokenTestVector"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.NullPatch2": [
+      145,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.NeighborhoodProject"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.NeighborhoodProject": [
+      74,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.TypeComponent",
+        "OAI.Topology.ArtinGroups.Harmonic.CartanCommutingZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.TypeComponent": [
+      156,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveComponentPositive",
+        "OAI.Topology.ArtinGroups.Harmonic.PeakSupport"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PeakSupport": [
+      163,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SecondaryAsSum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CartanCommutingZero": [
+      121,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Eligible",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetExteriorCap",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetBelow"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Eligible": [
+      111,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PeakSupport"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.CosetBelow": [
+      235,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Coset",
+        "OAI.Topology.ArtinGroups.Coxeter.ParabolicProductMap"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.ParabolicProductMap": [
+      121,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbeFixedOutside"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbeFixedOutside": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordLeft"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EligibleLeftNonempty": [
+      66,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.EligibleFactor"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EligibleFactor": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.DeligneRankBound",
+        "OAI.Topology.ArtinGroups.Harmonic.EligibleWithin",
+        "OAI.Topology.ArtinGroups.Harmonic.BinaryProductBoundary"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EligibleWithin": [
+      140,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.AllEligibleLower",
+        "OAI.Topology.ArtinGroups.Harmonic.CartanCommutingZero"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.AllEligibleLower": [
+      41,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.EarlierLower",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderRetractionEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EarlierLower": [
+      100,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.LowerIneligibleLater"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LowerIneligibleLater": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.TieCode",
+        "OAI.Topology.ArtinGroups.Harmonic.Eligible"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.BinaryProductBoundary": [
+      63,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProductBoxSlice"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProductBoxSlice": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderRetractionEquiv",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleLower"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleLower": [
+      45,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightEarlierLower"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LiftedDeck": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.CellDeligne"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.CellDeligne": [
+      105,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.CosetVertex",
+        "OAI.Topology.ArtinGroups.Harmonic.ReducedExpression",
+        "OAI.Topology.ArtinGroups.Coxeter.InverseParabolicMinimum"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleLower2": [
+      34,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.OrderMappingCylinder",
+        "OAI.Topology.ArtinGroups.Realizations.WeightInsertRetract"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.OrderMappingCylinder": [
+      144,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.NerveChain",
+        "OAI.Topology.ArtinGroups.Realizations.NerveOrderRetractionEquiv"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightInsertRetract": [
+      173,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightEarlierLower",
+        "OAI.Topology.ArtinGroups.Realizations.WeightRetractionPiece"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightRetractionPiece": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+        "OAI.Topology.ArtinGroups.Realizations.WeightMapCover"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveUpperBoundaryRank": [
+      74,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.EarlierLinkSubtypeIso",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveUpperBoundaryRestriction"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.EarlierLinkSubtypeIso": [
+      79,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Initial",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveEarlierLinkUpper"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveEarlierLinkUpper": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.InsertOldIso",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveCellPoset2"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.PositiveCellPoset2": [
+      117,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.LiftedDeck",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveCellPoset"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.PositiveCellPoset": [
+      124,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveRootCell",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveRegion"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.PositiveRootCell": [
+      65,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveMatchingTypeKey",
+        "OAI.Topology.ArtinGroups.Realizations.NoncriticalPositiveCell"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveMatchingTypeKey": [
+      75,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveDegreeSublevelFinite",
+        "OAI.Topology.ArtinGroups.Harmonic.TopBlockMatchingKey",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveLiftedCell"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveDegreeSublevelFinite": [
+      64,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositivePrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositivePrefix": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveSimpleLiftMul",
+        "OAI.Topology.ArtinGroups.Coxeter.CommonWeakPrefixMaximal"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveSimpleLiftMul": [
+      93,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.CellDeligne",
+        "OAI.Topology.ArtinGroups.Geometry.LongestMulSelf",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveDegreeHom"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveDegreeHom": [
+      100,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRelations"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRelations": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ReducedExpression"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.CommonWeakPrefixMaximal": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.WeakPrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.WeakPrefix": [
+      130,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.AltListPairDescent"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.TopBlockMatchingKey": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalLongest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalLongest": [
+      124,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightInclusion",
+        "OAI.Topology.ArtinGroups.Cancellation.SphericalPositiveCancelMonoid",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveDescentSet",
+        "OAI.Topology.ArtinGroups.Harmonic.LiftedDeck"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Cancellation.SphericalPositiveCancelMonoid": [
+      40,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteArtinPositiveLeft",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordMonoid"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordMonoid": [
+      80,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.InitialProbe",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordPositive"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordPositive": [
+      106,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.ProbePositiveWordAppend",
+        "OAI.Topology.ArtinGroups.Harmonic.MaximalReducedMonoidPrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.MaximalReducedMonoidPrefix": [
+      87,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Coxeter.PositiveBraidRelations"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveDescentSet": [
+      86,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveReverseHom",
+        "OAI.Topology.ArtinGroups.Coxeter.ParabolicLongest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveReverseHom": [
+      88,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ExtArrow",
+        "OAI.Topology.ArtinGroups.Harmonic.PositivePrefixMulLeft"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositivePrefixMulLeft": [
+      128,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveHead"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveHead": [
+      122,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.WordFrontData"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.WordFrontData": [
+      118,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SimpleFrontLink"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SimpleFrontLink": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositivePrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.ParabolicLongest": [
+      99,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange": [
+      91,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RestrictionLength",
+        "OAI.Topology.ArtinGroups.Harmonic.PositivePrefix"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.PositiveLiftedCell": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.SphericalLongest"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.NoncriticalPositiveCell": [
+      177,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.TopBlockMatchingKey",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveLiftedCell"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveRegion": [
+      69,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.CellDeligne",
+        "OAI.Topology.ArtinGroups.Cancellation.SphericalPositiveCancelMonoid"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveUpperBoundaryRestriction": [
+      111,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.RestrictedCellEmbedding",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveFullCell"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.RestrictedCellEmbedding": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.FullSphericalCell",
+        "OAI.Topology.ArtinGroups.Harmonic.PuncturedBoundaryIso"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.FullSphericalCell": [
+      61,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveLiftedCell"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PuncturedBoundaryIso": [
+      84,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.LiftedPuncturedBoundary",
+        "OAI.Topology.ArtinGroups.Realizations.RestrictedLiftedCell",
+        "OAI.Topology.ArtinGroups.Realizations.PositiveCellPoset"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.LiftedPuncturedBoundary": [
+      39,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.CellDeligne"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.RestrictedLiftedCell": [
+      140,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.LiftedDeck",
+        "OAI.Topology.ArtinGroups.Harmonic.RestrictedArtinHomSpherical",
+        "OAI.Topology.ArtinGroups.Harmonic.TopBlockMatchingKey"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.RestrictedArtinHomSpherical": [
+      37,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.FiniteArtinPositiveLeft",
+        "OAI.Topology.ArtinGroups.Harmonic.InitialProbe"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.PositiveFullCell": [
+      115,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.FullSphericalCell",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveEarlierLinkUpper"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.DirectedCoverSequence": [
+      73,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.Earlier"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.Earlier": [
+      138,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.OrderWeightsContractibleLower",
+        "OAI.Topology.ArtinGroups.Harmonic.OrderMappingCylinder",
+        "OAI.Topology.ArtinGroups.Realizations.WeightInsertRetract"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.PositiveRegionDeckIso": [
+      77,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.PositiveRegion",
+        "OAI.Topology.ArtinGroups.Realizations.RestrictedLiftedCell",
+        "OAI.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.FiniteWeightsCompact": [
+      76,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Harmonic.SphericalTypeReindex": [
+      110,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.CellDeligne",
+        "OAI.Topology.ArtinGroups.Harmonic.ArtinReindex"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.WeightUpperCone": [
+      129,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.OrbitHalfspace",
+        "OAI.Topology.ArtinGroups.Realizations.AffineWeightMax",
+        "OAI.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.OrbitHalfspace": [
+      123,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.ChamberPoint",
+        "OAI.Topology.ArtinGroups.Geometry.FiniteHalfspaceBoundaryStep"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ChamberPoint": [
+      193,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.ChamberCovector",
+        "OAI.Topology.ArtinGroups.Coxeter.ArtinCoxeter",
+        "OAI.Topology.ArtinGroups.Geometry.LinearConvexHull"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.ChamberCovector": [
+      118,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Geometry.RootPair"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.ArtinCoxeter": [
+      163,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.FullSphericalCell"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.LinearConvexHull": [
+      97,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Quivers.ReversibleQuiver"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Geometry.FiniteHalfspaceBoundaryStep": [
+      76,
+      [
+        "Mathlib"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Realizations.AffineWeightMax": [
+      105,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Realizations.WeightAffineValue"
+      ]
+    ],
+    "OAI.Topology.ArtinGroups.Coxeter.AmbientCoxeterFace": [
+      157,
+      [
+        "Mathlib",
+        "OAI.Topology.ArtinGroups.Harmonic.TopBlockMatchingKey",
+        "OAI.Topology.ArtinGroups.Coxeter.ArtinCoxeter"
+      ]
+    ]
+  },
+  "missing": []
+}

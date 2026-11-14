@@ -1,0 +1,45 @@
+import ArtinChambers.ActualArrangement
+import ArtinChambers.ActualComparison
+import ArtinChambers.ActualTubes
+import ArtinChambers.Arrangement
+import ArtinChambers.CechCover
+import ArtinChambers.ChamberAction
+import ArtinChambers.ChamberLabels
+import ArtinChambers.ChamberPoints
+import ArtinChambers.ChamberTransport
+import ArtinChambers.CoverComparison
+import ArtinChambers.CoverQuotient
+import ArtinChambers.CoveringGroupoid
+import ArtinChambers.Dominant
+import ArtinChambers.FaceProjection
+import ArtinChambers.FacetTransport
+import ArtinChambers.FamilyFunctor
+import ArtinChambers.FamilyGroupoid
+import ArtinChambers.ForwardEquivariance
+import ArtinChambers.GroupoidCover
+import ArtinChambers.IntervalAction
+import ArtinChambers.IntervalEquivalence
+import ArtinChambers.IntervalForward
+import ArtinChambers.IntervalGroupoid
+import ArtinChambers.InversionLength
+import ArtinChambers.Landmark3
+import ArtinChambers.OrbitColimit
+import ArtinChambers.OrbitGroupoid
+import ArtinChambers.PositiveTransport
+import ArtinChambers.RegularCriterion
+import ArtinChambers.RibbonComponent
+import ArtinChambers.RibbonCover
+import ArtinChambers.RibbonDeckLabels
+import ArtinChambers.RibbonLiftCompatibility
+import ArtinChambers.RibbonLiftUniqueness
+import ArtinChambers.RibbonLifting
+import ArtinChambers.SignCells
+import ArtinChambers.TubeCover
+import ArtinChambers.TubeDescent
+import ArtinChambers.TubeIntersections
+import ArtinChambers.Tubes
+import ArtinChambers.WeakIntervals
+import ArtinChambers.WeakInversions
+
+/-! Landmark 3: actual equivariant interval, ribbon and orbit groupoid comparison.
+See `ArtinNormalisers.Chamber3.landmark_3`. Full Theorem 1.8 remains unproved. -/

@@ -1,0 +1,1454 @@
+{
+  "openai/math": {
+    "repo": "openai/math",
+    "revisions": {
+      "4eaee87548250b2682affda7d05d947c05554bae": [
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiProjection.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiProjection.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Main.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Main.lean"
+        },
+        {
+          "path": "lean/ComparatorChallenges/HarmonicArtin.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HarmonicArtin.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/TypedRightCoset.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Harmonic/TypedRightCoset.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/LiftedDeckOrderHom.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Harmonic/LiftedDeckOrderHom.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/RestrictedLiftedContractible.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/RestrictedLiftedContractible.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Model.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Model.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellUnion.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/CellUnion.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/Characteristic.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Harmonic/Characteristic.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/LiftedWeightStar.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/LiftedWeightStar.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellIndexTypeInjective.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/CellIndexTypeInjective.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/CharacteristicSaturatedInterior.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Harmonic/CharacteristicSaturatedInterior.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellIndex.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/CellIndex.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellInteriorChart.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/CellInteriorChart.lean"
+        }
+      ]
+    },
+    "status": "source-read; exact ordinary Salvetti endpoints re-read; not compiled/audited/replayed in M3",
+    "license": {
+      "spdx": "Apache-2.0",
+      "metadata_url": "https://github.com/openai/math",
+      "metadata_only": true
+    }
+  },
+  "zstone1/Cubical": {
+    "repo": "zstone1/Cubical",
+    "revisions": {
+      "5339856b84db66f7ba3b831c00d40264447b8d21": [
+        {
+          "path": "CubeChains/Concurrency/Salvetti/SalExec.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/SalExec.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/SalBraid.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/SalBraid.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/SalCompare.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/SalCompare.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/CrossCompare.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/CrossCompare.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/ChamberBraid.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/ChamberBraid.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/WallCrossing.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/WallCrossing.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/ChainBraidFace.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/ChainBraidFace.lean"
+        },
+        {
+          "path": "CubeChains/PaperSalvetti.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/PaperSalvetti.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Salvetti/EventBraid.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Salvetti/EventBraid.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/Skeletal.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/Skeletal.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/Arrangement/Sal.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/Arrangement/Sal.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/Arrangement/COMSum.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/Arrangement/COMSum.lean"
+        },
+        {
+          "path": "CubeChains.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/Braid/Germ.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/Braid/Germ.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/Arrangement/SalElements.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/Arrangement/SalElements.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/Arrangement/SalSymmetry.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/Arrangement/SalSymmetry.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Complexification/HPresentation.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Complexification/HPresentation.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Executions/ExecData.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Executions/ExecData.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Complexification/SymReorient.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Complexification/SymReorient.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Executions/RunWord.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Executions/RunWord.lean"
+        },
+        {
+          "path": "CubeChains/Machinery/SortPerm.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Machinery/SortPerm.lean"
+        },
+        {
+          "path": "CubeChains/Concurrency/Executions/Runs.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/zstone1/Cubical/blob/5339856b84db66f7ba3b831c00d40264447b8d21/CubeChains/Concurrency/Executions/Runs.lean"
+        }
+      ]
+    },
+    "status": "source-read; complete archive and selected combinatorial Salvetti endpoint bodies; not compiled/audited/replayed",
+    "license": {
+      "spdx": null,
+      "metadata_url": "https://github.com/zstone1/Cubical",
+      "metadata_only": true
+    }
+  },
+  "igor024/math": {
+    "repo": "igor024/math",
+    "revisions": {
+      "37fa9a502d652590420333ea1e18a2140cf7ebe3": [
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiProjection.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiProjection.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Main.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Main.lean"
+        },
+        {
+          "path": "lean/ComparatorChallenges/HarmonicArtin.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/ComparatorChallenges/HarmonicArtin.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/TypedRightCoset.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Harmonic/TypedRightCoset.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/LiftedDeckOrderHom.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Harmonic/LiftedDeckOrderHom.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/RestrictedLiftedContractible.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/RestrictedLiftedContractible.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Model.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Model.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellUnion.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/CellUnion.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/Characteristic.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Harmonic/Characteristic.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/LiftedWeightStar.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/LiftedWeightStar.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellIndexTypeInjective.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/CellIndexTypeInjective.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/CharacteristicSaturatedInterior.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Harmonic/CharacteristicSaturatedInterior.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellIndex.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/CellIndex.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellInteriorChart.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/Topology/ArtinGroups/Realizations/CellInteriorChart.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "Apache-2.0",
+      "metadata_url": "https://github.com/igor024/math",
+      "metadata_only": true
+    }
+  },
+  "jingyuanli-hk/openai_math": {
+    "repo": "jingyuanli-hk/openai_math",
+    "revisions": {
+      "746117c6ca34e6831fdfae4c25d02f3e1414691a": [
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiProjection.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiProjection.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Main.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Main.lean"
+        },
+        {
+          "path": "lean/ComparatorChallenges/HarmonicArtin.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/ComparatorChallenges/HarmonicArtin.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/TypedRightCoset.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Harmonic/TypedRightCoset.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/LiftedDeckOrderHom.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Harmonic/LiftedDeckOrderHom.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/RestrictedLiftedContractible.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/RestrictedLiftedContractible.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Model.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Model.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellUnion.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/CellUnion.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/Characteristic.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Harmonic/Characteristic.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/LiftedWeightStar.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/LiftedWeightStar.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellIndexTypeInjective.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/CellIndexTypeInjective.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Harmonic/CharacteristicSaturatedInterior.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Harmonic/CharacteristicSaturatedInterior.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellIndex.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/CellIndex.lean"
+        },
+        {
+          "path": "lean/OAI/Topology/ArtinGroups/Realizations/CellInteriorChart.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/Topology/ArtinGroups/Realizations/CellInteriorChart.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "Apache-2.0",
+      "metadata_url": "https://github.com/jingyuanli-hk/openai_math",
+      "metadata_only": true
+    }
+  },
+  "psalmprax/science": {
+    "repo": "psalmprax/science",
+    "revisions": {
+      "c837d8d188fc2bcc2e4ca4895a1e42325331ac08": [
+        {
+          "path": "benchmarks/openai_math_sandbox/catalog/comparator_snapshot/HarmonicArtin.lean",
+          "query_record": "m3-openai-salvetti-search.json",
+          "url": "https://github.com/psalmprax/science/blob/c837d8d188fc2bcc2e4ca4895a1e42325331ac08/benchmarks/openai_math_sandbox/catalog/comparator_snapshot/HarmonicArtin.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "MIT",
+      "metadata_url": "https://github.com/psalmprax/science",
+      "metadata_only": true
+    }
+  },
+  "paulklemstine/Lean": {
+    "repo": "paulklemstine/Lean",
+    "revisions": {
+      "97c0b27619bf5070a44d5eda332784c5f979af6a": [
+        {
+          "path": "Catalog/Geometry/PosetTheory/HyperplaneArrangement.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/paulklemstine/Lean/blob/97c0b27619bf5070a44d5eda332784c5f979af6a/Catalog/Geometry/PosetTheory/HyperplaneArrangement.lean"
+        },
+        {
+          "path": "docs/Catalog/Geometry/PosetTheory/HyperplaneArrangement.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/paulklemstine/Lean/blob/97c0b27619bf5070a44d5eda332784c5f979af6a/docs/Catalog/Geometry/PosetTheory/HyperplaneArrangement.lean"
+        },
+        {
+          "path": "Packages/Catalog/Geometry/PosetTheory/HyperplaneArrangement.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/paulklemstine/Lean/blob/97c0b27619bf5070a44d5eda332784c5f979af6a/Packages/Catalog/Geometry/PosetTheory/HyperplaneArrangement.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": null,
+      "metadata_url": "https://github.com/paulklemstine/Lean",
+      "metadata_only": true
+    }
+  },
+  "facebookresearch/atlas-lean": {
+    "repo": "facebookresearch/atlas-lean",
+    "revisions": {
+      "219463bef604b0624fc2fc623a75a77678ce10e7": [
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/WallSeparation.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/WallSeparation.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/HyperplaneChambers.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/NonParallelWallsProof.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/NonParallelWallsProof.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/WallSeparationCorollary.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/WallSeparationCorollary.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/UniqueAdjacentChamber.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/UniqueAdjacentChamber.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/HyperplaneChambers.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/HyperplaneChambers.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/WallSeparation.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/WallSeparation.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/AffineCoxeter/TransitiveAlcovesHelper.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/AffineCoxeter/TransitiveAlcovesHelper.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/AffineCoxeter/TransitiveAlcovesHelper.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/AffineCoxeter/TransitiveAlcovesHelper.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/AffineWeylGroups.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/AffineWeylGroups.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/AffineWeylGroups.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/AffineWeylGroups.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/InnerProductWalls.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/InnerProductWalls.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/InnerProductWalls.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/InnerProductWalls.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/AffineCoxeter/AffineWeylBook.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/AffineCoxeter/AffineWeylBook.lean"
+        },
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/AffineWeylGroupConstruction.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/Atlas/Buildings/code/Reflection/AffineWeylGroupConstruction.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/UniqueAdjacentChamber.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/UniqueAdjacentChamber.lean"
+        },
+        {
+          "path": "v1/merely-true/Atlas/Buildings/code/Reflection/AffineWeylGroupConstruction.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/v1/merely-true/Atlas/Buildings/code/Reflection/AffineWeylGroupConstruction.lean"
+        },
+        {
+          "path": "MathlibExtTest/Combinatorics/Poset/Basic.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/MathlibExtTest/Combinatorics/Poset/Basic.lean"
+        },
+        {
+          "path": "MathlibExt/Combinatorics/Poset/Basic.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/facebookresearch/atlas-lean/blob/219463bef604b0624fc2fc623a75a77678ce10e7/MathlibExt/Combinatorics/Poset/Basic.lean"
+        }
+      ]
+    },
+    "status": "search-result-only this round; earlier selected source inspection in search-additional.md",
+    "license": {
+      "spdx": "NOASSERTION",
+      "metadata_url": "https://github.com/facebookresearch/atlas-lean",
+      "metadata_only": true
+    }
+  },
+  "math-proof/lemma": {
+    "repo": "math-proof/lemma",
+    "revisions": {
+      "d11e6179cdf04f9aa8539166bbf6f26778f3e641": [
+        {
+          "path": "Lemma/Real/SimplyTransitive.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Real/SimplyTransitive.lean"
+        },
+        {
+          "path": "Lemma/Real/NormInwardUnitNormal/eq/One.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Real/NormInwardUnitNormal/eq/One.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/WallSeparation.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/WallSeparation.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/InnerProductWalls.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/InnerProductWalls.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/AffineWeylGroups/Part3.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/AffineWeylGroups/Part3.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part3.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part3.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part4.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part4.lean"
+        },
+        {
+          "path": "Lemma/Set/InteriorCarrier/eq/Empty.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Set/InteriorCarrier/eq/Empty.lean"
+        },
+        {
+          "path": "Class/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Class/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter.lean"
+        },
+        {
+          "path": "Structure/v1/Atlas/Buildings/code/Reflection/AffineWeylGroups.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Structure/v1/Atlas/Buildings/code/Reflection/AffineWeylGroups.lean"
+        },
+        {
+          "path": "Lemma/Set/All_In_Set/of/All_In_Set/In_Group.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Set/All_In_Set/of/All_In_Set/In_Group.lean"
+        },
+        {
+          "path": "Theorem/v1/Atlas/Buildings/code/Reflection/WallSeparationCorollary.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Theorem/v1/Atlas/Buildings/code/Reflection/WallSeparationCorollary.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/AffineWeylGroupConstruction.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/AffineWeylGroupConstruction.lean"
+        },
+        {
+          "path": "Lemma/Set/IsClosedCarrier.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Set/IsClosedCarrier.lean"
+        },
+        {
+          "path": "Def/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter/Part2.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Def/v1/Atlas/Buildings/code/Reflection/ReflectionGroupsCoxeter/Part2.lean"
+        },
+        {
+          "path": "Structure/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part3.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Structure/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part3.lean"
+        },
+        {
+          "path": "Structure/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part2.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Structure/v1/Atlas/Buildings/code/Reflection/HyperplaneChambers/Part2.lean"
+        },
+        {
+          "path": "Lemma/Set/Any_Any_IsWallSetAndSeparatesChambers/of/IsLocallyFinite/NeSetSet.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Set/Any_Any_IsWallSetAndSeparatesChambers/of/IsLocallyFinite/NeSetSet.lean"
+        },
+        {
+          "path": "Lemma/Set/In_PositiveHalfSpaceOrIn_NegativeHalfSpace/of/In_Hyperplanes/In_Complement.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/math-proof/lemma/blob/d11e6179cdf04f9aa8539166bbf6f26778f3e641/Lemma/Set/In_PositiveHalfSpaceOrIn_NegativeHalfSpace/of/In_Hyperplanes/In_Complement.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": null,
+      "metadata_url": "https://github.com/math-proof/lemma",
+      "metadata_only": true
+    }
+  },
+  "adamtopaz/OrlikSolomon": {
+    "repo": "adamtopaz/OrlikSolomon",
+    "revisions": {
+      "1568c3994d24e53d39471ffe810cb076cfbccc8c": [
+        {
+          "path": "OrlikSolomon/Interface/ProjectiveSpace.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/adamtopaz/OrlikSolomon/blob/1568c3994d24e53d39471ffe810cb076cfbccc8c/OrlikSolomon/Interface/ProjectiveSpace.lean"
+        },
+        {
+          "path": "OrlikSolomonBook/MainTheorem.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/adamtopaz/OrlikSolomon/blob/1568c3994d24e53d39471ffe810cb076cfbccc8c/OrlikSolomonBook/MainTheorem.lean"
+        },
+        {
+          "path": "OrlikSolomon/MainTheorem.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/adamtopaz/OrlikSolomon/blob/1568c3994d24e53d39471ffe810cb076cfbccc8c/OrlikSolomon/MainTheorem.lean"
+        },
+        {
+          "path": "OrlikSolomon/Examples/ProjectiveOrdinary.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/adamtopaz/OrlikSolomon/blob/1568c3994d24e53d39471ffe810cb076cfbccc8c/OrlikSolomon/Examples/ProjectiveOrdinary.lean"
+        },
+        {
+          "path": "OrlikSolomon/Interface/ProjectiveComplement.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/adamtopaz/OrlikSolomon/blob/1568c3994d24e53d39471ffe810cb076cfbccc8c/OrlikSolomon/Interface/ProjectiveComplement.lean"
+        }
+      ]
+    },
+    "status": "search-result-only this round; earlier selected source inspection in search-additional.md",
+    "license": {
+      "spdx": "Apache-2.0",
+      "metadata_url": "https://github.com/adamtopaz/OrlikSolomon",
+      "metadata_only": true
+    }
+  },
+  "marpaia/crnt-lean": {
+    "repo": "marpaia/crnt-lean",
+    "revisions": {
+      "7386777488a41efd92e6abc2bccf889fb611660e": [
+        {
+          "path": "CRNT/Geometry/FanRefinement.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/marpaia/crnt-lean/blob/7386777488a41efd92e6abc2bccf889fb611660e/CRNT/Geometry/FanRefinement.lean"
+        },
+        {
+          "path": "CRNT/Geometry/ToricUniformWallMargin.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/marpaia/crnt-lean/blob/7386777488a41efd92e6abc2bccf889fb611660e/CRNT/Geometry/ToricUniformWallMargin.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "MIT",
+      "metadata_url": "https://github.com/marpaia/crnt-lean",
+      "metadata_only": true
+    }
+  },
+  "dzackgarza/lean-categories": {
+    "repo": "dzackgarza/lean-categories",
+    "revisions": {
+      "064b5cfdae80fd27c7af1b0c9a7a8bbc5547e55b": [
+        {
+          "path": "LeanCategories/Lattices/Valued/K3WeylChamberData.lean",
+          "query_record": "m3-openai-arrangement-search.json",
+          "url": "https://github.com/dzackgarza/lean-categories/blob/064b5cfdae80fd27c7af1b0c9a7a8bbc5547e55b/LeanCategories/Lattices/Valued/K3WeylChamberData.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": null,
+      "metadata_url": "https://github.com/dzackgarza/lean-categories",
+      "metadata_only": true
+    }
+  },
+  "qinz1yang/differential-geometry": {
+    "repo": "qinz1yang/differential-geometry",
+    "revisions": {
+      "13c41a632efb8fbf93101c8a20f2a9214ab33240": [
+        {
+          "path": "DifferentialGeometry/Topology/VanKampen/Pi1FiniteConnectedSum.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/qinz1yang/differential-geometry/blob/13c41a632efb8fbf93101c8a20f2a9214ab33240/DifferentialGeometry/Topology/VanKampen/Pi1FiniteConnectedSum.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "Apache-2.0",
+      "metadata_url": "https://github.com/qinz1yang/differential-geometry",
+      "metadata_only": true
+    }
+  },
+  "rkirov/jacobian-claude": {
+    "repo": "rkirov/jacobian-claude",
+    "revisions": {
+      "73212f7ef2bb46a7884710b18fe1e18b8509e3e5": [
+        {
+          "path": "Jacobians/SphereTopology/VanKampen.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/rkirov/jacobian-claude/blob/73212f7ef2bb46a7884710b18fe1e18b8509e3e5/Jacobians/SphereTopology/VanKampen.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "NOASSERTION",
+      "metadata_url": "https://github.com/rkirov/jacobian-claude",
+      "metadata_only": true
+    }
+  },
+  "kadirhanpolat/pytop": {
+    "repo": "kadirhanpolat/pytop",
+    "revisions": {
+      "46a35a69c4be34b0d503afa171d9c168bba51946": [
+        {
+          "path": "formal/Formal/VanKampen.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/kadirhanpolat/pytop/blob/46a35a69c4be34b0d503afa171d9c168bba51946/formal/Formal/VanKampen.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "MIT",
+      "metadata_url": "https://github.com/kadirhanpolat/pytop",
+      "metadata_only": true
+    }
+  },
+  "SauersML/group-approximation": {
+    "repo": "SauersML/group-approximation",
+    "revisions": {
+      "b4cbab68177c23556f0db49f8a45a431729f6e23": [
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FoldMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FoldMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceCycle.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceCycle.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetEar.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetEar.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PinchLemma.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PinchLemma.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FoldDiagram.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FoldDiagram.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapDual.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapDual.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceRebase.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceRebase.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GEdgeRelabel.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GEdgeRelabel.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitSum.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitSum.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/RegionSubMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/RegionSubMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/NullWordDisc.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/NullWordDisc.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/DiscExpansion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/DiscExpansion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/VertexJoinMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/VertexJoinMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/DiscTransport.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/DiscTransport.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SpikeDeletion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SpikeDeletion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitJoin.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitJoin.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/DartExpansion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/DartExpansion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FoldTransport.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FoldTransport.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GCellCutModel.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GCellCutModel.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SingleEdgeDisc.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SingleEdgeDisc.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PendantEdgeMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PendantEdgeMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/VanKampenMerge.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/VanKampenMerge.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FoldFaceCycles.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FoldFaceCycles.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCellMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCellMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitSplit.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitSplit.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CactusBoundary.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CactusBoundary.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitOption.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitOption.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitInsert.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitInsert.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/VanKampenCancel.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/VanKampenCancel.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PlanarVanKampen.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PlanarVanKampen.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceSplitFaces.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceSplitFaces.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetDualWalk.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetDualWalk.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetDualLeaf.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetDualLeaf.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCutCells.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCutCells.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PendantEdgeWalks.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PendantEdgeWalks.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GEdgeWordCellMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GEdgeWordCellMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapEdgeEuler.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapEdgeEuler.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GEdgeSubdivision.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GEdgeSubdivision.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/ListNoABABLength.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/ListNoABABLength.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapEdgeFaces.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapEdgeFaces.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetDualErase.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetDualErase.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/ListFilterBlocks.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/ListFilterBlocks.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/ClosedWalkExcise.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/ClosedWalkExcise.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GEdgeLabelRepair.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GEdgeLabelRepair.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/BasedDiscDiagram.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/BasedDiscDiagram.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapEdgeSteps.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapEdgeSteps.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FiniteCycleSplit.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FiniteCycleSplit.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCutDiagram.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCutDiagram.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapEdgeLabels.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapEdgeLabels.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCutProduct.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCutProduct.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCutReduced.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCutReduced.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapComponents.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapComponents.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryPathRibbon.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryPathRibbon.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/EdgeDeletionFaces.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/EdgeDeletionFaces.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryPocketGlue.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryPocketGlue.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitRestrict.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitRestrict.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/DiscEmbeddingAway.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/DiscEmbeddingAway.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SingletonReclosed.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SingletonReclosed.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCutLemma65.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCutLemma65.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceSplitCorners.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceSplitCorners.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/ReversibleSpelling.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/ReversibleSpelling.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceWordInsertion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceWordInsertion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryHairOpening.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryHairOpening.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/OneFaceWordTrivial.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/OneFaceWordTrivial.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceInsertionDart.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceInsertionDart.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/ShelledDiscDiagram.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/ShelledDiscDiagram.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitJoinReach.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitJoinReach.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapRestriction.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapRestriction.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CactusZeroBoundary.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CactusZeroBoundary.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceWordRetention.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceWordRetention.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GFaceEdgeInsertion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GFaceEdgeInsertion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CactusFaceBoundary.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CactusFaceBoundary.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/BridgeComponentMap.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/BridgeComponentMap.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CyclicFaceBoundary.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CyclicFaceBoundary.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitTransport.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitTransport.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GEdgeWordRetention.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GEdgeWordRetention.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapSimpleEuler.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapSimpleEuler.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PendantEdgeDiagram.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PendantEdgeDiagram.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryFaceDiagram.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryFaceDiagram.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryCutSections.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryCutSections.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceShelling.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceShelling.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/GCellCutSourceModel.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/GCellCutSourceModel.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CyclicArcComplement.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CyclicArcComplement.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapEdgeDeletion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapEdgeDeletion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CyclicListExpansion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CyclicListExpansion.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetBoundaryGlue.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetBoundaryGlue.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/PermOrbitErasePoint.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/PermOrbitErasePoint.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SelfContiguityModel.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SelfContiguityModel.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetPeelProducer.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetPeelProducer.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/SurgeryOrderedCells.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/SurgeryOrderedCells.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/FaceSetBoundaryWalk.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/FaceSetBoundaryWalk.lean"
+        },
+        {
+          "path": "GroupApproximation/GGT/VanKampen/CombMapEdgeInsertion.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/SauersML/group-approximation/blob/b4cbab68177c23556f0db49f8a45a431729f6e23/GroupApproximation/GGT/VanKampen/CombMapEdgeInsertion.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": "Apache-2.0",
+      "metadata_url": "https://github.com/SauersML/group-approximation",
+      "metadata_only": true
+    }
+  },
+  "frenzymath/PoincareConjecture": {
+    "repo": "frenzymath/PoincareConjecture",
+    "revisions": {
+      "62db01af9388dc1d9b56b66d6674f4c09b2318a2": [
+        {
+          "path": "PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Collar.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/frenzymath/PoincareConjecture/blob/62db01af9388dc1d9b56b66d6674f4c09b2318a2/PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Collar.lean"
+        },
+        {
+          "path": "PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Retraction.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/frenzymath/PoincareConjecture/blob/62db01af9388dc1d9b56b66d6674f4c09b2318a2/PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Retraction.lean"
+        },
+        {
+          "path": "PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Local.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/frenzymath/PoincareConjecture/blob/62db01af9388dc1d9b56b66d6674f4c09b2318a2/PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Local.lean"
+        },
+        {
+          "path": "PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/General.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/frenzymath/PoincareConjecture/blob/62db01af9388dc1d9b56b66d6674f4c09b2318a2/PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/General.lean"
+        },
+        {
+          "path": "PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Surjectivity.lean",
+          "query_record": "m3-openai-vankampen-search.json",
+          "url": "https://github.com/frenzymath/PoincareConjecture/blob/62db01af9388dc1d9b56b66d6674f4c09b2318a2/PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Surjectivity.lean"
+        }
+      ]
+    },
+    "status": "search-result-only; no proof source read or executed for this lead",
+    "license": {
+      "spdx": null,
+      "metadata_url": "https://github.com/frenzymath/PoincareConjecture",
+      "metadata_only": true
+    }
+  },
+  "TauCetiProject/TauCeti": {
+    "repo": "TauCetiProject/TauCeti",
+    "revisions": {
+      "62bbc0596dc3539d488232e4e924a338548ea0a9": [
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean",
+          "sha256": "73a0bbcd052c6988eac1fedc40cc3b1d0b124d9d16aed8bed17859e1b78a4d21",
+          "imports": [
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean",
+          "sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+          "imports": [
+            "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+            "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+          ]
+        },
+        {
+          "path": "TauCeti/Topology/Category/TopCat/Cech/Diagram.lean",
+          "sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+          "imports": [
+            "Mathlib.Topology.Category.TopCat.Opens",
+            "Mathlib.Topology.Sets.OpenCover"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+          "sha256": "a2ba1b2fb84296ee7bff70ff525d7c3c057aa7d85af1eb39a4c7965938b80377",
+          "imports": [
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+            "TauCeti.Topology.MetricSpace.Lebesgue",
+            "Mathlib.Analysis.Convex.Contractible",
+            "Mathlib.CategoryTheory.Functor.OfSequence"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+          "sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+          "imports": [
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+            "TauCeti.Topology.Homotopy.Path"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+          "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+          "imports": [
+            "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+            "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+            "Mathlib.CategoryTheory.IsConnected"
+          ]
+        },
+        {
+          "path": "TauCeti/Topology/Homotopy/Path.lean",
+          "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+          "imports": [
+            "Mathlib.Topology.Subpath",
+            "Mathlib.Topology.Homotopy.Contractible",
+            "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+            "Mathlib.Topology.Connected.LocallyPathConnected",
+            "TauCeti.Topology.UnitInterval",
+            "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+          ]
+        },
+        {
+          "path": "TauCeti/Topology/UnitInterval.lean",
+          "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+          "imports": [
+            "Mathlib.Topology.UnitInterval",
+            "Mathlib.Topology.Order.ProjIcc"
+          ]
+        },
+        {
+          "path": "TauCeti/Topology/MetricSpace/Lebesgue.lean",
+          "sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+          "imports": [
+            "Mathlib.Topology.MetricSpace.Basic",
+            "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Map.lean",
+          "sha256": "713f5e404300f9eafb6733957d8ca7f4c0405c5fb781196f205dfaed8e02a8c8",
+          "imports": [
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+            "TauCeti.Topology.Category.TopCat.Cech.Map"
+          ]
+        },
+        {
+          "path": "TauCeti/Topology/Category/TopCat/Cech/Map.lean",
+          "sha256": "ef1d358f959a44be06e126ed69e2c485a94c4e81c0783c995df1cd566da669bc",
+          "imports": [
+            "TauCeti.Topology.Category.TopCat.Cech.Refinement",
+            "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+          ]
+        },
+        {
+          "path": "TauCeti/Topology/Category/TopCat/Cech/Refinement.lean",
+          "sha256": "91b2b9985603187a4a6b7c2fb025a5bf72725d0a1725523c79861add35972a86",
+          "imports": [
+            "TauCeti.Topology.Category.TopCat.Cech.Diagram",
+            "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Ext.lean",
+          "sha256": "d5c31811b121a99ccaf928c868488c1875906d128debaaad1f2817e92890e2a1",
+          "imports": [
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+          ]
+        },
+        {
+          "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Refinement.lean",
+          "sha256": "8f6a2df9e04787c15efc3f74723e122411696a8a11dd0596fd9e555d4c827f6e",
+          "imports": [
+            "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+            "TauCeti.Topology.Category.TopCat.Cech.Refinement"
+          ]
+        }
+      ]
+    },
+    "remote_head_seen": "130523811f55c80f533e6024e190b945755f93c5",
+    "status": "source-read; genuine actual FundamentalGroupoid open-cover colimit/naturality; no M3 compile/axiom audit/replay",
+    "license": {
+      "spdx": "Apache-2.0",
+      "source": "pinned root LICENSE and file headers"
+    }
+  },
+  "mathcommunity/oai-math-revised": {
+    "repo": "mathcommunity/oai-math-revised",
+    "revisions": {
+      "d25fae85c2f5ce5aadac40fb2b4c2d332b393d1c": []
+    },
+    "status": "prior exact immutable subtree comparison; ArtinGroups tree equals openai4eaee; no new build/audit/replay",
+    "artin_tree": "0b8f7c175022e4696404bb2bbabf12746f899d14",
+    "license": {
+      "spdx": "Apache-2.0",
+      "source": "prior pinned source inspection"
+    }
+  }
+}

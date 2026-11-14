@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "scope": "M3 other-repository source search; no proof source imported, copied or accepted",
+  "date": "2026-11-14",
+  "source_inspected_repositories": [
+    {
+      "repository": "https://github.com/qinz1yang/differential-geometry",
+      "commit": "13c41a632efb8fbf93101c8a20f2a9214ab33240",
+      "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+      "mathlib_commit": "c55e6e786f49471c72fbddbec5415808896aec1e",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "sha256": "be83216efed91ebd23ade778067773b9c73c02b19b6c91f2a69ffc8c69c9c041",
+          "path": "DifferentialGeometry/Topology/VanKampen/FullGroupoid.lean"
+        },
+        {
+          "sha256": "f52fad9d479dcd87c3fba723ebd3f23f9126ed0e96abdd929deb652c84c94f0e",
+          "path": "DifferentialGeometry/Topology/VanKampen/HomotopyInvariance.lean"
+        },
+        {
+          "sha256": "129dd585feb29fec36c5ecfd1f40aa9dac803d3a04b0c6ad09d6b969eac1148b",
+          "path": "DifferentialGeometry/Topology/VanKampen/GroupoidTelescope.lean"
+        },
+        {
+          "sha256": "91cdeac8b4a7436eb12e5f9300889fb508cd58c7da33752fe9efcfa12442cb68",
+          "path": "DifferentialGeometry/Topology/VanKampen/CellIdentity.lean"
+        },
+        {
+          "sha256": "ddb296d4b6419684a3159c1b5c157025d8da4e1f15a621e5ce4d79d86c68eb9f",
+          "path": "DifferentialGeometry/Topology/VanKampen/HomotopyGrid.lean"
+        },
+        {
+          "sha256": "0a17d90a0d7420a1c88df6e541f43ca2b5024387ce114394c8944ffd2bbcc985",
+          "path": "DifferentialGeometry/Topology/VanKampen/CoveredPath.lean"
+        },
+        {
+          "sha256": "673ce31151378f925f18d744eb3d88c57fb4931ff63d6bf5faa437de6fd9918d",
+          "path": "DifferentialGeometry/Topology/VanKampen/Subdivision.lean"
+        },
+        {
+          "sha256": "48a41e5fa68dc510482e419fc77159b88b2986b48f5aece3308c46237ca729f9",
+          "path": "DifferentialGeometry/Topology/VanKampen/Evaluation.lean"
+        },
+        {
+          "path": "DifferentialGeometry/Topology/VanKampen/Pi1FiniteConnectedSum.lean",
+          "sha256": "76e1723220d22675df555e8f35baee523d372b1637e12101d3e5fc4dd9bc0f59",
+          "role": "discovery entrypoint fully read"
+        },
+        {
+          "path": "DifferentialGeometry/Topology/VanKampen/SelectedObjects.lean",
+          "sha256": "b12b921001c689b7f0cdafa37b1de86b44966690baeedcf93ea4ab976419574d",
+          "role": "initial declarations/selected proof passages read; not proposed closure member"
+        }
+      ],
+      "declarations": [
+        "DifferentialGeometry.Topology.VanKampen.seifertVanKampen",
+        "DifferentialGeometry.Topology.VanKampen.fullGroupoidSquareIsPushoutStatement",
+        "DifferentialGeometry.Topology.VanKampen.LocalFunctorData",
+        "DifferentialGeometry.Topology.VanKampen.LocalFunctorData.extension",
+        "DifferentialGeometry.Topology.subsingleton_fundamentalGroup_of_joined",
+        "DifferentialGeometry.Topology.VanKampen.FundamentalGroupoidOn",
+        "DifferentialGeometry.Topology.VanKampen.fundamentalGroupoidMapOn"
+      ],
+      "application_disposition": "Closest actionable candidate: genuine actual-space two-open fundamental-groupoid pushout; alternate generic supplier only; arrangement cover/presentation/equivariance bridges still missing.",
+      "reading_limits": "Read complete FullGroupoid, LocalFunctorData and selected supporting types/proof passages; computed complete 8-module lexical closure, not full semantic review of all eight. Pi1FiniteConnectedSum also read as discovery entrypoint. Initial SelectedObjects declarations also read; that larger module is not proposed as part of FullGroupoid closure.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/rkirov/jacobian-claude",
+      "commit": "73212f7ef2bb46a7884710b18fe1e18b8509e3e5",
+      "lean_toolchain": "leanprover/lean4:v4.30.0",
+      "mathlib_commit": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "Jacobians/SphereTopology/VanKampen.lean",
+          "sha256": "b07d2d7a1ea070c38bcb57678b1154ed9eec56240ed04db99caed793748b3d70"
+        },
+        {
+          "path": "Jacobians/SphereTopology/SphereSimplyConnected.lean",
+          "sha256": "8076ec2f41d92899dc46699ea2dc29ebd54cb54a9256b099d066350861cbdaca"
+        }
+      ],
+      "declarations": [
+        "Jacobians.RiemannSphere.TwoOpenVanKampen",
+        "Jacobians.RiemannSphere.VanKampen.twoOpenVanKampen_holds"
+      ],
+      "application_disposition": "Reject for current comparison: genuine simply-connected-union corollary, not groupoid pushout/presentation.",
+      "reading_limits": "Read complete VanKampen and TwoOpenVanKampen definition; did not inspect complete imported closure.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/kadirhanpolat/pytop",
+      "commit": "46a35a69c4be34b0d503afa171d9c168bba51946",
+      "lean_toolchain": "leanprover/lean4:v4.31.0",
+      "mathlib_commit": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "license": "MIT",
+      "source_files": [
+        {
+          "path": "formal/Formal/VanKampen.lean",
+          "sha256": "32e67efe94dc368773db153e96e67c8557c9914954cc3254a2b4af6a601a10e9"
+        }
+      ],
+      "declarations": [
+        "VanKampen.Pushout",
+        "VanKampen.pushout_universal"
+      ],
+      "application_disposition": "Reject: Pushout is cocone only; theorem assumes factor u and both factoring equations; no topological space or actual universal existence.",
+      "reading_limits": "Read complete file and package metadata.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/adamtopaz/OrlikSolomon",
+      "commit": "1568c3994d24e53d39471ffe810cb076cfbccc8c",
+      "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+      "mathlib_commit": "6db5db0d2279846cc8fb25901bd53221d37a77d8",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "OrlikSolomon/MainTheorem.lean",
+          "sha256": "24f47a2772872958bb703da1ce0494c06b23adc58f7f3383bd7fe27a2477ac16"
+        },
+        {
+          "path": "OrlikSolomon/Interface/ProjectiveSpace.lean",
+          "sha256": "78b0e2e88c2265525045bc1da6afb6dc55aeaa4092b7c22a3b25f60663a31ca3"
+        },
+        {
+          "path": "OrlikSolomon/Interface/ProjectiveComplement.lean",
+          "sha256": "79e62b94158f44ced96a8456db1d335067ac56ddbdb6e308a38b34c4e3c8fab8"
+        }
+      ],
+      "declarations": [
+        "OrlikSolomon.MainTheorem.projectiveSpace",
+        "OrlikSolomon.MainTheorem.HyperplaneArrangement",
+        "OrlikSolomon.MainTheorem.orlikSolomon"
+      ],
+      "application_disposition": "Reject for M3: scheme/projective complement and cohomology-theory algebra equivalence, not coordinate-topology fundamental groupoid or Salvetti.",
+      "reading_limits": "Selected exact definitions/theorem types; token searches of interface/main/book files; no complete proof or cohomology implementation audit.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/DongzheZheng/Suciu-s-Chen-ranks-conjecture",
+      "commit": "3a84cf4619f2c17e55f2e05214e9638e8d3b7634",
+      "lean_toolchain": "leanprover/lean4:v4.29.0",
+      "mathlib_commit": "8a178386ffc0f5fef0b77738bb5449d50efeea95",
+      "license": "No LICENSE/COPYING or license notice found in tracked root/README/inspected source; reuse permission not established",
+      "source_files": [
+        {
+          "path": "ChenRanks/ArrangementObjects.lean",
+          "sha256": "2102b4ef5b7494ee8aa4c6d4563fc625f9205a68e270f26c1442d4f6af9e354d"
+        },
+        {
+          "path": "ChenRanks/ArrangementComplementBallCover.lean",
+          "sha256": "d21f2c56c4fbc74a3dafaa7250237aea538270be88edbdf96daaa106957dc422"
+        },
+        {
+          "path": "ChenRanks/ArrangementPolygonalPathHomotopy.lean",
+          "sha256": "24927934aa93a358fdeb802abe03d978d678e82108d4dd54754a6ed3358548f0"
+        }
+      ],
+      "declarations": [
+        "ChenRanks.AffineArrangement",
+        "ChenRanks.AffineArrangement.Complement",
+        "ChenRanks.AffineArrangement.mem_actualComplementBallBaseSet_at",
+        "ChenRanks.AffineArrangement.actualPolygonalApproximationHomotopy"
+      ],
+      "application_disposition": "Actual-space near match; no M3 comparison or equivariance supplier found. Coordinate/topological transport possible after new complexification bridge; ball cover duplicates mathlib local convex facts, polygonal paths do not give groupoid faithfulness. No import recommended.",
+      "reading_limits": "Read ArrangementObjects and BallCover fully, polygonal construction/theorem and selected path types; global relevant-token search, not full cohomology or headline theorem audit.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/siddhartha-gadgil/Polylean",
+      "commit": "b2379c538307b2ce4a9f9969587232f9d94dd438",
+      "lean_toolchain": "leanprover/lean4:v4.19.0-rc3",
+      "mathlib_commit": "ff99cdaecce8cab2fcc3d3828ab7f79717fbf77a",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "Complexes/Constructions/FundamentalGroupoid.lean",
+          "sha256": "c0def3633a32b17705036f75bf7c2e2d8f71bafe23ccd0ec8b2487372f71a1ec"
+        },
+        {
+          "path": "Complexes/Structures/CombinatorialTwoComplex.lean",
+          "sha256": "d6601f9511510fcbb294f46b382fc4ffd5da9fbdb0509f560698180766869ad8"
+        }
+      ],
+      "declarations": [
+        "FundamentalGroupoid (instance for CombinatorialTwoComplex)",
+        "CombinatorialTwoComplex",
+        "Path.Homotopy (combinatorial)"
+      ],
+      "application_disposition": "Reject as comparison: literal combinatorial path/relator quotient, no realization or map to topological FundamentalGroupoid; risks inversion convention for positive crossings.",
+      "reading_limits": "Read both files fully; no build or modern-API port.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/deancureton/sphere-six-complex",
+      "commit": "b783b990d46c5f5ce02a4ecbbb2c02408b452cde",
+      "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+      "mathlib_commit": "6b7abb3c7686292736be2955bd3eb9ebf63b456a",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "ForMathlib/AlgebraicTopology/FundamentalGroupoid/Equiv.lean",
+          "sha256": "b5cf73e847a99d7a93c263b0d87b96c64c150c2698af8ecc8582b6e662afc95e",
+          "local_evidence": "/tmp/m3-other-raw/sphere-equiv.txt"
+        }
+      ],
+      "declarations": [
+        "fundamentalGroupMulEquivOfHomotopyEquiv"
+      ],
+      "application_disposition": "Reject duplicate wrapper: it assumes actual homotopy equivalence e and uses already pinned mathlib equivOfHomotopyEquiv.",
+      "reading_limits": "Read entire one source file plus toolchain/license/manifest raw files; no broader source review.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/kangxyz/quillen-k-theory",
+      "commit": "c561118b7795eb9780be9ed391c3251d6a4d0afd",
+      "lean_toolchain": "leanprover/lean4:v4.34.1",
+      "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "Quillen/Topology/Realization/HomotopyBridge.lean",
+          "sha256": "e529fa25164d8b0718af963f0b9a1b59c0ad151606bc02af7d6e6e575ddd904c",
+          "local_evidence": "/tmp/m3-other-raw/nerve-quillen.txt"
+        }
+      ],
+      "declarations": [
+        "SSet.realizationSimplicialHomotopy",
+        "CategoryTheory.classifyingSpaceNaturalTransformationHomotopy"
+      ],
+      "application_disposition": "Potential later simplicial-to-topological homotopy infrastructure; not actual complement-to-nerve equivalence. No current supplier recommended. Colib states adaptation from exact Quillen SHA.",
+      "reading_limits": "Read source declarations and selected proofs; no complete cylinder/realization closure audit.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/kangxyz/colib",
+      "commit": "cf26c9d5d47a6f545202afedc4967f84f483a809",
+      "lean_toolchain": "leanprover/lean4:v4.35.0",
+      "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "Colib/Topology/Realization/HomotopyBridge.lean",
+          "sha256": "b3f46614e2b9f657eb7cfcf3f93e480c81a212f4dcae9af771c23122fe94b7f5",
+          "local_evidence": "/tmp/m3-other-raw/nerve-colib.txt"
+        }
+      ],
+      "declarations": [
+        "SSet.realizationSimplicialHomotopy",
+        "CategoryTheory.classifyingSpaceNaturalTransformationHomotopy"
+      ],
+      "application_disposition": "Potential later simplicial-to-topological homotopy infrastructure; not actual complement-to-nerve equivalence. No current supplier recommended. Colib states adaptation from exact Quillen SHA.",
+      "reading_limits": "Read source declarations and selected proofs; no complete cylinder/realization closure audit.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/facebookresearch/atlas-lean",
+      "commit": "219463bef604b0624fc2fc623a75a77678ce10e7",
+      "lean_toolchain": "leanprover/lean4:v4.35.0",
+      "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "license": "LICENSE contains Apache-2.0 text preceded by ML-use notice; no reuse performed or interpretation asserted",
+      "source_files": [
+        {
+          "path": "v1/Atlas/Buildings/code/Reflection/HyperplaneChambers.lean",
+          "sha256": "c04c2b23b50e53258089b876256a2b0062e799fcdbef26802e3338bae4871f74",
+          "local_evidence": "/tmp/m3-other-raw/atlas-hyperplanes.txt"
+        }
+      ],
+      "declarations": [
+        "AffineHyperplane",
+        "HyperplaneArrangement",
+        "HyperplaneArrangement.Chamber",
+        "HalfSpaceConvex",
+        "HalfSpaceOpen"
+      ],
+      "application_disposition": "Literal real affine arrangement/chamber definitions; reject for M3 supplier: no complex complement/groupoid comparison in inspected file, basic convexity/openness already mathlib.",
+      "reading_limits": "Read complete short hyperplane file plus root toolchain/license/manifest; no other Atlas proofs reviewed.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/SauersML/group-approximation",
+      "commit": "b4cbab68177c23556f0db49f8a45a431729f6e23",
+      "lean_toolchain": "leanprover/lean4:v4.32.0",
+      "mathlib_commit": "81a5d257c8e410db227a6665ed08f64fea08e997",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "GroupApproximation/GGT/VanKampen/NullWordDisc.lean",
+          "sha256": "3f0d3138f940e526b1699e0df92844907d823a927e95b84f0edb63ce071e435f"
+        }
+      ],
+      "declarations": [
+        "GroupApproximation.GGT.VanKampen.NullWordDisc.shape",
+        "GroupApproximation.GGT.VanKampen.NullWordDisc.outer_word"
+      ],
+      "application_disposition": "Reject topological-use inference: relative group-presentation van Kampen diagrams, not topological open-cover theorem or hyperplane complement.",
+      "reading_limits": "Read opening definitions and outer_word proof only; search located many diagram files, which were not thereby read or verified.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    },
+    {
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+      "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+      "mathlib_commit": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+      "license": "Apache-2.0",
+      "source_files": [
+        {
+          "path": "Mathlib/AlgebraicTopology/FundamentalGroupoid/InducedMaps.lean",
+          "sha256": "4b13ebc68c66003195c61c49f7b762fc0362c16b54ef152cf1a26e85ba5b818b"
+        },
+        {
+          "path": "Mathlib/Analysis/Convex/Contractible.lean",
+          "sha256": "7e5005995c115cef32a06e1af251c2949a2aad0ede08a7e50c2e33a4efc6a7c1"
+        }
+      ],
+      "declarations": [
+        "FundamentalGroupoidFunctor.equivOfHomotopyEquiv",
+        "FundamentalGroupoidFunctor.homotopicMapsNatIso",
+        "Convex.contractibleSpace"
+      ],
+      "application_disposition": "Existing pinned API: directly useful after actual complement/model homotopy-equivalence or convex-cover construction; not the missing geometric comparison. No new proof source added.",
+      "reading_limits": "Read exact declaration/proof portions and searched existing target directories; no new standalone verification.",
+      "new_proof_source_imported_or_copied": false,
+      "compiled_here": false,
+      "axiom_audited_here": false,
+      "kernel_replayed_here": false,
+      "accepted_here": false
+    }
+  ],
+  "search_hit_repositories_not_equated_with_use": [
+    {
+      "repository": "https://github.com/AxiomMath/CFSG",
+      "indexed_commits": [
+        "5437cdc31389dd9aeaa5c2a9465a4e164f8dea33"
+      ]
+    },
+    {
+      "repository": "https://github.com/AxiomMath/DedekindZetaZeroFree",
+      "indexed_commits": [
+        "09afbb4ce6570c1615d58509dc197fc9f0956b7d"
+      ]
+    },
+    {
+      "repository": "https://github.com/AxiomMath/Stacks",
+      "indexed_commits": [
+        "c496df0d9beea9deaeabcea8492605f9a0a2313b"
+      ]
+    },
+    {
+      "repository": "https://github.com/LeanPool/lean-pool",
+      "indexed_commits": [
+        "7f2d9d207a1d28318c60a44c7a92737c98156221"
+      ]
+    },
+    {
+      "repository": "https://github.com/Qiuzhen-CFSG/CFSG",
+      "indexed_commits": [
+        "0c6635528a02dd46f2e93e2ade0c4ac647ad1eb7"
+      ]
+    },
+    {
+      "repository": "https://github.com/Robertboy18/PDEAtlas",
+      "indexed_commits": [
+        "344e82678378b5717de5bedef592a912ee029ce4"
+      ]
+    },
+    {
+      "repository": "https://github.com/SauersML/group-approximation",
+      "indexed_commits": [
+        "b4cbab68177c23556f0db49f8a45a431729f6e23"
+      ]
+    },
+    {
+      "repository": "https://github.com/TauCetiProject/TauCeti",
+      "indexed_commits": [
+        "130523811f55c80f533e6024e190b945755f93c5"
+      ]
+    },
+    {
+      "repository": "https://github.com/adamtopaz/OrlikSolomon",
+      "indexed_commits": [
+        "1568c3994d24e53d39471ffe810cb076cfbccc8c"
+      ]
+    },
+    {
+      "repository": "https://github.com/apnelson1/Matroid",
+      "indexed_commits": [
+        "9f17014947dabcee1198f99f81f7b38d3be2a5e8"
+      ]
+    },
+    {
+      "repository": "https://github.com/caiusdfolkerts/lean",
+      "indexed_commits": [
+        "4e40a35e9894c584de3c7aa34a3e6b0749a3929d"
+      ]
+    },
+    {
+      "repository": "https://github.com/cmbant/reasoner",
+      "indexed_commits": [
+        "b98a1a74acb7e131b2e25c93511d88a53f0cfcfa"
+      ]
+    },
+    {
+      "repository": "https://github.com/dzackgarza/lean-categories",
+      "indexed_commits": [
+        "064b5cfdae80fd27c7af1b0c9a7a8bbc5547e55b"
+      ]
+    },
+    {
+      "repository": "https://github.com/facebookresearch/atlas-lean",
+      "indexed_commits": [
+        "219463bef604b0624fc2fc623a75a77678ce10e7"
+      ]
+    },
+    {
+      "repository": "https://github.com/formal-arithmetic-geometry/weil-conjectures",
+      "indexed_commits": [
+        "c63c75a53b7da88c4403dcdc5b7b60bc56121bf7"
+      ]
+    },
+    {
+      "repository": "https://github.com/frenzymath/PoincareConjecture",
+      "indexed_commits": [
+        "62db01af9388dc1d9b56b66d6674f4c09b2318a2"
+      ]
+    },
+    {
+      "repository": "https://github.com/fxeqxmulfx/transformer",
+      "indexed_commits": [
+        "d51aa4229b6178210aff831ebcffa2361164a950"
+      ]
+    },
+    {
+      "repository": "https://github.com/kadirhanpolat/pytop",
+      "indexed_commits": [
+        "46a35a69c4be34b0d503afa171d9c168bba51946"
+      ]
+    },
+    {
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "indexed_commits": [
+        "6526be50929d52688b64ed3fdc96be4d04507415"
+      ]
+    },
+    {
+      "repository": "https://github.com/leanprover-community/sphere-eversion",
+      "indexed_commits": [
+        "33ab3d626854a0f0f04ed5772e3102d652e96475"
+      ]
+    },
+    {
+      "repository": "https://github.com/marpaia/crnt-lean",
+      "indexed_commits": [
+        "7386777488a41efd92e6abc2bccf889fb611660e"
+      ]
+    },
+    {
+      "repository": "https://github.com/math-proof/lemma",
+      "indexed_commits": [
+        "d11e6179cdf04f9aa8539166bbf6f26778f3e641"
+      ]
+    },
+    {
+      "repository": "https://github.com/mo271/FormalBook",
+      "indexed_commits": [
+        "7df264a4d5e57f9036acdf85f7a2702b3ad82a06"
+      ]
+    },
+    {
+      "repository": "https://github.com/paulklemstine/Lean",
+      "indexed_commits": [
+        "97c0b27619bf5070a44d5eda332784c5f979af6a"
+      ]
+    },
+    {
+      "repository": "https://github.com/platypii/integer-mult-bounds-lean",
+      "indexed_commits": [
+        "aaf10926643826a69f868f7e0694cc34cad25060"
+      ]
+    },
+    {
+      "repository": "https://github.com/qinz1yang/differential-geometry",
+      "indexed_commits": [
+        "13c41a632efb8fbf93101c8a20f2a9214ab33240"
+      ]
+    },
+    {
+      "repository": "https://github.com/rkirov/jacobian-claude",
+      "indexed_commits": [
+        "73212f7ef2bb46a7884710b18fe1e18b8509e3e5"
+      ]
+    },
+    {
+      "repository": "https://github.com/yuma-mizuno-lean/Mei",
+      "indexed_commits": [
+        "318d6e772bda1bfb3780c46cc18f209b5c0dbafb"
+      ]
+    }
+  ],
+  "query_result_files": [
+    "/tmp/milestone3-other-search.json",
+    "/tmp/m3-search-round2.json"
+  ],
+  "qinz_closure_inventory": "/tmp/m3-qinz-fullgroupoid-closure.json"
+}

@@ -1,0 +1,2331 @@
+{
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.IsFine.subpath_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMapNatTrans_app"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_convexComb_pt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Map.0.TauCeti.TopCat.cechMapNatTrans._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_eq_eqToHom"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechDiagram_obj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.mk_mem_iSup_im"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+      "name": "TauCeti.exists_pos_forall_dist_lt_exists_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_congr"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glueObj.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechTopDiagram_map_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechRefinement_comp_inclusion_assoc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "TauCeti.FundamentalGroupoid.functor_ext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.segVal.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+      "name": "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glueObj._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechIntersection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.CechIndex.mem_map_obj_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMapNatTrans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.comp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.conj_of_isAdmissible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.segVal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.CechIndex.le_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.mem_Icc_pt_succ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.isArrowIn_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechIntersection.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.CechIndex.mem_map_obj_iff._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glue._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechInclusionNatTrans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_comp_eq_of_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechIntersection_le_refinement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_right"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.exists_isFine._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.exists_mem_cechIntersection_singleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechRefinementNatTrans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Map.0.TauCeti.TopCat.cechMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.mem_cechIntersection._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechTopDiagram_map_comp_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.abs_sub_pt_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechCocone_pt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_mono"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.CechIndex.singleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechIntersection_mono"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.isColimitCechCocone._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechTopDiagram"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechCocone_\u03b9_app"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_eq_of_homotopy"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapCocone_pt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.map_inclusion_comp_coconeLeg"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.inv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsAdmissible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechDiagram"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechRefinement"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_mul._proof_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMap_comp_inclusion_assoc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_pt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.isColimitCechCocone._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "TauCeti.FundamentalGroupoid.eq_glue"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "TauCeti.FundamentalGroupoid.glue"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechInclusion_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapCocone"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapNatTrans_app"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map.0.TauCeti.FundamentalGroupoid.cechMapNatTrans.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.obj_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMap_comp_cocone_assoc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.convexComb_mem_Icc_pt"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq._proof_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.of_isSimplyConnected"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.CechIndex.map_obj_singleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glue._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_eq_locVal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.conj_of_isAdmissible_of_isArrowIn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_congr"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechOpenDiagram_obj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.segVal.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glueObj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapCocone_\u03b9_app"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.mem_cechIntersection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_10"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.CechIndex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_pt._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechCocone.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.mapsTo_cechIntersection"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_pt._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_eq_eqToHom"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_subpath_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsAdmissible.inv_comp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.CechIndex.map"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_8"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechTopDiagram_obj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.exists_isFine"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapNatTrans.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsAdmissible.isArrowIn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_6"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "Set.Icc.addNSMul.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Map.0.TauCeti.TopCat.cechMap._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechRefinementNatTrans_app"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechDiagram.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechOpenDiagram"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapCocone.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.mk_concat_mem_iSup_im"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_self"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechInclusionNatTrans_app"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map_obj_singleton._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMap_comp_cocone"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechOpenDiagram_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.isColimit_desc_cechMapCocone"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.exists_isFine_homotopy"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.CechIndex.le_iff._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_congr_index"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "TauCeti.FundamentalGroupoid.glue_obj_mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glue._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.mem_cechIntersection._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechCocone"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.isColimitCechCocone._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_mul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.cechRefinementNatTrans._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "name": "TauCeti.FundamentalGroupoid.cechMapNatTrans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechRefinement_comp_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "Path.exists_range_subset_homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right._proof_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMap_comp_inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.mem_Icc_pt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.exists_cechIntersection_singleton_mem_nhds"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_mul"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMap"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_congr"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.target_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.IsFine"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq._proof_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_eq_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_eq_liftN"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_eq_of_simplyConnected"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMap.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.map_subtypeVal_eq_cechCocone_\u03b9_app"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "name": "TauCeti.TopCat.cechRefinement.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "name": "TauCeti.TopCat.cechMap_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.CechIndex.coe_singleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right._proof_1_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_eq_locVal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechIntersection_singleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechInclusion"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_cell"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.FundamentalGroupoid.exists_isAdmissible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "name": "TauCeti.TopCat.cechTopDiagram_map_comp_inclusion_assoc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.source_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "name": "TauCeti.FundamentalGroupoid.cechDiagram_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "name": "TauCeti.FundamentalGroupoid.isColimitCechCocone"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_right._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "name": "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_refl"
+    }
+  ],
+  "physical_modules": [
+    {
+      "declarations": 30,
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "names": [
+        "TauCeti.TopCat.CechIndex.coe_singleton",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_5",
+        "TauCeti.TopCat.cechInclusionNatTrans",
+        "TauCeti.TopCat.cechTopDiagram_obj",
+        "TauCeti.TopCat.CechIndex.le_iff",
+        "TauCeti.TopCat.cechTopDiagram_map_comp_inclusion_assoc",
+        "TauCeti.TopCat.exists_mem_cechIntersection_singleton",
+        "TauCeti.TopCat.cechOpenDiagram_obj",
+        "TauCeti.TopCat.mem_cechIntersection",
+        "TauCeti.TopCat.cechIntersection_singleton",
+        "TauCeti.TopCat.cechTopDiagram_map_comp_inclusion",
+        "TauCeti.TopCat.CechIndex.le_iff._simp_1",
+        "TauCeti.TopCat.cechInclusion_apply",
+        "TauCeti.TopCat.cechOpenDiagram",
+        "TauCeti.TopCat.cechInclusion",
+        "TauCeti.TopCat.CechIndex.singleton",
+        "TauCeti.TopCat.cechTopDiagram",
+        "TauCeti.TopCat.cechIntersection",
+        "TauCeti.TopCat.cechInclusionNatTrans_app",
+        "TauCeti.TopCat.cechTopDiagram_map_apply",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_2",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_3",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.mem_cechIntersection._simp_1_1",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechIntersection.eq_1",
+        "TauCeti.TopCat.cechIntersection_mono",
+        "TauCeti.TopCat.CechIndex",
+        "TauCeti.TopCat.cechOpenDiagram_map",
+        "TauCeti.TopCat.mem_cechIntersection._simp_1",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_1",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram.0.TauCeti.TopCat.cechOpenDiagram._proof_4"
+      ]
+    },
+    {
+      "declarations": 9,
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "names": [
+        "TauCeti.FundamentalGroupoid.cechDiagram.eq_1",
+        "TauCeti.FundamentalGroupoid.cechCocone_pt",
+        "TauCeti.FundamentalGroupoid.cechDiagram",
+        "TauCeti.FundamentalGroupoid.cechCocone.eq_1",
+        "TauCeti.FundamentalGroupoid.cechDiagram_map",
+        "TauCeti.FundamentalGroupoid.cechCocone",
+        "TauCeti.FundamentalGroupoid.map_subtypeVal_eq_cechCocone_\u03b9_app",
+        "TauCeti.FundamentalGroupoid.cechDiagram_obj",
+        "TauCeti.FundamentalGroupoid.cechCocone_\u03b9_app"
+      ]
+    },
+    {
+      "declarations": 18,
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "names": [
+        "Path.exists_range_subset_homotopic",
+        "TauCeti.FundamentalGroupoid.functor_ext",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.mk_mem_iSup_im",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.isArrowIn_id",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsAdmissible.isArrowIn",
+        "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsAdmissible",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.source_mem",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.inv",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.of_isSimplyConnected",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.conj_of_isAdmissible_of_isArrowIn",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.target_mem",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsAdmissible.inv_comp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.comp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.mk_concat_mem_iSup_im",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.TauCeti.FundamentalGroupoid.IsArrowIn.conj_of_isAdmissible",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration.0.FundamentalGroupoid.exists_isAdmissible"
+      ]
+    },
+    {
+      "declarations": 2,
+      "module": "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+      "names": [
+        "TauCeti.exists_pos_forall_dist_lt_exists_mem",
+        "TauCeti.lebesgue_number_lemma_of_metric_of_mem_nhds"
+      ]
+    },
+    {
+      "declarations": 117,
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "names": [
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_5",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal.eq_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_congr",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift._proof_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_right._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_eq_of_simplyConnected",
+        "TauCeti.FundamentalGroupoid.glue_obj_mk",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_5",
+        "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_pt._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_comp_eq_of_trans",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg._proof_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg._proof_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.IsFine",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_zero",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_eq_liftN",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.exists_isFine_homotopy",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_4",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift.eq_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_eq_eqToHom",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_subpath_trans",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_8",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.exists_isFine._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.IsFine.subpath_mem",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.convexComb_mem_Icc_pt",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal.congr_simp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_mul._proof_1_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_6",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq._proof_1_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_congr_index",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg.eq_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.exists_isFine",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_4",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_7",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_6",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_eq_one",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.colSeg._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._proof_1_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glue._proof_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_congr",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.segVal",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_convexComb_pt",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.abs_sub_pt_le",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glue._proof_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glue._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_cell",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt.eq_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_10",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_eq_locVal",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_congr",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN.eq_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_pt._simp_1_4",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_4",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal.congr_simp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_7",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_refl",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_6",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_trans",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_eq",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.mem_Icc_pt_succ",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.segVal.eq_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_trans._proof_1_6",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_self",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_right",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.map_segVal_eq._proof_1_4",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal_refl",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_mul",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.segVal.congr_simp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right._proof_1_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glueObj.congr_simp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN._proof_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_right._proof_1_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_9",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_pt_left._simp_1_8",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN_mul",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_eq_locVal",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt_mono",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pathVal_eq_eqToHom",
+        "TauCeti.FundamentalGroupoid.glue",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.obj_eq",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.pt",
+        "TauCeti.FundamentalGroupoid.eq_glue",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.liftN",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glueObj",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.glueObj._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.lift_eq_of_homotopy",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.coe_pt",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_8",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.locVal._proof_5",
+        "Set.Icc.addNSMul.congr_simp",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.mem_Icc_pt",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue.0.TauCeti.FundamentalGroupoid.trans_subpath_left._simp_1_3"
+      ]
+    },
+    {
+      "declarations": 15,
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "names": [
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.isColimitCechCocone._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.isColimitCechCocone._proof_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.isColimitCechCocone._proof_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_3",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_5",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.exists_cechIntersection_singleton_mem_nhds",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.map_inclusion_comp_coconeLeg",
+        "TauCeti.FundamentalGroupoid.isColimitCechCocone",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_2",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg_singleton_compat._simp_1_4",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg._proof_1",
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit.0.TauCeti.FundamentalGroupoid.coconeLeg.eq_1"
+      ]
+    },
+    {
+      "declarations": 19,
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "names": [
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_6",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map_obj_singleton._simp_1_1",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_2",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_3",
+        "TauCeti.TopCat.CechIndex.map",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_1",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_4",
+        "TauCeti.TopCat.cechRefinement_comp_inclusion",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.CechIndex.map._proof_5",
+        "TauCeti.TopCat.cechRefinement.congr_simp",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement.0.TauCeti.TopCat.cechRefinementNatTrans._proof_1",
+        "TauCeti.TopCat.CechIndex.map_obj_singleton",
+        "TauCeti.TopCat.cechIntersection_le_refinement",
+        "TauCeti.TopCat.CechIndex.mem_map_obj_iff._simp_1",
+        "TauCeti.TopCat.cechRefinement",
+        "TauCeti.TopCat.cechRefinement_comp_inclusion_assoc",
+        "TauCeti.TopCat.cechRefinementNatTrans_app",
+        "TauCeti.TopCat.CechIndex.mem_map_obj_iff",
+        "TauCeti.TopCat.cechRefinementNatTrans"
+      ]
+    },
+    {
+      "declarations": 11,
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "names": [
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Map.0.TauCeti.TopCat.cechMap._proof_1",
+        "TauCeti.TopCat.cechMap_comp_inclusion_assoc",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Map.0.TauCeti.TopCat.cechMapNatTrans._proof_1",
+        "TauCeti.TopCat.cechMap",
+        "TauCeti.TopCat.cechMap.congr_simp",
+        "TauCeti.TopCat.cechMapNatTrans",
+        "TauCeti.TopCat.cechMapNatTrans_app",
+        "TauCeti.TopCat.cechMap_comp_inclusion",
+        "TauCeti.TopCat.cechMap_apply",
+        "TauCeti.TopCat.mapsTo_cechIntersection",
+        "_private.ArtinChamberVendor.Topology.Category.TopCat.Cech.Map.0.TauCeti.TopCat.cechMap._proof_2"
+      ]
+    },
+    {
+      "declarations": 11,
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "names": [
+        "_private.ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map.0.TauCeti.FundamentalGroupoid.cechMapNatTrans.eq_1",
+        "TauCeti.FundamentalGroupoid.cechMap_comp_cocone_assoc",
+        "TauCeti.FundamentalGroupoid.cechMapNatTrans",
+        "TauCeti.FundamentalGroupoid.cechMapNatTrans_app",
+        "TauCeti.FundamentalGroupoid.cechMap_comp_cocone",
+        "TauCeti.FundamentalGroupoid.cechMapCocone_\u03b9_app",
+        "TauCeti.FundamentalGroupoid.cechMapNatTrans.congr_simp",
+        "TauCeti.FundamentalGroupoid.cechMapCocone.eq_1",
+        "TauCeti.FundamentalGroupoid.cechMapCocone_pt",
+        "TauCeti.FundamentalGroupoid.cechMapCocone",
+        "TauCeti.FundamentalGroupoid.isColimit_desc_cechMapCocone"
+      ]
+    }
+  ],
+  "duplicates": [],
+  "summary": {
+    "all_physical_type_value_universe_parameters_identical": true,
+    "canonical_axioms_checked": true,
+    "canonical_declarations": 232,
+    "distinct_physical_names": 232,
+    "identical_theorem_duplicates": 0,
+    "modules": 9,
+    "physical_occurrences": 232
+  }
+}

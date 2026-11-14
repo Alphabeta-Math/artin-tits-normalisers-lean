@@ -1,0 +1,22 @@
+name = "artin-chambers"
+version = "0.1.0"
+defaultTargets = ["ArtinChambers"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "artin-ribbons"
+path = "../ribbons"
+
+[[require]]
+name = "artin-landmarks"
+path = "../landmarks"
+
+[[lean_lib]]
+name = "ArtinChambers"
+
+[[lean_lib]]
+name = "ArtinChamberVendor"
+srcDir = "vendor"
+leanOptions = { autoImplicit = true }

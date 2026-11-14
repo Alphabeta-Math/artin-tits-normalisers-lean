@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "phase": "replay",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+  "started_at": "2026-11-14T05:12:43.453932+00:00",
+  "modules": [
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+    "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+  ],
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.825070879014675,
+      "log": "00-replay.log",
+      "log_sha256": "f4473770b3d71bd6fb84da5ba2da38d1831af3c653a68f38cc7434d1986299d3"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.712805204995675,
+      "log": "01-replay.log",
+      "log_sha256": "0bafff928a98f8af6fca1a20bd2c59a4405f741c20edafd770495883600d9e4e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.89552282000659,
+      "log": "02-replay.log",
+      "log_sha256": "31fc38d17c305103a7e98bfa22a639864f55eacbf997fa1599062a31e0654520"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.Topology.MetricSpace.Lebesgue"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.699575904000085,
+      "log": "03-replay.log",
+      "log_sha256": "c7d342ce53ceb567d941d6313ad8d79456c38bd20fede0f923c871ca18f20900"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.889658081025118,
+      "log": "04-replay.log",
+      "log_sha256": "4c1b55b5827886aeaba8005983d96b36f8221b57e7b2ef0f3442284e4329bd5d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.834063333022641,
+      "log": "05-replay.log",
+      "log_sha256": "a71c047a31e56b8f12239b96e168f93d9ed876ddfb7a703673f12bd3c5f6bc9c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.632519962993683,
+      "log": "06-replay.log",
+      "log_sha256": "db307288392de9636d91caa16736e815497eb35e5ad1089662a031da7294c4ee"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.782101383985719,
+      "log": "07-replay.log",
+      "log_sha256": "dc672f37bfb0cef4afc95d2617050958b5e7e34926cd7f344fbbdaa965d49b30"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 5.814159842993831,
+      "log": "08-replay.log",
+      "log_sha256": "4a0e887a63842b29390a86c021d61e4e9347808ead496880beda98a78090efc4"
+    }
+  ],
+  "full_landmark_3_proved": false,
+  "scope": "Nine newly relocated TauCeti provider modules; relative to imported Mathlib and accepted parent providers. No independent kernel implementation.",
+  "ended_at": "2026-11-14T05:13:35.683511+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "c13e4e04db078cae4995f7dd5b14c51082ad13f750844c498c7f25498ef83329",
+  "inputs_after_sha256": "c13e4e04db078cae4995f7dd5b14c51082ad13f750844c498c7f25498ef83329"
+}

@@ -1,0 +1,13 @@
+--- upstream/TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean
++++ active/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean
+@@ -5,8 +5,8 @@
+ -/
+ module
+ 
+-public import TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram
+-public import TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue
++public import ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram
++public import ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue
+ 
+ /-!
+ # The groupoid van Kampen theorem

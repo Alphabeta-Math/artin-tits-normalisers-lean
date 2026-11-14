@@ -1,0 +1,258 @@
+{
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "upstream_license": "Apache-2.0",
+  "license_path": "LICENSE.TauCeti",
+  "license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+  "upstream_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "upstream_mathlib": "e8ba86fa9744dd8d90f48c1752bc735f61a4ca81",
+  "target_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "target_mathlib": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "upstream_roots": [
+    "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+    "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+  ],
+  "roots": [
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+  ],
+  "module_count": 9,
+  "complete_tau_closure_count": 12,
+  "topological_order": [
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+    "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+  ],
+  "reused_unchanged_parent_modules": [
+    {
+      "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+      "path": "../vendor/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+      "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean"
+    },
+    {
+      "module": "TauCeti.Topology.UnitInterval",
+      "path": "../vendor/TauCeti/Topology/UnitInterval.lean",
+      "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+      "upstream_path": "TauCeti/Topology/UnitInterval.lean"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Path",
+      "path": "../vendor/TauCeti/Topology/Homotopy/Path.lean",
+      "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+      "upstream_path": "TauCeti/Topology/Homotopy/Path.lean"
+    }
+  ],
+  "source_modifications": "Import paths only; namespaces and all mathematical declarations remain unchanged. Per-file unified patches are retained. No mathematical or proof compatibility ports were needed.",
+  "acceptance_status": "Candidate source record; acceptance is decided by separately source-bound compile, full axiom/physical coverage, exact-module replay and independent statement review records. This provenance file alone does not accept a supplier.",
+  "files": [
+    {
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+      "upstream_module": "TauCeti.Topology.Category.TopCat.Cech.Diagram",
+      "path": "ArtinChamberVendor/Topology/Category/TopCat/Cech/Diagram.lean",
+      "upstream_path": "TauCeti/Topology/Category/TopCat/Cech/Diagram.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Category/TopCat/Cech/Diagram.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/Topology/Category/TopCat/Cech/Diagram.lean.patch",
+      "upstream_sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+      "active_sha256": "cba6a575c843daeefb77f026754e33f4f40b436e6559a541e3099407dd07a41c",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_imports": [
+        "Mathlib.Topology.Category.TopCat.Opens",
+        "Mathlib.Topology.Sets.OpenCover"
+      ],
+      "active_imports": [
+        "Mathlib.Topology.Category.TopCat.Opens",
+        "Mathlib.Topology.Sets.OpenCover"
+      ],
+      "line_count": 145,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+      "path": "ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Diagram.lean.patch",
+      "upstream_sha256": "f3f7ecad8737c028e7aed332f4879d64d9a2131cef78b95d0c6ca74d6bba85ec",
+      "active_sha256": "50180a722b0fb66c752ba1ffaee406ba71fe7ab5c6d8a2cd788f3ee31c2d0ef7",
+      "patch_sha256": "48af9c9a9577f4d689b4c8cc5d5d8eabe8771287dd9211e5c8240517381ac83b",
+      "original_imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+        "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "active_imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "line_count": 101,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "path": "ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean.patch",
+      "upstream_sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+      "active_sha256": "1df069a0545216aca8e7decaf1bf15065db34a29429d7241eb642eeee2d4b1fa",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+        "TauCeti.Topology.Homotopy.Path"
+      ],
+      "active_imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+        "TauCeti.Topology.Homotopy.Path"
+      ],
+      "line_count": 356,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+      "upstream_module": "TauCeti.Topology.MetricSpace.Lebesgue",
+      "path": "ArtinChamberVendor/Topology/MetricSpace/Lebesgue.lean",
+      "upstream_path": "TauCeti/Topology/MetricSpace/Lebesgue.lean",
+      "original_path": "upstream-original/TauCeti/Topology/MetricSpace/Lebesgue.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/Topology/MetricSpace/Lebesgue.lean.patch",
+      "upstream_sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+      "active_sha256": "b8275adb018c482de7f94badc13a399e51d6cef918dd502603525fc8674bf290",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_imports": [
+        "Mathlib.Topology.MetricSpace.Basic",
+        "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+      ],
+      "active_imports": [
+        "Mathlib.Topology.MetricSpace.Basic",
+        "Mathlib.Topology.MetricSpace.Pseudo.Lemmas"
+      ],
+      "line_count": 69,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "path": "ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Glue.lean.patch",
+      "upstream_sha256": "a2ba1b2fb84296ee7bff70ff525d7c3c057aa7d85af1eb39a4c7965938b80377",
+      "active_sha256": "db45f1a813c5a62f1970517a8290aac022dc52cb7c212274a334b7982987e3f8",
+      "patch_sha256": "f73a78b54975b5d6339a1c02004e11c263e2ca832b83c46eba51fef78c944cff",
+      "original_imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+        "TauCeti.Topology.MetricSpace.Lebesgue",
+        "Mathlib.Analysis.Convex.Contractible",
+        "Mathlib.CategoryTheory.Functor.OfSequence"
+      ],
+      "active_imports": [
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+        "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+        "Mathlib.Analysis.Convex.Contractible",
+        "Mathlib.CategoryTheory.Functor.OfSequence"
+      ],
+      "line_count": 705,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+      "path": "ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Colimit.lean.patch",
+      "upstream_sha256": "73a0bbcd052c6988eac1fedc40cc3b1d0b124d9d16aed8bed17859e1b78a4d21",
+      "active_sha256": "95b7af185e55dc85615e818a29e4fe17d665925206c3620816458e68dee7a966",
+      "patch_sha256": "113d86213eee7d0eb8957511fbdd719b84ab2462395d79dcd3cd98027d963945",
+      "original_imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+      ],
+      "active_imports": [
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue"
+      ],
+      "line_count": 154,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+      "upstream_module": "TauCeti.Topology.Category.TopCat.Cech.Refinement",
+      "path": "ArtinChamberVendor/Topology/Category/TopCat/Cech/Refinement.lean",
+      "upstream_path": "TauCeti/Topology/Category/TopCat/Cech/Refinement.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Category/TopCat/Cech/Refinement.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/Topology/Category/TopCat/Cech/Refinement.lean.patch",
+      "upstream_sha256": "91b2b9985603187a4a6b7c2fb025a5bf72725d0a1725523c79861add35972a86",
+      "active_sha256": "fdc6d849422b0ce0219215c4da849b555380110a9c6edc4d8da80a6de3cb1798",
+      "patch_sha256": "19da781448e8b20adf80d0edad79dd176a401e1a554d8bb88b3438ce6795f4d5",
+      "original_imports": [
+        "TauCeti.Topology.Category.TopCat.Cech.Diagram",
+        "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "active_imports": [
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "line_count": 117,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+      "upstream_module": "TauCeti.Topology.Category.TopCat.Cech.Map",
+      "path": "ArtinChamberVendor/Topology/Category/TopCat/Cech/Map.lean",
+      "upstream_path": "TauCeti/Topology/Category/TopCat/Cech/Map.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Category/TopCat/Cech/Map.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/Topology/Category/TopCat/Cech/Map.lean.patch",
+      "upstream_sha256": "ef1d358f959a44be06e126ed69e2c485a94c4e81c0783c995df1cd566da669bc",
+      "active_sha256": "3248aad5641e06e15ff6b1154bbf9befbe7d5c0d649b2ab2fdbc311aac847b80",
+      "patch_sha256": "33dc82bd323dd0a9a7d3d40e4a0564a51019882f6a1d7e9954b67111df4aa8b0",
+      "original_imports": [
+        "TauCeti.Topology.Category.TopCat.Cech.Refinement",
+        "TauCeti.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "active_imports": [
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram"
+      ],
+      "line_count": 99,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    },
+    {
+      "module": "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+      "path": "ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Map.lean",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Map.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroupoid/Cech/Map.lean.txt",
+      "patch_path": "patches/ArtinChamberVendor/AlgebraicTopology/FundamentalGroupoid/Cech/Map.lean.patch",
+      "upstream_sha256": "713f5e404300f9eafb6733957d8ca7f4c0405c5fb781196f205dfaed8e02a8c8",
+      "active_sha256": "791efde8305c2b81ea46a72b3900301e0e4bbdd2ced430b5083c7380c8820377",
+      "patch_sha256": "8d3c193743764e916e4c0a6edf6f2e8e2f1a2f95954c47fe7e6071fb4f51f570",
+      "original_imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+        "TauCeti.Topology.Category.TopCat.Cech.Map"
+      ],
+      "active_imports": [
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map"
+      ],
+      "line_count": 103,
+      "port": "Only imports of the nine newly vendored modules are mechanically relocated from TauCeti to ArtinChamberVendor. Existing TauCeti imports and every declaration namespace, type, hypothesis and proof body are unchanged."
+    }
+  ],
+  "line_count": 1849,
+  "intended_direct_endpoints": [
+    "TauCeti.FundamentalGroupoid.isColimitCechCocone",
+    "TauCeti.FundamentalGroupoid.isColimit_desc_cechMapCocone",
+    "TauCeti.FundamentalGroupoid.glue",
+    "TauCeti.FundamentalGroupoid.map_subtypeVal_comp_glue",
+    "TauCeti.FundamentalGroupoid.eq_glue",
+    "TauCeti.FundamentalGroupoid.iSup_im_map_subtypeVal_eq_top"
+  ]
+}

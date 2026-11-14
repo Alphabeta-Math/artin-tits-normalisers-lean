@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "phase": "build",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+  "started_at": "2026-11-14T05:11:32.589072+00:00",
+  "modules": [
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+    "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+  ],
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "build",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+        "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+        "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+        "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 4.954709123005159,
+      "log": "00-build.log",
+      "log_sha256": "9641e16e2e39c978ab199f58dd445c04e18b312039f86e00d8d1ba7699af817c"
+    }
+  ],
+  "full_landmark_3_proved": false,
+  "scope": "Nine newly relocated TauCeti provider modules; relative to imported Mathlib and accepted parent providers. No independent kernel implementation.",
+  "ended_at": "2026-11-14T05:11:37.566548+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "1d4b737a32bfd7d5aa53337cd62b65231df9fe2ccb70bbc33c0d7950028473ce",
+  "inputs_after_sha256": "1d4b737a32bfd7d5aa53337cd62b65231df9fe2ccb70bbc33c0d7950028473ce"
+}

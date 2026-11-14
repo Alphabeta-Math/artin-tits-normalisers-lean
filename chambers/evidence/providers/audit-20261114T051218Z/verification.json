@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "phase": "audit",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+  "started_at": "2026-11-14T05:12:18.629043+00:00",
+  "modules": [
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Diagram",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+    "ArtinChamberVendor.Topology.MetricSpace.Lebesgue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Glue",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Refinement",
+    "ArtinChamberVendor.Topology.Category.TopCat.Cech.Map",
+    "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+  ],
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ProviderAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+      "exit_code": 0,
+      "duration_seconds": 2.169394991011359,
+      "log": "00-audit.log",
+      "log_sha256": "9e40dcd30f2aaeac82f16e4c2ddd1efe132b9d5af55f13af047633eb431c865f"
+    }
+  ],
+  "full_landmark_3_proved": false,
+  "scope": "Nine newly relocated TauCeti provider modules; relative to imported Mathlib and accepted parent providers. No independent kernel implementation.",
+  "ended_at": "2026-11-14T05:12:20.923869+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "c13e4e04db078cae4995f7dd5b14c51082ad13f750844c498c7f25498ef83329",
+  "inputs_after_sha256": "c13e4e04db078cae4995f7dd5b14c51082ad13f750844c498c7f25498ef83329"
+}

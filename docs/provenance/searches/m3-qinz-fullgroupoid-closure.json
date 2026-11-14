@@ -1,0 +1,47 @@
+{
+  "root": "DifferentialGeometry.Topology.VanKampen.FullGroupoid",
+  "modules": {
+    "DifferentialGeometry.Topology.VanKampen.FullGroupoid": {
+      "sha256": "be83216efed91ebd23ade778067773b9c73c02b19b6c91f2a69ffc8c69c9c041",
+      "path": "DifferentialGeometry/Topology/VanKampen/FullGroupoid.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.HomotopyInvariance": {
+      "sha256": "f52fad9d479dcd87c3fba723ebd3f23f9126ed0e96abdd929deb652c84c94f0e",
+      "path": "DifferentialGeometry/Topology/VanKampen/HomotopyInvariance.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.GroupoidTelescope": {
+      "sha256": "129dd585feb29fec36c5ecfd1f40aa9dac803d3a04b0c6ad09d6b969eac1148b",
+      "path": "DifferentialGeometry/Topology/VanKampen/GroupoidTelescope.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.CellIdentity": {
+      "sha256": "91cdeac8b4a7436eb12e5f9300889fb508cd58c7da33752fe9efcfa12442cb68",
+      "path": "DifferentialGeometry/Topology/VanKampen/CellIdentity.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.HomotopyGrid": {
+      "sha256": "ddb296d4b6419684a3159c1b5c157025d8da4e1f15a621e5ce4d79d86c68eb9f",
+      "path": "DifferentialGeometry/Topology/VanKampen/HomotopyGrid.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.CoveredPath": {
+      "sha256": "0a17d90a0d7420a1c88df6e541f43ca2b5024387ce114394c8944ffd2bbcc985",
+      "path": "DifferentialGeometry/Topology/VanKampen/CoveredPath.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.Subdivision": {
+      "sha256": "673ce31151378f925f18d744eb3d88c57fb4931ff63d6bf5faa437de6fd9918d",
+      "path": "DifferentialGeometry/Topology/VanKampen/Subdivision.lean"
+    },
+    "DifferentialGeometry.Topology.VanKampen.Evaluation": {
+      "sha256": "48a41e5fa68dc510482e419fc77159b88b2986b48f5aece3308c46237ca729f9",
+      "path": "DifferentialGeometry/Topology/VanKampen/Evaluation.lean"
+    }
+  },
+  "externalImports": [
+    "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+    "Mathlib.CategoryTheory.ComposableArrows.Basic",
+    "Mathlib.CategoryTheory.Groupoid",
+    "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic",
+    "Mathlib.Topology.Homotopy.Product",
+    "Mathlib.Topology.MetricSpace.Pseudo.Constructions",
+    "Mathlib.Topology.MetricSpace.Pseudo.Lemmas",
+    "Mathlib.Topology.Subpath"
+  ]
+}

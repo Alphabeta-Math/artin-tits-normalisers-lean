@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "created_at": "2026-11-14T05:14:41.041952+00:00",
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "provenance": "vendor/provenance.json",
+  "provenance_sha256": "167019908d3ec84e54c1ff285fee81d01151094771a3cd6d41659af743028df1",
+  "harness": "ProviderAudit.lean",
+  "harness_sha256": "c89074982ff57085f7ece88e5a4d613cc5f6c143c39064999504c6854c7ab07b",
+  "module_count": 9,
+  "canonical_declarations": 232,
+  "physical_occurrences": 232,
+  "identical_duplicates": 0,
+  "axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_through_replay_inputs_identical": true,
+  "kernel_replay_workers": 1,
+  "replay_mode": "one exact module per official leanchecker process, sequential",
+  "kernel_replay_relative_to_imports": true,
+  "independent_kernel_implementation": false,
+  "independent_statement_reviews_pending": true,
+  "full_landmark_3_proved": false,
+  "full_theorem_1_8_proved": false,
+  "coverage_file": "evidence/providers/coverage.json",
+  "coverage_sha256": "c3fd596349567e2a0b08114346e863f2ec7572069a1d4800ef3ff78a375b5db2",
+  "environment_file": "evidence/providers/environment.json",
+  "environment_sha256": "761fae979c85bcf9698d11808199e37a6c881567aefde31fb8ae0c2c0138d244",
+  "records": {
+    "build": {
+      "record": "evidence/providers/build-20261114T051132Z/verification.json",
+      "sha256": "26c536ba3da56a362d8dbb4aca7112989cd093e689d01059f24eb87c336b3b44"
+    },
+    "audit": {
+      "record": "evidence/providers/audit-20261114T051218Z/verification.json",
+      "sha256": "a1a01460fcd5265578620dbd74e122907019f5ce3f0993cd198cd35172536217"
+    },
+    "replay": {
+      "record": "evidence/providers/replay-20261114T051243Z/verification.json",
+      "sha256": "9711556657ce23d565cff62cc82591ec3de621d6f6f14af2af795532adf8d22f"
+    }
+  },
+  "replay_duration_seconds": 52.08547741203802,
+  "source_ports": "Mechanical import relocation only; no declaration/hypothesis/proof-body change."
+}
