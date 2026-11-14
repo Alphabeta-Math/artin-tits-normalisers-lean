@@ -1,0 +1,23 @@
+{
+  "kind": "source-bound-Theorem1.8-publication",
+  "science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "ci_run_id": 43599459363,
+  "ci_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+  "ci_head_verified_before_metadata_push": true,
+  "clean_CI_status": "pending/in progress at publication",
+  "binding": {
+    "path": "docs/provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/binding.json",
+    "sha256": "bf1cc32e8f073e81f096666c863f557e714f9316413d126b869ac21a301735f8"
+  },
+  "validation": {
+    "path": "docs/provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/validation.json",
+    "sha256": "d407d6e9c4d376da3cd6dca9a6407545a9f9932fd1f820a0305e02934a7dcec5"
+  },
+  "exact_Git_blob_bindings": 1650,
+  "project_source_files": 36,
+  "historical_non_scientific_metadata_differences": [
+    "docs/provenance/GITHUB-PROOF-SOURCES.json"
+  ],
+  "all_frozen_sources_match": true,
+  "Lean_build_audit_or_kernel_replay_executed_in_publication": false
+}

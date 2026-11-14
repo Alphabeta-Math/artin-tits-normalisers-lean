@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "gh",
+    "api",
+    "repos/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363"
+  ],
+  "exit_code": 0,
+  "run_id": 43599459363,
+  "head_sha": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "event": "workflow_dispatch",
+  "workflow": ".github/workflows/deligne.yml",
+  "run_json_sha256": "d5db28ba2f895bb602a7771ab6e81dee4b60df6a68cf075e65dad2c889eb72ac",
+  "head_matches_science_commit": true,
+  "CI_success_claimed": false
+}

@@ -7,7 +7,7 @@
 
 The [exact supplier inventory](deligne/reuse-inventory.json) retains the prior 436 accepted units and adds 12 OAI weight modules plus 16 Colib carrier modules: 464 units from the same three scientific repositories. Three previously accepted Colib closure modules are reused without recounting. [Actual compiled supplier use](../../docs/provenance/deligne/run-20261114T132100Z/supplier-use.json) distinguishes term dependencies from selected modules with no reachable declaration. Original pins, sources, ports, licenses, upstream metadata and real application evidence are retained. Mathlib and Lean remain separately pinned foundations. Historical sections below describe their own earlier frontiers; their pending/unproved statements are not the current status.
 
-Source publication: pending the exact science commit; no source-commit binding is fabricated. Final clean CI is a separate root-owned record; this registry makes no new CI-success claim.
+Source publication: exact Git source binding at `3c389334729dbd37d26bdf52dd808e540aae6d37`. Final clean CI is a separate root-owned record; this registry makes no new CI-success claim.
 <!-- CURRENT-FULL-THEOREM18:END -->
 
 Accepted scientific suppliers: **3 repositories, 464 vendored modules** at the exact revisions below. Mathlib, Lean, transitive Lake dependencies and inspected-only leads are separate categories.

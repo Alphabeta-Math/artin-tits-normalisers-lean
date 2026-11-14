@@ -36334,7 +36334,16 @@
       "sha256": "5b9c1f58867085b8f4d798c235d40a4221c3c8221e45eb3d1d6d4e0c7fecac3f"
     },
     "source_publication": {
-      "status": "pending exact science commit; no Git blob binding fabricated"
+      "binding": {
+        "path": "docs/provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/binding.json",
+        "sha256": "bf1cc32e8f073e81f096666c863f557e714f9316413d126b869ac21a301735f8"
+      },
+      "commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "exact_repository_source_bindings": 1650,
+      "validation": {
+        "path": "docs/provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/validation.json",
+        "sha256": "d407d6e9c4d376da3cd6dca9a6407545a9f9932fd1f820a0305e02934a7dcec5"
+      }
     },
     "supplier_reuse_inventory": {
       "path": "docs/provenance/deligne/reuse-inventory.json",
@@ -106388,6 +106397,20 @@
       "validation": {
         "path": "docs/provenance/publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/validation.json",
         "sha256": "cd780b551d015c2fa1c9d33dd9e03a74349d80e948614f4c5456abe9d25dd2b0"
+      }
+    },
+    {
+      "binding": {
+        "path": "docs/provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/binding.json",
+        "sha256": "bf1cc32e8f073e81f096666c863f557e714f9316413d126b869ac21a301735f8"
+      },
+      "commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "exact_repository_source_bindings": 1650,
+      "milestone_project_source_files": 36,
+      "observation_policy": "Append-only actual Git blob binding; original source observation and all older records remain immutable.",
+      "validation": {
+        "path": "docs/provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/validation.json",
+        "sha256": "d407d6e9c4d376da3cd6dca9a6407545a9f9932fd1f820a0305e02934a7dcec5"
       }
     }
   ]
