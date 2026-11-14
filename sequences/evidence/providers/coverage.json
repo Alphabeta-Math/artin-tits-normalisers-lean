@@ -1,0 +1,42 @@
+{
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+      "name": "FundamentalGroup.map_fundamentalGroupMulEquivOfPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+      "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply"
+    }
+  ],
+  "physical_modules": [
+    {
+      "declarations": 2,
+      "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+      "names": [
+        "FundamentalGroup.map_fundamentalGroupMulEquivOfPath",
+        "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply"
+      ]
+    }
+  ],
+  "duplicates": [],
+  "summary": {
+    "all_physical_type_value_universe_parameters_identical": true,
+    "canonical_axioms_checked": true,
+    "canonical_declarations": 2,
+    "distinct_physical_names": 2,
+    "identical_theorem_duplicates": 0,
+    "modules": 1,
+    "physical_occurrences": 2
+  }
+}

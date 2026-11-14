@@ -1,6 +1,6 @@
 # GitHub proof source ledger
 
-Accepted scientific suppliers: **2 repositories, 403 vendored modules** at the exact revisions below. Mathlib, Lean, transitive Lake dependencies and inspected-only leads are separate categories.
+Accepted scientific suppliers: **2 repositories, 404 vendored modules** at the exact revisions below. Mathlib, Lean, transitive Lake dependencies and inspected-only leads are separate categories.
 
 | Cohort | Repository and revision | Modules | Exact byte and proof record |
 | --- | --- | ---: | --- |
@@ -9,12 +9,15 @@ Accepted scientific suppliers: **2 repositories, 403 vendored modules** at the e
 | landmark1-sign | [TauCetiProject/TauCeti](https://github.com/TauCetiProject/TauCeti/tree/62bbc0596dc3539d488232e4e924a338548ea0a9) `62bbc0596dc3539d488232e4e924a338548ea0a9` | 2 | [landmarks/source-inventory.json](../../landmarks/source-inventory.json); [docs/theorem18/landmarks/github-evidence/run-43498322108/verification.json](../../docs/theorem18/landmarks/github-evidence/run-43498322108/verification.json) |
 | landmark2-positive | [openai/math](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae) `4eaee87548250b2682affda7d05d947c05554bae` | 359 | [ribbons/source-inventory.json](../../ribbons/source-inventory.json); [docs/theorem18/landmarks/github-evidence/run-43516856592/verification.json](../../docs/theorem18/landmarks/github-evidence/run-43516856592/verification.json) |
 | landmark3-cech-supplier | [TauCetiProject/TauCeti](https://github.com/TauCetiProject/TauCeti/tree/62bbc0596dc3539d488232e4e924a338548ea0a9) `62bbc0596dc3539d488232e4e924a338548ea0a9` | 9 | [chambers/evidence/providers/coverage.json](../../chambers/evidence/providers/coverage.json); [chambers/evidence/providers/verification.json](../../chambers/evidence/providers/verification.json) |
+| landmark4-basepoint-extraction | [TauCetiProject/TauCeti](https://github.com/TauCetiProject/TauCeti/tree/62bbc0596dc3539d488232e4e924a338548ea0a9) `62bbc0596dc3539d488232e4e924a338548ea0a9` | 1 | [sequences/evidence/providers/coverage.json](../../sequences/evidence/providers/coverage.json); [sequences/evidence/providers/verification.json](../../sequences/evidence/providers/verification.json) |
 
 The [machine ledger](GITHUB-PROOF-SOURCES.json) records every accepted file’s upstream/local paths and SHA256, preserved originals, compatibility changes, licenses, exact declaration inventories, CI verification inputs and raw search-report locators. Original inventories remain authoritative; this consolidation does not replace or edit them. Seven OAI compatibility ports and the one relocated TauCeti Sign import are explicit. Historical provider provenance saying acceptance was pending is retained; later successful CI/reviews supply acceptance.
 
-Mathlib is pinned to `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9`; Lean is pinned to `v4.36.0-rc2`, commit `b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a`. Every transitive Git dependency revision is recorded from all four Lake manifests. Imported proof terms and build tooling are distinguished by the actual dependency graph. No fresh replay of all mathlib or second independent kernel is claimed.
+Mathlib is pinned to `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9`; Lean is pinned to `v4.36.0-rc2`, commit `b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a`. Every transitive Git dependency revision is recorded from all current Lake manifests. Imported proof terms and build tooling are distinguished by the actual dependency graph. No fresh replay of all mathlib or second independent kernel is claimed.
 
 The mathcommunity/oai-math-revised commit `d25fae85c2f5ce5aadac40fb2b4c2d332b393d1c` has the identical inspected ArtinGroups tree `0b8f7c175022e4696404bb2bbabf12746f899d14` as openai/math. It supplies the same source, not independent proof evidence.
+
+M4 currently adds one accepted importable TauCeti fragment containing exactly two unchanged proof blocks. Its full 651-line original is preserved as inactive provenance; unrelated declarations are not accepted. M4 now has explicit root mathematical acceptance for the full actual-map exact-sequence comparison at all basepoints, including normalized and positive conventions. [Root acceptance](../theorem18/landmarks/milestone4-root-acceptance.json) and [frozen13-file/151-declaration source inventory](../../sequences/source-inventory.json) bind both final independent reviews and the passing13+1exactreplay technical record. Clean M4 CI is pending; full Theorem1.8/asphericity remains unclaimed. Its separate compiled graph/publication metadata follows during CI; previous immutable graphs remain unchanged.
 
 ## Actual compiled proof dependencies through M2
 
@@ -24,7 +27,7 @@ The **through-M2** [compressed graph](dependency-graph.json.gz) recursively reco
 
 ## Inspected candidates and search leads
 
-Every existing source-search report is hash-bound in the JSON with exact repository mentions and original report lines. Source file paths are kept as file locators under their actual repository, never invented repository identities. GitHub Actions checkout, artifact upload and Lean action repositories are indexed at the exact workflow pins as tooling only, alongside this locally authored project. Complete M3 machine candidate and closure inventories are preserved byte-for-byte under [searches/](searches/), with their original temporary locations, SHA256 and author report references. Detailed machine records retain per-file hashes/declarations, dispositions and actual reading/execution limits. Search hits are not mislabeled as read proofs, copied sources, compiled suppliers or accepted mathematics.
+Every existing source-search report is hash-bound in the JSON with exact repository mentions and original report lines. Source file paths are kept as file locators under their actual repository, never invented repository identities. GitHub Actions checkout, artifact upload and Lean action repositories are indexed at the exact workflow pins as tooling only, alongside this locally authored project. Complete M3/M4 machine candidate and closure inventories are preserved byte-for-byte under [searches/](searches/), with their original temporary locations, SHA256 and author report references. Detailed machine records retain per-file hashes/declarations, dispositions and actual reading/execution limits. Search hits are not mislabeled as read proofs, copied sources, compiled suppliers or accepted mathematics.
 
 For earlier reports without a machine inventory, exact file/declaration names, hypotheses, reason for rejection and reading limits remain in the linked original report; the ledger’s extracted mention is an index into that record, not a fabricated complete manual inspection. Repository searches are bounded and negative results are not worldwide absence claims.
 
@@ -36,6 +39,7 @@ For earlier reports without a machine inventory, exact file/declaration names, h
 - [docs/theorem18/landmarks/milestone3-search-coxeter.md](../../docs/theorem18/landmarks/milestone3-search-coxeter.md)
 - [docs/theorem18/landmarks/milestone3-search-openai.md](../../docs/theorem18/landmarks/milestone3-search-openai.md)
 - [docs/theorem18/landmarks/milestone3-search-other.md](../../docs/theorem18/landmarks/milestone3-search-other.md)
+- [docs/theorem18/landmarks/milestone4-search-other.md](../../docs/theorem18/landmarks/milestone4-search-other.md)
 - [docs/theorem18/search-additional.md](../../docs/theorem18/search-additional.md)
 - [docs/theorem18/search-openai.md](../../docs/theorem18/search-openai.md)
 - [docs/theorem18/search-tauceti-mathlib.md](../../docs/theorem18/search-tauceti-mathlib.md)

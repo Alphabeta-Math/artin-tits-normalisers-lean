@@ -1,0 +1,1120 @@
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy _private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.hom_heq_eqToHom_conjugate: ∀
+  {C : Type u_1} [inst : CategoryTheory.Category.{u_2, u_1} C] {X Y : C} (h : X = Y) (f : X ⟶ X),
+  f ≍
+    CategoryTheory.CategoryStruct.comp (CategoryTheory.eqToHom ⋯)
+      (CategoryTheory.CategoryStruct.comp f (CategoryTheory.eqToHom h))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinSequences.StandardMonodromy","name":"_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.hom_heq_eqToHom_conjugate"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy _private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.componentHom_heq_of_value: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  {X Y X' Y' : ArtinNormalisers.Chamber3.AssociateReducedRibbonObject M J},
+  X = X' → Y = Y' → ∀ {f : X ⟶ Y} {g : X' ⟶ Y'}, ↑↑f.hom = ↑↑g.hom → f ≍ g
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardMonodromy","name":"_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.componentHom_heq_of_value"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue_inv: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f : CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)),
+  ArtinNormalisers.Sequence4.componentEndValue M J f⁻¹ = (ArtinNormalisers.Sequence4.componentEndValue M J f)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue_inv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveNormalizerEquiv_label: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  MulOpposite.unop
+      ((ArtinNormalisers.Sequence4.positiveNormalizerEquiv M J x)
+        ((ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv M { indices := J }) r)) =
+    (FundamentalGroup.fundamentalGroupMulEquivOfPath
+        (ArtinNormalisers.Sequence4.projectedBasepointPath M J
+          (ArtinNormalisers.Sequence4.standardBasepointPath M J x)))
+      ((ArtinNormalisers.Sequence4.standardRibbonVertexEquiv M J) (ArtinNormalisers.Sequence4.componentEndOfLoop M J r))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveNormalizerEquiv_label"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.pathBasedEndEquiv: {C : Type u} →
+  [inst : CategoryTheory.Category.{v, u} C] →
+    {X : Type uX} →
+      [inst_1 : TopologicalSpace X] →
+        (F : CategoryTheory.Functor C (FundamentalGroupoid X)) →
+          F.FullyFaithful →
+            (c : C) → {x y : X} → F.obj c = { as := x } → Path x y → CategoryTheory.End c ≃* FundamentalGroup X y
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.pathBasedEndEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv_inclusion: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).comp
+      (ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv M J x).toMonoidHom =
+    (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x).toMonoidHom.comp
+      (ArtinNormalisers.Artin.pureNormalizerInclusion M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv_inclusion"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp_symm_value: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f : (CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J))ᵐᵒᵖ),
+  ↑((ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp M J).symm f) =
+    ArtinNormalisers.Sequence4.componentEndValue M J (MulOpposite.unop f)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp_symm_value"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ArtinNormalisers.Ribbon2.IsRibbon M ↑(ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj
+    ↑(ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj ↑r
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+          (FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+              (ArtinNormalisers.Theorem18.orbitProjection M J
+                (ArtinNormalisers.Sequence4.standardComplementPoint M J)))ᵐᵒᵖ
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom_apply_asHom: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (c : C) {x : X} (h : F.obj c = { as := x })
+  (e : CategoryTheory.End c),
+  ((ArtinNormalisers.Sequence4.basedEndHom F c h) e).asHom =
+    CategoryTheory.CategoryStruct.comp (CategoryTheory.eqToHom ⋯)
+      (CategoryTheory.CategoryStruct.comp (F.map e.asHom) (CategoryTheory.eqToHom h))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom_apply_asHom"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroup_shortExact._simp_1_1: ∀
+  {G : Type u_1} [inst : Group G] {M : Type u_6} [inst_1 : MulOneClass M] {f : G →* M} {x : G}, (x ∈ f.ker) = (f x = 1)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroup_shortExact._simp_1_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelComparison_symm_apply: ∀
+  {A : Type uA} {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (h : H),
+  ↑((ArtinNormalisers.Sequence4.kernelComparison E ρA ρB hcomm j hj hrange).symm h) = E.symm (j h)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelComparison_symm_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positivePureEquiv: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        (x : ArtinNormalisers.Theorem18.Complement M J) →
+          ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+            (FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x)ᵐᵒᵖ
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positivePureEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd_asHom_value: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ↑↑((ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd M J) r).asHom.hom = (↑r)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd_asHom_value"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitMonodromy_op: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J)
+  (γ : FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J) (ArtinNormalisers.Theorem18.orbitProjection M J x)),
+  (ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x) (MulOpposite.op γ) =
+    MulOpposite.unop ((ArtinNormalisers.Landmark1.orbitMonodromy M J x) γ)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitMonodromy_op"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelEquivOfCompatible: {A :
+    Type uA} →
+  {B : Type uB} →
+    {Q : Type uQ} →
+      [inst : Group A] →
+        [inst_1 : Group B] →
+          [inst_2 : MulOneClass Q] →
+            (E : A ≃* B) → (ρA : A →* Q) → (ρB : B →* Q) → ρB.comp E.toMonoidHom = ρA → ↥ρA.ker ≃* ↥ρB.ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelEquivOfCompatible"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.fundamentalGroup_map_changeBasepoint: ∀
+  {X : Type uX} [inst : TopologicalSpace X] {Y : Type uY} [inst_1 : TopologicalSpace Y] (f : C(X, Y)) {x x' : X}
+  (p : Path x x') (g : FundamentalGroup X x),
+  (FundamentalGroup.map f x') ((FundamentalGroup.fundamentalGroupMulEquivOfPath p) g) =
+    (FundamentalGroup.fundamentalGroupMulEquivOfPath (p.map ⋯)) ((FundamentalGroup.map f x) g)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.fundamentalGroup_map_changeBasepoint"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_3: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ⟨ArtinNormalisers.Sequence4.componentEndValue M J
+        (MulOpposite.unop (MulOpposite.op (ArtinNormalisers.Sequence4.componentEndOfLoop M J x))),
+      ⋯⟩ =
+    x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_3"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.parabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy _private.ArtinSequences.EndpointMonodromy.0.ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp._simp_1_1: ∀
+  {G : Type u_1} [inst : Group G] {M : Type u_6} [inst_1 : MulOneClass M] {f : G →* M} {x : G}, (x ∈ f.ker) = (f x = 1)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinSequences.EndpointMonodromy","name":"_private.ArtinSequences.EndpointMonodromy.0.ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp._simp_1_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy ArtinNormalisers.Sequence4.standardReducedRibbonEquiv_monodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+      ((ArtinNormalisers.Sequence4.standardReducedRibbonEquiv M J) r) =
+    (ArtinNormalisers.Ribbon2.reducedRibbonCoxeterProjection M { indices := J }) r
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardMonodromy","name":"ArtinNormalisers.Sequence4.standardReducedRibbonEquiv_monodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.oppositeInverseEquiv_apply: ∀
+  {Q : Type u_3} [inst : Group Q] (q : Qᵐᵒᵖ),
+  (ArtinNormalisers.Sequence4.oppositeInverseEquiv Q) q = (MulOpposite.unop q)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.oppositeInverseEquiv_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv_monodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).comp
+      (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x).toMonoidHom =
+    ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv_monodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.projectedBasepointPath: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        {x : ArtinNormalisers.Theorem18.Complement M J} →
+          Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x →
+            Path
+              (ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+              (ArtinNormalisers.Theorem18.orbitProjection M J x)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.projectedBasepointPath"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedMonodromy: {E : Type u_1} →
+  {X : Type u_2} →
+    {Q : Type u_3} →
+      [inst : TopologicalSpace E] →
+        [inst_1 : TopologicalSpace X] →
+          [inst_2 : Group Q] →
+            [inst_3 : MulAction Q E] → {p : E → X} → IsQuotientCoveringMap p Q → (e : E) → FundamentalGroup X (p e) →* Q
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardReducedRibbonEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J }) ≃*
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+            (ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardReducedRibbonEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.BasepointTransport ArtinNormalisers.Sequence4.coveringMap_basepointTransport: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {e₀ e₁ : E}
+  (hp : IsCoveringMap p) (θ : Path e₀ e₁) (α : FundamentalGroup E e₀),
+  (FundamentalGroup.map { toFun := p, continuous_toFun := ⋯ } e₁)
+      ((FundamentalGroup.fundamentalGroupMulEquivOfPath θ) α) =
+    (FundamentalGroup.fundamentalGroupMulEquivOfPath (θ.map ⋯))
+      ((FundamentalGroup.map { toFun := p, continuous_toFun := ⋯ } e₀) α)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.BasepointTransport","name":"ArtinNormalisers.Sequence4.coveringMap_basepointTransport"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq: ∀
+  {E : Type u_1} {X : Type u_2} {Q : Type u_3} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X]
+  [inst_2 : Group Q] [inst_3 : MulAction Q E] {p : E → X} (hp : IsQuotientCoveringMap p Q) (e : E) (q : Q)
+  (γ : Path.Homotopic.Quotient e (q • e)) (α : FundamentalGroup X (p e)),
+  (FundamentalGroupoid.map { toFun := p, continuous_toFun := ⋯ }).map
+        (have this := γ;
+        this) ≍
+      α.asHom →
+    (hp.fundamentalGroupToMulOpposite ⟨e, ⋯⟩) α = MulOpposite.op q
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveNormalizerEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        (x : ArtinNormalisers.Theorem18.Complement M J) →
+          ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+            (FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+                (ArtinNormalisers.Theorem18.orbitProjection M J x))ᵐᵒᵖ
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveNormalizerEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.subgroupKernelComparison_apply: ∀
+  {A : Type uA} {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (K : Subgroup A) (hK : K = ρA.ker) (a : ↥K),
+  j ((ArtinNormalisers.Sequence4.subgroupKernelComparison E ρA ρB hcomm j hj hrange K hK) a) = E ↑a
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.subgroupKernelComparison_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv_unique: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (F :
+    ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+      FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J)
+        (ArtinNormalisers.Sequence4.standardComplementPoint M J)),
+  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J
+            (ArtinNormalisers.Sequence4.standardComplementPoint M J)).comp
+        F.toMonoidHom =
+      (ArtinNormalisers.Sequence4.standardNormalizerEquiv M J).toMonoidHom.comp
+        (ArtinNormalisers.Artin.pureNormalizerInclusion M J) →
+    F = ArtinNormalisers.Sequence4.standardPureEquiv M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv_unique"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.BasepointTransport ArtinNormalisers.Sequence4.coveringMap_basepointTransport_comp: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {e₀ e₁ : E}
+  (hp : IsCoveringMap p) (θ : Path e₀ e₁),
+  (FundamentalGroup.map { toFun := p, continuous_toFun := ⋯ } e₁).comp
+      (FundamentalGroup.fundamentalGroupMulEquivOfPath θ).toMonoidHom =
+    (FundamentalGroup.fundamentalGroupMulEquivOfPath (θ.map ⋯)).toMonoidHom.comp
+      (FundamentalGroup.map { toFun := p, continuous_toFun := ⋯ } e₀)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.BasepointTransport","name":"ArtinNormalisers.Sequence4.coveringMap_basepointTransport_comp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.subgroupKernelComparison_symm_apply: ∀
+  {A : Type uA} {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (K : Subgroup A) (hK : K = ρA.ker) (h : H),
+  ↑((ArtinNormalisers.Sequence4.subgroupKernelComparison E ρA ρB hcomm j hj hrange K hK).symm h) = E.symm (j h)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.subgroupKernelComparison_symm_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop_mul: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r s : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ArtinNormalisers.Sequence4.componentEndOfLoop M J (r * s) =
+    ArtinNormalisers.Sequence4.componentEndOfLoop M J s * ArtinNormalisers.Sequence4.componentEndOfLoop M J r
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop_mul"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv_label: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  MulOpposite.unop
+      ((ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv M J)
+        ((ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv M { indices := J }) r)) =
+    (ArtinNormalisers.Sequence4.standardRibbonVertexEquiv M J) (ArtinNormalisers.Sequence4.componentEndOfLoop M J r)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv_label"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveNormalizerEquiv_unop: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J) (a : ArtinNormalisers.Artin.normalizerQuotient M J),
+  MulOpposite.unop ((ArtinNormalisers.Sequence4.positiveNormalizerEquiv M J x) a) =
+    ((ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x) a)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveNormalizerEquiv_unop"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f : (CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J))ᵐᵒᵖ),
+  ArtinNormalisers.Ribbon2.ReducedArrow M { indices := J } { indices := J }
+    (ArtinNormalisers.Sequence4.componentEndValue M J (MulOpposite.unop f))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerComparisonAlong_monodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  {x : ArtinNormalisers.Theorem18.Complement M J} (θ : Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).comp
+      (ArtinNormalisers.Sequence4.normalizerComparisonAlong M J θ).toMonoidHom =
+    ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerComparisonAlong_monodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom_congr: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  {F G : CategoryTheory.Functor C (FundamentalGroupoid X)},
+  F = G →
+    ∀ (c : C) {x : X} (hF : F.obj c = { as := x }) (hG : G.obj c = { as := x }),
+      ArtinNormalisers.Sequence4.basedEndHom F c hF = ArtinNormalisers.Sequence4.basedEndHom G c hG
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom_congr"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardRibbonImage_eq: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Chamber3.actualRibbonOrbitEquivalence M J).functor.obj
+      (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J) =
+    { as := ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J) }
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardRibbonImage_eq"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelComparison: {A : Type uA} →
+  {B : Type uB} →
+    {H : Type uH} →
+      {Q : Type uQ} →
+        [inst : Group A] →
+          [inst_1 : Group B] →
+            [inst_2 : Group H] →
+              [inst_3 : MulOneClass Q] →
+                (E : A ≃* B) →
+                  (ρA : A →* Q) →
+                    (ρB : B →* Q) →
+                      ρB.comp E.toMonoidHom = ρA →
+                        (j : H →* B) → Function.Injective ⇑j → j.range = ρB.ker → ↥ρA.ker ≃* H
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelComparison"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) →
+      (x : ArtinNormalisers.Theorem18.Complement M J) →
+        (FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x)ᵐᵒᵖ →*
+          (FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+              (ArtinNormalisers.Theorem18.orbitProjection M J x))ᵐᵒᵖ
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv_apply: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (a : ↥(ArtinNormalisers.Artin.pureNormalizerImage M J)),
+  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+      ((ArtinNormalisers.Sequence4.standardPureEquiv M J) a) =
+    (ArtinNormalisers.Sequence4.standardNormalizerEquiv M J) ((ArtinNormalisers.Artin.pureNormalizerInclusion M J) a)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitMonodromy.congr_simp: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x = ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitMonodromy.congr_simp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv._proof_5: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Artin.pureNormalizerImage M J = (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv._proof_5"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop_inv: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ArtinNormalisers.Sequence4.componentEndOfLoop M J r⁻¹ = (ArtinNormalisers.Sequence4.componentEndOfLoop M J r)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop_inv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue_one: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I), ArtinNormalisers.Sequence4.componentEndValue M J 1 = 1
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue_one"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveNormalizerEquiv_monodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  (ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x).comp
+      (ArtinNormalisers.Sequence4.positiveNormalizerEquiv M J x).toMonoidHom =
+    ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveNormalizerEquiv_monodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardComplementPoint: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → (J : Set I) → ArtinNormalisers.Theorem18.Complement M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardComplementPoint"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Ribbon2.ReducedArrow.congr_simp: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (a a_1 : ArtinNormalisers.Ribbon2.RibbonObject M),
+  a = a_1 →
+    ∀ (a_2 a_3 : ArtinNormalisers.Ribbon2.RibbonObject M),
+      a_2 = a_3 →
+        ∀ (a_4 a_5 : ArtinNormalisers.Artin.Group M),
+          a_4 = a_5 →
+            ArtinNormalisers.Ribbon2.ReducedArrow M a a_2 a_4 = ArtinNormalisers.Ribbon2.ReducedArrow M a_1 a_3 a_5
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Ribbon2.ReducedArrow.congr_simp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp_asHom_value: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ↑↑(MulOpposite.unop ((ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp M J) r)).asHom.hom = ↑r
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp_asHom_value"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelEquivOfCompatible_apply: ∀
+  {A : Type uA} {B : Type uB} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : MulOneClass Q] (E : A ≃* B)
+  (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (a : ↥ρA.ker),
+  ↑((ArtinNormalisers.Sequence4.kernelEquivOfCompatible E ρA ρB hcomm) a) = E ↑a
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelEquivOfCompatible_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop_asHom_value: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ↑↑(ArtinNormalisers.Sequence4.componentEndOfLoop M J r).asHom.hom = ↑r
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop_asHom_value"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.mapEnd_comp: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D] {X : Type uX}
+  [inst_2 : TopologicalSpace X] (F : CategoryTheory.Functor C D) (G : CategoryTheory.Functor D (FundamentalGroupoid X))
+  (c : C),
+  CategoryTheory.Functor.mapEnd c (F.comp G) =
+    (CategoryTheory.Functor.mapEnd (F.obj c) G).comp (CategoryTheory.Functor.mapEnd c F)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.mapEnd_comp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy ArtinNormalisers.Sequence4.standardRibbonVertexEquiv_rawMonodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  (ArtinNormalisers.Landmark1.orbitMonodromy M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+      ((ArtinNormalisers.Sequence4.standardRibbonVertexEquiv M J)
+        (ArtinNormalisers.Sequence4.componentEndOfLoop M J r)) =
+    MulOpposite.op ((ArtinNormalisers.Ribbon2.reducedRibbonCoxeterProjection M { indices := J }) r)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardMonodromy","name":"ArtinNormalisers.Sequence4.standardRibbonVertexEquiv_rawMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerComparisonAlong._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.parabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerComparisonAlong._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp: ∀
+  {Q : Type u_3} [inst : Group Q] {G : Type u_4} [inst_1 : Group G] (f : G →* Qᵐᵒᵖ),
+  ((ArtinNormalisers.Sequence4.oppositeInverseEquiv Q).toMonoidHom.comp f).ker = f.ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop_one: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I), ArtinNormalisers.Sequence4.componentEndOfLoop M J 1 = 1
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop_one"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedOrbitMonodromy._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedOrbitMonodromy._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positivePureEquiv._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.parabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positivePureEquiv._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.BasepointTransport ArtinNormalisers.Sequence4.rawMonodromy_basepointTransport: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {e₀ e₁ : E}
+  {Q : Type u_3} [inst_2 : Group Q] [inst_3 : MulAction Q E] (hp : IsQuotientCoveringMap p Q) (θ : Path e₀ e₁)
+  (α : FundamentalGroup X (p e₀)),
+  (hp.fundamentalGroupToMulOpposite ⟨e₁, ⋯⟩) ((FundamentalGroup.fundamentalGroupMulEquivOfPath (θ.map ⋯)) α) =
+    (hp.fundamentalGroupToMulOpposite ⟨e₀, ⋯⟩) α
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.BasepointTransport","name":"ArtinNormalisers.Sequence4.rawMonodromy_basepointTransport"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedMonodromy_apply: ∀
+  {E : Type u_1} {X : Type u_2} {Q : Type u_3} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X]
+  [inst_2 : Group Q] [inst_3 : MulAction Q E] {p : E → X} (hp : IsQuotientCoveringMap p Q) (e : E)
+  (α : FundamentalGroup X (p e)),
+  (ArtinNormalisers.Sequence4.normalizedMonodromy hp e) α =
+    (MulOpposite.unop ((hp.fundamentalGroupToMulOpposite ⟨e, ⋯⟩) α))⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedMonodromy_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.Landmark4 ArtinNormalisers.Sequence4.theorem_6_7: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J),
+  Nonempty
+      (↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+        FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x) ∧
+    Nonempty
+        (ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+            (ArtinNormalisers.Theorem18.orbitProjection M J x)) ∧
+      (Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+          (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range =
+              (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker ∧
+            Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)) ∧
+        (Function.Injective ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x) ∧
+            (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).range =
+                (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).ker ∧
+              Function.Surjective ⇑(ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x)) ∧
+          (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).comp
+                (ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv M J x).toMonoidHom =
+              (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x).toMonoidHom.comp
+                (ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+            (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).comp
+                (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x).toMonoidHom =
+              ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.Landmark4","name":"ArtinNormalisers.Sequence4.theorem_6_7"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue_mul: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f g : CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)),
+  ArtinNormalisers.Sequence4.componentEndValue M J (f * g) =
+    ArtinNormalisers.Sequence4.componentEndValue M J g * ArtinNormalisers.Sequence4.componentEndValue M J f
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue_mul"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_apply: ∀
+  {I : Type u_4} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (e : ArtinNormalisers.Theorem18.Complement M J)
+  (α : FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J) (ArtinNormalisers.Theorem18.orbitProjection M J e)),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J e) α =
+    (MulOpposite.unop ((ArtinNormalisers.Landmark1.orbitMonodromy M J e) α))⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positivePureEquiv_inclusion: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  (ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x).comp
+      (ArtinNormalisers.Sequence4.positivePureEquiv M J x).toMonoidHom =
+    (ArtinNormalisers.Sequence4.positiveNormalizerEquiv M J x).toMonoidHom.comp
+      (ArtinNormalisers.Artin.pureNormalizerInclusion M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positivePureEquiv_inclusion"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.Landmark4 ArtinNormalisers.Sequence4.landmark_4: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J),
+  Nonempty
+      (↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+        FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x) ∧
+    Nonempty
+        (ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+            (ArtinNormalisers.Theorem18.orbitProjection M J x)) ∧
+      (Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+          (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range =
+              (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker ∧
+            Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)) ∧
+        (Function.Injective ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x) ∧
+            (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).range =
+                (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).ker ∧
+              Function.Surjective ⇑(ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x)) ∧
+          (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).comp
+                (ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv M J x).toMonoidHom =
+              (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x).toMonoidHom.comp
+                (ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+            (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).comp
+                (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x).toMonoidHom =
+              ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.Landmark4","name":"ArtinNormalisers.Sequence4.landmark_4"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J }) ≃*
+          (CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J))ᵐᵒᵖ
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardRibbonVertexEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J) ≃*
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+            (ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardRibbonVertexEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.map_kernel_of_compatible: ∀
+  {A : Type uA} {B : Type uB} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : MulOneClass Q] (E : A ≃* B)
+  (ρA : A →* Q) (ρB : B →* Q), ρB.comp E.toMonoidHom = ρA → Subgroup.map E.toMonoidHom ρA.ker = ρB.ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.map_kernel_of_compatible"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv.congr_simp: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x =
+    ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv.congr_simp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitMonodromy_apply: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J)
+  (γ :
+    (FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+        (ArtinNormalisers.Theorem18.orbitProjection M J x))ᵐᵒᵖ),
+  (ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x) γ =
+    MulOpposite.unop ((ArtinNormalisers.Landmark1.orbitMonodromy M J x) (MulOpposite.unop γ))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitMonodromy_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J) →
+          ArtinNormalisers.Artin.Group M
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_basepointTransport: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  {x : ArtinNormalisers.Theorem18.Complement M J} (θ : Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x)
+  (α :
+    FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+      (ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x)
+      ((FundamentalGroup.fundamentalGroupMulEquivOfPath (ArtinNormalisers.Sequence4.projectedBasepointPath M J θ)) α) =
+    (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J (ArtinNormalisers.Sequence4.standardComplementPoint M J)) α
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_basepointTransport"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv_inclusion: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J
+          (ArtinNormalisers.Sequence4.standardComplementPoint M J)).comp
+      (ArtinNormalisers.Sequence4.standardPureEquiv M J).toMonoidHom =
+    (ArtinNormalisers.Sequence4.standardNormalizerEquiv M J).toMonoidHom.comp
+      (ArtinNormalisers.Artin.pureNormalizerInclusion M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv_inclusion"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy ArtinNormalisers.Sequence4.standardReducedRibbonEquiv_rawMonodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  (ArtinNormalisers.Landmark1.orbitMonodromy M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+      ((ArtinNormalisers.Sequence4.standardReducedRibbonEquiv M J) r) =
+    MulOpposite.op ((ArtinNormalisers.Ribbon2.reducedRibbonCoxeterProjection M { indices := J }) r)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardMonodromy","name":"ArtinNormalisers.Sequence4.standardReducedRibbonEquiv_rawMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap_unop: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J)
+  (α : (FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x)ᵐᵒᵖ),
+  MulOpposite.unop ((ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x) α) =
+    (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x) (MulOpposite.unop α)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap_unop"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue_ofLoop: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ArtinNormalisers.Sequence4.componentEndValue M J (ArtinNormalisers.Sequence4.componentEndOfLoop M J r) = ↑r
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue_ofLoop"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positivePureEquiv_unop: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J) (a : ↥(ArtinNormalisers.Artin.pureNormalizerImage M J)),
+  MulOpposite.unop ((ArtinNormalisers.Sequence4.positivePureEquiv M J x) a) =
+    ((ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv M J x) a)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positivePureEquiv_unop"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerComparisonAlong: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        {x : ArtinNormalisers.Theorem18.Complement M J} →
+          Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x →
+            ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+              FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+                (ArtinNormalisers.Theorem18.orbitProjection M J x)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerComparisonAlong"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue_injective: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  Function.Injective (ArtinNormalisers.Sequence4.componentEndValue M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue_injective"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndEquiv_apply_asHom: ∀
+  {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (hF : F.FullyFaithful) (c : C) {x : X}
+  (h : F.obj c = { as := x }) (e : CategoryTheory.End c),
+  ((ArtinNormalisers.Sequence4.basedEndEquiv F hF c h) e).asHom =
+    CategoryTheory.CategoryStruct.comp (CategoryTheory.eqToHom ⋯)
+      (CategoryTheory.CategoryStruct.comp (F.map e.asHom) (CategoryTheory.eqToHom h))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndEquiv_apply_asHom"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndEquivReducedLoops_value: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f : CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)),
+  ↑((ArtinNormalisers.Sequence4.componentEndEquivReducedLoops M J) f) =
+    (ArtinNormalisers.Sequence4.componentEndValue M J f)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndEquivReducedLoops_value"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv._proof_4: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J
+        (ArtinNormalisers.Sequence4.standardComplementPoint M J)).range =
+    (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J
+        (ArtinNormalisers.Sequence4.standardComplementPoint M J)).ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv._proof_4"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop._proof_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ⟨↑r, ⋯⟩ ∈
+    (ArtinNormalisers.Ribbon2.reducedRibbonSubgroupoid M).arrows
+      ↑(ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj
+      ↑(ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop._proof_2"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.standardComponentRibbonObject_underlying: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj =
+    ArtinNormalisers.Ribbon2.actualRibbonObject M { indices := J }
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.standardComponentRibbonObject_underlying"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndEquiv_apply: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (hF : F.FullyFaithful) (c : C) {x : X}
+  (h : F.obj c = { as := x }) (e : CategoryTheory.End c),
+  (ArtinNormalisers.Sequence4.basedEndEquiv F hF c h) e = (ArtinNormalisers.Sequence4.basedEndHom F c h) e
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndEquiv_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.parabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_4: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : (CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J))ᵐᵒᵖ),
+  MulOpposite.op
+      (ArtinNormalisers.Sequence4.componentEndOfLoop M J
+        ⟨ArtinNormalisers.Sequence4.componentEndValue M J (MulOpposite.unop x), ⋯⟩) =
+    x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_4"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedMonodromy_eq_of_path_map_heq: ∀
+  {E : Type u_1} {X : Type u_2} {Q : Type u_3} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X]
+  [inst_2 : Group Q] [inst_3 : MulAction Q E] {p : E → X} (hp : IsQuotientCoveringMap p Q) (e : E) (q : Q)
+  (γ : Path.Homotopic.Quotient e (q • e)) (α : FundamentalGroup X (p e)),
+  (FundamentalGroupoid.map { toFun := p, continuous_toFun := ⋯ }).map
+        (have this := γ;
+        this) ≍
+      α.asHom →
+    (ArtinNormalisers.Sequence4.normalizedMonodromy hp e) α = q⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedMonodromy_eq_of_path_map_heq"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv._proof_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv._proof_2"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        (x : ArtinNormalisers.Theorem18.Complement M J) →
+          ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+            FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.standardComponentRibbonObject_ribbonObject: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  ↑(ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj = { indices := J }
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.standardComponentRibbonObject_ribbonObject"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitMonodromy._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.coxeterParabolic M J).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.coxeterParabolic M J))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitMonodromy._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+          FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J)
+            (ArtinNormalisers.Sequence4.standardComplementPoint M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_5: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (r s : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  MulOpposite.op (ArtinNormalisers.Sequence4.componentEndOfLoop M J (r * s)) =
+    MulOpposite.op (ArtinNormalisers.Sequence4.componentEndOfLoop M J r) *
+      MulOpposite.op (ArtinNormalisers.Sequence4.componentEndOfLoop M J s)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_5"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedOrbitMonodromy: {I :
+    Type u_4} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        (e : ArtinNormalisers.Theorem18.Complement M J) →
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+              (ArtinNormalisers.Theorem18.orbitProjection M J e) →*
+            ArtinNormalisers.Artin.coxeterNormalizerQuotient M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedOrbitMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.pureComparisonAlong_inclusion: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  {x : ArtinNormalisers.Theorem18.Complement M J} (θ : Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x),
+  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).comp
+      (ArtinNormalisers.Sequence4.pureComparisonAlong M J θ).toMonoidHom =
+    (ArtinNormalisers.Sequence4.normalizerComparisonAlong M J θ).toMonoidHom.comp
+      (ArtinNormalisers.Artin.pureNormalizerInclusion M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.pureComparisonAlong_inclusion"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.standardBasepointPath: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        (x : ArtinNormalisers.Theorem18.Complement M J) →
+          Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.standardBasepointPath"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy _private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.functor_map_heq: ∀
+  {C : Type u_1} {D : Type u_2} [inst : CategoryTheory.Category.{u_3, u_1} C]
+  [inst_1 : CategoryTheory.Category.{u_4, u_2} D] (F : CategoryTheory.Functor C D) {X Y X' Y' : C},
+  X = X' → Y = Y' → ∀ {f : X ⟶ Y} {g : X' ⟶ Y'}, f ≍ g → F.map f ≍ F.map g
+SEQUENCE_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinSequences.StandardMonodromy","name":"_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.functor_map_heq"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.subgroupKernelComparison: {A :
+    Type uA} →
+  {B : Type uB} →
+    {H : Type uH} →
+      {Q : Type uQ} →
+        [inst : Group A] →
+          [inst_1 : Group B] →
+            [inst_2 : Group H] →
+              [inst_3 : MulOneClass Q] →
+                (E : A ≃* B) →
+                  (ρA : A →* Q) →
+                    (ρB : B →* Q) →
+                      ρB.comp E.toMonoidHom = ρA →
+                        (j : H →* B) →
+                          Function.Injective ⇑j → j.range = ρB.ker → (K : Subgroup A) → K = ρA.ker → ↥K ≃* H
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.subgroupKernelComparison"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.pureComparisonAlong: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        {x : ArtinNormalisers.Theorem18.Complement M J} →
+          Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x →
+            ↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+              FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.pureComparisonAlong"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardRibbonVertexEquiv_asHom: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (e : CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)),
+  ((ArtinNormalisers.Sequence4.standardRibbonVertexEquiv M J) e).asHom =
+    CategoryTheory.CategoryStruct.comp (CategoryTheory.eqToHom ⋯)
+      (CategoryTheory.CategoryStruct.comp
+        ((ArtinNormalisers.Chamber3.actualRibbonOrbitEquivalence M J).functor.map e.asHom) (CategoryTheory.eqToHom ⋯))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardRibbonVertexEquiv_asHom"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.BasepointTransport ArtinNormalisers.Sequence4.coveringMapOfEq_basepointTransport: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {e₀ e₁ : E}
+  (hp : IsCoveringMap p) (θ : Path e₀ e₁) (α : FundamentalGroup E e₀),
+  (FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯)
+      ((FundamentalGroup.fundamentalGroupMulEquivOfPath θ) α) =
+    (FundamentalGroup.fundamentalGroupMulEquivOfPath (θ.map ⋯))
+      ((FundamentalGroup.mapOfEq { toFun := p, continuous_toFun := ⋯ } ⋯) α)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.BasepointTransport","name":"ArtinNormalisers.Sequence4.coveringMapOfEq_basepointTransport"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J }) ≃*
+          CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })),
+  ArtinNormalisers.Ribbon2.ReducedArrow M { indices := J } { indices := J }
+    (ArtinNormalisers.Sequence4.componentEndValue M J
+      (MulOpposite.unop (MulOpposite.op (ArtinNormalisers.Sequence4.componentEndOfLoop M J x))))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_2"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelComparison_square: ∀
+  {A : Type uA} {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker),
+  j.comp (ArtinNormalisers.Sequence4.kernelComparison E ρA ρB hcomm j hj hrange).toMonoidHom =
+    E.toMonoidHom.comp ρA.ker.subtype
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelComparison_square"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.Landmark4 ArtinNormalisers.Sequence4.theorem_6_7_positive: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J),
+  Nonempty
+      (↥(ArtinNormalisers.Artin.pureNormalizerImage M J) ≃*
+        (FundamentalGroup (ArtinNormalisers.Theorem18.Complement M J) x)ᵐᵒᵖ) ∧
+    Nonempty
+        (ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+          (FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+              (ArtinNormalisers.Theorem18.orbitProjection M J x))ᵐᵒᵖ) ∧
+      (Function.Injective ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+          (ArtinNormalisers.Artin.pureNormalizerInclusion M J).range =
+              (ArtinNormalisers.Artin.normalizerQuotientMap M J).ker ∧
+            Function.Surjective ⇑(ArtinNormalisers.Artin.normalizerQuotientMap M J)) ∧
+        (Function.Injective ⇑(ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x) ∧
+            (ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x).range =
+                (ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x).ker ∧
+              Function.Surjective ⇑(ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x)) ∧
+          (ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x).comp
+                (ArtinNormalisers.Sequence4.positivePureEquiv M J x).toMonoidHom =
+              (ArtinNormalisers.Sequence4.positiveNormalizerEquiv M J x).toMonoidHom.comp
+                (ArtinNormalisers.Artin.pureNormalizerInclusion M J) ∧
+            (ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x).comp
+                (ArtinNormalisers.Sequence4.positiveNormalizerEquiv M J x).toMonoidHom =
+              ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.Landmark4","name":"ArtinNormalisers.Sequence4.theorem_6_7_positive"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelComparison_apply: ∀ {A : Type uA}
+  {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (a : ↥ρA.ker),
+  j ((ArtinNormalisers.Sequence4.kernelComparison E ρA ρB hcomm j hj hrange) a) = E ↑a
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelComparison_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom.congr_simp: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  (F F_1 : CategoryTheory.Functor C (FundamentalGroupoid X)) (e_F : F = F_1) (c : C) {x : X}
+  (h : F.obj c = { as := x }),
+  ArtinNormalisers.Sequence4.basedEndHom F c h = ArtinNormalisers.Sequence4.basedEndHom F_1 c ⋯
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom.congr_simp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.oppositeInverseEquiv_op: ∀
+  {Q : Type u_3} [inst : Group Q] (q : Q), (ArtinNormalisers.Sequence4.oppositeInverseEquiv Q) (MulOpposite.op q) = q⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.oppositeInverseEquiv_op"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndOfLoop: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J }) →
+          CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndOfLoop"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom_comp: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D] {X : Type uX}
+  [inst_2 : TopologicalSpace X] (F : CategoryTheory.Functor C D) (G : CategoryTheory.Functor D (FundamentalGroupoid X))
+  (c : C) {x : X} (h : G.obj (F.obj c) = { as := x }),
+  ArtinNormalisers.Sequence4.basedEndHom (F.comp G) c h =
+    (ArtinNormalisers.Sequence4.basedEndHom G (F.obj c) h).comp (CategoryTheory.Functor.mapEnd c F)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom_comp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.pathBasedEndEquiv_apply_asHom: ∀
+  {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (hF : F.FullyFaithful) (c : C) {x y : X}
+  (h : F.obj c = { as := x }) (p : Path x y) (e : CategoryTheory.End c),
+  ((ArtinNormalisers.Sequence4.pathBasedEndEquiv F hF c h p) e).asHom =
+    CategoryTheory.CategoryStruct.comp (Path.Homotopic.Quotient.mk p.symm)
+      (CategoryTheory.CategoryStruct.comp
+        (CategoryTheory.CategoryStruct.comp (CategoryTheory.eqToHom ⋯)
+          (CategoryTheory.CategoryStruct.comp (F.map e.asHom) (CategoryTheory.eqToHom h)))
+        (Path.Homotopic.Quotient.mk p))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.pathBasedEndEquiv_apply_asHom"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Landmark1.orbitMonodromy.congr_simp: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) [inst : Finite M.Group]
+  (p : ArtinNormalisers.Theorem18.Complement M J),
+  ArtinNormalisers.Landmark1.orbitMonodromy M J p = ArtinNormalisers.Landmark1.orbitMonodromy M J p
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Landmark1.orbitMonodromy.congr_simp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.standardComponentRibbonObject_indices: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (↑(ArtinNormalisers.Sequence4.standardComponentRibbonObject M J).obj).indices = J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.standardComponentRibbonObject_indices"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardNormalizerEquiv._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ((ArtinNormalisers.Artin.parabolic M { indices := J }.indices).subgroupOf
+      (Subgroup.normalizer ↑(ArtinNormalisers.Artin.parabolic M { indices := J }.indices))).Normal
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardNormalizerEquiv._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.orbitMonodromy_basepointTransport: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  {x : ArtinNormalisers.Theorem18.Complement M J} (θ : Path (ArtinNormalisers.Sequence4.standardComplementPoint M J) x)
+  (α :
+    FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+      (ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))),
+  (ArtinNormalisers.Landmark1.orbitMonodromy M J x)
+      ((FundamentalGroup.fundamentalGroupMulEquivOfPath (ArtinNormalisers.Sequence4.projectedBasepointPath M J θ)) α) =
+    (ArtinNormalisers.Landmark1.orbitMonodromy M J (ArtinNormalisers.Sequence4.standardComplementPoint M J)) α
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.orbitMonodromy_basepointTransport"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.standardNormalizerEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+          FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+            (ArtinNormalisers.Theorem18.orbitProjection M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.standardNormalizerEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.standardComponentRibbonObject: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] → (J : Set I) → ArtinNormalisers.Chamber3.AssociateReducedRibbonObject M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.standardComponentRibbonObject"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitMonodromy: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        (x : ArtinNormalisers.Theorem18.Complement M J) →
+          (FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+                (ArtinNormalisers.Theorem18.orbitProjection M J x))ᵐᵒᵖ →*
+            ArtinNormalisers.Artin.coxeterNormalizerQuotient M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom_square: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {D : Type u'} [inst_1 : CategoryTheory.Category.{v', u'} D] {X : Type uX}
+  [inst_2 : TopologicalSpace X] {Y : Type uY} [inst_3 : TopologicalSpace Y]
+  (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (Q : CategoryTheory.Functor C D)
+  (G : CategoryTheory.Functor D (FundamentalGroupoid Y)) (f : C(X, Y)),
+  F.comp (FundamentalGroupoid.map f) = Q.comp G →
+    ∀ (c : C) {x : X} (hF : F.obj c = { as := x }) (hG : G.obj (Q.obj c) = { as := f x }),
+      (FundamentalGroup.map f x).comp (ArtinNormalisers.Sequence4.basedEndHom F c hF) =
+        (ArtinNormalisers.Sequence4.basedEndHom G (Q.obj c) hG).comp (CategoryTheory.Functor.mapEnd c Q)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom_square"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedMonodromy_ker: ∀
+  {E : Type u_1} {X : Type u_2} {Q : Type u_3} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X]
+  [inst_2 : Group Q] [inst_3 : MulAction Q E] {p : E → X} (hp : IsQuotientCoveringMap p Q) (e : E),
+  (ArtinNormalisers.Sequence4.normalizedMonodromy hp e).ker = (hp.fundamentalGroupToMulOpposite ⟨e, ⋯⟩).ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedMonodromy_ker"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv_rawMonodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J) (a : ArtinNormalisers.Artin.normalizerQuotient M J),
+  (ArtinNormalisers.Landmark1.orbitMonodromy M J x)
+      ((ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv M J x) a) =
+    MulOpposite.op ((ArtinNormalisers.Artin.normalizerQuotientMap M J) a)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv_rawMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy ArtinNormalisers.Sequence4.standardNormalizerEquiv_monodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J
+          (ArtinNormalisers.Sequence4.standardComplementPoint M J)).comp
+      (ArtinNormalisers.Sequence4.standardNormalizerEquiv M J).toMonoidHom =
+    ArtinNormalisers.Artin.normalizerQuotientMap M J
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardMonodromy","name":"ArtinNormalisers.Sequence4.standardNormalizerEquiv_monodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardPureComparison ArtinNormalisers.Sequence4.standardPureEquiv._proof_3: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  Function.Injective
+    ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardPureComparison","name":"ArtinNormalisers.Sequence4.standardPureEquiv._proof_3"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq_of_endpoint: ∀
+  {E : Type u_1} {X : Type u_2} {Q : Type u_3} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X]
+  [inst_2 : Group Q] [inst_3 : MulAction Q E] {p : E → X} (hp : IsQuotientCoveringMap p Q) (e z : E) (q : Q),
+  z = q • e →
+    ∀ (γ : Path.Homotopic.Quotient e z) (α : FundamentalGroup X (p e)),
+      (FundamentalGroupoid.map { toFun := p, continuous_toFun := ⋯ }).map
+            (have this := γ;
+            this) ≍
+          α.asHom →
+        (hp.fundamentalGroupToMulOpposite ⟨e, ⋯⟩) α = MulOpposite.op q
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq_of_endpoint"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom: {C : Type u} →
+  [inst : CategoryTheory.Category.{v, u} C] →
+    {X : Type uX} →
+      [inst_1 : TopologicalSpace X] →
+        (F : CategoryTheory.Functor C (FundamentalGroupoid X)) →
+          (c : C) → {x : X} → F.obj c = { as := x } → CategoryTheory.End c →* FundamentalGroup X x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq_of_base: ∀
+  {E : Type u_1} {X : Type u_2} {Q : Type u_3} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X]
+  [inst_2 : Group Q] [inst_3 : MulAction Q E] {p : E → X} (hp : IsQuotientCoveringMap p Q) (e : E) {x : X}
+  (he : p e = x) (q : Q) (γ : Path.Homotopic.Quotient e (q • e)) (α : FundamentalGroup X x),
+  (FundamentalGroupoid.map { toFun := p, continuous_toFun := ⋯ }).map
+        (have this := γ;
+        this) ≍
+      α.asHom →
+    (hp.fundamentalGroupToMulOpposite ⟨e, he⟩) α = MulOpposite.op q
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq_of_base"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedMonodromy._proof_1: ∀
+  {E : Type u_2} {X : Type u_1} {p : E → X} (e : E), p e = p e
+SEQUENCE_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedMonodromy._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy _private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.functor_map_heq_of_eq: ∀
+  {C : Type u_1} {D : Type u_2} [inst : CategoryTheory.Category.{u_3, u_1} C]
+  [inst_1 : CategoryTheory.Category.{u_4, u_2} D] {F G : CategoryTheory.Functor C D},
+  F = G → ∀ {X Y : C} (f : X ⟶ Y), F.map f ≍ G.map f
+SEQUENCE_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinSequences.StandardMonodromy","name":"_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.functor_map_heq_of_eq"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndHom_map: ∀ {C : Type u}
+  [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X] {Y : Type uY}
+  [inst_2 : TopologicalSpace Y] (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (c : C) {x : X}
+  (h : F.obj c = { as := x }) (f : C(X, Y)),
+  (FundamentalGroup.map f x).comp (ArtinNormalisers.Sequence4.basedEndHom F c h) =
+    ArtinNormalisers.Sequence4.basedEndHom (F.comp (FundamentalGroupoid.map f)) c ⋯
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndHom_map"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardMonodromy ArtinNormalisers.Sequence4.standardNormalizerEquiv_rawMonodromy: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (a : ArtinNormalisers.Artin.normalizerQuotient M J),
+  (ArtinNormalisers.Landmark1.orbitMonodromy M J (ArtinNormalisers.Sequence4.standardComplementPoint M J))
+      ((ArtinNormalisers.Sequence4.standardNormalizerEquiv M J) a) =
+    MulOpposite.op ((ArtinNormalisers.Artin.normalizerQuotientMap M J) a)⁻¹
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardMonodromy","name":"ArtinNormalisers.Sequence4.standardNormalizerEquiv_rawMonodromy"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.oppositeInverseEquiv: (Q : Type u_4) →
+  [inst : Group Q] → Qᵐᵒᵖ ≃* Q
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.oppositeInverseEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndValue_reduced: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f : CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)),
+  ArtinNormalisers.Ribbon2.ReducedArrow M { indices := J } { indices := J }
+    (ArtinNormalisers.Sequence4.componentEndValue M J f)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndValue_reduced"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy _private.ArtinSequences.EndpointMonodromy.0.ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp._simp_1_2: ∀
+  {F : Type u_1} {M : Type u_4} {N : Type u_5} [inst : One M] [inst_1 : One N] [inst_2 : FunLike F M N]
+  [EmbeddingLike F M N] [OneHomClass F M N] {f : F} {x : M}, (f x = 1) = (x = 1)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinSequences.EndpointMonodromy","name":"_private.ArtinSequences.EndpointMonodromy.0.ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp._simp_1_2"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.PositiveConventions ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroup_shortExact: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  Function.Injective ⇑(ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x) ∧
+    (ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap M J x).range =
+        (ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Sequence4.positiveOrbitMonodromy M J x)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.PositiveConventions","name":"ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroup_shortExact"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.AllBasepoints ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        (x : ArtinNormalisers.Theorem18.Complement M J) →
+          ArtinNormalisers.Artin.normalizerQuotient M J ≃*
+            FundamentalGroup (ArtinNormalisers.Theorem18.OrbitSpace M J)
+              (ArtinNormalisers.Theorem18.orbitProjection M J x)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.AllBasepoints","name":"ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndEquiv: {C : Type u} →
+  [inst : CategoryTheory.Category.{v, u} C] →
+    {X : Type uX} →
+      [inst_1 : TopologicalSpace X] →
+        (F : CategoryTheory.Functor C (FundamentalGroupoid X)) →
+          F.FullyFaithful → (c : C) → {x : X} → F.obj c = { as := x } → CategoryTheory.End c ≃* FundamentalGroup X x
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndEquiv"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.NormalizedExactness ArtinNormalisers.Sequence4.normalizedOrbitFundamentalGroup_shortExact: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  Function.Injective ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x) ∧
+    (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap M J x).range =
+        (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x).ker ∧
+      Function.Surjective ⇑(ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J x)
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.NormalizedExactness","name":"ArtinNormalisers.Sequence4.normalizedOrbitFundamentalGroup_shortExact"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.subgroupKernelComparison_square: ∀
+  {A : Type uA} {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (K : Subgroup A) (hK : K = ρA.ker),
+  j.comp (ArtinNormalisers.Sequence4.subgroupKernelComparison E ρA ρB hcomm j hj hrange K hK).toMonoidHom =
+    E.toMonoidHom.comp K.subtype
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.subgroupKernelComparison_square"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.VertexComparison ArtinNormalisers.Sequence4.basedEndEquiv_toMonoidHom: ∀
+  {C : Type u} [inst : CategoryTheory.Category.{v, u} C] {X : Type uX} [inst_1 : TopologicalSpace X]
+  (F : CategoryTheory.Functor C (FundamentalGroupoid X)) (hF : F.FullyFaithful) (c : C) {x : X}
+  (h : F.obj c = { as := x }),
+  (ArtinNormalisers.Sequence4.basedEndEquiv F hF c h).toMonoidHom = ArtinNormalisers.Sequence4.basedEndHom F c h
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.VertexComparison","name":"ArtinNormalisers.Sequence4.basedEndEquiv_toMonoidHom"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.StandardComparison ArtinNormalisers.Sequence4.componentEndValue.eq_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (f : CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J)),
+  ArtinNormalisers.Sequence4.componentEndValue M J f = ↑↑f.asHom.hom
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.StandardComparison","name":"ArtinNormalisers.Sequence4.componentEndValue.eq_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.rangeEquivKernel_apply: ∀ {B : Type uB}
+  {H : Type uH} {Q : Type uQ} [inst : Group B] [inst_1 : Group H] [inst_2 : MulOneClass Q] (ρB : B →* Q) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (h : H),
+  ↑((ArtinNormalisers.Sequence4.rangeEquivKernel ρB j hj hrange) h) = j h
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.rangeEquivKernel_apply"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.subgroupKernelComparison_unique: ∀
+  {A : Type uA} {B : Type uB} {H : Type uH} {Q : Type uQ} [inst : Group A] [inst_1 : Group B] [inst_2 : Group H]
+  [inst_3 : MulOneClass Q] (E : A ≃* B) (ρA : A →* Q) (ρB : B →* Q) (hcomm : ρB.comp E.toMonoidHom = ρA) (j : H →* B)
+  (hj : Function.Injective ⇑j) (hrange : j.range = ρB.ker) (K : Subgroup A) (hK : K = ρA.ker) (F : ↥K ≃* H),
+  j.comp F.toMonoidHom = E.toMonoidHom.comp K.subtype →
+    F = ArtinNormalisers.Sequence4.subgroupKernelComparison E ρA ρB hcomm j hj hrange K hK
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.subgroupKernelComparison_unique"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.componentEndEquivReducedLoops: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        CategoryTheory.End (ArtinNormalisers.Sequence4.standardComponentRibbonObject M J) ≃*
+          ↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops M { indices := J })
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.componentEndEquivReducedLoops"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.EndpointMonodromy ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_ker: ∀
+  {I : Type u_4} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (e : ArtinNormalisers.Theorem18.Complement M J),
+  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy M J e).ker =
+    (ArtinNormalisers.Landmark1.orbitMonodromy M J e).ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.EndpointMonodromy","name":"ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_ker"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.RibbonVertex ArtinNormalisers.Sequence4.standardComponentRibbonObject._proof_1: SMulCommClass
+  ℝ ℝ ℝ
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.RibbonVertex","name":"ArtinNormalisers.Sequence4.standardComponentRibbonObject._proof_1"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.rangeEquivKernel: {B : Type uB} →
+  {H : Type uH} →
+    {Q : Type uQ} →
+      [inst : Group B] →
+        [inst_1 : Group H] →
+          [inst_2 : MulOneClass Q] →
+            (ρB : B →* Q) → (j : H →* B) → Function.Injective ⇑j → j.range = ρB.ker → H ≃* ↥ρB.ker
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.rangeEquivKernel"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.BasepointTransport ArtinNormalisers.Sequence4.rawMonodromy_basepointTransport_comp: ∀
+  {E : Type u_1} {X : Type u_2} [inst : TopologicalSpace E] [inst_1 : TopologicalSpace X] {p : E → X} {e₀ e₁ : E}
+  {Q : Type u_3} [inst_2 : Group Q] [inst_3 : MulAction Q E] (hp : IsQuotientCoveringMap p Q) (θ : Path e₀ e₁),
+  (hp.fundamentalGroupToMulOpposite ⟨e₁, ⋯⟩).comp
+      (FundamentalGroup.fundamentalGroupMulEquivOfPath (θ.map ⋯)).toMonoidHom =
+    hp.fundamentalGroupToMulOpposite ⟨e₀, ⋯⟩
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequences.BasepointTransport","name":"ArtinNormalisers.Sequence4.rawMonodromy_basepointTransport_comp"}
+SEQUENCE_PROJECT_TYPE ArtinSequences.KernelComparison ArtinNormalisers.Sequence4.kernelEquivOfCompatible._proof_1: ∀
+  {A : Type u_1} {B : Type u_2} [inst : Group A] [inst_1 : Group B], MonoidHomClass (A ≃* B) A B
+SEQUENCE_PROJECT_DECL_JSON {"axioms":["Quot.sound"],"module":"ArtinSequences.KernelComparison","name":"ArtinNormalisers.Sequence4.kernelEquivOfCompatible._proof_1"}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":0,"module":"ArtinSequences","names":[]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":0,"import_only_aggregate":true,"imported":true,"module":"ArtinSequences","physical_declarations":0}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":16,"module":"ArtinSequences.AllBasepoints","names":["ArtinNormalisers.Sequence4.normalizerComparisonAlong","ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv","ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv","ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_basepointTransport","ArtinNormalisers.Sequence4.normalizerComparisonAlong_monodromy","ArtinNormalisers.Sequence4.pureComparisonAlong","ArtinNormalisers.Sequence4.orbitMonodromy_basepointTransport","ArtinNormalisers.Landmark1.orbitMonodromy.congr_simp","ArtinNormalisers.Sequence4.projectedBasepointPath","ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv_rawMonodromy","ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv_monodromy","ArtinNormalisers.Sequence4.normalizerComparisonAlong._proof_1","ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv_inclusion","ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv.congr_simp","ArtinNormalisers.Sequence4.standardBasepointPath","ArtinNormalisers.Sequence4.pureComparisonAlong_inclusion"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":16,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.AllBasepoints","physical_declarations":16}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":5,"module":"ArtinSequences.BasepointTransport","names":["ArtinNormalisers.Sequence4.coveringMapOfEq_basepointTransport","ArtinNormalisers.Sequence4.coveringMap_basepointTransport_comp","ArtinNormalisers.Sequence4.rawMonodromy_basepointTransport","ArtinNormalisers.Sequence4.coveringMap_basepointTransport","ArtinNormalisers.Sequence4.rawMonodromy_basepointTransport_comp"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":5,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.BasepointTransport","physical_declarations":5}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":18,"module":"ArtinSequences.EndpointMonodromy","names":["ArtinNormalisers.Sequence4.oppositeInverseEquiv","ArtinNormalisers.Sequence4.normalizedMonodromy","ArtinNormalisers.Sequence4.normalizedMonodromy_apply","ArtinNormalisers.Sequence4.normalizedMonodromy_ker","ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp","ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_apply","ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq_of_base","ArtinNormalisers.Sequence4.normalizedMonodromy_eq_of_path_map_heq","ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq","ArtinNormalisers.Sequence4.oppositeInverseEquiv_op","ArtinNormalisers.Sequence4.normalizedOrbitMonodromy","ArtinNormalisers.Sequence4.normalizedMonodromy._proof_1","_private.ArtinSequences.EndpointMonodromy.0.ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp._simp_1_1","ArtinNormalisers.Sequence4.oppositeInverseEquiv_apply","ArtinNormalisers.Sequence4.normalizedOrbitMonodromy._proof_1","_private.ArtinSequences.EndpointMonodromy.0.ArtinNormalisers.Sequence4.ker_oppositeInverseEquiv_comp._simp_1_2","ArtinNormalisers.Sequence4.endpointMonodromy_eq_of_path_map_heq_of_endpoint","ArtinNormalisers.Sequence4.normalizedOrbitMonodromy_ker"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":18,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.EndpointMonodromy","physical_declarations":18}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":15,"module":"ArtinSequences.KernelComparison","names":["ArtinNormalisers.Sequence4.rangeEquivKernel_apply","ArtinNormalisers.Sequence4.subgroupKernelComparison","ArtinNormalisers.Sequence4.kernelComparison_square","ArtinNormalisers.Sequence4.kernelEquivOfCompatible","ArtinNormalisers.Sequence4.kernelEquivOfCompatible_apply","ArtinNormalisers.Sequence4.subgroupKernelComparison_apply","ArtinNormalisers.Sequence4.subgroupKernelComparison_symm_apply","ArtinNormalisers.Sequence4.kernelEquivOfCompatible._proof_1","ArtinNormalisers.Sequence4.subgroupKernelComparison_unique","ArtinNormalisers.Sequence4.kernelComparison_symm_apply","ArtinNormalisers.Sequence4.map_kernel_of_compatible","ArtinNormalisers.Sequence4.rangeEquivKernel","ArtinNormalisers.Sequence4.subgroupKernelComparison_square","ArtinNormalisers.Sequence4.kernelComparison","ArtinNormalisers.Sequence4.kernelComparison_apply"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":15,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.KernelComparison","physical_declarations":15}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":3,"module":"ArtinSequences.Landmark4","names":["ArtinNormalisers.Sequence4.theorem_6_7","ArtinNormalisers.Sequence4.theorem_6_7_positive","ArtinNormalisers.Sequence4.landmark_4"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":3,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.Landmark4","physical_declarations":3}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":1,"module":"ArtinSequences.NormalizedExactness","names":["ArtinNormalisers.Sequence4.normalizedOrbitFundamentalGroup_shortExact"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":1,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.NormalizedExactness","physical_declarations":1}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":17,"module":"ArtinSequences.PositiveConventions","names":["ArtinNormalisers.Sequence4.positiveOrbitMonodromy_op","ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroup_shortExact._simp_1_1","ArtinNormalisers.Sequence4.positiveNormalizerEquiv_unop","ArtinNormalisers.Sequence4.positiveNormalizerEquiv_label","ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroup_shortExact","ArtinNormalisers.Sequence4.positiveOrbitMonodromy_apply","ArtinNormalisers.Sequence4.positivePureEquiv_unop","ArtinNormalisers.Sequence4.positivePureEquiv","ArtinNormalisers.Sequence4.positivePureEquiv_inclusion","ArtinNormalisers.Sequence4.positiveOrbitMonodromy._proof_1","ArtinNormalisers.Sequence4.positiveOrbitMonodromy","ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap","ArtinNormalisers.Sequence4.positiveOrbitMonodromy.congr_simp","ArtinNormalisers.Sequence4.positiveNormalizerEquiv","ArtinNormalisers.Sequence4.positiveNormalizerEquiv_monodromy","ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap_unop","ArtinNormalisers.Sequence4.positivePureEquiv._proof_1"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":17,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.PositiveConventions","physical_declarations":17}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":32,"module":"ArtinSequences.RibbonVertex","names":["ArtinNormalisers.Sequence4.componentEndOfLoop._proof_2","ArtinNormalisers.Sequence4.standardComponentRibbonObject_ribbonObject","ArtinNormalisers.Sequence4.componentEndOfLoop._proof_1","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_5","ArtinNormalisers.Sequence4.componentEndOfLoop_asHom_value","ArtinNormalisers.Sequence4.componentEndValue_injective","ArtinNormalisers.Sequence4.componentEndOfLoop_inv","ArtinNormalisers.Sequence4.standardComponentRibbonObject","ArtinNormalisers.Sequence4.componentEndOfLoop","ArtinNormalisers.Ribbon2.ReducedArrow.congr_simp","ArtinNormalisers.Sequence4.componentEndValue_reduced","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp","ArtinNormalisers.Sequence4.standardComponentRibbonObject_underlying","ArtinNormalisers.Sequence4.componentEndValue_mul","ArtinNormalisers.Sequence4.componentEndEquivReducedLoops","ArtinNormalisers.Sequence4.componentEndValue","ArtinNormalisers.Sequence4.standardComponentRibbonObject._proof_1","ArtinNormalisers.Sequence4.componentEndValue_one","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp_symm_value","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_4","ArtinNormalisers.Sequence4.componentEndValue_inv","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_1","ArtinNormalisers.Sequence4.componentEndOfLoop_one","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd","ArtinNormalisers.Sequence4.standardComponentRibbonObject_indices","ArtinNormalisers.Sequence4.componentEndValue_ofLoop","ArtinNormalisers.Sequence4.componentEndOfLoop_mul","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp_asHom_value","ArtinNormalisers.Sequence4.componentEndEquivReducedLoops_value","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_2","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEndOp._proof_3","ArtinNormalisers.Sequence4.reducedLoopsEquivComponentEnd_asHom_value"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":32,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.RibbonVertex","physical_declarations":32}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":11,"module":"ArtinSequences.StandardComparison","names":["ArtinNormalisers.Sequence4.standardReducedRibbonEquiv","ArtinNormalisers.Sequence4.standardRibbonVertexEquiv_asHom","ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv._proof_1","ArtinNormalisers.Sequence4.standardNormalizerEquiv._proof_1","ArtinNormalisers.Sequence4.standardNormalizerEquiv","ArtinNormalisers.Sequence4.standardComplementPoint","ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv","ArtinNormalisers.Sequence4.standardRibbonVertexEquiv","ArtinNormalisers.Sequence4.standardRibbonImage_eq","ArtinNormalisers.Sequence4.componentEndValue.eq_1","ArtinNormalisers.Sequence4.standardPositiveNormalizerEquiv_label"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":11,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.StandardComparison","physical_declarations":11}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":9,"module":"ArtinSequences.StandardMonodromy","names":["ArtinNormalisers.Sequence4.standardReducedRibbonEquiv_rawMonodromy","_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.hom_heq_eqToHom_conjugate","_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.componentHom_heq_of_value","ArtinNormalisers.Sequence4.standardNormalizerEquiv_rawMonodromy","_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.functor_map_heq_of_eq","_private.ArtinSequences.StandardMonodromy.0.ArtinNormalisers.Sequence4.functor_map_heq","ArtinNormalisers.Sequence4.standardRibbonVertexEquiv_rawMonodromy","ArtinNormalisers.Sequence4.standardNormalizerEquiv_monodromy","ArtinNormalisers.Sequence4.standardReducedRibbonEquiv_monodromy"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":9,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.StandardMonodromy","physical_declarations":9}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":9,"module":"ArtinSequences.StandardPureComparison","names":["ArtinNormalisers.Sequence4.standardPureEquiv_inclusion","ArtinNormalisers.Sequence4.standardPureEquiv._proof_2","ArtinNormalisers.Sequence4.standardPureEquiv._proof_3","ArtinNormalisers.Sequence4.standardPureEquiv","ArtinNormalisers.Sequence4.standardPureEquiv_apply","ArtinNormalisers.Sequence4.standardPureEquiv._proof_5","ArtinNormalisers.Sequence4.standardPureEquiv._proof_1","ArtinNormalisers.Sequence4.standardPureEquiv._proof_4","ArtinNormalisers.Sequence4.standardPureEquiv_unique"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":9,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.StandardPureComparison","physical_declarations":9}
+SEQUENCE_PROJECT_COMPILED_MODULE_JSON {"declarations":15,"module":"ArtinSequences.VertexComparison","names":["ArtinNormalisers.Sequence4.basedEndHom_square","ArtinNormalisers.Sequence4.fundamentalGroup_map_changeBasepoint","ArtinNormalisers.Sequence4.basedEndHom.congr_simp","ArtinNormalisers.Sequence4.basedEndHom_comp","ArtinNormalisers.Sequence4.basedEndHom_apply_asHom","ArtinNormalisers.Sequence4.mapEnd_comp","ArtinNormalisers.Sequence4.basedEndEquiv_apply","ArtinNormalisers.Sequence4.pathBasedEndEquiv_apply_asHom","ArtinNormalisers.Sequence4.basedEndEquiv_toMonoidHom","ArtinNormalisers.Sequence4.basedEndHom_congr","ArtinNormalisers.Sequence4.basedEndHom","ArtinNormalisers.Sequence4.basedEndEquiv_apply_asHom","ArtinNormalisers.Sequence4.basedEndHom_map","ArtinNormalisers.Sequence4.basedEndEquiv","ArtinNormalisers.Sequence4.pathBasedEndEquiv"]}
+SEQUENCE_PROJECT_MODULE_JSON {"declarations":15,"import_only_aggregate":false,"imported":true,"module":"ArtinSequences.VertexComparison","physical_declarations":15}
+SEQUENCE_PROJECT_SUMMARY_JSON {"all_physical_type_value_universe_parameters_identical":true,"canonical_axioms_checked":true,"canonical_project_declarations":151,"distinct_physical_names":151,"external_canonical_names":0,"identical_theorem_duplicates":0,"modules":13,"physical_occurrences":151}

@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "created_at": "2026-11-14T07:38:39.039486+00:00",
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "provenance": "vendor/provenance.json",
+  "provenance_sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520",
+  "harness": "ProviderAudit.lean",
+  "harness_sha256": "7469e870bda694d049148676d7cdbe10c6a3c7d0335c3c41272160026ea92e5f",
+  "module_count": 1,
+  "canonical_declarations": 2,
+  "physical_occurrences": 2,
+  "identical_duplicates": 0,
+  "axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_through_replay_inputs_identical": true,
+  "coverage_file": "evidence/providers/coverage.json",
+  "coverage_sha256": "c4572abfd27170edf65186b53c6766567aee4d7871dfd96353f0a9972253cc17",
+  "environment_file": "evidence/providers/environment.json",
+  "environment_sha256": "610fc4ad67f5e4bdfe76e5bc013ec6115d7938c363726c589a90b5a821a565ec",
+  "kernel_replay_workers": 1,
+  "replay_mode": "one exact module per fresh official leanchecker process",
+  "kernel_replay_relative_to_imports": true,
+  "independent_kernel_implementation": false,
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_4_proved": false,
+  "full_theorem_1_8_proved": false,
+  "source_ports": "Exact selected declaration blocks; only wrapper/import/extraction changes",
+  "records": {
+    "build": {
+      "record": "evidence/providers/build-20261114T073815Z/verification.json",
+      "sha256": "35209d9eb4b8b270768bef01e19d99da7a6c697c3c559db24647d1dec6d0878a"
+    },
+    "audit": {
+      "record": "evidence/providers/audit-20261114T073820Z/verification.json",
+      "sha256": "27fd641b42135cb531d464055a176e6116cece374fff4426d37225078dee333b"
+    },
+    "replay": {
+      "record": "evidence/providers/replay-20261114T073831Z/verification.json",
+      "sha256": "6de6c268c9daa21bd092290068c21ad49c5ab483b46b9f495f401730dd310792"
+    }
+  }
+}

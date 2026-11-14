@@ -1,0 +1,81 @@
+{
+  "kind": "M4-static-infrastructure-preparation",
+  "ok": true,
+  "full_landmark_4_proved": false,
+  "full_theorem_1_8_proved": false,
+  "Lean_build_audit_or_kernel_replay_executed": false,
+  "source_configuration_sha256_before": {
+    "sequences/scripts/verify.py": "2a660380233284b1a0cbbea70fd9cc722173aa04956b1b31ad1361d40664683b",
+    "sequences/scripts/cache_prerequisites.py": "e70b7ce65030633242fe5a6979f797abf747796e3de5b4ed9cd957ecba73fa84",
+    "sequences/ProjectAudit.lean": "d7f98722ecb6f6db97cd0a77c785a0a50a00e765289521ddf691a104e0890039",
+    ".github/workflows/sequences.yml": "19e3f7ebe00b1c549580e9867182f778a9c30e6dc67371f09a9c589bae789bfe",
+    "sequences/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
+    "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-c",
+        "import ast,pathlib;[ast.parse(pathlib.Path(p).read_text(),filename=p) for p in [\"sequences/scripts/verify.py\",\"sequences/scripts/cache_prerequisites.py\"]]"
+      ],
+      "exit_code": 0,
+      "log": "sequences/evidence/infrastructure-preparation/syntax.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 0.019222
+    },
+    {
+      "argv": [
+        "ruff",
+        "check",
+        "--select",
+        "F",
+        "sequences/scripts/verify.py",
+        "sequences/scripts/cache_prerequisites.py"
+      ],
+      "exit_code": 0,
+      "log": "sequences/evidence/infrastructure-preparation/static.log",
+      "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "seconds": 0.006503
+    },
+    {
+      "argv": [
+        "python3",
+        "sequences/scripts/cache_prerequisites.py",
+        "--plan"
+      ],
+      "exit_code": 0,
+      "log": "sequences/evidence/infrastructure-preparation/cache-plan.log",
+      "log_sha256": "e10344117483079446222027339aebc3daba14d59c2d32f8ac15d7a982cf88e7",
+      "seconds": 0.029801
+    },
+    {
+      "argv": [
+        "python3",
+        "sequences/scripts/verify.py",
+        "--plan"
+      ],
+      "exit_code": 0,
+      "log": "sequences/evidence/infrastructure-preparation/verifier-plan.log",
+      "log_sha256": "a0f359e15d9083174d5f19f90a61f63743ec7730f93ddc22c1561a663a3fa9be",
+      "seconds": 0.061688
+    }
+  ],
+  "limitations": [
+    "Static preparation only; new ProjectAudit has not been compiled/executed by this task.",
+    "No M4 source inventory is frozen and no final battery has been attempted.",
+    "Actual technical/final execution requires explicit root readiness and accepted provider reviews."
+  ],
+  "source_configuration_sha256_after": {
+    "sequences/scripts/verify.py": "2a660380233284b1a0cbbea70fd9cc722173aa04956b1b31ad1361d40664683b",
+    "sequences/scripts/cache_prerequisites.py": "e70b7ce65030633242fe5a6979f797abf747796e3de5b4ed9cd957ecba73fa84",
+    "sequences/ProjectAudit.lean": "d7f98722ecb6f6db97cd0a77c785a0a50a00e765289521ddf691a104e0890039",
+    ".github/workflows/sequences.yml": "19e3f7ebe00b1c549580e9867182f778a9c30e6dc67371f09a9c589bae789bfe",
+    "sequences/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
+    "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960"
+  },
+  "inputs_unchanged": true,
+  "recorded_at": "2026-11-14T07:48:30.460023+00:00"
+}

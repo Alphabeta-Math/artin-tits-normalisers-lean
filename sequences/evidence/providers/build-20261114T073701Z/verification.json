@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "phase": "build",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+  "started_at": "2026-11-14T07:37:01.946873+00:00",
+  "modules": [
+    "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+      "exit_code": 0,
+      "duration_seconds": 0.03068247198825702,
+      "log": "00-build.log",
+      "log_sha256": "13189c662cefdf15f73a41d62a2d177672ca7ac666d28adbe423d6b2dc68df6a"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+      "exit_code": 0,
+      "duration_seconds": 1.0257524519984145,
+      "log": "01-build.log",
+      "log_sha256": "4434a256696d5b6cc6812072510bf227473ec874d20621e16500132eb32a9a53"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_4_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T07:37:03.004695+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "91b0bbaba9c2dc8019c300ff0bb9a9a19e829726e40700de351595bc10165349",
+  "inputs_after_sha256": "91b0bbaba9c2dc8019c300ff0bb9a9a19e829726e40700de351595bc10165349"
+}

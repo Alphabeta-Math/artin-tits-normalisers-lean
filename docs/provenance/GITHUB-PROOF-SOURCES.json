@@ -8688,7 +8688,7 @@
     },
     {
       "archive_records": [],
-      "disposition": "accepted supplier cohort by explicit root acceptance after both independent GPT-6.1 Sol/high receipts; active main M3 remains unaccepted",
+      "disposition": "accepted supplier cohort by explicit root acceptance after both independent GPT-6.1 Sol/high receipts; active main M3 acceptance is recorded separately",
       "exact_project_or_supplier_declaration_inventory": [
         {
           "axioms": [
@@ -11452,6 +11452,220 @@
           }
         }
       ]
+    },
+    {
+      "archive_records": [],
+      "assembly_recipe": {
+        "path": "sequences/vendor/extraction-recipe.json",
+        "sha256": "fe5b2d894063518bf2054d428f8ca37eaa937ca5cd4173e332e987372865e9e9"
+      },
+      "assembly_script": {
+        "path": "sequences/scripts/providers/assemble.py",
+        "sha256": "9ccac4728746d33b50d59d6d8380ced9b433d33f39125bffc42927570629a1ef"
+      },
+      "disposition": "Root-accepted two-proof supplier fragment after both independent reviews and technical verification; this acceptance alone does not prove M4",
+      "exact_project_or_supplier_declaration_inventory": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+          "name": "FundamentalGroup.map_fundamentalGroupMulEquivOfPath"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+          "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply"
+        }
+      ],
+      "files": [
+        {
+          "active_path": "sequences/vendor/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean",
+          "active_sha256": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d",
+          "actual_active_sha256": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d",
+          "actual_original_sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43",
+          "imports": [
+            "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+            "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+          ],
+          "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+          "original_path": "sequences/vendor/upstream-original/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean.txt",
+          "scope": "Only the two selected declaration/proof blocks, not the full original module",
+          "selected_blocks": [
+            {
+              "bytes": 1134,
+              "declaration_and_proof_unchanged": true,
+              "end_line": 148,
+              "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply",
+              "sha256": "8414d978ee933fc8345ef2c57737a2d050eb8ed0358e533db46ca279f05fbc63",
+              "start_line": 129
+            },
+            {
+              "bytes": 1163,
+              "declaration_and_proof_unchanged": true,
+              "end_line": 212,
+              "name": "FundamentalGroup.map_fundamentalGroupMulEquivOfPath",
+              "sha256": "0a7c0a3dc68b8face62da69fe5bdce30395b2fd5d09708f3470ed928587515ba",
+              "start_line": 196
+            }
+          ],
+          "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange",
+          "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+          "upstream_sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43"
+        }
+      ],
+      "id": "landmark4-basepoint-extraction",
+      "included_in_throughM2_dependency_graph": false,
+      "included_in_throughM3_dependency_graph": false,
+      "independent_reviews_sha256": {
+        "sequences/reviews/providers-a.json": "5e60adf66648cf05783d2250443706181dac746cf56a433b8d4f2ed129e54911",
+        "sequences/reviews/providers-a.md": "7b87ac7332d68f5abe2f1e3b8f6ce79ea05571303145d1692b6bbee9baa3c7f5",
+        "sequences/reviews/providers-b.json": "b4e6e211d4f754570dd03fd9de9d6c1923527fe7851b85c3f48a0f11f46fb506",
+        "sequences/reviews/providers-b.md": "4f0e94095934e6326f586c87a0a58d6ccdf6aa076d14e853e01513488232295a"
+      },
+      "license_files": [
+        {
+          "path": "sequences/vendor/LICENSE.TauCeti",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "license_identifier": "Apache-2.0",
+      "module_count": 1,
+      "patches": [
+        {
+          "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+          "patch": {
+            "path": "sequences/vendor/patches/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean.patch",
+            "sha256": "dbb1390a9731661a9dfec996e26de0b566d7a7b42f67773419938cfd90883e79"
+          },
+          "scope": "two exact declaration blocks; no proof/hypothesis changes"
+        }
+      ],
+      "provenance": {
+        "path": "sequences/vendor/provenance.json",
+        "sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520"
+      },
+      "repository": "https://github.com/TauCetiProject/TauCeti",
+      "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+      "root_acceptance": {
+        "path": "docs/provenance/acceptance-landmark4-basepoint.json",
+        "sha256": "b6ace0d55c6e6b1456c4e3a9cc0c951944a2a840857c4fbeb84724ba9e6c19c6"
+      },
+      "source_inventory": {
+        "path": "sequences/evidence/providers/coverage.json",
+        "sha256": "c4572abfd27170edf65186b53c6766567aee4d7871dfd96353f0a9972253cc17"
+      },
+      "verification": {
+        "path": "sequences/evidence/providers/verification.json",
+        "sha256": "6287da8e7e322406e1e6efcf87b6769c375b174f26cdda76508766e59e361694"
+      },
+      "verification_commands": [
+        {
+          "command": [
+            "python3",
+            "scripts/providers/assemble.py",
+            "--check"
+          ],
+          "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+          "duration_seconds": 0.028665665013249964,
+          "exit_code": 0,
+          "log": "00-build.log",
+          "log_sha256": "13189c662cefdf15f73a41d62a2d177672ca7ac666d28adbe423d6b2dc68df6a"
+        },
+        {
+          "command": [
+            "lake",
+            "build",
+            "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+          ],
+          "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+          "duration_seconds": 0.9840795960044488,
+          "exit_code": 0,
+          "log": "01-build.log",
+          "log_sha256": "4434a256696d5b6cc6812072510bf227473ec874d20621e16500132eb32a9a53"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/providers/assemble.py",
+            "--check"
+          ],
+          "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+          "duration_seconds": 0.029852691979613155,
+          "exit_code": 0,
+          "log": "00-audit.log",
+          "log_sha256": "13189c662cefdf15f73a41d62a2d177672ca7ac666d28adbe423d6b2dc68df6a"
+        },
+        {
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "ProviderAudit.lean"
+          ],
+          "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+          "duration_seconds": 1.7572518709930591,
+          "exit_code": 0,
+          "log": "01-audit.log",
+          "log_sha256": "09475f9b552a325ed3a9c1b9b57d7158f973c9c39eff6ea6feee1ecc065a49db"
+        },
+        {
+          "command": [
+            "python3",
+            "scripts/providers/assemble.py",
+            "--check"
+          ],
+          "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+          "duration_seconds": 0.03008121601305902,
+          "exit_code": 0,
+          "log": "00-replay.log",
+          "log_sha256": "13189c662cefdf15f73a41d62a2d177672ca7ac666d28adbe423d6b2dc68df6a"
+        },
+        {
+          "command": [
+            "lake",
+            "env",
+            "leanchecker",
+            "--verbose",
+            "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+          ],
+          "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+          "duration_seconds": 5.870541337993927,
+          "exit_code": 0,
+          "log": "01-replay.log",
+          "log_sha256": "6559b0c90d92d057706fb8c223ddb85f02f54b5e55180b2887fd79d5f18c72e6"
+        }
+      ],
+      "verification_ok": true,
+      "verification_phase_records": [
+        {
+          "phase": "build",
+          "record": {
+            "path": "sequences/evidence/providers/build-20261114T073815Z/verification.json",
+            "sha256": "35209d9eb4b8b270768bef01e19d99da7a6c697c3c559db24647d1dec6d0878a"
+          }
+        },
+        {
+          "phase": "audit",
+          "record": {
+            "path": "sequences/evidence/providers/audit-20261114T073820Z/verification.json",
+            "sha256": "27fd641b42135cb531d464055a176e6116cece374fff4426d37225078dee333b"
+          }
+        },
+        {
+          "phase": "replay",
+          "record": {
+            "path": "sequences/evidence/providers/replay-20261114T073831Z/verification.json",
+            "sha256": "6de6c268c9daa21bd092290068c21ad49c5ab483b46b9f495f401730dd310792"
+          }
+        }
+      ]
     }
   ],
   "accepted_local_milestones": [
@@ -11487,6 +11701,31 @@
         "path": "chambers/evidence/landmark3-technical-20261114T074500Z/verification.json",
         "sha256": "0fd1675ebba198731bfd2ffe99232ee94d2fc92c1ec08b9b2bc75686e54464fb"
       }
+    },
+    {
+      "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
+      "full_theorem_1_8_proved": false,
+      "independent_reviews_sha256": {
+        "sequences/reviews/landmark4-a.json": "9a5f0b64e2a8e87c652d03c2d7dcb15e3e4737ada9a41c47149dae5d24e72235",
+        "sequences/reviews/landmark4-a.md": "d73e6884941a96f93d71780048b713299b497db7f71715741a19857ce7f3c2ec",
+        "sequences/reviews/landmark4-b.json": "1d40f3babe1f048105df036bc9d185173abb8dafc911a0e42d8385a65404951a",
+        "sequences/reviews/landmark4-b.md": "f6052c84303c9b9b3f7ba53fb9eec2def8d7fc7b6f9ff56bb668bbb6631b2ece"
+      },
+      "mathematical_acceptance": true,
+      "milestone": "M4",
+      "root_acceptance": {
+        "path": "docs/theorem18/landmarks/milestone4-root-acceptance.json",
+        "sha256": "b2a37b24fc9e7f2a3ac3fcaa5f1673e231afbea9843fe2ea8e3d3dde1123bd8f"
+      },
+      "scope": "Theorem6.7: actual pure and normalizer fundamental-group isomorphisms, both actual short exact rows and both commuting squares at every actual complement basepoint; identity on the same actual Coxeter quotient. Both explicitly normalized ordinary mathlib and positive FG-op conventions, with exact positive ribbon path formula. No asphericity or K(pi,1) claim.",
+      "source_inventory": {
+        "path": "sequences/source-inventory.json",
+        "sha256": "7048b5d1bb1926eb499bdad1bd27fd76ca7c47299bd5f92a2416ec3f1c808a2c"
+      },
+      "technical_verification": {
+        "path": "sequences/evidence/landmark4-technical-20261114T075200Z/verification.json",
+        "sha256": "f76ea11b92312db7bb62780118600b2b37ebdcb16cef0dc42a218cf8a9c061ec"
+      }
     }
   ],
   "accepted_scientific_repositories": [
@@ -11494,7 +11733,7 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 2,
-  "base_repository_commit": "29724dc5ee187685dd9d20dfe8927c14ea81992a",
+  "base_repository_commit": "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
   "compiled_dependency_graph": {
     "actual_used_modules_by_repository": {
       "https://github.com/TauCetiProject/TauCeti": 12,
@@ -24218,6 +24457,58 @@
     "status": "passed",
     "unchanged_old_inputs": 855
   },
+  "current_M4": {
+    "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
+    "compiled_graph_status": "Separate versioned M4 export will follow during CI; immutable M2/M3 graphs retained",
+    "configuration_sha256": {
+      "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960",
+      "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
+      "sequences/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3"
+    },
+    "full_theorem_1_8_proved": false,
+    "mathematical_acceptance": true,
+    "old_accepted_context_inputs": 955,
+    "physical_summary": {
+      "all_physical_type_value_universe_parameters_identical": true,
+      "canonical_axioms_checked": true,
+      "canonical_project_declarations": 151,
+      "distinct_physical_names": 151,
+      "external_canonical_names": 0,
+      "identical_theorem_duplicates": 0,
+      "modules": 13,
+      "physical_occurrences": 151
+    },
+    "project_source_sha256": {
+      "sequences/ArtinSequences.lean": "f214763ed2afe6707575e86378ccd274a29b3f8be71bf474ed0a0ecd3da63fee",
+      "sequences/ArtinSequences/AllBasepoints.lean": "6fd0ae5f56fd445bdeb288ec9cb787838b1b09f77ec7ab615a01c4480f7676c4",
+      "sequences/ArtinSequences/BasepointTransport.lean": "069ac9ced6eb771b0f1af5301a80e4c4e6343d5179d0711527d909fa1048e343",
+      "sequences/ArtinSequences/EndpointMonodromy.lean": "457a5244ef7667de091dd9ce8ffa38b9f9b341eacb39963363b04be4247e965f",
+      "sequences/ArtinSequences/KernelComparison.lean": "5b41a1103c059800cfd0318a57fe2f263043175116203c48f32bda348704a874",
+      "sequences/ArtinSequences/Landmark4.lean": "73c1fa143ac1967c44a8f3464c6d6fb1cfe2bc70b30c0b5954c0e494b4ca32b6",
+      "sequences/ArtinSequences/NormalizedExactness.lean": "67469e5c3ea01644a29440f7bdcddd2b167e734e5fa66a4b0adf8d3377ee2b4b",
+      "sequences/ArtinSequences/PositiveConventions.lean": "d16e582e082d8730d25ebef93d321af2183a285e0a5c2c232538fea05e3e87d6",
+      "sequences/ArtinSequences/RibbonVertex.lean": "3a46207a4c2ba0b9a9f5ed1ca582df584511ce96ec9c1ba2987b6d8c15335e4e",
+      "sequences/ArtinSequences/StandardComparison.lean": "bcfbdcd5c7ce4842c87ba97b5953d8aa3b9cc1256e8900132f3c6ba915c4fda3",
+      "sequences/ArtinSequences/StandardMonodromy.lean": "ac920ee4360da31d1fb91a327622bc91259caf17dc08a1160f411648971cfd41",
+      "sequences/ArtinSequences/StandardPureComparison.lean": "87c5d16a7576aacf4926281bc5ca723adbd437e0308b1f145ffd6ef23000c725",
+      "sequences/ArtinSequences/VertexComparison.lean": "5983151abc14b29fc6e9c66fb5a217cdb854d424228fc8694dbe0ce38c9bc31e"
+    },
+    "proof_origin": "Local project authoring with existing accepted contexts and the one root-accepted exact TauCeti two-proof fragment; exact term graph follows final compiled root",
+    "root_acceptance": {
+      "path": "docs/theorem18/landmarks/milestone4-root-acceptance.json",
+      "sha256": "b2a37b24fc9e7f2a3ac3fcaa5f1673e231afbea9843fe2ea8e3d3dde1123bd8f"
+    },
+    "source_inventory": {
+      "path": "sequences/source-inventory.json",
+      "sha256": "7048b5d1bb1926eb499bdad1bd27fd76ca7c47299bd5f92a2416ec3f1c808a2c"
+    },
+    "status": "Root mathematically accepted full M4 exact-sequence comparison; clean CI pending; full Theorem1.8/asphericity not claimed",
+    "technical_ok": true,
+    "technical_verification": {
+      "path": "sequences/evidence/landmark4-technical-20261114T075200Z/verification.json",
+      "sha256": "f76ea11b92312db7bb62780118600b2b37ebdcb16cef0dc42a218cf8a9c061ec"
+    }
+  },
   "current_m3_development": {
     "accepted": true,
     "additional_external_repositories_used": "None identified beyond pinned Mathlib/old providers and the accepted nine Cech modules; direct import classification retained per file.",
@@ -26251,11 +26542,2144 @@
           }
         ]
       }
+    },
+    {
+      "inventory": {
+        "path": "docs/provenance/searches/m4-other-inventory.json",
+        "sha256": "7944c04dc91fe2b54c009b3322ecda940f5ea9636e97bb564b0124fb580585b4"
+      },
+      "records": {
+        "baseline_repository_head": "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
+        "bounded_queries": [
+          {
+            "error": "",
+            "exit_code": 0,
+            "hit_count": 88,
+            "query": "fundamentalGroupToMulOpposite extension:lean"
+          },
+          {
+            "error": "",
+            "exit_code": 0,
+            "hit_count": 100,
+            "query": "fundamentalGroupMulEquivOfPath extension:lean"
+          },
+          {
+            "error": "",
+            "exit_code": 0,
+            "hit_count": 100,
+            "query": "\"monodromy\" \"naturality\" extension:lean"
+          },
+          {
+            "error": "",
+            "exit_code": 0,
+            "hit_count": 100,
+            "query": "\"mulEquivEnd\" extension:lean"
+          },
+          {
+            "error": "",
+            "exit_code": 0,
+            "hit_count": 100,
+            "query": "\"monodromy\" \"basepoint\" extension:lean"
+          }
+        ],
+        "date": "2026-11-14",
+        "plan": {
+          "path": "docs/theorem18/landmarks/milestone4-PLAN.md",
+          "read_fully": true,
+          "sha256": "00e200f2d8a38f65508031e320a0cd49c4eafc5a3772816f18fb360bcf77e217"
+        },
+        "recursive_closures": {
+          "FormalFrontier": [
+            {
+              "external_imports": [
+                "Mathlib.Algebra.Group.Action.Pretransitive",
+                "Mathlib.Algebra.Group.End",
+                "Mathlib.Algebra.Group.Equiv.Opposite",
+                "Mathlib.Algebra.Group.TypeTags.Hom",
+                "Mathlib.CategoryTheory.Action.Concrete",
+                "Mathlib.GroupTheory.GroupAction.Hom",
+                "Mathlib.GroupTheory.GroupAction.Quotient",
+                "Mathlib.GroupTheory.OrderOfElement",
+                "Mathlib.Logic.Equiv.Basic",
+                "Mathlib.Topology.Algebra.Group.Quotient",
+                "Mathlib.Topology.Homotopy.Lifting",
+                "Mathlib.Topology.LocallyConstant.Basic",
+                "Mathlib.Topology.Separation.Basic"
+              ],
+              "missing_modules": [],
+              "module_count": 3,
+              "modules": {
+                "FundamentalGroupoids.Topology.Covering.Monodromy": {
+                  "bytes": 28334,
+                  "commit": "ce38a38faef1a147e75b68b78b02bbfd6ad82948",
+                  "lines": 558,
+                  "path": "FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+                  "repository": "https://github.com/FormalFrontier/fundamental-groupoids",
+                  "sha256": "2e1ac1eebf0de9bb46f398f90ed7798db2c0edeb0a7dbd140f1e087292730670"
+                },
+                "GroupTheory.GroupAction.Quotient": {
+                  "bytes": 18916,
+                  "commit": "da81dc691eabf38306f427465ea8a4af350f0aef",
+                  "lines": 406,
+                  "path": "GroupTheory/GroupAction/Quotient.lean",
+                  "repository": "https://github.com/FormalFrontier/group-theory",
+                  "sha256": "e5a510797679d62629a509f34d3f50d30d85153ff81f2244e24e9ab6b2c560c3"
+                },
+                "GroupTheory.Topology.LocallyConstant": {
+                  "bytes": 4486,
+                  "commit": "da81dc691eabf38306f427465ea8a4af350f0aef",
+                  "lines": 114,
+                  "path": "GroupTheory/Topology/LocallyConstant.lean",
+                  "repository": "https://github.com/FormalFrontier/group-theory",
+                  "sha256": "4269112d691ea1b571aecf88c1eeadcf7daf64eefe9ace92f1621e84c88652d2"
+                }
+              },
+              "root": "FundamentalGroupoids.Topology.Covering.Monodromy",
+              "total_bytes": 51736,
+              "total_lines": 1078
+            },
+            {
+              "external_imports": [
+                "Mathlib.Algebra.Group.Subgroup.Ker",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.Basic",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+                "Mathlib.Topology.Homotopy.Path"
+              ],
+              "missing_modules": [],
+              "module_count": 2,
+              "modules": {
+                "FundamentalGroupoids.FundamentalGroup": {
+                  "bytes": 24792,
+                  "commit": "ce38a38faef1a147e75b68b78b02bbfd6ad82948",
+                  "lines": 509,
+                  "path": "FundamentalGroupoids/FundamentalGroup.lean",
+                  "repository": "https://github.com/FormalFrontier/fundamental-groupoids",
+                  "sha256": "c5aa143a649e0fb8f7ea120e5999a1cbae7cf7d24d0d249c30a8c7b38d648422"
+                },
+                "FundamentalGroupoids.Topology.Path": {
+                  "bytes": 65273,
+                  "commit": "ce38a38faef1a147e75b68b78b02bbfd6ad82948",
+                  "lines": 1439,
+                  "path": "FundamentalGroupoids/Topology/Path.lean",
+                  "repository": "https://github.com/FormalFrontier/fundamental-groupoids",
+                  "sha256": "d00b5803887c3ce81e4f2cf82a95c98736873c30603bf2d6713505e7ccf45376"
+                }
+              },
+              "root": "FundamentalGroupoids.FundamentalGroup",
+              "total_bytes": 90065,
+              "total_lines": 1948
+            }
+          ],
+          "TauCeti": [
+            {
+              "external_imports": [
+                "Mathlib.Algebra.Category.Grp.Basic",
+                "Mathlib.Algebra.Group.ConjFinite",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+                "Mathlib.CategoryTheory.Groupoid",
+                "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+                "Mathlib.CategoryTheory.IsConnected",
+                "Mathlib.CategoryTheory.SingleObj",
+                "Mathlib.Data.Nat.Cast.Field",
+                "Mathlib.Data.Set.Card",
+                "Mathlib.Data.ZMod.Basic",
+                "Mathlib.GroupTheory.Index",
+                "Mathlib.GroupTheory.OrderOfElement",
+                "Mathlib.GroupTheory.QuotientGroup.Basic",
+                "Mathlib.GroupTheory.Subgroup.Centralizer",
+                "Mathlib.Tactic.Group",
+                "Mathlib.Topology.Connected.LocallyPathConnected",
+                "Mathlib.Topology.Homeomorph.Lemmas",
+                "Mathlib.Topology.Homotopy.Contractible",
+                "Mathlib.Topology.Order.ProjIcc",
+                "Mathlib.Topology.Subpath",
+                "Mathlib.Topology.UnitInterval"
+              ],
+              "missing_modules": [],
+              "module_count": 10,
+              "modules": {
+                "TauCeti.Algebra.Group.Conj": {
+                  "already_vendored_same_module": false,
+                  "bytes": 30630,
+                  "lines": 649,
+                  "path": "TauCeti/Algebra/Group/Conj.lean",
+                  "sha256": "9dbdde5afab0e0f8f482b9931c2758b59e7a800c214a97e88ba9cddef8c5af80"
+                },
+                "TauCeti.Algebra.Group.NormalizerQuotient.Basic": {
+                  "already_vendored_same_module": false,
+                  "bytes": 13370,
+                  "lines": 302,
+                  "path": "TauCeti/Algebra/Group/NormalizerQuotient/Basic.lean",
+                  "sha256": "5e38aeb3702d4600c8527a49cac09add4056e0c50b5a61d65a1a57752e59a476"
+                },
+                "TauCeti.Algebra.Group.NormalizerQuotient.Conjugation": {
+                  "already_vendored_same_module": false,
+                  "bytes": 8864,
+                  "lines": 198,
+                  "path": "TauCeti/Algebra/Group/NormalizerQuotient/Conjugation.lean",
+                  "sha256": "6ac42414fb9516f245297b7826db2d5d34821abc12f9361408d0813ea8837629"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange": {
+                  "already_vendored_same_module": false,
+                  "bytes": 33544,
+                  "lines": 651,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                  "sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroup.Basic": {
+                  "already_vendored_same_module": true,
+                  "bytes": 16272,
+                  "lines": 304,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+                  "sha256": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph": {
+                  "already_vendored_same_module": false,
+                  "bytes": 8013,
+                  "lines": 169,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroup/Homeomorph.lean",
+                  "sha256": "d6cdbac38e11e48d02b8b7990114f2ccc4a2080e84634de6dffaf97122299bc5"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+                  "already_vendored_same_module": true,
+                  "bytes": 4875,
+                  "lines": 101,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+                  "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd"
+                },
+                "TauCeti.CategoryTheory.Groupoid.SingleObj": {
+                  "already_vendored_same_module": true,
+                  "bytes": 7637,
+                  "lines": 173,
+                  "path": "TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+                  "sha256": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f"
+                },
+                "TauCeti.Topology.Homotopy.Path": {
+                  "already_vendored_same_module": true,
+                  "bytes": 41149,
+                  "lines": 759,
+                  "path": "TauCeti/Topology/Homotopy/Path.lean",
+                  "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa"
+                },
+                "TauCeti.Topology.UnitInterval": {
+                  "already_vendored_same_module": true,
+                  "bytes": 4607,
+                  "lines": 114,
+                  "path": "TauCeti/Topology/UnitInterval.lean",
+                  "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402"
+                }
+              },
+              "new_module_count": 5,
+              "root": "TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange",
+              "total_bytes": 168961,
+              "total_lines": 3420
+            },
+            {
+              "external_imports": [
+                "Mathlib.Logic.Equiv.Set",
+                "Mathlib.Topology.Homotopy.Lifting"
+              ],
+              "missing_modules": [],
+              "module_count": 2,
+              "modules": {
+                "TauCeti.Logic.Function.Fiber": {
+                  "already_vendored_same_module": false,
+                  "bytes": 3980,
+                  "lines": 93,
+                  "path": "TauCeti/Logic/Function/Fiber.lean",
+                  "sha256": "885519c8074c9b85f59e8ad592e4e37acf25d6279c9a60725a9e3a14ec60ece5"
+                },
+                "TauCeti.Topology.Homotopy.Monodromy.Functoriality": {
+                  "already_vendored_same_module": false,
+                  "bytes": 16179,
+                  "lines": 335,
+                  "path": "TauCeti/Topology/Homotopy/Monodromy/Functoriality.lean",
+                  "sha256": "ad915954439a7983d7569ce57351d062892e8036ebd062cd9c7c92981b3cc1e2"
+                }
+              },
+              "new_module_count": 2,
+              "root": "TauCeti.Topology.Homotopy.Monodromy.Functoriality",
+              "total_bytes": 20159,
+              "total_lines": 428
+            },
+            {
+              "external_imports": [
+                "Mathlib.Algebra.Category.Grp.Basic",
+                "Mathlib.Algebra.Group.ConjFinite",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+                "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+                "Mathlib.CategoryTheory.Groupoid",
+                "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+                "Mathlib.CategoryTheory.IsConnected",
+                "Mathlib.CategoryTheory.SingleObj",
+                "Mathlib.Data.Finite.Perm",
+                "Mathlib.Data.Nat.Cast.Field",
+                "Mathlib.Data.Set.Card",
+                "Mathlib.Data.ZMod.Basic",
+                "Mathlib.GroupTheory.GroupAction.Quotient",
+                "Mathlib.GroupTheory.Index",
+                "Mathlib.GroupTheory.OrderOfElement",
+                "Mathlib.GroupTheory.QuotientGroup.Basic",
+                "Mathlib.GroupTheory.Subgroup.Centralizer",
+                "Mathlib.Tactic.Group",
+                "Mathlib.Topology.Connected.LocallyPathConnected",
+                "Mathlib.Topology.Homeomorph.Lemmas",
+                "Mathlib.Topology.Homotopy.Contractible",
+                "Mathlib.Topology.Homotopy.Lifting",
+                "Mathlib.Topology.Order.ProjIcc",
+                "Mathlib.Topology.Subpath",
+                "Mathlib.Topology.UnitInterval"
+              ],
+              "missing_modules": [],
+              "module_count": 13,
+              "modules": {
+                "TauCeti.Algebra.Group.Conj": {
+                  "already_vendored_same_module": false,
+                  "bytes": 30630,
+                  "lines": 649,
+                  "path": "TauCeti/Algebra/Group/Conj.lean",
+                  "sha256": "9dbdde5afab0e0f8f482b9931c2758b59e7a800c214a97e88ba9cddef8c5af80"
+                },
+                "TauCeti.Algebra.Group.NormalizerQuotient.Basic": {
+                  "already_vendored_same_module": false,
+                  "bytes": 13370,
+                  "lines": 302,
+                  "path": "TauCeti/Algebra/Group/NormalizerQuotient/Basic.lean",
+                  "sha256": "5e38aeb3702d4600c8527a49cac09add4056e0c50b5a61d65a1a57752e59a476"
+                },
+                "TauCeti.Algebra.Group.NormalizerQuotient.Conjugation": {
+                  "already_vendored_same_module": false,
+                  "bytes": 8864,
+                  "lines": 198,
+                  "path": "TauCeti/Algebra/Group/NormalizerQuotient/Conjugation.lean",
+                  "sha256": "6ac42414fb9516f245297b7826db2d5d34821abc12f9361408d0813ea8837629"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange": {
+                  "already_vendored_same_module": false,
+                  "bytes": 33544,
+                  "lines": 651,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                  "sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroup.Basic": {
+                  "already_vendored_same_module": true,
+                  "bytes": 16272,
+                  "lines": 304,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+                  "sha256": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph": {
+                  "already_vendored_same_module": false,
+                  "bytes": 8013,
+                  "lines": 169,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroup/Homeomorph.lean",
+                  "sha256": "d6cdbac38e11e48d02b8b7990114f2ccc4a2080e84634de6dffaf97122299bc5"
+                },
+                "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic": {
+                  "already_vendored_same_module": true,
+                  "bytes": 4875,
+                  "lines": 101,
+                  "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+                  "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd"
+                },
+                "TauCeti.CategoryTheory.Groupoid.SingleObj": {
+                  "already_vendored_same_module": true,
+                  "bytes": 7637,
+                  "lines": 173,
+                  "path": "TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+                  "sha256": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f"
+                },
+                "TauCeti.Topology.Homotopy.Covering": {
+                  "already_vendored_same_module": true,
+                  "bytes": 12125,
+                  "lines": 219,
+                  "path": "TauCeti/Topology/Homotopy/Covering.lean",
+                  "sha256": "180b4b4986d1f7928ebf478ef5b3a9788a8345eec3381fa3e409469f5e10f2fd"
+                },
+                "TauCeti.Topology.Homotopy.Monodromy.BasepointChange": {
+                  "already_vendored_same_module": false,
+                  "bytes": 5252,
+                  "lines": 101,
+                  "path": "TauCeti/Topology/Homotopy/Monodromy/BasepointChange.lean",
+                  "sha256": "e9311676d5bfa249f0c127168197bb3ea4834d370bb2b7ac3076042178affffb"
+                },
+                "TauCeti.Topology.Homotopy.Monodromy.Basic": {
+                  "already_vendored_same_module": false,
+                  "bytes": 19517,
+                  "lines": 360,
+                  "path": "TauCeti/Topology/Homotopy/Monodromy/Basic.lean",
+                  "sha256": "4661dd4f782787d6a28fd632d47dde228ac2a1eddf09eb687d7b4575a7800189"
+                },
+                "TauCeti.Topology.Homotopy.Path": {
+                  "already_vendored_same_module": true,
+                  "bytes": 41149,
+                  "lines": 759,
+                  "path": "TauCeti/Topology/Homotopy/Path.lean",
+                  "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa"
+                },
+                "TauCeti.Topology.UnitInterval": {
+                  "already_vendored_same_module": true,
+                  "bytes": 4607,
+                  "lines": 114,
+                  "path": "TauCeti/Topology/UnitInterval.lean",
+                  "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402"
+                }
+              },
+              "new_module_count": 7,
+              "root": "TauCeti.Topology.Homotopy.Monodromy.BasepointChange",
+              "total_bytes": 205855,
+              "total_lines": 4100
+            }
+          ]
+        },
+        "schema_version": 1,
+        "scope": "Landmark4 prerequisite source search and root-selected exact two-declaration supplier technical verification",
+        "search_hits_not_equated_with_source_reading_or_use": [
+          {
+            "indexed_commits": [
+              {
+                "commit": "d6dd63d94fb47e5ebd1ae7edcafa0265a60fbec6",
+                "paths": [
+                  "editable-corpus/lean/works/github%3Aleanprover-community%2Fmathlib4%40e91b128082cc221d6432a6a5aadcd3243af8e76c/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "editable-corpus/lean/works/github%3Aleanprover-community%2Fmathlib4%40e91b128082cc221d6432a6a5aadcd3243af8e76c/Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "editable-corpus/lean/works/github%3Aleanprover-community%2Fmathlib4%40e91b128082cc221d6432a6a5aadcd3243af8e76c/Mathlib/CategoryTheory/Galois/Prorepresentability.lean",
+                  "editable-corpus/lean/works/github%3Aleanprover-community%2Fmathlib4%40e91b128082cc221d6432a6a5aadcd3243af8e76c/Mathlib/Topology/Covering/FundamentalGroupCircle.lean",
+                  "editable-corpus/lean/works/github%3Aleanprover-community%2Fmathlib4%40e91b128082cc221d6432a6a5aadcd3243af8e76c/Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/AlexenderSokolov/cross-theory-formal-database"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "257c659b7973aeda900d86a5da73b208712c7523",
+                "paths": [
+                  "ComputationalPaths/Path/Topology/QuotientFundamentalGroupFunctorial.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Arthur742Ramos/ComputationalPathsLean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "ea1367d99c7d2f3794f1299cce5b18379e9093a7",
+                "paths": [
+                  "ComputationalPaths/Path/Topology/QuotientFundamentalGroupFunctorial.lean",
+                  "ComputationalPaths/Path/Topology/RoseFundamentalGroup.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Arthur742Ramos/TopologicalComputationalPaths"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "1c671038e320cecc58ca1d81dca11bbe2e2a507c",
+                "paths": [
+                  "CellAttachment/Annulus.lean",
+                  "CellAttachment/CircleGenerator.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Arthur742Ramos/cell-attachment-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "bcf788e349b4969f4d8379ee9cb4df7a28352af1",
+                "paths": [
+                  "HigherCellAttachment/Annulus.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Arthur742Ramos/higher-cell-attachment-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "aa11639b7f616a7b3e688c6261c94f59b15167dc",
+                "paths": [
+                  "CellAttachment/Annulus.lean",
+                  "CellAttachment/CircleGenerator.lean",
+                  "Challenge.lean",
+                  "PresentationPackage/Construction.lean",
+                  "PresentationPackage/Proof1.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Arthur742Ramos/presentation-complex-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c496df0d9beea9deaeabcea8492605f9a0a2313b",
+                "paths": [
+                  "StacksCore/CategoryTheory/Endomorphism.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/BaseChangeUnibranch.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/MonodromyModule.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/FourierDeligne/FourierMonodromyLevelDichotomy.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/FourierDeligne/LevelDichotomyBasePoint.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/FourierDeligne/LisseEtaleSheafMonodromy.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/FourierDeligne/MonodromySubmoduleShortExact.lean",
+                  "StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GeometricCoverSectionsMonodromy.lean",
+                  "StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/ImageStabilizer.lean",
+                  "StacksFrontier/CategoryTheory/Linear/EndomorphismAlgEquiv.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/AxiomMath/Stacks"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "28679d7cad438a91a732422d4ab1b184ae17e532",
+                "paths": [
+                  "TernaryPeriodPolynomials/Topology/DualityEquivariance/EpsNaturality.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/AxiomMath/TernaryPoly"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "886b7364faa7ab6db7d9eb36cf5a0c26e37d388a",
+                "paths": [
+                  "PermutohedronCover/CurveConnectedness.lean",
+                  "PermutohedronCover/FullMonodromy.lean",
+                  "PermutohedronCover/InfinityMonodromy.lean",
+                  "PermutohedronCover/LocalMonodromy.lean",
+                  "PermutohedronCover/MonodromyBasepoint.lean",
+                  "PermutohedronCover/MonodromyContracts.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/BochaoKong/permutohedron"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "b5955f2576d71496adf9ea0b28fe4830db8aac4e",
+                "paths": [
+                  "lean4_ns_uop_pass54_mathlib/.lake/packages/mathlib/Mathlib/CategoryTheory/Endomorphism.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Brandon7771066/TI-Sigma-New"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "fa421d6578a7bcab5e267c20b8d3a98dd5f77182",
+                "paths": [
+                  "LeanBridge/ForMathlib/AlgebraicGeometry/Curve/MonodromyRiemannSurface.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/CBirkbeck/LeanBridge"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "36f205d4b1a83dc54b6ac7ed3bf69c8763355b4c",
+                "paths": [
+                  "lean/Grothendieck/Folder148.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Commutator-IO/grothendieck-project"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "cb31794c8417515d4e9e439da9a87a8ddaeb4568",
+                "paths": [
+                  "src/Monodromy/Choice.lean",
+                  "src/Monodromy/Covering.lean",
+                  "src/Monodromy/Logarithm.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/ERHUTUZI123/monodromy"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "013a799ca834a8a6b3afa8129e3e522025b3f45c",
+                "paths": [
+                  "VOA/Classification/COne/McRaeO4cAbstract.lean",
+                  "VOA/Classification/COne/OrbPos12Monodromy.lean",
+                  "VOA/Huang/BraidRibbonRealization.lean",
+                  "VOA/Huang/NSCongruenceZeroValue.lean",
+                  "VOA/Huang/NSSMove7Scalar.lean",
+                  "VOA/Huang/NSSMove7Sewing.lean",
+                  "VOA/Huang/NSSMove7Trace.lean",
+                  "VOA/Huang/NSSMove7Transparent.lean",
+                  "VOA/Huang/NSSMove8Interaction.lean",
+                  "VOA/Huang/NgSchauenburgBraidedAverage.lean",
+                  "VOA/Huang/NgSchauenburgDeterminants.lean",
+                  "VOA/Huang/NgSchauenburgFourier.lean",
+                  "VOA/Huang/NgSchauenburgKillingRing.lean",
+                  "VOA/Huang/NgSchauenburgLoop.lean",
+                  "VOA/Huang/ZhuRepRibbonPivotal.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Fedor-Popov/Lean_VOA"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "ce38a38faef1a147e75b68b78b02bbfd6ad82948",
+                "paths": [
+                  "FundamentalGroupoids.lean",
+                  "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Circle.lean",
+                  "FundamentalGroupoids/AlgebraicTopology/FundamentalGroup/Products.lean",
+                  "FundamentalGroupoids/FundamentalGroup.lean",
+                  "FundamentalGroupoids/FundamentalGroup/ComplexPuncturedBall.lean",
+                  "FundamentalGroupoids/FundamentalGroup/DiskAttachment/OpenCover.lean",
+                  "FundamentalGroupoids/FundamentalGroup/DiskAttachment/PuncturedChart.lean",
+                  "FundamentalGroupoids/FundamentalGroup/HomotopyEquiv.lean",
+                  "FundamentalGroupoids/Topology/Covering/DeckMonodromy.lean",
+                  "FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+                  "FundamentalGroupoidsTest/FundamentalGroup.lean",
+                  "FundamentalGroupoidsTest/Topology/Covering/Monodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/FormalFrontier/fundamental-groupoids"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "7d23d378e4f8f89ea64e6d6a365f1d3e7d2774f6",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/JLimperg/aesop-script-evaluation"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "29dcec074de168ac2bf835a77ef68bbe069194c5",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/JobPetrovcic/mathlib-archive"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "f4dafc1c78b196342c17430255cb89bdcd8ed142",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "Mathlib/CategoryTheory/Galois/Prorepresentability.lean",
+                  "Mathlib/Topology/Covering/FundamentalGroupCircle.lean",
+                  "Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Jonathan125/ConstructiveTheories"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "de4d09ac3e86a17d4544c1c86839336ec03a4734",
+                "paths": [
+                  "Submission/RotationGroupPi1.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/KitaKen1/lean-eval-pi-succ-sphere-n-mulequiv-zmod-two"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "6e306deb8169e834e9cc6662160c70231a7e2a83",
+                "paths": [
+                  "EremenkoLyubichConstant/CoveringNaturality.lean",
+                  "EremenkoLyubichConstant/ExteriorFundamentalGroup.lean",
+                  "EremenkoLyubichConstant/ExteriorPowerCover.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/LR-UK/Bounded-orbit-wandering-domains"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "7f2d9d207a1d28318c60a44c7a92737c98156221",
+                "paths": [
+                  "LeanPool/HopfProblem/Elliptic/Core5.lean",
+                  "LeanPool/HopfProblem/Foundations/Core4.lean",
+                  "LeanPool/HopfProblem/Foundations/SplitGroupExtension.lean",
+                  "LeanPool/HopfProblem/Foundations/TriangleRegularBaseFundamentalGroup.lean",
+                  "LeanPool/HopfProblem/Foundations/TwoOpenTransition.lean",
+                  "LeanPool/HopfProblem/PeriodFamily/Core3.lean",
+                  "LeanPool/HopfProblem/PeriodFamily/Core5.lean",
+                  "LeanPool/HopfProblem/PeriodFamily/PeriodDomain.lean",
+                  "LeanPool/HopfProblem/Threefold/SpecialPeriods11.lean",
+                  "LeanPool/HopfProblem/Toric/CuspHoneycombHexagon.lean",
+                  "LeanPool/HopfProblem/Toric/DiagonalQuotient2.lean",
+                  "LeanPool/HopfProblem/Toric/DiagonalQuotient4.lean",
+                  "LeanPool/HopfProblem/Uniformization/CuspUniformization2.lean",
+                  "LeanPool/HopfProblem/Uniformization/SpecialPeriods8.lean",
+                  "LeanPool/HopfProblem/Uniformization/SpecialPeriods9.lean",
+                  "LeanPool/JacobianDiffgeo/AbelWeak.lean",
+                  "LeanPool/JacobianDiffgeo/JacFunctorial.lean",
+                  "LeanPool/JacobianDiffgeo/Path.lean",
+                  "LeanPool/JacobianDiffgeo/SphereTopology.lean",
+                  "LeanPool/NandakumarRamanaRao/NRR/OddSphereDegree/ConstructRPAlpha.lean",
+                  "LeanPool/NandakumarRamanaRao/NRR/OddSphereDegree/DoubleCoverClass.lean",
+                  "LeanPool/NandakumarRamanaRao/NRR/OddSphereDegree/FinalOddMapComparison.lean",
+                  "LeanPool/NandakumarRamanaRao/NRR/OddSphereDegree/Monodromy.lean",
+                  "LeanPool/NandakumarRamanaRao/NRR/OddSphereDegree/MonodromyCharacter.lean",
+                  "LeanPool/NandakumarRamanaRao/NRR/OddSphereDegree/RealProjectiveSpace.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/LeanPool/lean-pool"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "716bf8f167565e3b850f5827e29be7f9bdf0a0cc",
+                "paths": [
+                  "lean_project/mathlib4-old/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "lean_project/mathlib4-old/Mathlib/CategoryTheory/Galois/EssSurj.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/LogicEnj/lean4_verification_pipeline"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "ed04dcaac31319e3fac1157ea4039dd33790b1b5",
+                "paths": [
+                  "mathlib4/Mathlib/CategoryTheory/Endomorphism.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/LukeBailey181/certainty-machine"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "72e0c5afcc06c757b92ab9c3e26349fbc20574fa",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Morten-Ness/Leaner"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "09c11a92a869045066fc003517031e96534b5d89",
+                "paths": [
+                  "runs/library-quality-scale-2026-10-26/samples/formal-frontier/files/formal-frontier/FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+                  "runs/library-quality-scale-2026-10-26/samples/formal-frontier/files/formal-frontier/ProjectiveModules/KTheory/Matrix.lean",
+                  "runs/main/samples/formal-frontier/formal-frontier-0010.lean",
+                  "runs/main/samples/formal-frontier/formal-frontier-0177.lean",
+                  "runs/main/samples/formal-frontier/formal-frontier-0522.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/RemyDegenne/lean-quality-indicators"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "130523811f55c80f533e6024e190b945755f93c5",
+                "paths": [
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/Comparison.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/EilenbergMacLane.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/FirstHomology.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/Functoriality.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/Monodromy.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/Torus.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/Uniqueness.lean",
+                  "TauCeti/AlgebraicTopology/ClassifyingSpace/WedgeCircles.lean",
+                  "TauCeti/AlgebraicTopology/DGLocalSystem/Classical/Basic.lean",
+                  "TauCeti/AlgebraicTopology/DGLocalSystem/Classical/Full.lean",
+                  "TauCeti/AlgebraicTopology/DGLocalSystem/Classical/Pullback.lean",
+                  "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                  "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+                  "TauCeti/AlgebraicTopology/FundamentalGroup/RelCWComplex.lean",
+                  "TauCeti/AlgebraicTopology/Homotopy/Hurewicz/One/Naturality.lean",
+                  "TauCeti/AlgebraicTopology/LocalCoefficient.lean",
+                  "TauCeti/AlgebraicTopology/LocalCoefficient/Constant.lean",
+                  "TauCeti/AlgebraicTopology/LocalCoefficient/Covering.lean",
+                  "TauCeti/AlgebraicTopology/LocalCoefficient/QuotientCovering/Basic.lean",
+                  "TauCeti/AlgebraicTopology/LocalCoefficient/Representation.lean",
+                  "TauCeti/AlgebraicTopology/Singular/MappingTorus/Naturality.lean",
+                  "TauCeti/AlgebraicTopology/Singular/Torus/Family/Basic.lean",
+                  "TauCeti/AlgebraicTopology/Singular/Torus/Family/LocalSystem.lean",
+                  "TauCeti/AlgebraicTopology/Singular/Torus/Lattice.lean",
+                  "TauCeti/AlgebraicTopology/Singular/Transfer/PermutationLocalSystem.lean",
+                  "TauCeti/AlgebraicTopology/Singular/Twisted/Coinvariants.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/BranchPointAction/Action.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/BranchPointAction/Basic.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/Classification.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/ComponentCharts.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/CyclicCover.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/Deck.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Basic.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/FilledCover/Rotations.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/InfinityGenerator.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/LoopAtInfinity.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/MonodromyTriple.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/PeripheralLoops.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/PuncturedNeighborhoodComponents.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/Regular.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/SegmentComponents.lean",
+                  "TauCeti/AlgebraicTopology/ThricePuncturedSphere/ZeroOneGenerators.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Action.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/Existence.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/FundamentalGroupAction.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/GaloisCategory.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/MonodromyEquivalence.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/NumberedFiber.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/Pullback.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/Reconstruction.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/RecoveredSubgroup.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Classification/Sigma.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Deck/FundamentalGroup/Basic.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/KodairaThurston.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/LensSpace/FundamentalGroup.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/RealProjective/FundamentalGroup/Basic.lean",
+                  "TauCeti/AlgebraicTopology/UniversalCover/Torus/Lattice.lean",
+                  "TauCeti/Analysis/Complex/RiemannSurface/BelyiPair.lean",
+                  "TauCeti/CategoryTheory/Action/Tannaka.lean",
+                  "TauCeti/CategoryTheory/Functor/RingEquivEnd.lean",
+                  "TauCeti/Geometry/Manifold/DeRham/Period.lean",
+                  "TauCeti/Topology/Covering/Finite.lean",
+                  "TauCeti/Topology/Covering/Monodromy/Connected.lean",
+                  "TauCeti/Topology/Covering/PuncturedDisc.lean",
+                  "TauCeti/Topology/Homotopy/Covering.lean",
+                  "TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean",
+                  "TauCeti/Topology/Homotopy/HomotopyGroup/Conjugation.lean",
+                  "TauCeti/Topology/Homotopy/Monodromy/BasepointChange.lean",
+                  "TauCeti/Topology/Homotopy/Monodromy/Basic.lean",
+                  "TauCeti/Topology/Homotopy/Monodromy/Full.lean",
+                  "TauCeti/Topology/Homotopy/Monodromy/Functoriality.lean",
+                  "TauCeti/Topology/MappingTorus/Basic.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/TauCetiProject/TauCeti"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "a49fe074238f9c6b38e0c4b25c3fb93c80f605ee",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Theophilus1030/NeoMathlib"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "973f72c1900fb72c460833448b472899fa659366",
+                "paths": [
+                  "InverseGalois/Rigidity/RET/Local/DiscMonodromy.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/Monodromy.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/MonodromyNat.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/MonodromyPath.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/Pi1Image.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/PushLoop.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/TameMonodromy.lean",
+                  "InverseGalois/Rigidity/RET/Pi1/Topological/Transport.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Timeroot/InverseGaloisProblem"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "67dc1cea2c192d4dd5a19d9106e8621df0dde9fb",
+                "paths": [
+                  "splitting-spheres/SplittingSpheres/Foundations/CyclicFactorFiber.lean",
+                  "splitting-spheres/SplittingSpheres/Foundations/CyclicFiber.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Vilin97/Autoformalization"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c66523531ff172d7f41913d94e56921e790a1b47",
+                "paths": [
+                  "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneTrisectionMeridianCoordinates.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "8a87b04878421f5aa98d939e8abc6d9afd499312",
+                "paths": [
+                  "ArithmeticTheta_Lean4/dependencies/src/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "ArithmeticTheta_Lean4/dependencies/src/Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "ArithmeticTheta_Lean4/dependencies/src/Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "9e57be63320f29cbb8d2da7c4a8ad6afdef681eb",
+                "paths": [
+                  "NRR/OddSphereDegree/Monodromy.lean",
+                  "NRR/OddSphereDegree/MonodromyCharacter.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/akopjan/NRR-AAK"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "4ce8c22b2de6f13d4464a25eaeddd86297d61b10",
+                "paths": [
+                  "inspiration/mathlib4/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "inspiration/mathlib4/Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "inspiration/mathlib4/Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/andyprevalsky/auto-math"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+                "paths": [
+                  "P2M/Sol/S_ModularCurve_exists_jZeroSemistableSpecialization_monodromy_mem_toricLocus.lean",
+                  "P2M/Sol/S_ModularCurve_exists_jZeroSemistableSpecialization_ssPlaces_monodromy.lean",
+                  "Theorems/Thm_ModularCurve_exists_jZeroSemistableSpecialization_monodromy_mem_toricLocus.lean",
+                  "Theorems/Thm_ModularCurve_exists_jZeroSemistableSpecialization_ssPlaces_monodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/anthropics/fermats-last-theorem"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "b85e7f9f18e00c954f59909f0ecd366bdd0b1b7f",
+                "paths": [
+                  "mathlib/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "mathlib/Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "mathlib/Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/briangmilnes/ScottLean4"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "23dc012f4a2ef5c26cea2ed7743fd277cb61fc1f",
+                "paths": [
+                  "verification/PermNetwork/PermNetwork/CBRecursive/BitResiduum.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/bristolcrypto/controlbits"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "9a9fc315498d58484ac1abc9668548212eb7c1ff",
+                "paths": [
+                  "Oka/AnalyticSpace/Monodromy.lean",
+                  "Oka/Topology/Covering/Monodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/chrisflav/oka"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "d1d783ae85b9236500e4a03c6068b97bd604a25c",
+                "paths": [
+                  "data/exports/lean-pool/LeanPool.HopfProblem.Elliptic.Core5.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.Foundations.TwoOpenTransition.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.PeriodFamily.Core3.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.PeriodFamily.PeriodDomain.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.Toric.CuspHoneycombHexagon.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.Toric.DiagonalQuotient2.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.Uniformization.SpecialPeriods8.expanded.lean",
+                  "data/exports/lean-pool/LeanPool.HopfProblem.Uniformization.SpecialPeriods9.expanded.lean",
+                  "data/exports/openai-math/OAI.Geometry.ConjugatePoints.FundamentalGroup.expanded.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/competemath/emissary-archangel"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "b80fd89a406474bfe84e70fcf537f89514b441bc",
+                "paths": [
+                  "Tengoku/SandronesLibrary/SandronesLibrary/Topology/CircleFundamentalGroupStandard.lean",
+                  "Tengoku/SandronesLibrary/SandronesLibrary/Topology/FundamentalGroupInvarianceStandard.lean",
+                  "Tengoku/Seed/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean",
+                  "Tengoku/Seed/CategoryTheory/Endomorphism.lean",
+                  "Tengoku/Seed/CategoryTheory/Galois/EssSurj.lean",
+                  "Tengoku/Seed/Topology/Homotopy/Lifting.lean",
+                  "Tengoku/Tauceti/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                  "Tengoku/Tauceti/TauCeti/AlgebraicTopology/UniversalCover/Classification/MonodromyEquivalence.lean",
+                  "Tengoku/Tauceti/TauCeti/AlgebraicTopology/UniversalCover/Classification/RecoveredSubgroup.lean",
+                  "Tengoku/Tauceti/TauCeti/CategoryTheory/Action/Tannaka.lean",
+                  "Tengoku/Tauceti/TauCeti/Topology/Covering/Monodromy/Connected.lean",
+                  "Tengoku/Tauceti/TauCeti/Topology/Homotopy/Monodromy/BasepointChange.lean",
+                  "Tengoku/Tauceti/TauCeti/Topology/Homotopy/Monodromy/Basic.lean",
+                  "Tengoku/Tauceti/TauCeti/Topology/Homotopy/Monodromy/Full.lean",
+                  "Tengoku/Tauceti/TauCeti/Topology/Homotopy/Monodromy/Functoriality.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/competemath/tengoku"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "4f9642c4c7117b6a19341d2a7d1d60b6e3acae8b",
+                "paths": [
+                  "Tengoku/Seed/CategoryTheory/Endomorphism.lean",
+                  "Tengoku/Seed/CategoryTheory/Galois/EssSurj.lean",
+                  "Tengoku/Seed/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/competemath/tengoku-sandbox"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "b783b990d46c5f5ce02a4ecbbb2c02408b452cde",
+                "paths": [
+                  "ForMathlib/AlgebraicTopology/FundamentalGroupoid/Equiv.lean",
+                  "ForMathlib/Analysis/Complex/PuncturedPlane/FundamentalGroup.lean",
+                  "ForMathlib/Geometry/Manifold/Quotient/DeckFundamentalGroup.lean",
+                  "SphereSixComplex/Cusp/Cover/FillingComparison.lean",
+                  "SphereSixComplex/Cusp/FundamentalGroup/CentralNaturality.lean",
+                  "SphereSixComplex/Cusp/FundamentalGroup/MarkedLoop.lean",
+                  "SphereSixComplex/Elliptic/Band/StripLift.lean",
+                  "SphereSixComplex/Elliptic/FundamentalGroup/Monodromy.lean",
+                  "SphereSixComplex/FundamentalGroup/Generators.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Covering/AffineVanKampen.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Covering/FundamentalGroup.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Covering/LoopHomology.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Covering/MarkedLoops.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Covering/MonodromyTransport.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Hurewicz/BasepointTransport.lean",
+                  "SphereSixComplex/Prerequisites/Topology/Torus/CircleDegree.lean",
+                  "SphereSixComplex/Regular/FundamentalGroup/Core.lean",
+                  "SphereSixComplex/Regular/FundamentalGroup/Generation.lean",
+                  "SphereSixComplex/Regular/FundamentalGroup/Monodromy.lean",
+                  "SphereSixComplex/Regular/FundamentalGroup/Peripheral.lean",
+                  "SphereSixComplex/TorusFamily/FiberFundamentalGroup.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/deancureton/sphere-six-complex"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "abc669d11b88e163aed1c05b352b5b16889c4ad8",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/duong-ngo/mathlib4"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "2a85cf00f920974f809b27ff0df7e409cd2d7a3d",
+                "paths": [
+                  "v1/Atlas/AlgebraicTopologyI/code/Section31.lean",
+                  "v1/merely-true/Atlas/AlgebraicTopologyI/code/Section31.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/facebookresearch/atlas-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c63c75a53b7da88c4403dcdc5b7b60bc56121bf7",
+                "paths": [
+                  "WeilConjectures/AlgebraicGeometry/FundamentalGroup/LocalMonodromy.lean",
+                  "WeilConjectures/CategoryTheory/ModuleObjects/RegularEndBijective.lean",
+                  "WeilConjectures/CategoryTheory/ScalarObject/ScalarObjects.lean",
+                  "WeilConjectures/SixFunctors/ProEtale/Adic/LisseMonodromy.lean",
+                  "WeilConjectures/TraceFormula/BaseChange/Supertrace.lean",
+                  "WeilConjectures/TraceFormula/Basic.lean",
+                  "WeilConjectures/TraceFormula/PointTrace.lean",
+                  "WeilConjectures/TraceFormula/Specialization/TraitSpecializationFaithful.lean",
+                  "WeilConjectures/WeilSheaf/WeilMonodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "65f2b33a7309de661a8500e4642e5609a537a8ff",
+                "paths": [
+                  "HolomorphicAnosov/Paper/Ghys/ProjectiveCoverDevelopment.lean",
+                  "HolomorphicAnosov/Topology/AsphericalTorusRecognition.lean",
+                  "HolomorphicAnosov/Topology/Franks/CoverWindingMatrix.lean",
+                  "HolomorphicAnosov/Topology/Franks/LefschetzCoverCount.lean",
+                  "HolomorphicAnosov/Topology/Franks/WindingMatrixHomotopy.lean",
+                  "HolomorphicAnosov/Topology/Franks/WindingMatrixRecentering.lean",
+                  "HolomorphicAnosov/Topology/FranksCompactCWCoverLifts.lean",
+                  "HolomorphicAnosov/Topology/TorusSelfmapWindingMatrix.lean",
+                  "HolomorphicAnosov/Topology/TorusStandardWinding.lean",
+                  "HolomorphicAnosov/Topology/WindingBasepointChange.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/frenzymath/HolomorphicAnosov"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "08f06794dd88b786ae560b5db1116f50322c4629",
+                "paths": [
+                  "PoincareConjecture/PoincareLib/Topology/Homotopy/OpenCover.lean",
+                  "PoincareConjecture/PoincareLib/Topology/Manifold/NeckCap/ProjectiveDouble/Monodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/frenzymath/Poincare-Conjecture"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "62db01af9388dc1d9b56b66d6674f4c09b2318a2",
+                "paths": [
+                  "PoincareLib/AlgebraicTopology/FundamentalGroup/VanKampen/Collar.lean",
+                  "PoincareLib/Topology/Homotopy/OpenCover.lean",
+                  "PoincareLib/Topology/Manifold/NeckCap/ProjectiveDouble/Monodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/frenzymath/PoincareConjecture"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "30cca6c68e5a916954f79e9fcbd54b366916ad19",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/gersh/mathlib-bonsai"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "37fa9a502d652590420333ea1e18a2140cf7ebe3",
+                "paths": [
+                  "lean/OAI/AlgebraicTopology/CWComplex/CoverTopology.lean",
+                  "lean/OAI/Geometry/ConjugatePoints/FundamentalGroup.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/igor024/math"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "746117c6ca34e6831fdfae4c25d02f3e1414691a",
+                "paths": [
+                  "lean/OAI/AlgebraicTopology/CWComplex/CoverTopology.lean",
+                  "lean/OAI/Geometry/ConjugatePoints/FundamentalGroup.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "4f65be4eafa8964bd1f7a83682e99aa8165bd418",
+                "paths": [
+                  "Aglib/AlgebraicGeometry/EtaleCohomology/Fields/SylowMonodromy.lean",
+                  "Aglib/AlgebraicGeometry/EtaleCohomology/H1/Naturality.lean",
+                  "Aglib/AlgebraicGeometry/Group/Monodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/kangxyz/aglib"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "7ec5af6bfd11e4e5fa6b9a19c92f9302cbbf51b2",
+                "paths": [
+                  "Colib/Topology/Covering/PathClasses.lean",
+                  "Colib/Topology/Covering/Pullback.lean",
+                  "Colib/Topology/Homotopy/SelfTrackTransport.lean",
+                  "Colib/Topology/LocalCoefficients/CoveringNaturality.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/kangxyz/colib"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c561118b7795eb9780be9ed391c3251d6a4d0afd",
+                "paths": [
+                  "Quillen/Topology/Covering/PathClasses.lean",
+                  "Quillen/Topology/Covering/Pullback.lean",
+                  "Quillen/Topology/LocalCoefficients/CoveringNaturality.lean",
+                  "QuillenTest/PiOneHomotopyCorrection.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/kangxyz/quillen-k-theory"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c17f2bb507ba06be8180121dcc53e529a041e564",
+                "paths": [
+                  "Mathlib/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean",
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "Mathlib/CategoryTheory/Galois/Prorepresentability.lean",
+                  "Mathlib/Topology/Covering/FundamentalGroupCircle.lean",
+                  "Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/leanprover-community/mathlib4"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "ffe0ac0b8c1db92b540c18e16a55829e6a68d783",
+                "paths": [
+                  "mathlib4/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "mathlib4/Mathlib/CategoryTheory/Galois/EssSurj.lean",
+                  "mathlib4/Mathlib/CategoryTheory/Galois/Prorepresentability.lean",
+                  "mathlib4/Mathlib/Topology/Covering/FundamentalGroupCircle.lean",
+                  "mathlib4/Mathlib/Topology/Homotopy/Lifting.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/leanprover/downstream-lean4"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "ffa016d3c9a8d32821f71f6d9d916c30e04fcb67",
+                "paths": [
+                  "code\u9886\u57df/04-\u6570\u5b66\u57fa\u7840/math/mathlib4/Mathlib/CategoryTheory/Endomorphism.lean",
+                  "code\u9886\u57df/04-\u6570\u5b66\u57fa\u7840/math/mathlib4/Mathlib/CategoryTheory/Galois/EssSurj.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/leemiracle/work4ai"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "59e23dc3aeb61af06620cab2a2a545ba418ac86e",
+                "paths": [
+                  "Langlands/AbelianScheme/Tate/FiniteMonodromy.lean",
+                  "Langlands/Representation/Exponents/SupercuspidalFiniteTypeNoetherianReduction.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/math-yiluo/Langlands-lib"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c6d86a8bd52065aafb8251fa1cdcd55b609743ef",
+                "paths": [
+                  "EtingofRepresentationTheory/Chapter9/Introduction_9_7_Morita.lean",
+                  "EtingofRepresentationTheory/Chapter9/MoritaStructural.lean",
+                  "clean-code/release/RepresentationTheory/Algebra/Category/ModuleCat/EndomorphismEquivalences.lean",
+                  "clean-code/release/RepresentationTheory/MoritaEquivalence.lean",
+                  "clean-code/tainted/EtingofRepresentationTheory/Chapter9/Introduction_9_7_Morita.lean",
+                  "clean-code/tainted/EtingofRepresentationTheory/Chapter9/MoritaStructural.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/mathlib-initiative/Etingof-RepresentationTheory-draft1"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "16e4c581cfb39015d900072f2fd3b9bd3dea4c1c",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/mkaratarakis/mathlibtest"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "8ce1ec28aed1c78b3b39d0bae26e2858c82f5143",
+                "paths": [
+                  "Jacobians/RiemannSurface/Homology.lean",
+                  "Jacobians/Topology/CellGeneration.lean",
+                  "Jacobians/Topology/CoveringPi1.lean",
+                  "Jacobians/Topology/IsolatingLasso.lean",
+                  "Jacobians/Topology/LassoGeneration.lean",
+                  "Jacobians/Topology/PunctureLoops.lean",
+                  "Jacobians/Topology/SpokeAlgebra.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/mrdouglasny/jacobian-challenge"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "a392af178af1fe2bcba2ba39eb405700c6ee103c",
+                "paths": [
+                  "lean/InfoGeometry/Twistor/Cl55RealSplitPinNullFundamentalGroup.lean",
+                  "lean/InfoGeometry/Twistor/ProjectiveNullConfigurationDeckMonodromy.lean",
+                  "lean/InfoGeometry/Twistor/ProjectiveNullConfigurationFundamentalGroup.lean",
+                  "lean/InfoGeometry/Twistor/ProjectiveNullConfigurationLocalSystemMonodromy.lean",
+                  "lean/InfoGeometry/Twistor/ProjectiveNullPositiveArtinFundamentalGroupoidEquivalence.lean",
+                  "src/InfoGeometry/Twistor/Cl55RealSplitPinNullFundamentalGroup.lean",
+                  "src/InfoGeometry/Twistor/ProjectiveNullConfigurationDeckMonodromy.lean",
+                  "src/InfoGeometry/Twistor/ProjectiveNullConfigurationFundamentalGroup.lean",
+                  "src/InfoGeometry/Twistor/ProjectiveNullConfigurationLocalSystemMonodromy.lean",
+                  "src/InfoGeometry/Twistor/ProjectiveNullPositiveArtinFundamentalGroupoidEquivalence.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/nickgou-nuke/info-geometry-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+                "paths": [
+                  "lean/OAI/AlgebraicTopology/CWComplex/Collar.lean",
+                  "lean/OAI/AlgebraicTopology/CWComplex/CoverTopology.lean",
+                  "lean/OAI/AlgebraicTopology/CWComplex/Presentation.lean",
+                  "lean/OAI/CategoryTheory/Thomason/Simplicial/LoopDimensionShift.lean",
+                  "lean/OAI/Geometry/Anticanonical/BranchedQuotient.lean",
+                  "lean/OAI/Geometry/ConjugatePoints/FundamentalGroup.lean",
+                  "lean/OAI/GroupTheory/FiniteKernel/VirtualAbelian.lean",
+                  "lean/OAI/GroupTheory/FiniteType/CoreDeckLeftQuotientCovering.lean",
+                  "lean/OAI/GroupTheory/FiniteType/PresentationGeometryRose.lean",
+                  "lean/OAI/GroupTheory/FiniteType/PresentationVanKampenRectanglePaths.lean",
+                  "lean/OAI/GroupTheory/FiniteType/RegularCoverGeometry.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/openai/math"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "97c0b27619bf5070a44d5eda332784c5f979af6a",
+                "paths": [
+                  "Catalog/Bridges/FundamentalGroupCoveringGalois.lean",
+                  "Catalog/Bridges/FundamentalGroupK1Classification.lean",
+                  "Catalog/Bridges/FundamentalGroupOuterAutomorphisms.lean",
+                  "Catalog/Bridges/FundamentalGroupSelfEquivalencesPi0.lean",
+                  "Packages/Catalog/Bridges/FundamentalGroupCoveringGalois.lean",
+                  "Packages/Catalog/Bridges/FundamentalGroupK1Classification.lean",
+                  "Packages/Catalog/Bridges/FundamentalGroupOuterAutomorphisms.lean",
+                  "Packages/Catalog/Bridges/FundamentalGroupSelfEquivalencesPi0.lean",
+                  "docs/Catalog/Bridges/FundamentalGroupCoveringGalois.lean",
+                  "docs/Catalog/Bridges/FundamentalGroupK1Classification.lean",
+                  "docs/Catalog/Bridges/FundamentalGroupOuterAutomorphisms.lean",
+                  "docs/Catalog/Bridges/FundamentalGroupSelfEquivalencesPi0.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/paulklemstine/Lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+                "paths": [
+                  "src/latest/Wikipedia/HopfProblem.lean",
+                  "src/latest/Wikipedia/HopfProblem/CoveringMonodromy.lean",
+                  "src/latest/Wikipedia/HopfProblem/CuspCentralCohomologyDoubleCurvesPure.lean",
+                  "src/latest/Wikipedia/HopfProblem/CuspCentralHomology.lean",
+                  "src/latest/Wikipedia/HopfProblem/CuspCentralHomologyFundamentalGroup.lean",
+                  "src/latest/Wikipedia/HopfProblem/CuspCentralHomologySpecializationEndsZero.lean",
+                  "src/latest/Wikipedia/HopfProblem/CuspFibreFundamentalGroup.lean",
+                  "src/latest/Wikipedia/HopfProblem/CuspUniversalCover.lean",
+                  "src/latest/Wikipedia/HopfProblem/DegreeCollapseFundamentalGroupFiniteTransport.lean",
+                  "src/latest/Wikipedia/HopfProblem/DegreeCollapseLowSurgeryHalfFundamentalGroup.lean",
+                  "src/latest/Wikipedia/HopfProblem/DegreeCollapseSurgeryPairFundamentalGroup.lean",
+                  "src/latest/Wikipedia/HopfProblem/EllipticFundamentalGroupAction.lean",
+                  "src/latest/Wikipedia/HopfProblem/EllipticHigherHomologyMappingTorusLowDegrees.lean",
+                  "src/latest/Wikipedia/HopfProblem/FundamentalGroupBasepointNaturality.lean",
+                  "src/latest/Wikipedia/HopfProblem/FundamentalGroupSimplyConnected.lean",
+                  "src/latest/Wikipedia/HopfProblem/PeriodTorusFirstHomologyPeriodDomain.lean",
+                  "src/latest/Wikipedia/HopfProblem/PeriodTorusFundamentalGroup.lean",
+                  "src/latest/Wikipedia/HopfProblem/SpecialPeriodsCuspAttachingLattice.lean",
+                  "src/latest/Wikipedia/HopfProblem/SpecialPeriodsEllipticAttachingGlobal.lean",
+                  "src/latest/Wikipedia/HopfProblem/SpecialPeriodsEllipticAttachingGlobalTransport.lean",
+                  "src/latest/Wikipedia/HopfProblem/SpecialPeriodsEllipticAttachingMeridians.lean",
+                  "src/latest/Wikipedia/HopfProblem/SpecialPeriodsEllipticAttachingMeridiansCircle.lean",
+                  "src/latest/Wikipedia/HopfProblem/ThreefoldHomologyBoundaryFirstMonodromy.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyBoundaryRadiusMonodromy.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyBoundaryThirdRelationCuspNaturality.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyFundamentalGroupBaseChange.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyFundamentalGroupBaseChangeSquare.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyFundamentalGroupMaps.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyFundamentalGroupOuterMeridianTransport.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyTransportMonodromy.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyTransportRepresentation.lean",
+                  "src/latest/Wikipedia/HopfProblem/TrianglePeriodFamilyTransportTorus.lean",
+                  "src/latest/Wikipedia/HopfProblem/TriangleRegularBaseFundamentalGroupCovering.lean",
+                  "src/latest/Wikipedia/HopfProblem/TriangleRegularBaseFundamentalGroupFreeCoverMonodromy.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/plby/lean-proofs"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "8fbb989d47bc9173336b8f27784466f82197a8c0",
+                "paths": [
+                  "MTC/CategoryTheory/Dimensions/MonodromyTensorCap.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/project-numina/mtc"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "13c41a632efb8fbf93101c8a20f2a9214ab33240",
+                "paths": [
+                  "DifferentialGeometry/Geometry/Flow/RicciFlow/Surgery/Topology/VanKampen.lean",
+                  "DifferentialGeometry/Geometry/Thurston/FlatTwistedBundle.lean",
+                  "DifferentialGeometry/Geometry/Thurston/HyperbolicPieceCover.lean",
+                  "DifferentialGeometry/Topology/Covering/Fiber/Equivalence.lean",
+                  "DifferentialGeometry/Topology/FundamentalGroup/CircleDegree.lean",
+                  "DifferentialGeometry/Topology/FundamentalGroup/CircleLoopGenerator.lean",
+                  "DifferentialGeometry/Topology/Homotopy/Connectivity.lean",
+                  "DifferentialGeometry/Topology/LoopSpace/PrimitiveCircleLift.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/AnnularChainRimRetraction.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/AnnularChainRimTransfer.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/Moise308Nested.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/NestedTori.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/Section34AnnularFillingGenerators.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/Section34BoundaryMeridianClass.lean",
+                  "DifferentialGeometry/Topology/PiecewiseLinear/SolidTorusHurewiczOne.lean",
+                  "DifferentialGeometry/Topology/ThreeManifold/GraphManifold/Seifert/FilledGoodness.lean",
+                  "DifferentialGeometry/Topology/ThreeManifold/TorusCut/Sides.lean",
+                  "DifferentialGeometry/Topology/VanKampen/CellAttachmentFundamentalGroup.lean",
+                  "DifferentialGeometry/Topology/VanKampen/FreeFactors/CollarFreeFactor.lean",
+                  "DifferentialGeometry/Topology/VanKampen/FreeFactors/OpenCoverFreeFactors.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/qinz1yang/differential-geometry"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "73212f7ef2bb46a7884710b18fe1e18b8509e3e5",
+                "paths": [
+                  "Jacobians/Monodromy/HolomorphicPrimitives.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/rkirov/jacobian-claude"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "7905cd4c75038b823a8204e5474996905dd50800",
+                "paths": [
+                  "Uniformization/Surface/PhiVortex.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/rkirov/jordan_pick"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "c51c75fc5fb00ba7a4120082fed4050844e3fd18",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/shivensinha4/mathlib4"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "3eb6c3d82a7a38f85c3a33b8ff0362116ca06d6a",
+                "paths": [
+                  "library/Pcf/Examples/PaperP/MonodromyLossInfCharts.lean",
+                  "library/Pcf/Examples/PaperP/MonodromyLossInfE.lean",
+                  "library/Pcf/Examples/PaperP/MonodromyLossThirdChart.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/tdupu/pcfawd-formalization"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "32e5f75412a804463a0b0c6fff1362d4ab5275b3",
+                "paths": [
+                  "Stage1_Instances/THM-M-0525/IntakeProbe.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/weiyangzen/awesome_theorems"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "6dbbc253a4651618c0d28406e84854e2848b4cfe",
+                "paths": [
+                  "CBAbstract/CBAbstract/BitResiduum.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/wrenna-robson/controlbits"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "132ddb9249eec8b8a8f5a820a9247c89dd1faad6",
+                "paths": [
+                  "Dieudonne/Theorem/Categories.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/ybenmeur/dieudonne"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "580ecc8d5d20081f9bde53ec42947971f7dde066",
+                "paths": [
+                  "PretriangulatedV2/YonedaPeriodicData.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/zhangchenchengSJTU/pretriangulated-lean"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "5339856b84db66f7ba3b831c00d40264447b8d21",
+                "paths": [
+                  "CubeChains/Concurrency/Presentation/LiftPresentation.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/zstone1/Cubical"
+          },
+          {
+            "indexed_commits": [
+              {
+                "commit": "d6c6bfc120c90b907d9587648a56ddc545f4bc1c",
+                "paths": [
+                  "Mathlib/CategoryTheory/Endomorphism.lean",
+                  "Mathlib/CategoryTheory/Galois/EssSurj.lean"
+                ]
+              }
+            ],
+            "repository": "https://github.com/zzhisthebest/mathlib4"
+          }
+        ],
+        "selected_supplier": {
+          "full_landmark_4_proved": false,
+          "full_theorem_1_8_proved": false,
+          "independent_reviews_pending_at_recording": true,
+          "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+          "provenance": "sequences/vendor/provenance.json",
+          "review_receipts_observed_after_technical_record": [
+            {
+              "path": "sequences/reviews/providers-a.json",
+              "sha256": "5e60adf66648cf05783d2250443706181dac746cf56a433b8d4f2ed129e54911",
+              "verdict": "accept-supplier-cohort"
+            },
+            {
+              "path": "sequences/reviews/providers-b.json",
+              "sha256": "b4e6e211d4f754570dd03fd9de9d6c1923527fe7851b85c3f48a0f11f46fb506",
+              "verdict": "accept-supplier-cohort"
+            }
+          ],
+          "root_authorized": true,
+          "root_mathematical_acceptance_claimed": false,
+          "root_mathematical_acceptance_pending_at_recording": true,
+          "technical_evidence": "sequences/evidence/providers/verification.json"
+        },
+        "source_inspected_repositories": [
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+            "compiled_by_this_task": false,
+            "declarations": [
+              {
+                "literal_declaration_source": "noncomputable def mulEquivEnd (X : C) :\n    End X \u2243* End (f.obj X)",
+                "literal_declaration_source_path": "Mathlib/CategoryTheory/Endomorphism.lean",
+                "literal_declaration_start_line": 217,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "CategoryTheory.Functor.FullyFaithful.mulEquivEnd",
+                "type": "(hf : Functor.FullyFaithful F) (X : C) : End X \u2243* End (F.obj X)"
+              },
+              {
+                "literal_declaration_source": "def mapEnd : End X \u2192* End (f.obj X)",
+                "literal_declaration_source_path": "Mathlib/CategoryTheory/Endomorphism.lean",
+                "literal_declaration_start_line": 198,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "CategoryTheory.Functor.mapEnd",
+                "type": "(F : C \u2964 D) : End X \u2192* End (F.obj X)"
+              },
+              {
+                "literal_declaration_source": "theorem map_conj {X Y : C} (\u03b1 : X \u2245 Y) (f : End X) :\n    F.map (\u03b1.conj f).asHom =\n      ((F.mapIso \u03b1).conj (F.mapEnd X f)).asHom",
+                "literal_declaration_source_path": "Mathlib/CategoryTheory/Conj.lean",
+                "literal_declaration_start_line": 112,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "CategoryTheory.Functor.map_conj",
+                "type": "(F : C \u2964 D) (\u03b1 : X \u2245 Y) (f : End X) : F.map (\u03b1.conj f).asHom = ((F.mapIso \u03b1).conj (F.mapEnd X f)).asHom"
+              },
+              {
+                "literal_declaration_source": "def fundamentalGroupMulEquivOfPath (p : Path x\u2080 x\u2081) :\n    FundamentalGroup X x\u2080 \u2243* FundamentalGroup X x\u2081",
+                "literal_declaration_source_path": "Mathlib/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean",
+                "literal_declaration_start_line": 48,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath",
+                "type": "(p : Path x\u2080 x\u2081) : FundamentalGroup X x\u2080 \u2243* FundamentalGroup X x\u2081"
+              },
+              {
+                "literal_declaration_source": "def mapOfEq : FundamentalGroup X x \u2192* FundamentalGroup Y y",
+                "literal_declaration_source_path": "Mathlib/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean",
+                "literal_declaration_start_line": 85,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "FundamentalGroup.mapOfEq",
+                "type": "(f : C(X,Y)) (h : f x = y) : FundamentalGroup X x \u2192* FundamentalGroup Y y"
+              },
+              {
+                "literal_declaration_source": "theorem fundamentalGroupToMulOpposite_apply_mk_eq {\u03b3 : Path x x} {g : G} {\u0393 : C(I, E)}\n    (hp\u0393 : p \u2218 \u0393 = \u03b3) (\u0393_0 : \u0393 0 = e) (\u0393_1 : \u0393 1 = g \u2022 e) :\n    hp.fundamentalGroupToMulOpposite e (.of (.mk \u03b3)) = .op g",
+                "literal_declaration_source_path": "Mathlib/Topology/Homotopy/Lifting.lean",
+                "literal_declaration_start_line": 664,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "IsQuotientCoveringMap.fundamentalGroupToMulOpposite_apply_mk_eq",
+                "type": "{\u03b3 : Path x x} {g : G} {\u0393 : C(I,E)} (hp\u0393 : p \u2218 \u0393 = \u03b3) (\u0393_0 : \u0393 0 = e) (\u0393_1 : \u0393 1 = g \u2022 e) : hp.fundamentalGroupToMulOpposite e (.of (.mk \u03b3)) = .op g"
+              },
+              {
+                "literal_declaration_source": "def MulEquiv.inv' (G : Type*) [DivisionMonoid G] : G \u2243* G\u1d50\u1d52\u1d56",
+                "literal_declaration_source_path": "Mathlib/Algebra/Group/Equiv/Opposite.lean",
+                "literal_declaration_start_line": 71,
+                "name": "MulEquiv.inv'",
+                "type": "(G : Type*) [DivisionMonoid G] : G \u2243* G\u1d50\u1d52\u1d56"
+              }
+            ],
+            "disposition": "Existing pinned baseline; directly useful End, path/basepoint, lift-endpoint and opposite conventions. No new mathlib source added.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+            "new_source_selected": false,
+            "reading_limits": "No independent re-audit of all mathlib declarations. Exact selected imported cohort was verified relative to its pinned imported mathlib environment.",
+            "repository": "https://github.com/leanprover-community/mathlib4",
+            "sources": [
+              {
+                "lines": 240,
+                "path": "Mathlib/CategoryTheory/Endomorphism.lean",
+                "reading": "Exact definitions and relevant proof passages read",
+                "sha256": "bbb39c52c73c18c711b5a46ca34076ef0e403878faaf0da4507c089e0023bc51"
+              },
+              {
+                "lines": 123,
+                "path": "Mathlib/CategoryTheory/Conj.lean",
+                "reading": "Complete file read",
+                "sha256": "d0c4f57be4f7efe6be645eb972eb86033d040ce7ae6fa1f85cbec52d7e31809c"
+              },
+              {
+                "lines": 93,
+                "path": "Mathlib/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean",
+                "reading": "Complete file read",
+                "sha256": "fc10cca1f1e6676aaaa3649e92144c9e71f753485ddbecc7c8dd3d1a38b45353"
+              },
+              {
+                "lines": 853,
+                "path": "Mathlib/Topology/Homotopy/Lifting.lean",
+                "reading": "Exact definitions and relevant proof passages read",
+                "sha256": "d468fed07f758b58c92f8897d74221f04fafdcab4903e7d776905c79eaf898eb"
+              },
+              {
+                "lines": 245,
+                "path": "Mathlib/Algebra/Group/Equiv/Opposite.lean",
+                "reading": "Exact definitions and relevant proof passages read",
+                "sha256": "9a9130f8132ad9071e0a48f9eb7e41b87e2415ba3644b53ebe9799b3c606d8b6"
+              }
+            ]
+          },
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
+            "compiled_by_this_task": false,
+            "declarations": [
+              {
+                "literal_declaration_source": "noncomputable def orbitMonodromy [Finite M.Group] (p : Complement M J) :\n    FundamentalGroup (OrbitSpace M J) (orbitProjection M J p) \u2192*\n      (Artin.coxeterNormalizerQuotient M J)\u1d50\u1d52\u1d56",
+                "literal_declaration_source_path": "landmarks/ArtinLandmarks/Covering.lean",
+                "literal_declaration_start_line": 124,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "ArtinNormalisers.Landmark1.orbitMonodromy",
+                "type": "[Finite M.Group] (p : Complement M J) : FundamentalGroup (OrbitSpace M J) (orbitProjection M J p) \u2192* (Artin.coxeterNormalizerQuotient M J)\u1d50\u1d52\u1d56"
+              },
+              {
+                "literal_declaration_source": "theorem orbitFundamentalGroup_shortExact [Finite M.Group] (p : Complement M J) :\n    Function.Injective (orbitFundamentalGroupMap M J p) \u2227\n      (orbitFundamentalGroupMap M J p).range = (orbitMonodromy M J p).ker \u2227\n      Function.Surjective (orbitMonodromy M J p)",
+                "literal_declaration_source_path": "landmarks/ArtinLandmarks/Covering.lean",
+                "literal_declaration_start_line": 131,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact",
+                "type": "Injective orbitFundamentalGroupMap \u2227 range = ker orbitMonodromy \u2227 Surjective orbitMonodromy"
+              },
+              {
+                "literal_declaration_source": "noncomputable def reducedRibbonNormalizerQuotientEquiv (X : RibbonObject M) :\n    reducedRibbonLoops M X \u2243* Artin.normalizerQuotient M X.indices",
+                "literal_declaration_source_path": "ribbons/ArtinRibbons/NormalizerSplitting.lean",
+                "literal_declaration_start_line": 211,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv",
+                "type": "[Finite M.Group] (X : RibbonObject M) : reducedRibbonLoops M X \u2243* Artin.normalizerQuotient M X.indices"
+              },
+              {
+                "literal_declaration_source": "theorem actualComparison_square :\n    componentRibbonFunctor M J \u22d9 (actualRibbonOrbitEquivalence M J).functor =\n      actualIntervalForward M J \u22d9 orbitFundamentalGroupoidFunctor M J",
+                "literal_declaration_source_path": "chambers/ArtinChambers/ActualComparison.lean",
+                "literal_declaration_start_line": 75,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "ArtinNormalisers.Chamber3.actualComparison_square",
+                "type": "componentRibbonFunctor M J \u22d9 (actualRibbonOrbitEquivalence M J).functor = actualIntervalForward M J \u22d9 orbitFundamentalGroupoidFunctor M J"
+              }
+            ],
+            "disposition": "Existing accepted M1/M2/M3 actual suppliers; freeze existing source. M4 must restrict End of actual reduced J-associate component, not the larger ribbon groupoid.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+            "license": "Apache-2.0 and retained upstream copyright/license headers",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+            "new_source_selected": false,
+            "reading_limits": "No acceptance or rebuild of old scientific sources; M4 draft source changes outside task remain other owners' work.",
+            "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+            "sources": [
+              {
+                "lines": 138,
+                "path": "landmarks/ArtinLandmarks/Covering.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94"
+              },
+              {
+                "lines": 236,
+                "path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d"
+              },
+              {
+                "lines": 127,
+                "path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628"
+              },
+              {
+                "lines": 287,
+                "path": "ribbons/ArtinRibbons/NormalizerSplitting.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c"
+              },
+              {
+                "lines": 93,
+                "path": "chambers/ArtinChambers/ActualComparison.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "858d1ed8efb372d9210d8989daa5bc26f2ef07c78e9b98d366cec5a847309d16"
+              },
+              {
+                "lines": 155,
+                "path": "chambers/ArtinChambers/CoverComparison.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "cb786e05eb495e1e68e8a32ecbc4da39dabb9c8d79954d2509dd1d5e794d3ef3"
+              },
+              {
+                "lines": 212,
+                "path": "chambers/ArtinChambers/RibbonCover.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "402c1189303aa67cb2ca6069e385ed71e9765fc24c7d1e8247ef6ff846d70133"
+              },
+              {
+                "lines": 237,
+                "path": "chambers/ArtinChambers/RibbonComponent.lean",
+                "reading": "Complete or focused actual-map API reading; accepted earlier milestone input, not re-certified here",
+                "sha256": "dd9b23bcea5b0a7a0ac580ba2f34223da07b3e8e3d96cefd30e46d71ce7c450b"
+              }
+            ]
+          },
+          {
+            "axiom_audited_by_this_task": true,
+            "commit": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+            "compiled_by_this_task": true,
+            "declarations": [
+              {
+                "literal_declaration_source": "lemma fundamentalGroupMulEquivOfPath_apply\n    {X : Type*} [TopologicalSpace X] {x\u2080 x\u2081 : X}\n    (\u03b3 : Path x\u2080 x\u2081) (g : FundamentalGroup X x\u2080) :\n    fundamentalGroupMulEquivOfPath \u03b3 g =\n      .of (Path.Homotopic.Quotient.trans (Path.Homotopic.Quotient.mk \u03b3).symm\n        (Path.Homotopic.Quotient.trans g.asHom (Path.Homotopic.Quotient.mk \u03b3)))",
+                "literal_declaration_source_path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                "literal_declaration_start_line": 134,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply",
+                "selected": true,
+                "type": "(\u03b3 : Path x\u2080 x\u2081) (g : FundamentalGroup X x\u2080) : fundamentalGroupMulEquivOfPath \u03b3 g = .of ((Path.Homotopic.Quotient.mk \u03b3).symm.trans (g.asHom.trans (Path.Homotopic.Quotient.mk \u03b3)))",
+                "upstream_lines": [
+                  129,
+                  148
+                ]
+              },
+              {
+                "literal_declaration_source": "lemma map_fundamentalGroupMulEquivOfPath {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]\n    {x\u2080 x\u2081 : X} (f : C(X, Y)) (\u03b3 : Path x\u2080 x\u2081) (g : FundamentalGroup X x\u2080) :\n    map f x\u2081 (fundamentalGroupMulEquivOfPath \u03b3 g) =\n      fundamentalGroupMulEquivOfPath (\u03b3.map f.continuous) (map f x\u2080 g)",
+                "literal_declaration_source_path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                "literal_declaration_start_line": 199,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "FundamentalGroup.map_fundamentalGroupMulEquivOfPath",
+                "selected": true,
+                "type": "(f : C(X,Y)) (\u03b3 : Path x\u2080 x\u2081) (g : FundamentalGroup X x\u2080) : map f x\u2081 (fundamentalGroupMulEquivOfPath \u03b3 g) = fundamentalGroupMulEquivOfPath (\u03b3.map f.continuous) (map f x\u2080 g)",
+                "upstream_lines": [
+                  196,
+                  212
+                ]
+              },
+              {
+                "literal_declaration_source": "theorem coe_monodromy_mapOfEq (hp : _root_.IsCoveringMap p)\n    (hq : _root_.IsCoveringMap q) {g : C(E, F)} {f : C(X, Y)} (hgf : q \u2218 g = f \u2218 p)\n    {x : X} {y : Y} (h : f x = y) (\u03b3 : FundamentalGroup X x) (e : p \u207b\u00b9' {x})\n    (e' : q \u207b\u00b9' {y}) (he : g e = e') :\n    (hq.monodromy (FundamentalGroup.mapOfEq f h \u03b3).asHom e' : F) =\n      g (hp.monodromy \u03b3.asHom e)",
+                "literal_declaration_source_path": "TauCeti/Topology/Homotopy/Monodromy/Functoriality.lean",
+                "literal_declaration_start_line": 323,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "IsCoveringMap.coe_monodromy_mapOfEq",
+                "selected": false,
+                "type": "(hp:IsCoveringMap p) (hq:IsCoveringMap q) {g:C(E,F)} {f:C(X,Y)} (hgf:q \u2218 g=f \u2218 p) (h:f x=y) (\u03b3:FundamentalGroup X x) (e:p\u207b\u00b9'{x}) (e':q\u207b\u00b9'{y}) (he:g e=e') : (hq.monodromy (FundamentalGroup.mapOfEq f h \u03b3).asHom e' : F) = g (hp.monodromy \u03b3.asHom e)"
+              },
+              {
+                "literal_declaration_source": "theorem monodromy_fundamentalGroupMulEquivOfPath_symm_apply\n    (hp : IsCoveringMap p) (\u03b3 : Path x\u2080 x\u2081) (g : FundamentalGroup X x\u2081) (e\u2080 : p \u207b\u00b9' {x\u2080}) :\n    hp.monodromy ((FundamentalGroup.fundamentalGroupMulEquivOfPath \u03b3).symm g).toPath e\u2080 =\n      (coveringFiberEquiv hp (.mk \u03b3)).symm (hp.monodromy g.toPath (hp.monodromy (.mk \u03b3) e\u2080))",
+                "literal_declaration_source_path": "TauCeti/Topology/Homotopy/Monodromy/BasepointChange.lean",
+                "literal_declaration_start_line": 45,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "IsCoveringMap.monodromy_fundamentalGroupMulEquivOfPath_symm_apply",
+                "selected": false,
+                "type": "(hp:IsCoveringMap p) (\u03b3:Path x\u2080 x\u2081) (g:FundamentalGroup X x\u2081) (e\u2080:p\u207b\u00b9'{x\u2080}) : hp.monodromy ((FundamentalGroup.fundamentalGroupMulEquivOfPath \u03b3).symm g).toPath e\u2080 = (coveringFiberEquiv hp (.mk \u03b3)).symm (hp.monodromy g.toPath (hp.monodromy (.mk \u03b3) e\u2080))"
+              }
+            ],
+            "disposition": "Root selected only exact two-declaration extraction in one new ArtinSequenceVendor module; other closures considered but not imported.",
+            "independent_reviews_pending": true,
+            "kernel_replayed_by_this_task": true,
+            "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "e8ba86fa9744dd8d90f48c1752bc735f61a4ca81",
+            "new_source_selected": true,
+            "physical_canonical_declaration_count": 2,
+            "provenance_path": "sequences/vendor/provenance.json",
+            "provenance_sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520",
+            "reading_limits": "Full recursive closure computed mechanically; not a semantic review of every unrelated upstream proof. Selected source statements/bodies unchanged, target mathlib port actually built/audited/replayed. Independent supplier reviews/root acceptance pending at inventory recording.",
+            "repository": "https://github.com/TauCetiProject/TauCeti",
+            "root_acceptance_pending": true,
+            "selected_local_module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+            "selected_local_path": "sequences/vendor/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean",
+            "selected_local_sha256": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d",
+            "sources": [
+              {
+                "lines": 651,
+                "path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+                "reading": "Selected exact declarations/proofs 129\u2013148 and196\u2013212 fully read; other relevant signatures/passages read",
+                "sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43"
+              },
+              {
+                "lines": 335,
+                "path": "TauCeti/Topology/Homotopy/Monodromy/Functoriality.lean",
+                "reading": "Relevant whole base-map theorem proofs and other signatures read",
+                "sha256": "ad915954439a7983d7569ce57351d062892e8036ebd062cd9c7c92981b3cc1e2"
+              },
+              {
+                "lines": 101,
+                "path": "TauCeti/Topology/Homotopy/Monodromy/BasepointChange.lean",
+                "reading": "Entire file read",
+                "sha256": "e9311676d5bfa249f0c127168197bb3ea4834d370bb2b7ac3076042178affffb"
+              },
+              {
+                "lines": 360,
+                "path": "TauCeti/Topology/Homotopy/Monodromy/Basic.lean",
+                "reading": "Relevant signatures/passages; recursive import discovery not full semantic review",
+                "sha256": "4661dd4f782787d6a28fd632d47dde228ac2a1eddf09eb687d7b4575a7800189"
+              }
+            ],
+            "technical_verification": "sequences/evidence/providers/verification.json",
+            "technical_verification_sha256": "6287da8e7e322406e1e6efcf87b6769c375b174f26cdda76508766e59e361694"
+          },
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "ce38a38faef1a147e75b68b78b02bbfd6ad82948",
+            "compiled_by_this_task": false,
+            "declarations": [
+              {
+                "literal_declaration_source": "theorem fundamentalGroupToMulOpposite_naturality\n    (hp : IsQuotientCoveringMap p G) (hq : IsQuotientCoveringMap q H)\n    (\u03c1 : G \u2192* H) (F : C(E, E')) (f : C(B, B')) (hF : q \u2218 F = f \u2218 p)\n    (h\u03c1 : \u2200 (g : G) (e : E), F (g \u2022 e) = \u03c1 g \u2022 F e) {x : B} (e : p \u207b\u00b9' {x}) :\n    (hq.fundamentalGroupToMulOpposite\n      \u27e8F e, (congr_fun hF e).trans (congrArg f e.2)\u27e9).comp\n        (FundamentalGroup.map f x) =\n      (MonoidHom.op \u03c1).comp (hp.fundamentalGroupToMulOpposite e)",
+                "literal_declaration_source_path": "FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+                "literal_declaration_start_line": 329,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "IsQuotientCoveringMap.fundamentalGroupToMulOpposite_naturality",
+                "type": "(hp:IsQuotientCoveringMap p G) (hq:IsQuotientCoveringMap q H) (\u03c1:G\u2192*H) (F:C(E,E')) (f:C(B,B')) (hF:q \u2218 F=f \u2218 p) (h\u03c1:\u2200g e,F(g\u2022e)=\u03c1 g\u2022F e) (e:p\u207b\u00b9'{x}) : (hq.fundamentalGroupToMulOpposite \u27e8F e,...\u27e9).comp (FundamentalGroup.map f x) = (MonoidHom.op \u03c1).comp (hp.fundamentalGroupToMulOpposite e)"
+              },
+              {
+                "literal_declaration_source": "theorem mapOfEq_comp_fundamentalGroupMulEquivOfPath (f : C(X, Y))\n    {x\u2080 x\u2081 : X} {y\u2080 y\u2081 : Y} (p : Path x\u2080 x\u2081) (h\u2080 : f x\u2080 = y\u2080) (h\u2081 : f x\u2081 = y\u2081) :\n    (mapOfEq f h\u2081).comp (fundamentalGroupMulEquivOfPath p).toMonoidHom =\n      (fundamentalGroupMulEquivOfPath\n        ((p.map f.continuous).cast h\u2080.symm h\u2081.symm)).toMonoidHom.comp (mapOfEq f h\u2080)",
+                "literal_declaration_source_path": "FundamentalGroupoids/FundamentalGroup.lean",
+                "literal_declaration_start_line": 232,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "FundamentalGroup.mapOfEq_comp_fundamentalGroupMulEquivOfPath",
+                "type": "(f:C(X,Y)) (p:Path x\u2080 x\u2081) (h\u2080:f x\u2080=y\u2080) (h\u2081:f x\u2081=y\u2081) : (mapOfEq f h\u2081).comp (fundamentalGroupMulEquivOfPath p).toMonoidHom = (fundamentalGroupMulEquivOfPath ((p.map f.continuous).cast h\u2080.symm h\u2081.symm)).toMonoidHom.comp (mapOfEq f h\u2080)"
+              }
+            ],
+            "disposition": "Genuine generic alternative; not selected. Monodromy full closure3new modules1078lines51736bytes across2repos; basepoint full closure2modules1948lines90065bytes. Root chose smaller same-pin TauCeti extraction.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.34.0-rc2",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+            "new_source_selected": false,
+            "reading_limits": "No formal compile/axiom/replay. General naturality is directly relevant but does not identify algebraic ribbon labels or prove the M4 square by itself.",
+            "repository": "https://github.com/FormalFrontier/fundamental-groupoids",
+            "sources": [
+              {
+                "lines": 558,
+                "path": "FundamentalGroupoids/Topology/Covering/Monodromy.lean",
+                "reading": "Selected exact general naturality theorem/proof read; other signatures read",
+                "sha256": "2e1ac1eebf0de9bb46f398f90ed7798db2c0edeb0a7dbd140f1e087292730670"
+              },
+              {
+                "lines": 509,
+                "path": "FundamentalGroupoids/FundamentalGroup.lean",
+                "reading": "Selected map/basepoint naturality theorem bodies read; other signatures read",
+                "sha256": "c5aa143a649e0fb8f7ea120e5999a1cbae7cf7d24d0d249c30a8c7b38d648422"
+              },
+              {
+                "lines": 834,
+                "path": "FundamentalGroupoids/Topology/Covering/DeckMonodromy.lean",
+                "reading": "Declaration inventory only; not full proofs",
+                "sha256": "97976de5da3d9fc430e774cd48e2f4e19bc24e74b091926226e41cea1a012d77"
+              }
+            ]
+          },
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "da81dc691eabf38306f427465ea8a4af350f0aef",
+            "compiled_by_this_task": false,
+            "declarations": [],
+            "disposition": "Only an unselected FormalFrontier closure dependency; no direct M4 prerequisite beyond current mathlib identified. Not imported.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.34.0-rc2",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "83abb3e776bdefcbc447a1e44d0debe4010039e5",
+            "new_source_selected": false,
+            "reading_limits": "No candidate theorem accepted; no build/audit/replay.",
+            "repository": "https://github.com/FormalFrontier/group-theory",
+            "sources": [
+              {
+                "lines": 406,
+                "path": "GroupTheory/GroupAction/Quotient.lean",
+                "reading": "Dependency closure/import/header inspection; not a full theorem review",
+                "sha256": "e5a510797679d62629a509f34d3f50d30d85153ff81f2244e24e9ab6b2c560c3"
+              },
+              {
+                "lines": 114,
+                "path": "GroupTheory/Topology/LocallyConstant.lean",
+                "reading": "Dependency closure/import/header inspection; not a full theorem review",
+                "sha256": "4269112d691ea1b571aecf88c1eeadcf7daf64eefe9ace92f1621e84c88652d2"
+              }
+            ]
+          },
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "b783b990d46c5f5ce02a4ecbbb2c02408b452cde",
+            "compiled_by_this_task": false,
+            "declarations": [
+              {
+                "literal_declaration_source": "public theorem fundamentalGroupToMulOpposite_transport_endpoint\n    {E X G : Type*} [TopologicalSpace E] [TopologicalSpace X]\n    [Group G] [MulAction G E] {p : C(E, X)}\n    (hp : IsQuotientCoveringMap p G) {x y : X}\n    (W : Path x y) (ex : p \u207b\u00b9' {x}) (gamma : FundamentalGroup X x) :\n    hp.fundamentalGroupToMulOpposite\n        (hp.isCoveringMap.monodromy (Path.Homotopic.Quotient.mk W) ex)\n        (FundamentalGroup.fundamentalGroupMulEquivOfPath W gamma) =\n      hp.fundamentalGroupToMulOpposite ex gamma",
+                "literal_declaration_source_path": "SphereSixComplex/Prerequisites/Topology/Covering/MonodromyTransport.lean",
+                "literal_declaration_start_line": 11,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "SphereSixComplex.fundamentalGroupToMulOpposite_transport_endpoint",
+                "type": "(hp:IsQuotientCoveringMap p G) (W:Path x y) (ex:p\u207b\u00b9'{x}) (\u03b3:FundamentalGroup X x) : hp.fundamentalGroupToMulOpposite (hp.isCoveringMap.monodromy (.mk W) ex) (FundamentalGroup.fundamentalGroupMulEquivOfPath W \u03b3) = hp.fundamentalGroupToMulOpposite ex \u03b3"
+              },
+              {
+                "literal_declaration_source": "public theorem quotientCover_fundamentalGroupToMulOpposite_naturality\n    {E E' X X' G H : Type*}\n    [TopologicalSpace E] [TopologicalSpace E'] [TopologicalSpace X] [TopologicalSpace X']\n    [Group G] [Group H] [MulAction G E] [MulAction H E']\n    {p : C(E, X)} {q : C(E', X')}\n    (hp : IsQuotientCoveringMap p G) (hq : IsQuotientCoveringMap q H)\n    (D : QuotientCoverMapData (G",
+                "literal_declaration_source_path": "SphereSixComplex/Prerequisites/Topology/Covering/MonodromyTransport.lean",
+                "literal_declaration_start_line": 56,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "SphereSixComplex.quotientCover_fundamentalGroupToMulOpposite_naturality",
+                "type": "(hp:IsQuotientCoveringMap p G)(hq:IsQuotientCoveringMap q H)(D:QuotientCoverMapData p q)(e:E)(\u03b3:FundamentalGroup X (p e)) : (MonoidHom.op D.deckMap)(hp.fundamentalGroupToMulOpposite \u27e8e,rfl\u27e9 \u03b3) = hq.fundamentalGroupToMulOpposite \u27e8D.lift e,rfl\u27e9 (FundamentalGroup.mapOfEq D.baseMap (D.commutes e) \u03b3)"
+              }
+            ],
+            "disposition": "Exact endpoint transport and quotient-cover naturality useful mathematically; not selected as dependency because unrelated affine/punctured-plane import closure and older API. Root author derives endpoint transport from selected path formula plus existing mathlib monodromy laws.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "6b7abb3c7686292736be2955bd3eb9ebf63b456a",
+            "new_source_selected": false,
+            "reading_limits": "No recursive closure accepted/compiled. Not a simply-connectedness surrogate; statements use genuine quotient covers.",
+            "repository": "https://github.com/deancureton/sphere-six-complex",
+            "sources": [
+              {
+                "lines": 109,
+                "path": "SphereSixComplex/Prerequisites/Topology/Covering/MonodromyTransport.lean",
+                "reading": "Entire file read",
+                "sha256": "6c0689ab2c079662ad3a873145773e83a2c96af9db9d1c50178ee41be2a3a5af"
+              },
+              {
+                "lines": 78,
+                "path": "ForMathlib/Geometry/Manifold/Quotient/DeckFundamentalGroup.lean",
+                "reading": "Entire file read",
+                "sha256": "68fb7e99c259b78d2e30f418ac90e76b2969a7ff27b0ffadbb5e0c4d65722b4e"
+              }
+            ]
+          },
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "13c41a632efb8fbf93101c8a20f2a9214ab33240",
+            "compiled_by_this_task": false,
+            "declarations": [
+              {
+                "literal_declaration_source": "noncomputable def fundamentalGroupChangeBasepoint\n    {X : Type u} [TopologicalSpace X] {z m : X} (\u03b2 : Path z m) :\n    FundamentalGroup X m \u2243* FundamentalGroup X z",
+                "literal_declaration_source_path": "DifferentialGeometry/Topology/FundamentalGroup/BasepointChange.lean",
+                "literal_declaration_start_line": 16,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "DifferentialGeometry.Topology.fundamentalGroupChangeBasepoint",
+                "type": "(\u03b2:Path z m) : FundamentalGroup X m \u2243* FundamentalGroup X z"
+              },
+              {
+                "literal_declaration_source": "theorem transportedFundamentalGroupHom_connector\n    {X : Type u} [TopologicalSpace X] {z m : X} {G : Type v} [Group G]\n    (\u03c6 : FundamentalGroup X z \u2192* G) (\u03b2 \u03b2' : Path z m) :\n    transportedFundamentalGroupHom \u03c6 \u03b2' =\n      (MulAut.conj (\u03c6 (connectorLoop \u03b2 \u03b2'))\u207b\u00b9).toMonoidHom.comp\n        (transportedFundamentalGroupHom \u03c6 \u03b2)",
+                "literal_declaration_source_path": "DifferentialGeometry/Topology/FundamentalGroup/BasepointChange.lean",
+                "literal_declaration_start_line": 99,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "DifferentialGeometry.Topology.transportedFundamentalGroupHom_connector",
+                "type": "(\u03c6:FundamentalGroup X z\u2192*G)(\u03b2 \u03b2':Path z m) : transportedFundamentalGroupHom \u03c6 \u03b2' = (MulAut.conj (\u03c6(connectorLoop \u03b2 \u03b2'))\u207b\u00b9).toMonoidHom.comp (transportedFundamentalGroupHom \u03c6 \u03b2)"
+              }
+            ],
+            "disposition": "Not selected: basepoint-change construction duplicates mathlib (reverse direction); connector-dependence bookkeeping does not give compatible chosen upstairs/downstairs transport automatically. Older End representation would require compatibility work.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "c55e6e786f49471c72fbddbec5415808896aec1e",
+            "new_source_selected": false,
+            "reading_limits": "No compile/port/audit/replay. No re-review of broader geometry project.",
+            "repository": "https://github.com/qinz1yang/differential-geometry",
+            "sources": [
+              {
+                "lines": 111,
+                "path": "DifferentialGeometry/Topology/FundamentalGroup/BasepointChange.lean",
+                "reading": "Entire file read",
+                "sha256": "0e80ed4f23307ec7582e8c6e8773794a9ce3f50f813cff417c377edfe494889b"
+              },
+              {
+                "lines": 72,
+                "path": "DifferentialGeometry/Topology/Covering/FundamentalGroup/CoveringSquareInjective.lean",
+                "reading": "Relevant declaration inventory only",
+                "sha256": "ff996db31e9bc9f5c027c267fa3c67211f879287896b53ab37191c44698b47a1"
+              },
+              {
+                "lines": 143,
+                "path": "DifferentialGeometry/Topology/Covering/FundamentalGroup/CoveringSquareConsumers.lean",
+                "reading": "Relevant declaration inventory only",
+                "sha256": "a5b7a219dc41a70fd8a1536574eaa72ffd54edc1f2c1f861514c94d3adf41f27"
+              }
+            ]
+          },
+          {
+            "axiom_audited_by_this_task": false,
+            "commit": "9a9fc315498d58484ac1abc9668548212eb7c1ff",
+            "compiled_by_this_task": false,
+            "declarations": [
+              {
+                "literal_declaration_source": "theorem monodromy_comp (cp : IsCoveringMap p) (cq : IsCoveringMap q) {f : E \u2192 E'}\n    (hf : Continuous f) (hfq : q \u2218 f = p) {x y : X} (\u03b3 : Path.Homotopic.Quotient x y)\n    (e : p \u207b\u00b9' {x}) :\n    f (cp.monodromy \u03b3 e) = cq.monodromy \u03b3 \u27e8f e, by simpa [\u2190 hfq] using e.2\u27e9",
+                "literal_declaration_source_path": "Oka/Topology/Covering/Monodromy.lean",
+                "literal_declaration_start_line": 33,
+                "literal_scope_note": "Namespace and preceding variable/typeclass context are those of the exact pinned source file; the explicit application/type summary above includes relevant context.",
+                "name": "IsCoveringMap.monodromy_comp",
+                "type": "(cp:IsCoveringMap p)(cq:IsCoveringMap q){f:E\u2192E'}(hf:Continuous f)(hfq:q \u2218 f=p)(\u03b3:Path.Homotopic.Quotient x y)(e:p\u207b\u00b9'{x}) : f(cp.monodromy \u03b3 e) = cq.monodromy \u03b3 \u27e8f e,...\u27e9"
+              }
+            ],
+            "disposition": "Genuine short same-base monodromy naturality result; unselected because existing selected path formula/mathlib lift uniqueness suffice and full M4 comparison changes base as well.",
+            "kernel_replayed_by_this_task": false,
+            "lean_toolchain": "leanprover/lean4:v4.32.0",
+            "license": "Apache-2.0",
+            "mathematically_accepted_by_this_task": false,
+            "mathlib_commit": "81a5d257c8e410db227a6665ed08f64fea08e997",
+            "new_source_selected": false,
+            "reading_limits": "No compile/audit/replay. Only this file and pinned package metadata read.",
+            "repository": "https://github.com/chrisflav/oka",
+            "sources": [
+              {
+                "lines": 55,
+                "path": "Oka/Topology/Covering/Monodromy.lean",
+                "reading": "Entire file read",
+                "sha256": "83d8ec07f4246ac5b3381a16e7d3fb712f53ff58046c421618d1dfc64511802b"
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "cdffb49b7837cb5879eac4dd8dd2c8a0682287da4a9cd76fd4b4dca4797d046c"
+    "sha256": "5dd5783a800299cc2e9415621c1421421bacaee90a5a8d6165c6a5258dea626a"
   },
   "github_actions_tooling": [
     {
@@ -26400,6 +28824,39 @@
         "path": ".github/workflows/ribbons.yml",
         "sha256": "36c35d21097f93204af706c646632b32f38c21294941dd5d4a2e75ee6893519a"
       }
+    },
+    {
+      "line": 25,
+      "repository": "https://github.com/actions/checkout",
+      "revision": "11d5960a326750d5838078e36cf38b85af677262",
+      "role": "GitHub Actions tooling only; no scientific proof supplied",
+      "source_reading_limit": "Exact uses entry inspected; action implementation/dependencies not manually audited by this register.",
+      "workflow": {
+        "path": ".github/workflows/sequences.yml",
+        "sha256": "19e3f7ebe00b1c549580e9867182f778a9c30e6dc67371f09a9c589bae789bfe"
+      }
+    },
+    {
+      "line": 26,
+      "repository": "https://github.com/leanprover/lean-action",
+      "revision": "ba3fdfe5c4476c925da13bf11a005ddb47e47aee",
+      "role": "GitHub Actions tooling only; no scientific proof supplied",
+      "source_reading_limit": "Exact uses entry inspected; action implementation/dependencies not manually audited by this register.",
+      "workflow": {
+        "path": ".github/workflows/sequences.yml",
+        "sha256": "19e3f7ebe00b1c549580e9867182f778a9c30e6dc67371f09a9c589bae789bfe"
+      }
+    },
+    {
+      "line": 40,
+      "repository": "https://github.com/actions/upload-artifact",
+      "revision": "ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "role": "GitHub Actions tooling only; no scientific proof supplied",
+      "source_reading_limit": "Exact uses entry inspected; action implementation/dependencies not manually audited by this register.",
+      "workflow": {
+        "path": ".github/workflows/sequences.yml",
+        "sha256": "19e3f7ebe00b1c549580e9867182f778a9c30e6dc67371f09a9c589bae789bfe"
+      }
     }
   ],
   "kind": "github-proof-source-ledger",
@@ -26417,7 +28874,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/mathlib4",
       "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
@@ -26436,7 +28894,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/plausible",
       "revision": "129d1ba9a16bc0660f46c79e9fb041ef5d5d80de",
@@ -26455,7 +28914,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/LeanSearchClient",
       "revision": "c61286b7b63cbfd563b28e11e81d0a18233a044a",
@@ -26474,7 +28934,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/import-graph",
       "revision": "e5d5639bedc7feecfbcb98e30b3bf26463d9f722",
@@ -26493,7 +28954,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/ProofWidgets4",
       "revision": "16259c0d07d61ee37d999d05b5cf96338b8daa11",
@@ -26512,7 +28974,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/aesop",
       "revision": "7d11bfa88558f8d3d90afdf6bd877ed70001498d",
@@ -26531,7 +28994,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/quote4",
       "revision": "b0256621cb88178e9ad932a53633077b3029e621",
@@ -26550,7 +29014,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover-community/batteries",
       "revision": "4af7237d146261353907b06a01b6f3fc06cfa067",
@@ -26569,7 +29034,8 @@
         "lake-manifest.json",
         "landmarks/lake-manifest.json",
         "ribbons/lake-manifest.json",
-        "chambers/lake-manifest.json"
+        "chambers/lake-manifest.json",
+        "sequences/lake-manifest.json"
       ],
       "repository": "https://github.com/leanprover/lean4-cli",
       "revision": "c09cb1e4f1e6e1c231a1175a12b681b075054a1b",
@@ -26606,6 +29072,10 @@
     {
       "path": "chambers/lake-manifest.json",
       "sha256": "e9e97c7ff7ad2eddb4a831b045a85e3a880f4daacb6343498e54cf5c9cc9f287"
+    },
+    {
+      "path": "sequences/lake-manifest.json",
+      "sha256": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960"
     }
   ],
   "mirror": {
@@ -26678,11 +29148,21 @@
   ],
   "repository_extraction_policy": "Explicit GitHub URLs and exact machine register repository fields; bounded first-cell repository+40-character commit tokens only. File locators stay attached to report/source repository and are never converted into GitHub repositories.",
   "repository_index": {
+    "https://github.com/AlexenderSokolov/cross-theory-formal-database": {
+      "exact_revisions": [
+        "d6dd63d94fb47e5ebd1ae7edcafa0265a60fbec6"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/Arthur742Ramos/ComputationalPathsLean": {
       "exact_revisions": [
         "257c659b7973aeda900d86a5da73b208712c7523"
       ],
       "roles": [
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report"
       ],
       "source_reports": [
@@ -26709,6 +29189,42 @@
           "path": "docs/external-prerequisites.md"
         }
       ]
+    },
+    "https://github.com/Arthur742Ramos/TopologicalComputationalPaths": {
+      "exact_revisions": [
+        "ea1367d99c7d2f3794f1299cce5b18379e9093a7"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Arthur742Ramos/cell-attachment-lean": {
+      "exact_revisions": [
+        "1c671038e320cecc58ca1d81dca11bbe2e2a507c"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Arthur742Ramos/higher-cell-attachment-lean": {
+      "exact_revisions": [
+        "bcf788e349b4969f4d8379ee9cb4df7a28352af1"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Arthur742Ramos/presentation-complex-lean": {
+      "exact_revisions": [
+        "aa11639b7f616a7b3e688c6261c94f59b15167dc"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/AxiomMath/CFSG": {
       "exact_revisions": [
@@ -26765,6 +29281,51 @@
       ],
       "source_reports": []
     },
+    "https://github.com/AxiomMath/TernaryPoly": {
+      "exact_revisions": [
+        "28679d7cad438a91a732422d4ab1b184ae17e532"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/BochaoKong/permutohedron": {
+      "exact_revisions": [
+        "886b7364faa7ab6db7d9eb36cf5a0c26e37d388a"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Brandon7771066/TI-Sigma-New": {
+      "exact_revisions": [
+        "b5955f2576d71496adf9ea0b28fe4830db8aac4e"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/CBirkbeck/LeanBridge": {
+      "exact_revisions": [
+        "fa421d6578a7bcab5e267c20b8d3a98dd5f77182"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Commutator-IO/grothendieck-project": {
+      "exact_revisions": [
+        "36f205d4b1a83dc54b6ac7ed3bf69c8763355b4c"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/DongzheZheng/Suciu-s-Chen-ranks-conjecture": {
       "exact_revisions": [
         "3a84cf4619f2c17e55f2e05214e9638e8d3b7634"
@@ -26779,6 +29340,15 @@
           "path": "docs/theorem18/landmarks/milestone3-search-other.md"
         }
       ]
+    },
+    "https://github.com/ERHUTUZI123/monodromy": {
+      "exact_revisions": [
+        "cb31794c8417515d4e9e439da9a87a8ddaeb4568"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/F-Najman/normalizer-lean": {
       "exact_revisions": [
@@ -26810,6 +29380,34 @@
         }
       ]
     },
+    "https://github.com/Fedor-Popov/Lean_VOA": {
+      "exact_revisions": [
+        "013a799ca834a8a6b3afa8129e3e522025b3f45c"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/FormalFrontier/fundamental-groupoids": {
+      "exact_revisions": [
+        "ce38a38faef1a147e75b68b78b02bbfd6ad82948"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use",
+        "source inspected only; not accepted by search"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/FormalFrontier/group-theory": {
+      "exact_revisions": [
+        "da81dc691eabf38306f427465ea8a4af350f0aef"
+      ],
+      "roles": [
+        "source inspected only; not accepted by search"
+      ],
+      "source_reports": []
+    },
     "https://github.com/GrigoryEvko/FX": {
       "exact_revisions": [
         "e01b6e40bb6c283423c27bd7bcc1a6ac07700756"
@@ -26824,9 +29422,81 @@
         }
       ]
     },
+    "https://github.com/JLimperg/aesop-script-evaluation": {
+      "exact_revisions": [
+        "7d23d378e4f8f89ea64e6d6a365f1d3e7d2774f6"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/JobPetrovcic/mathlib-archive": {
+      "exact_revisions": [
+        "29dcec074de168ac2bf835a77ef68bbe069194c5"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Jonathan125/ConstructiveTheories": {
+      "exact_revisions": [
+        "f4dafc1c78b196342c17430255cb89bdcd8ed142"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/KitaKen1/lean-eval-pi-succ-sphere-n-mulequiv-zmod-two": {
+      "exact_revisions": [
+        "de4d09ac3e86a17d4544c1c86839336ec03a4734"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/LR-UK/Bounded-orbit-wandering-domains": {
+      "exact_revisions": [
+        "6e306deb8169e834e9cc6662160c70231a7e2a83"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/LeanPool/lean-pool": {
       "exact_revisions": [
         "7f2d9d207a1d28318c60a44c7a92737c98156221"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/LogicEnj/lean4_verification_pipeline": {
+      "exact_revisions": [
+        "716bf8f167565e3b850f5827e29be7f9bdf0a0cc"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/LukeBailey181/certainty-machine": {
+      "exact_revisions": [
+        "ed04dcaac31319e3fac1157ea4039dd33790b1b5"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Morten-Ness/Leaner": {
+      "exact_revisions": [
+        "72e0c5afcc06c757b92ab9c3e26349fbc20574fa"
       ],
       "roles": [
         "search hit only; not equated with source reading/use"
@@ -26850,6 +29520,15 @@
     "https://github.com/Qiuzhen-CFSG/CFSG": {
       "exact_revisions": [
         "0c6635528a02dd46f2e93e2ade0c4ac647ad1eb7"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/RemyDegenne/lean-quality-indicators": {
+      "exact_revisions": [
+        "09c11a92a869045066fc003517031e96534b5d89"
       ],
       "roles": [
         "search hit only; not equated with source reading/use"
@@ -26903,7 +29582,8 @@
         "M3 machine search inventory; exact reading/disposition retained in records",
         "accepted scientific supplier",
         "search hit only; not equated with source reading/use",
-        "search-report mention; read/use/disposition bounded by exact report"
+        "search-report mention; read/use/disposition bounded by exact report",
+        "source inspected only; not accepted by search"
       ],
       "source_reports": [
         {
@@ -26959,6 +29639,10 @@
           "path": "docs/theorem18/landmarks/milestone3-search-openai.md"
         },
         {
+          "line": 130,
+          "path": "docs/theorem18/landmarks/milestone4-search-other.md"
+        },
+        {
           "line": 30,
           "path": "docs/theorem18/search-tauceti-mathlib.md"
         },
@@ -26999,6 +29683,51 @@
           "path": "docs/theorem18/search-tauceti-mathlib.md"
         }
       ]
+    },
+    "https://github.com/Theophilus1030/NeoMathlib": {
+      "exact_revisions": [
+        "a49fe074238f9c6b38e0c4b25c3fb93c80f605ee"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Timeroot/InverseGaloisProblem": {
+      "exact_revisions": [
+        "973f72c1900fb72c460833448b472899fa659366"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Vilin97/Autoformalization": {
+      "exact_revisions": [
+        "67dc1cea2c192d4dd5a19d9106e8621df0dde9fb"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/Vilin97/homotopy-groups-lean": {
+      "exact_revisions": [
+        "c66523531ff172d7f41913d94e56921e790a1b47"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/WeThinkIn/arithmetic-theta-lean4-palomar": {
+      "exact_revisions": [
+        "8a87b04878421f5aa98d939e8abc6d9afd499312"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/actions/checkout": {
       "exact_revisions": [
@@ -27063,6 +29792,33 @@
         }
       ]
     },
+    "https://github.com/akopjan/NRR-AAK": {
+      "exact_revisions": [
+        "9e57be63320f29cbb8d2da7c4a8ad6afdef681eb"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/andyprevalsky/auto-math": {
+      "exact_revisions": [
+        "4ce8c22b2de6f13d4464a25eaeddd86297d61b10"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/anthropics/fermats-last-theorem": {
+      "exact_revisions": [
+        "6e837e75355538c7f80bab5b956861e86c4eacc2"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/apnelson1/Matroid": {
       "exact_revisions": [
         "9f17014947dabcee1198f99f81f7b38d3be2a5e8"
@@ -27086,12 +29842,40 @@
         }
       ]
     },
+    "https://github.com/briangmilnes/ScottLean4": {
+      "exact_revisions": [
+        "b85e7f9f18e00c954f59909f0ecd366bdd0b1b7f"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/bristolcrypto/controlbits": {
+      "exact_revisions": [
+        "23dc012f4a2ef5c26cea2ed7743fd277cb61fc1f"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/caiusdfolkerts/lean": {
       "exact_revisions": [
         "4e40a35e9894c584de3c7aa34a3e6b0749a3929d"
       ],
       "roles": [
         "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/chrisflav/oka": {
+      "exact_revisions": [
+        "9a9fc315498d58484ac1abc9668548212eb7c1ff"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use",
+        "source inspected only; not accepted by search"
       ],
       "source_reports": []
     },
@@ -27104,11 +29888,22 @@
       ],
       "source_reports": []
     },
-    "https://github.com/competemath/tengoku": {
+    "https://github.com/competemath/emissary-archangel": {
       "exact_revisions": [
-        "55b33953662e4e2bc6ba91b7a55fbd048c0a9350"
+        "d1d783ae85b9236500e4a03c6068b97bd604a25c"
       ],
       "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/competemath/tengoku": {
+      "exact_revisions": [
+        "55b33953662e4e2bc6ba91b7a55fbd048c0a9350",
+        "b80fd89a406474bfe84e70fcf537f89514b441bc"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report"
       ],
       "source_reports": [
@@ -27118,11 +29913,21 @@
         }
       ]
     },
+    "https://github.com/competemath/tengoku-sandbox": {
+      "exact_revisions": [
+        "4f9642c4c7117b6a19341d2a7d1d60b6e3acae8b"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/deancureton/sphere-six-complex": {
       "exact_revisions": [
         "b783b990d46c5f5ce02a4ecbbb2c02408b452cde"
       ],
       "roles": [
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report",
         "source inspected only; not accepted by search"
       ],
@@ -27130,8 +29935,21 @@
         {
           "line": 65,
           "path": "docs/theorem18/landmarks/milestone3-search-other.md"
+        },
+        {
+          "line": 133,
+          "path": "docs/theorem18/landmarks/milestone4-search-other.md"
         }
       ]
+    },
+    "https://github.com/duong-ngo/mathlib4": {
+      "exact_revisions": [
+        "abc669d11b88e163aed1c05b352b5b16889c4ad8"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/dzackgarza/lean-categories": {
       "exact_revisions": [
@@ -27157,6 +29975,7 @@
     "https://github.com/facebookresearch/atlas-lean": {
       "exact_revisions": [
         "219463bef604b0624fc2fc623a75a77678ce10e7",
+        "2a85cf00f920974f809b27ff0df7e409cd2d7a3d",
         "8e813e63090880e090494edfb55c7602cd961987"
       ],
       "roles": [
@@ -27207,6 +30026,24 @@
         }
       ]
     },
+    "https://github.com/frenzymath/HolomorphicAnosov": {
+      "exact_revisions": [
+        "65f2b33a7309de661a8500e4642e5609a537a8ff"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/frenzymath/Poincare-Conjecture": {
+      "exact_revisions": [
+        "08f06794dd88b786ae560b5db1116f50322c4629"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/frenzymath/PoincareConjecture": {
       "exact_revisions": [
         "62db01af9388dc1d9b56b66d6674f4c09b2318a2"
@@ -27220,6 +30057,15 @@
     "https://github.com/fxeqxmulfx/transformer": {
       "exact_revisions": [
         "d51aa4229b6178210aff831ebcffa2361164a950"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/gersh/mathlib-bonsai": {
+      "exact_revisions": [
+        "30cca6c68e5a916954f79e9fcbd54b366916ad19"
       ],
       "roles": [
         "search hit only; not equated with source reading/use"
@@ -27245,7 +30091,8 @@
         "37fa9a502d652590420333ea1e18a2140cf7ebe3"
       ],
       "roles": [
-        "M3 machine search inventory; exact reading/disposition retained in records"
+        "M3 machine search inventory; exact reading/disposition retained in records",
+        "search hit only; not equated with source reading/use"
       ],
       "source_reports": []
     },
@@ -27268,7 +30115,8 @@
         "746117c6ca34e6831fdfae4c25d02f3e1414691a"
       ],
       "roles": [
-        "M3 machine search inventory; exact reading/disposition retained in records"
+        "M3 machine search inventory; exact reading/disposition retained in records",
+        "search hit only; not equated with source reading/use"
       ],
       "source_reports": []
     },
@@ -27289,11 +30137,22 @@
         }
       ]
     },
+    "https://github.com/kangxyz/aglib": {
+      "exact_revisions": [
+        "4f65be4eafa8964bd1f7a83682e99aa8165bd418"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/kangxyz/colib": {
       "exact_revisions": [
+        "7ec5af6bfd11e4e5fa6b9a19c92f9302cbbf51b2",
         "cf26c9d5d47a6f545202afedc4967f84f483a809"
       ],
       "roles": [
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report",
         "source inspected only; not accepted by search"
       ],
@@ -27309,6 +30168,7 @@
         "c561118b7795eb9780be9ed391c3251d6a4d0afd"
       ],
       "roles": [
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report",
         "source inspected only; not accepted by search"
       ],
@@ -27321,12 +30181,13 @@
     },
     "https://github.com/lazyinspirit/artin-tits-normalisers-lean": {
       "exact_revisions": [
-        "29724dc5ee187685dd9d20dfe8927c14ea81992a",
+        "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
         "59941e65aece274beb65a3f5c668616a69c0e292",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4"
       ],
       "roles": [
-        "locally authored project; precommit source hashes and base Git revision, later immutable commit binding separate"
+        "locally authored project; precommit source hashes and base Git revision, later immutable commit binding separate",
+        "source inspected only; not accepted by search"
       ],
       "source_reports": []
     },
@@ -27378,7 +30239,8 @@
     "https://github.com/leanprover-community/mathlib4": {
       "exact_revisions": [
         "6526be50929d52688b64ed3fdc96be4d04507415",
-        "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9"
+        "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+        "c17f2bb507ba06be8180121dcc53e529a041e564"
       ],
       "roles": [
         "foundation library",
@@ -27402,6 +30264,10 @@
         {
           "line": 70,
           "path": "docs/theorem18/landmarks/milestone3-search-other.md"
+        },
+        {
+          "line": 129,
+          "path": "docs/theorem18/landmarks/milestone4-search-other.md"
         },
         {
           "line": 94,
@@ -27444,6 +30310,15 @@
       ],
       "source_reports": []
     },
+    "https://github.com/leanprover/downstream-lean4": {
+      "exact_revisions": [
+        "ffe0ac0b8c1db92b540c18e16a55829e6a68d783"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/leanprover/lean-action": {
       "exact_revisions": [
         "ba3fdfe5c4476c925da13bf11a005ddb47e47aee"
@@ -27471,6 +30346,15 @@
       ],
       "source_reports": []
     },
+    "https://github.com/leemiracle/work4ai": {
+      "exact_revisions": [
+        "ffa016d3c9a8d32821f71f6d9d916c30e04fcb67"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/marpaia/crnt-lean": {
       "exact_revisions": [
         "7386777488a41efd92e6abc2bccf889fb611660e"
@@ -27487,6 +30371,15 @@
       ],
       "roles": [
         "M3 machine search inventory; exact reading/disposition retained in records",
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/math-yiluo/Langlands-lib": {
+      "exact_revisions": [
+        "59e23dc3aeb61af06620cab2a2a545ba418ac86e"
+      ],
+      "roles": [
         "search hit only; not equated with source reading/use"
       ],
       "source_reports": []
@@ -27517,6 +30410,24 @@
           "path": "docs/theorem18/search-openai.md"
         }
       ]
+    },
+    "https://github.com/mathlib-initiative/Etingof-RepresentationTheory-draft1": {
+      "exact_revisions": [
+        "c6d86a8bd52065aafb8251fa1cdcd55b609743ef"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/mkaratarakis/mathlibtest": {
+      "exact_revisions": [
+        "16e4c581cfb39015d900072f2fd3b9bd3dea4c1c"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/mlyean/lean-coxeter": {
       "exact_revisions": [
@@ -27557,11 +30468,21 @@
       ],
       "source_reports": []
     },
+    "https://github.com/mrdouglasny/jacobian-challenge": {
+      "exact_revisions": [
+        "8ce1ec28aed1c78b3b39d0bae26e2858c82f5143"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/nickgou-nuke/info-geometry-lean": {
       "exact_revisions": [
         "a392af178af1fe2bcba2ba39eb405700c6ee103c"
       ],
       "roles": [
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report"
       ],
       "source_reports": [
@@ -27586,6 +30507,7 @@
       "roles": [
         "M3 machine search inventory; exact reading/disposition retained in records",
         "accepted scientific supplier",
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report"
       ],
       "source_reports": [
@@ -27658,6 +30580,24 @@
       ],
       "source_reports": []
     },
+    "https://github.com/plby/lean-proofs": {
+      "exact_revisions": [
+        "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/project-numina/mtc": {
+      "exact_revisions": [
+        "8fbb989d47bc9173336b8f27784466f82197a8c0"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/psalmprax/science": {
       "exact_revisions": [
         "c837d8d188fc2bcc2e4ca4895a1e42325331ac08"
@@ -27685,6 +30625,10 @@
         {
           "line": 75,
           "path": "docs/theorem18/landmarks/milestone3-search-other.md"
+        },
+        {
+          "line": 134,
+          "path": "docs/theorem18/landmarks/milestone4-search-other.md"
         }
       ]
     },
@@ -27704,6 +30648,24 @@
           "path": "docs/theorem18/landmarks/milestone3-search-other.md"
         }
       ]
+    },
+    "https://github.com/rkirov/jordan_pick": {
+      "exact_revisions": [
+        "7905cd4c75038b823a8204e5474996905dd50800"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/shivensinha4/mathlib4": {
+      "exact_revisions": [
+        "c51c75fc5fb00ba7a4120082fed4050844e3fd18"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/siddhartha-gadgil/Polylean": {
       "exact_revisions": [
@@ -27734,9 +30696,54 @@
         }
       ]
     },
+    "https://github.com/tdupu/pcfawd-formalization": {
+      "exact_revisions": [
+        "3eb6c3d82a7a38f85c3a33b8ff0362116ca06d6a"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/weiyangzen/awesome_theorems": {
+      "exact_revisions": [
+        "32e5f75412a804463a0b0c6fff1362d4ab5275b3"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/wrenna-robson/controlbits": {
+      "exact_revisions": [
+        "6dbbc253a4651618c0d28406e84854e2848b4cfe"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/ybenmeur/dieudonne": {
+      "exact_revisions": [
+        "132ddb9249eec8b8a8f5a820a9247c89dd1faad6"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
     "https://github.com/yuma-mizuno-lean/Mei": {
       "exact_revisions": [
         "318d6e772bda1bfb3780c46cc18f209b5c0dbafb"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
+    },
+    "https://github.com/zhangchenchengSJTU/pretriangulated-lean": {
+      "exact_revisions": [
+        "580ecc8d5d20081f9bde53ec42947971f7dde066"
       ],
       "roles": [
         "search hit only; not equated with source reading/use"
@@ -27749,6 +30756,7 @@
       ],
       "roles": [
         "M3 machine search inventory; exact reading/disposition retained in records",
+        "search hit only; not equated with source reading/use",
         "search-report mention; read/use/disposition bounded by exact report"
       ],
       "source_reports": [
@@ -27757,6 +30765,15 @@
           "path": "docs/theorem18/landmarks/milestone3-search-openai.md"
         }
       ]
+    },
+    "https://github.com/zzhisthebest/mathlib4": {
+      "exact_revisions": [
+        "d6c6bfc120c90b907d9587648a56ddc545f4bc1c"
+      ],
+      "roles": [
+        "search hit only; not equated with source reading/use"
+      ],
+      "source_reports": []
     },
     "https://github.com/zzsj2001/Coxeter": {
       "exact_revisions": [
@@ -28521,6 +31538,79 @@
           "exact_source_line": "[`DifferentialGeometry/Topology/VanKampen/FullGroupoid.lean`](https://github.com/qinz1yang/differential-geometry/blob/13c41a632efb8fbf93101c8a20f2a9214ab33240/DifferentialGeometry/Topology/VanKampen/FullGroupoid.lean)",
           "file": "DifferentialGeometry/Topology/VanKampen/FullGroupoid.lean",
           "line": 75,
+          "meaning": "Report mention only; semantic/reading/execution limits are those of this source report.",
+          "repository": "https://github.com/qinz1yang/differential-geometry",
+          "revision": "13c41a632efb8fbf93101c8a20f2a9214ab33240"
+        }
+      ]
+    },
+    {
+      "file_locators": [
+        {
+          "exact_source_line": "| `lazyinspirit/artin-tits-normalisers-lean` / `1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0` | Lean `v4.36.0-rc2`, mathlib `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9`; Apache-2.0 and retained upstream headers | Actual files named in the preceding section; accepted baseline context, with no old-file changes. |",
+          "kind": "file locator or unclassified path; never a repository identity",
+          "line": 128,
+          "raw_locator": "lazyinspirit/artin-tits-normalisers-lean"
+        },
+        {
+          "exact_source_line": "| `FormalFrontier/fundamental-groupoids` / `ce38a38faef1a147e75b68b78b02bbfd6ad82948` | Lean `v4.34.0-rc2`, mathlib `83abb3e776bdefcbc447a1e44d0debe4010039e5`; Apache-2.0 | `FundamentalGroupoids/Topology/Covering/{Monodromy,DeckMonodromy}.lean`, `FundamentalGroupoids/FundamentalGroup.lean`. Exact general monodromy/basepoint naturality proofs read; deck file declaration inventory only. Genuine relevant alternative, not selected or verified. |",
+          "kind": "file locator or unclassified path; never a repository identity",
+          "line": 131,
+          "raw_locator": "FormalFrontier/fundamental-groupoids"
+        },
+        {
+          "exact_source_line": "| `FormalFrontier/fundamental-groupoids` / `ce38a38faef1a147e75b68b78b02bbfd6ad82948` | Lean `v4.34.0-rc2`, mathlib `83abb3e776bdefcbc447a1e44d0debe4010039e5`; Apache-2.0 | `FundamentalGroupoids/Topology/Covering/{Monodromy,DeckMonodromy}.lean`, `FundamentalGroupoids/FundamentalGroup.lean`. Exact general monodromy/basepoint naturality proofs read; deck file declaration inventory only. Genuine relevant alternative, not selected or verified. |",
+          "kind": "file locator or unclassified path; never a repository identity",
+          "line": 131,
+          "raw_locator": "FundamentalGroupoids/FundamentalGroup.lean"
+        },
+        {
+          "exact_source_line": "| `FormalFrontier/group-theory` / `da81dc691eabf38306f427465ea8a4af350f0aef` | Same Lean/mathlib as preceding row; Apache-2.0 | `GroupTheory/GroupAction/Quotient.lean`, `GroupTheory/Topology/LocallyConstant.lean`: import/header/dependency inspection only. Unselected dependency of preceding candidate, not a directly required M4 proof. |",
+          "kind": "file locator or unclassified path; never a repository identity",
+          "line": 132,
+          "raw_locator": "FormalFrontier/group-theory"
+        },
+        {
+          "exact_source_line": "| `chrisflav/oka` / `9a9fc315498d58484ac1abc9668548212eb7c1ff` | Lean `v4.32.0`, mathlib `81a5d257c8e410db227a6665ed08f64fea08e997`; Apache-2.0 | Entire `Oka/Topology/Covering/Monodromy.lean`. `IsCoveringMap.monodromy_comp` is genuine naturality for a continuous map of covers over the **same** base; a short useful alternative, but M4 changes base and already has the selected minimal route. Not selected. |",
+          "kind": "file locator or unclassified path; never a repository identity",
+          "line": 135,
+          "raw_locator": "chrisflav/oka"
+        }
+      ],
+      "full_report_text": "# Landmark 4: exact vertex-group and basepoint prerequisites\n\nResearch date: 2026-11-14. Baseline repository:\n`1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0`. Read the complete\n[`milestone4-PLAN.md`](milestone4-PLAN.md), the current main landmark plan,\nand the actual M1/M2/M3 map APIs before proposing reuse. No earlier scientific,\nconfiguration or review source was changed by this search.\n\n## Selected result and present verification status\n\nRoot selected **exactly two TauCeti declarations**, extracted verbatim into\n`ArtinSequenceVendor.FundamentalGroup.BasepointChange`, from\n`TauCetiProject/TauCeti` at `62bbc0596dc3539d488232e4e924a338548ea0a9`:\n\n- `FundamentalGroup.fundamentalGroupMulEquivOfPath_apply`, original lines\n  129\u2013148 including its documentation and local namespace opening.\n- `FundamentalGroup.map_fundamentalGroupMulEquivOfPath`, original lines\n  196\u2013212 including its documentation and local namespace opening.\n\nThe complete original 651-line file, Apache-2.0 license, original copyright\nheader, selected-block hashes, full mechanical diff and deterministic assembly\nrecipe are preserved in [`sequences/vendor/`](../../../sequences/vendor/README.md).\nThe original namespace and both declaration/proof blocks remain unchanged;\nthe new wrapper imports only two existing pinned mathlib modules. The full\nupstream BasepointChange file and its unrelated dependencies are not imported.\n\nThe actual selected module passed explicit Lake compilation, exhaustive\ncanonical/physical transitive axiom audit and fresh exact-module official\n`leanchecker` replay. Coverage measured **2 canonical declarations, 2 physical\noccurrences, no duplicates**, with only `propext`, `Classical.choice` and\n`Quot.sound`. The measured replay took 5.87 seconds. Inputs were unchanged\nthrough audit and replay. Raw commands/logs/hashes, displayed elaborated\nstatements and environment bindings are in\n[`sequences/evidence/providers/verification.json`](../../../sequences/evidence/providers/verification.json).\nReplay is relative to imported pinned mathlib, not a new replay of all mathlib\nor an independent kernel implementation.\n\n**The technical record predates independent acceptance.** Both independent\nsupplier review receipts are now available in `sequences/reviews/providers-a.json`\nand `providers-b.json`, with verdict `accept-supplier-cohort`; their hashes are\nrecorded in the inventory. Root mathematical acceptance is not asserted here.\nTechnical success is not reported as completion of landmark 4. The generic alternatives below remain\nsource-inspected candidates; they were not compiled, audited or replayed by\nthis search. No new FormalFrontier, Oka, sphere-six or other source was imported.\n\n## Directly usable existing APIs\n\nThe project uses Lean `v4.36.0-rc2` and mathlib\n`65d730f7150f21fdfa32f3e73a3f549c1f96a0e9`. These are the actual inspected\nlocal sources, not assumptions based on current online documentation.\n\n| Need | Exact API and type/application |\n| --- | --- |\n| Take vertex groups of the M3 equivalences | `CategoryTheory.Functor.FullyFaithful.mulEquivEnd (hf : FullyFaithful F) (X : C) : End X \u2243* End (F.obj X)`, in `Mathlib/CategoryTheory/Endomorphism.lean:217`. Apply an M3 equivalence's `.fullyFaithfulFunctor`. This uses the actual functor, preserving its map on arrows. |\n| Induced homomorphism on vertex groups | `CategoryTheory.Functor.mapEnd` in the same file: `End X \u2192* End (F.obj X)`. Restrict the already proved strict M3 functor square, using its object equality and `eqToIso` where necessary. |\n| Actual fundamental-group model | `FundamentalGroup X x` is literally `End (FundamentalGroupoid.mk x)`. `FundamentalGroup.mul_def` is `.of (q.asHom.trans p.asHom)` for `p * q`: categorical/loop multiplication order must be tracked. Source: `Mathlib/AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean`. |\n| Continuous-map homomorphism | `FundamentalGroup.map (f : C(X,Y)) (x : X)` maps to the group at `f x`. `mapOfEq f (h : f x = y)` maps to the group at the specified `y`. `mapOfEq_apply` gives the path-class map followed by endpoint casts using `h.symm` twice. |\n| Actual basepoint transport | `FundamentalGroup.fundamentalGroupMulEquivOfPath (\u03b8 : Path x\u2080 x\u2081) : FundamentalGroup X x\u2080 \u2243* FundamentalGroup X x\u2081`. It is `Iso.conj` of the actual path class, not a separately chosen abstract group equivalence. |\n| Map/basepoint naturality foundation | `CategoryTheory.Functor.map_conj` in `Mathlib/CategoryTheory/Conj.lean` maps `\u03b1.conj f` to `(F.mapIso \u03b1).conj (F.mapEnd X f)`, on underlying arrows. This is the exact existing supplier used by the selected TauCeti naturality proof. |\n| Evaluate actual endpoint monodromy | `IsQuotientCoveringMap.fundamentalGroupToMulOpposite_apply_mk_eq`, in `Mathlib/Topology/Homotopy/Lifting.lean:664`, takes a loop `\u03b3`, a continuous lift `\u0393`, `p \u2218 \u0393 = \u03b3`, `\u0393 0 = e`, and `\u0393 1 = g \u2022 e`, and concludes the raw monodromy is `MulOpposite.op g`. |\n| Evaluate using a path class rather than a representative | `fundamentalGroupToMulOpposite_apply_eq_iff` states that raw label `g : G\u1d50\u1d52\u1d56` is equivalent to `g.unop \u2022 e = monodromy \u03b3.asHom e`. `IsCoveringMap.monodromy_eq_of_map_eq`, `monodromy_map`, `map_liftPathQuotient`, and `monodromy_trans_apply` supply the lift/class and concatenation calculations. |\n| Move the selected lift within a fiber | `IsQuotientCoveringMap.fundamentalGroupToMulOpposite_toPermFiber` gives raw label `op (g * oldLabel.unop * g\u207b\u00b9)` after moving the lift by `g`. This is a conjugation law, not basepoint independence for a noncommutative quotient. |\n| Normalize the opposite convention honestly | `MulEquiv.inv' G : G \u2243* G\u1d50\u1d52\u1d56` in `Mathlib/Algebra/Group/Equiv/Opposite.lean:71`. Its inverse sends `op g` to `g\u207b\u00b9`. Plain `op`/`unop`, or inversion within a noncommutative group, is not silently used as a homomorphism. |\n\nThe literal selected statements, with arbitrary topological spaces and no\nconnectivity/covering hypotheses, are:\n\n```lean\nFundamentalGroup.fundamentalGroupMulEquivOfPath \u03b3 g =\n  .of ((Path.Homotopic.Quotient.mk \u03b3).symm.trans\n    (g.asHom.trans (Path.Homotopic.Quotient.mk \u03b3)))\n\nFundamentalGroup.map f x\u2081 (FundamentalGroup.fundamentalGroupMulEquivOfPath \u03b3 g) =\n  FundamentalGroup.fundamentalGroupMulEquivOfPath (\u03b3.map f.continuous)\n    (FundamentalGroup.map f x\u2080 g)\n```\n\nThe second formula is exactly the covering-induced-map/basepoint square.\nFor landmark 4 choose one actual upstairs path `\u03b8` and **its image under the\nactual orbit projection** downstairs. The first formula, mathlib's monodromy\nconcatenation law and `monodromy_toPermFiber` compute raw endpoint monodromy\nunder that paired transport. Independent downstairs path choices would\nintroduce conjugation, so path-connectedness alone does not prove the desired\nidentity on the same Coxeter quotient.\n\n## Existing actual M1/M2/M3 suppliers and application limits\n\n- `ArtinNormalisers.Landmark1.orbitFundamentalGroupMap`, `orbitMonodromy` and\n  `orbitFundamentalGroup_shortExact`, in `landmarks/ArtinLandmarks/Covering.lean`,\n  are the actual orbit-map homomorphism, raw monodromy into the **opposite**\n  actual Coxeter normalizer quotient, and their short exactness at every\n  actual complement basepoint.\n- `Ribbon2.reducedRibbonNormalizerQuotientEquiv` in\n  `ribbons/ArtinRibbons/NormalizerSplitting.lean` is the actual canonical\n  reduced-loop-label quotient map proved bijective in M2. The larger ribbon\n  group's `endEquivRibbonLoopsOpposite` in `RibbonGroupoid.lean` is useful for\n  recognizing the convention, but is not the reduced associate-component\n  vertex identification needed by M4.\n- `Chamber3.actualIntervalComplementEquivalence`,\n  `actualRibbonOrbitEquivalence` and `actualComparison_square` are actual M3\n  equivalences and the strictly commuting covering square. Taking `End` and\n  transporting the literal object equalities yields the middle comparison;\n  it does not by itself identify the canonical Coxeter label.\n- `chambers/ArtinChambers/RibbonDeckLabels.lean` supplies the already proved\n  signed endpoint projection. Combine that formula with the actual M3 lifted\n  path class and mathlib's endpoint evaluation before normalizing `Q\u1d50\u1d52\u1d56\u2192Q`.\n  This avoids treating two unrelated isomorphisms as a commuting diagram.\n\nThese earlier accepted sources were read as prerequisite context, not modified\nor re-certified. The new M4 `BasepointTransport.lean` source actually references\nboth selected declarations: naturality for the covering-map square and the\nexplicit path formula for raw endpoint-label transport. Its author reported\na successful build; its final project-level review/audit/replay belongs to the\nM4 closeout, not this supplier record.\n\n## Complete source-inspected repository inventory\n\nThe durable machine inventory is\n[`docs/provenance/searches/m4-other-inventory.json`](../../provenance/searches/m4-other-inventory.json).\nIt records all eight repositories below with exact commits, source hashes,\nliteral relevant theorem types, licenses, reading limits, dispositions,\nrecursive closure inventories, and technical flags. It separately records\n76 repositories returned as bounded search hits; those hits are not called\nsource reading, proof use or accepted suppliers.\n\n| Repository / full commit | Pins and license | Exact inspected sources / disposition |\n| --- | --- | --- |\n| `lazyinspirit/artin-tits-normalisers-lean` / `1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0` | Lean `v4.36.0-rc2`, mathlib `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9`; Apache-2.0 and retained upstream headers | Actual files named in the preceding section; accepted baseline context, with no old-file changes. |\n| `leanprover-community/mathlib4` / `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9` | Lean `v4.36.0-rc2`; Apache-2.0 | `CategoryTheory/{Endomorphism,Conj}.lean`, `AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean`, `Topology/Homotopy/Lifting.lean`, `Algebra/Group/Equiv/Opposite.lean`. Exact useful definitions/proof portions read; entire `Conj` and fundamental-group file read. Existing dependency. |\n| `TauCetiProject/TauCeti` / `62bbc0596dc3539d488232e4e924a338548ea0a9` | Lean `v4.36.0-rc2`, upstream mathlib `e8ba86fa9744dd8d90f48c1752bc735f61a4ca81`; Apache-2.0 | `AlgebraicTopology/FundamentalGroup/BasepointChange.lean`: exact selected blocks/proofs and surrounding relevant API read. `Topology/Homotopy/Monodromy/{BasepointChange,Functoriality,Basic}.lean`: full first file, relevant full base-map proof passages and declaration inventory of others. Only the selected two blocks were imported and checked against target pins. |\n| `FormalFrontier/fundamental-groupoids` / `ce38a38faef1a147e75b68b78b02bbfd6ad82948` | Lean `v4.34.0-rc2`, mathlib `83abb3e776bdefcbc447a1e44d0debe4010039e5`; Apache-2.0 | `FundamentalGroupoids/Topology/Covering/{Monodromy,DeckMonodromy}.lean`, `FundamentalGroupoids/FundamentalGroup.lean`. Exact general monodromy/basepoint naturality proofs read; deck file declaration inventory only. Genuine relevant alternative, not selected or verified. |\n| `FormalFrontier/group-theory` / `da81dc691eabf38306f427465ea8a4af350f0aef` | Same Lean/mathlib as preceding row; Apache-2.0 | `GroupTheory/GroupAction/Quotient.lean`, `GroupTheory/Topology/LocallyConstant.lean`: import/header/dependency inspection only. Unselected dependency of preceding candidate, not a directly required M4 proof. |\n| `deancureton/sphere-six-complex` / `b783b990d46c5f5ce02a4ecbbb2c02408b452cde` | Lean `v4.35.0-rc3`, mathlib `6b7abb3c7686292736be2955bd3eb9ebf63b456a`; Apache-2.0 | Entire `SphereSixComplex/Prerequisites/Topology/Covering/MonodromyTransport.lean` and `ForMathlib/Geometry/Manifold/Quotient/DeckFundamentalGroup.lean`. Genuine endpoint/basepoint formulas, but unrelated affine/punctured-plane imports and older API make full-file reuse disproportionate. Not selected. |\n| `qinz1yang/differential-geometry` / `13c41a632efb8fbf93101c8a20f2a9214ab33240` | Lean `v4.35.0-rc3`, mathlib `c55e6e786f49471c72fbddbec5415808896aec1e`; Apache-2.0 | Entire `Topology/FundamentalGroup/BasepointChange.lean` under `DifferentialGeometry/`; declarations in `Topology/Covering/FundamentalGroup/{CoveringSquareInjective,CoveringSquareConsumers}.lean`. Reverse-direction basepoint change duplicates mathlib; connector-change bookkeeping does not automatically give the paired transport required here. Not selected. |\n| `chrisflav/oka` / `9a9fc315498d58484ac1abc9668548212eb7c1ff` | Lean `v4.32.0`, mathlib `81a5d257c8e410db227a6665ed08f64fea08e997`; Apache-2.0 | Entire `Oka/Topology/Covering/Monodromy.lean`. `IsCoveringMap.monodromy_comp` is genuine naturality for a continuous map of covers over the **same** base; a short useful alternative, but M4 changes base and already has the selected minimal route. Not selected. |\n\nSource code was inspected, not merely README theorem claims or badges.\nRecursive import scans establish paths and sizes, not proof correctness.\nNo consulted mathematical error was established; rejection as unnecessary,\ninapplicable or costly is not an allegation of false mathematics.\n\n## Closest alternatives: literal hypotheses and closure costs\n\n**TauCeti full-file alternatives.** `Monodromy/Functoriality.lean` has\n`IsCoveringMap.coe_monodromy_mapOfEq` for an arbitrary commuting continuous\ncover square `q \u2218 g = f \u2218 p`, a target equality `h : f x = y`, and compatible\nlifts `g e = e'`. It concludes\n`(hq.monodromy (FundamentalGroup.mapOfEq f h \u03b3).asHom e' : F) =\ng (hp.monodromy \u03b3.asHom e)`. It does not require simple connectivity.\nIts complete non-mathlib closure is only two new modules,\n`Topology/Homotopy/Monodromy/Functoriality.lean` and `Logic/Function/Fiber.lean`:\n428 lines / 20,159 bytes. This was proposed promptly, but root selected the\nstill smaller exact extraction and existing mathlib endpoint laws.\n\nThe full TauCeti fundamental-group `BasepointChange.lean` closure has ten\nmodules, 3,420 lines / 168,961 bytes, including five already vendored modules.\nFive new modules would add 1,969 lines / 94,421 bytes; the extra homeomorphism,\nconjugation and normalizer-quotient bookkeeping is not needed by the selected\ntwo proofs. `Monodromy/BasepointChange.lean` would bring thirteen modules,\n4,100 lines / 205,855 bytes, seven new. These full closures are not imported.\n\n**FormalFrontier exact quotient naturality.** Its\n`IsQuotientCoveringMap.fundamentalGroupToMulOpposite_naturality` assumes two\nactual quotient coverings, a homomorphism `\u03c1 : G \u2192* H`, continuous total/base\nmaps `F,f`, `q \u2218 F = f \u2218 p`, and pointwise equivariance\n`F (g \u2022 e) = \u03c1 g \u2022 F e`. It proves equality of homomorphisms\n`newMonodromy.comp (FundamentalGroup.map f x) =\n(MonoidHom.op \u03c1).comp oldMonodromy`. The proof constructs monodromy naturality\nfrom actual lifted path classes; no desired commutation is assumed as a field.\nIts full closure is three new modules, 1,078 lines / 51,736 bytes, across the\ntwo FormalFrontier repositories listed above. Its basepoint file also proves\n`FundamentalGroup.mapOfEq_comp_fundamentalGroupMulEquivOfPath`, including the\ncorrect endpoint casts; its full closure is two modules, 1,948 lines /\n90,065 bytes. These are real candidates, but none was selected or compiled.\n\n**Sphere-six endpoint transport.** The exact declaration\n`SphereSixComplex.fundamentalGroupToMulOpposite_transport_endpoint` takes\n`hp : IsQuotientCoveringMap p G`, `W : Path x y`, `ex : p \u207b\u00b9' {x}` and\n`\u03b3 : FundamentalGroup X x`, and asserts\n\n```text\nhp.fundamentalGroupToMulOpposite (hp.isCoveringMap.monodromy \u27e6W\u27e7 ex)\n  (FundamentalGroup.fundamentalGroupMulEquivOfPath W \u03b3)\n= hp.fundamentalGroupToMulOpposite ex \u03b3.\n```\n\nThis is exactly the compatible-lift transport shape, with no simply-connected\ntotal-space assumption. The same file proves quotient-cover naturality from\na `QuotientCoverMapData` containing actual continuous maps, deck homomorphism,\ncommuting square and pointwise equivariance; the conclusion is not a field.\nIts full imported affine/punctured-plane development was not audited or built,\nso no full-closure reuse was proposed. The selected short path formula plus\nexisting mathlib monodromy laws supports the local M4 derivation directly.\n\n## Reproduction and bounded search limits\n\nThe selected extraction is checked read-only from `sequences/` by\n`python3 scripts/providers/assemble.py --check`. The actual verification\ncommands, each with retained raw output and exit status, were:\n\n```bash\npython3 scripts/providers/run_checks.py build\npython3 scripts/providers/run_checks.py audit\npython3 scripts/providers/run_checks.py replay\npython3 scripts/providers/summarize.py\n```\n\nThe replay invocation is the supported official\n`lake env leanchecker --verbose ArtinSequenceVendor.FundamentalGroup.BasepointChange`.\nNo shared cache/dependency update or competing toolchain installation occurred.\nOnly the selected provider, its audit/tooling/evidence, and this task's\nsearch documents/inventory were authored after root expanded the task scope.\n\nThe bounded GitHub code queries were `fundamentalGroupToMulOpposite`,\n`fundamentalGroupMulEquivOfPath`, `monodromy naturality`, `mulEquivEnd`, and\n`monodromy basepoint`, with `.lean` filtering and up to 100 indexed hits per\nquery. Results included mathlib/OpenAI duplicates; these were filtered during\ncandidate assessment, not mistaken for new suppliers. Query counts and all\nindexed repository/commit/path results are retained in the durable inventory.\nThe search cannot establish absence of another useful theorem in unindexed\nbranches or repositories. A hit, source appearance, `#check`, claimed no-`sorry`\nstatus or successful build alone is never recorded as proof acceptance.\n",
+      "report": {
+        "path": "docs/theorem18/landmarks/milestone4-search-other.md",
+        "sha256": "3436835ca0d9f4320cfa80d615b888593a698333a7181c54082ce07107e2b7fc"
+      },
+      "repository_mentions": [
+        {
+          "exact_source_line": "| `leanprover-community/mathlib4` / `65d730f7150f21fdfa32f3e73a3f549c1f96a0e9` | Lean `v4.36.0-rc2`; Apache-2.0 | `CategoryTheory/{Endomorphism,Conj}.lean`, `AlgebraicTopology/FundamentalGroupoid/FundamentalGroup.lean`, `Topology/Homotopy/Lifting.lean`, `Algebra/Group/Equiv/Opposite.lean`. Exact useful definitions/proof portions read; entire `Conj` and fundamental-group file read. Existing dependency. |",
+          "file": null,
+          "line": 129,
+          "meaning": "Report mention only; semantic/reading/execution limits are those of this source report.",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9"
+        },
+        {
+          "exact_source_line": "| `TauCetiProject/TauCeti` / `62bbc0596dc3539d488232e4e924a338548ea0a9` | Lean `v4.36.0-rc2`, upstream mathlib `e8ba86fa9744dd8d90f48c1752bc735f61a4ca81`; Apache-2.0 | `AlgebraicTopology/FundamentalGroup/BasepointChange.lean`: exact selected blocks/proofs and surrounding relevant API read. `Topology/Homotopy/Monodromy/{BasepointChange,Functoriality,Basic}.lean`: full first file, relevant full base-map proof passages and declaration inventory of others. Only the selected two blocks were imported and checked against target pins. |",
+          "file": null,
+          "line": 130,
+          "meaning": "Report mention only; semantic/reading/execution limits are those of this source report.",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9"
+        },
+        {
+          "exact_source_line": "| `deancureton/sphere-six-complex` / `b783b990d46c5f5ce02a4ecbbb2c02408b452cde` | Lean `v4.35.0-rc3`, mathlib `6b7abb3c7686292736be2955bd3eb9ebf63b456a`; Apache-2.0 | Entire `SphereSixComplex/Prerequisites/Topology/Covering/MonodromyTransport.lean` and `ForMathlib/Geometry/Manifold/Quotient/DeckFundamentalGroup.lean`. Genuine endpoint/basepoint formulas, but unrelated affine/punctured-plane imports and older API make full-file reuse disproportionate. Not selected. |",
+          "file": null,
+          "line": 133,
+          "meaning": "Report mention only; semantic/reading/execution limits are those of this source report.",
+          "repository": "https://github.com/deancureton/sphere-six-complex",
+          "revision": "b783b990d46c5f5ce02a4ecbbb2c02408b452cde"
+        },
+        {
+          "exact_source_line": "| `qinz1yang/differential-geometry` / `13c41a632efb8fbf93101c8a20f2a9214ab33240` | Lean `v4.35.0-rc3`, mathlib `c55e6e786f49471c72fbddbec5415808896aec1e`; Apache-2.0 | Entire `Topology/FundamentalGroup/BasepointChange.lean` under `DifferentialGeometry/`; declarations in `Topology/Covering/FundamentalGroup/{CoveringSquareInjective,CoveringSquareConsumers}.lean`. Reverse-direction basepoint change duplicates mathlib; connector-change bookkeeping does not automatically give the paired transport required here. Not selected. |",
+          "file": null,
+          "line": 134,
           "meaning": "Report mention only; semantic/reading/execution limits are those of this source report.",
           "repository": "https://github.com/qinz1yang/differential-geometry",
           "revision": "13c41a632efb8fbf93101c8a20f2a9214ab33240"

@@ -1,0 +1,74 @@
+{
+  "accepted_at": "2026-11-14T07:58:59.238700+00:00",
+  "accepted_context_input_aggregate_sha256": "643afcf143ce304163b5c22b046ba5eef4e6507a0b3a13dd8836fff5317902a5",
+  "accepted_context_input_count": 955,
+  "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
+  "full_landmark_4_proved": true,
+  "full_theorem_1_8_proved": false,
+  "independent_reviews_sha256": {
+    "sequences/reviews/landmark4-a.json": "9a5f0b64e2a8e87c652d03c2d7dcb15e3e4737ada9a41c47149dae5d24e72235",
+    "sequences/reviews/landmark4-a.md": "d73e6884941a96f93d71780048b713299b497db7f71715741a19857ce7f3c2ec",
+    "sequences/reviews/landmark4-b.json": "1d40f3babe1f048105df036bc9d185173abb8dafc911a0e42d8385a65404951a",
+    "sequences/reviews/landmark4-b.md": "f6052c84303c9b9b3f7ba53fb9eec2def8d7fc7b6f9ff56bb668bbb6631b2ece"
+  },
+  "kind": "root-landmark4-mathematical-acceptance",
+  "limitations": [
+    "Full independent statement correspondence and compiled/kernel verification are separate and both recorded.",
+    "Bundled Lean kernel relative to imported pinned foundations; no second kernel or fresh whole-mathlib/old403provider replay."
+  ],
+  "mathematical_acceptance": true,
+  "review_bindings_recorded_at": "2026-11-14T08:00:22.951011+00:00",
+  "scope": "Theorem6.7: actual pure and normalizer fundamental-group isomorphisms, both actual short exact rows and both commuting squares at every actual complement basepoint; identity on the same actual Coxeter quotient. Both explicitly normalized ordinary mathlib and positive FG-op conventions, with exact positive ribbon path formula. No asphericity or K(pi,1) claim.",
+  "source_bindings": {
+    "configuration_sha256": {
+      "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960",
+      "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
+      "sequences/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3"
+    },
+    "project_source_sha256": {
+      "sequences/ArtinSequences.lean": "f214763ed2afe6707575e86378ccd274a29b3f8be71bf474ed0a0ecd3da63fee",
+      "sequences/ArtinSequences/AllBasepoints.lean": "6fd0ae5f56fd445bdeb288ec9cb787838b1b09f77ec7ab615a01c4480f7676c4",
+      "sequences/ArtinSequences/BasepointTransport.lean": "069ac9ced6eb771b0f1af5301a80e4c4e6343d5179d0711527d909fa1048e343",
+      "sequences/ArtinSequences/EndpointMonodromy.lean": "457a5244ef7667de091dd9ce8ffa38b9f9b341eacb39963363b04be4247e965f",
+      "sequences/ArtinSequences/KernelComparison.lean": "5b41a1103c059800cfd0318a57fe2f263043175116203c48f32bda348704a874",
+      "sequences/ArtinSequences/Landmark4.lean": "73c1fa143ac1967c44a8f3464c6d6fb1cfe2bc70b30c0b5954c0e494b4ca32b6",
+      "sequences/ArtinSequences/NormalizedExactness.lean": "67469e5c3ea01644a29440f7bdcddd2b167e734e5fa66a4b0adf8d3377ee2b4b",
+      "sequences/ArtinSequences/PositiveConventions.lean": "d16e582e082d8730d25ebef93d321af2183a285e0a5c2c232538fea05e3e87d6",
+      "sequences/ArtinSequences/RibbonVertex.lean": "3a46207a4c2ba0b9a9f5ed1ca582df584511ce96ec9c1ba2987b6d8c15335e4e",
+      "sequences/ArtinSequences/StandardComparison.lean": "bcfbdcd5c7ce4842c87ba97b5953d8aa3b9cc1256e8900132f3c6ba915c4fda3",
+      "sequences/ArtinSequences/StandardMonodromy.lean": "ac920ee4360da31d1fb91a327622bc91259caf17dc08a1160f411648971cfd41",
+      "sequences/ArtinSequences/StandardPureComparison.lean": "87c5d16a7576aacf4926281bc5ca723adbd437e0308b1f145ffd6ef23000c725",
+      "sequences/ArtinSequences/VertexComparison.lean": "5983151abc14b29fc6e9c66fb5a217cdb854d424228fc8694dbe0ce38c9bc31e"
+    },
+    "provider_active_source_sha256": {
+      "sequences/vendor/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d"
+    },
+    "provider_assembly_sha256": {
+      "sequences/scripts/providers/assemble.py": "9ccac4728746d33b50d59d6d8380ced9b433d33f39125bffc42927570629a1ef",
+      "sequences/vendor/extraction-recipe.json": "fe5b2d894063518bf2054d428f8ca37eaa937ca5cd4173e332e987372865e9e9"
+    },
+    "provider_audit_sha256": "7469e870bda694d049148676d7cdbe10c6a3c7d0335c3c41272160026ea92e5f",
+    "provider_import_patch_sha256": {
+      "sequences/vendor/patches/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean.patch": "dbb1390a9731661a9dfec996e26de0b566d7a7b42f67773419938cfd90883e79"
+    },
+    "provider_license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "provider_original_source_sha256": {
+      "sequences/vendor/upstream-original/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean.txt": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43"
+    },
+    "provider_statement_reviews_sha256": {
+      "sequences/reviews/providers-a.json": "5e60adf66648cf05783d2250443706181dac746cf56a433b8d4f2ed129e54911",
+      "sequences/reviews/providers-a.md": "7b87ac7332d68f5abe2f1e3b8f6ce79ea05571303145d1692b6bbee9baa3c7f5",
+      "sequences/reviews/providers-b.json": "b4e6e211d4f754570dd03fd9de9d6c1923527fe7851b85c3f48a0f11f46fb506",
+      "sequences/reviews/providers-b.md": "4f0e94095934e6326f586c87a0a58d6ccdf6aa076d14e853e01513488232295a"
+    },
+    "provider_verification_source_sha256": {
+      "sequences/scripts/providers/assemble.py": "9ccac4728746d33b50d59d6d8380ced9b433d33f39125bffc42927570629a1ef",
+      "sequences/scripts/providers/run_checks.py": "74af5ed2450b99721e8bf7be6a937323057c6a58521824a64b9f6121d33abd6e",
+      "sequences/scripts/providers/summarize.py": "5f856b72ca229683e5136bee344157d1fabde7e4a5fe5c77b5a54921913cd041"
+    },
+    "vendor_provenance_sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520"
+  },
+  "source_inventory_sha256": "7048b5d1bb1926eb499bdad1bd27fd76ca7c47299bd5f92a2416ec3f1c808a2c",
+  "technical_verification_path": "sequences/evidence/landmark4-technical-20261114T075200Z/verification.json",
+  "technical_verification_sha256": "f76ea11b92312db7bb62780118600b2b37ebdcb16cef0dc42a218cf8a9c061ec"
+}

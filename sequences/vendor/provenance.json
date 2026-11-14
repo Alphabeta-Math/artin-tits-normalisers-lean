@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "upstream_mathlib_revision": "e8ba86fa9744dd8d90f48c1752bc735f61a4ca81",
+  "project_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "lean_toolchain": "leanprover/lean4:v4.36.0-rc2",
+  "extraction_kind": "two exact declaration blocks; no proof/hypothesis changes",
+  "selection_status": "root-selected; independent reviews and root acceptance pending",
+  "topological_order": [
+    "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+  ],
+  "license": {
+    "path": "LICENSE.TauCeti",
+    "identifier": "Apache-2.0",
+    "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+  },
+  "assembly_script": "scripts/providers/assemble.py",
+  "assembly_script_sha256": "9ccac4728746d33b50d59d6d8380ced9b433d33f39125bffc42927570629a1ef",
+  "assembly_recipe": "extraction-recipe.json",
+  "assembly_recipe_sha256": "fe5b2d894063518bf2054d428f8ca37eaa937ca5cd4173e332e987372865e9e9",
+  "files": [
+    {
+      "module": "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+      "path": "ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean",
+      "active_sha256": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d",
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean.txt",
+      "upstream_sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43",
+      "patch_path": "patches/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean.patch",
+      "patch_sha256": "dbb1390a9731661a9dfec996e26de0b566d7a7b42f67773419938cfd90883e79",
+      "selected_blocks": [
+        {
+          "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply",
+          "start_line": 129,
+          "end_line": 148,
+          "sha256": "8414d978ee933fc8345ef2c57737a2d050eb8ed0358e533db46ca279f05fbc63",
+          "bytes": 1134,
+          "declaration_and_proof_unchanged": true
+        },
+        {
+          "name": "FundamentalGroup.map_fundamentalGroupMulEquivOfPath",
+          "start_line": 196,
+          "end_line": 212,
+          "sha256": "0a7c0a3dc68b8face62da69fe5bdce30395b2fd5d09708f3470ed928587515ba",
+          "bytes": 1163,
+          "declaration_and_proof_unchanged": true
+        }
+      ],
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+      ],
+      "application": "Canonical path-conjugation formula and induced-map/basepoint square for landmark 4"
+    }
+  ],
+  "new_non_mathlib_imports": [],
+  "full_upstream_recursive_closure_imported": false,
+  "full_landmark_4_proved": false,
+  "full_theorem_1_8_proved": false
+}

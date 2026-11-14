@@ -1,0 +1,18 @@
+name = "artin-sequences"
+version = "0.1.0"
+defaultTargets = ["ArtinSequences"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "artin-chambers"
+path = "../chambers"
+
+[[lean_lib]]
+name = "ArtinSequences"
+
+[[lean_lib]]
+name = "ArtinSequenceVendor"
+srcDir = "vendor"
+leanOptions = { autoImplicit = true }

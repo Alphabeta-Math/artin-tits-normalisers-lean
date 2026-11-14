@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-11-14T07:38:15.523365+00:00",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Lake version 5.0.0-src+b35cb10 (Lean version 4.36.0-rc2)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "../.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "which",
+        "leanchecker"
+      ],
+      "exit_code": 0,
+      "stdout": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker\n",
+      "stderr": ""
+    }
+  ],
+  "leanchecker_path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker",
+  "leanchecker_sha256": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+  "build_root_commit": "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
+  "provider_sources_imported_mathlib_only": true
+}

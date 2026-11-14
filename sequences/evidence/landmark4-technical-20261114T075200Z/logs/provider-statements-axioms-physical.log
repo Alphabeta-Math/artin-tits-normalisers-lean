@@ -1,0 +1,15 @@
+FundamentalGroup.fundamentalGroupMulEquivOfPath_apply.{u_1} {X : Type u_1} [TopologicalSpace X] {x₀ x₁ : X}
+  (γ : Path x₀ x₁) (g : FundamentalGroup X x₀) :
+  (FundamentalGroup.fundamentalGroupMulEquivOfPath γ) g =
+    {
+      asHom :=
+        (Path.Homotopic.Quotient.mk γ).symm.trans
+          (Path.Homotopic.Quotient.trans g.asHom (Path.Homotopic.Quotient.mk γ)) }
+FundamentalGroup.map_fundamentalGroupMulEquivOfPath.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X]
+  [TopologicalSpace Y] {x₀ x₁ : X} (f : C(X, Y)) (γ : Path x₀ x₁) (g : FundamentalGroup X x₀) :
+  (FundamentalGroup.map f x₁) ((FundamentalGroup.fundamentalGroupMulEquivOfPath γ) g) =
+    (FundamentalGroup.fundamentalGroupMulEquivOfPath (γ.map ⋯)) ((FundamentalGroup.map f x₀) g)
+SEQUENCE_PROVIDER_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequenceVendor.FundamentalGroup.BasepointChange","name":"FundamentalGroup.map_fundamentalGroupMulEquivOfPath"}
+SEQUENCE_PROVIDER_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinSequenceVendor.FundamentalGroup.BasepointChange","name":"FundamentalGroup.fundamentalGroupMulEquivOfPath_apply"}
+SEQUENCE_PROVIDER_PHYSICAL_MODULE_JSON {"declarations":2,"module":"ArtinSequenceVendor.FundamentalGroup.BasepointChange","names":["FundamentalGroup.map_fundamentalGroupMulEquivOfPath","FundamentalGroup.fundamentalGroupMulEquivOfPath_apply"]}
+SEQUENCE_PROVIDER_PHYSICAL_SUMMARY_JSON {"all_physical_type_value_universe_parameters_identical":true,"canonical_axioms_checked":true,"canonical_declarations":2,"distinct_physical_names":2,"identical_theorem_duplicates":0,"modules":1,"physical_occurrences":2}

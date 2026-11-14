@@ -1,0 +1,62 @@
+{
+  "accepted": true,
+  "accepted_at": "2026-11-14T07:49:17.456948+00:00",
+  "accepted_context_input_aggregate_sha256": "643afcf143ce304163b5c22b046ba5eef4e6507a0b3a13dd8836fff5317902a5",
+  "accepted_context_input_count": 955,
+  "canonical_declarations": 2,
+  "full_landmark_4_proved": false,
+  "full_theorem_1_8_proved": false,
+  "identical_duplicates": 0,
+  "independent_reviews_sha256": {
+    "sequences/reviews/providers-a.json": "5e60adf66648cf05783d2250443706181dac746cf56a433b8d4f2ed129e54911",
+    "sequences/reviews/providers-a.md": "7b87ac7332d68f5abe2f1e3b8f6ce79ea05571303145d1692b6bbee9baa3c7f5",
+    "sequences/reviews/providers-b.json": "b4e6e211d4f754570dd03fd9de9d6c1923527fe7851b85c3f48a0f11f46fb506",
+    "sequences/reviews/providers-b.md": "4f0e94095934e6326f586c87a0a58d6ccdf6aa076d14e853e01513488232295a"
+  },
+  "kind": "root-accepted-landmark4-basepoint-supplier",
+  "limits": [
+    "Root inspected the exact two proofs and concrete usage; independent reviews/evidence record their own actual reading/execution.",
+    "Pinned bundled Lean kernel relative to imported foundations; no independent kernel or full upstream-file verification claimed."
+  ],
+  "physical_occurrences": 2,
+  "provider_bindings": {
+    "configuration_sha256": {
+      "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960",
+      "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
+      "sequences/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3"
+    },
+    "provider_active_source_sha256": {
+      "sequences/vendor/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d"
+    },
+    "provider_assembly_sha256": {
+      "sequences/scripts/providers/assemble.py": "9ccac4728746d33b50d59d6d8380ced9b433d33f39125bffc42927570629a1ef",
+      "sequences/vendor/extraction-recipe.json": "fe5b2d894063518bf2054d428f8ca37eaa937ca5cd4173e332e987372865e9e9"
+    },
+    "provider_audit_sha256": "7469e870bda694d049148676d7cdbe10c6a3c7d0335c3c41272160026ea92e5f",
+    "provider_import_patch_sha256": {
+      "sequences/vendor/patches/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean.patch": "dbb1390a9731661a9dfec996e26de0b566d7a7b42f67773419938cfd90883e79"
+    },
+    "provider_license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "provider_original_source_sha256": {
+      "sequences/vendor/upstream-original/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean.txt": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43"
+    },
+    "provider_statement_reviews_sha256": {
+      "sequences/reviews/providers-a.json": "5e60adf66648cf05783d2250443706181dac746cf56a433b8d4f2ed129e54911",
+      "sequences/reviews/providers-a.md": "7b87ac7332d68f5abe2f1e3b8f6ce79ea05571303145d1692b6bbee9baa3c7f5",
+      "sequences/reviews/providers-b.json": "b4e6e211d4f754570dd03fd9de9d6c1923527fe7851b85c3f48a0f11f46fb506",
+      "sequences/reviews/providers-b.md": "4f0e94095934e6326f586c87a0a58d6ccdf6aa076d14e853e01513488232295a"
+    },
+    "provider_verification_source_sha256": {
+      "sequences/scripts/providers/assemble.py": "9ccac4728746d33b50d59d6d8380ced9b433d33f39125bffc42927570629a1ef",
+      "sequences/scripts/providers/run_checks.py": "74af5ed2450b99721e8bf7be6a937323057c6a58521824a64b9f6121d33abd6e",
+      "sequences/scripts/providers/summarize.py": "5f856b72ca229683e5136bee344157d1fabde7e4a5fe5c77b5a54921913cd041"
+    },
+    "vendor_provenance_sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520"
+  },
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "scope": "Exactly two unchanged selected TauCeti theorem/proof blocks, one actual importable provider module. The full original file and unrelated closure are not accepted wholesale.",
+  "technical_verification_path": "sequences/evidence/providers/verification.json",
+  "technical_verification_sha256": "6287da8e7e322406e1e6efcf87b6769c375b174f26cdda76508766e59e361694",
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "vendor_provenance_sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520"
+}

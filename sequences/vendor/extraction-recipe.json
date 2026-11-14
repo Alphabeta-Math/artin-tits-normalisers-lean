@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "kind": "verbatim-declaration-extraction",
+  "original_path": "upstream-original/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean.txt",
+  "original_sha256": "87851dc988d7b53b32c35841a90f22aae58f3cd0eb6a4f3e232e78fc69b3bc43",
+  "copyright_header_original_lines": [
+    1,
+    5
+  ],
+  "module_line_original": 6,
+  "namespace": "FundamentalGroup",
+  "public_section": true,
+  "imports": [
+    "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup",
+    "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+  ],
+  "selected_blocks": [
+    {
+      "name": "FundamentalGroup.fundamentalGroupMulEquivOfPath_apply",
+      "start_line": 129,
+      "end_line": 148,
+      "sha256": "8414d978ee933fc8345ef2c57737a2d050eb8ed0358e533db46ca279f05fbc63",
+      "bytes": 1134,
+      "declaration_and_proof_unchanged": true
+    },
+    {
+      "name": "FundamentalGroup.map_fundamentalGroupMulEquivOfPath",
+      "start_line": 196,
+      "end_line": 212,
+      "sha256": "0a7c0a3dc68b8face62da69fe5bdce30395b2fd5d09708f3470ed928587515ba",
+      "bytes": 1163,
+      "declaration_and_proof_unchanged": true
+    }
+  ],
+  "active_path": "ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean",
+  "active_sha256": "a08b1f392653c11ac4599c226029bf90b8f13ab51024ad4e74916b93bbbb820d",
+  "patch_path": "patches/ArtinSequenceVendor/FundamentalGroup/BasepointChange.lean.patch",
+  "patch_sha256": "dbb1390a9731661a9dfec996e26de0b566d7a7b42f67773419938cfd90883e79",
+  "hypothesis_changes": [],
+  "proof_body_changes": [],
+  "wrapper_changes": [
+    "minimal Mathlib imports",
+    "new module path",
+    "extraction notice",
+    "unrelated declarations omitted"
+  ]
+}
