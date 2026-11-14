@@ -1,0 +1,265 @@
+{
+  "kind": "documentation-only-reviewed-source-attribution-repair",
+  "initial_canonical_sha256": {
+    "declaration-attribution.json": "f742be90a5f389b41915fead916ebe1c022923253ea9e697f559574f7b97397e",
+    "full-inventory.json": "09afcb36c0c23516036dd506597147aa4f7b9fadd7d23f509561ee6b0b5ce0d8",
+    "promotion-receipt.json": "97fedb9d48b9dc22d9dd7234240af20610ed1d99d8f46d3e81e44c16fc99330a",
+    "SHA256SUMS": "568a203b001c924be33fdcb321becaf9faa3745314fc358a02993b467cfc4ded"
+  },
+  "historical_snapshot_path": "docs/navigation/data/attribution/development/20261115-pre-review-repair",
+  "historical_snapshot_receipt_sha256": "9d205ea273fbd6f5a2ce52bd6e0dcbad45183e07a659aa15aab233f86768b1ff",
+  "final_declaration_attribution_sha256": "2fc28917928ef10c499665e2593fb620886e26a54a124974aaa8d46d0e4c5a9b",
+  "final_full_inventory_sha256": "4fee3fb7f3920cc2edbe00db2830bcbff3b8a1c0c521e7320724844e04b84395",
+  "article_source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+  "selected_excerpt_repairs": [
+    {
+      "selected_key": "article_corollary_6_14",
+      "before_line_start": 1449,
+      "before_line_end": 1470,
+      "before_excerpt_sha256": "fd9cbd300f44f60f2ffd471276d0c1cba58f704c5ddd936c6aeb3d207edbfe0b",
+      "after_line_start": 1514,
+      "after_line_end": 1516,
+      "after_excerpt_sha256": "6841a3dcb60ca180e67ba39e93985331366b611036e124a06c2b2bc2d789807b",
+      "printed_page": 27,
+      "pdf_page": 27
+    },
+    {
+      "selected_key": "article_remark_6_15",
+      "before_line_start": 152,
+      "before_line_end": 1534,
+      "before_excerpt_sha256": "0599f8526ab6176fc708f11ea73ea3aee60bbd756247a251feab63f5b84fa58f",
+      "after_line_start": 1527,
+      "after_line_end": 1532,
+      "after_excerpt_sha256": "b2c115c7978d813882d6fa575fa3af5868cfe2ce46326aff8118597629eed39b",
+      "printed_page": 27,
+      "pdf_page": 27
+    }
+  ],
+  "corollary_6_14_derived_assignments": [
+    "ArtinNormalisers.Deligne5.actualOrbit_isKpi1_at_projection",
+    "ArtinNormalisers.Deligne5.corollary_6_14",
+    "ArtinNormalisers.Deligne5.theorem_1_8",
+    "ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints"
+  ],
+  "heading_disambiguation_audit": [
+    {
+      "key": "article_lemma_2_8",
+      "label": "Lemma 2.8",
+      "old_start": 302,
+      "anchored_candidates": [
+        302
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_theorem_1_8",
+      "label": "Theorem 1.8",
+      "old_start": 138,
+      "anchored_candidates": [
+        138
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_lemma_3_23",
+      "label": "Lemma 3.23",
+      "old_start": 636,
+      "anchored_candidates": [
+        636
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_lemma_3_24",
+      "label": "Lemma 3.24",
+      "old_start": 653,
+      "anchored_candidates": [
+        653,
+        1349
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_theorem_3_9",
+      "label": "Theorem 3.9",
+      "old_start": 510,
+      "anchored_candidates": [
+        510
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_proposition_3_29",
+      "label": "Proposition 3.29",
+      "old_start": 734,
+      "anchored_candidates": [
+        734
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_definition_5_5",
+      "label": "Definition 5.5",
+      "old_start": 1219,
+      "anchored_candidates": [
+        1219
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_theorem_5_6",
+      "label": "Theorem 5.6",
+      "old_start": 1226,
+      "anchored_candidates": [
+        1226
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_remark_5_7",
+      "label": "Remark 5.7",
+      "old_start": 1231,
+      "anchored_candidates": [
+        1231
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_lemma_5_9",
+      "label": "Lemma 5.9",
+      "old_start": 1248,
+      "anchored_candidates": [
+        1248
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_lemma_6_2",
+      "label": "Lemma 6.2",
+      "old_start": 1311,
+      "anchored_candidates": [
+        1311
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_proposition_6_3",
+      "label": "Proposition 6.3",
+      "old_start": 1328,
+      "anchored_candidates": [
+        1328
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_lemma_6_6",
+      "label": "Lemma 6.6",
+      "old_start": 1394,
+      "anchored_candidates": [
+        1394
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_theorem_6_7",
+      "label": "Theorem 6.7",
+      "old_start": 1453,
+      "anchored_candidates": [
+        1453
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_remark_6_12",
+      "label": "Remark 6.12",
+      "old_start": 1497,
+      "anchored_candidates": [
+        1497
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_corollary_6_14",
+      "label": "Corollary 6.14",
+      "old_start": 1449,
+      "anchored_candidates": [
+        1514
+      ],
+      "old_start_is_heading": false
+    },
+    {
+      "key": "article_remark_6_15",
+      "label": "Remark 6.15",
+      "old_start": 152,
+      "anchored_candidates": [
+        1527
+      ],
+      "old_start_is_heading": false
+    },
+    {
+      "key": "article_ribbon_definition",
+      "label": "Definition 5.1",
+      "old_start": 1197,
+      "anchored_candidates": [
+        1197
+      ],
+      "old_start_is_heading": true
+    },
+    {
+      "key": "article_longest_notation",
+      "label": "Notation 2.5",
+      "old_start": 283,
+      "anchored_candidates": [
+        283
+      ],
+      "old_start_is_heading": true
+    }
+  ],
+  "heading_audit_limits": "All selected numbered-heading passages audited; explicitly contextual prose/equation/construction excerpts are not reclassified as headings. A line-beginning Lemma3.24 reference at1349 is a later prose mention; original heading653 context and selected declared start653 are retained. Correct article_labeled_results inventory is unchanged.",
+  "scope_repairs": {
+    "all_assigned_model_limit": "Lean uses the standard braid-presentation Artin group. The general all-types comparison with the topological Artin definition in article §2.2 is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained; this caveat does not deny those comparisons.",
+    "lemma_2_8_alphabeta_direction": "Direction: the finite-rank Alphabeta assertion is a restriction of this stronger arbitrary-index Lean theorem. Lean specializes to the Alphabeta hypotheses; the unrestricted article Lemma2.8 matches Lean without that additional rank restriction.",
+    "orbit_asphericity": "The orbit-space asphericity follows from actual-complement asphericity by the proved surjective normal-covering higher-homotopy transfer. These complement/Garside statements are related inputs, not direct specializations asserting asphericity of the quotient X/Q.",
+    "m4_supporting_comparison_assignments": [
+      "ArtinNormalisers.Deligne5.actualNormalizerDiagrams_proved",
+      "ArtinNormalisers.Sequence4.landmark_4",
+      "ArtinNormalisers.Sequence4.theorem_6_7",
+      "ArtinNormalisers.Sequence4.theorem_6_7_positive"
+    ],
+    "elementary_mu_totalization": [
+      "ArtinNormalisers.Ribbon2.elementaryMu",
+      "ArtinNormalisers.Ribbon2.elementaryMu_positive",
+      "ArtinNormalisers.Ribbon2.elementaryMu_isRibbon"
+    ],
+    "opposition_existence_only": [
+      "ArtinNormalisers.Ribbon2.parabolicDelta_generator_permutation",
+      "ArtinNormalisers.Ribbon2.parabolicDelta_generator_permutation_reverse"
+    ]
+  },
+  "preserved_snapshot_file_count": 732,
+  "preserved_snapshot_manifest_sha256": "6fc1a908215dbc6665b919b2fb975cff7162ebcf22b0540a0356c52986ee8a50",
+  "validation": {
+    "source_written": 2295,
+    "assigned": 51,
+    "all_existing_urls_pages_and_source_http_identities_unchanged": true,
+    "all_statement_http_verification_bytes_unchanged": true,
+    "numbered_article_inventory_unchanged": true,
+    "all_275_item_records_unchanged": true,
+    "new_orbit_item_link_uses_existing_verified_snapshot": true
+  },
+  "limits": [
+    "Documentation-only repair, not a mathematical verification or new CI result.",
+    "Independent focused acceptance is pending for these repaired bytes.",
+    "Original full article PDF/text cache remains outside the repository."
+  ],
+  "public_history_scope": "Initial 51-assignment atlas, receipts and hashes retained; erroneous full-inventory original preserved privately under /tmp, with identity and bounded diagnostic excerpt only in public history.",
+  "no_assigned_mapping_used_remark_6_15": true,
+  "selected_article_excerpt_scope_audit": {
+    "selected_passage_count": 30,
+    "maximum_selected_characters": 1773,
+    "all_selected_passages_at_most_31_source_lines": true,
+    "old_remark_accidental_article_span_characters": 87380,
+    "old_full_inventory_bytes_not_retained_publicly": true,
+    "scope": "Selected original statements/short contextual passages; full PDF/text and erroneous article-spanning excerpt draft remain outside repository."
+  }
+}

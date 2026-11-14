@@ -1,0 +1,3 @@
+Use the finite-rank Coxeter realization, dual space $\Theta$ with its Euclidean topology, and full Tits cone $\mathrm{Cone}\subseteq\Theta$ of [def-coxeter-arrangement-artin-tits-normalisers](item-def-coxeter-arrangement-artin-tits-normalisers). Let $H\subseteq\Theta$ be a linear hyperplane, and choose a nonzero linear functional $a:\Theta\to\mathbb R$ with $H=\ker a$. Its two open half-spaces are $\{x\in\Theta:a(x)>0\}$ and $\{x\in\Theta:a(x)<0\}$.
+
+For $f,g\in\mathrm{Cone}$, say that $H$ separates $f$ and $g$ if $a(f)$ and $a(g)$ have opposite strict signs. Equivalently, $f$ and $g$ belong to different connected components of $\mathrm{Cone}\setminus H$, equipped with the subspace topology. In particular, a point of $H$ is not separated from any point by $H$.

@@ -1,0 +1,1 @@
+For finitary $T=I\sqcup\{a,b\}$ with $a\ne b$, Ko's Definition 4.10 relation with parameters $(T,a,\bar b)$ maps under minimal representatives to precisely the two standard expressions for $v_{a,b,I}$ in the Brink–Howlett atomic braid relation. Conversely every Brink–Howlett atomic braid relation for which $I$ is finitary arises in this way.

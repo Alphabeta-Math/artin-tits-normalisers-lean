@@ -1,0 +1,820 @@
+{
+  "ArtinRibbons.NormalizerSplitting": {
+    "accepted_source_sha256": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c",
+    "audit_records": [
+      {
+        "canonical_declarations": 50,
+        "canonical_names": [
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_1",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_2",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_3",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_4",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_5",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_6",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_7",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_1",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_2",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_3",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_4",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_5",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_6",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_7",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectEquiv",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectEquiv._proof_1",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap._proof_1",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap._proof_2",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap_bijective",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap_value",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_1",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_2",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_3",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_4",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_5",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_6",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_7",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_1",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_2",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_3",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_4",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_5",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_6",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_7",
+          "ArtinNormalisers.Ribbon2.reducedRibbonLoop_parabolic_eq_one",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_1",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_2",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_3",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_4",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv_apply",
+          "ArtinNormalisers.Ribbon2.reducedRibbonParabolicAction",
+          "ArtinNormalisers.Ribbon2.reducedRibbonQuotientMap_injective",
+          "ArtinNormalisers.Ribbon2.reducedRibbonQuotientMap_surjective",
+          "_private.ArtinRibbons.NormalizerSplitting.0.ArtinNormalisers.Ribbon2.selected_prefix_eq_one_of_reduced"
+        ],
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+            "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+          },
+          "run_id": 43516856592,
+          "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+          "source_tree_hashes_checked": 24,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "ProjectAudit.lean"
+          ],
+          "command_index": 5,
+          "exit_code": 0,
+          "label": "project-axioms-and-statements",
+          "log": {
+            "archive_member": "project/logs/project-axioms-and-statements.log",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "1389671fbc2d21627681ed3f0eb969cf4be6c68ad8056534e6c622d50956d28d"
+          },
+          "record": {
+            "archive_member": "project/verification.json",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "ceed0a6dcc700efd96a378328c07fe774cdecdee57256161359984c97c158ee2"
+          }
+        },
+        "packet": "ribbons",
+        "physical_census_matches_navigation_inventory": true,
+        "physical_declaration_occurrences": 50,
+        "physical_names": [
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_1",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_2",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_3",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_4",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_5",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_6",
+          "ArtinNormalisers.Ribbon2.exists_parabolic_reducedRibbon_factorization._simp_1_7",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_1",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_2",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_3",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_4",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_5",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_6",
+          "ArtinNormalisers.Ribbon2.globalDelta_square_pow_decompose._simp_1_7",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectEquiv",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectEquiv._proof_1",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap._proof_1",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap._proof_2",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap_bijective",
+          "ArtinNormalisers.Ribbon2.normalizerSemidirectMap_value",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_1",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_2",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_3",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_4",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_5",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_6",
+          "ArtinNormalisers.Ribbon2.positive_fraction_globalDelta_square._simp_1_7",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_1",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_2",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_3",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_4",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_5",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_6",
+          "ArtinNormalisers.Ribbon2.positive_leftReduced_fraction_parabolic_eq._simp_1_7",
+          "ArtinNormalisers.Ribbon2.reducedRibbonLoop_parabolic_eq_one",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_1",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_2",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_3",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv._proof_4",
+          "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv_apply",
+          "ArtinNormalisers.Ribbon2.reducedRibbonParabolicAction",
+          "ArtinNormalisers.Ribbon2.reducedRibbonQuotientMap_injective",
+          "ArtinNormalisers.Ribbon2.reducedRibbonQuotientMap_surjective",
+          "_private.ArtinRibbons.NormalizerSplitting.0.ArtinNormalisers.Ribbon2.selected_prefix_eq_one_of_reduced"
+        ],
+        "scope": "packet-audit",
+        "status": "passed"
+      }
+    ],
+    "canonical_navigation_inventory": {
+      "json_pointer": "/modules/ArtinRibbons.NormalizerSplitting",
+      "path": "docs/navigation/data/source-inventory.json",
+      "sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120"
+    },
+    "classification": "source-defining",
+    "direct_imports": [
+      "ArtinRibbons.FractionNormalForms",
+      "ArtinRibbons.CofinalRibbons"
+    ],
+    "exact_kernel_replay_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+            "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+          },
+          "run_id": 43516856592,
+          "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+          "source_tree_hashes_checked": 24,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "--run",
+            "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/ribbons/evidence/landmark2-ci/project/ExactReplay.lean",
+            "ArtinRibbons.NormalizerSplitting"
+          ],
+          "command_index": 36,
+          "exit_code": 0,
+          "label": "replay-07-ArtinRibbons.NormalizerSplitting",
+          "log": {
+            "archive_member": "project/logs/replay-07-ArtinRibbons.NormalizerSplitting.log",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "b0ce3675527b94043f6145bd9166d16c82be71a8a47e50f1d26fa83a040d272a"
+          },
+          "record": {
+            "archive_member": "project/verification.json",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "ceed0a6dcc700efd96a378328c07fe774cdecdee57256161359984c97c158ee2"
+          }
+        },
+        "evidence_format": "structured-exact-module-result",
+        "generation": "historical-accepted-packet",
+        "packet": "ribbons",
+        "physical_census_matches_navigation_inventory": true,
+        "reported_result": {
+          "declarations_expected": 50,
+          "module": "ArtinRibbons.NormalizerSplitting",
+          "ok": true,
+          "runner_output": [
+            {
+              "declarations": 50,
+              "exact": true,
+              "kernel_replay_passed": true,
+              "module": "ArtinRibbons.NormalizerSplitting"
+            }
+          ]
+        },
+        "scope": "module-specific",
+        "status": "passed"
+      }
+    ],
+    "exact_replay_status": "explicit-module-replay-recorded",
+    "final_ci": {
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+        "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+      },
+      "artifact": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+        "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+      },
+      "conclusion": "success",
+      "fresh_individual_replay": false,
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+        "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+      },
+      "module_scope": "inherited-project-import",
+      "record": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      },
+      "run_id": 43599459363,
+      "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "source_hash_verified_in_archive": true,
+      "source_transport": {
+        "manifest": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+          "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+        },
+        "reassembly_verification": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+          "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+        },
+        "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+      },
+      "source_tree_hashes_checked": 153,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+      "verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      }
+    },
+    "historical_ci": {
+      "conclusion": "success",
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+        "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+      },
+      "run_id": 43516856592,
+      "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+      "source_tree_hashes_checked": 24,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+    },
+    "independent_reviews": [
+      {
+        "path": "ribbons/reviews/landmark2-a.json",
+        "sha256": "2753a705e962d570f516c08f469397d732044e82f61b3ca3e9329402e6a255c8"
+      },
+      {
+        "path": "ribbons/reviews/landmark2-a.md",
+        "sha256": "b20236bf8bfa1f9dc09de3bddf5e634f96b14c8038bc2180034ab450cd71a3f7"
+      },
+      {
+        "path": "ribbons/reviews/landmark2-b.json",
+        "sha256": "be1d429ed8af8ae7b53ab02c09d00de84435097ab92f944a5746fc37c55f127a"
+      },
+      {
+        "path": "ribbons/reviews/landmark2-b.md",
+        "sha256": "2878096ee20c277a780e8f3c0fbff8d2c289c09afe7aee98d46c4ecd6d274e0e"
+      }
+    ],
+    "module": "ArtinRibbons.NormalizerSplitting",
+    "package": "ribbons",
+    "physical_declaration_count": 50,
+    "source_inventory": {
+      "path": "ribbons/source-inventory.json",
+      "sha256": "288a104aa4077a449138f40bf7b881bdcee1d58335e5bd29d138f7c4b6c5e38c"
+    },
+    "source_path": "ribbons/ArtinRibbons/NormalizerSplitting.lean",
+    "source_science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "source_science_tree_hash_checked": true,
+    "source_written_declaration_count": 15,
+    "successful_compilation_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+            "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+          },
+          "run_id": 43516856592,
+          "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+          "source_tree_hashes_checked": 24,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinRibbons",
+            "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple",
+            "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange"
+          ],
+          "command_index": 4,
+          "exit_code": 0,
+          "label": "build-project",
+          "log": {
+            "archive_member": "project/logs/build-project.log",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "c2d5a3b0a54205f15268dfef9ceb7a8a6fa0e9c256361f4ed4d29d384a803796"
+          },
+          "record": {
+            "archive_member": "project/verification.json",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "ceed0a6dcc700efd96a378328c07fe774cdecdee57256161359984c97c158ee2"
+          }
+        },
+        "packet": "ribbons",
+        "scope": "package-aggregate-import",
+        "status": "passed"
+      },
+      {
+        "ci": null,
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinDeligne",
+            "ArtinDeligne.AcyclicCarrierFamilies",
+            "ArtinDeligne.CanonicalCarriers",
+            "ArtinDeligne.CanonicalCells",
+            "ArtinDeligne.CanonicalCoverWeights",
+            "ArtinDeligne.CanonicalGarsideMap",
+            "ArtinDeligne.CanonicalPacketCarriers",
+            "ArtinDeligne.CarrierDescent",
+            "ArtinDeligne.ContractibleExtension",
+            "ArtinDeligne.FiniteAncestry",
+            "ArtinDeligne.GarsideFolds",
+            "ArtinDeligne.GarsideShifts",
+            "ArtinDeligne.GarsideTopology",
+            "ArtinDeligne.GarsideTubeCarriers",
+            "ArtinDeligne.GarsideWeights",
+            "ArtinDeligne.GlobalNullity",
+            "ArtinDeligne.HereditaryWeights",
+            "ArtinDeligne.IncomingJoins",
+            "ArtinDeligne.IncomingMeets",
+            "ArtinDeligne.IncomingOrder",
+            "ArtinDeligne.LiftedCanonicalCover",
+            "ArtinDeligne.LiftedPartition",
+            "ArtinDeligne.LiftedTubeComponents",
+            "ArtinDeligne.LiftedTubeLabels",
+            "ArtinDeligne.LiftedTubes",
+            "ArtinDeligne.MonotoneSignInterpolation",
+            "ArtinDeligne.NumerableCarrierHomotopy",
+            "ArtinDeligne.NumerableWeights",
+            "ArtinDeligne.PacketCarrierCompatibility",
+            "ArtinDeligne.ParametricExtension",
+            "ArtinDeligne.ParametricFaceGluing",
+            "ArtinDeligne.RelativeGarsideCarriers",
+            "ArtinDeligne.SheetIntervals",
+            "ArtinDeligne.SimpleTransport",
+            "ArtinDeligne.Theorem18",
+            "ArtinDeligne.UniversalCoverComparison",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+            "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+            "ArtinDeligneVendor.Topology.Realization.Cylinder",
+            "ArtinDeligneVendor.Topology.Homotopy.Extension",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+            "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+            "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+            "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+            "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+            "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+          ],
+          "command_index": 24,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "path": "deligne/evidence/theorem18-local-final/logs/build-exact-frontier.log",
+            "sha256": "b14cba3a04e55997f6e19455e88ebcefb248625b815399493a6c39407d698d93"
+          },
+          "record": {
+            "path": "deligne/evidence/theorem18-local-final/verification.json",
+            "sha256": "38924ff028d9cf900ec491beba65f937c282734559ac6a0669525793f92be042"
+          }
+        },
+        "note": "Imported dependency; not among the final 64 individual replay targets.",
+        "packet": "deligne",
+        "scope": "inherited-import-only-in-final-local-build",
+        "status": "passed-local"
+      },
+      {
+        "ci": {
+          "archive_verification": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+            "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+          },
+          "artifact": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+            "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+          },
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+            "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+          },
+          "run_id": 43599459363,
+          "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+          "source_transport": {
+            "manifest": {
+              "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+              "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+            },
+            "reassembly_verification": {
+              "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+              "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+            },
+            "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+          },
+          "source_tree_hashes_checked": 153,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+          "verification": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+            "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+          }
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinDeligne",
+            "ArtinDeligne.AcyclicCarrierFamilies",
+            "ArtinDeligne.CanonicalCarriers",
+            "ArtinDeligne.CanonicalCells",
+            "ArtinDeligne.CanonicalCoverWeights",
+            "ArtinDeligne.CanonicalGarsideMap",
+            "ArtinDeligne.CanonicalPacketCarriers",
+            "ArtinDeligne.CarrierDescent",
+            "ArtinDeligne.ContractibleExtension",
+            "ArtinDeligne.FiniteAncestry",
+            "ArtinDeligne.GarsideFolds",
+            "ArtinDeligne.GarsideShifts",
+            "ArtinDeligne.GarsideTopology",
+            "ArtinDeligne.GarsideTubeCarriers",
+            "ArtinDeligne.GarsideWeights",
+            "ArtinDeligne.GlobalNullity",
+            "ArtinDeligne.HereditaryWeights",
+            "ArtinDeligne.IncomingJoins",
+            "ArtinDeligne.IncomingMeets",
+            "ArtinDeligne.IncomingOrder",
+            "ArtinDeligne.LiftedCanonicalCover",
+            "ArtinDeligne.LiftedPartition",
+            "ArtinDeligne.LiftedTubeComponents",
+            "ArtinDeligne.LiftedTubeLabels",
+            "ArtinDeligne.LiftedTubes",
+            "ArtinDeligne.MonotoneSignInterpolation",
+            "ArtinDeligne.NumerableCarrierHomotopy",
+            "ArtinDeligne.NumerableWeights",
+            "ArtinDeligne.PacketCarrierCompatibility",
+            "ArtinDeligne.ParametricExtension",
+            "ArtinDeligne.ParametricFaceGluing",
+            "ArtinDeligne.RelativeGarsideCarriers",
+            "ArtinDeligne.SheetIntervals",
+            "ArtinDeligne.SimpleTransport",
+            "ArtinDeligne.Theorem18",
+            "ArtinDeligne.UniversalCoverComparison",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+            "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+            "ArtinDeligneVendor.Topology.Realization.Cylinder",
+            "ArtinDeligneVendor.Topology.Homotopy.Extension",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+            "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+            "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+            "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+            "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+            "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+          ],
+          "command_index": 24,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "archive_member": "logs/build-exact-frontier.log",
+            "container_sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+            "sha256": "0d313ee57835bc44c12dceb3d3dfaeeb2485e1899d887bfdcdec9c76f46aed28"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+            "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+          }
+        },
+        "note": "Successful imported dependency build; this is not a fresh individual module replay.",
+        "packet": "deligne-ci",
+        "scope": "inherited-import-only-in-final-clean-CI-build",
+        "status": "passed"
+      }
+    ]
+  },
+  "ArtinRibbons.Landmark2": {
+    "accepted_source_sha256": "0fcb9db16ee03c6814f7edcc34e46ce09178fa0583a1bf340c687385b6436bb9",
+    "audit_records": [
+      {
+        "canonical_declarations": 3,
+        "canonical_names": [
+          "ArtinNormalisers.Ribbon2.landmark_2",
+          "ArtinNormalisers.Ribbon2.landmark_2_groupoid_presentation",
+          "ArtinNormalisers.Ribbon2.landmark_2_positive_presentation"
+        ],
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+            "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+          },
+          "run_id": 43516856592,
+          "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+          "source_tree_hashes_checked": 24,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "ProjectAudit.lean"
+          ],
+          "command_index": 5,
+          "exit_code": 0,
+          "label": "project-axioms-and-statements",
+          "log": {
+            "archive_member": "project/logs/project-axioms-and-statements.log",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "1389671fbc2d21627681ed3f0eb969cf4be6c68ad8056534e6c622d50956d28d"
+          },
+          "record": {
+            "archive_member": "project/verification.json",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "ceed0a6dcc700efd96a378328c07fe774cdecdee57256161359984c97c158ee2"
+          }
+        },
+        "packet": "ribbons",
+        "physical_census_matches_navigation_inventory": true,
+        "physical_declaration_occurrences": 3,
+        "physical_names": [
+          "ArtinNormalisers.Ribbon2.landmark_2",
+          "ArtinNormalisers.Ribbon2.landmark_2_groupoid_presentation",
+          "ArtinNormalisers.Ribbon2.landmark_2_positive_presentation"
+        ],
+        "scope": "packet-audit",
+        "status": "passed"
+      }
+    ],
+    "canonical_navigation_inventory": {
+      "json_pointer": "/modules/ArtinRibbons.Landmark2",
+      "path": "docs/navigation/data/source-inventory.json",
+      "sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120"
+    },
+    "classification": "source-defining",
+    "direct_imports": [
+      "ArtinRibbons.NormalizerSplitting",
+      "ArtinRibbons.CoxeterProjection",
+      "ArtinRibbons.RibbonUniversal",
+      "ArtinRibbons.AtomicCoxeter"
+    ],
+    "exact_kernel_replay_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+            "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+          },
+          "run_id": 43516856592,
+          "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+          "source_tree_hashes_checked": 24,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "--run",
+            "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/ribbons/evidence/landmark2-ci/project/ExactReplay.lean",
+            "ArtinRibbons.Landmark2"
+          ],
+          "command_index": 37,
+          "exit_code": 0,
+          "label": "replay-06-ArtinRibbons.Landmark2",
+          "log": {
+            "archive_member": "project/logs/replay-06-ArtinRibbons.Landmark2.log",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "2221f541a59e01382dcb533afa4a86e8e786f2ac9a6de0f446996b692cb6268e"
+          },
+          "record": {
+            "archive_member": "project/verification.json",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "ceed0a6dcc700efd96a378328c07fe774cdecdee57256161359984c97c158ee2"
+          }
+        },
+        "evidence_format": "structured-exact-module-result",
+        "generation": "historical-accepted-packet",
+        "packet": "ribbons",
+        "physical_census_matches_navigation_inventory": true,
+        "reported_result": {
+          "declarations_expected": 3,
+          "module": "ArtinRibbons.Landmark2",
+          "ok": true,
+          "runner_output": [
+            {
+              "declarations": 3,
+              "exact": true,
+              "kernel_replay_passed": true,
+              "module": "ArtinRibbons.Landmark2"
+            }
+          ]
+        },
+        "scope": "module-specific",
+        "status": "passed"
+      }
+    ],
+    "exact_replay_status": "explicit-module-replay-recorded",
+    "final_ci": {
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+        "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+      },
+      "artifact": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+        "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+      },
+      "conclusion": "success",
+      "fresh_individual_replay": false,
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+        "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+      },
+      "module_scope": "source-bound-historical-context-outside-ArtinDeligne-project-import-closure",
+      "record": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      },
+      "run_id": 43599459363,
+      "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "source_hash_verified_in_archive": true,
+      "source_transport": {
+        "manifest": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+          "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+        },
+        "reassembly_verification": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+          "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+        },
+        "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+      },
+      "source_tree_hashes_checked": 153,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+      "verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      }
+    },
+    "historical_ci": {
+      "conclusion": "success",
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+        "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+      },
+      "run_id": 43516856592,
+      "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+      "source_tree_hashes_checked": 24,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+    },
+    "independent_reviews": [
+      {
+        "path": "ribbons/reviews/landmark2-a.json",
+        "sha256": "2753a705e962d570f516c08f469397d732044e82f61b3ca3e9329402e6a255c8"
+      },
+      {
+        "path": "ribbons/reviews/landmark2-a.md",
+        "sha256": "b20236bf8bfa1f9dc09de3bddf5e634f96b14c8038bc2180034ab450cd71a3f7"
+      },
+      {
+        "path": "ribbons/reviews/landmark2-b.json",
+        "sha256": "be1d429ed8af8ae7b53ab02c09d00de84435097ab92f944a5746fc37c55f127a"
+      },
+      {
+        "path": "ribbons/reviews/landmark2-b.md",
+        "sha256": "2878096ee20c277a780e8f3c0fbff8d2c289c09afe7aee98d46c4ecd6d274e0e"
+      }
+    ],
+    "module": "ArtinRibbons.Landmark2",
+    "package": "ribbons",
+    "physical_declaration_count": 3,
+    "source_inventory": {
+      "path": "ribbons/source-inventory.json",
+      "sha256": "288a104aa4077a449138f40bf7b881bdcee1d58335e5bd29d138f7c4b6c5e38c"
+    },
+    "source_path": "ribbons/ArtinRibbons/Landmark2.lean",
+    "source_science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "source_science_tree_hash_checked": true,
+    "source_written_declaration_count": 3,
+    "successful_compilation_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/run.json",
+            "sha256": "3db40a5bbc414f02a6212853c974933db4dff8fd982f7f0e7bfac25357610caf"
+          },
+          "run_id": 43516856592,
+          "source_commit": "986b1f59aa1091c6a8905e924bece53e02f7dbaf",
+          "source_tree_hashes_checked": 24,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinRibbons",
+            "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple",
+            "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange"
+          ],
+          "command_index": 4,
+          "exit_code": 0,
+          "label": "build-project",
+          "log": {
+            "archive_member": "project/logs/build-project.log",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "c2d5a3b0a54205f15268dfef9ceb7a8a6fa0e9c256361f4ed4d29d384a803796"
+          },
+          "record": {
+            "archive_member": "project/verification.json",
+            "container_sha256": "16446d675835b228767e51dbf7d37736aacc6acf2f8dfe23cd902782e1346fc4",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43516856592/landmark2-verification.zip",
+            "sha256": "ceed0a6dcc700efd96a378328c07fe774cdecdee57256161359984c97c158ee2"
+          }
+        },
+        "packet": "ribbons",
+        "scope": "package-aggregate-import",
+        "status": "passed"
+      }
+    ]
+  }
+}

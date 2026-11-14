@@ -1,0 +1,1 @@
+Let $G$ be a connected small groupoid, $x$ an object, and $H\le G_x$ a subgroup. Form objects $Ha=\{ha:h\in H\}$ for all arrows $a:x\to y$, recording $y$. There is a connected covering $C_H\to G$ whose arrows are pairs $(Ha,g)$ with $g:y\to z$, from $Ha$ to $Hag$, projecting to $g$. Its chosen object is $H1_x=H$ and its characteristic subgroup there is $H$.

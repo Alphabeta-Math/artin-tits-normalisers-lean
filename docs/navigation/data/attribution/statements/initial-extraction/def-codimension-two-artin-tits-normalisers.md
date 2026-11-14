@@ -1,0 +1,1 @@
+Under the hypotheses of Lemma 4.23, the relation equating the two geodesic paths from $(x,I)$ to $(xv_{a,b,I},K)$ is a codimension-two relation.

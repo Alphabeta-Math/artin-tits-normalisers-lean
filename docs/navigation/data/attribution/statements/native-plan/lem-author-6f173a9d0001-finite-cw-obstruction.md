@@ -1,0 +1,1 @@
+The space $M$ of [[lem-author-6f173a9d0001-winding-independence]] is not homotopy equivalent to a finite CW complex. A finite CW complex is a space obtained by attaching finitely many cells in finitely many dimensions. A finite CW model for $M$ means such a complex homotopy equivalent to $M$.

@@ -1,0 +1,1 @@
+Any two geodesic paths $p,p^\prime:(x,I)\to(y,K)$ in $(\mathrm{Cone}(J)^\circ,\mathcal H^J)$ are related by a finite sequence of codimension-two relations.

@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.canonicalPacketCarrier": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 8,
+          "end_line": 124,
+          "end_utf16": 8,
+          "start_column": 0,
+          "start_line": 118,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 26,
+          "end_line": 120,
+          "end_utf16": 26,
+          "start_column": 4,
+          "start_line": 120,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "The literal actual connected component. Empty packets are assigned the empty set;\nno contractibility assertion is made for that default.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      (J : Set.{u_1} I) →\n        Finset.{u_1} (ArtinNormalisers.Deligne5.LiftedCanonicalIndex.{u_1} M J) →\n          Set.{u_1} (ArtinNormalisers.Asphericity5.ComplementUniversalCover.{u_1} M J)",
+      "module": "ArtinDeligne.CanonicalPacketCarriers",
+      "name": "ArtinNormalisers.Deligne5.canonicalPacketCarrier",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 57102,
+      "type_expression_sha256": "0ab273052ba6a36674eb8bb1449e83a8628ffce1be280c972ee8a52287ab0c3f",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.contractibleSpace_canonicalPacketCarrier": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 42,
+          "end_line": 162,
+          "end_utf16": 42,
+          "start_column": 0,
+          "start_line": 152,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 48,
+          "end_line": 154,
+          "end_utf16": 48,
+          "start_column": 8,
+          "start_line": 154,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Contractibility is proved using the actual chart for a component of a nonempty\nfamily of genuine tube sheets. Neither total-space contractibility nor a nerve theorem is used.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (F : Finset.{u_1} (ArtinNormalisers.Deligne5.LiftedCanonicalIndex.{u_1} M J)),\n  Finset.Nonempty.{u_1} F →\n    Set.Nonempty.{u_1} (ArtinNormalisers.Deligne5.canonicalPacketOverlapSet.{u_1} M J F) →\n      ContractibleSpace.{u_1} ↑(ArtinNormalisers.Deligne5.canonicalPacketCarrier.{u_1} M J F)",
+      "module": "ArtinDeligne.CanonicalPacketCarriers",
+      "name": "ArtinNormalisers.Deligne5.contractibleSpace_canonicalPacketCarrier",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 28503,
+      "type_expression_sha256": "641a0e0b34801de6d191d05a73738d4e64bd1889d905edbcefd75a6b61816dc7",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.canonicalPacketCarrier_mono": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 83,
+          "end_line": 238,
+          "end_utf16": 83,
+          "start_column": 0,
+          "start_line": 231,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 35,
+          "end_line": 232,
+          "end_utf16": 35,
+          "start_column": 8,
+          "start_line": 232,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Faces of an actual overlapping packet have nested actual carriers.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) {F G : Finset.{u_1} (ArtinNormalisers.Deligne5.LiftedCanonicalIndex.{u_1} M J)},\n  F ⊆ G →\n    Finset.Nonempty.{u_1} F →\n      Finset.Nonempty.{u_1} G →\n        Set.Nonempty.{u_1} (ArtinNormalisers.Deligne5.canonicalPacketOverlapSet.{u_1} M J G) →\n          ArtinNormalisers.Deligne5.canonicalPacketCarrier.{u_1} M J F ⊆\n            ArtinNormalisers.Deligne5.canonicalPacketCarrier.{u_1} M J G",
+      "module": "ArtinDeligne.CanonicalPacketCarriers",
+      "name": "ArtinNormalisers.Deligne5.canonicalPacketCarrier_mono",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 153040,
+      "type_expression_sha256": "69f2b279b4654a603dc8193303726d3e8af51615282fd1e42b028f0e6f7d4681",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

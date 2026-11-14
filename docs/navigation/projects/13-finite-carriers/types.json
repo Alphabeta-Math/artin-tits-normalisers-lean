@@ -1,0 +1,73 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.exists_finite_contractible_positive_enlargement": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 46,
+          "end_line": 414,
+          "end_utf16": 46,
+          "start_column": 0,
+          "start_line": 400,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 55,
+          "end_line": 402,
+          "end_utf16": 55,
+          "start_column": 8,
+          "start_line": 402,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The earlier finite-ancestry construction supplies all hypotheses of the\nfinite contraction, for each actual finite positive packet.",
+      "elaborated_type": "∀ {S : Type u_1} (M : CoxeterMatrix.{u_1} S) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (B0 : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M)\n  (A : Finset.{u_1} (ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0)),\n  (∀ (u : ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0),\n      Membership.mem.{u_1, u_1} A u →\n        ArtinNormalisers.Deligne5.IncomingVertex.IsPositive.{u_1} M B0 u) →\n    ∃ (B : Finset.{u_1} (ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0)),\n      A ⊆ B ∧\n        (∀ (u : ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0),\n            Membership.mem.{u_1, u_1} B u →\n              ArtinNormalisers.Deligne5.IncomingVertex.IsPositive.{u_1} M B0 u) ∧\n          ContractibleSpace.{u_1} (ArtinNormalisers.Deligne5.GarsideWeightsOn.{u_1} M B0 ↑B)",
+      "module": "ArtinDeligne.GarsideFolds",
+      "name": "ArtinNormalisers.Deligne5.exists_finite_contractible_positive_enlargement",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 131243,
+      "type_expression_sha256": "51cd483712a1d7226d72db194e0d5f693ebf5716534a0cf30c9b4908b9e4c3d1",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.GarsideWeights.compact_map_contractible_carrier": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 59,
+          "end_line": 157,
+          "end_utf16": 59,
+          "start_column": 0,
+          "start_line": 107,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 55,
+          "end_line": 109,
+          "end_utf16": 55,
+          "start_column": 8,
+          "start_line": 109,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Every compact map factors through an actual finite positive head-closed\ncontractible carrier and its unshifted inclusion.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (B0 : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M) {X : Type u_2}\n  [inst_1 : TopologicalSpace.{u_2} X] [CompactSpace.{u_2} X]\n  (f : ContinuousMap.{u_2, u_1} X (ArtinNormalisers.Deligne5.GarsideWeights.{u_1} M B0)),\n  ∃ (n : ℕ) (B : Finset.{u_1} (ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0)),\n    Membership.mem.{u_1, u_1} B (ArtinNormalisers.Deligne5.incomingRoot.{u_1} M B0) ∧\n      (∀ (u : ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0),\n          Membership.mem.{u_1, u_1} B u →\n            ArtinNormalisers.Deligne5.IncomingVertex.IsPositive.{u_1} M B0 u) ∧\n        (∀ (u : ArtinNormalisers.Deligne5.IncomingVertex.{u_1} M B0),\n            Membership.mem.{u_1, u_1} B u →\n              Membership.mem.{u_1, u_1} B (ArtinNormalisers.Deligne5.headStep.{u_1} M B0 u)) ∧\n          ContractibleSpace.{u_1} (ArtinNormalisers.Deligne5.GarsideWeightsOn.{u_1} M B0 ↑B) ∧\n            ∃ (g :\n              ContinuousMap.{u_2, u_1} X\n                (ArtinNormalisers.Deligne5.GarsideWeightsOn.{u_1} M B0 ↑B)),\n              Eq.{max (u_1 + 1) (u_2 + 1)}\n                (ContinuousMap.comp.{u_2, u_1, u_1}\n                  (ArtinNormalisers.Deligne5.unshiftedCarrierMap.{u_1} M B0 n ↑B) g)\n                f",
+      "module": "ArtinDeligne.GarsideShifts",
+      "name": "ArtinNormalisers.Deligne5.GarsideWeights.compact_map_contractible_carrier",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 15973,
+      "type_expression_sha256": "97fdbb694c393bccf4d74dc1f098ca28d820a360370579fdc2892260c67ac9ba",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1",
+        "u_2"
+      ]
+    }
+  }
+}

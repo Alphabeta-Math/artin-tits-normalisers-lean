@@ -1,0 +1,847 @@
+{
+  "ArtinAsphericity.FiniteArrangement": {
+    "accepted_source_sha256": "c1b2d520ed3b812f297bf222efe05c0261715835e398dcfba66f75e997fba590",
+    "audit_records": [
+      {
+        "canonical_declarations": 5,
+        "canonical_names": [
+          "ArtinNormalisers.Asphericity5.actual_arrangement_simplicial_hypotheses",
+          "ArtinNormalisers.Asphericity5.restrictedArrangement_finite",
+          "ArtinNormalisers.Asphericity5.restrictedArrangement_isClosed",
+          "ArtinNormalisers.Asphericity5.restrictedArrangement_zero_mem",
+          "ArtinNormalisers.Asphericity5.restrictedHyperplane_finrank_add_one"
+        ],
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+            "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+          },
+          "run_id": 43579352641,
+          "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+          "source_tree_hashes_checked": 8,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "ProjectAudit.lean"
+          ],
+          "command_index": 23,
+          "exit_code": 0,
+          "label": "project-statements-axioms-physical",
+          "log": {
+            "archive_member": "logs/project-statements-axioms-physical.log",
+            "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+            "sha256": "8722d723483e721abf91de8ba4ae738f88073e12277d67722e97c13ae564ec3e"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+            "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+          }
+        },
+        "coverage_record": {
+          "archive_member": "project-coverage.json",
+          "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+          "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+          "sha256": "23203f8400ea4d4ad02685a762a3bc9001d27fa8ea4d21c910003add75ab27db"
+        },
+        "packet": "asphericity",
+        "physical_census_matches_navigation_inventory": true,
+        "physical_declaration_occurrences": 5,
+        "physical_names": [
+          "ArtinNormalisers.Asphericity5.actual_arrangement_simplicial_hypotheses",
+          "ArtinNormalisers.Asphericity5.restrictedArrangement_finite",
+          "ArtinNormalisers.Asphericity5.restrictedArrangement_isClosed",
+          "ArtinNormalisers.Asphericity5.restrictedArrangement_zero_mem",
+          "ArtinNormalisers.Asphericity5.restrictedHyperplane_finrank_add_one"
+        ],
+        "scope": "packet-audit",
+        "status": "passed"
+      }
+    ],
+    "canonical_navigation_inventory": {
+      "json_pointer": "/modules/ArtinAsphericity.FiniteArrangement",
+      "path": "docs/navigation/data/source-inventory.json",
+      "sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120"
+    },
+    "classification": "source-defining",
+    "direct_imports": [
+      "ArtinAsphericity.Simpliciality",
+      "ArtinAsphericity.ConvexCover",
+      "Mathlib.LinearAlgebra.Dual.Lemmas"
+    ],
+    "exact_kernel_replay_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+            "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+          },
+          "run_id": 43579352641,
+          "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+          "source_tree_hashes_checked": 8,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "--run",
+            "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/asphericity/evidence/asphericity-prerequisites-ci/ExactReplay.lean",
+            "ArtinAsphericity.FiniteArrangement"
+          ],
+          "command_index": 51,
+          "exit_code": 0,
+          "label": "replay-003-ArtinAsphericity.FiniteArrangement",
+          "log": {
+            "archive_member": "logs/replay-003-ArtinAsphericity.FiniteArrangement.log",
+            "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+            "sha256": "8b996a609fc3b72d5cb15ec29ce0b3951fd6e6b715dab495d445007f4757b2d2"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+            "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+          }
+        },
+        "evidence_format": "structured-exact-module-result",
+        "generation": "historical-accepted-packet",
+        "packet": "asphericity",
+        "physical_census_matches_navigation_inventory": true,
+        "reported_result": {
+          "module": "ArtinAsphericity.FiniteArrangement",
+          "physical_declarations_expected": 5,
+          "result": {
+            "declarations": 5,
+            "exact": true,
+            "kernel_replay_passed": true,
+            "module": "ArtinAsphericity.FiniteArrangement"
+          }
+        },
+        "scope": "module-specific",
+        "status": "passed"
+      }
+    ],
+    "exact_replay_status": "explicit-module-replay-recorded",
+    "final_ci": {
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+        "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+      },
+      "artifact": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+        "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+      },
+      "conclusion": "success",
+      "fresh_individual_replay": false,
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+        "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+      },
+      "module_scope": "source-bound-historical-context-outside-ArtinDeligne-project-import-closure",
+      "record": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      },
+      "run_id": 43599459363,
+      "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "source_hash_verified_in_archive": true,
+      "source_transport": {
+        "manifest": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+          "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+        },
+        "reassembly_verification": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+          "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+        },
+        "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+      },
+      "source_tree_hashes_checked": 153,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+      "verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      }
+    },
+    "historical_ci": {
+      "conclusion": "success",
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+        "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+      },
+      "run_id": 43579352641,
+      "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "source_tree_hashes_checked": 8,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+    },
+    "independent_reviews": [
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-a.json",
+        "sha256": "00149555daae61f73eb7c77556056c09e4ede2235b83cb1e37f56ad4224db5a2"
+      },
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-a.md",
+        "sha256": "783639ce02ecd28d20a8b02fc65990a5ea1e2d6030295ed4a4513aac7f0ce099"
+      },
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-b.json",
+        "sha256": "f364780142e02cf740346f8ebbc55359de376e8ffe32b11540fd695f1a686399"
+      },
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-b.md",
+        "sha256": "d3dc323e9b16e8ba18bfd33ad811dfe4870c884804a1863d5f6cc051f79e3e22"
+      }
+    ],
+    "module": "ArtinAsphericity.FiniteArrangement",
+    "package": "asphericity",
+    "physical_declaration_count": 5,
+    "source_inventory": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/source-inventory.json",
+      "sha256": "e2b38ddcc4aacfeec5a55634cbc684684311dc81c0b7ecc44858c84bf187230b"
+    },
+    "source_path": "asphericity/ArtinAsphericity/FiniteArrangement.lean",
+    "source_science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "source_science_tree_hash_checked": true,
+    "source_written_declaration_count": 5,
+    "successful_compilation_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+            "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+          },
+          "run_id": 43579352641,
+          "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+          "source_tree_hashes_checked": 8,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinAsphericity",
+            "ArtinAsphericity.ConvexCover",
+            "ArtinAsphericity.DirectedCover",
+            "ArtinAsphericity.FiniteArrangement",
+            "ArtinAsphericity.FlatCoordinates",
+            "ArtinAsphericity.Prerequisites",
+            "ArtinAsphericity.Simpliciality",
+            "ArtinAsphericity.UniversalCoverGeometry",
+            "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+            "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+            "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+            "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+            "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+            "ArtinAsphericityVendor.Topology.SeparatedMap",
+            "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+            "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+            "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+            "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+            "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible",
+            "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle",
+            "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds",
+            "TauCeti.GroupTheory.Coxeter.Artin",
+            "TauCeti.GroupTheory.Coxeter.Basic",
+            "TauCeti.GroupTheory.Coxeter.BraidEquivalence",
+            "TauCeti.GroupTheory.Coxeter.Dihedral",
+            "TauCeti.GroupTheory.Coxeter.Geometric.Basic",
+            "TauCeti.GroupTheory.Coxeter.Matsumoto",
+            "TauCeti.GroupTheory.Coxeter.Parabolic",
+            "TauCeti.GroupTheory.Coxeter.StrongExchange",
+            "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering",
+            "ArtinLandmarkVendor.Geometric.RankTwo",
+            "ArtinLandmarkVendor.Geometric.Sign",
+            "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple",
+            "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange",
+            "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+            "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+            "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+          ],
+          "command_index": 22,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "archive_member": "logs/build-exact-frontier.log",
+            "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+            "sha256": "ce5856c183a5de71a0ee03d4c9c48706d02c108368e33d0b32b79c89234a43d8"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+            "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+          }
+        },
+        "packet": "asphericity",
+        "scope": "module-explicit-target",
+        "status": "passed"
+      }
+    ]
+  },
+  "ArtinAsphericity.Simpliciality": {
+    "accepted_source_sha256": "95be73abbfecc0943285659299a0865ad238b894b004b6514ce1272e7330e805",
+    "audit_records": [
+      {
+        "canonical_declarations": 30,
+        "canonical_names": [
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion",
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_basis",
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_basis_and_closure",
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_orthant_equiv",
+          "ArtinNormalisers.Asphericity5.actualChamber_basis_and_closure",
+          "ArtinNormalisers.Asphericity5.actualChamber_closure_isSimplicialCone",
+          "ArtinNormalisers.Asphericity5.actualChamber_isSimplicialRegion",
+          "ArtinNormalisers.Asphericity5.actualChamber_orthant_equiv",
+          "ArtinNormalisers.Asphericity5.closure_positiveOrthant",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_1",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_2",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_3",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_4",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_5",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_6",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv_pos_iff",
+          "ArtinNormalisers.Asphericity5.mem_hull_basis_iff",
+          "ArtinNormalisers.Asphericity5.mem_translatedFacet_iff_coordinates_pos",
+          "ArtinNormalisers.Asphericity5.nonnegativeOrthant",
+          "ArtinNormalisers.Asphericity5.nonnegativeOrthant.eq_1",
+          "ArtinNormalisers.Asphericity5.positiveOrthant",
+          "ArtinNormalisers.Asphericity5.positiveOrthant.eq_1",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates._proof_1",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates._proof_2",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates.eq_1",
+          "ArtinNormalisers.Asphericity5.translatedFacet_isSimplicialRegion",
+          "Finite.equivFin.congr_simp",
+          "_private.ArtinAsphericity.Simpliciality.0.ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_orthant_equiv._simp_1_1"
+        ],
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+            "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+          },
+          "run_id": 43579352641,
+          "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+          "source_tree_hashes_checked": 8,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "ProjectAudit.lean"
+          ],
+          "command_index": 23,
+          "exit_code": 0,
+          "label": "project-statements-axioms-physical",
+          "log": {
+            "archive_member": "logs/project-statements-axioms-physical.log",
+            "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+            "sha256": "8722d723483e721abf91de8ba4ae738f88073e12277d67722e97c13ae564ec3e"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+            "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+          }
+        },
+        "coverage_record": {
+          "archive_member": "project-coverage.json",
+          "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+          "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+          "sha256": "23203f8400ea4d4ad02685a762a3bc9001d27fa8ea4d21c910003add75ab27db"
+        },
+        "packet": "asphericity",
+        "physical_census_matches_navigation_inventory": true,
+        "physical_declaration_occurrences": 30,
+        "physical_names": [
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion",
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_basis",
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_basis_and_closure",
+          "ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_orthant_equiv",
+          "ArtinNormalisers.Asphericity5.actualChamber_basis_and_closure",
+          "ArtinNormalisers.Asphericity5.actualChamber_closure_isSimplicialCone",
+          "ArtinNormalisers.Asphericity5.actualChamber_isSimplicialRegion",
+          "ArtinNormalisers.Asphericity5.actualChamber_orthant_equiv",
+          "ArtinNormalisers.Asphericity5.closure_positiveOrthant",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_1",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_2",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_3",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_4",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_5",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv._proof_6",
+          "ArtinNormalisers.Asphericity5.finiteCoordinateEquiv_pos_iff",
+          "ArtinNormalisers.Asphericity5.mem_hull_basis_iff",
+          "ArtinNormalisers.Asphericity5.mem_translatedFacet_iff_coordinates_pos",
+          "ArtinNormalisers.Asphericity5.nonnegativeOrthant",
+          "ArtinNormalisers.Asphericity5.nonnegativeOrthant.eq_1",
+          "ArtinNormalisers.Asphericity5.positiveOrthant",
+          "ArtinNormalisers.Asphericity5.positiveOrthant.eq_1",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates._proof_1",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates._proof_2",
+          "ArtinNormalisers.Asphericity5.rawFacetCoordinates.eq_1",
+          "ArtinNormalisers.Asphericity5.translatedFacet_isSimplicialRegion",
+          "Finite.equivFin.congr_simp",
+          "_private.ArtinAsphericity.Simpliciality.0.ArtinNormalisers.Asphericity5.IsSimplicialRegion.exists_orthant_equiv._simp_1_1"
+        ],
+        "scope": "packet-audit",
+        "status": "passed"
+      }
+    ],
+    "canonical_navigation_inventory": {
+      "json_pointer": "/modules/ArtinAsphericity.Simpliciality",
+      "path": "docs/navigation/data/source-inventory.json",
+      "sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120"
+    },
+    "classification": "source-defining",
+    "direct_imports": [
+      "ArtinAsphericity.FlatCoordinates",
+      "ArtinChambers.ChamberLabels",
+      "Mathlib.Geometry.Convex.Cone.Simplicial",
+      "Mathlib.SetTheory.Cardinal.NatCard"
+    ],
+    "exact_kernel_replay_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+            "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+          },
+          "run_id": 43579352641,
+          "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+          "source_tree_hashes_checked": 8,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "--run",
+            "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/asphericity/evidence/asphericity-prerequisites-ci/ExactReplay.lean",
+            "ArtinAsphericity.Simpliciality"
+          ],
+          "command_index": 54,
+          "exit_code": 0,
+          "label": "replay-006-ArtinAsphericity.Simpliciality",
+          "log": {
+            "archive_member": "logs/replay-006-ArtinAsphericity.Simpliciality.log",
+            "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+            "sha256": "54673428915f729e7244c72ec12fd57db6d071fdda3ffeea3d22e96c1a3713c1"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+            "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+          }
+        },
+        "evidence_format": "structured-exact-module-result",
+        "generation": "historical-accepted-packet",
+        "packet": "asphericity",
+        "physical_census_matches_navigation_inventory": true,
+        "reported_result": {
+          "module": "ArtinAsphericity.Simpliciality",
+          "physical_declarations_expected": 30,
+          "result": {
+            "declarations": 30,
+            "exact": true,
+            "kernel_replay_passed": true,
+            "module": "ArtinAsphericity.Simpliciality"
+          }
+        },
+        "scope": "module-specific",
+        "status": "passed"
+      }
+    ],
+    "exact_replay_status": "explicit-module-replay-recorded",
+    "final_ci": {
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+        "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+      },
+      "artifact": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+        "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+      },
+      "conclusion": "success",
+      "fresh_individual_replay": false,
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+        "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+      },
+      "module_scope": "inherited-project-import",
+      "record": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      },
+      "run_id": 43599459363,
+      "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "source_hash_verified_in_archive": true,
+      "source_transport": {
+        "manifest": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+          "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+        },
+        "reassembly_verification": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+          "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+        },
+        "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+      },
+      "source_tree_hashes_checked": 153,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+      "verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      }
+    },
+    "historical_ci": {
+      "conclusion": "success",
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+        "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+      },
+      "run_id": 43579352641,
+      "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "source_tree_hashes_checked": 8,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+    },
+    "independent_reviews": [
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-a.json",
+        "sha256": "00149555daae61f73eb7c77556056c09e4ede2235b83cb1e37f56ad4224db5a2"
+      },
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-a.md",
+        "sha256": "783639ce02ecd28d20a8b02fc65990a5ea1e2d6030295ed4a4513aac7f0ce099"
+      },
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-b.json",
+        "sha256": "f364780142e02cf740346f8ebbc55359de376e8ffe32b11540fd695f1a686399"
+      },
+      {
+        "path": "asphericity/reviews/asphericity-prerequisites-b.md",
+        "sha256": "d3dc323e9b16e8ba18bfd33ad811dfe4870c884804a1863d5f6cc051f79e3e22"
+      }
+    ],
+    "module": "ArtinAsphericity.Simpliciality",
+    "package": "asphericity",
+    "physical_declaration_count": 30,
+    "source_inventory": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/source-inventory.json",
+      "sha256": "e2b38ddcc4aacfeec5a55634cbc684684311dc81c0b7ecc44858c84bf187230b"
+    },
+    "source_path": "asphericity/ArtinAsphericity/Simpliciality.lean",
+    "source_science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "source_science_tree_hash_checked": true,
+    "source_written_declaration_count": 17,
+    "successful_compilation_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json",
+            "sha256": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9"
+          },
+          "run_id": 43579352641,
+          "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+          "source_tree_hashes_checked": 8,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinAsphericity",
+            "ArtinAsphericity.ConvexCover",
+            "ArtinAsphericity.DirectedCover",
+            "ArtinAsphericity.FiniteArrangement",
+            "ArtinAsphericity.FlatCoordinates",
+            "ArtinAsphericity.Prerequisites",
+            "ArtinAsphericity.Simpliciality",
+            "ArtinAsphericity.UniversalCoverGeometry",
+            "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+            "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+            "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+            "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+            "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+            "ArtinAsphericityVendor.Topology.SeparatedMap",
+            "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+            "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+            "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+            "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+            "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible",
+            "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle",
+            "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds",
+            "TauCeti.GroupTheory.Coxeter.Artin",
+            "TauCeti.GroupTheory.Coxeter.Basic",
+            "TauCeti.GroupTheory.Coxeter.BraidEquivalence",
+            "TauCeti.GroupTheory.Coxeter.Dihedral",
+            "TauCeti.GroupTheory.Coxeter.Geometric.Basic",
+            "TauCeti.GroupTheory.Coxeter.Matsumoto",
+            "TauCeti.GroupTheory.Coxeter.Parabolic",
+            "TauCeti.GroupTheory.Coxeter.StrongExchange",
+            "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering",
+            "ArtinLandmarkVendor.Geometric.RankTwo",
+            "ArtinLandmarkVendor.Geometric.Sign",
+            "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple",
+            "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange",
+            "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+            "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map",
+            "ArtinSequenceVendor.FundamentalGroup.BasepointChange"
+          ],
+          "command_index": 22,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "archive_member": "logs/build-exact-frontier.log",
+            "container_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip",
+            "sha256": "ce5856c183a5de71a0ee03d4c9c48706d02c108368e33d0b32b79c89234a43d8"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+            "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+          }
+        },
+        "packet": "asphericity",
+        "scope": "module-explicit-target",
+        "status": "passed"
+      },
+      {
+        "ci": null,
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinDeligne",
+            "ArtinDeligne.AcyclicCarrierFamilies",
+            "ArtinDeligne.CanonicalCarriers",
+            "ArtinDeligne.CanonicalCells",
+            "ArtinDeligne.CanonicalCoverWeights",
+            "ArtinDeligne.CanonicalGarsideMap",
+            "ArtinDeligne.CanonicalPacketCarriers",
+            "ArtinDeligne.CarrierDescent",
+            "ArtinDeligne.ContractibleExtension",
+            "ArtinDeligne.FiniteAncestry",
+            "ArtinDeligne.GarsideFolds",
+            "ArtinDeligne.GarsideShifts",
+            "ArtinDeligne.GarsideTopology",
+            "ArtinDeligne.GarsideTubeCarriers",
+            "ArtinDeligne.GarsideWeights",
+            "ArtinDeligne.GlobalNullity",
+            "ArtinDeligne.HereditaryWeights",
+            "ArtinDeligne.IncomingJoins",
+            "ArtinDeligne.IncomingMeets",
+            "ArtinDeligne.IncomingOrder",
+            "ArtinDeligne.LiftedCanonicalCover",
+            "ArtinDeligne.LiftedPartition",
+            "ArtinDeligne.LiftedTubeComponents",
+            "ArtinDeligne.LiftedTubeLabels",
+            "ArtinDeligne.LiftedTubes",
+            "ArtinDeligne.MonotoneSignInterpolation",
+            "ArtinDeligne.NumerableCarrierHomotopy",
+            "ArtinDeligne.NumerableWeights",
+            "ArtinDeligne.PacketCarrierCompatibility",
+            "ArtinDeligne.ParametricExtension",
+            "ArtinDeligne.ParametricFaceGluing",
+            "ArtinDeligne.RelativeGarsideCarriers",
+            "ArtinDeligne.SheetIntervals",
+            "ArtinDeligne.SimpleTransport",
+            "ArtinDeligne.Theorem18",
+            "ArtinDeligne.UniversalCoverComparison",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+            "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+            "ArtinDeligneVendor.Topology.Realization.Cylinder",
+            "ArtinDeligneVendor.Topology.Homotopy.Extension",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+            "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+            "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+            "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+            "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+            "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+          ],
+          "command_index": 24,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "path": "deligne/evidence/theorem18-local-final/logs/build-exact-frontier.log",
+            "sha256": "b14cba3a04e55997f6e19455e88ebcefb248625b815399493a6c39407d698d93"
+          },
+          "record": {
+            "path": "deligne/evidence/theorem18-local-final/verification.json",
+            "sha256": "38924ff028d9cf900ec491beba65f937c282734559ac6a0669525793f92be042"
+          }
+        },
+        "note": "Imported dependency; not among the final 64 individual replay targets.",
+        "packet": "deligne",
+        "scope": "inherited-import-only-in-final-local-build",
+        "status": "passed-local"
+      },
+      {
+        "ci": {
+          "archive_verification": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+            "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+          },
+          "artifact": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+            "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+          },
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+            "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+          },
+          "run_id": 43599459363,
+          "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+          "source_transport": {
+            "manifest": {
+              "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+              "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+            },
+            "reassembly_verification": {
+              "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+              "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+            },
+            "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+          },
+          "source_tree_hashes_checked": 153,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+          "verification": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+            "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+          }
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinDeligne",
+            "ArtinDeligne.AcyclicCarrierFamilies",
+            "ArtinDeligne.CanonicalCarriers",
+            "ArtinDeligne.CanonicalCells",
+            "ArtinDeligne.CanonicalCoverWeights",
+            "ArtinDeligne.CanonicalGarsideMap",
+            "ArtinDeligne.CanonicalPacketCarriers",
+            "ArtinDeligne.CarrierDescent",
+            "ArtinDeligne.ContractibleExtension",
+            "ArtinDeligne.FiniteAncestry",
+            "ArtinDeligne.GarsideFolds",
+            "ArtinDeligne.GarsideShifts",
+            "ArtinDeligne.GarsideTopology",
+            "ArtinDeligne.GarsideTubeCarriers",
+            "ArtinDeligne.GarsideWeights",
+            "ArtinDeligne.GlobalNullity",
+            "ArtinDeligne.HereditaryWeights",
+            "ArtinDeligne.IncomingJoins",
+            "ArtinDeligne.IncomingMeets",
+            "ArtinDeligne.IncomingOrder",
+            "ArtinDeligne.LiftedCanonicalCover",
+            "ArtinDeligne.LiftedPartition",
+            "ArtinDeligne.LiftedTubeComponents",
+            "ArtinDeligne.LiftedTubeLabels",
+            "ArtinDeligne.LiftedTubes",
+            "ArtinDeligne.MonotoneSignInterpolation",
+            "ArtinDeligne.NumerableCarrierHomotopy",
+            "ArtinDeligne.NumerableWeights",
+            "ArtinDeligne.PacketCarrierCompatibility",
+            "ArtinDeligne.ParametricExtension",
+            "ArtinDeligne.ParametricFaceGluing",
+            "ArtinDeligne.RelativeGarsideCarriers",
+            "ArtinDeligne.SheetIntervals",
+            "ArtinDeligne.SimpleTransport",
+            "ArtinDeligne.Theorem18",
+            "ArtinDeligne.UniversalCoverComparison",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+            "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+            "ArtinDeligneVendor.Topology.Realization.Cylinder",
+            "ArtinDeligneVendor.Topology.Homotopy.Extension",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+            "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+            "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+            "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+            "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+            "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+          ],
+          "command_index": 24,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "archive_member": "logs/build-exact-frontier.log",
+            "container_sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+            "sha256": "0d313ee57835bc44c12dceb3d3dfaeeb2485e1899d887bfdcdec9c76f46aed28"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+            "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+          }
+        },
+        "note": "Successful imported dependency build; this is not a fresh individual module replay.",
+        "packet": "deligne-ci",
+        "scope": "inherited-import-only-in-final-clean-CI-build",
+        "status": "passed"
+      }
+    ]
+  }
+}

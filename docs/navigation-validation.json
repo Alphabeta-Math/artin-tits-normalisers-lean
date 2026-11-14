@@ -1,0 +1,19 @@
+{
+  "exact_direct_edge_occurrences": 2624,
+  "generation_record_sha256": "e199111403ab4d9481e1077f6d25e1d5048dc3a06966d6c4c05f824a346b6f34",
+  "generator_sha256": "c31e15e5cf356f85abcfe4e85bbe51e231c3c4d5c3d34f22aa9e4b8744b40596",
+  "important_topics": 20,
+  "independent_source_reviews_sha256": {
+    "docs/navigation/reviews/source-correspondence-a.json": "41ca48d3982fddccc4c2a740aafad8a33476002de55f778f7ab130a945c5ed06",
+    "docs/navigation/reviews/source-correspondence-b.json": "4536cf3b30ffd3f2c136e693fa109b66ff01285ba70b98d7aad074927e2cb881"
+  },
+  "key_formal_declarations": 49,
+  "local_links_checked": 757,
+  "ok": true,
+  "project_files": 20,
+  "proof_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "readme_graph_nodes": 20,
+  "readme_sha256": "ea892cc2821a66c3f14ed70848cf17b589f8a9054529025366a7d7e8f0aab147",
+  "scope": "Curated documentation metadata validation; no Lean build/audit/replay",
+  "unchanged_scientific_source_modules": 153
+}

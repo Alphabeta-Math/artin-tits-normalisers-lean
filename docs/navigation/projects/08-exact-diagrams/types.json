@@ -1,0 +1,72 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Sequence4.theorem_6_7": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 52,
+          "end_line": 45,
+          "end_utf16": 52,
+          "start_column": 0,
+          "start_line": 21,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 19,
+          "end_line": 23,
+          "end_utf16": 19,
+          "start_column": 8,
+          "start_line": 23,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "**Theorem 6.7**, in the explicitly normalized mathlib fundamental-group\nconvention, for the original groups, original spaces and original induced maps.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (x : ArtinNormalisers.Theorem18.Complement.{u_1} M J),\n  Nonempty.{u_1 + 1}\n      (MulEquiv.{u_1, u_1} (↥(ArtinNormalisers.Artin.pureNormalizerImage.{u_1} M J))\n        (FundamentalGroup.{u_1} (ArtinNormalisers.Theorem18.Complement.{u_1} M J) x)) ∧\n    Nonempty.{u_1 + 1}\n        (MulEquiv.{u_1, u_1} (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M J)\n          (FundamentalGroup.{u_1} (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J)\n            (ArtinNormalisers.Theorem18.orbitProjection.{u_1} M J x))) ∧\n      (Function.Injective.{u_1 + 1, u_1 + 1}\n            ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion.{u_1} M J) ∧\n          Eq.{u_1 + 1}\n              (MonoidHom.range.{u_1, u_1}\n                (ArtinNormalisers.Artin.pureNormalizerInclusion.{u_1} M J))\n              (MonoidHom.ker.{u_1, u_1} (ArtinNormalisers.Artin.normalizerQuotientMap.{u_1} M J)) ∧\n            Function.Surjective.{u_1 + 1, u_1 + 1}\n              ⇑(ArtinNormalisers.Artin.normalizerQuotientMap.{u_1} M J)) ∧\n        (Function.Injective.{u_1 + 1, u_1 + 1}\n              ⇑(ArtinNormalisers.Landmark1.orbitFundamentalGroupMap.{u_1} M J x) ∧\n            Eq.{u_1 + 1}\n                (MonoidHom.range.{u_1, u_1}\n                  (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap.{u_1} M J x))\n                (MonoidHom.ker.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy.{u_1} M J x)) ∧\n              Function.Surjective.{u_1 + 1, u_1 + 1}\n                ⇑(ArtinNormalisers.Sequence4.normalizedOrbitMonodromy.{u_1} M J x)) ∧\n          Eq.{u_1 + 1}\n              (MonoidHom.comp.{u_1, u_1, u_1}\n                (ArtinNormalisers.Landmark1.orbitFundamentalGroupMap.{u_1} M J x)\n                (MulEquiv.toMonoidHom.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.pureFundamentalGroupEquiv.{u_1} M J x)))\n              (MonoidHom.comp.{u_1, u_1, u_1}\n                (MulEquiv.toMonoidHom.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv.{u_1} M J x))\n                (ArtinNormalisers.Artin.pureNormalizerInclusion.{u_1} M J)) ∧\n            Eq.{u_1 + 1}\n              (MonoidHom.comp.{u_1, u_1, u_1}\n                (ArtinNormalisers.Sequence4.normalizedOrbitMonodromy.{u_1} M J x)\n                (MulEquiv.toMonoidHom.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.normalizerFundamentalGroupEquiv.{u_1} M J x)))\n              (ArtinNormalisers.Artin.normalizerQuotientMap.{u_1} M J)",
+      "module": "ArtinSequences.Landmark4",
+      "name": "ArtinNormalisers.Sequence4.theorem_6_7",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 96208,
+      "type_expression_sha256": "744dd02a6e71cddf192ff1b1b498acafb16d45b485d1e05974274f055807d013",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Sequence4.theorem_6_7_positive": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 79,
+          "end_line": 87,
+          "end_utf16": 79,
+          "start_column": 0,
+          "start_line": 68,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 28,
+          "end_line": 71,
+          "end_utf16": 28,
+          "start_column": 8,
+          "start_line": 71,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The same actual diagram in positive path-traversal order, implemented by\nthe opposite of mathlib's fundamental group. The positive endpoint map sends\nthe literal lifted path to its original quotient label.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (x : ArtinNormalisers.Theorem18.Complement.{u_1} M J),\n  Nonempty.{u_1 + 1}\n      (MulEquiv.{u_1, u_1} (↥(ArtinNormalisers.Artin.pureNormalizerImage.{u_1} M J))\n        (MulOpposite.{u_1}\n          (FundamentalGroup.{u_1} (ArtinNormalisers.Theorem18.Complement.{u_1} M J) x))) ∧\n    Nonempty.{u_1 + 1}\n        (MulEquiv.{u_1, u_1} (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M J)\n          (MulOpposite.{u_1}\n            (FundamentalGroup.{u_1} (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J)\n              (ArtinNormalisers.Theorem18.orbitProjection.{u_1} M J x)))) ∧\n      (Function.Injective.{u_1 + 1, u_1 + 1}\n            ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion.{u_1} M J) ∧\n          Eq.{u_1 + 1}\n              (MonoidHom.range.{u_1, u_1}\n                (ArtinNormalisers.Artin.pureNormalizerInclusion.{u_1} M J))\n              (MonoidHom.ker.{u_1, u_1} (ArtinNormalisers.Artin.normalizerQuotientMap.{u_1} M J)) ∧\n            Function.Surjective.{u_1 + 1, u_1 + 1}\n              ⇑(ArtinNormalisers.Artin.normalizerQuotientMap.{u_1} M J)) ∧\n        (Function.Injective.{u_1 + 1, u_1 + 1}\n              ⇑(ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap.{u_1} M J x) ∧\n            Eq.{u_1 + 1}\n                (MonoidHom.range.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap.{u_1} M J x))\n                (MonoidHom.ker.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.positiveOrbitMonodromy.{u_1} M J x)) ∧\n              Function.Surjective.{u_1 + 1, u_1 + 1}\n                ⇑(ArtinNormalisers.Sequence4.positiveOrbitMonodromy.{u_1} M J x)) ∧\n          Eq.{u_1 + 1}\n              (MonoidHom.comp.{u_1, u_1, u_1}\n                (ArtinNormalisers.Sequence4.positiveOrbitFundamentalGroupMap.{u_1} M J x)\n                (MulEquiv.toMonoidHom.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.positivePureEquiv.{u_1} M J x)))\n              (MonoidHom.comp.{u_1, u_1, u_1}\n                (MulEquiv.toMonoidHom.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.positiveNormalizerEquiv.{u_1} M J x))\n                (ArtinNormalisers.Artin.pureNormalizerInclusion.{u_1} M J)) ∧\n            Eq.{u_1 + 1}\n              (MonoidHom.comp.{u_1, u_1, u_1}\n                (ArtinNormalisers.Sequence4.positiveOrbitMonodromy.{u_1} M J x)\n                (MulEquiv.toMonoidHom.{u_1, u_1}\n                  (ArtinNormalisers.Sequence4.positiveNormalizerEquiv.{u_1} M J x)))\n              (ArtinNormalisers.Artin.normalizerQuotientMap.{u_1} M J)",
+      "module": "ArtinSequences.Landmark4",
+      "name": "ArtinNormalisers.Sequence4.theorem_6_7_positive",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 132690,
+      "type_expression_sha256": "82cbd9860dea5afd431c476a79fd6ad4103f91635df7b104a4f392ff60ff597b",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

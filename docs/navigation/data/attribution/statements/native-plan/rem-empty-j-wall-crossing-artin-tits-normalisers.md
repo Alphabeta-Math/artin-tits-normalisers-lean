@@ -1,0 +1,3 @@
+Let $(W,S)$ be a Coxeter system with simple generators $s_i$ indexed by the vertices $i$ of a Coxeter diagram $\Gamma$. For $K\subseteq\Gamma_0$, write $W_K=\langle s_k:k\in K\rangle$. An associate of $J\subseteq\Gamma_0$ is a subset $I$ for which $W_I$ is conjugate to $W_J$, as in [[def-associates-artin-tits-normalisers]]. The empty subset is its only associate.
+
+For every $a\in\Gamma_0$, the connected-support notation of [[def-connected-support-artin-tits-normalisers]] gives $[\varnothing,a]=\{a\}$, the group $W_{[\varnothing,a]}$ is cyclic of order two, and the simple wall-crossing element of [[def-simple-wall-crossing-artin-tits-normalisers]] is $v_{a,\varnothing}=s_a$.

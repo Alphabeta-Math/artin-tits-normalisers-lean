@@ -1,0 +1,1 @@
+In spherical type the assignment $\mathcal G:\mathcal D\to\mathcal R$ is a well-defined functor. A geodesic path from $(x_1,I_1)$ to $(x_n,I_n)$ is sent to the positive lift of $x_1^{-1}x_n$, the product of the corresponding $\mu_{a_i,I_i}$; hence the image depends only on its endpoints.

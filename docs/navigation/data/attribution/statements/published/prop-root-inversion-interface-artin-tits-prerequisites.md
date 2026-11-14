@@ -1,0 +1,5 @@
+Let $S$ be finite and let $(W,S)$, $V$, its basis $(e_s)_{s\in S}$, the Coxeter form $B$, the canonical representation, the root set $\Phi$, the dual action, and the open chamber $C^\circ$ be as in the canonical real Coxeter interface. Let $\ell(w)$ be the minimum length of a word in $S$ representing $w$. Put $V_+=\{\sum_{s\in S}a_se_s:a_s\geq0\}$ and $\Phi_+=\Phi\cap V_+$. A root in $-\Phi_+$ is called negative.
+
+Every root has exactly one sign: $\Phi=\Phi_+\sqcup(-\Phi_+)$. For $N(w)=\{\alpha\in\Phi_+:w\alpha\in-\Phi_+\}$ one has $|N(w)|=\ell(w)=\ell(w^{-1})$. For $s\in S$, the chamber $wC^\circ$ lies in $\{f:f(e_s)<0\}$ exactly when $\ell(sw)<\ell(w)$, equivalently when $w^{-1}e_s$ is negative.
+
+For a root $\alpha$, write $H_\alpha=\{f\in V^*:f(\alpha)=0\}$. Distinct positive roots have distinct full hyperplanes $H_\alpha$. The map $\alpha\mapsto H_\alpha\cap U$ need not be injective when restricted to a real linear subspace $U\subseteq V^*$.

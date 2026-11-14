@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.actualGarsideForward": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 70,
+          "end_line": 30,
+          "end_utf16": 70,
+          "start_column": 0,
+          "start_line": 27,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 24,
+          "end_line": 28,
+          "end_utf16": 24,
+          "start_column": 4,
+          "start_line": 28,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "The continuous forward map on the original universal cover.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      (J : Set.{u_1} I) →\n        ContinuousMap.{u_1, u_1} (ArtinNormalisers.Asphericity5.ComplementUniversalCover.{u_1} M J)\n          (ArtinNormalisers.Deligne5.GarsideWeights.{u_1} M\n            (ArtinNormalisers.Ribbon2.RibbonObject.mk.{u_1} J))",
+      "module": "ArtinDeligne.UniversalCoverComparison",
+      "name": "ArtinNormalisers.Deligne5.actualGarsideForward",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 111667,
+      "type_expression_sha256": "5ccc13f180ba2db9405edafb0bc8966b826b3295a5ad0bd77203fbd98de92ca5",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.actualGarsideReturn": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 29,
+          "end_line": 288,
+          "end_utf16": 29,
+          "start_column": 0,
+          "start_line": 282,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 23,
+          "end_line": 283,
+          "end_utf16": 23,
+          "start_column": 4,
+          "start_line": 283,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "The actual continuous Garside return into the original universal cover.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      (J : Set.{u_1} I) →\n        ContinuousMap.{u_1, u_1}\n          (ArtinNormalisers.Deligne5.GarsideWeights.{u_1} M\n            (ArtinNormalisers.Ribbon2.RibbonObject.mk.{u_1} J))\n          (ArtinNormalisers.Asphericity5.ComplementUniversalCover.{u_1} M J)",
+      "module": "ArtinDeligne.GarsideTubeCarriers",
+      "name": "ArtinNormalisers.Deligne5.actualGarsideReturn",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 96596,
+      "type_expression_sha256": "b20816db5f5f520391be0d47fef56d61857bc6c7219a3fadc2103211674d812f",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.actualUniversalCoverComparisonHomotopy": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 83,
+          "end_line": 50,
+          "end_utf16": 83,
+          "start_column": 0,
+          "start_line": 32,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 42,
+          "end_line": 34,
+          "end_utf16": 42,
+          "start_column": 4,
+          "start_line": 34,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "The actual return and forward composite is homotopic to the identity.\nThe finite carrier homotopies are constructed, rather than assumed.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      (J : Set.{u_1} I) →\n        ContinuousMap.Homotopy.{u_1, u_1}\n          (ContinuousMap.comp.{u_1, u_1, u_1}\n            (ArtinNormalisers.Deligne5.actualGarsideReturn.{u_1} M J)\n            (ArtinNormalisers.Deligne5.actualGarsideForward.{u_1} M J))\n          (ContinuousMap.id.{u_1}\n            (ArtinNormalisers.Asphericity5.ComplementUniversalCover.{u_1} M J))",
+      "module": "ArtinDeligne.UniversalCoverComparison",
+      "name": "ArtinNormalisers.Deligne5.actualUniversalCoverComparisonHomotopy",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 32673,
+      "type_expression_sha256": "122b3df4fb6d1af9c142a55aa39b0585b9db4982b90d66d898df3938ffbd24c2",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

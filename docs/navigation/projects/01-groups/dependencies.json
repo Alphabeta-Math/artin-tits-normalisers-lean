@@ -1,0 +1,1120 @@
+{
+  "ArtinNormalisers.Artin.Group": {
+    "type_dependencies": [
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "TauCeti.ArtinGroup",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Artin.parabolic": {
+    "type_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Subgroup",
+        "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Defs.lean",
+          "source_sha256": "0276f2ed09d597ed58766bac7d3999d059f780b2a4086bbcde0bd19312849db0"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.generator",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Subgroup.closure",
+        "module": "Mathlib.Algebra.Group.Subgroup.Lattice",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Lattice.lean",
+          "source_sha256": "33c35c28fb12bbe0f770d5902660b1559b78d842d982d9b7c14f183a2b2f63ef"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "Set.image",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.parabolic",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Artin.pure": {
+    "type_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Subgroup",
+        "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Defs.lean",
+          "source_sha256": "0276f2ed09d597ed58766bac7d3999d059f780b2a4086bbcde0bd19312849db0"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.projection",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "MonoidHom.ker",
+        "module": "Mathlib.Algebra.Group.Subgroup.Ker",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Ker.lean",
+          "source_sha256": "a85728844bf80d5f07ad888d0e434a32d0fec424833b2a3ae952720a5a41c644"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.relationsSet",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.pure",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Artin.normalizerQuotient": {
+    "type_dependencies": [
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.parabolic",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.normalizerQuotientOf",
+        "module": "ArtinNormalisers.Artin.ExactSequence",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/ExactSequence.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/ExactSequence.lean",
+          "source_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.normalizerQuotient",
+        "module": "ArtinNormalisers.Artin.ExactSequence",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/ExactSequence.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/ExactSequence.lean",
+          "source_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Artin.pureNormalizerImage": {
+    "type_dependencies": [
+      {
+        "name": "Subgroup.subgroupOf",
+        "module": "Mathlib.Algebra.Group.Subgroup.Map",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Map.lean",
+          "source_sha256": "087db16342a142bb22761e5110bd5e84e7afe0ecdb1e2c821f92a93049ce9e3a"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.parabolic",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Membership.mem",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Subtype",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Subgroup",
+        "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Defs.lean",
+          "source_sha256": "0276f2ed09d597ed58766bac7d3999d059f780b2a4086bbcde0bd19312849db0"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "Subgroup.normalizer",
+        "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Defs.lean",
+          "source_sha256": "0276f2ed09d597ed58766bac7d3999d059f780b2a4086bbcde0bd19312849db0"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "SetLike.coe",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.normalizerQuotient",
+        "module": "ArtinNormalisers.Artin.ExactSequence",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/ExactSequence.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/ExactSequence.lean",
+          "source_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "QuotientGroup.Quotient.group",
+        "module": "Mathlib.GroupTheory.QuotientGroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/QuotientGroup/Defs.lean",
+          "source_sha256": "923101db4b84563d2a88ecc69ec1b871306d05faa9d6575fffba9affd9b4a41e"
+        }
+      },
+      {
+        "name": "Subgroup.normal_in_normalizer",
+        "module": "Mathlib.Algebra.Group.Subgroup.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Basic.lean",
+          "source_sha256": "1349879f2176ac8a3f10c0cd35555ccdd9bb4a85a9901056e715bcd0c945d6e5"
+        }
+      },
+      {
+        "name": "Subgroup.toGroup",
+        "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Defs.lean",
+          "source_sha256": "0276f2ed09d597ed58766bac7d3999d059f780b2a4086bbcde0bd19312849db0"
+        }
+      },
+      {
+        "name": "SetLike.instMembership",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "Subgroup.instSetLike",
+        "module": "Mathlib.Algebra.Group.Subgroup.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Subgroup/Defs.lean",
+          "source_sha256": "0276f2ed09d597ed58766bac7d3999d059f780b2a4086bbcde0bd19312849db0"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.parabolic",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.projection",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.articleKernelImage",
+        "module": "ArtinNormalisers.Kernel",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Kernel.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Kernel.lean",
+          "source_sha256": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.relationsSet",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Artin.pureNormalizerImage",
+        "module": "ArtinNormalisers.Artin.ExactSequence",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/ExactSequence.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/ExactSequence.lean",
+          "source_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  }
+}

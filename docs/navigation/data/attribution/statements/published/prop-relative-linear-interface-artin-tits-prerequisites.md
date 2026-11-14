@@ -1,0 +1,5 @@
+Let $V$ be a real vector space with finite basis $(e_s)_{s\in S}$, let $J\subseteq S$, and let $E=\{f\in V^*:f(e_j)=0\text{ for every }j\in J\}$. For $\alpha\in V$, write $r_\alpha:E\to\mathbb R$ for the restricted evaluation $r_\alpha(f)=f(\alpha)$. Then $r_\alpha$ is zero exactly when $\alpha\in\operatorname{span}\{e_j:j\in J\}$; otherwise its kernel is a linear hyperplane of $E$, meaning that its quotient in $E$ has dimension one. Two nonzero restricted evaluations have the same kernel exactly when one is a nonzero real scalar multiple of the other.
+
+Identify the complexification $E\otimes_{\mathbb R}\mathbb C$ with $E\oplus iE$ by $f\otimes(a+bi)\mapsto af+i bf$. For a real hyperplane $H\subseteq E$, its complexification, understood as the image of $H\otimes_{\mathbb R}\mathbb C$ under the inclusion into $E\otimes_{\mathbb R}\mathbb C$, is $H\oplus iH$.
+
+For subsets of $E$, relative interior and closure mean interior and closure computed in $E$ with the metric induced by the coordinate Euclidean metric on $V^*$ associated to the basis $(e_s)$. Thus balls used in these operations are balls in $E$.

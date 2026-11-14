@@ -1,0 +1,3 @@
+Let $E$ be a finite-dimensional coordinate Euclidean space of dimension $d>0$, let $T\subseteq E$ and $u\in\operatorname{int}_E(T)$, and choose an orthonormal basis $e_1,\ldots,e_d$ and $\varepsilon>0$ with $p_i^\pm=u\pm\varepsilon e_i\in T$ and $B_E(u,\varepsilon)\subseteq T$. Every proper linear hyperplane $K\subset E$ meeting $B_E(u,\varepsilon/d)$ strictly separates $p_i^+$ and $p_i^-$ for some $i$.
+
+Here a linear hyperplane means a linear subspace $K$ with $\dim_{\mathbb R}(E/K)=1$. Strict separation of $v,w\in E$ by $K$ means $a(v)a(w)<0$ for a nonzero real linear functional $a:E\to\mathbb R$ with $K=\ker a$. Such a functional exists, and the sign condition is independent of its choice, as proved below.

@@ -1,0 +1,1 @@
+Every standard expression of an article morphism $x$ is a minimum-length composable word in elementary Brink–Howlett generators, allowing inverse generators as well. The minimum number of factors is $|C(x)|$, the number of real parallel root classes in $N(x)$. Inversion and reversal give a bijection between minimum words for $x$ and $x^{-1}$ in the ordinary root-action groupoid.

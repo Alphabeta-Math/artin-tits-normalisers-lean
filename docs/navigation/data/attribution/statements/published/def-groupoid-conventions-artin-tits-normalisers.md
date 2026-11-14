@@ -1,0 +1,3 @@
+A groupoid is a category in which every morphism has a two-sided inverse. Here all groupoids are small, meaning that their objects and morphisms each form a set, and connected, meaning that they are nonempty and there is a morphism between each ordered pair of objects. Composition is read left to right: for $a:x\to y$ and $b:y\to z$, the product $ab$ means $b\circ a$.
+
+For an object $x$ of a groupoid $\mathcal G$, the vertex group $\mathcal G_x=\operatorname{End}_{\mathcal G}(x)$ consists of the morphisms $x\to x$, with composition as multiplication and the identity morphism $1_x$ as identity. The vertex groups at any two objects are isomorphic; the isomorphism need not be canonical.

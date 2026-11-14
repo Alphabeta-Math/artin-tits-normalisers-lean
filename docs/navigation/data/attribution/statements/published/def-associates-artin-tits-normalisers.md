@@ -1,0 +1,3 @@
+Let $\Gamma$ be a Coxeter diagram with vertex set $\Gamma_0$ and associated Coxeter group $W$, with simple generators $s_i$ indexed by $i\in\Gamma_0$ as in [def-coxeter-data-artin-tits-normalisers](item-def-coxeter-data-artin-tits-normalisers). For $K\subseteq\Gamma_0$, let $W_K=\langle s_k:k\in K\rangle$ be its standard parabolic subgroup, as in [def-parabolic-subgroups-artin-tits-normalisers](item-def-parabolic-subgroups-artin-tits-normalisers).
+
+For $J\subseteq\Gamma_0$, an **associate** of $J$ is a subset $I\subseteq\Gamma_0$ for which $W_I$ and $W_J$ are conjugate in $W$: that is, there exists $w\in W$ such that $W_I=wW_Jw^{-1}=\{wuw^{-1}:u\in W_J\}$.

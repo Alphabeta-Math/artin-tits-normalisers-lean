@@ -1,0 +1,1 @@
+Assume $\Gamma$ spherical. The ribbon groupoid $\mathcal R^\prime(J)$ has associates of $J$ as objects and $\mathrm{Hom}_{\mathcal R^\prime}(I,K)=\{\beta\in A:A_I^+\beta=\beta A_K^+\}$, with composition by multiplication in $A$ on the right.

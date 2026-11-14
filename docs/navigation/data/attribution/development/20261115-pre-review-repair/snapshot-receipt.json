@@ -1,0 +1,21 @@
+{
+  "kind": "pre-review-repair-frozen-attribution-history",
+  "files_sha256": {
+    "README.md": "9c9fc6d591b9cff6c7004833fe9869b748102c28756fab89cfc99b2fd39c0ac4",
+    "SHA256SUMS": "568a203b001c924be33fdcb321becaf9faa3745314fc358a02993b467cfc4ded",
+    "declaration-attribution.json": "f742be90a5f389b41915fead916ebe1c022923253ea9e697f559574f7b97397e",
+    "omitted-full-inventory-identity.json": "de223895d9d774a5dec8012c89fc017212111df355a5cdf56df5703ec868627d",
+    "promotion-receipt.json": "97fedb9d48b9dc22d9dd7234240af20610ed1d99d8f46d3e81e44c16fc99330a",
+    "verification/public-math-renderings.json.gz": "e3e5761f4c468a539003ee96ab1e5933d8de4193aa9c464b0d7449e69b6689c9",
+    "verification/public-math-verification-input.json.gz": "a4432bbbfa1947f1df1c1594e59904870991d90dcadb3b92756d4444c3c7d770",
+    "verification/public-statement-verification.json": "46aa1c7f44aaadb2a6db5ee2a66302fc79421b490cac8d7e44a036a76421ff8f"
+  },
+  "original_checksums_base": "docs/navigation/data/attribution (before repair)",
+  "preserved_initial_review_bindings": {
+    "declaration-attribution.json": "f742be90a5f389b41915fead916ebe1c022923253ea9e697f559574f7b97397e",
+    "full-inventory.json": "09afcb36c0c23516036dd506597147aa4f7b9fadd7d23f509561ee6b0b5ce0d8",
+    "promotion-receipt.json": "97fedb9d48b9dc22d9dd7234240af20610ed1d99d8f46d3e81e44c16fc99330a",
+    "SHA256SUMS": "568a203b001c924be33fdcb321becaf9faa3745314fc358a02993b467cfc4ded"
+  },
+  "public_history_scope": "Initial 51-assignment atlas, receipts and hashes retained; erroneous full-inventory original preserved privately under /tmp, with identity and bounded diagnostic excerpt only in public history."
+}

@@ -1,0 +1,1 @@
+For spherical $\Gamma$ and $J\subseteq\Gamma_0$, $\mathcal X_J^{\mathbb C}/N(W,J)$ is a $K(N(A,J),1)$, and $\mathcal X_J^{\mathbb C}$ is a $K(N(P,J),1)$.

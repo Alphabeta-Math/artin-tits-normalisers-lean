@@ -1,0 +1,1 @@
+The vertex group $N_J$ maps isomorphically onto $N(W,J)$ under the normaliser quotient, and $\mathrm{Norm}_W(W_J)\cong W_J\rtimes N_J$.

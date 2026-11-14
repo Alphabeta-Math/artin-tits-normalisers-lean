@@ -1,0 +1,1 @@
+The article morphism $q=\nu(\{a,b\},I)^{-1}$ of [lem-author-a7d202611130-finite-relative-longest](item-lem-author-a7d202611130-finite-relative-longest) has exactly two standard expressions: one starts with $v_{a,I}$ and one starts with $v_{b,I}$. They have equal factor count.

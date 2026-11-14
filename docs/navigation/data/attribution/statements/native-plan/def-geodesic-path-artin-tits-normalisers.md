@@ -1,0 +1,3 @@
+Fix a finite-rank Coxeter system and a subset $J$ of its vertex set. In the relative arrangement $(\mathrm{Cone}(J)^\circ,\mathcal H^J)$, a chamber path is a finite nonempty sequence of chambers with consecutive chambers adjacent. Its length is its number of consecutive pairs. At each adjacency the path crosses the unique relative hyperplane supporting the shared wall; repeated crossings are counted with multiplicity.
+
+A path is **geodesic** if its length is minimal among chamber paths with the same source and target. Equivalently, it crosses each hyperplane of $\mathcal H^J$ at most once. Hyperplanes are counted as distinct sets, even when different roots define the same relative hyperplane. A one-chamber path has length zero and is geodesic.

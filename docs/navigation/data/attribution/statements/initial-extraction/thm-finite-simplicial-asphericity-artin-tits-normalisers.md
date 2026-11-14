@@ -1,0 +1,1 @@
+The source invokes Deligne’s theorem that the complexified complement of a real central finite simplicial hyperplane arrangement is a $K(\pi,1)$. In spherical type the relative arrangement has these hypotheses, so $\mathcal X_J^{\mathbb C}$ is aspherical.

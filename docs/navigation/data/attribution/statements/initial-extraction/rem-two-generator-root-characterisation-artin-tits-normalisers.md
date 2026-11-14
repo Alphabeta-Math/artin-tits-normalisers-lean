@@ -1,0 +1,1 @@
+In the setting of Lemma 4.15, $v_{a,b,I}^{-1}$ is the unique $w\in W_{I+a+b}$ satisfying $w(\Phi^+_{I+a+b}\setminus\Phi^+_I)\subseteq\Phi^-_{I+a+b}$ and $w(\Phi^+_I)\subseteq\Phi^+_{I+a+b}$.

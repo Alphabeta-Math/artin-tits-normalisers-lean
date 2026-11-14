@@ -1,0 +1,5 @@
+Let $(W,S)$ be a Coxeter system with $S$ finite, in its canonical real representation with simple roots $\alpha_s$, Coxeter form $B$ and contragredient action on $V^*$. For $H\subseteq S$, write $W_H=\langle H\rangle$ and $C_H=\{f\in V^*:f(\alpha_h)=0\text{ for }h\in H,\ f(\alpha_s)>0\text{ for }s\in S\setminus H\}$. When $W_H$ is finite, write $w_H$ for its longest element and $\iota_H$ for its opposition permutation.
+
+Let $I\subseteq S$, $a\in S\setminus I$, $L=I+a:=I\cup\{a\}$, and $D=[I,a]$, the vertex set of the connected component containing $a$ in the Coxeter diagram induced on $L$. Suppose $W_D$ is finite. Put $A=D\setminus\{a\}$, $b=\iota_D(a)$, $K=L\setminus\{b\}$, and $v=w_Aw_D$. Then $v$ maps the set of simple roots indexed by $K$ bijectively to those indexed by $I$. It fixes $C_L$ pointwise. For every $f\in C_K$,
+$$(vf)(\alpha_a)=-f(\alpha_b)<0.$$
+No finiteness assumption on the other components of $L$ is required.

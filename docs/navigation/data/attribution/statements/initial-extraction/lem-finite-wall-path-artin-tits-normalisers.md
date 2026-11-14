@@ -1,0 +1,1 @@
+Any two chambers are related by a finite sequence of simple wall crossings. The article also observes that this follows from local finiteness and the equality of chamber sets before and after taking the relative interior.

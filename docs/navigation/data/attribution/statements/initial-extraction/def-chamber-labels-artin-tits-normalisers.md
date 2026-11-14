@@ -1,0 +1,1 @@
+Set $\mathrm{Cham}(J)=\{(x,I):I\subseteq\Gamma_0,\ W_Jx=xW_I,\ x\text{ has minimal length in }xW_I\}$.

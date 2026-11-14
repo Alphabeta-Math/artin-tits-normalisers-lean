@@ -1,0 +1,1 @@
+Set $N_J=\mathcal{BH}_J=\{x\in W:(\forall j\in J)(\exists j^\prime\in J)\ x\alpha_j=\alpha_{j^\prime}\}$. This is a subgroup of $\mathrm{Norm}_W(W_J)$.

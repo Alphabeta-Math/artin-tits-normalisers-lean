@@ -1,0 +1,1 @@
+Every $u\in\mathrm{Cone}(J)^\circ$ has an open ball in $\mathrm{Cone}(J)$ meeting only finitely many hyperplanes of $\mathcal H^J$. In particular $(\mathrm{Cone}(J)^\circ,\mathcal H^J)$ is locally finite.

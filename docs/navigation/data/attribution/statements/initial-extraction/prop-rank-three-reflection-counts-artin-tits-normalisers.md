@@ -1,0 +1,1 @@
+An irreducible finite real reflection arrangement in dimension three has $6$, $9$ or $15$ hyperplanes, corresponding respectively to types $A_3$, $B_3$ and $H_3$.

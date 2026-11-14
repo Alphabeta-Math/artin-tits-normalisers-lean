@@ -1,0 +1,1 @@
+Every dual face in the seven-plane spherical dual decomposition is a square or a hexagon. Its two boundary arcs from any chosen chamber to the opposite chamber are the lifted atomic relation at the two incident chamber facets. Conversely every lifted atomic relation gives one of these cyclic faces, up to the choice of starting point and reversal.

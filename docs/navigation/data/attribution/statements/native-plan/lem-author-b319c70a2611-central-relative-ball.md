@@ -1,0 +1,1 @@
+For $u\in\mathrm{Cone}(J)^\circ$ there is $r>0$ such that $B_E(u,r)\subseteq\mathrm{Cone}(J)$, only finitely many relative hyperplanes meet this ball, and every ambient root hyperplane meeting this ball contains $u$. Here $E=\Theta_J$, and the ball is a ball in $E$.

@@ -1,0 +1,1 @@
+Set $\mathcal X_J^{\mathbb C}=(\mathrm{Cone}(J)^\circ\times\mathrm{Cone}(J)^\circ)\setminus\bigcup_{H\in\mathcal H^J}(H\times H)$. In spherical type $\mathrm{Cone}(J)^\circ=\Theta_J$ and this is $(\Theta_J\otimes_{\mathbb R}\mathbb C)\setminus\bigcup_{H\in\mathcal H^J}(H\otimes_{\mathbb R}\mathbb C)$.

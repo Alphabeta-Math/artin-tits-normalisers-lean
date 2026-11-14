@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 74,
+          "end_line": 207,
+          "end_utf16": 74,
+          "start_column": 0,
+          "start_line": 192,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 51,
+          "end_line": 194,
+          "end_utf16": 51,
+          "start_column": 8,
+          "start_line": 194,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The least ambient prefix also factors every common positive ribbon upper\nbound through a positive generated tail at the genuine lcm endpoint.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M}\n  {p q : ArtinNormalisers.Artin.Group.{u_1} M},\n  ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X Y p →\n    ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X Z q →\n      ∃ (U : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M) (l :\n        ArtinNormalisers.Artin.Group.{u_1} M),\n        ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X U l ∧\n          (∃ (a : ArtinNormalisers.Artin.Group.{u_1} M),\n              ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M Y U a ∧\n                Eq.{u_1 + 1} l (HMul.hMul.{u_1, u_1, u_1} p a)) ∧\n            (∃ (b : ArtinNormalisers.Artin.Group.{u_1} M),\n                ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M Z U b ∧\n                  Eq.{u_1 + 1} l (HMul.hMul.{u_1, u_1, u_1} q b)) ∧\n              ∀ (V : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M)\n                (r : ArtinNormalisers.Artin.Group.{u_1} M),\n                ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X V r →\n                  ArtinNormalisers.Homotopy5.RibbonPrefix.{u_1} M p r →\n                    ArtinNormalisers.Homotopy5.RibbonPrefix.{u_1} M q r →\n                      ∃ (t : ArtinNormalisers.Artin.Group.{u_1} M),\n                        ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M U V t ∧\n                          Eq.{u_1 + 1} r (HMul.hMul.{u_1, u_1, u_1} l t)",
+      "module": "ArtinHomotopy.RibbonLattice",
+      "name": "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 35751,
+      "type_expression_sha256": "daa8d945b3ca27ec4590d758084b6e1d276e79faab8999b108f1408eb9024daf",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 70,
+          "end_line": 103,
+          "end_utf16": 70,
+          "start_column": 0,
+          "start_line": 88,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 51,
+          "end_line": 90,
+          "end_utf16": 51,
+          "start_column": 8,
+          "start_line": 90,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The greatest common prefix has actual generated positive tails to both\noriginal targets, and every other common prefix has a generated tail to it.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M}\n  {p q : ArtinNormalisers.Artin.Group.{u_1} M},\n  ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X Y p →\n    ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X Z q →\n      ∃ (U : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M) (d :\n        ArtinNormalisers.Artin.Group.{u_1} M),\n        ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X U d ∧\n          (∃ (a : ArtinNormalisers.Artin.Group.{u_1} M),\n              ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M U Y a ∧\n                Eq.{u_1 + 1} p (HMul.hMul.{u_1, u_1, u_1} d a)) ∧\n            (∃ (b : ArtinNormalisers.Artin.Group.{u_1} M),\n                ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M U Z b ∧\n                  Eq.{u_1 + 1} q (HMul.hMul.{u_1, u_1, u_1} d b)) ∧\n              ∀ (V : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M)\n                (e : ArtinNormalisers.Artin.Group.{u_1} M),\n                ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X V e →\n                  ArtinNormalisers.Homotopy5.RibbonPrefix.{u_1} M e p →\n                    ArtinNormalisers.Homotopy5.RibbonPrefix.{u_1} M e q →\n                      ∃ (t : ArtinNormalisers.Artin.Group.{u_1} M),\n                        ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M V U t ∧\n                          Eq.{u_1 + 1} d (HMul.hMul.{u_1, u_1, u_1} e t)",
+      "module": "ArtinHomotopy.RibbonGcd",
+      "name": "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 57482,
+      "type_expression_sha256": "fbe51fe2c4ca2cca1ffc577b81bc49af190b48b442af89f53641b9a3d57460e4",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 24,
+          "end_line": 160,
+          "end_utf16": 24,
+          "start_column": 0,
+          "start_line": 140,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 47,
+          "end_line": 142,
+          "end_utf16": 47,
+          "start_column": 8,
+          "start_line": 142,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The greatest simple head leaves an actual generated tail. For a\nnonidentity input that head is nontrivial and the tail has smaller degree.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  {X Y : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M} {p : ArtinNormalisers.Artin.Group.{u_1} M},\n  ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M X Y p →\n    ∃ (U : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M) (d : ArtinNormalisers.Artin.Group.{u_1} M)\n      (a : ArtinNormalisers.Artin.Group.{u_1} M),\n      ArtinNormalisers.Homotopy5.SimpleRibbon.{u_1} M X U d ∧\n        ArtinNormalisers.Ribbon2.PositiveReducedArrow.{u_1} M U Y a ∧\n          Eq.{u_1 + 1} p (HMul.hMul.{u_1, u_1, u_1} d a) ∧\n            (∀ (V : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M)\n                (e : ArtinNormalisers.Artin.Group.{u_1} M),\n                ArtinNormalisers.Homotopy5.SimpleRibbon.{u_1} M X V e →\n                  ArtinNormalisers.Homotopy5.RibbonPrefix.{u_1} M e p →\n                    ArtinNormalisers.Homotopy5.RibbonPrefix.{u_1} M e d) ∧\n              (Ne.{u_1 + 1} p 1 →\n                Ne.{u_1 + 1} d 1 ∧\n                  LT.lt.{0} (ArtinNormalisers.Ribbon2.degree.{u_1} M a)\n                    (ArtinNormalisers.Ribbon2.degree.{u_1} M p))",
+      "module": "ArtinHomotopy.RibbonGcd",
+      "name": "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 20218,
+      "type_expression_sha256": "e685b0401193ab7c1560bc048170e41638f4c328e584a2ec663f626751e26e54",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

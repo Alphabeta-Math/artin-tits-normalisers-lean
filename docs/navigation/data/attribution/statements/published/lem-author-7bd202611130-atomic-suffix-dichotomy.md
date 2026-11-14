@@ -1,0 +1,1 @@
+Let $w:I\to K$ and let $t=v_{a,K}:K\to L$ be elementary. Exactly one of the following holds: $\ell(wt)=\ell(w)+\ell(t)$; or $w=ut^{-1}$ for an article morphism $u:I\to L$ with $\ell(w)=\ell(u)+\ell(t)$. Write $N(x)=\Phi^+\cap x(\Phi^-)$ for the root inversion set (not the reflection inversion notation of the cited source).

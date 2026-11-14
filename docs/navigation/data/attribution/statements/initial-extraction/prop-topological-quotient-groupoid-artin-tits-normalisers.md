@@ -1,0 +1,1 @@
+Let $X$ be path connected, locally path connected and semilocally simply connected, and let $N$ act freely and properly discontinuously. Then $X\to X/N$ is a normal covering and induces the groupoid covering $\pi_1(X)\to\pi_1(X/N)$. The induced $N$-action on $\pi_1(X)$ satisfies $\pi_1(X/N)=\pi_1(X)/N$, with the same covering functor.

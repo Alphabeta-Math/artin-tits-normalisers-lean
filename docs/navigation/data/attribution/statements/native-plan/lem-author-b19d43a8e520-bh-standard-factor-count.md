@@ -1,0 +1,1 @@
+Every article morphism $w$ has a standard expression. If a standard expression for $w$ has $m$ factors, then $m=|C(w)|$, using the reversed root-action arrow with the same label.

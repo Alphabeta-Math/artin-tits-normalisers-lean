@@ -1,0 +1,1 @@
+The $W$-action on $\mathcal X^{\mathbb C}$ is free and properly discontinuous. The quotient is a normal covering inducing $1\to\pi_1(\mathcal X^{\mathbb C},Z)\to\pi_1(\mathcal X^{\mathbb C}/W,\overline Z)\to W\to1$.

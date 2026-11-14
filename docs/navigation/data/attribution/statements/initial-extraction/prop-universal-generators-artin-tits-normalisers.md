@@ -1,0 +1,1 @@
+For any $(x,I),(y,K)\in\mathrm{Cham}(J)$ there is a finite path $p=\omega_{a_1,I_1}*\cdots*\omega_{a_m,I_m}$ from the first to the second with $\mathrm{Hom}_{\widetilde{\mathcal{BH}}}((x,I),(y,K))=\{v_p\}$. Thus the adjacent-crossing morphisms generate the groupoid.

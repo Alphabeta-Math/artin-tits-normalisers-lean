@@ -1,0 +1,1 @@
+In spherical type the Salvetti finite CW-model for $\mathcal X_J^{\mathbb C}$ is a classifying-space model for $N(P,J)$. The article asserts that it is compatible with the $N(W,J)$-action, giving a finite CW-model for $\mathcal X_J^{\mathbb C}/N(W,J)$ and hence for $N(A,J)$.

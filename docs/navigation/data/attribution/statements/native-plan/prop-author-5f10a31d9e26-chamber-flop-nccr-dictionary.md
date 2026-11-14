@@ -1,0 +1,16 @@
+Use the complete-local isolated complex cDV smooth flopping setting and the finite arrangement $\mathcal H_\Lambda$ of the cited local interfaces. Let $\operatorname{CM}R$ consist of the zero module and the finite $R$-modules of depth three, with $R$-linear maps. Write $\operatorname{add}M$ for summands of finite direct sums of $M$. A generator has $R\in\operatorname{add}M$; basic means a finite sum of pairwise nonisomorphic indecomposable modules. A cluster-tilting object $M\in\operatorname{CM}R$ satisfies
+$$\operatorname{add}M=\{L\in\operatorname{CM}R:\operatorname{Ext}^1_R(L,M)=0\}=\{L\in\operatorname{CM}R:\operatorname{Ext}^1_R(M,L)=0\}.$$
+For a basic cluster-tilting generator $M=M_i\oplus\widehat M$ with $M_i$ nonfree indecomposable, its mutation $\nu_iM=M_i'\oplus\widehat M$ replaces $M_i$ by the unique other indecomposable complement, up to isomorphism, that leaves the module cluster-tilting.
+
+Every chamber $C$ labels a minimal model $f_C:X_C\to\operatorname{Spec}R$ and a basic cluster-tilting generator $M_C$, with NCCR $\Lambda_C=\operatorname{End}_R M_C$. All these models are nonsingular projective crepant resolutions. Choose the compatible basic globally generated Van den Bergh vector bundles $V_C$ (finite locally free sheaves) in the convention of Hirano–Wemyss Setup 4.1, using the setting's fixed $\mathcal V$ at the initial chamber, with $H^0(X_C,V_C)=M_C$ and $\operatorname{End}_{X_C}V_C\cong\Lambda_C$. Their tilting equivalences are
+$$E_C:=\mathbf R\operatorname{Hom}_{X_C}(V_C,-):D^b(\operatorname{coh}X_C)\xrightarrow{\sim}D^b(\operatorname{mod}\Lambda_C).$$
+Use bounded derived categories, finite right modules and exact functors with the conventions of the cited definitions. Here $\mathbf R\operatorname{Hom}$ is total right-derived Hom; the existence of these bundles and equivalences is imported.
+
+For an oriented adjacent pair $C\to D$, a single exceptional curve flops and $M_D\cong\nu_iM_C$ at its corresponding nonfree summand. Fix this isomorphism and the induced endomorphism-ring identifications. Put $T_{CD}=\operatorname{Hom}_R(M_C,M_D)$, a left $\Lambda_D$, right $\Lambda_C$ bimodule via postcomposition and precomposition. The mutation equivalence is
+$$t_{CD}:=\mathbf R\operatorname{Hom}_{\Lambda_C}(T_{CD},-):D^b(\operatorname{mod}\Lambda_C)\xrightarrow{\sim}D^b(\operatorname{mod}\Lambda_D).$$
+
+Let $X_C\to Y_i\leftarrow X_D$ be the common contraction of that curve and its flop. For the ordinary fibre product $Z_i=X_C\times_{Y_i}X_D$, write $p_C:Z_i\to X_C$ and $p_D:Z_i\to X_D$ for the projections. Choose the Bridgeland–Chen functor in the direction
+$$B_{DC}:=\mathbf R(p_C)_*\mathbf Lp_D^*:D^b(\operatorname{coh}X_D)\xrightarrow{\sim}D^b(\operatorname{coh}X_C).$$
+This is the Fourier–Mukai functor with structure-sheaf kernel $\mathcal O_{Z_i}$; $\mathbf Lp_D^*$ and $\mathbf R(p_C)_*$ denote derived pullback and pushforward. With the compatible choices above, the precise comparison is the natural isomorphism
+$$t_{CD}\circ E_C\cong E_D\circ B_{DC}^{-1}:D^b(\operatorname{coh}X_C)\longrightarrow D^b(\operatorname{mod}\Lambda_D).$$
+The inverse denotes a quasi-inverse equivalence. In particular, after transport, $E_D^{-1}\circ t_{CD}\circ E_C\cong B_{DC}^{-1}$.

@@ -1,0 +1,1 @@
+The homotopy class assigned to $C\to C^\prime$ depends only on the component $X_{C,C^\prime}$ and not on $\gamma_1,\gamma_2,d$. The source asserts $gX_{C,C^\prime}=X_{gC,gC^\prime}$. The reverse one-step arrow uses $X_{C^\prime,C}$ and its path is not homotopy equivalent to the opposite of the first arrow’s path.

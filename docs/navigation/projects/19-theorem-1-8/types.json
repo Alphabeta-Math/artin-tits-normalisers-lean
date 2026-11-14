@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.actualNormalizerDiagrams": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 69,
+          "end_line": 80,
+          "end_utf16": 69,
+          "start_column": 0,
+          "start_line": 69,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 28,
+          "end_line": 71,
+          "end_utf16": 28,
+          "start_column": 4,
+          "start_line": 71,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "Both actual diagrams, the raw inverse endpoint convention, and the\noriginal positive labelled path formula from Remark 6.12.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      (J : Set.{u_1} I) → ArtinNormalisers.Theorem18.Complement.{u_1} M J → Prop",
+      "module": "ArtinDeligne.Theorem18",
+      "name": "ArtinNormalisers.Deligne5.actualNormalizerDiagrams",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 137480,
+      "type_expression_sha256": "2f44661e9b6218dedbf1fbfbd006ec33dc1c85d7bf0c95dfc1b8312c44f05648",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.theorem_1_8": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 74,
+          "end_line": 141,
+          "end_utf16": 74,
+          "start_column": 0,
+          "start_line": 131,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 19,
+          "end_line": 134,
+          "end_utf16": 19,
+          "start_column": 8,
+          "start_line": 134,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "**Theorem 1.8**: both full actual-map exact-sequence diagrams, including\nraw/normalized and positive traversal conventions, and both original-space\nK(G,1) conclusions at every actual complement basepoint.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (x : ArtinNormalisers.Theorem18.Complement.{u_1} M J),\n  ArtinNormalisers.Deligne5.actualNormalizerDiagrams.{u_1} M J x ∧\n    TauCeti.IsEilenbergMacLaneSpaceOne.{u_1, u_1}\n        (↥(ArtinNormalisers.Artin.pureNormalizerImage.{u_1} M J))\n        (ArtinNormalisers.Theorem18.Complement.{u_1} M J) x ∧\n      TauCeti.IsEilenbergMacLaneSpaceOne.{u_1, u_1}\n        (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M J)\n        (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J)\n        (ArtinNormalisers.Theorem18.orbitProjection.{u_1} M J x)",
+      "module": "ArtinDeligne.Theorem18",
+      "name": "ArtinNormalisers.Deligne5.theorem_1_8",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 58428,
+      "type_expression_sha256": "ec72012f1e9b36044e8e7f625fefb0c51177d319f7153df72baa082c178f4d03",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 39,
+          "end_line": 153,
+          "end_utf16": 39,
+          "start_column": 0,
+          "start_line": 143,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 34,
+          "end_line": 145,
+          "end_utf16": 34,
+          "start_column": 8,
+          "start_line": 145,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The full bundle also exposes the quotient conclusion at all orbit points,\nnot merely at a separately selected standard point.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I),\n  (∀ (x : ArtinNormalisers.Theorem18.Complement.{u_1} M J),\n      ArtinNormalisers.Deligne5.actualNormalizerDiagrams.{u_1} M J x ∧\n        TauCeti.IsEilenbergMacLaneSpaceOne.{u_1, u_1}\n            (↥(ArtinNormalisers.Artin.pureNormalizerImage.{u_1} M J))\n            (ArtinNormalisers.Theorem18.Complement.{u_1} M J) x ∧\n          TauCeti.IsEilenbergMacLaneSpaceOne.{u_1, u_1}\n            (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M J)\n            (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J)\n            (ArtinNormalisers.Theorem18.orbitProjection.{u_1} M J x)) ∧\n    ∀ (y : ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J),\n      TauCeti.IsEilenbergMacLaneSpaceOne.{u_1, u_1}\n        (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M J)\n        (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J) y",
+      "module": "ArtinDeligne.Theorem18",
+      "name": "ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 71027,
+      "type_expression_sha256": "0b03158fc70acb3f775156c1fe5e2895f5575bcc73740db330f4dcae65e3f43c",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

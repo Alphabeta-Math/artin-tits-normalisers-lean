@@ -1,0 +1,1 @@
+The article asserts that $X_C$ is open and contractible, and that for adjacent $C,C^\prime$, $X_C\cap X_{C^\prime}$ has exactly two connected components $X_{C,C^\prime}$ and $X_{C^\prime,C}$.

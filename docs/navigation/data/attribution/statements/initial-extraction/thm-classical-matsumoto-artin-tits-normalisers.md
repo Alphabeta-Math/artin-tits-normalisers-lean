@@ -1,0 +1,1 @@
+For a Coxeter group $W$, any two reduced expressions of an element $w$ are related by a finite sequence of braid relations.

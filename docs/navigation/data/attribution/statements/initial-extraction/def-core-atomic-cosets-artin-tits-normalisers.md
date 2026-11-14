@@ -1,0 +1,1 @@
+A core double coset is $W_IxW_K$ with $W_Ix=W_IxW_K=xW_K$. An atomic double coset is a core coset of the form $W_{L-a}w_LW_{L-a^\prime}$ for $a,a^\prime\in L\subseteq\Gamma_0$, with $W_L$ finite in the finitary setting cited from [25].

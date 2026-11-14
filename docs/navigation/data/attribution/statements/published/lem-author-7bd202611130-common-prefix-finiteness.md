@@ -1,0 +1,1 @@
+If distinct elementary arrows $v_{a,I},v_{b,I}$ both left-divide an article arrow $w:I\to K$ with Coxeter-length additivity, then $\Phi_{I+a+b}\setminus\Phi_I$ is finite. The morphism $q=v_{a,b,I}$ exists, is a length-additive prefix of $w$, and has the two standard expressions defining its atomic braid relation.

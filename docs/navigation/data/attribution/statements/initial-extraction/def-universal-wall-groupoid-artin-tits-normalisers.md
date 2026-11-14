@@ -1,0 +1,1 @@
+The groupoid $\widetilde{\mathcal{BH}}(J)$ has objects $\mathrm{Cham}(J)$ and singleton morphism sets $\mathrm{Hom}((x,I),(y,K))=\{x^{-1}y\}$. Composition is multiplication in $W$ on the right. Across adjacent chambers the unique morphism is $v_{a,I}$.

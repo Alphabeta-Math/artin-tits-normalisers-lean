@@ -1,0 +1,1 @@
+Chambers are the connected components of $T\setminus\bigcup_{H\in\mathcal H}H$. A wall of a chamber $C$ is a codimension-one intersection of its closure with a hyperplane of the arrangement. Chambers are adjacent when they share a wall. The article reserves “wall” for this face rather than its supporting hyperplane.

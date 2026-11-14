@@ -1,0 +1,1 @@
+For $(x,I)\in\mathrm{Cham}(J)$, $a\in I^c$ and finite $W_{[I,a]}$, set $v_{a,I}=w_{[I,a]-a}w_{[I,a]}$, $K=I+a-\iota_{[I,a]}(a)$, and $\omega_{a,I}(x,I)=(xv_{a,I},K)$.

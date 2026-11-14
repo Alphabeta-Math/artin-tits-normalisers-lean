@@ -1,0 +1,1 @@
+Every arrow $(B,x,A)$ in $\mathcal B$ admits a factorization into Brink–Howlett generators $g_n\cdots g_1$ satisfying $\ell(x)=\sum_i\ell(g_i)$. Every Brink–Howlett generator $g$ satisfies $|C(g)|=1$. Both assertions hold for arbitrary rank.

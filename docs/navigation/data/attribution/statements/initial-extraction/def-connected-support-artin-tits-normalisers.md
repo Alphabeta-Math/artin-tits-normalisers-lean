@@ -1,0 +1,1 @@
+For $I\subseteq\Gamma_0$ and $a\in I^c$, let $\Gamma(I+a)$ be the induced Coxeter subgraph. Write $[I,a]$ for the vertices in its connected component containing $a$.

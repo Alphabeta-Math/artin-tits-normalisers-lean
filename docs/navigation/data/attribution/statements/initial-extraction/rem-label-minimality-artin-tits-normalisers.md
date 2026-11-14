@@ -1,0 +1,1 @@
+If $x^\prime\in xW_I$ then $xC_I=x^\prime C_I$, so distinct group elements may give the same geometric chamber. The minimal-length requirement in $\mathrm{Cham}(J)$ removes the ambiguity. The article uses $\mathrm{Cham}(J)$ both for labels and for chambers.

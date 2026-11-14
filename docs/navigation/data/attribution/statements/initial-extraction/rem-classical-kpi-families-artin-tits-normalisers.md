@@ -1,0 +1,1 @@
+The article reports the classical $K(\pi,1)$ assertion for spherical types [9], FC types [7], affine types [27], and further cases [11,19,23]. The further cases are not specified in this paragraph.

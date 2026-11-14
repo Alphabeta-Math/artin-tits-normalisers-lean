@@ -1,0 +1,53 @@
+# Important dependencies
+
+Twenty important results and definitions. Arrows summarize checked prerequisite paths through omitted implementation helpers. Redundant transitive arrows are omitted; exact direct edges remain in each dossier’s `dependencies.json`.
+
+```mermaid
+flowchart TD
+  n1["1. Groups and normalizer quotients"]
+  n2["2. Relative complement and orbit space"]
+  n3["3. Lemma 2.8: algebraic exact sequence"]
+  n4["4. Normalizer orbit covering"]
+  n5["5. Reduced ribbons"]
+  n6["6. Ribbon normalizer quotient and presentation"]
+  n7["7. Chamber/groupoid comparison"]
+  n8["8. Compatible exact diagrams"]
+  n9["9. Finite simplicial arrangement geometry"]
+  n10["10. The actual universal cover"]
+  n11["11. Ribbon lcms, gcds and simple prefixes"]
+  n12["12. The Garside weight model"]
+  n13["13. Finite contractible carriers"]
+  n14["14. Higher homotopy vanishing of the model"]
+  n15["15. Canonical packet carriers"]
+  n16["16. The coherent carrier homotopy"]
+  n17["17. Comparison with the actual universal cover"]
+  n18["18. Asphericity of the original spaces"]
+  n19["19. Theorem 1.8"]
+  n20["20. Corollary 6.14"]
+  n1 --> n3
+  n1 --> n5
+  n2 --> n4
+  n2 --> n10
+  n3 --> n8
+  n4 --> n7
+  n5 --> n6
+  n5 --> n7
+  n5 --> n12
+  n6 --> n8
+  n6 --> n20
+  n7 --> n8
+  n7 --> n15
+  n8 --> n19
+  n10 --> n15
+  n11 --> n13
+  n11 --> n17
+  n12 --> n11
+  n12 --> n15
+  n13 --> n14
+  n14 --> n18
+  n15 --> n17
+  n16 --> n17
+  n17 --> n18
+  n18 --> n20
+  n20 --> n19
+```

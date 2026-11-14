@@ -1,0 +1,1 @@
+The roots decompose as $\Phi=\Phi^+\sqcup\Phi^-$. The contragredient representation realizes $W$ as a reflection group. For $w\in W$, $\ell(w)=|\{\alpha\in\Phi^+:w\alpha\in\Phi^-\}|=\ell(w^{-1})$. If $w^{-1}\alpha_i\in\Phi^-$, then $\ell(s_iw)=\ell(w^{-1}s_i)<\ell(w)$.

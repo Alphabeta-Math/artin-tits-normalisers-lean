@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Homotopy5.SimpleRibbon": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 76,
+          "end_line": 108,
+          "end_utf16": 76,
+          "start_column": 0,
+          "start_line": 105,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 16,
+          "end_line": 107,
+          "end_utf16": 16,
+          "start_column": 4,
+          "start_line": 107,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "A simple ribbon is an actual positive generated arrow which positively\ndivides the actual source half-turn. This definition contains no maximality.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M →\n        ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M → ArtinNormalisers.Artin.Group.{u_1} M → Prop",
+      "module": "ArtinHomotopy.RibbonGcd",
+      "name": "ArtinNormalisers.Homotopy5.SimpleRibbon",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 24945,
+      "type_expression_sha256": "ed861de6651b5c6adcd01a6e2a8f8c5b0a8b3e3ad5fc5673a485e9627b669708",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.IncomingVertex": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 42,
+          "end_line": 31,
+          "end_utf16": 42,
+          "start_column": 0,
+          "start_line": 27,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 24,
+          "end_line": 28,
+          "end_utf16": 24,
+          "start_column": 10,
+          "start_line": 28,
+          "start_utf16": 10
+        }
+      },
+      "docstring": "Signed incoming vertices in the actual generated ribbon groupoid.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M → Type u_1",
+      "module": "ArtinDeligne.IncomingOrder",
+      "name": "ArtinNormalisers.Deligne5.IncomingVertex",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 161754,
+      "type_expression_sha256": "21a1f2e01d0b56ba9aa0044a4d5b3c77e384fb8186c71a8c9eda2e66206c06be",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.GarsideWeights": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 50,
+          "end_line": 56,
+          "end_utf16": 50,
+          "start_column": 0,
+          "start_line": 55,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 21,
+          "end_line": 56,
+          "end_utf16": 21,
+          "start_column": 7,
+          "start_line": 56,
+          "start_utf16": 7
+        }
+      },
+      "docstring": "The hereditary simple-chain subspace of the genuine incoming realization.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M → Type u_1",
+      "module": "ArtinDeligne.GarsideWeights",
+      "name": "ArtinNormalisers.Deligne5.GarsideWeights",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 118009,
+      "type_expression_sha256": "29fcc5af89e7ee576a1aeb03a9ccc66e9eac8cb2be956261ca5b25e1299abc4c",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

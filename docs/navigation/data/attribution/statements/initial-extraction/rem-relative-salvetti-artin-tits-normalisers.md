@@ -1,0 +1,1 @@
+The article asserts that because $(\mathrm{Cone}(J)^\circ,\mathcal H^J)$ is locally finite in an open convex cone, $\mathcal X_J^{\mathbb C}$ has a finite CW-model given by the Salvetti complex of [29, §3.1].

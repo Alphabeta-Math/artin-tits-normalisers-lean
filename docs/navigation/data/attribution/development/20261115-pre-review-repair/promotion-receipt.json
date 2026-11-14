@@ -1,0 +1,38 @@
+{
+  "kind": "documentation-only-source-attribution-promotion",
+  "original_working_inventory_sha256": {
+    "full-inventory.json": "24543706733751529f2a1c07ec42be68bc2fe1a069d5fbecf68632135a44a4fd",
+    "declaration-attribution.json": "b452168b7abaedab1f399f18811188e6525a4a05f03b6127cb233587b167dace",
+    "public-statement-verification.json": "46aa1c7f44aaadb2a6db5ee2a66302fc79421b490cac8d7e44a036a76421ff8f",
+    "public-math-renderings.json": "945e83bd00bca6aa19ea1a3f093a1bc8e88cdd05380e28c9d042d84cf9e434a8",
+    "public-math-verification-input.json": "e96e3db0792e5f9c727bbed39e75543ad622a20c26fdb2eef27122ef50dafda8"
+  },
+  "canonical_declaration_attribution_path": "docs/navigation/data/attribution/declaration-attribution.json",
+  "canonical_declaration_attribution_sha256": "f742be90a5f389b41915fead916ebe1c022923253ea9e697f559574f7b97397e",
+  "canonical_full_inventory_path": "docs/navigation/data/attribution/full-inventory.json",
+  "canonical_full_inventory_sha256": "09afcb36c0c23516036dd506597147aa4f7b9fadd7d23f509561ee6b0b5ce0d8",
+  "bound_source_inventory_path": "docs/navigation/data/source-inventory.json",
+  "bound_source_inventory_sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120",
+  "original_article_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+  "original_article_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+  "full_article_cache_promoted": false,
+  "source_proof_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "counts": {
+    "current_item_statements": 275,
+    "initial_article_extractions": 143,
+    "native_plan_items": 275,
+    "numbered_article_results": 54,
+    "http_checked_items": 37,
+    "original_equation_labels": 39,
+    "source_written": 2295,
+    "assigned": 51,
+    "unassigned": 2244,
+    "compiler_generated_artifacts": 1999
+  },
+  "source_snapshot_limits": [
+    "Published/generated statements are distinct from original-author passages.",
+    "No counterpart assigned is not a global absence claim.",
+    "Only selected article excerpts are retained; original full PDF/text cache remain outside the repository.",
+    "No new Lean, mathematical or CI verification was run by this promotion."
+  ]
+}

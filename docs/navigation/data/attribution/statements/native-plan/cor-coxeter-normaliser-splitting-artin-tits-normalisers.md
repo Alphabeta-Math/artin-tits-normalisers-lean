@@ -1,0 +1,3 @@
+Let $(W,S)$ be an arbitrary-rank Coxeter system with $S=\{s_i:i\in\Gamma_0\}$ in its standard real root representation, and let $J\subseteq\Gamma_0$ be arbitrary. Write $W_J=\langle s_j:j\in J\rangle$, $M=\operatorname{Norm}_W(W_J)$ and $N(W,J)=M/W_J$. Let $N_J=\mathcal{BH}_J$ be the vertex group at $J$, equivalently the subgroup permuting the simple-root set $\{\alpha_j:j\in J\}$.
+
+The vertex group $N_J$ maps isomorphically onto $N(W,J)$ under the normaliser quotient, and $\mathrm{Norm}_W(W_J)\cong W_J\rtimes N_J$.

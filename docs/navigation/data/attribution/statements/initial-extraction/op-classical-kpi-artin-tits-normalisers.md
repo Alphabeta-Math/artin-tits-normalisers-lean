@@ -1,0 +1,1 @@
+For an arbitrary Coxeter system, is $\mathcal X^{\mathbb C}/W$ a $K(A,1)$ space?

@@ -1,0 +1,1 @@
+A hyperplane $H$ separates $f,g\in\mathrm{Cone}$ when they lie in different half-spaces, equivalently different connected components of $\mathrm{Cone}\setminus H$.

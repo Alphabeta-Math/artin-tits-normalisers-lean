@@ -1,0 +1,72 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Chamber3.actualIntervalComplementEquivalence": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 80,
+          "end_line": 234,
+          "end_utf16": 80,
+          "start_column": 0,
+          "start_line": 230,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 53,
+          "end_line": 231,
+          "end_utf16": 53,
+          "start_column": 18,
+          "start_line": 231,
+          "start_utf16": 18
+        }
+      },
+      "docstring": "The canonical forward functor is the forward half of the actual-space equivalence.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    (J : Set.{u_1} I) →\n      [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n        CategoryTheory.Equivalence.{u_1, u_1, u_1, u_1}\n          (ArtinNormalisers.Chamber3.IntervalGroupoid.{u_1, u_1}\n            (ArtinNormalisers.Chamber3.actualForms.{u_1} M J))\n          (FundamentalGroupoid.{u_1} (ArtinNormalisers.Theorem18.Complement.{u_1} M J))",
+      "module": "ArtinChambers.ForwardEquivariance",
+      "name": "ArtinNormalisers.Chamber3.actualIntervalComplementEquivalence",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 44083,
+      "type_expression_sha256": "7acf2c6f18f5ef265df70d672d322a9b8bff64a6f5ae424878a2a59559d5da73",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Chamber3.actualRibbonOrbitEquivalence": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 45,
+          "end_line": 71,
+          "end_utf16": 45,
+          "start_column": 0,
+          "start_line": 65,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 46,
+          "end_line": 67,
+          "end_utf16": 46,
+          "start_column": 18,
+          "start_line": 67,
+          "start_utf16": 18
+        }
+      },
+      "docstring": "The actual reduced ribbon component is equivalent to the fundamental\ngroupoid of the original normalizer orbit space.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    (J : Set.{u_1} I) →\n      [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n        CategoryTheory.Equivalence.{u_1, u_1, u_1, u_1}\n          (ArtinNormalisers.Chamber3.AssociateReducedRibbonObject.{u_1} M J)\n          (FundamentalGroupoid.{u_1} (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J))",
+      "module": "ArtinChambers.ActualComparison",
+      "name": "ArtinNormalisers.Chamber3.actualRibbonOrbitEquivalence",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 100161,
+      "type_expression_sha256": "33ff3f81281649ebfb237d90080de4a407704f75c4285be7cf854e2ae80efcaf",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

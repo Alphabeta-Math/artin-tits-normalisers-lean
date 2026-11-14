@@ -1,0 +1,1 @@
+A chamber path is geodesic when it crosses a minimal number of walls between its endpoints. Equivalently, it crosses each hyperplane of $\mathcal H^J$ at most once.

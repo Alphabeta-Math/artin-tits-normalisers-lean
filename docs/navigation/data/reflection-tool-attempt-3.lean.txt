@@ -1,0 +1,130 @@
+import Lean
+import Lean.Elab.Command
+import ArtinDeligne
+
+/-! Metadata-only declaration/type reflection. Run only after CI archival.
+It proves no mathematics and never writes proof sources or compiled objects. -/
+set_option autoImplicit false
+set_option maxHeartbeats 0
+set_option maxRecDepth 100000
+
+open Lean Meta Elab Command
+
+private partial def navName (n : Name) : Json :=
+  match n with
+  | .anonymous => Json.arr #[]
+  | .str p s => Json.arr #[toJson "str", navName p, toJson s]
+  | .num p i => Json.arr #[toJson "num", navName p, toJson i]
+
+private partial def navLevel (u : Level) : Json :=
+  match u with
+  | .zero => Json.arr #[toJson "zero"]
+  | .succ u => Json.arr #[toJson "succ", navLevel u]
+  | .max u v => Json.arr #[toJson "max", navLevel u, navLevel v]
+  | .imax u v => Json.arr #[toJson "imax", navLevel u, navLevel v]
+  | .param n => Json.arr #[toJson "param", navName n]
+  | .mvar n => Json.arr #[toJson "mvar", navName n.name]
+
+private def navSubstring (s : Substring.Raw) : Json := Json.mkObj [
+  ("str", toJson s.str), ("start", toJson s.startPos.byteIdx), ("stop", toJson s.stopPos.byteIdx)]
+
+private def navSourceInfo (i : SourceInfo) : Json :=
+  match i with
+  | .none => Json.arr #[toJson "none"]
+  | .synthetic p e c => Json.arr #[toJson "synthetic", toJson p.byteIdx, toJson e.byteIdx, toJson c]
+  | .original l p t e => Json.arr #[toJson "original", navSubstring l,
+      toJson p.byteIdx, navSubstring t, toJson e.byteIdx]
+
+private def navPreresolved (p : Syntax.Preresolved) : Json :=
+  match p with
+  | .namespace n => Json.arr #[toJson "namespace", navName n]
+  | .decl n fs => Json.arr #[toJson "decl", navName n, toJson fs]
+
+private partial def navSyntax (s : Syntax) : Json :=
+  match s with
+  | .missing => Json.arr #[toJson "missing"]
+  | .node i n args => Json.arr #[toJson "node", navSourceInfo i, navName n, Json.arr (args.map navSyntax)]
+  | .atom i v => Json.arr #[toJson "atom", navSourceInfo i, toJson v]
+  | .ident i r v ps => Json.arr #[toJson "ident", navSourceInfo i, navSubstring r, navName v, toJson (ps.map navPreresolved)]
+
+private def navDataValue (v : DataValue) : Json :=
+  match v with
+  | .ofString v => Json.arr #[toJson "string", toJson v]
+  | .ofBool v => Json.arr #[toJson "bool", toJson v]
+  | .ofName v => Json.arr #[toJson "name", navName v]
+  | .ofNat v => Json.arr #[toJson "nat", toJson v]
+  | .ofInt v => Json.arr #[toJson "int", toJson v]
+  | .ofSyntax v => Json.arr #[toJson "syntax", navSyntax v]
+
+private partial def navExpr (e : Expr) : Json :=
+  match e with
+  | .bvar i => Json.arr #[toJson "bvar", toJson i]
+  | .fvar i => Json.arr #[toJson "fvar", navName i.name]
+  | .mvar i => Json.arr #[toJson "mvar", navName i.name]
+  | .sort u => Json.arr #[toJson "sort", navLevel u]
+  | .const n us => Json.arr #[toJson "const", navName n, toJson (us.map navLevel)]
+  | .app f a => Json.arr #[toJson "app", navExpr f, navExpr a]
+  | .lam n t b bi => Json.arr #[toJson "lam", navName n, navExpr t, navExpr b, toJson (reprStr bi)]
+  | .forallE n t b bi => Json.arr #[toJson "forallE", navName n, navExpr t, navExpr b, toJson (reprStr bi)]
+  | .letE n t v b nd => Json.arr #[toJson "letE", navName n, navExpr t, navExpr v, navExpr b, toJson nd]
+  | .lit (.natVal n) => Json.arr #[toJson "natLit", toJson n]
+  | .lit (.strVal s) => Json.arr #[toJson "strLit", toJson s]
+  | .mdata m b => Json.arr #[toJson "mdata", toJson (m.entries.map (fun (n, v) => Json.arr #[navName n, navDataValue v])), navExpr b]
+  | .proj n i b => Json.arr #[toJson "proj", navName n, toJson i, navExpr b]
+
+private def navRange (r : DeclarationRange) : Json := Json.mkObj [
+  ("start_line", toJson r.pos.line), ("start_column", toJson r.pos.column),
+  ("end_line", toJson r.endPos.line), ("end_column", toJson r.endPos.column),
+  ("start_utf16", toJson r.charUtf16), ("end_utf16", toJson r.endCharUtf16)]
+
+run_cmd do
+  let some input ← IO.getEnv "ARTIN_NAV_ROOTS" | throwError "Set ARTIN_NAV_ROOTS"
+  let some output ← IO.getEnv "ARTIN_NAV_STATEMENTS" | throwError "Set ARTIN_NAV_STATEMENTS"
+  let json ← match Json.parse (← IO.FS.readFile input) with
+    | .ok j => pure j
+    | .error e => throwError "Invalid root JSON: {e}"
+  let names ← match fromJson? (α := Array String) json with
+    | .ok ns => pure ns
+    | .error e => throwError "Invalid root names: {e}"
+  let wanted : Std.HashSet String := names.foldl (fun s n => s.insert n) {}
+  let env ← getEnv
+  let mut rows : Array Json := #[]
+  let mut found : Std.HashSet String := {}
+  for (name, ci) in env.constants.toList do
+    if wanted.contains name.toString then
+      let (typeText, isProof) ← liftTermElabM do
+        withOptions (fun o => o.setBool `pp.all true |>.setBool `pp.proofs true
+            |>.setBool `pp.deepTerms true |>.set `pp.maxSteps (1000000000 : Nat)
+            |>.setBool `pp.universes true |>.setBool `pp.explicit true
+            |>.setBool `pp.fullNames true |>.setBool `pp.notation false
+            |>.setBool `pp.funBinderTypes true |>.setBool `pp.piBinderTypes true) do
+          let text ← ppExpr ci.type
+          let prop ← isProp ci.type
+          pure (text.pretty 100, prop)
+      let range ← findDeclarationRanges? name
+      let doc ← findDocString? env name
+      let moduleName := match env.getModuleIdxFor? name with
+        | some i => env.header.moduleNames[i]!.toString
+        | none => "<no-imported-module>"
+      rows := rows.push (Json.mkObj [
+        ("name", toJson name.toString), ("module", toJson moduleName),
+        ("universe_parameters", toJson (ci.levelParams.map Name.toString)),
+        ("elaborated_type", toJson typeText), ("rendering_contains_ellipsis", toJson (typeText.contains '⋯')),
+        ("rendering_role", toJson "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative"),
+        ("type_expression", navExpr ci.type),
+        ("type_is_proposition", toJson isProof), ("docstring", toJson doc),
+        ("declaration_ranges", match range with
+          | none => Json.null
+          | some r => Json.mkObj [("declaration", navRange r.range), ("selection", navRange r.selectionRange)])])
+      found := found.insert name.toString
+  unless found.size == wanted.size do throwError "Missing compiled roots: expected {wanted.size}, found {found.size}"
+  IO.FS.writeFile output ((Json.mkObj [
+    ("kind", toJson "read-only-compiled-navigation-statements"),
+    ("declaration_count", toJson rows.size), ("is_mathematical_verification", toJson false),
+    ("pretty_print_options", Json.mkObj [("pp.all", toJson true), ("pp.proofs", toJson true),
+      ("pp.deepTerms", toJson true), ("pp.maxSteps", toJson (1000000000 : Nat)),
+      ("pp.explicit", toJson true), ("pp.universes", toJson true), ("pp.fullNames", toJson true),
+      ("pp.notation", toJson false), ("format_width", toJson (100 : Nat))]),
+    ("range_basis", toJson "Lean.Position one-based line, zero-based codepoint column; UTF16 separately retained"),
+    ("rows", Json.arr rows)]).pretty ++ "\n")
+  logInfo m!"NAVIGATION_STATEMENTS_EXPORTED roots={rows.size} path={output}"

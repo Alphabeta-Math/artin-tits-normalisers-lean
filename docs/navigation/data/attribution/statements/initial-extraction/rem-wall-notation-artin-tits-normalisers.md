@@ -1,0 +1,1 @@
+The article sometimes abbreviates $\omega_{a,I}$ to $\omega_a$ when the source is clear, following [24, Definition 1.28]. Its $v_{a,I}$ is the inverse of $v[a,I]$ in [5], where more general elements $v[I,J]$ are also defined.

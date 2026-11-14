@@ -1,0 +1,1 @@
+If $x=yz$ is a product of composable Brink–Howlett morphisms with $\ell(x)=\ell(y)+\ell(z)$, concatenating standard expressions of $y$ and $z$ gives a standard expression of $x$.

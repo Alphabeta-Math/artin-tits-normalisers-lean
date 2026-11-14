@@ -1,0 +1,3 @@
+Use the Coxeter-system notation of [def-coxeter-data-artin-tits-normalisers](item-def-coxeter-data-artin-tits-normalisers): $\Gamma_0$ is the vertex set, $V=\bigoplus_{i\in\Gamma_0}\mathbb R\alpha_i$ has basis $(\alpha_i)_{i\in\Gamma_0}$, and $\Theta=V^*$ is the space of real linear functionals on $V$. The vertex set may be infinite.
+
+For $I\subseteq\Gamma_0$, write $I^c=\Gamma_0\setminus I$. Define the parabolic coordinate subspace $\Theta_I$ and the fundamental face $C_I$ by $\Theta_I=\{\varphi\in\Theta:\varphi(\alpha_i)=0\text{ for every }i\in I\}$ and $C_I=\{\varphi\in\Theta_I:\varphi(\alpha_j)>0\text{ for every }j\in I^c\}$.

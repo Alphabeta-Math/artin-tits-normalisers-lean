@@ -1,0 +1,1 @@
+If $W$ is infinite and $J=\varnothing$, there are infinitely many reflecting hyperplanes and all meet the origin in $\mathrm{Cone}$. Thus the arrangement on the full cone need not be locally finite.

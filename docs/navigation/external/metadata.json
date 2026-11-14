@@ -1,0 +1,448 @@
+{
+  "kind": "external-source-navigation-metadata",
+  "verified_release": {
+    "science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "verified_tag": "theorem-1.8-verified",
+    "verified_tag_target": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "run_id": 43599459363,
+    "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+    "clean_github_ci": "passed",
+    "full_landmark_5_proved": true,
+    "full_theorem_1_8_proved": true,
+    "actual_arrangement_asphericity_proved": true,
+    "actual_universal_cover_contractible_proved": false,
+    "two_sided_nerve_homotopy_equivalence_proved": false,
+    "archive_record": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+      "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+    },
+    "closeout_record": {
+      "path": "docs/theorem18/landmarks/milestone5-closeout.json",
+      "sha256": "dd87e00f6a74a993a7556f595e7e0bf991b48cc33215a775394e5a650c416e84"
+    },
+    "documentation_scope": "Source attribution and navigation only; no change to verified scientific sources, reviews, or evidence."
+  },
+  "scope": {
+    "graph_kind": "compiled-type-value-and-structure-dependency-graph",
+    "project_root_count": 4294,
+    "all_graph_nodes_reachable_from_project_roots": true,
+    "graph_declarations": 51405,
+    "graph_edges": 1215678,
+    "external_dependency_declarations": 47111,
+    "external_dependency_modules": 1845,
+    "repositories_with_term_dependencies": 7,
+    "all_external_repositories_including_pinned_tools": 13,
+    "inherited_git_packages": 9,
+    "selected_supplier_units": 464,
+    "selected_supplier_units_with_term_references": 242,
+    "scientific_supplier_repositories": 3
+  },
+  "inputs": {
+    "docs/provenance/deligne/run-20261114T132100Z/graph.json.gz": {
+      "sha256": "f15d25fb6510cd23a23b2fe3096b162f1e0c34817a443f5ccb7d61ddfdec8e4e"
+    },
+    "docs/provenance/deligne/reuse-inventory.json": {
+      "sha256": "c45f10d7d2623ad6501523f4269fa872980adc81e7de5c83c0807b39ec480866"
+    },
+    "docs/provenance/deligne/run-20261114T132100Z/supplier-use.json": {
+      "sha256": "7e4effb5dac2d9b1b845054654dd97e5f02dec6af84f32e45ec755173bf66c77"
+    },
+    "deligne/lake-manifest.json": {
+      "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+    },
+    "deligne/lean-toolchain": {
+      "sha256": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3"
+    },
+    "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json": {
+      "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+    },
+    "docs/theorem18/landmarks/milestone5-closeout.json": {
+      "sha256": "dd87e00f6a74a993a7556f595e7e0bf991b48cc33215a775394e5a650c416e84"
+    },
+    "docs/navigation/external/licenses/Lean-LICENSE": {
+      "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e"
+    }
+  },
+  "generator": {
+    "path": "docs/navigation/external/generate.py",
+    "sha256": "185b08cf80c5d667677e394f2cdd9ecbbb8673d4feb33db8b1c8fea30f2ce00b"
+  },
+  "license_and_pin_records": {
+    "https://github.com/leanprover-community/mathlib4": {
+      "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/plausible": {
+      "revision": "129d1ba9a16bc0660f46c79e9fb041ef5d5d80de",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/plausible/blob/129d1ba9a16bc0660f46c79e9fb041ef5d5d80de/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/LeanSearchClient": {
+      "revision": "c61286b7b63cbfd563b28e11e81d0a18233a044a",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/LeanSearchClient/blob/c61286b7b63cbfd563b28e11e81d0a18233a044a/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/import-graph": {
+      "revision": "e5d5639bedc7feecfbcb98e30b3bf26463d9f722",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/import-graph/blob/e5d5639bedc7feecfbcb98e30b3bf26463d9f722/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/ProofWidgets4": {
+      "revision": "16259c0d07d61ee37d999d05b5cf96338b8daa11",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/ProofWidgets4/blob/16259c0d07d61ee37d999d05b5cf96338b8daa11/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/aesop": {
+      "revision": "7d11bfa88558f8d3d90afdf6bd877ed70001498d",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/aesop/blob/7d11bfa88558f8d3d90afdf6bd877ed70001498d/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/quote4": {
+      "revision": "b0256621cb88178e9ad932a53633077b3029e621",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/quote4/blob/b0256621cb88178e9ad932a53633077b3029e621/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover-community/batteries": {
+      "revision": "4af7237d146261353907b06a01b6f3fc06cfa067",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover-community/batteries/blob/4af7237d146261353907b06a01b6f3fc06cfa067/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover/lean4-cli": {
+      "revision": "c09cb1e4f1e6e1c231a1175a12b681b075054a1b",
+      "license_identifier": "MIT",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover/lean4-cli/blob/c09cb1e4f1e6e1c231a1175a12b681b075054a1b/LICENSE",
+          "package_path": "LICENSE",
+          "sha256": "f7e95706807e931782b6efd9a9d2789508a52423ad67b56ee7e5e324362d4aac"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lake-manifest.json",
+          "sha256": "cf888b6ecb98425a502e8ff477123c8f32037404221257a50b22de33d80b06aa"
+        }
+      ]
+    },
+    "https://github.com/leanprover/lean4": {
+      "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/LICENSE",
+          "sha256": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+          "preserved_path": "docs/navigation/external/licenses/Lean-LICENSE",
+          "retrieval": "Exact pinned upstream LICENSE, preserved as attribution metadata; adds no Lean proof supplier or assumption."
+        }
+      ],
+      "pin_evidence": [
+        {
+          "path": "deligne/lean-toolchain",
+          "sha256": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3"
+        },
+        {
+          "path": "docs/provenance/deligne/reuse-inventory.json",
+          "sha256": "c45f10d7d2623ad6501523f4269fa872980adc81e7de5c83c0807b39ec480866"
+        }
+      ]
+    },
+    "https://github.com/TauCetiProject/TauCeti": {
+      "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/TauCetiProject/TauCeti/blob/62bbc0596dc3539d488232e4e924a338548ea0a9/LICENSE",
+          "license_identifier": "Apache-2.0"
+        },
+        {
+          "path": "vendor/LICENSE.TauCeti",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "landmarks/vendor/LICENSE.TauCeti",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "chambers/vendor/LICENSE.TauCeti",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "sequences/vendor/LICENSE.TauCeti",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "asphericity/vendor/LICENSE.TauCeti",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "cohort": "lemma28-algebra",
+          "provenance": {
+            "path": "vendor/provenance.json",
+            "sha256": "ccdbea36d79676a97e375b5fa533d195b75c5f1efb7cabec3dda8e808a8d2be5"
+          },
+          "root_acceptance": null
+        },
+        {
+          "cohort": "theorem18-topology",
+          "provenance": {
+            "path": "vendor/theorem18-provenance.json",
+            "sha256": "e4442d85498d9894d93e4c91ac313b116b6a46c4a527d9995dd20dd308bba0fd"
+          },
+          "root_acceptance": null
+        },
+        {
+          "cohort": "landmark1-sign",
+          "provenance": {
+            "path": "landmarks/vendor/provenance.json",
+            "sha256": "5d30ae8493968f7fb58bbaa7e78514a0afc15501d62abd940061906c3483581a"
+          },
+          "root_acceptance": null
+        },
+        {
+          "cohort": "landmark3-cech-supplier",
+          "provenance": {
+            "path": "chambers/vendor/provenance.json",
+            "sha256": "167019908d3ec84e54c1ff285fee81d01151094771a3cd6d41659af743028df1"
+          },
+          "root_acceptance": {
+            "path": "docs/provenance/acceptance-landmark3-cech.json",
+            "sha256": "5fb052908ca576a9cefcbc6d68e23418d9a5434d2588010f5300581de68e979e"
+          }
+        },
+        {
+          "cohort": "landmark4-basepoint-extraction",
+          "provenance": {
+            "path": "sequences/vendor/provenance.json",
+            "sha256": "6f186d59897c50003f4e5d64f556010aca2aee615a70b0c365023bf2ca5d8520"
+          },
+          "root_acceptance": {
+            "path": "docs/provenance/acceptance-landmark4-basepoint.json",
+            "sha256": "b6ace0d55c6e6b1456c4e3a9cc0c951944a2a840857c4fbeb84724ba9e6c19c6"
+          }
+        },
+        {
+          "cohort": "landmark5-topology-prerequisite-supplier",
+          "provenance": {
+            "path": "asphericity/vendor/provenance.json",
+            "sha256": "9691e5dc533a8a01e53a86782e1e7d303e2acc30e698ffdafed0b8452d33854a"
+          },
+          "root_acceptance": {
+            "path": "docs/provenance/acceptance-landmark5-topology.json",
+            "sha256": "d680af294fd4c22afc243c7071578e6cd0fb4de8b5b181e09b18970575b5d895"
+          }
+        }
+      ]
+    },
+    "https://github.com/openai/math": {
+      "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/LICENSE",
+          "license_identifier": "Apache-2.0"
+        },
+        {
+          "path": "ribbons/vendor/LICENSE.openai-math",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "deligne/vendor/LICENSE.OAI",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "cohort": "landmark2-positive",
+          "provenance": {
+            "path": "ribbons/vendor/provenance.json",
+            "sha256": "e1a68e31cfbfc80def6b29868f63161545308eb888642cb3af85f2425a77f904"
+          },
+          "root_acceptance": null
+        },
+        {
+          "cohort": "deligne-weights-supplier",
+          "provenance": {
+            "path": "deligne/vendor/provenance-weights.json",
+            "sha256": "3da3355a1befd07f53b52bbd3c8a55191d922a052bfdc001c3ea13346256afa3"
+          },
+          "root_acceptance": {
+            "path": "docs/provenance/acceptance-deligne-weights.json",
+            "sha256": "4a4b49b51c7c1c59f017230fc3878b000989dc11c1056116c6094de73d4fee71"
+          }
+        }
+      ]
+    },
+    "https://github.com/kangxyz/colib": {
+      "revision": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+      "license_identifier": "Apache-2.0",
+      "licenses": [
+        {
+          "github_url": "https://github.com/kangxyz/colib/blob/bac5cab53eb6526e366e861d289253ec81aa89f0/LICENSE",
+          "license_identifier": "Apache-2.0"
+        },
+        {
+          "path": "homotopy/vendor/LICENSE.Colib",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        },
+        {
+          "path": "deligne/vendor/LICENSE.Colib",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+        }
+      ],
+      "pin_evidence": [
+        {
+          "cohort": "homotopy-colib-domination-supplier",
+          "provenance": {
+            "path": "homotopy/vendor/provenance.json",
+            "sha256": "56dd5ebe0684f7b72e6212a2c745921771071f89edabb0bcb65c5c4da4a9a7f6"
+          },
+          "root_acceptance": {
+            "path": "docs/provenance/acceptance-homotopy-colib.json",
+            "sha256": "60058970da3c04dd377a7f5d0aced233c7fd2ddee8c97bd50e7d27c3cb1dbf44"
+          }
+        },
+        {
+          "cohort": "deligne-carriers-supplier",
+          "provenance": {
+            "path": "deligne/vendor/provenance-carriers.json",
+            "sha256": "cf510143cceb0017614eb286cb4809c82b63c21838b424fab18b7dbc1850c103"
+          },
+          "root_acceptance": {
+            "path": "docs/provenance/acceptance-deligne-carriers.json",
+            "sha256": "44e503285e4a41110212afeed84702975933a8b5c09a5aeaf4e572d3fcab44f7"
+          }
+        }
+      ]
+    }
+  },
+  "canonical_project_root_aliases": [
+    {
+      "name": "Finite.equivFin.congr_simp",
+      "module": "Mathlib.RingTheory.Spectrum.Prime.ConstructibleSet",
+      "kind": "theorem",
+      "source": {
+        "repository": "https://github.com/leanprover-community/mathlib4",
+        "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+        "role": "pinned foundation or transitive Lake dependency",
+        "source_path": "Mathlib/RingTheory/Spectrum/Prime/ConstructibleSet.lean",
+        "source_sha256": "2bd856c48bca8e3c586d487b43670ec2fc34507f1bc9acf62d0d07e80f12ba0a"
+      },
+      "is_project_root": true,
+      "github_source_url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/RingTheory/Spectrum/Prime/ConstructibleSet.lean"
+    }
+  ],
+  "uncompressed_catalog_sha256": "eec9abae59bc73a3c1273f9d82f13c4307b7801cc59653e6a13b5eb866e176fb",
+  "outputs": {
+    "README-table.md": {
+      "sha256": "a5fa8440e56f81e71298567cdc4e83d68708ac0d76a5955a5f97cb1983f4be7a",
+      "bytes": 6926
+    },
+    "catalog.json.gz": {
+      "sha256": "895938f4f65c6e3748b0047cdcf308291cc1d9a51d0ac1940a860c6683e38f1a",
+      "bytes": 1079879
+    },
+    "modules.md": {
+      "sha256": "7569237d0e03d51091d59d4f7b51960b6600977ceca8f3a04ad40fa055671950",
+      "bytes": 502636
+    }
+  }
+}

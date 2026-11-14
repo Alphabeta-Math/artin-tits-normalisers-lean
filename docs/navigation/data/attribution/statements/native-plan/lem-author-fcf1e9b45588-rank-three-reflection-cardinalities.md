@@ -1,0 +1,1 @@
+For a Coxeter system of type $A_3$, $B_3$ or $H_3$, let $T=\{wsw^{-1}:w\in W,\ s\in S\}$ be its set of Coxeter reflections, using [[def-coxeter-data-artin-tits-normalisers]]. Then $|T|$ is respectively $6$, $9$ or $15$.

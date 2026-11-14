@@ -1,0 +1,1 @@
+In the finite setting $T=I\sqcup\{a,b\}$ of the rotation construction, both words have minimum representative $q=w_Iw_T$ and target $\bar I=w_TIw_T$. This $q$ is the finite-relative-longest morphism used to construct $v_{a,b,I}$.

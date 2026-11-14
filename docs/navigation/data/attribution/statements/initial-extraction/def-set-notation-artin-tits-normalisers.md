@@ -1,0 +1,1 @@
+The article writes $X+a=X\cup\{a\}$, $X-a=X\setminus\{a\}$, and $I^c=\Gamma_0\setminus I$.

@@ -1,0 +1,1 @@
+For $G=W$ or $A$, $\mathrm{Norm}_G(G_J)=\{g\in G:gG_Jg^{-1}=G_J\}$. Set $N(W,J)=\mathrm{Norm}_W(W_J)/W_J$, $N(A,J)=\mathrm{Norm}_A(A_J)/A_J$, and $N(P,J)=\{\beta A_J\in N(A,J):P\cap\beta A_J\ne\varnothing\}$, the image of $P\cap\mathrm{Norm}_A(A_J)$.

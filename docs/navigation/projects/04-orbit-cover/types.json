@@ -1,0 +1,39 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 69,
+          "end_line": 110,
+          "end_utf16": 69,
+          "start_column": 0,
+          "start_line": 106,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 45,
+          "end_line": 107,
+          "end_utf16": 45,
+          "start_column": 8,
+          "start_line": 107,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The covering is the actual orbit map with its actual quotient topology.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) (J : Set.{u_1} I)\n  [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)],\n  IsQuotientCoveringMap.{u_1, u_1, u_1} (ArtinNormalisers.Theorem18.orbitProjection.{u_1} M J)\n    (ArtinNormalisers.Artin.coxeterNormalizerQuotient.{u_1} M J)",
+      "module": "ArtinLandmarks.Covering",
+      "name": "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 24123,
+      "type_expression_sha256": "5f156ff708e7e6ee3439c9b2574c7e0ebba2c71e828e23997b15177714bf7f94",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+For $J\subseteq\Gamma_0$, let $W_J=\langle s_j:j\in J\rangle$, $A_J=\langle\sigma_j:j\in J\rangle$, $\Phi_J=\{w\alpha_j:w\in W_J,j\in J\}$ and $\Phi_J^{\pm}=\Phi_J\cap\Phi^{\pm}$.

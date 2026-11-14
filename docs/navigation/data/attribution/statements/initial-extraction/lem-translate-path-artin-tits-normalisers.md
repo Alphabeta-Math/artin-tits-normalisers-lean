@@ -1,0 +1,1 @@
+For $(z,L)\in\mathrm{Cham}(J)$, the action of $z^{-1}$ gives a bijection between the relevant relative arrangements for $J$ and $L$, preserving geodesics and simple wall-crossing labels. It sends a path $p$ to a path $z^{-1}p$ with $v_{z^{-1}p}=v_p$, and sends the starting chamber $(z,L)$ to $(e,L)$.

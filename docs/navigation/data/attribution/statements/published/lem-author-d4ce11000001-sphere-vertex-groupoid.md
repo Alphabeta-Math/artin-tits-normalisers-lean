@@ -1,0 +1,1 @@
+For the doubled spherical complex $K$ and its set $V$ of 32 chamber vertices, the full subgroupoid $\Pi_1(K;V)$ of the fundamental groupoid on $V$ has exactly one morphism between every ordered pair of vertices. Every directed crossing edge represents that unique morphism between its endpoints, and its reverse crossing represents the inverse.

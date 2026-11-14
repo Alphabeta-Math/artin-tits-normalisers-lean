@@ -1,0 +1,1 @@
+Unlike $J=\varnothing$, $N(W,J)$ need not act transitively on all chambers. The article points to Example 3.12 and §7.

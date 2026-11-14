@@ -1,0 +1,1 @@
+The empty subset is its only associate. For $a\in\Gamma_0$, $[\varnothing,a]=\{a\}$, $W_{[\varnothing,a]}$ has order two, and $v_{a,\varnothing}=s_a$.

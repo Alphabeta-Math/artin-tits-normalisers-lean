@@ -1,0 +1,7 @@
+Let $N$ be a group and let $\mathcal G$ be a connected small groupoid: its objects and arrows form sets, every arrow is invertible, and there is an arrow between every ordered pair of objects. Composition is read left to right, so $ab$ means first $a$ and then $b$.
+
+An automorphism of $\mathcal G$ is an invertible functor from $\mathcal G$ to itself. An action of $N$ on $\mathcal G$ is a homomorphism from $N$ to the group of these automorphisms, whose multiplication is composition of functors. Write $nx$ and $na$ for the images of an object $x$ and an arrow $a$ under the automorphism assigned to $n$; thus $(nm)x=n(mx)$ and $(nm)a=n(ma)$. The action is free on objects if $nx=x$ implies $n=1$.
+
+Assume freeness on objects. The quotient groupoid $\mathcal G/N$ has as objects the object orbits $[x]=\{nx:n\in N\}$. Its arrows are the arrow orbits $[a]=\{na:n\in N\}$, with source $[x]$ and target $[y]$ when $a:x\to y$. Equivalently, the arrows from $[x]$ to $[y]$ are precisely the orbits $[a]$ for which some representative has the form $a:gx\to g'y$, with $g,g'\in N$.
+
+To compose $[a]:[x]\to[y]$ and $[b]:[y]\to[z]$, choose a representative $a$ and then the unique representative $b'$ of $[b]$ whose source is the target of $a$; define $[a][b]=[ab']$. The identity at $[x]$ is $[1_x]$, and the inverse of $[a]$ is $[a^{-1}]$.

@@ -1,0 +1,1 @@
+If $I$ is an associate of $J$, $a\in I^c$, and $W_{[I,a]}$ is finite, then $v_{a,I}\in\mathrm{Hom}_{\mathcal{BH}}(I,I+a-\iota_{[I,a]}(a))$.

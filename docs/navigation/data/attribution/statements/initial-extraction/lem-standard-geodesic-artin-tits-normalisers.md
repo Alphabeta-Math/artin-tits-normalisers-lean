@@ -1,0 +1,1 @@
+For simple wall crossings $\omega_{a_j,I_j}$, their concatenation is a well-defined geodesic path if and only if $v_{a_1,I_1}\cdots v_{a_m,I_m}$ is a standard expression in $\mathcal{BH}$ with source $I_1$. Every $w\in\mathrm{Hom}_{\mathcal{BH}}(I,K)$ has a standard expression. A lift starting at $(x,I)$ ends at $(xw,K)$.

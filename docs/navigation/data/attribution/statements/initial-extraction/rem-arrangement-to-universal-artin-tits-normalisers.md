@@ -1,0 +1,1 @@
+There are functors $\mathcal D^+\to\widetilde{\mathcal{BH}}$ and $\mathcal D\to\widetilde{\mathcal{BH}}$, identity on objects and sending any path $p:(x,I)\to(y,K)$ to $v_p=x^{-1}y$. These are full and generally not faithful; in particular every based loop maps to the identity.

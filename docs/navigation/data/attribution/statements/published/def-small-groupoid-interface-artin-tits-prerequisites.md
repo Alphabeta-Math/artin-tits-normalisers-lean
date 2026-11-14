@@ -1,0 +1,5 @@
+A small category is a category whose objects and morphisms each form a set; each morphism carries its source and target. A groupoid is a category in which every morphism has a two-sided inverse. A groupoid is connected when it is nonempty and there is an arrow between every ordered pair of objects.
+
+For arrows $a:x\to y$ and $b:y\to z$, write $ab=b\circ a$; hence composition is read from left to right. A covariant functor sends objects to objects and arrows to arrows with the corresponding sources and targets, preserving identities and composition. An automorphism is a functor from a category to itself with a two-sided inverse functor.
+
+For an object $x$ of a small groupoid $\mathcal G$, its vertex group $\mathcal G_x$ is the set of arrows $x\to x$ with the left-to-right product and identity $1_x$. Given an arrow $a:x\to y$, the associated conjugation map $c_a:\mathcal G_x\to\mathcal G_y$ is $c_a(u)=a^{-1}ua$.

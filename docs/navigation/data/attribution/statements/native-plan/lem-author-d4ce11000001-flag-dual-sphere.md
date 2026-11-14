@@ -1,0 +1,1 @@
+The spherical cellulation of the seven-plane arrangement has a dual cell decomposition of the same sphere. Its vertices correspond to the 32 chambers, its edges to the 48 chamber adjacencies, and its two-dimensional disk faces to the vertices of the spherical arrangement. A dual face boundary lists the chambers incident to that arrangement vertex in cyclic order.

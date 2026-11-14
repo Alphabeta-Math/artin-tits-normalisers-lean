@@ -1,0 +1,1 @@
+If $x,y$ are composable ordinary root-action arrows and $\ell(xy)=\ell(x)+\ell(y)$, then $C(xy)=C(x)\sqcup xC(y)$ and $|C(xy)|=|C(x)|+|C(y)|$.

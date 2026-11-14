@@ -1,0 +1,1 @@
+In spherical type there is an $N(W,J)$-equivariant equivalence $p:\mathcal D\to\pi_1(\mathcal X_J^{\mathbb C})$ inducing an equivalence $\overline p:\mathcal D/N(W,J)\to\pi_1(\mathcal X_J^{\mathbb C}/N(W,J))$. The square with $p,\overline p$, the quotient $\mathcal Q$, and the fundamental-groupoid map of the topological covering commutes.

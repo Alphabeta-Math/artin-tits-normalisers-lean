@@ -1,0 +1,1 @@
+The $D_4$ graph presents $\widetilde{\mathcal{BH}}$ with singleton morphism sets. An arrow $(x,I)\to(y,K)$ across a wall is labelled $x^{-1}y=v_{a,I}$ and its reverse by $y^{-1}x=v_{b,K}$. All paths with the same endpoints yield the same morphism. Every two-cycle is the identity, and its labels are mutually inverse, although not necessarily equal in $W$.

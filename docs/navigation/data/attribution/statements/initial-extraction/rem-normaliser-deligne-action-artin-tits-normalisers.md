@@ -1,0 +1,1 @@
+The action of $N(W,J)$ on chambers extends to $\mathcal D$: $\omega_{a,I}:C\to C^\prime$ is sent to $\omega_{a,I}:gC\to gC^\prime$. This preserves geodesics and therefore the defining relations.

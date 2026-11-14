@@ -1,0 +1,40 @@
+{
+  "displayed_reduced_edges": 26,
+  "generator_sha256": "c31e15e5cf356f85abcfe4e85bbe51e231c3c4d5c3d34f22aa9e4b8744b40596",
+  "important_dependency_paths": 70,
+  "input_sha256": {
+    "data/attribution/declaration-attribution.json": "2fc28917928ef10c499665e2593fb620886e26a54a124974aaa8d46d0e4c5a9b",
+    "data/evidence-atlas.json": "1f1e50528f1d232e47fc4810dfff1533c2f843cba0e2ceabf0c36329e3d8f908",
+    "data/important-source-addendum.json": "f18c3a43609fe9b531c19f08ba1798a7e40ffe7aa40c5accd303323fd372fce5",
+    "data/source-inventory.json": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120",
+    "data/statements.json": "9a1ef6bdd73f7ff816a4d7f5044fe1f91b5ef2938afbf9614b4a6bbd1b16c66c",
+    "tools/important-projects.json": "996aaf607532175b1febbcc5094b7e9ebb5bb4c53ab2ce12707b50bec6d2c9cf"
+  },
+  "kind": "important-documentation-generation",
+  "mathematical_proof_changes": false,
+  "project_files": [
+    "docs/navigation/projects/01-groups/PROJECT.md",
+    "docs/navigation/projects/02-complement/PROJECT.md",
+    "docs/navigation/projects/03-lemma-2-8/PROJECT.md",
+    "docs/navigation/projects/04-orbit-cover/PROJECT.md",
+    "docs/navigation/projects/05-ribbons/PROJECT.md",
+    "docs/navigation/projects/06-ribbon-presentation/PROJECT.md",
+    "docs/navigation/projects/07-chamber-comparison/PROJECT.md",
+    "docs/navigation/projects/08-exact-diagrams/PROJECT.md",
+    "docs/navigation/projects/09-simplicial-geometry/PROJECT.md",
+    "docs/navigation/projects/10-universal-cover/PROJECT.md",
+    "docs/navigation/projects/11-ribbon-lattice/PROJECT.md",
+    "docs/navigation/projects/12-garside-model/PROJECT.md",
+    "docs/navigation/projects/13-finite-carriers/PROJECT.md",
+    "docs/navigation/projects/14-model-asphericity/PROJECT.md",
+    "docs/navigation/projects/15-packet-carriers/PROJECT.md",
+    "docs/navigation/projects/16-carrier-homotopy/PROJECT.md",
+    "docs/navigation/projects/17-cover-comparison/PROJECT.md",
+    "docs/navigation/projects/18-actual-asphericity/PROJECT.md",
+    "docs/navigation/projects/19-theorem-1-8/PROJECT.md",
+    "docs/navigation/projects/20-corollary-6-14/PROJECT.md"
+  ],
+  "proof_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "selected_formal_declarations": 49,
+  "topics": 20
+}

@@ -1,0 +1,3 @@
+In the finite-rank canonical Coxeter representation, fix $J$ and let $(x,I),(y,K)$ label adjacent relative chambers $xC_I,yC_K\subseteq\Theta_J$. Let $a\notin I$ be the index of their common wall, and put $L=I+a=I\cup\{a\}$ and $u=y^{-1}x$. Then
+$$\Phi_L^+\setminus\Phi_I^+\subseteq N(u),\qquad |\Phi_L\setminus\Phi_I|\leq 2\ell(u).$$
+In particular $W_D$ is finite, where $D=[I,a]$ is the vertex set of the connected component containing $a$ in the Coxeter diagram induced on $I+a$.

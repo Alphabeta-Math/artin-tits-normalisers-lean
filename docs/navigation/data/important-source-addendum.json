@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "kind": "curated-important-definition-source-context-addendum",
+  "accepted_atlas_path": "docs/navigation/data/attribution/declaration-attribution.json",
+  "accepted_atlas_sha256": "2fc28917928ef10c499665e2593fb620886e26a54a124974aaa8d46d0e4c5a9b",
+  "accepted_full_inventory_path": "docs/navigation/data/attribution/full-inventory.json",
+  "accepted_full_inventory_sha256": "4fee3fb7f3920cc2edbe00db2830bcbff3b8a1c0c521e7320724844e04b84395",
+  "topics": [
+    {
+      "topic_id": "group-pure-parabolic-normalizer-definitions",
+      "title": "Artin, pure, parabolic and normalizer quotient definitions",
+      "mapping_status": "related-only",
+      "lean_declarations": [
+        "ArtinNormalisers.Artin.Group",
+        "ArtinNormalisers.Artin.generator",
+        "ArtinNormalisers.Artin.projection",
+        "ArtinNormalisers.Artin.pure",
+        "ArtinNormalisers.Artin.parabolic",
+        "ArtinNormalisers.Artin.coxeterParabolic",
+        "ArtinNormalisers.Artin.normalizerQuotient",
+        "ArtinNormalisers.Artin.coxeterNormalizerQuotient",
+        "ArtinNormalisers.Artin.pureNormalizerImage"
+      ],
+      "article": [
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=5",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Section 2.2, immediately after Equation (2.4)",
+          "printed_page": 5,
+          "pdf_page": 5,
+          "source_excerpt": "In general, the action of W on X   is free and properly discontinuous, and the normal covering\n      Cmap X →X C/W induces the following short exact sequence (where Z ∈X C):\n                        1 →π1(X C, Z) →π1(X C/W, Z) π−→W →1.                        (2.4)\n  We define the Artin–Tits group A – π1(X C/W, Z), and the pure Artin–Tits group is\nP – π1(X C, Z). Note that the surjection π  : A →W admits a set-theoretic section w 7→σw,\nthe positive lift of w. We note that A also has a presentation with Artin generators denoted\nσi := σsi, i ∈Γ0. We won’t be explicitly using the presentation here, and refer the reader to [30]\nfor more details.",
+          "source_excerpt_sha256": "c6a91222fa0bce7d8f4ab60c4cba1a9e42f039101a5535fbf53b7d86b88ee551",
+          "source_text_line_start": 266,
+          "source_text_line_end": 273,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "$A:=\\pi_1(\\mathcal X^{\\mathbb C}/W,\\overline Z)$ and $P:=\\pi_1(\\mathcal X^{\\mathbb C},Z)$; $\\pi:A\\to W$ has the positive-lift section $w\\mapsto\\sigma_w$. The article notes the Artin-generator presentation.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained."
+          ]
+        },
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=5",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Section 2.3, standard parabolic definitions",
+          "printed_page": 5,
+          "pdf_page": 5,
+          "source_excerpt": "2.3. Normalisers of parabolic subgroups. We keep the notation from the previous section, and\nwe fix a subset J of Γ0 for this section.\n  Let WJ – ⟨sj | j ∈J⟩(resp. AJ – ⟨σj | j ∈J⟩) denote the standard parabolic subgroup of W\n(resp. of A) attached to J. Let ΦJ be the subset of roots of coming from WJ:",
+          "source_excerpt_sha256": "4f120294e0f273540141ee9c25bc748aeff8575d41dda42babfcf34ea0322a77",
+          "source_text_line_start": 275,
+          "source_text_line_end": 278,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "$W_J:=\\langle s_j\\mid j\\in J\\rangle$ and $A_J:=\\langle\\sigma_j\\mid j\\in J\\rangle$.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "These Lean algebraic definitions allow arbitrary index types I; the current Alphabeta Artin/normalizer definitions explicitly assume finite rank. This is related definition context, not an assertion that every hypothesis and topological-model clause is identical."
+          ]
+        },
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=1",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Equation (1.2)",
+          "printed_page": 1,
+          "pdf_page": 1,
+          "source_excerpt": "1.1.1. Normaliser quotients of parabolics. The choice J defines standard parabolic subgroups WJ ⊆\n      W and AJ ⊆A, normaliser subgroups NormW (WJ), NormA(AJ) and normaliser quotients:arXiv:2509.21915v3               N(W, J) – NormW (WJ)/WJ   and  N(A, J) – NormA(AJ)/AJ.           (1.2)",
+          "source_excerpt_sha256": "63eb313efaa8622c6a44585a964db872110dff578fb0278f7002164608b5505c",
+          "source_text_line_start": 39,
+          "source_text_line_end": 40,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "$N(W,J):=\\operatorname{Norm}_W(W_J)/W_J$, $N(A,J):=\\operatorname{Norm}_A(A_J)/A_J$.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained."
+          ]
+        },
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=3",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Equation (1.7)",
+          "printed_page": 3,
+          "pdf_page": 3,
+          "source_excerpt": "where N(P, J) is defined as the image of P ∩NormA(AJ) in N(A, J):\n                     N(P, J) := {βAJ ∈N(A, J) | P ∩βAJ ̸= ∅}.                       (1.7)",
+          "source_excerpt_sha256": "4d5de11de15ab689e97360f95173de9c5f8574fb53e335e527320ba8706476fa",
+          "source_text_line_start": 131,
+          "source_text_line_end": 132,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "$N(P,J):=\\{\\beta A_J\\in N(A,J)\\mid P\\cap\\beta A_J\\ne\\varnothing\\}$, the image of $P\\cap\\operatorname{Norm}_A(A_J)$.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained."
+          ]
+        }
+      ],
+      "alphabeta": [
+        {
+          "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+          "item_id": "def-artin-pure-lifts-artin-tits-normalisers",
+          "original_label": "Artin–Tits group, pure subgroup and positive lifts",
+          "public_status": "published",
+          "source_excerpt": "Let $(W,S)$ be a Coxeter system with $S=\\{s_i:i\\in\\Gamma_0\\}$ finite, and let $\\mathcal X^{\\mathbb C}$ be its classical complexified hyperplane complement. Choose $Z\\in\\mathcal X^{\\mathbb C}$ and write $\\overline Z$ for its orbit in $\\mathcal X^{\\mathbb C}/W$. The Artin–Tits group is $A=\\pi_1(\\mathcal X^{\\mathbb C}/W,\\overline Z)$, the group of based loop-homotopy classes in the quotient. The pure Artin–Tits group is $P=\\pi_1(\\mathcal X^{\\mathbb C},Z)$, identified with its image in $A$ under the covering map. Let $\\pi:A\\to W$ send a loop class to the unique $w$ for which its lift starting at $Z$ ends at $wZ$.\n\nFix an isomorphism over $W$ from the presented Artin group to $A$ supplied by the fundamental-group identification. The presented group has generators $a_s$ for $s\\in S$ and, for distinct $s,t$ with finite $m(s,t)=\\operatorname{ord}(st)$, the relation equating the two alternating words of length $m(s,t)$ beginning with $a_s$ and $a_t$ respectively. Write $\\sigma_s\\in A$ for the image of $a_s$, and $\\sigma_i=\\sigma_{s_i}$. For a reduced expression $w=s_1\\cdots s_r$, meaning an expression of minimum length among words in $S$ representing $w$, define the positive lift $\\sigma_w=\\sigma_{s_1}\\cdots\\sigma_{s_r}$; the empty product is the identity. Thus $w\\mapsto\\sigma_w$ is a set-theoretic section of $\\pi$.",
+          "source_sha256": "231a0e90ac1688445a3f935fc0c4be109e38d9e8460c75c99ffeb0fe7be2b8fb",
+          "statement_sha256": "2514bb75b855dd6a294f0251a68538acd683e64281e9ef3981f92ab09a69147d",
+          "snapshot_path": "docs/navigation/data/attribution/statements/published/def-artin-pure-lifts-artin-tits-normalisers.md",
+          "snapshot_sha256": "2514bb75b855dd6a294f0251a68538acd683e64281e9ef3981f92ab09a69147d",
+          "snapshot_kind": "Exact published generated Definition excerpt, distinct from article author statement and whole-source hash.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "These Lean algebraic definitions allow arbitrary index types I; the current Alphabeta Artin/normalizer definitions explicitly assume finite rank. This is related definition context, not an assertion that every hypothesis and topological-model clause is identical.",
+            "The definition additionally fixes a presentation-to-topological Artin isomorphism and describes positive lifts; this topic does not assert a new all-types proof of those topological comparison clauses."
+          ],
+          "http_verification": {
+            "status_code": 200,
+            "requested_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+            "final_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+            "canonical_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+            "observed_at_utc": "2026-11-14T14:50:21.566323+00:00",
+            "h1_values": [
+              "Artin–Tits group, pure subgroup and positive lifts"
+            ],
+            "item_title_matches_h1": true,
+            "statement_heading_found": true,
+            "html_snapshot_path": "docs/navigation/data/important-source-addendum-evidence/def-artin-pure-lifts-artin-tits-normalisers.html.gz",
+            "html_snapshot_compression": "gzip",
+            "compressed_html_sha256": "de8de8bebe57a8bcc67511aaff8f751077731998c2c13d65474e59e4463e2ac4",
+            "uncompressed_html_sha256": "fee860fd3b19e4775021017fc0da1d57492b32436dc16b96c9c92af6db7ab2bd",
+            "public_statement_text": "Let ( W , S ) ( W , S ) be a Coxeter system with S = { s i : i ∈ Γ 0 } S = { s i ​ : i ∈ Γ 0 ​ } finite, and let X C X C be its classical complexified hyperplane complement. Choose Z ∈ X C Z ∈ X C and write Z ‾ Z for its orbit in X C / W X C / W . The Artin–Tits group is A = π 1 ( X C / W , Z ‾ ) A = π 1 ​ ( X C / W , Z ) , the group of based loop-homotopy classes in the quotient. The pure Artin–Tits group is P = π 1 ( X C , Z ) P = π 1 ​ ( X C , Z ) , identified with its image in A A under the covering map. Let π : A → W π : A → W send a loop class to the unique w w for which its lift starting at Z Z ends at w Z w Z . Fix an isomorphism over W W from the presented Artin group to A A supplied by the fundamental-group identification. The presented group has generators a s a s ​ for s ∈ S s ∈ S and, for distinct s , t s , t with finite m ( s , t ) = ord ⁡ ( s t ) m ( s , t ) = ord ( s t ) , the relation equating the two alternating words of length m ( s , t ) m ( s , t ) beginning with a s a s ​ and a t a t ​ respectively. Write σ s ∈ A σ s ​ ∈ A for the image of a s a s ​ , and σ i = σ s i σ i ​ = σ s i ​ ​ . For a reduced expression w = s 1 ⋯ s r w = s 1 ​ ⋯ s r ​ , meaning an expression of minimum length among words in S S representing w w , define the positive lift σ w = σ s 1 ⋯ σ s r σ w ​ = σ s 1 ​ ​ ⋯ σ s r ​ ​ ; the empty product is the identity. Thus w ↦ σ w w ↦ σ w ​ is a set-theoretic section of π π .",
+            "public_statement_text_sha256": "022d0be1b4c0cd850b1894e842cd4c059fe2d6ab9969fa64befb062fb892f810",
+            "local_prose_excluding_resolved_link_labels_matches_public_in_order": true,
+            "mathml_presentation_matches_source_formula_sequence": true,
+            "mathml_display_mode_only_differences": [],
+            "public_mathml_count": 31,
+            "local_math_fragment_count": 31,
+            "formula_verification_path": "docs/navigation/data/important-source-addendum-evidence/def-artin-pure-lifts-artin-tits-normalisers-formula-verification.json.gz",
+            "formula_verification_sha256": "dbafcaa18240702f6162188ad174ec94083e94344f8fb8459beebb06b9011512",
+            "verification_limits": "Actual direct item HTTP200, canonical URL/title, complete definition prose in order and ordered independent source-TeX KaTeX MathML presentation trees checked. No mathematical review of generated proof or new Lean/CI verification."
+          }
+        },
+        {
+          "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-normaliser-quotients-artin-tits-normalisers",
+          "item_id": "def-normaliser-quotients-artin-tits-normalisers",
+          "original_label": "Normalisers and their quotients",
+          "public_status": "published",
+          "source_excerpt": "Let $(W,S)$ be a finite-rank Coxeter system indexed by $S=\\{s_i:i\\in\\Gamma_0\\}$, let $A$ be its Artin–Tits group, and let $P=\\ker(\\pi:A\\to W)$ be its pure Artin–Tits group. For $J\\subseteq\\Gamma_0$, let $W_J=\\langle s_j:j\\in J\\rangle$ and $A_J=\\langle\\sigma_j:j\\in J\\rangle$ be the standard parabolic subgroups; the brackets denote the subgroups generated by the displayed elements.\n\nFor $G=W$ with $G_J=W_J$, or $G=A$ with $G_J=A_J$, define the **normaliser** of $G_J$ in $G$ by $\\operatorname{Norm}_G(G_J)=\\{g\\in G:gG_Jg^{-1}=G_J\\}$. Define the normaliser quotient groups $N(W,J)=\\operatorname{Norm}_W(W_J)/W_J$ and $N(A,J)=\\operatorname{Norm}_A(A_J)/A_J$.\n\nDefine $N(P,J)=\\{\\beta A_J\\in N(A,J):P\\cap\\beta A_J\\ne\\varnothing\\}$. Equivalently, $N(P,J)$ is the image of $P\\cap\\operatorname{Norm}_A(A_J)$ under the quotient homomorphism $\\operatorname{Norm}_A(A_J)\\to N(A,J)$.",
+          "source_sha256": "e9833fe9bcc2c0b699aa2ce6304a9d8d9a52cc1935595d3ed32bfa112df328c3",
+          "statement_sha256": "32473bca3e39bf3ed22959c9f1097c8779faa8c0a4a84b410c37f0f64d419a14",
+          "snapshot_path": "docs/navigation/data/attribution/statements/published/def-normaliser-quotients-artin-tits-normalisers.md",
+          "snapshot_sha256": "32473bca3e39bf3ed22959c9f1097c8779faa8c0a4a84b410c37f0f64d419a14",
+          "snapshot_kind": "Exact published generated Definition excerpt, distinct from article author statement and whole-source hash.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "These Lean algebraic definitions allow arbitrary index types I; the current Alphabeta Artin/normalizer definitions explicitly assume finite rank. This is related definition context, not an assertion that every hypothesis and topological-model clause is identical.",
+            "The normalizer and pure-image formulas agree after fixing the relevant Artin-group model; no model equivalence is made a definition field."
+          ],
+          "http_verification": {
+            "status_code": 200,
+            "requested_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-normaliser-quotients-artin-tits-normalisers",
+            "final_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-normaliser-quotients-artin-tits-normalisers",
+            "canonical_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-normaliser-quotients-artin-tits-normalisers",
+            "observed_at_utc": "2026-11-14T13:39:36.325748+00:00",
+            "html_sha256": "ab443cde3d3c4325102a5f8f0527fdf830df7772fe405c4df94ae47cf9e5a9c1",
+            "html_snapshot_path": "docs/navigation/data/attribution/http/def-normaliser-quotients-artin-tits-normalisers.html.gz",
+            "h1_values": [
+              "Normalisers and their quotients"
+            ],
+            "item_title_matches_h1": true,
+            "statement_heading_found": true,
+            "public_statement_text": "Let ( W , S ) ( W , S ) be a finite-rank Coxeter system indexed by S = { s i : i ∈ Γ 0 } S = { s i ​ : i ∈ Γ 0 ​ } , let A A be its Artin–Tits group, and let P = ker ⁡ ( π : A → W ) P = ker ( π : A → W ) be its pure Artin–Tits group. For J ⊆ Γ 0 J ⊆ Γ 0 ​ , let W J = ⟨ s j : j ∈ J ⟩ W J ​ = ⟨ s j ​ : j ∈ J ⟩ and A J = ⟨ σ j : j ∈ J ⟩ A J ​ = ⟨ σ j ​ : j ∈ J ⟩ be the standard parabolic subgroups; the brackets denote the subgroups generated by the displayed elements. For G = W G = W with G J = W J G J ​ = W J ​ , or G = A G = A with G J = A J G J ​ = A J ​ , define the normaliser of G J G J ​ in G G by Norm ⁡ G ( G J ) = { g ∈ G : g G J g − 1 = G J } Norm G ​ ( G J ​ ) = { g ∈ G : g G J ​ g − 1 = G J ​ } . Define the normaliser quotient groups N ( W , J ) = Norm ⁡ W ( W J ) / W J N ( W , J ) = Norm W ​ ( W J ​ ) / W J ​ and N ( A , J ) = Norm ⁡ A ( A J ) / A J N ( A , J ) = Norm A ​ ( A J ​ ) / A J ​ . Define N ( P , J ) = { β A J ∈ N ( A , J ) : P ∩ β A J ≠ ∅ } N ( P , J ) = { β A J ​ ∈ N ( A , J ) : P ∩ β A J ​  = ∅ } . Equivalently, N ( P , J ) N ( P , J ) is the image of P ∩ Norm ⁡ A ( A J ) P ∩ Norm A ​ ( A J ​ ) under the quotient homomorphism Norm ⁡ A ( A J ) → N ( A , J ) Norm A ​ ( A J ​ ) → N ( A , J ) .",
+            "public_statement_text_sha256": "78ffe426fc6c5287e257ce1bb6d11b8a0491fce4df5ae8065d1cc4539017f5e5",
+            "local_math_fragments": 20,
+            "verification_limits": "HTTP200 canonical item URL/title checked. Entire statement prose (excluding internal-link labels that the site resolves to titles) and ordered MathML source-formula renderings checked. Exact source/snapshots retained; no proof correctness review.",
+            "local_prose_excluding_resolved_link_labels_matches_public_in_order": true,
+            "mathml_presentation_matches_source_formula_sequence": true,
+            "mathml_display_mode_only_differences": [],
+            "public_mathml_count": 20,
+            "local_math_fragment_count": 20,
+            "mathml_render_errors": [],
+            "mathml_check_method": "Render exact local source TeX with current independent app KaTeX; compare ordered MathML presentation subtrees after removing TeX annotation metadata, as production does.",
+            "html_snapshot_compression": "gzip",
+            "compressed_html_sha256": "6c27336e9a3d31cc09fd055f7d3ae399b4ca93cffee1b4d026a9f934731ad7ba",
+            "uncompressed_html_sha256": "ab443cde3d3c4325102a5f8f0527fdf830df7772fe405c4df94ae47cf9e5a9c1",
+            "resolved_link_label_note": "Internal source links labeled by item ID render with the target item title; final prose comparison excludes those rewritten labels."
+          }
+        }
+      ],
+      "differences": [
+        "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+        "These Lean algebraic definitions allow arbitrary index types I; the current Alphabeta Artin/normalizer definitions explicitly assume finite rank. This is related definition context, not an assertion that every hypothesis and topological-model clause is identical."
+      ],
+      "limits": [
+        "Definition context only; does not enlarge the accepted51 declaration-assignment atlas or assert a new source-statement equivalence."
+      ]
+    },
+    {
+      "topic_id": "reduced-ribbon-definitions",
+      "title": "Ribbon and reduced-ribbon groupoid definitions",
+      "mapping_status": "related-only",
+      "lean_declarations": [
+        "ArtinNormalisers.Ribbon2.RibbonObject",
+        "ArtinNormalisers.Ribbon2.IsRibbon",
+        "ArtinNormalisers.Ribbon2.RibbonHom",
+        "ArtinNormalisers.Ribbon2.AssociateRibbonObject",
+        "ArtinNormalisers.Ribbon2.actualPositiveParabolic",
+        "ArtinNormalisers.Ribbon2.elementaryMu",
+        "ArtinNormalisers.Ribbon2.ReducedArrow",
+        "ArtinNormalisers.Ribbon2.reducedRibbonSubgroupoid",
+        "ArtinNormalisers.Ribbon2.reducedRibbonLoops"
+      ],
+      "article": [
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=21",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Definition 5.1",
+          "printed_page": 21,
+          "pdf_page": 21,
+          "source_excerpt": "Definition 5.1 ([17]). Let Γ be a spherical Coxeter diagram and let J be a subset of the vertex\nset Γ0. The ribbon groupoid R′ := R′(J) associated to J is defined as follows.\n     • The objects are the subsets of Γ0 which are associates of J (see Definition 2.7).\n     • HomR′(I, K) := {β ∈A | A+I β = βA+K}. Here A+I  is the submonoid of AI generated by the\n        σi for i ∈I. Composition is given by multiplication in A (on the right).",
+          "source_excerpt_sha256": "5ad33921b67757108c43da587708539cd411c881fd51d2f2cdc4c539128ac436",
+          "source_text_line_start": 1197,
+          "source_text_line_end": 1201,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "The objects of $\\mathcal R^\\prime(J)$ are associates of $J$, and $\\operatorname{Hom}(I,K)=\\{\\beta\\in A\\mid A_I^+\\beta=\\beta A_K^+\\}$, with composition given by Artin multiplication from left to right.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "The source fixes J and restricts objects to its Coxeter-parabolic associates. Lean first constructs an actual all-subset RibbonObject category and generated reduced subgroupoid, then uses the associate full subcategory/fixed component where needed. Do not identify the unrestricted all-subset category with the fixed-J source groupoid without that restriction."
+          ]
+        },
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=22",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Equations (5.2)–(5.4)",
+          "printed_page": 22,
+          "pdf_page": 22,
+          "source_excerpt": "Let I be a subset of Γ0 and let a ∈Ic. By sphericality, the parabolic subgroup W[I,a] is finite\nand we define\n                                        µa,I := ∆−1[I,a]−a∆[I,a] ∈A+,                                 (5.2)\nwhere ∆K ∈A+ denotes the positive lift of the longest element wK ∈WK (see Notation 2.5). Note\nthat we are taking the reduced expression in (5.2), so that it is an element in A+. Moreover, (5.2)\nis the positive lift of (3.14), i.e. it is the image under the set-theoretic section W →A+ of the\nprojection map π : A →W.\n  Note that by sphericality, (5.2) reduces to the following\n                                          µa,I = ∆−1I ∆I+a ∈A+;                                   (5.3)\nc.f. (3.21) in Lemma 3.20. One can readily check that\n\n                                    µa,I ∈HomR′(I, I + a −ι[I,a](a)).                             (5.4)",
+          "source_excerpt_sha256": "5c9b0ab4acbe6efe839b73fd6881700c18f21c8a65ca95826be59aa8ccb491e0",
+          "source_text_line_start": 1206,
+          "source_text_line_end": 1217,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "For $a\\notin I$, $\\mu_{a,I}=\\Delta_{[I,a]-a}^{-1}\\Delta_{[I,a]}=\\Delta_I^{-1}\\Delta_{I+a}\\in A^+$ and $\\mu_{a,I}\\in\\operatorname{Hom}_{\\mathcal R^\\prime}(I,I+a-\\iota_{[I,a]}(a))$.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "Lean elementaryMu is total over every a and equals1 for a∈I because insert a I=I; source atomic generators and the Lean ReducedArrow.elementary constructor require a∉I. The published opposition-index endpoint is distinct from merely existential generator-permutation helpers."
+          ]
+        },
+        {
+          "url": "https://arxiv.org/pdf/2509.21915v3#page=22",
+          "edition": "arXiv:2509.21915v3",
+          "original_label": "Definition 5.5",
+          "printed_page": 22,
+          "pdf_page": 22,
+          "source_excerpt": "Definition 5.5 ([17]). Let Γ be a spherical Coxeter diagram, and let J be a subset of the vertex set\nΓ0. The reduced ribbon groupoid R := R(J) associated to J is the subgroupoid of the ribbon\ngroupoid R′ whose objects coincide with the objects of R′, and whose morphisms are generated\nby the morphisms µa,I for I an associate of J and a ∈Ic.",
+          "source_excerpt_sha256": "e53dfa0ecab13e81476414c16537e34039fea524d6f2873f589caf98093db3cc",
+          "source_text_line_start": 1219,
+          "source_text_line_end": 1222,
+          "line_range_convention": "One-based inclusive range in frozen article text; selected excerpt only.",
+          "source_pdf_sha256": "7a18b3e54c6edce92d8256afe6eae4da0d0483b58f3654a338e90a6b745f83da",
+          "source_text_sha256": "d98828d0f8f7d179ca8437bc6d98b7f8f7f50ae94012fdca1243cb4024390876",
+          "normalized_source_statement": "$\\mathcal R(J)$ is the subgroupoid of $\\mathcal R^\\prime(J)$ with the same objects and morphisms generated by $\\mu_{a,I}$ for associates $I$ of $J$ and $a\\notin I$.",
+          "normalization_kind": "Mathematical transcription/normalization; raw original excerpt retained separately.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "The source fixes J and restricts objects to its Coxeter-parabolic associates. Lean first constructs an actual all-subset RibbonObject category and generated reduced subgroupoid, then uses the associate full subcategory/fixed component where needed. Do not identify the unrestricted all-subset category with the fixed-J source groupoid without that restriction.",
+            "Lean elementaryMu is total over every a and equals1 for a∈I because insert a I=I; source atomic generators and the Lean ReducedArrow.elementary constructor require a∉I. The published opposition-index endpoint is distinct from merely existential generator-permutation helpers."
+          ]
+        }
+      ],
+      "alphabeta": [
+        {
+          "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-reduced-ribbon-artin-tits-normalisers",
+          "item_id": "def-reduced-ribbon-artin-tits-normalisers",
+          "original_label": "Reduced ribbon groupoid",
+          "public_status": "published",
+          "source_excerpt": "Let $\\Gamma$ be a finite-rank spherical Coxeter diagram, meaning that its Coxeter group $W$ is finite, with vertex set $\\Gamma_0$. Let $A$ be its Artin–Tits group and fix $J\\subseteq\\Gamma_0$. For $I\\subseteq\\Gamma_0$, write $W_I$ for the subgroup generated by the simple reflections indexed by $I$. An **associate** of $J$ is a subset $I$ for which $W_I$ is conjugate to $W_J$ in $W$.\n\nLet $\\mathcal R'(J)$ be the ribbon groupoid: its objects are the associates of $J$, and an arrow $I\\to K$ is an element $\\beta\\in A$ with $A_I^+\\beta=\\beta A_K^+$, tagged with its source and target. Here $A_I^+$ is the submonoid generated by the standard Artin generators indexed by $I$. Composition is multiplication from left to right.\n\nFor an associate $I$ and $a\\in\\Gamma_0\\setminus I$, put $T=I\\cup\\{a\\}$. Let $w_T$ be the longest element of $W_T$, let $\\iota_T:T\\to T$ be the opposition permutation defined by $w_T\\alpha_i=-\\alpha_{\\iota_T(i)}$ on the simple roots, and put $K=T\\setminus\\{\\iota_T(a)\\}$. If $\\Delta_L$ denotes the positive reduced-word lift in $A$ of the longest element of $W_L$, the elementary ribbon is $\\mu_{a,I}=\\Delta_I^{-1}\\Delta_T$, regarded as an arrow $I\\to K$ of $\\mathcal R'(J)$.\n\nThe **reduced ribbon groupoid** $\\mathcal R(J)$ is the subgroupoid of $\\mathcal R'(J)$ with all the same objects whose arrows are finite composable products of the arrows $\\mu_{a,I}$ and their inverses, including empty products as identities. Equivalently, it is the smallest subgroupoid of $\\mathcal R'(J)$ containing every object and every such elementary ribbon arrow.",
+          "source_sha256": "c999193d56471aa440244dfc44f04eaad0869fa807cb9d2003c4c2fa0733a262",
+          "statement_sha256": "72a8b3da943b383165d2e47f9826775bdb69a294409114547d4be1b041c3adb2",
+          "snapshot_path": "docs/navigation/data/attribution/statements/published/def-reduced-ribbon-artin-tits-normalisers.md",
+          "snapshot_sha256": "72a8b3da943b383165d2e47f9826775bdb69a294409114547d4be1b041c3adb2",
+          "snapshot_kind": "Exact published generated Definition excerpt, distinct from article author statement and whole-source hash.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "The source fixes J and restricts objects to its Coxeter-parabolic associates. Lean first constructs an actual all-subset RibbonObject category and generated reduced subgroupoid, then uses the associate full subcategory/fixed component where needed. Do not identify the unrestricted all-subset category with the fixed-J source groupoid without that restriction.",
+            "Lean elementaryMu is total over every a and equals1 for a∈I because insert a I=I; source atomic generators and the Lean ReducedArrow.elementary constructor require a∉I. The published opposition-index endpoint is distinct from merely existential generator-permutation helpers."
+          ],
+          "http_verification": {
+            "status_code": 200,
+            "requested_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-reduced-ribbon-artin-tits-normalisers",
+            "final_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-reduced-ribbon-artin-tits-normalisers",
+            "canonical_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-reduced-ribbon-artin-tits-normalisers",
+            "observed_at_utc": "2026-11-14T13:39:35.221573+00:00",
+            "html_sha256": "f16596c6c316bf84c7aebaa5c98fcdd1d717ea7a73fbf5fe5b81d776caea2e57",
+            "html_snapshot_path": "docs/navigation/data/attribution/http/def-reduced-ribbon-artin-tits-normalisers.html.gz",
+            "h1_values": [
+              "Reduced ribbon groupoid"
+            ],
+            "item_title_matches_h1": true,
+            "statement_heading_found": true,
+            "public_statement_text": "Let Γ Γ be a finite-rank spherical Coxeter diagram, meaning that its Coxeter group W W is finite, with vertex set Γ 0 Γ 0 ​ . Let A A be its Artin–Tits group and fix J ⊆ Γ 0 J ⊆ Γ 0 ​ . For I ⊆ Γ 0 I ⊆ Γ 0 ​ , write W I W I ​ for the subgroup generated by the simple reflections indexed by I I . An associate of J J is a subset I I for which W I W I ​ is conjugate to W J W J ​ in W W . Let R ′ ( J ) R ′ ( J ) be the ribbon groupoid: its objects are the associates of J J , and an arrow I → K I → K is an element β ∈ A β ∈ A with A I + β = β A K + A I + ​ β = β A K + ​ , tagged with its source and target. Here A I + A I + ​ is the submonoid generated by the standard Artin generators indexed by I I . Composition is multiplication from left to right. For an associate I I and a ∈ Γ 0 ∖ I a ∈ Γ 0 ​ ∖ I , put T = I ∪ { a } T = I ∪ { a } . Let w T w T ​ be the longest element of W T W T ​ , let ι T : T → T ι T ​ : T → T be the opposition permutation defined by w T α i = − α ι T ( i ) w T ​ α i ​ = − α ι T ​ ( i ) ​ on the simple roots, and put K = T ∖ { ι T ( a ) } K = T ∖ { ι T ​ ( a )} . If Δ L Δ L ​ denotes the positive reduced-word lift in A A of the longest element of W L W L ​ , the elementary ribbon is μ a , I = Δ I − 1 Δ T μ a , I ​ = Δ I − 1 ​ Δ T ​ , regarded as an arrow I → K I → K of R ′ ( J ) R ′ ( J ) . The reduced ribbon groupoid R ( J ) R ( J ) is the subgroupoid of R ′ ( J ) R ′ ( J ) with all the same objects whose arrows are finite composable products of the arrows μ a , I μ a , I ​ and their inverses, including empty products as identities. Equivalently, it is the smallest subgroupoid of R ′ ( J ) R ′ ( J ) containing every object and every such elementary ribbon arrow.",
+            "public_statement_text_sha256": "31b61a6e929fd328aecf5aeebc6a7cfc83ceeec8c308f1b70068e82ac192e781",
+            "local_math_fragments": 38,
+            "verification_limits": "HTTP200 canonical item URL/title checked. Entire statement prose (excluding internal-link labels that the site resolves to titles) and ordered MathML source-formula renderings checked. Exact source/snapshots retained; no proof correctness review.",
+            "local_prose_excluding_resolved_link_labels_matches_public_in_order": true,
+            "mathml_presentation_matches_source_formula_sequence": true,
+            "mathml_display_mode_only_differences": [],
+            "public_mathml_count": 38,
+            "local_math_fragment_count": 38,
+            "mathml_render_errors": [],
+            "mathml_check_method": "Render exact local source TeX with current independent app KaTeX; compare ordered MathML presentation subtrees after removing TeX annotation metadata, as production does.",
+            "html_snapshot_compression": "gzip",
+            "compressed_html_sha256": "a6445f78004088b0cc7c1e6a46ee07640d02d66792cfdd1f240dfe22b9310305",
+            "uncompressed_html_sha256": "f16596c6c316bf84c7aebaa5c98fcdd1d717ea7a73fbf5fe5b81d776caea2e57",
+            "resolved_link_label_note": "Internal source links labeled by item ID render with the target item title; final prose comparison excludes those rewritten labels."
+          }
+        },
+        {
+          "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-ribbon-generators-artin-tits-normalisers",
+          "item_id": "def-ribbon-generators-artin-tits-normalisers",
+          "original_label": "Positive elementary ribbon elements",
+          "public_status": "published",
+          "source_excerpt": "Let $\\Gamma$ be a spherical Coxeter diagram, meaning that its Coxeter group $W$ is finite, with vertex set $\\Gamma_0$ and associated Artin–Tits group $A$. Let $A^+$ be the submonoid of $A$ generated by the standard Artin generators. For $J\\subseteq\\Gamma_0$, let $w_J$ be the longest element of the standard parabolic subgroup $W_J$, and let $\\Delta_J$ be its positive reduced-word lift in $A$.\n\nLet $I\\subseteq\\Gamma_0$ and $a\\in I^c=\\Gamma_0\\setminus I$. Write $I+a=I\\cup\\{a\\}$, and let $[I,a]$ be the vertex set of the connected component containing $a$ in the diagram induced on $I+a$. Write $[I,a]-a=[I,a]\\setminus\\{a\\}$. The **positive elementary ribbon element** associated to $(a,I)$ is\n\n$$\\mu_{a,I}=\\Delta_{[I,a]-a}^{-1}\\Delta_{[I,a]}\\in A^+.$$\n\nEquivalently, $\\mu_{a,I}=\\Delta_I^{-1}\\Delta_{I+a}$. Inverses and products in these expressions are taken in $A$.",
+          "source_sha256": "dff7b33529b1c08b30bbbdb952c7b130066eeea013ea5f172743a94bed3f15cb",
+          "statement_sha256": "7ef49111187b24e2a675b5ed220064e2b219ac2f171c856cbc227555ee59063e",
+          "snapshot_path": "docs/navigation/data/attribution/statements/published/def-ribbon-generators-artin-tits-normalisers.md",
+          "snapshot_sha256": "7ef49111187b24e2a675b5ed220064e2b219ac2f171c856cbc227555ee59063e",
+          "snapshot_kind": "Exact published generated Definition excerpt, distinct from article author statement and whole-source hash.",
+          "mapping_status": "related-only",
+          "limits": [
+            "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+            "Lean elementaryMu is total over every a and equals1 for a∈I because insert a I=I; source atomic generators and the Lean ReducedArrow.elementary constructor require a∉I. The published opposition-index endpoint is distinct from merely existential generator-permutation helpers.",
+            "The source connected-component formula and named opposition endpoint are cited as source definition context; no full equivalence is asserted by this addendum."
+          ],
+          "http_verification": {
+            "status_code": 200,
+            "requested_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-ribbon-generators-artin-tits-normalisers",
+            "final_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-ribbon-generators-artin-tits-normalisers",
+            "canonical_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-ribbon-generators-artin-tits-normalisers",
+            "observed_at_utc": "2026-11-14T13:39:36.753462+00:00",
+            "html_sha256": "ba07df4ac92de0832d3807c2d3c57abac721780e5835dbb510880d38bada519b",
+            "html_snapshot_path": "docs/navigation/data/attribution/http/def-ribbon-generators-artin-tits-normalisers.html.gz",
+            "h1_values": [
+              "Positive elementary ribbon elements"
+            ],
+            "item_title_matches_h1": true,
+            "statement_heading_found": true,
+            "public_statement_text": "Let Γ Γ be a spherical Coxeter diagram, meaning that its Coxeter group W W is finite, with vertex set Γ 0 Γ 0 ​ and associated Artin–Tits group A A . Let A + A + be the submonoid of A A generated by the standard Artin generators. For J ⊆ Γ 0 J ⊆ Γ 0 ​ , let w J w J ​ be the longest element of the standard parabolic subgroup W J W J ​ , and let Δ J Δ J ​ be its positive reduced-word lift in A A . Let I ⊆ Γ 0 I ⊆ Γ 0 ​ and a ∈ I c = Γ 0 ∖ I a ∈ I c = Γ 0 ​ ∖ I . Write I + a = I ∪ { a } I + a = I ∪ { a } , and let [ I , a ] [ I , a ] be the vertex set of the connected component containing a a in the diagram induced on I + a I + a . Write [ I , a ] − a = [ I , a ] ∖ { a } [ I , a ] − a = [ I , a ] ∖ { a } . The positive elementary ribbon element associated to ( a , I ) ( a , I ) is μ a , I = Δ [ I , a ] − a − 1 Δ [ I , a ] ∈ A + . μ a , I ​ = Δ [ I , a ] − a − 1 ​ Δ [ I , a ] ​ ∈ A + . Equivalently, μ a , I = Δ I − 1 Δ I + a μ a , I ​ = Δ I − 1 ​ Δ I + a ​ . Inverses and products in these expressions are taken in A A .",
+            "public_statement_text_sha256": "861106f475b0f489984e7b5d36d33487f222c48d87fc0aa247bf17b2fa8d8a66",
+            "local_math_fragments": 22,
+            "verification_limits": "HTTP200 canonical item URL/title checked. Entire statement prose (excluding internal-link labels that the site resolves to titles) and ordered MathML source-formula renderings checked. Exact source/snapshots retained; no proof correctness review.",
+            "local_prose_excluding_resolved_link_labels_matches_public_in_order": true,
+            "mathml_presentation_matches_source_formula_sequence": true,
+            "mathml_display_mode_only_differences": [],
+            "public_mathml_count": 22,
+            "local_math_fragment_count": 22,
+            "mathml_render_errors": [],
+            "mathml_check_method": "Render exact local source TeX with current independent app KaTeX; compare ordered MathML presentation subtrees after removing TeX annotation metadata, as production does.",
+            "html_snapshot_compression": "gzip",
+            "compressed_html_sha256": "97b8198f3c8dcfd381d3493daf997d533d5a443d8990fdacd559c1cf4bc9e235",
+            "uncompressed_html_sha256": "ba07df4ac92de0832d3807c2d3c57abac721780e5835dbb510880d38bada519b",
+            "resolved_link_label_note": "Internal source links labeled by item ID render with the target item title; final prose comparison excludes those rewritten labels."
+          }
+        }
+      ],
+      "differences": [
+        "Lean defines the standard braid-presentation Artin group, projection and its kernel. The original §2.2 and Alphabeta Artin item first define Artin/pure groups topologically; the general all-types topological-definition/presentation equivalence is not separately formalized here. The actual finite-Coxeter relative-space fundamental-group and exact-diagram identifications proved in milestone4 are retained.",
+        "The source fixes J and restricts objects to its Coxeter-parabolic associates. Lean first constructs an actual all-subset RibbonObject category and generated reduced subgroupoid, then uses the associate full subcategory/fixed component where needed. Do not identify the unrestricted all-subset category with the fixed-J source groupoid without that restriction.",
+        "Lean elementaryMu is total over every a and equals1 for a∈I because insert a I=I; source atomic generators and the Lean ReducedArrow.elementary constructor require a∉I. The published opposition-index endpoint is distinct from merely existential generator-permutation helpers."
+      ],
+      "limits": [
+        "The source is spherical; the actual Lean reduced construction here assumes Finite M.Group and retains arbitrary index universes, including empty/full subsets.",
+        "Generation is genuine finite composition/inversion of actual outside μ labels, not a definition by normalizer quotient.",
+        "CategoryTheory.End uses reverse multiplication relative to the literal Artin-label loop subgroup; the existing explicit opposite bridges are preserved.",
+        "Related definition context only; no additional literal full Lemma5.9 standard-path classification or source groupoid identity is claimed."
+      ]
+    }
+  ],
+  "new_http_identity_receipt_path": "docs/navigation/data/important-source-addendum-evidence/def-artin-pure-lifts-artin-tits-normalisers-receipt.json",
+  "new_http_identity_receipt_sha256": "7985349fd962162502d4792175d42efe131a6f2dc9bf11f9a25f11133c46628c",
+  "scope_limits": [
+    "Two curated important-definition topics only; supplements but does not modify accepted51 source assignments.",
+    "Original author passages, current Alphabeta definitions, and Lean definitions are distinct sources.",
+    "Exact direct item URL, original label and printed/PDF page are supplied for every assigned context.",
+    "No original-paper mirror, proof-source edits, provider/config edits, portal changes, Lean execution or CI runs.",
+    "Live HTTP check concerns item identity and rendered definition/source fidelity, not correctness of generated proof."
+  ]
+}

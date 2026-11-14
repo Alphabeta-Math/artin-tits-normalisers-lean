@@ -1,0 +1,3 @@
+Every nonempty connected small groupoid $\mathcal G$ has a universal connected groupoid covering $F:\widetilde{\mathcal G}\to\mathcal G$. For every object $x$ of $\mathcal G$, the deck transformation group $\operatorname{Deck}(F)$ is isomorphic to the vertex group $\mathcal G_x$.
+
+Here a groupoid is a category in which every morphism is invertible; connected means that any two objects are joined by a morphism. The vertex group at $x$ consists of the morphisms from $x$ to itself. A covering has a unique lift of each base morphism from each prescribed object over its source. It is universal when all upstairs vertex groups are trivial. A deck transformation is an automorphism of the upstairs groupoid whose composite with $F$ equals $F$.

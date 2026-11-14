@@ -1,0 +1,493 @@
+{
+  "ArtinSequences.Landmark4": {
+    "accepted_source_sha256": "73c1fa143ac1967c44a8f3464c6d6fb1cfe2bc70b30c0b5954c0e494b4ca32b6",
+    "audit_records": [
+      {
+        "canonical_declarations": 3,
+        "canonical_names": [
+          "ArtinNormalisers.Sequence4.landmark_4",
+          "ArtinNormalisers.Sequence4.theorem_6_7",
+          "ArtinNormalisers.Sequence4.theorem_6_7_positive"
+        ],
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/run.json",
+            "sha256": "71799b02fa9d4128db82e988e12489fa8449eb61384e08c1b2a753bb5e48712c"
+          },
+          "run_id": 43573814974,
+          "source_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+          "source_tree_hashes_checked": 13,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "ProjectAudit.lean"
+          ],
+          "command_index": 23,
+          "exit_code": 0,
+          "label": "project-statements-axioms-physical",
+          "log": {
+            "archive_member": "logs/project-statements-axioms-physical.log",
+            "container_sha256": "a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/landmark4-verification.zip",
+            "sha256": "b513f449ddd91e609a528235f4f587a99b8d80a70c09d567f90deca24114bf9d"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/verification.json",
+            "sha256": "4fc286c0849d7bede42fab6d5702abd52bc98a42449e34ce10d3cc1b18c3ca83"
+          }
+        },
+        "coverage_record": {
+          "archive_member": "project-coverage.json",
+          "container_sha256": "a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424",
+          "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/landmark4-verification.zip",
+          "sha256": "29abf311d0979770ee6fa3c4e6f9712cc02885ec5563798d017131ab2196dd97"
+        },
+        "packet": "sequences",
+        "physical_census_matches_navigation_inventory": true,
+        "physical_declaration_occurrences": 3,
+        "physical_names": [
+          "ArtinNormalisers.Sequence4.landmark_4",
+          "ArtinNormalisers.Sequence4.theorem_6_7",
+          "ArtinNormalisers.Sequence4.theorem_6_7_positive"
+        ],
+        "scope": "packet-audit",
+        "status": "passed"
+      }
+    ],
+    "canonical_navigation_inventory": {
+      "json_pointer": "/modules/ArtinSequences.Landmark4",
+      "path": "docs/navigation/data/source-inventory.json",
+      "sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120"
+    },
+    "classification": "source-defining",
+    "direct_imports": [
+      "ArtinSequences.PositiveConventions"
+    ],
+    "exact_kernel_replay_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/run.json",
+            "sha256": "71799b02fa9d4128db82e988e12489fa8449eb61384e08c1b2a753bb5e48712c"
+          },
+          "run_id": 43573814974,
+          "source_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+          "source_tree_hashes_checked": 13,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "env",
+            "lean",
+            "--run",
+            "/home/runner/work/artin-tits-normalisers-lean/artin-tits-normalisers-lean/sequences/evidence/landmark4-ci/ExactReplay.lean",
+            "ArtinSequences.Landmark4"
+          ],
+          "command_index": 48,
+          "exit_code": 0,
+          "label": "replay-005-ArtinSequences.Landmark4",
+          "log": {
+            "archive_member": "logs/replay-005-ArtinSequences.Landmark4.log",
+            "container_sha256": "a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/landmark4-verification.zip",
+            "sha256": "d02cf6ebef1ff4932c23874892ac425d3d6e55ed02642beac6cc1cddff4002bc"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/verification.json",
+            "sha256": "4fc286c0849d7bede42fab6d5702abd52bc98a42449e34ce10d3cc1b18c3ca83"
+          }
+        },
+        "evidence_format": "structured-exact-module-result",
+        "generation": "historical-accepted-packet",
+        "packet": "sequences",
+        "physical_census_matches_navigation_inventory": true,
+        "reported_result": {
+          "module": "ArtinSequences.Landmark4",
+          "physical_declarations_expected": 3,
+          "result": {
+            "declarations": 3,
+            "exact": true,
+            "kernel_replay_passed": true,
+            "module": "ArtinSequences.Landmark4"
+          }
+        },
+        "scope": "module-specific",
+        "status": "passed"
+      }
+    ],
+    "exact_replay_status": "explicit-module-replay-recorded",
+    "final_ci": {
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+        "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+      },
+      "artifact": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+        "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+      },
+      "conclusion": "success",
+      "fresh_individual_replay": false,
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+        "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+      },
+      "module_scope": "inherited-project-import",
+      "record": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      },
+      "run_id": 43599459363,
+      "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "source_hash_verified_in_archive": true,
+      "source_transport": {
+        "manifest": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+          "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+        },
+        "reassembly_verification": {
+          "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+          "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+        },
+        "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+      },
+      "source_tree_hashes_checked": 153,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+      "verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      }
+    },
+    "historical_ci": {
+      "conclusion": "success",
+      "metadata": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/run.json",
+        "sha256": "71799b02fa9d4128db82e988e12489fa8449eb61384e08c1b2a753bb5e48712c"
+      },
+      "run_id": 43573814974,
+      "source_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+      "source_tree_hashes_checked": 13,
+      "status": "completed",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974"
+    },
+    "independent_reviews": [
+      {
+        "path": "sequences/reviews/landmark4-a.json",
+        "sha256": "9a5f0b64e2a8e87c652d03c2d7dcb15e3e4737ada9a41c47149dae5d24e72235"
+      },
+      {
+        "path": "sequences/reviews/landmark4-a.md",
+        "sha256": "d73e6884941a96f93d71780048b713299b497db7f71715741a19857ce7f3c2ec"
+      },
+      {
+        "path": "sequences/reviews/landmark4-b.json",
+        "sha256": "1d40f3babe1f048105df036bc9d185173abb8dafc911a0e42d8385a65404951a"
+      },
+      {
+        "path": "sequences/reviews/landmark4-b.md",
+        "sha256": "f6052c84303c9b9b3f7ba53fb9eec2def8d7fc7b6f9ff56bb668bbb6631b2ece"
+      }
+    ],
+    "module": "ArtinSequences.Landmark4",
+    "package": "sequences",
+    "physical_declaration_count": 3,
+    "source_inventory": {
+      "path": "sequences/source-inventory.json",
+      "sha256": "7048b5d1bb1926eb499bdad1bd27fd76ca7c47299bd5f92a2416ec3f1c808a2c"
+    },
+    "source_path": "sequences/ArtinSequences/Landmark4.lean",
+    "source_science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+    "source_science_tree_hash_checked": true,
+    "source_written_declaration_count": 3,
+    "successful_compilation_records": [
+      {
+        "ci": {
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/run.json",
+            "sha256": "71799b02fa9d4128db82e988e12489fa8449eb61384e08c1b2a753bb5e48712c"
+          },
+          "run_id": 43573814974,
+          "source_commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+          "source_tree_hashes_checked": 13,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974"
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinSequences",
+            "ArtinSequences.AllBasepoints",
+            "ArtinSequences.BasepointTransport",
+            "ArtinSequences.EndpointMonodromy",
+            "ArtinSequences.KernelComparison",
+            "ArtinSequences.Landmark4",
+            "ArtinSequences.NormalizedExactness",
+            "ArtinSequences.PositiveConventions",
+            "ArtinSequences.RibbonVertex",
+            "ArtinSequences.StandardComparison",
+            "ArtinSequences.StandardMonodromy",
+            "ArtinSequences.StandardPureComparison",
+            "ArtinSequences.VertexComparison",
+            "ArtinSequenceVendor.FundamentalGroup.BasepointChange",
+            "TauCeti.Analysis.SpecialFunctions.Trigonometric.Angle",
+            "TauCeti.Analysis.SpecialFunctions.Trigonometric.Bounds",
+            "TauCeti.GroupTheory.Coxeter.Artin",
+            "TauCeti.GroupTheory.Coxeter.Basic",
+            "TauCeti.GroupTheory.Coxeter.BraidEquivalence",
+            "TauCeti.GroupTheory.Coxeter.Dihedral",
+            "TauCeti.GroupTheory.Coxeter.Geometric.Basic",
+            "TauCeti.GroupTheory.Coxeter.Matsumoto",
+            "TauCeti.GroupTheory.Coxeter.Parabolic",
+            "TauCeti.GroupTheory.Coxeter.StrongExchange",
+            "TauCeti.AlgebraicTopology.EilenbergMacLane.Covering",
+            "ArtinLandmarkVendor.Geometric.RankTwo",
+            "ArtinLandmarkVendor.Geometric.Sign",
+            "OAI.Topology.ArtinGroups.Harmonic.SphericalPositiveCommonMultiple",
+            "OAI.Topology.ArtinGroups.Harmonic.RestrictionHomRange",
+            "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Colimit",
+            "ArtinChamberVendor.AlgebraicTopology.FundamentalGroupoid.Cech.Map"
+          ],
+          "command_index": 22,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "archive_member": "logs/build-exact-frontier.log",
+            "container_sha256": "a2bc0b10687306b76715193ad12b2a2385d74dad6e4751faf177b4159772d424",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/landmark4-verification.zip",
+            "sha256": "8064edfdfedbbeec019f0aea45deacab600bf154df3500a8a9dc373dbabad420"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43573814974/verification.json",
+            "sha256": "4fc286c0849d7bede42fab6d5702abd52bc98a42449e34ce10d3cc1b18c3ca83"
+          }
+        },
+        "packet": "sequences",
+        "scope": "module-explicit-target",
+        "status": "passed"
+      },
+      {
+        "ci": null,
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinDeligne",
+            "ArtinDeligne.AcyclicCarrierFamilies",
+            "ArtinDeligne.CanonicalCarriers",
+            "ArtinDeligne.CanonicalCells",
+            "ArtinDeligne.CanonicalCoverWeights",
+            "ArtinDeligne.CanonicalGarsideMap",
+            "ArtinDeligne.CanonicalPacketCarriers",
+            "ArtinDeligne.CarrierDescent",
+            "ArtinDeligne.ContractibleExtension",
+            "ArtinDeligne.FiniteAncestry",
+            "ArtinDeligne.GarsideFolds",
+            "ArtinDeligne.GarsideShifts",
+            "ArtinDeligne.GarsideTopology",
+            "ArtinDeligne.GarsideTubeCarriers",
+            "ArtinDeligne.GarsideWeights",
+            "ArtinDeligne.GlobalNullity",
+            "ArtinDeligne.HereditaryWeights",
+            "ArtinDeligne.IncomingJoins",
+            "ArtinDeligne.IncomingMeets",
+            "ArtinDeligne.IncomingOrder",
+            "ArtinDeligne.LiftedCanonicalCover",
+            "ArtinDeligne.LiftedPartition",
+            "ArtinDeligne.LiftedTubeComponents",
+            "ArtinDeligne.LiftedTubeLabels",
+            "ArtinDeligne.LiftedTubes",
+            "ArtinDeligne.MonotoneSignInterpolation",
+            "ArtinDeligne.NumerableCarrierHomotopy",
+            "ArtinDeligne.NumerableWeights",
+            "ArtinDeligne.PacketCarrierCompatibility",
+            "ArtinDeligne.ParametricExtension",
+            "ArtinDeligne.ParametricFaceGluing",
+            "ArtinDeligne.RelativeGarsideCarriers",
+            "ArtinDeligne.SheetIntervals",
+            "ArtinDeligne.SimpleTransport",
+            "ArtinDeligne.Theorem18",
+            "ArtinDeligne.UniversalCoverComparison",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+            "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+            "ArtinDeligneVendor.Topology.Realization.Cylinder",
+            "ArtinDeligneVendor.Topology.Homotopy.Extension",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+            "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+            "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+            "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+            "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+            "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+          ],
+          "command_index": 24,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "path": "deligne/evidence/theorem18-local-final/logs/build-exact-frontier.log",
+            "sha256": "b14cba3a04e55997f6e19455e88ebcefb248625b815399493a6c39407d698d93"
+          },
+          "record": {
+            "path": "deligne/evidence/theorem18-local-final/verification.json",
+            "sha256": "38924ff028d9cf900ec491beba65f937c282734559ac6a0669525793f92be042"
+          }
+        },
+        "note": "Imported dependency; not among the final 64 individual replay targets.",
+        "packet": "deligne",
+        "scope": "inherited-import-only-in-final-local-build",
+        "status": "passed-local"
+      },
+      {
+        "ci": {
+          "archive_verification": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+            "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+          },
+          "artifact": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+            "sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b"
+          },
+          "conclusion": "success",
+          "metadata": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/run.json",
+            "sha256": "fe6729ebdcd03ce64b569a676f434421d1ccf8488794fa22863ab1e12049510f"
+          },
+          "run_id": 43599459363,
+          "source_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+          "source_transport": {
+            "manifest": {
+              "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+              "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+            },
+            "reassembly_verification": {
+              "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+              "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+            },
+            "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423"
+          },
+          "source_tree_hashes_checked": 153,
+          "status": "completed",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+          "verification": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+            "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+          }
+        },
+        "command": {
+          "argv": [
+            "lake",
+            "build",
+            "ArtinDeligne",
+            "ArtinDeligne.AcyclicCarrierFamilies",
+            "ArtinDeligne.CanonicalCarriers",
+            "ArtinDeligne.CanonicalCells",
+            "ArtinDeligne.CanonicalCoverWeights",
+            "ArtinDeligne.CanonicalGarsideMap",
+            "ArtinDeligne.CanonicalPacketCarriers",
+            "ArtinDeligne.CarrierDescent",
+            "ArtinDeligne.ContractibleExtension",
+            "ArtinDeligne.FiniteAncestry",
+            "ArtinDeligne.GarsideFolds",
+            "ArtinDeligne.GarsideShifts",
+            "ArtinDeligne.GarsideTopology",
+            "ArtinDeligne.GarsideTubeCarriers",
+            "ArtinDeligne.GarsideWeights",
+            "ArtinDeligne.GlobalNullity",
+            "ArtinDeligne.HereditaryWeights",
+            "ArtinDeligne.IncomingJoins",
+            "ArtinDeligne.IncomingMeets",
+            "ArtinDeligne.IncomingOrder",
+            "ArtinDeligne.LiftedCanonicalCover",
+            "ArtinDeligne.LiftedPartition",
+            "ArtinDeligne.LiftedTubeComponents",
+            "ArtinDeligne.LiftedTubeLabels",
+            "ArtinDeligne.LiftedTubes",
+            "ArtinDeligne.MonotoneSignInterpolation",
+            "ArtinDeligne.NumerableCarrierHomotopy",
+            "ArtinDeligne.NumerableWeights",
+            "ArtinDeligne.PacketCarrierCompatibility",
+            "ArtinDeligne.ParametricExtension",
+            "ArtinDeligne.ParametricFaceGluing",
+            "ArtinDeligne.RelativeGarsideCarriers",
+            "ArtinDeligne.SheetIntervals",
+            "ArtinDeligne.SimpleTransport",
+            "ArtinDeligne.Theorem18",
+            "ArtinDeligne.UniversalCoverComparison",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+            "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+            "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+            "ArtinDeligneVendor.Topology.Realization.Cylinder",
+            "ArtinDeligneVendor.Topology.Homotopy.Extension",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+            "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+            "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+            "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+            "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+            "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+            "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+            "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+            "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+          ],
+          "command_index": 24,
+          "exit_code": 0,
+          "label": "build-exact-frontier",
+          "log": {
+            "archive_member": "logs/build-exact-frontier.log",
+            "container_sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b",
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/deligne-theorem18-verification.zip",
+            "sha256": "0d313ee57835bc44c12dceb3d3dfaeeb2485e1899d887bfdcdec9c76f46aed28"
+          },
+          "record": {
+            "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+            "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+          }
+        },
+        "note": "Successful imported dependency build; this is not a fresh individual module replay.",
+        "packet": "deligne-ci",
+        "scope": "inherited-import-only-in-final-clean-CI-build",
+        "status": "passed"
+      }
+    ]
+  }
+}

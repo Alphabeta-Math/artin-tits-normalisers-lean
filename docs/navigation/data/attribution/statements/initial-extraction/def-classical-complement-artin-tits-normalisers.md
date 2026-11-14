@@ -1,0 +1,1 @@
+Define $\mathcal X^{\mathbb C}=(\mathrm{Cone}^{\circ}\times\mathrm{Cone}^{\circ})\setminus\bigcup_{H\in\mathcal H}(H\times H)$. If $W$ is finite, the article identifies this with $(\Theta\otimes_{\mathbb R}\mathbb C)\setminus\bigcup_{H\in\mathcal H}(H\otimes_{\mathbb R}\mathbb C)$.

@@ -1,0 +1,1 @@
+Identifying same-coloured vertices of Figure 3 gives the four-object graph in Figure 4. Its nonloop generators are $st:2\to1$, $ts:1\to2$, $vt:2\to4$, $tv:4\to2$, $ut:2\to3$ and $tu:3\to2$. Its loops are $u,v$ at object $1$, $s,u$ at object $4$, and $s,v$ at object $3$. Opposite arrows are labelled by inverse elements.

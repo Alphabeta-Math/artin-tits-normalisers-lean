@@ -1,0 +1,1 @@
+Let $q$ be the morphism of [[lem-author-a7d202611130-finite-relative-longest]]. If an article morphism $w:I\to K\prime$ has both $v_{a,I}$ and $v_{b,I}$ as length-additive left divisors, then $q\preceq w$ and $q^{-1}w$ is an article morphism from the target of $q$ to $K\prime$.

@@ -1,0 +1,1 @@
+The action of $N(W,J)$ in the $D_4$ example has four chamber orbits, one for each singleton associate of $J$, with eight chambers per orbit. Equal colours in Figures 2–3 mean equal second label: black is $1$, red is $2$, green is $3$ and blue is $4$. The covering forgets $x$ in $(x,I)$ and fixes the morphism label.

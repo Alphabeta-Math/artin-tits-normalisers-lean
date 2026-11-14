@@ -1,0 +1,2641 @@
+{
+  "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails": {
+    "type_dependencies": [
+      {
+        "name": "HMul.hMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.RibbonPrefix",
+        "module": "ArtinHomotopy.FacePrefixes",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "source_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "MulOne.toMul",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "MulOneClass.toMulOne",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instHMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "HMul.hMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.RibbonPrefix",
+        "module": "ArtinHomotopy.FacePrefixes",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "source_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "Set.univ",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Membership.mem",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "MulOne.toMul",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "And.casesOn",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.actualPositiveParabolic",
+        "module": "ArtinRibbons.Positive",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/Positive.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/Positive.lean",
+          "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "MulOneClass.toMulOne",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "Exists.casesOn",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "And.intro",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left",
+        "module": "ArtinHomotopy.RibbonLattice",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "source_sha256": "e0d64c71aad3ecbc0cb30986cdea610c8f81fe8ca41e1df70e6feb323420de5c",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "Exists.intro",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Submonoid.instSetLike",
+        "module": "Mathlib.Algebra.Group.Submonoid.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Submonoid/Defs.lean",
+          "source_sha256": "f006e21291b2d5b2b38cdef596970d97e4136a0f22317c74aa10686a663694a6"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail",
+        "module": "ArtinHomotopy.RibbonLattice",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "source_sha256": "e0d64c71aad3ecbc0cb30986cdea610c8f81fe8ca41e1df70e6feb323420de5c",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "SetLike.instMembership",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow.positive",
+        "module": "ArtinRibbons.PositiveRibbons",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/PositiveRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/PositiveRibbons.lean",
+          "source_sha256": "addf21b6027f0bbad264890d4e4f3048888738f28175d7567a8c3d369d045e7c",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Submonoid",
+        "module": "Mathlib.Algebra.Group.Submonoid.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Submonoid/Defs.lean",
+          "source_sha256": "f006e21291b2d5b2b38cdef596970d97e4136a0f22317c74aa10686a663694a6"
+        }
+      },
+      {
+        "name": "instHMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails",
+        "module": "ArtinHomotopy.RibbonLattice",
+        "important_topic": "11-ribbon-lattice",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "source_sha256": "e0d64c71aad3ecbc0cb30986cdea610c8f81fe8ca41e1df70e6feb323420de5c",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails": {
+    "type_dependencies": [
+      {
+        "name": "HMul.hMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.RibbonPrefix",
+        "module": "ArtinHomotopy.FacePrefixes",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "source_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "MulOne.toMul",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "MulOneClass.toMulOne",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instHMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "HMul.hMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.RibbonPrefix",
+        "module": "ArtinHomotopy.FacePrefixes",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "source_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "MulOne.toMul",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "And.casesOn",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "MulOneClass.toMulOne",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "Exists.casesOn",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "And.intro",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "Exists.intro",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail",
+        "module": "ArtinHomotopy.RibbonLattice",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "source_sha256": "e0d64c71aad3ecbc0cb30986cdea610c8f81fe8ca41e1df70e6feb323420de5c",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instHMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": "11-ribbon-lattice",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail": {
+    "type_dependencies": [
+      {
+        "name": "InvOneClass.toOne",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "HMul.hMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.RibbonPrefix",
+        "module": "ArtinHomotopy.FacePrefixes",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "source_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "DivInvOneMonoid.toInvOneClass",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Group.toDivisionMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "DivisionMonoid.toDivInvOneMonoid",
+        "module": "Mathlib.Algebra.Group.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Basic.lean",
+          "source_sha256": "48a12b3df43fb8b5ea5b75677ae93a5f16f9ad9c74dba0befc2ef45b85b1eabe"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.degree",
+        "module": "ArtinRibbons.Positive",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/Positive.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/Positive.lean",
+          "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "MulOne.toMul",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "Ne",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Int",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "Int.instLTInt",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "MulOneClass.toMulOne",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.SimpleRibbon",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "LT.lt",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "One.toOfNat1",
+        "module": "Init.Data.Zero",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Zero.lean",
+          "source_sha256": "7a38aca83ffa33660079bec9c1ef03603d2ef9e1eac63572684c3ad116743978"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "OfNat.ofNat",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instHMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "ArtinNormalisers.Ribbon2.cofinalDelta",
+        "module": "ArtinRibbons.CofinalRibbons",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/CofinalRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/CofinalRibbons.lean",
+          "source_sha256": "798d2c8d57ba2b21a840e972d38c9f9fbea17b72bbe25f3570b17f3e33f0d23a",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "InvOneClass.toOne",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "HMul.hMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.RibbonPrefix",
+        "module": "ArtinHomotopy.FacePrefixes",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/FacePrefixes.lean",
+          "source_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "DivInvOneMonoid.toInvOneClass",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.degree_nonneg_of_mem_actualPositiveParabolic",
+        "module": "ArtinRibbons.Positive",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/Positive.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/Positive.lean",
+          "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Monoid.toMulOneClass",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "congrArg",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Set.univ",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject.indices",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail._proof_1_1",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.degree_eq_zero_iff_of_mem_actualPositiveParabolic",
+        "module": "ArtinRibbons.Positive",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/Positive.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/Positive.lean",
+          "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Group.toDivisionMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Artin.Group",
+        "module": "ArtinNormalisers.Artin.Basic",
+        "important_topic": "01-groups",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ArtinNormalisers/Artin/Basic.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ArtinNormalisers/Artin/Basic.lean",
+          "source_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "DivisionMonoid.toDivInvOneMonoid",
+        "module": "Mathlib.Algebra.Group.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Basic.lean",
+          "source_sha256": "48a12b3df43fb8b5ea5b75677ae93a5f16f9ad9c74dba0befc2ef45b85b1eabe"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.degree",
+        "module": "ArtinRibbons.Positive",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/Positive.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/Positive.lean",
+          "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Eq.mp",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "MulOne.toMul",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "DivInvMonoid.toMonoid",
+        "module": "Mathlib.Algebra.Group.DivInvMonoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/DivInvMonoid.lean",
+          "source_sha256": "7d4d18e9987e81a35e17574fb4e39754fb44ea75f5a09d8bc3ce0d0647e40acf"
+        }
+      },
+      {
+        "name": "Ne",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Int",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "LE.le",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.degree_mul",
+        "module": "ArtinRibbons.Positive",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/Positive.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/Positive.lean",
+          "source_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "And.casesOn",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Group.toDivInvMonoid",
+        "module": "Mathlib.Algebra.Group.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Defs.lean",
+          "source_sha256": "2862e96c66aea952864a5016bb106ca4cf043000a8915d89e24623132e12fb6c"
+        }
+      },
+      {
+        "name": "Int.instLTInt",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "instHAdd",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "MulOneClass.toMulOne",
+        "module": "Mathlib.Algebra.Group.Monoid",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Algebra/Group/Monoid.lean",
+          "source_sha256": "20508b506beff9b559f941de9cc44b1e263fc01bf70ec138ed1a5a6e3404f379"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "TauCeti.artinRelationsSet",
+        "module": "TauCeti.GroupTheory.Coxeter.Artin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "accepted for the exact recorded scope by later verification and reviews, not by historical provenance alone",
+          "active_source_path": "vendor/TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "cohort": "lemma28-algebra",
+          "repository": "https://github.com/TauCetiProject/TauCeti",
+          "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+          "selected_declaration_blocks": null,
+          "source_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "TauCeti/GroupTheory/Coxeter/Artin.lean",
+          "upstream_sha256": "de27e110c9ec1e87cbb9c97cd8a07be3cf0d00ceb36d1cb874ae358b7706fad1"
+        }
+      },
+      {
+        "name": "Exists.casesOn",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "instOfNat",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "And.left",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "HAdd.hAdd",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.SimpleRibbon",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "And.intro",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "LT.lt",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instGroupPresentedGroup",
+        "module": "Mathlib.GroupTheory.PresentedGroup",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/PresentedGroup.lean",
+          "source_sha256": "b7881b8f77a46d8c17995476944416320f805503b878edf927782ee3a1c37358"
+        }
+      },
+      {
+        "name": "Exists.intro",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Iff.mp",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Decidable.byContradiction",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Int.instAdd",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "One.toOfNat1",
+        "module": "Init.Data.Zero",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Zero.lean",
+          "source_sha256": "7a38aca83ffa33660079bec9c1ef03603d2ef9e1eac63572684c3ad116743978"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Int.decLt",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "OfNat.ofNat",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail",
+        "module": "ArtinHomotopy.RibbonLattice",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonLattice.lean",
+          "source_sha256": "e0d64c71aad3ecbc0cb30986cdea610c8f81fe8ca41e1df70e6feb323420de5c",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Not",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow.positive",
+        "module": "ArtinRibbons.PositiveRibbons",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/PositiveRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/PositiveRibbons.lean",
+          "source_sha256": "addf21b6027f0bbad264890d4e4f3048888738f28175d7567a8c3d369d045e7c",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Int.instLEInt",
+        "module": "Init.Data.Int.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Data/Int/Basic.lean",
+          "source_sha256": "3eb0cffab46abec89c702c72a12a29c0bc9b4666d82ab43c7cd79d01e4f8ea72"
+        }
+      },
+      {
+        "name": "instHMul",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail",
+        "module": "ArtinHomotopy.RibbonGcd",
+        "important_topic": "11-ribbon-lattice",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "homotopy/ArtinHomotopy/RibbonGcd.lean",
+          "source_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d",
+          "source_status": "committed exact source"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+The map $(x,I)\mapsto xC_I$ is a bijection from $\mathrm{Cham}(J)$ to the chambers of $(\mathrm{Cone}(J)^\circ,\mathcal H^J)$.

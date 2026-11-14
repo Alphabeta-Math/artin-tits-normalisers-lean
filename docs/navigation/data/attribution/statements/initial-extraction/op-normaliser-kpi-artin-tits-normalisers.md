@@ -1,0 +1,1 @@
+For every Coxeter group $W$ and $J\subseteq\Gamma_0$, do the algebraic and geometric normaliser sequences identify, with $N(A,J)\cong\pi_1(\mathcal X_J^{\mathbb C}/N(W,J))$ and $N(P,J)\cong\pi_1(\mathcal X_J^{\mathbb C})$, and are these two spaces respectively $K(N(A,J),1)$ and $K(N(P,J),1)$? This is the assertion of Theorem 1.8 without the finiteness hypothesis.

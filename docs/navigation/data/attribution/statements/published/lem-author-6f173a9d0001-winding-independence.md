@@ -1,0 +1,1 @@
+For $M$ and the meridians $\gamma_k$ supplied by the isolated-meridian disk construction, the classes $[\gamma_k]$ are linearly independent in the singular homology group $H_1(M;\mathbb Z)$. Here $H_1$ is the group of singular one-cycles modulo boundaries. In particular it contains a subgroup isomorphic to $\bigoplus_{k\in\mathbb Z}\mathbb Z$.

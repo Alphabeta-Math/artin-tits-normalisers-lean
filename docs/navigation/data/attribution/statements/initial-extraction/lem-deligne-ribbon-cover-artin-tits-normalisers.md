@@ -1,0 +1,1 @@
+Assuming spherical type, $\mathcal G:\mathcal D\to\mathcal R$ is a groupoid covering. Each elementary ribbon lifts to the corresponding simple wall crossing from a chosen chamber; the two sides of a relation (5.8) lift to equal morphisms of $\mathcal D^+$ with that fixed source.

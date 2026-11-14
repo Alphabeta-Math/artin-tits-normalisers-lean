@@ -1,0 +1,1 @@
+The Tits cone is a $W$-invariant convex cone, $\overline C$ is a fundamental domain, and $(\mathrm{Cone}^{\circ},\mathcal H)$ is locally finite. Moreover $W$ is finite if and only if $\mathrm{Cone}=\Theta$.

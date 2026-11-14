@@ -1,0 +1,3 @@
+Let $(W,S)$ be an arbitrary-rank Coxeter system in its standard real root representation, with simple roots $\Pi=\{\alpha_i:i\in\Gamma_0\}$ and length $\ell$. Fix $J\subseteq\Gamma_0$, put $A_J=\{\alpha_j:j\in J\}$ and $W_J=\langle s_j:j\in J\rangle$, and write $M=\operatorname{Norm}_W(W_J)$ and $N_J=\{n\in W:nA_J=A_J\}$. These are the conventions of [[def-normaliser-complement-artin-tits-normalisers]]; $N_J$ is a subgroup of $M$.
+
+For every $g\in M$, the coset $gW_J$ has a unique minimum-length element $d$, and $dA_J=A_J$. In particular $d\in N_J$.

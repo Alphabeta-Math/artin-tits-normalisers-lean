@@ -1,0 +1,1 @@
+Under the finite-relative-root hypotheses of [[lem-author-a7d202611130-finite-relative-longest]], the article generators $v_{a,I},v_{b,I}$ exist. For $c\in\{a,b\}$, $N(v_{c,I})=\Phi_{I+c}^+\setminus\Phi_I^+$, this set contains $\alpha_c$, and $v_{c,I}\preceq q$, where $u\preceq x$ means $\ell(x)=\ell(u)+\ell(u^{-1}x)$. In particular the two generators are distinct.

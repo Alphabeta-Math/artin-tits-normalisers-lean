@@ -1,0 +1,1 @@
+When $\Gamma$ is spherical, $(\mathrm{Cone}(J)^\circ,\mathcal H^J)=(\Theta_J,\mathcal H^J)$ is a finite simplicial arrangement. Its Deligne groupoid is a Garside groupoid and is equivalent to $\pi_1(\mathcal X_J^{\mathbb C})$. The article limits these cited Deligne properties to the finite simplicial setting.

@@ -1,0 +1,1 @@
+In the example $\Gamma=D_4$, with trivalent vertex $2$ joined to $1,3,4$, take $J=\{2\}$. Write $s=s_1$, $t=s_2$, $u=s_3$, $v=s_4$. Thus $t$ corresponds to the central vertex, $V$ is the geometric representation and $\Theta=V^*$.

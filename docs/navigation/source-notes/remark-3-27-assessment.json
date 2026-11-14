@@ -1,0 +1,18 @@
+{
+  "counterexample": "J empty, infinite dihedral Coxeter system m_st=infinity; actual complement is open-quadrant times C minus Z, with infinitely many independent H1 meridians.",
+  "finite_type_formalization_affected": false,
+  "independent_assessment_sha256": "6289627e32e3de862dedb555cdc1fe4380860dd16c59dfaef436163cf7ce0476",
+  "kind": "root-original-article-source-assessment",
+  "original_label": "Remark 3.27",
+  "pdf_page": 13,
+  "portal_content_changed": false,
+  "printed_page": 13,
+  "proof_status": "Independently verified classical argument; not a Lean formalization and not a logical supplier to the finite-type proof.",
+  "root_assessed_at": "2026-11-14T14:22:43.833181+00:00",
+  "source": "https://arxiv.org/pdf/2509.21915v3#page=13",
+  "source_note_sha256": "46d60e5ee53b5acb2ec55c77d14b822e29df2b69b41b35907441691ea453fa63",
+  "status": "confirmed",
+  "tags": [
+    "over strong conclusions"
+  ]
+}

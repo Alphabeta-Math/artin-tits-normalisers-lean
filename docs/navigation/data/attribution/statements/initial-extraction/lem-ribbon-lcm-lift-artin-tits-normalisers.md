@@ -1,0 +1,1 @@
+In spherical type, for an associate $I$ and $a,b\in I^c$ in the notation of (5.8) and Lemma 4.15, the two expressions of $\mu_{a,I}\vee\mu_{b,I}$ are positive lifts of the two standard expressions of $v_{a,b,I}$. Thus $m=n$, $\pi(\mu_{a,I}\vee\mu_{b,I})=v_{a,b,I}$, and $v_{a,b,I}$ is the join of $v_{a,I},v_{b,I}$ for left weak Bruhat order.

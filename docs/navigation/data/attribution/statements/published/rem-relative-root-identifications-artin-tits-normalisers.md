@@ -1,0 +1,1 @@
+The map from positive $J$-roots to the relative arrangement $\mathcal H^J$, taking $\alpha$ to $H_\alpha\cap\Theta_J$, need not be injective. In particular, distinct positive $J$-roots can have the same restricted hyperplane.

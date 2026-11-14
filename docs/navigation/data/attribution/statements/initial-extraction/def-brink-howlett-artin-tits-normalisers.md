@@ -1,0 +1,1 @@
+The groupoid $\mathcal{BH}(J)$ has the associates $I$ of $J$ as objects, and $\mathrm{Hom}_{\mathcal{BH}}(I,K)=\{x\in W:\{\alpha_i:i\in I\}=\{x\alpha_k:k\in K\}\}$. Composition is multiplication in $W$ on the right.

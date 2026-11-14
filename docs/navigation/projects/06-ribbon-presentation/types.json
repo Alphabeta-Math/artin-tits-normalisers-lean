@@ -1,0 +1,74 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 85,
+          "end_line": 214,
+          "end_utf16": 85,
+          "start_column": 0,
+          "start_line": 209,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 54,
+          "end_line": 211,
+          "end_utf16": 54,
+          "start_column": 18,
+          "start_line": 211,
+          "start_utf16": 18
+        }
+      },
+      "docstring": "The canonical identification, with the actual quotient projection as\nits underlying map, of reduced ribbon loops and the normalizer quotient.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      (X : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M) →\n        MulEquiv.{u_1, u_1} (↥(ArtinNormalisers.Ribbon2.reducedRibbonLoops.{u_1} M X))\n          (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M\n            (ArtinNormalisers.Ribbon2.RibbonObject.indices.{u_1} X))",
+      "module": "ArtinRibbons.NormalizerSplitting",
+      "name": "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 96632,
+      "type_expression_sha256": "4946cd54200c79ac8358424cccfd549224ec2cbaae87ee5be97460115a6007c3",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Ribbon2.landmark_2_groupoid_presentation": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 30,
+          "end_line": 55,
+          "end_utf16": 30,
+          "start_column": 0,
+          "start_line": 46,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 40,
+          "end_line": 49,
+          "end_utf16": 40,
+          "start_column": 8,
+          "start_line": 49,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The same chosen relations present the actual signed groupoid: every\nassignment to any groupoid satisfying only these primitive relations has\nexactly one genuine functor extension.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  {C : Type u_2} [inst_1 : CategoryTheory.Groupoid.{u_3, u_2} C]\n  (D : ArtinNormalisers.Ribbon2.RibbonGeneratorData.{u_2, u_3, u_1} M C),\n  ArtinNormalisers.Ribbon2.RibbonGeneratorData.RespectsLcm.{u_2, u_3, u_1} D →\n    ExistsUnique.{max (max (u_1 + 1) (u_2 + 1)) (u_3 + 1)}\n      fun\n        (F :\n          CategoryTheory.Functor.{u_1, u_3, u_1, u_2}\n            (↑(ArtinNormalisers.Ribbon2.ActualReducedRibbonGroupoid.{u_1} M)) C) =>\n      (Eq.{max (u_1 + 1) (u_2 + 1)} (CategoryTheory.Functor.obj.{u_1, u_3, u_1, u_2} F)\n          fun (X : ↑(ArtinNormalisers.Ribbon2.ActualReducedRibbonGroupoid.{u_1} M)) =>\n          ArtinNormalisers.Ribbon2.RibbonGeneratorData.obj.{u_2, u_3, u_1} D ↑X) ∧\n        ∀ (X : ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M) (a : I)\n          (ha : a ∉ ArtinNormalisers.Ribbon2.RibbonObject.indices.{u_1} X),\n          HEq.{u_3 + 1}\n            (CategoryTheory.Functor.map.{u_1, u_3, u_1, u_2} F\n              (ArtinNormalisers.Ribbon2.actualAtomicHom.{u_1} M X a ha))\n            (ArtinNormalisers.Ribbon2.RibbonGeneratorData.atom.{u_2, u_3, u_1} D X a ha)",
+      "module": "ArtinRibbons.Landmark2",
+      "name": "ArtinNormalisers.Ribbon2.landmark_2_groupoid_presentation",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 29438,
+      "type_expression_sha256": "053ba32249383c5e9ee9a89bcfdbfd97314b5ccd87011127ba73babb5baa4d40",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1",
+        "u_2",
+        "u_3"
+      ]
+    }
+  }
+}

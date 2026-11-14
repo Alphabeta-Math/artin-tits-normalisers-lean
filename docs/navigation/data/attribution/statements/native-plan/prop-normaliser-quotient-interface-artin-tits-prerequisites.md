@@ -1,0 +1,5 @@
+Let $H$ be a subgroup of a group $G$. Its normalizer is $N_G(H)=\{g\in G:gHg^{-1}=H\}$. Then $H$ is normal in $N_G(H)$, so the quotient group $N_G(H)/H$ exists.
+
+Let $p:G\to Q$ be a group homomorphism and put $K=p(H)$. The rule $\bar p(gH)=p(g)K$ defines a homomorphism from $N_G(H)/H$ to $N_Q(K)/K$. Its kernel is $\{aH:a\in\ker p\cap N_G(H)\}$, and its image is $p(N_G(H))/K$. In particular, $\bar p$ is surjective if and only if $p(N_G(H))=N_Q(K)$.
+
+More generally, if $\pi:E\to B$ is a surjective group homomorphism with kernel $M$ and $C\leq E$, then $\pi|_C:C\to B$ is an isomorphism exactly when $E=MC$ and $M\cap C=\{1\}$. Under these conditions $E$ is isomorphic to $M\rtimes B$ by a map compatible with the inclusion of $M$ and the quotient map, with action induced by conjugation through $(\pi|_C)^{-1}$.

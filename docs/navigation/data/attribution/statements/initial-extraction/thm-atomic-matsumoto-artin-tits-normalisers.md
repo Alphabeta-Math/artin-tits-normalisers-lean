@@ -1,0 +1,1 @@
+For every Coxeter diagram, every $J\subseteq\Gamma_0$, associates $I,K$ of $J$ and $w\in\mathrm{Hom}_{\mathcal{BH}}(I,K)$, any two standard expressions of $w$ are related by a finite sequence of atomic braid relations.

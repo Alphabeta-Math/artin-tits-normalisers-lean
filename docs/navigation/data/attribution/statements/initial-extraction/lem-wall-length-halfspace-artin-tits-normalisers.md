@@ -1,0 +1,1 @@
+For adjacent $(x,I)$ and $\omega_a(x,I)$, $\ell(xv_{a,I})=\ell(x)+\ell(v_{a,I})$ if and only if $(e,J)$ and $(x,I)$ lie in the same half-space of $H_{x\alpha_a}$.

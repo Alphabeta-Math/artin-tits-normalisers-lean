@@ -1,0 +1,1 @@
+In spherical type the covers $\mathcal G$ and $\mathcal Q$ are isomorphic via $\mathcal G^\prime$, with $\mathcal G=\mathcal G^\prime\circ\mathcal Q$. Hence $\mathcal G$ is a normal cover with deck group isomorphic to $N(W,J)$.

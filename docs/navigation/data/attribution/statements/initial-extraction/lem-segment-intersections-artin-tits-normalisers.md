@@ -1,0 +1,1 @@
+For $f,g\in\mathrm{Cone}$, separation is equivalent to a hyperplane meeting $(f,g)$ in one point without containing the segment. With $f\in\overline C$, $g\in w\overline C$ and $h\in(f,g)$, the article bounds $|\{H_\alpha:H_\alpha\cap(f,g)=\{h\}\}|$ by $\ell(w^{-1})$. It also asserts finiteness of $\{h\in(f,g):H\cap[f,g]=\{h\}\text{ for some }H\in\mathcal H\}$.

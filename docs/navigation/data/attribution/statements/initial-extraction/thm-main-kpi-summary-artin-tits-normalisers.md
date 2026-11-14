@@ -1,0 +1,1 @@
+Let $W$ be finite and $J\subseteq\Gamma_0$. For $x\in\mathcal X_J^{\mathbb C}$, the geometric and algebraic normaliser exact sequences (1.5) and (1.6) are isomorphic, giving $N(A,J)\cong\pi_1(\mathcal X_J^{\mathbb C}/N(W,J),\overline x)$ and $N(P,J)\cong\pi_1(\mathcal X_J^{\mathbb C},x)$. The quotient and the complement are respectively classifying spaces for these groups.

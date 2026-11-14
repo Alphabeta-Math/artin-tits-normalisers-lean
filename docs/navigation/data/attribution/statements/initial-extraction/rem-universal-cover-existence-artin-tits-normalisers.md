@@ -1,0 +1,1 @@
+Every connected groupoid has a universal groupoid covering; its deck group is isomorphic to a vertex group of the original groupoid.

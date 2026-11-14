@@ -1,0 +1,1 @@
+A path $p=((x_1,I_1),\ldots,(x_m,I_m))$ is a finite sequence of adjacent chambers, with source first chamber, target last chamber, and length $m-1$. Paths with matching endpoints concatenate as $p*q$. A length-one path is a simple wall crossing; if $p=\omega_{a_1,I_1}*\cdots*\omega_{a_{m-1},I_{m-1}}$, set $v_p=v_{a_1,I_1}\cdots v_{a_{m-1},I_{m-1}}\in W$.

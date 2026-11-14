@@ -1,0 +1,3 @@
+Let $A$ be an invertible $n\times n$ real matrix such that $A$ and $A^{-1}$ are entrywise nonnegative. Then $A=PD$, where $P$ is a permutation matrix and $D$ is a diagonal matrix with strictly positive diagonal entries. Here a permutation matrix has exactly one entry $1$ in each row and each column and all other entries zero.
+
+Suppose in addition that $A$ is the change-of-basis matrix from an ordered basis $\mathcal B=(b_1,\ldots,b_n)$ to an ordered basis $\mathcal C=(c_1,\ldots,c_n)$ of the canonical Coxeter representation, and that all these basis vectors are roots. Then $D=I_n$, so $A$ is a permutation matrix. The case $n=0$ is allowed.

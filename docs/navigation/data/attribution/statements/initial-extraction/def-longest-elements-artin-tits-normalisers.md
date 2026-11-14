@@ -1,0 +1,1 @@
+If $W_J$ is finite, write $w_J$ for its unique longest element and $\Delta_J=\sigma_{w_J}\in A_J$. The permutation $\iota_J:J\to J$ is determined by $w_J\alpha_j=-\alpha_{\iota_J(j)}$.

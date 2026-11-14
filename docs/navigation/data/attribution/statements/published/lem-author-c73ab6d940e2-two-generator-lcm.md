@@ -1,0 +1,1 @@
+In a spherical positive Artin monoid, for distinct standard generators $a,b$ and $m=m_{ab}$, their least common multiple for left divisibility is the element represented by the two alternating words of length $m$. These are exactly its two positive word representatives.

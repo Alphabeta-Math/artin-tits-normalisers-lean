@@ -1,0 +1,1 @@
+The map from positive $J$-roots to $\mathcal H^J$ need not be injective: distinct positive roots $\alpha,\alpha^\prime$ can satisfy $H_\alpha\cap\Theta_J=H_{\alpha^\prime}\cap\Theta_J$.

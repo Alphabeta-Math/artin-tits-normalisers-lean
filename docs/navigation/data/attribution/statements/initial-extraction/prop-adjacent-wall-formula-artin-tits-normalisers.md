@@ -1,0 +1,1 @@
+For adjacent $(x,I),(y,K)\in\mathrm{Cham}(J)$ there are unique $a\in I^c$, $a^\prime\in K^c$ with $I+a=K+a^\prime$. Their common wall is $\overline{xC_{I+a}}=\overline{yC_{K+a^\prime}}$, $W_{[I,a]}=W_{[K,a^\prime]}$ is finite, and $\omega_{a,I}(x,I)=(y,K)$, $\omega_{a^\prime,K}(y,K)=(x,I)$. In particular $v_{a,I}v_{a^\prime,K}=v_{a^\prime,K}v_{a,I}=e$.

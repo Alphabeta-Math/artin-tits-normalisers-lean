@@ -1,0 +1,1 @@
+The gallery category $P$ of a finite central simplicial arrangement has a finite-type atomic categorical Garside structure with $\phi(A)=-A$, $\phi(g)=-g$ and $\Delta_A=u(A,-A)$. Its simple arrows are exactly the minimal gallery classes.

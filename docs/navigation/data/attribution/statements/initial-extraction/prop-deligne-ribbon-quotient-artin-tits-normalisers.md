@@ -1,0 +1,1 @@
+In spherical type $\mathcal G$ factors through $\mathcal Q$ to an isomorphism $\mathcal G^\prime:\mathcal D/N(W,J)\to\mathcal R$. The map on objects identifies chamber orbits with associates of $J$.

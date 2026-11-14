@@ -1,0 +1,1 @@
+A standard expression of $w\in\mathrm{Hom}_{\mathcal{BH}}(I,K)$ is a product $w=v_{a_1,I_1}\cdots v_{a_m,I_m}$ of composable wall-crossing morphisms with $I_1=I$ and $\ell(w)=\sum_{i=1}^m\ell(v_{a_i,I_i})$. Its standard-expression length is $m$, denoted $\ell_{\mathcal{BH}}(w)$ once independence of the expression is established.

@@ -1,0 +1,1 @@
+The groupoid completion of a small category $\mathcal G^+$ formally inverts every morphism and has a canonical functor $\kappa:\mathcal G^+\to\mathcal G$. Every functor from $\mathcal G^+$ to a groupoid factors through $\kappa$.

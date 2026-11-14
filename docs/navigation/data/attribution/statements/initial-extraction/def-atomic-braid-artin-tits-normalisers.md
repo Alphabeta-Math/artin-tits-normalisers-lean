@@ -1,0 +1,1 @@
+Under the hypotheses of Lemma 4.15, equating the two standard expressions of $v_{a,b,I}$ is an atomic braid relation.

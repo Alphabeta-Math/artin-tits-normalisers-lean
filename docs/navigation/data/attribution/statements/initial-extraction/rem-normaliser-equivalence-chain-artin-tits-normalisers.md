@@ -1,0 +1,1 @@
+The middle isomorphism in (6.8) comes from the chain of equivalences $N(A,J)\simeq\mathcal R\xrightarrow{(\mathcal G^\prime)^{-1}}\mathcal D/N(W,J)\xrightarrow{\overline p}\pi_1(\mathcal X_J^{\mathbb C}/N(W,J))\simeq\pi_1(\mathcal X_J^{\mathbb C}/N(W,J),\overline x)$. The first equivalence uses Theorem 5.6 and the last passes to a vertex group.

@@ -1,0 +1,5 @@
+Let $(S,m)$ be a Coxeter matrix on a finite set, $W$ its presented Coxeter group, and $\ell(w)$ the minimum length of a word in $S$ representing $w$. The prefix order on $W$ is $u\preceq v$ exactly when $v=ux$ for some $x\in W$ with $\ell(v)=\ell(u)+\ell(x)$. An upper bound of $A\subseteq W$ is an element above every member of $A$; a join is an upper bound lying below every upper bound. Dually, a meet is a lower bound lying above every lower bound.
+
+Every nonempty subset of $W$ has a meet, and a subset has a join exactly when it has an upper bound. If $W$ is finite, this order is a lattice, meaning that every pair has a meet and join, with top element $w_S$, the unique element of maximum length in $W$.
+
+For $I\subseteq S$, put $W_I=\langle s:s\in I\rangle$. The set $I$ has a join exactly when $W_I$ is finite; then its join is $w_I$, the unique element of maximum length in $W_I$. This includes $I=\varnothing$, for which $w_I=1$. Thus a join in an infinite system is asserted only when its set is bounded above.

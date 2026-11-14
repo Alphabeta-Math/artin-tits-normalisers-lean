@@ -1,0 +1,1 @@
+A groupoid is a category in which every morphism is invertible; the article assumes groupoids small and connected. Its vertex group at $x$ is $\mathcal G_x=\mathrm{End}_{\mathcal G}(x)$. Composition is read left to right. Vertex groups at different objects are isomorphic.

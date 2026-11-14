@@ -1,0 +1,1 @@
+Set $A=\pi_1(\mathcal X^{\mathbb C}/W,\overline Z)$ and $P=\pi_1(\mathcal X^{\mathbb C},Z)$, with quotient $\pi:A\to W$. Its set-theoretic section $w\mapsto\sigma_w$ is the positive lift; the Artin generators are $\sigma_i=\sigma_{s_i}$. The article notes that $A$ also has its Artin presentation.

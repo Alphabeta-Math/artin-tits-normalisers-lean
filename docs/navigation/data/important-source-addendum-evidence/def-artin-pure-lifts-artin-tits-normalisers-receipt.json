@@ -1,0 +1,26 @@
+{
+  "status_code": 200,
+  "requested_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+  "final_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+  "canonical_url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-artin-pure-lifts-artin-tits-normalisers",
+  "observed_at_utc": "2026-11-14T14:50:21.566323+00:00",
+  "h1_values": [
+    "Artin–Tits group, pure subgroup and positive lifts"
+  ],
+  "item_title_matches_h1": true,
+  "statement_heading_found": true,
+  "html_snapshot_path": "docs/navigation/data/important-source-addendum-evidence/def-artin-pure-lifts-artin-tits-normalisers.html.gz",
+  "html_snapshot_compression": "gzip",
+  "compressed_html_sha256": "de8de8bebe57a8bcc67511aaff8f751077731998c2c13d65474e59e4463e2ac4",
+  "uncompressed_html_sha256": "fee860fd3b19e4775021017fc0da1d57492b32436dc16b96c9c92af6db7ab2bd",
+  "public_statement_text": "Let ( W , S ) ( W , S ) be a Coxeter system with S = { s i : i ∈ Γ 0 } S = { s i ​ : i ∈ Γ 0 ​ } finite, and let X C X C be its classical complexified hyperplane complement. Choose Z ∈ X C Z ∈ X C and write Z ‾ Z for its orbit in X C / W X C / W . The Artin–Tits group is A = π 1 ( X C / W , Z ‾ ) A = π 1 ​ ( X C / W , Z ) , the group of based loop-homotopy classes in the quotient. The pure Artin–Tits group is P = π 1 ( X C , Z ) P = π 1 ​ ( X C , Z ) , identified with its image in A A under the covering map. Let π : A → W π : A → W send a loop class to the unique w w for which its lift starting at Z Z ends at w Z w Z . Fix an isomorphism over W W from the presented Artin group to A A supplied by the fundamental-group identification. The presented group has generators a s a s ​ for s ∈ S s ∈ S and, for distinct s , t s , t with finite m ( s , t ) = ord ⁡ ( s t ) m ( s , t ) = ord ( s t ) , the relation equating the two alternating words of length m ( s , t ) m ( s , t ) beginning with a s a s ​ and a t a t ​ respectively. Write σ s ∈ A σ s ​ ∈ A for the image of a s a s ​ , and σ i = σ s i σ i ​ = σ s i ​ ​ . For a reduced expression w = s 1 ⋯ s r w = s 1 ​ ⋯ s r ​ , meaning an expression of minimum length among words in S S representing w w , define the positive lift σ w = σ s 1 ⋯ σ s r σ w ​ = σ s 1 ​ ​ ⋯ σ s r ​ ​ ; the empty product is the identity. Thus w ↦ σ w w ↦ σ w ​ is a set-theoretic section of π π .",
+  "public_statement_text_sha256": "022d0be1b4c0cd850b1894e842cd4c059fe2d6ab9969fa64befb062fb892f810",
+  "local_prose_excluding_resolved_link_labels_matches_public_in_order": true,
+  "mathml_presentation_matches_source_formula_sequence": true,
+  "mathml_display_mode_only_differences": [],
+  "public_mathml_count": 31,
+  "local_math_fragment_count": 31,
+  "formula_verification_path": "docs/navigation/data/important-source-addendum-evidence/def-artin-pure-lifts-artin-tits-normalisers-formula-verification.json.gz",
+  "formula_verification_sha256": "dbafcaa18240702f6162188ad174ec94083e94344f8fb8459beebb06b9011512",
+  "verification_limits": "Actual direct item HTTP200, canonical URL/title, complete definition prose in order and ordered independent source-TeX KaTeX MathML presentation trees checked. No mathematical review of generated proof or new Lean/CI verification."
+}

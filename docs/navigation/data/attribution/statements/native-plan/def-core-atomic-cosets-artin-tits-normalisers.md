@@ -1,0 +1,5 @@
+Let $(W,S)$ be a Coxeter system with $S=\{s_i:i\in\Gamma_0\}$. For $J\subseteq\Gamma_0$, let $W_J=\langle s_j:j\in J\rangle$ be its standard parabolic subgroup. For $I,K\subseteq\Gamma_0$ and $x\in W$, the $(I,K)$-double coset of $x$ is the set $W_IxW_K=\{uxv:u\in W_I,\ v\in W_K\}$. The set $W_Ix=\{ux:u\in W_I\}$ is the right coset of $W_I$ represented by $x$, and $xW_K=\{xv:v\in W_K\}$ is the left coset of $W_K$ represented by $x$.
+
+The $(I,K)$-double coset $W_IxW_K$ is **core** if $W_Ix=W_IxW_K=xW_K$ as sets. No finiteness condition is imposed on $W_I$ or $W_K$ in this definition.
+
+For $L\subseteq\Gamma_0$ with $W_L$ finite, write $w_L$ for its unique longest element, meaning the element of maximal Coxeter length in $W_L$. For $a,a'\in L$, write $L-a=L\setminus\{a\}$ and $L-a'=L\setminus\{a'\}$. An **atomic double coset**, or **atom**, is a core double coset of the form $W_{L-a}w_LW_{L-a'}$ for such $L,a,a'$. The core condition is part of the definition; it is not asserted for arbitrary choices of $a,a'$.

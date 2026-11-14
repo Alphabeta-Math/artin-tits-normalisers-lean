@@ -1,0 +1,1 @@
+For the invariant cover of *Natural finite Salvetti good covers*, assume the finite diagonal action on $M$ is free. Every cover member satisfies $U(F,C)\cap gU(F,C)=\varnothing$ for $g\ne1$.

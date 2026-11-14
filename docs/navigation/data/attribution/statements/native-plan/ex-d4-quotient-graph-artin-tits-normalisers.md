@@ -1,0 +1,3 @@
+Use the $D_4$ Coxeter system with central vertex $2$, $J=\{2\}$, and simple reflections $s=s_1$, $t=s_2$, $u=s_3$, $v=s_4$. The Brink–Howlett groupoid is the quotient of the universal chamber groupoid by the normaliser quotient $N(W,J)=\operatorname{Norm}_W(W_J)/W_J$. Its generating graph has the four objects $1,2,3,4$, where $i$ denotes the singleton $\{i\}$.
+
+Identifying the same-coloured vertices of the universal chamber graph gives this four-object graph. Its nonloop generators are $st:2\to1$, $ts:1\to2$, $vt:2\to4$, $tv:4\to2$, $ut:2\to3$ and $tu:3\to2$. Its loops are $u,v$ at object $1$, $s,u$ at object $4$, and $s,v$ at object $3$. Opposite arrows are labelled by inverse elements.

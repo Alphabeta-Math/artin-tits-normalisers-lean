@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.actualUniversalCover_isAspherical": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 80,
+          "end_line": 59,
+          "end_utf16": 80,
+          "start_column": 0,
+          "start_line": 52,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 41,
+          "end_line": 54,
+          "end_utf16": 41,
+          "start_column": 8,
+          "start_line": 54,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Asphericity of the original path-class universal cover, at every point,\nfor the arbitrary finite Coxeter group and arbitrary parabolic subset.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [inst : Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (q : ArtinNormalisers.Asphericity5.ComplementUniversalCover.{u_1} M J),\n  TauCeti.IsAspherical.{u_1} (ArtinNormalisers.Asphericity5.ComplementUniversalCover.{u_1} M J) q",
+      "module": "ArtinDeligne.UniversalCoverComparison",
+      "name": "ArtinNormalisers.Deligne5.actualUniversalCover_isAspherical",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 17778,
+      "type_expression_sha256": "29176086b70dcdedd151725cdb6b659d9db5ad011b20ffbeba30600540bbbb17",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.actualComplement_isAspherical": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 45,
+          "end_line": 97,
+          "end_utf16": 45,
+          "start_column": 0,
+          "start_line": 90,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 37,
+          "end_line": 92,
+          "end_utf16": 37,
+          "start_column": 8,
+          "start_line": 92,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Actual complement asphericity at every point, transferred through its\nproved surjective genuine universal-cover endpoint projection.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (x : ArtinNormalisers.Theorem18.Complement.{u_1} M J),\n  TauCeti.IsAspherical.{u_1} (ArtinNormalisers.Theorem18.Complement.{u_1} M J) x",
+      "module": "ArtinDeligne.Theorem18",
+      "name": "ArtinNormalisers.Deligne5.actualComplement_isAspherical",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 116605,
+      "type_expression_sha256": "293d1ce4fbb14da547c3f30283b5601da185916d4f67a304fa7f4530f9761590",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Deligne5.actualOrbit_isAspherical": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 41,
+          "end_line": 106,
+          "end_utf16": 41,
+          "start_column": 0,
+          "start_line": 99,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 32,
+          "end_line": 101,
+          "end_utf16": 32,
+          "start_column": 8,
+          "start_line": 101,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Actual orbit-space asphericity at every orbit point, using the original\nnormalizer quotient covering and its proved surjectivity.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (y : ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J),\n  TauCeti.IsAspherical.{u_1} (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J) y",
+      "module": "ArtinDeligne.Theorem18",
+      "name": "ArtinNormalisers.Deligne5.actualOrbit_isAspherical",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 16282,
+      "type_expression_sha256": "51397268d137cfb166c1211647ad1c6b577ecf86d7e3255845ab04a28ff2e5e0",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

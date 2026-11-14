@@ -1,0 +1,1 @@
+The article asserts that Corollary 4.26 generalizes [24, Theorem 1.60] to the “uniformly weakly Dynkin setting,” answering the question in [24, Remark 1.62]; it refers there for precise details.

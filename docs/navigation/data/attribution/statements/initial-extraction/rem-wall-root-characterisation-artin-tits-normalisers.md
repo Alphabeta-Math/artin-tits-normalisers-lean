@@ -1,0 +1,1 @@
+With $K=I+a-\iota_{[I,a]}(a)$, the article alternatively characterizes $v_{a,I}$ as the unique element satisfying $v_{a,I}(\Phi^+_{I+a}\setminus\Phi^+_K)\subseteq\Phi^-_K$ and $v_{a,I}(\Phi^+_K)\subseteq\Phi^+_{I+a}$.

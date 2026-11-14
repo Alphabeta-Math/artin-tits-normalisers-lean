@@ -1,0 +1,105 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Theorem18.Complement": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 72,
+          "end_line": 228,
+          "end_utf16": 72,
+          "start_column": 0,
+          "start_line": 227,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 14,
+          "end_line": 228,
+          "end_utf16": 14,
+          "start_column": 4,
+          "start_line": 228,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "The actual complement, carrying its inherited product/subspace topology.",
+      "elaborated_type": "{I : Type u_1} → CoxeterMatrix.{u_1} I → Set.{u_1} I → Type u_1",
+      "module": "ArtinNormalisers.Theorem18.Geometry",
+      "name": "ArtinNormalisers.Theorem18.Complement",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 106359,
+      "type_expression_sha256": "376699728c59fe865d608ed634ff0ed4ad6d064b7c3f4b44247fe7a0b8f070b3",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Theorem18.OrbitSpace": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 86,
+          "end_line": 288,
+          "end_utf16": 86,
+          "start_column": 0,
+          "start_line": 286,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 14,
+          "end_line": 287,
+          "end_utf16": 14,
+          "start_column": 4,
+          "start_line": 287,
+          "start_utf16": 4
+        }
+      },
+      "docstring": "The source's actual topological orbit space `X_J / N(W,J)`.",
+      "elaborated_type": "{I : Type u_1} → CoxeterMatrix.{u_1} I → Set.{u_1} I → Type u_1",
+      "module": "ArtinNormalisers.Theorem18.NormalizerAction",
+      "name": "ArtinNormalisers.Theorem18.OrbitSpace",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 106359,
+      "type_expression_sha256": "376699728c59fe865d608ed634ff0ed4ad6d064b7c3f4b44247fe7a0b8f070b3",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Theorem18.orbitProjection": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 89,
+          "end_line": 296,
+          "end_utf16": 89,
+          "start_column": 0,
+          "start_line": 294,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 33,
+          "end_line": 295,
+          "end_utf16": 33,
+          "start_column": 18,
+          "start_line": 295,
+          "start_utf16": 18
+        }
+      },
+      "docstring": "The actual orbit map; the target carries precisely its quotient topology.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    (J : Set.{u_1} I) →\n      ArtinNormalisers.Theorem18.Complement.{u_1} M J →\n        ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J",
+      "module": "ArtinNormalisers.Theorem18.NormalizerAction",
+      "name": "ArtinNormalisers.Theorem18.orbitProjection",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 20292,
+      "type_expression_sha256": "1aedf94f727257ae1e0507d359074ce3d6038e7fede036e39d7ed09f3f30c511",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

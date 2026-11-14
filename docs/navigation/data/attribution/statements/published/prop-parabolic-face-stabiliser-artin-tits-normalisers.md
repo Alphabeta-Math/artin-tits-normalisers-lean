@@ -1,0 +1,1 @@
+Let $(W,S)$ be the Coxeter system, $V$ its geometric representation with simple-root basis $(\alpha_i)_{i\in\Gamma_0}$, and $\Theta=V^*$ with its contragredient $W$-action. The index set may be infinite. For every $J\subseteq\Gamma_0$ and every $\varphi\in C_J$, the stabilizer $\{w\in W:w\varphi=\varphi\}$ is exactly the standard parabolic subgroup $W_J$.

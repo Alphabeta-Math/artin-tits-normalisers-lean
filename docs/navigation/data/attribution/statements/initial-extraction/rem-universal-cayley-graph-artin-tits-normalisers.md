@@ -1,0 +1,1 @@
+The universal wall groupoid’s generating graph is the right Cayley graph for $\mathcal{BH}$ with respect to the wall generators $v_{a,I}$. For $J=\varnothing$, it is exactly the Cayley graph of $W=\mathcal{BH}$ with generators $s_a=v_{a,\varnothing}$.

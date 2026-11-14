@@ -1,0 +1,1 @@
+For $p=((x_1,I_1),\ldots,(x_m,I_m))$, the path is geodesic if and only if $\ell(v_p)=\sum_{i=1}^{m-1}\ell(v_{a_i,I_i})$.

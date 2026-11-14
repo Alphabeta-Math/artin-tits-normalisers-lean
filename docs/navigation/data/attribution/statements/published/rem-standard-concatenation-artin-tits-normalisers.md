@@ -1,0 +1,1 @@
+Let $y:I\to K$ and $z:K\to L$ be composable morphisms in the Brink–Howlett groupoid, and put $x=yz$. If $\ell(x)=\ell(y)+\ell(z)$, then concatenating any chosen standard expression $\mathbf y$ for $y$ with any chosen standard expression $\mathbf z$ for $z$ gives a standard expression $\mathbf y\mathbf z$ for $x$. This includes empty expressions for identity morphisms.

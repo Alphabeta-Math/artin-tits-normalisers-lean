@@ -1,0 +1,1 @@
+The functor $\mathcal D\to\widetilde{\mathcal{BH}}$ is identity on objects and sends a path $p:(x,I)\to(y,K)$ to the unique morphism $x^{-1}y=v_p$. The functor $\mathcal R\to\mathcal{BH}$ is induced by $A\to W$.

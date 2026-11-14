@@ -1,0 +1,1 @@
+In spherical type define the assignment $\mathcal G$ by $\mathcal G(x,I)=I$ on objects and $\mathcal G(\omega_{a,I})=\mu_{a,I}$ on generating arrows from $\mathcal D$ to $\mathcal R$. Write $\mathcal Q:\mathcal D\to\mathcal D/N(W,J)$ for the quotient functor under the normaliser action.

@@ -1,0 +1,1 @@
+Let $M$ be the positive monoid of a spherical Artin system with finite standard generating set $S$ and Coxeter matrix $(m_{st})$. Fix distinct $a,b\in S$ with braid parameter $m=m_{ab}<\infty$. Every word supported in $\{a,b\}$ of length less than $m$ is its sole positive word representative in $M$.

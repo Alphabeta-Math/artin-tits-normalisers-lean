@@ -1,0 +1,5 @@
+In the $D_4$ example, vertex $2$ is central, $J=\{2\}$, and $W_J=\langle s_2\rangle$. The normaliser is $\operatorname{Norm}_W(W_J)=\{g\in W:gW_Jg^{-1}=W_J\}$ and $N(W,J)=\operatorname{Norm}_W(W_J)/W_J$. A relative chamber has a unique label $(x,I)$ satisfying $W_Jx=xW_I$ and with $x$ of minimum length in $xW_I$; it is the face translate $xC_I$.
+
+The induced action of $N(W,J)$ on these chambers is free: a quotient element fixing a chamber is the identity. Two chambers are in the same orbit, meaning that one is the image of the other under a quotient element, exactly when their second labels agree. There are four orbits, indexed by $I=\{1\},\{2\},\{3\},\{4\}$, each containing eight chambers.
+
+The article's paragraph instead says that the action of each $g\in\operatorname{Norm}_W(W_J)$ is free. The quotient formulation above makes the intended freeness precise: the nonidentity element $s_2$ acts trivially on every relative chamber.

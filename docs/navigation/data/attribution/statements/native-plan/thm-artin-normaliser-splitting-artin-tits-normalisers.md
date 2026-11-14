@@ -1,0 +1,3 @@
+Let $\Gamma$ be a finite-rank spherical Coxeter diagram, meaning that its Coxeter group $W$ is finite, and let $J$ be a subset of its vertex set. Let $A$ be the associated Artin–Tits group and $A_J$ its standard parabolic subgroup. Let $\mathcal R(J)$ be the reduced ribbon groupoid, and write $\mathcal R_J$ for its vertex group at $J$, consisting of its arrows from $J$ to $J$ under composition.
+
+The normaliser $\operatorname{Norm}_A(A_J)$ is the internal semidirect product $A_J\rtimes\mathcal R_J$: each normaliser element has a unique expression $pr$ with $p\in A_J$ and $r\in\mathcal R_J$. Consequently the quotient homomorphism restricts to an isomorphism $\mathcal R_J\cong N(A,J)$, where $N(A,J)=\operatorname{Norm}_A(A_J)/A_J$.

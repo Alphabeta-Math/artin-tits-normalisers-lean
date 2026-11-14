@@ -1,0 +1,39 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.corollary_6_14": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 46,
+          "end_line": 129,
+          "end_utf16": 46,
+          "start_column": 0,
+          "start_line": 123,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 22,
+          "end_line": 125,
+          "end_utf16": 22,
+          "start_column": 8,
+          "start_line": 125,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Corollary 6.14 at every actual orbit basepoint, using an actual preimage;\nthere is no new fiber-nonemptiness or simple-connectedness hypothesis.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)]\n  (J : Set.{u_1} I) (y : ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J),\n  TauCeti.IsEilenbergMacLaneSpaceOne.{u_1, u_1}\n    (ArtinNormalisers.Artin.normalizerQuotient.{u_1} M J)\n    (ArtinNormalisers.Theorem18.OrbitSpace.{u_1} M J) y",
+      "module": "ArtinDeligne.Theorem18",
+      "name": "ArtinNormalisers.Deligne5.corollary_6_14",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 157184,
+      "type_expression_sha256": "31ee2d4dc9a7d5df55017789ca8ba6ea72ed3cafbb866d2bcae464e0dcca1bfe",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

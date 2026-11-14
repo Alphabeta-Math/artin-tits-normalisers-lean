@@ -1,0 +1,1 @@
+In spherical type $\mu_{a,I}$ is the positive lift of $v_{a,I}$, its reduced positive expression belongs to $A^+$, and $\mu_{a,I}\in\mathrm{Hom}_{\mathcal R^\prime}(I,I+a-\iota_{[I,a]}(a))$.

@@ -1,0 +1,1 @@
+When $J=\varnothing$, $v_{a,\varnothing}=s_a$. The element $v_{a,b,\varnothing}$ exists exactly when $s_as_b$ has finite order $m$, and is the alternating product $s_as_bs_a\cdots=s_bs_as_b\cdots$ with $m$ letters on each side. The Brink–Howlett presentation then specializes to the Coxeter presentation.

@@ -1,0 +1,1 @@
+The source states that this $D_4$, $J=\{2\}$ configuration appears for $cD_4$ singularities with three curves meeting at one point in the setting of threefold flopping contractions. It also appears in the cited treatment of core double cosets.

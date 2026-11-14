@@ -1,0 +1,39 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Artin.lemma_2_8": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 41,
+          "end_line": 141,
+          "end_utf16": 41,
+          "start_column": 0,
+          "start_line": 130,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 17,
+          "end_line": 136,
+          "end_utf16": 17,
+          "start_column": 8,
+          "start_line": 136,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "**Lemma 2.8, algebraic form.** For every Coxeter matrix and every set of\nindices, the canonical projection gives the short exact sequence\n`1 → N(P,J) → N_A(A_J)/A_J → N_W(W_J)/W_J → 1`.\nHere short exactness means injectivity of the subgroup inclusion, equality of\nits range with the kernel, and surjectivity of the quotient homomorphism.\nThere are no finiteness, sphericality, or normalizer-surjectivity premises.",
+      "elaborated_type": "∀ {I : Type u_3} (M : CoxeterMatrix.{u_3} I) (J : Set.{u_3} I),\n  Function.Injective.{u_3 + 1, u_3 + 1}\n      ⇑(ArtinNormalisers.Artin.pureNormalizerInclusion.{u_3} M J) ∧\n    Eq.{u_3 + 1}\n        (MonoidHom.range.{u_3, u_3} (ArtinNormalisers.Artin.pureNormalizerInclusion.{u_3} M J))\n        (MonoidHom.ker.{u_3, u_3} (ArtinNormalisers.Artin.normalizerQuotientMap.{u_3} M J)) ∧\n      Function.Surjective.{u_3 + 1, u_3 + 1}\n        ⇑(ArtinNormalisers.Artin.normalizerQuotientMap.{u_3} M J)",
+      "module": "ArtinNormalisers.Artin.ExactSequence",
+      "name": "ArtinNormalisers.Artin.lemma_2_8",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 85189,
+      "type_expression_sha256": "95463667bfec6682fb19ced1e76b83f27481a4a15142dec51c6d7431ff4d2265",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_3"
+      ]
+    }
+  }
+}

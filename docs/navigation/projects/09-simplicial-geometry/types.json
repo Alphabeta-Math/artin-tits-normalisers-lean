@@ -1,0 +1,72 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Asphericity5.actual_arrangement_simplicial_hypotheses": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 56,
+          "end_line": 75,
+          "end_utf16": 56,
+          "start_column": 0,
+          "start_line": 56,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 48,
+          "end_line": 58,
+          "end_utf16": 48,
+          "start_column": 8,
+          "start_line": 58,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "The complete actual finite/central/proper/closed/codimension-one and\nstrict-basis chamber hypotheses, independently of the desired conclusion.",
+      "elaborated_type": "∀ {I : Type u_1} (M : CoxeterMatrix.{u_1} I) (J : Set.{u_1} I)\n  [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)],\n  Set.Finite.{u_1} (ArtinNormalisers.Theorem18.restrictedArrangement.{u_1} M J) ∧\n    (∀ (H : Submodule.{0, u_1} ℝ ↥(ArtinNormalisers.Theorem18.relativeSubspace.{u_1} J)),\n        Membership.mem.{u_1, u_1} (ArtinNormalisers.Theorem18.restrictedArrangement.{u_1} M J) H →\n          Ne.{u_1 + 1} H Top.top.{u_1} ∧\n            IsClosed.{u_1} ↑H ∧\n              Membership.mem.{u_1, u_1} H 0 ∧\n                Eq.{1} (HAdd.hAdd.{0, 0, 0} (Module.finrank.{0, u_1} ℝ ↥H) 1)\n                  (Module.finrank.{0, u_1} ℝ\n                    ↥(ArtinNormalisers.Theorem18.relativeSubspace.{u_1} J))) ∧\n      ∀ (C : ArtinNormalisers.Chamber3.ActualChamber.{u_1} M J),\n        ∃ (n : ℕ) (b :\n          Module.Basis.{0, 0, u_1} (Fin n) ℝ\n            ↥(ArtinNormalisers.Theorem18.relativeSubspace.{u_1} J)),\n          Eq.{u_1 + 1} (ArtinNormalisers.Chamber3.Chamber.region.{u_1, u_1} C)\n              (Set.ofPred.{u_1} fun (x : ↥(ArtinNormalisers.Theorem18.relativeSubspace.{u_1} J)) =>\n                ∀ (i : Fin n), LT.lt.{0} 0 (((Module.Basis.repr.{0, 0, u_1} b) x) i)) ∧\n            Eq.{u_1 + 1} (closure.{u_1} (ArtinNormalisers.Chamber3.Chamber.region.{u_1, u_1} C))\n                ↑(PointedCone.hull.{0, u_1} ℝ (Set.range.{u_1, 1} ⇑b)) ∧\n              PointedCone.IsSimplicial.{0, u_1}\n                (PointedCone.hull.{0, u_1} ℝ (Set.range.{u_1, 1} ⇑b))",
+      "module": "ArtinAsphericity.FiniteArrangement",
+      "name": "ArtinNormalisers.Asphericity5.actual_arrangement_simplicial_hypotheses",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 148894,
+      "type_expression_sha256": "6208adce52948d293f9d05b8d8a87e8e23934823f5617ecc1dfd551981e92368",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Asphericity5.actualChamber_isSimplicialRegion": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 44,
+          "end_line": 175,
+          "end_utf16": 44,
+          "start_column": 0,
+          "start_line": 168,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 40,
+          "end_line": 170,
+          "end_utf16": 40,
+          "start_column": 8,
+          "start_line": 170,
+          "start_utf16": 8
+        }
+      },
+      "docstring": "Every chamber of the actual restricted root arrangement is a geometric\nsimplicial region, for every spherical Coxeter type and every parabolic set.",
+      "elaborated_type": "∀ {I : Type u_2} (M : CoxeterMatrix.{u_2} I) (J : Set.{u_2} I)\n  [Finite.{u_2 + 1} (CoxeterMatrix.Group.{u_2} M)]\n  (C : ArtinNormalisers.Chamber3.ActualChamber.{u_2} M J),\n  ArtinNormalisers.Asphericity5.IsSimplicialRegion.{u_2}\n    (ArtinNormalisers.Chamber3.Chamber.region.{u_2, u_2} C)",
+      "module": "ArtinAsphericity.Simpliciality",
+      "name": "ArtinNormalisers.Asphericity5.actualChamber_isSimplicialRegion",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 58254,
+      "type_expression_sha256": "45989c727d055879977e4153b2c9353d4940e3870e1386c67c736891b9b0c0af",
+      "type_is_proposition": true,
+      "universe_parameters": [
+        "u_2"
+      ]
+    }
+  }
+}

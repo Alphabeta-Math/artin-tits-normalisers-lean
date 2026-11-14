@@ -1,0 +1,3 @@
+Work with the finite-rank real Coxeter representation and relative arrangements, with arbitrary Coxeter type and $J\subseteq\Gamma_0$. Let $(z,L)\in\mathrm{Cham}(J)$. Then $z^{-1}$ maps the relative arrangement for $J$ bijectively to that for $L$, including their cone interiors and distinct relative hyperplanes. It induces a bijection of chamber labels sending $(z,L)$ to $(e,L)$: the image of $(x,I)$ is $(x',I)$, where $x'$ is the unique minimum-length element of $z^{-1}xW_I$.
+
+Under this bijection every chamber path $p$ maps to a path of the same length; geodesicity is preserved and reflected. Each simple wall crossing retains its index $a$ and element $v_{a,I}$, so the wall word element satisfies $v_{z^{-1}p}=v_p$.

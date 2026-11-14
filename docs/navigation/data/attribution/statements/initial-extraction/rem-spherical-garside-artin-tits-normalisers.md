@@ -1,0 +1,1 @@
+In spherical type $A^+$ is a Garside monoid and admits gcds and lcms for both left and right divisibility. Thus for an associate $I$ and $a,b\in I^c$ one may form the lcm $\mu_{a,I}\vee\mu_{b,I}$ for left divisibility.

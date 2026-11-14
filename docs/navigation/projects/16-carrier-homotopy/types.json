@@ -1,0 +1,40 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Deligne5.numerableCarrierHomotopy": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 43,
+          "end_line": 282,
+          "end_utf16": 43,
+          "start_column": 0,
+          "start_line": 241,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 42,
+          "end_line": 244,
+          "end_utf16": 42,
+          "start_column": 18,
+          "start_line": 244,
+          "start_utf16": 18
+        }
+      },
+      "docstring": "Monotone contractible carriers construct the actual numerable comparison\nhomotopy. The local face homotopies are produced by parameterized HEP and are\nnot input data. The original common-intersection spaces need not be contractible.",
+      "elaborated_type": "{X : Type u} →\n  [inst : TopologicalSpace.{u} X] →\n    {ι : Type v} →\n      [inst_1 : LinearOrder.{v} ι] →\n        (W : ι → Set.{u} X) →\n          (∀ (i : ι), IsOpen.{u} (W i)) →\n            (ρ : PartitionOfUnity.{v, u} ι X) →\n              (hρ : PartitionOfUnity.IsSubordinate.{v, u} ρ W) →\n                (C : Finset.{v} ι → Set.{u} X) →\n                  (∀ (F : Finset.{v} ι),\n                      Finset.Nonempty.{v} F →\n                        Topology.NumerableConnectorCover.IsNerveFace.{u, v} W F →\n                          ContractibleSpace.{u} ↑(C F)) →\n                    (∀ {A B : Finset.{v} ι},\n                        A ⊆ B →\n                          Finset.Nonempty.{v} A →\n                            Topology.NumerableConnectorCover.IsNerveFace.{u, v} W B → C A ⊆ C B) →\n                      (∀ (F : Finset.{v} ι),\n                          Finset.Nonempty.{v} F →\n                            Topology.NumerableConnectorCover.IsNerveFace.{u, v} W F →\n                              ArtinNormalisers.Deligne5.coverFaceParameter.{u, v} W F ⊆ C F) →\n                        (r :\n                            ContinuousMap.{v, u} (ArtinNormalisers.Deligne5.CoverWeights.{u, v} W)\n                              X) →\n                          (∀ (F : Finset.{v} ι),\n                              Finset.Nonempty.{v} F →\n                                Topology.NumerableConnectorCover.IsNerveFace.{u, v} W F →\n                                  ∀ (w : ArtinNormalisers.Deligne5.CoverWeights.{u, v} W),\n                                    Finsupp.support.{v, 0}\n                                          (OAI.HarmonicArtin.OrderWeights.weights.{v} ↑w) ⊆\n                                        F →\n                                      Membership.mem.{u, u} (C F) (r w)) →\n                            ContinuousMap.Homotopy.{u, u}\n                              (ContinuousMap.comp.{u, v, u} r\n                                (ArtinNormalisers.Deligne5.numerableCoverClassifier.{u, v} W ρ hρ))\n                              (ContinuousMap.id.{u} X)",
+      "module": "ArtinDeligne.NumerableCarrierHomotopy",
+      "name": "ArtinNormalisers.Deligne5.numerableCarrierHomotopy",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 65245,
+      "type_expression_sha256": "28a1be99f7224909b71df45886289e0952d8dd4179fa09ef28ee83c269f0286a",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u",
+        "v"
+      ]
+    }
+  }
+}

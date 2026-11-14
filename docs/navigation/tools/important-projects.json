@@ -1,0 +1,216 @@
+{
+  "proof_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "topics": [
+    {
+      "id": "01-groups",
+      "title": "Groups and normalizer quotients",
+      "kind": "Definitions",
+      "summary": "Coxeter/Artin groups, standard parabolics, pure kernel and normalizer quotient groups.",
+      "declarations": [
+        "ArtinNormalisers.Artin.Group",
+        "ArtinNormalisers.Artin.parabolic",
+        "ArtinNormalisers.Artin.pure",
+        "ArtinNormalisers.Artin.normalizerQuotient",
+        "ArtinNormalisers.Artin.pureNormalizerImage"
+      ],
+      "source_addendum": "group-pure-parabolic-normalizer-definitions"
+    },
+    {
+      "id": "02-complement",
+      "title": "Relative complement and orbit space",
+      "kind": "Definitions",
+      "summary": "The actual relative hyperplane complement and its normalizer orbit space.",
+      "declarations": [
+        "ArtinNormalisers.Theorem18.Complement",
+        "ArtinNormalisers.Theorem18.OrbitSpace",
+        "ArtinNormalisers.Theorem18.orbitProjection"
+      ]
+    },
+    {
+      "id": "03-lemma-2-8",
+      "title": "Lemma 2.8: algebraic exact sequence",
+      "kind": "Main result",
+      "summary": "The full algebraic normalizer short exact sequence.",
+      "declarations": [
+        "ArtinNormalisers.Artin.lemma_2_8"
+      ]
+    },
+    {
+      "id": "04-orbit-cover",
+      "title": "Normalizer orbit covering",
+      "kind": "Prerequisite",
+      "summary": "The original orbit projection is a genuine quotient covering.",
+      "declarations": [
+        "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection"
+      ]
+    },
+    {
+      "id": "05-ribbons",
+      "title": "Reduced ribbons",
+      "kind": "Definitions",
+      "summary": "Objects, positive reduced arrows, elementary ribbons and their generated groupoid.",
+      "declarations": [
+        "ArtinNormalisers.Ribbon2.RibbonObject",
+        "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "ArtinNormalisers.Ribbon2.ActualReducedRibbonGroupoid",
+        "ArtinNormalisers.Ribbon2.elementaryMu"
+      ],
+      "source_addendum": "reduced-ribbon-definitions"
+    },
+    {
+      "id": "06-ribbon-presentation",
+      "title": "Ribbon normalizer quotient and presentation",
+      "kind": "Prerequisite",
+      "summary": "Reduced ribbon vertex groups identify the normalizer quotient, with the proved chosen-lcm presentation.",
+      "declarations": [
+        "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv",
+        "ArtinNormalisers.Ribbon2.landmark_2_groupoid_presentation"
+      ]
+    },
+    {
+      "id": "07-chamber-comparison",
+      "title": "Chamber/groupoid comparison",
+      "kind": "Prerequisite",
+      "summary": "Actual interval/complement and ribbon/orbit groupoid equivalences.",
+      "declarations": [
+        "ArtinNormalisers.Chamber3.actualIntervalComplementEquivalence",
+        "ArtinNormalisers.Chamber3.actualRibbonOrbitEquivalence"
+      ]
+    },
+    {
+      "id": "08-exact-diagrams",
+      "title": "Compatible exact diagrams",
+      "kind": "Prerequisite",
+      "summary": "Both normalized and positive-traversal exact diagrams with the same actual quotient.",
+      "declarations": [
+        "ArtinNormalisers.Sequence4.theorem_6_7",
+        "ArtinNormalisers.Sequence4.theorem_6_7_positive"
+      ]
+    },
+    {
+      "id": "09-simplicial-geometry",
+      "title": "Finite simplicial arrangement geometry",
+      "kind": "Prerequisite",
+      "summary": "The actual finite arrangement has the proved simplicial chamber hypotheses.",
+      "declarations": [
+        "ArtinNormalisers.Asphericity5.actual_arrangement_simplicial_hypotheses",
+        "ArtinNormalisers.Asphericity5.actualChamber_isSimplicialRegion"
+      ]
+    },
+    {
+      "id": "10-universal-cover",
+      "title": "The actual universal cover",
+      "kind": "Definition and prerequisite",
+      "summary": "The original path-class universal cover, its covering projection and surjectivity.",
+      "declarations": [
+        "ArtinNormalisers.Asphericity5.ComplementUniversalCover",
+        "ArtinNormalisers.Asphericity5.isCoveringMap_complementUniversalCoverProjection",
+        "ArtinNormalisers.Asphericity5.complementUniversalCoverProjection_surjective"
+      ]
+    },
+    {
+      "id": "11-ribbon-lattice",
+      "title": "Ribbon lcms, gcds and simple prefixes",
+      "kind": "Prerequisite",
+      "summary": "Actual reduced ribbon lattice operations and greatest simple prefixes.",
+      "declarations": [
+        "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails",
+        "ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails",
+        "ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail"
+      ]
+    },
+    {
+      "id": "12-garside-model",
+      "title": "The Garside weight model",
+      "kind": "Definitions",
+      "summary": "The incoming-ribbon order and its genuine small-chain weight space.",
+      "declarations": [
+        "ArtinNormalisers.Homotopy5.SimpleRibbon",
+        "ArtinNormalisers.Deligne5.IncomingVertex",
+        "ArtinNormalisers.Deligne5.GarsideWeights"
+      ]
+    },
+    {
+      "id": "13-finite-carriers",
+      "title": "Finite contractible carriers",
+      "kind": "Prerequisite",
+      "summary": "Finite positive carrier contractions and compact-map factorization through contractible carriers.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.exists_finite_contractible_positive_enlargement",
+        "ArtinNormalisers.Deligne5.GarsideWeights.compact_map_contractible_carrier"
+      ]
+    },
+    {
+      "id": "14-model-asphericity",
+      "title": "Higher homotopy vanishing of the model",
+      "kind": "Prerequisite",
+      "summary": "All finite based cube homotopy groups of the actual Garside model vanish.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.garside_homotopyGroup_subsingleton",
+        "ArtinNormalisers.Deligne5.garside_isAspherical"
+      ]
+    },
+    {
+      "id": "15-packet-carriers",
+      "title": "Canonical packet carriers",
+      "kind": "Definition and prerequisite",
+      "summary": "Literal components of actual sheet intersections are contractible and monotone.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.canonicalPacketCarrier",
+        "ArtinNormalisers.Deligne5.contractibleSpace_canonicalPacketCarrier",
+        "ArtinNormalisers.Deligne5.canonicalPacketCarrier_mono"
+      ]
+    },
+    {
+      "id": "16-carrier-homotopy",
+      "title": "The coherent carrier homotopy",
+      "kind": "Prerequisite",
+      "summary": "Constructs the genuine numerable comparison homotopy from proved local carrier conditions.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.numerableCarrierHomotopy"
+      ]
+    },
+    {
+      "id": "17-cover-comparison",
+      "title": "Comparison with the actual universal cover",
+      "kind": "Prerequisite",
+      "summary": "Actual forward/return maps have a constructed return-forward homotopy to identity.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.actualGarsideForward",
+        "ArtinNormalisers.Deligne5.actualGarsideReturn",
+        "ArtinNormalisers.Deligne5.actualUniversalCoverComparisonHomotopy"
+      ]
+    },
+    {
+      "id": "18-actual-asphericity",
+      "title": "Asphericity of the original spaces",
+      "kind": "Prerequisite",
+      "summary": "Actual universal-cover, complement and orbit-space asphericity at every point.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.actualUniversalCover_isAspherical",
+        "ArtinNormalisers.Deligne5.actualComplement_isAspherical",
+        "ArtinNormalisers.Deligne5.actualOrbit_isAspherical"
+      ]
+    },
+    {
+      "id": "19-theorem-1-8",
+      "title": "Theorem 1.8",
+      "kind": "Main theorem",
+      "summary": "Both complete exact diagrams and both original-space K(G,1) conclusions, with all basepoints.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.actualNormalizerDiagrams",
+        "ArtinNormalisers.Deligne5.theorem_1_8",
+        "ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints"
+      ]
+    },
+    {
+      "id": "20-corollary-6-14",
+      "title": "Corollary 6.14",
+      "kind": "Main corollary",
+      "summary": "The original orbit quotient is K(N(A,J),1) at every orbit point.",
+      "declarations": [
+        "ArtinNormalisers.Deligne5.corollary_6_14"
+      ]
+    }
+  ]
+}

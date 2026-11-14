@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "kind": "independent-navigation-source-correspondence-review",
+  "verdict": "request-changes",
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "scope": {
+    "assigned_declarations": 51,
+    "distinct_assigned_alphabeta_statements": 32,
+    "supporting_statements": 5,
+    "saved_http_responses": 37,
+    "assigned_source_files": 23,
+    "generated_pages_manually_reviewed": 0
+  },
+  "reviewed_input_sha256": {
+    "docs/navigation/data/attribution/declaration-attribution.json": "f742be90a5f389b41915fead916ebe1c022923253ea9e697f559574f7b97397e",
+    "docs/navigation/data/attribution/full-inventory.json": "09afcb36c0c23516036dd506597147aa4f7b9fadd7d23f509561ee6b0b5ce0d8",
+    "docs/navigation/data/source-inventory.json": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120",
+    "docs/navigation/data/attribution/promotion-receipt.json": "97fedb9d48b9dc22d9dd7234240af20610ed1d99d8f46d3e81e44c16fc99330a",
+    "docs/navigation/data/attribution/README.md": "9c9fc6d591b9cff6c7004833fe9869b748102c28756fab89cfc99b2fd39c0ac4",
+    "docs/navigation/data/attribution/verification/public-statement-verification.json": "46aa1c7f44aaadb2a6db5ee2a66302fc79421b490cac8d7e44a036a76421ff8f",
+    "docs/navigation/data/attribution/verification/public-math-renderings.json.gz": "e3e5761f4c468a539003ee96ab1e5933d8de4193aa9c464b0d7449e69b6689c9",
+    "docs/navigation/data/attribution/verification/public-math-verification-input.json.gz": "a4432bbbfa1947f1df1c1594e59904870991d90dcadb3b92756d4444c3c7d770"
+  },
+  "reviewed_project_source_sha256": {
+    "ArtinNormalisers/Artin/ExactSequence.lean": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1",
+    "asphericity/ArtinAsphericity/Simpliciality.lean": "95be73abbfecc0943285659299a0865ad238b894b004b6514ce1272e7330e805",
+    "chambers/ArtinChambers/ChamberPoints.lean": "c4d3a26d4f1f25a1b01ec6204314449a4337857da0e31448bbb9673dd4ebeff4",
+    "chambers/ArtinChambers/ActualComparison.lean": "858d1ed8efb372d9210d8989daa5bc26f2ef07c78e9b98d366cec5a847309d16",
+    "chambers/ArtinChambers/ForwardEquivariance.lean": "9e3f5243fc5e7ba690d0583c5cbe0ef1abe70e6b35d4426a5d2cd3339e66a4b4",
+    "chambers/ArtinChambers/ActualTubes.lean": "d9a2d2ccc57576fc24c8b311602b7932bb508378b5d02a7a0821e863cb9d4f4b",
+    "chambers/ArtinChambers/ActualArrangement.lean": "7655d68bc60ccea16b66a95d438da94a0feae2b1fc446d3b394f4a2444da2437",
+    "chambers/ArtinChambers/Tubes.lean": "2857e3ab39bf16e5423dc16fbab71f76c72aec4caf0bceadbe2b21c01b447ff0",
+    "chambers/ArtinChambers/ChamberLabels.lean": "bb2d51929698bfa083a9ba86710c6b23c537e94ba64e0ae313a0ffb29de6768c",
+    "chambers/ArtinChambers/Landmark3.lean": "10b972bb3569b3fc944be367ada50b00dde2f87f40f2937d339c6557dda261ee",
+    "chambers/ArtinChambers/ChamberTransport.lean": "8f6e41b1549693274395378008a76a449b2a54fe2a5b26708b5daf8089f13223",
+    "chambers/ArtinChambers/Dominant.lean": "b0169ce71bd68691d008f0cada853440277890063229c22880dfa4a64df8bef0",
+    "chambers/ArtinChambers/Arrangement.lean": "e994fee8544ffea068e2218b652bf49edc47ca415e66b4af25b13eafc68411f1",
+    "deligne/ArtinDeligne/Theorem18.lean": "6153e9ce05812013faae0917ee312192d6afc478c378c5819a9568a12ae118f8",
+    "landmarks/ArtinLandmarks/Dominant.lean": "408a97cc6f49b5868d5eafc6aae733b8ae26a1d314b26c81235f5bf493339da4",
+    "landmarks/ArtinLandmarks/Covering.lean": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94",
+    "ribbons/ArtinRibbons/RibbonGroupoid.lean": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+    "ribbons/ArtinRibbons/Positive.lean": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970",
+    "ribbons/ArtinRibbons/Fundamental.lean": "31af15bb2f724d52c32811fa588d79e67f9bed540cca68b651aaaf1571ce725c",
+    "ribbons/ArtinRibbons/Landmark2.lean": "0fcb9db16ee03c6814f7edcc34e46ce09178fa0583a1bf340c687385b6436bb9",
+    "ribbons/ArtinRibbons/NormalizerSplitting.lean": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c",
+    "sequences/ArtinSequences/Landmark4.lean": "73c1fa143ac1967c44a8f3464c6d6fb1cfe2bc70b30c0b5954c0e494b4ca32b6",
+    "ArtinNormalisers/Theorem18/Geometry.lean": "310a600d1d1a1b36aefa9190b2705d48f5115fd26e701a4569a7e791bad36098"
+  },
+  "reviewed_statement_snapshot_sha256": {
+    "docs/navigation/data/attribution/statements/published/cor-deligne-normal-cover-artin-tits-normalisers.md": "989c6cd2b4a4bae30320fd7b4632dc5466c68c55ad2d006495ae9073426d89bf",
+    "docs/navigation/data/attribution/statements/published/cor-normaliser-kpi-artin-tits-normalisers.md": "42eeb0f72992153746b71033bd3609125337e4ede757d468e184d570bc76c670",
+    "docs/navigation/data/attribution/statements/published/def-chamber-open-sets-artin-tits-normalisers.md": "ef73f98cdb85528c38adf570379775686dc6cc55ec91094af64c5949c7554cf0",
+    "docs/navigation/data/attribution/statements/published/def-longest-elements-artin-tits-normalisers.md": "57259336e84b328ac0194f53cee98459c5df97ffc2407db2bdec892f1bb1ae4d",
+    "docs/navigation/data/attribution/statements/published/def-normaliser-quotients-artin-tits-normalisers.md": "32473bca3e39bf3ed22959c9f1097c8779faa8c0a4a84b410c37f0f64d419a14",
+    "docs/navigation/data/attribution/statements/published/def-parabolic-faces-artin-tits-normalisers.md": "831f32304f85a9bab715d729aff70f12cd9a4d51e58250a51998ea532cb0ff0e",
+    "docs/navigation/data/attribution/statements/published/def-positive-artin-monoids-artin-tits-normalisers.md": "455f8c2b39416ed7d50284b1764ea7446aa83c85f68ee198265b8c1a6af48b5e",
+    "docs/navigation/data/attribution/statements/published/def-reduced-ribbon-artin-tits-normalisers.md": "72a8b3da943b383165d2e47f9826775bdb69a294409114547d4be1b041c3adb2",
+    "docs/navigation/data/attribution/statements/published/def-relative-complement-artin-tits-normalisers.md": "575c0cc194a9320164ddf8df9a78bd4a591912ffeda7254c2fe7f35e3f35fb33",
+    "docs/navigation/data/attribution/statements/published/def-ribbon-generators-artin-tits-normalisers.md": "7ef49111187b24e2a675b5ed220064e2b219ac2f171c856cbc227555ee59063e",
+    "docs/navigation/data/attribution/statements/published/def-ribbon-groupoid-artin-tits-normalisers.md": "262a12ae6f4a1355233d980f69da8cbe1c778189ef4724de2886deb15f8f0c21",
+    "docs/navigation/data/attribution/statements/published/def-topological-path-assignment-artin-tits-normalisers.md": "dfa9d62ae859f115ef92159aa64b43768ca50173eab41b5145804e47847b6ef8",
+    "docs/navigation/data/attribution/statements/published/lem-author-c81e5a0d2026-longest-conjugation.md": "a573554daf88d17e868ea8935d9741b61230d707cbf4950c937d2cafe0d63e19",
+    "docs/navigation/data/attribution/statements/published/lem-author-c81e5a0d2026-ribbon-endpoints.md": "323645ed2695f37d7194b0666372e2c0b3129d925f8dd70821f735e89a05d737",
+    "docs/navigation/data/attribution/statements/published/lem-cover-exact-comparison-artin-tits-normalisers.md": "4cc525da3e913634983660031fb57d57a879a1f32981d552188fd79cd581eeeb",
+    "docs/navigation/data/attribution/statements/published/lem-deligne-ribbon-cover-artin-tits-normalisers.md": "6048c36d3458bd4029ce8f7c4bf7541d2bcf48cc63310c84b74d02ef191f72fa",
+    "docs/navigation/data/attribution/statements/published/lem-deligne-ribbon-functor-artin-tits-normalisers.md": "3a50cc9610793e2c2a0dd01b40482f4a833fc6ce9a13892040ab38a9d58101cf",
+    "docs/navigation/data/attribution/statements/published/lem-equivariant-topological-equivalence-artin-tits-normalisers.md": "1efbcbec851900c9edbeb129ca8fb9a02e4ad13bdff85a183933d67540c57b26",
+    "docs/navigation/data/attribution/statements/published/lem-normaliser-chamber-action-artin-tits-normalisers.md": "d714425774963900a2fe45b1c23ddc58c5416864ae1c048db491103f802186bf",
+    "docs/navigation/data/attribution/statements/published/lem-normaliser-exact-artin-tits-normalisers.md": "1f8b78c21c7a00fbe5e8e54de8aa9dde957a35f1aa48a3f352170c3bf146c9d4",
+    "docs/navigation/data/attribution/statements/published/lem-normaliser-linear-action-artin-tits-normalisers.md": "4f91224c252899848caf813420575217e1ea588d28a21d6bf8e61e49a687b3af",
+    "docs/navigation/data/attribution/statements/published/lem-ribbon-lcm-lift-artin-tits-normalisers.md": "588c46951d873a774029630b093b2cc8697829083cc796752b606b0bbeb0a2bf",
+    "docs/navigation/data/attribution/statements/published/lem-standard-geodesic-artin-tits-normalisers.md": "f52816f2ae2af69ef965c9302bbfadc400fb8888c2763bf9796c02fbf0eb175f",
+    "docs/navigation/data/attribution/statements/published/prop-chamber-open-set-properties-artin-tits-normalisers.md": "882f2cb435d922eb54cae5429a1303c22aee5f9db923e33defde83f50a605fe7",
+    "docs/navigation/data/attribution/statements/published/prop-deligne-ribbon-quotient-artin-tits-normalisers.md": "933c3c35d319c5a2717e4a846cb4bed849bbb87161eb626da097244186d20abd",
+    "docs/navigation/data/attribution/statements/published/prop-geodesic-additivity-artin-tits-normalisers.md": "215cb25058059f91af074b771c8cb668bebc72eb950c53b86d3715131a55d86a",
+    "docs/navigation/data/attribution/statements/published/prop-parabolic-face-stabiliser-artin-tits-normalisers.md": "5ce7e3c5421f6c94bb75a94d1a5471c1cbb34de96c3c284539875e1a454da098",
+    "docs/navigation/data/attribution/statements/published/prop-relative-cover-artin-tits-normalisers.md": "765670d8cff4cfc4610508699a8be11a00e5ccf63f32d2898c4775af050778d8",
+    "docs/navigation/data/attribution/statements/published/prop-ribbon-lcm-relations-artin-tits-normalisers.md": "cd1d887c8edadfcec98af6b04a1cad4eca96297d81b2ef6804f23c1606a2b3de",
+    "docs/navigation/data/attribution/statements/published/prop-topological-path-properties-artin-tits-normalisers.md": "bdc6a205b7bb1ed5357db5e63c98f04d73b702f3ca30573a9190119b370ceadc",
+    "docs/navigation/data/attribution/statements/published/rem-finite-classifying-complexes-artin-tits-normalisers.md": "77cb2717dda70c64eea4fb99b090c58da67419233b8613c44cbde6cf24d58728",
+    "docs/navigation/data/attribution/statements/published/thm-artin-normaliser-splitting-artin-tits-normalisers.md": "bf6701eef670b25b43301663dee819dd3c2263c492128a15eaa602a0717098ee",
+    "docs/navigation/data/attribution/statements/published/thm-chamber-labelling-artin-tits-normalisers.md": "3fcea10c3fafbb52a05e45fbe8ea0be323235fcbd815fb690248f261fc65d5f7",
+    "docs/navigation/data/attribution/statements/published/thm-finite-simplicial-asphericity-artin-tits-normalisers.md": "c3b6f5a4897f97a6551f607862e328830b24a637232200495d8612483fb96984",
+    "docs/navigation/data/attribution/statements/published/thm-main-kpi-summary-artin-tits-normalisers.md": "4c1a11f4524d9245320e9df06ab4dd2500201a3e2f229b3465fe10e0d275126b",
+    "docs/navigation/data/attribution/statements/published/thm-normaliser-topological-exact-artin-tits-normalisers.md": "5a8220ae9af4e0a1b190d63c4a26124b1549aad6aa5e520390a6ef9cf7c350b4",
+    "docs/navigation/data/attribution/statements/published/thm-spherical-deligne-topology-artin-tits-normalisers.md": "7b65c164009977997f80e6c0f5e07ecc8e779380d59e32d588801b1360f877c5"
+  },
+  "reviewed_saved_http_sha256": {
+    "docs/navigation/data/attribution/http/cor-deligne-normal-cover-artin-tits-normalisers.html.gz": "989881807e527914f72b92ea98dbe8ceb871a596cadb7d09bfc7dc3f8f434d53",
+    "docs/navigation/data/attribution/http/cor-normaliser-kpi-artin-tits-normalisers.html.gz": "7d25c11a5ba401d2b1ee20f497480ed12ad17d5c60904cc4c531606fa8cfcf31",
+    "docs/navigation/data/attribution/http/def-chamber-open-sets-artin-tits-normalisers.html.gz": "f69bbc6a46a0b8a1b31d3237464bf845150ecc8509247443ed9511db1adee225",
+    "docs/navigation/data/attribution/http/def-longest-elements-artin-tits-normalisers.html.gz": "14d171bfaed85c773a2bea32fdc27586e5b5dacd6dd44595df818f17e57c755e",
+    "docs/navigation/data/attribution/http/def-normaliser-quotients-artin-tits-normalisers.html.gz": "6c27336e9a3d31cc09fd055f7d3ae399b4ca93cffee1b4d026a9f934731ad7ba",
+    "docs/navigation/data/attribution/http/def-parabolic-faces-artin-tits-normalisers.html.gz": "5b9b3c285a94e56e390606031facb7479abb2d8b1f29893799e1436a5744d622",
+    "docs/navigation/data/attribution/http/def-positive-artin-monoids-artin-tits-normalisers.html.gz": "f136db3ab8d8d16a256032d477c6b2e10a4d9f49cd203ebfaf07e7e8283a0ca3",
+    "docs/navigation/data/attribution/http/def-reduced-ribbon-artin-tits-normalisers.html.gz": "a6445f78004088b0cc7c1e6a46ee07640d02d66792cfdd1f240dfe22b9310305",
+    "docs/navigation/data/attribution/http/def-relative-complement-artin-tits-normalisers.html.gz": "2d216654765d8bb0cfb6c0ed141993f836b37c97a700cbf18a773ed98142b2a0",
+    "docs/navigation/data/attribution/http/def-ribbon-generators-artin-tits-normalisers.html.gz": "97b8198f3c8dcfd381d3493daf997d533d5a443d8990fdacd559c1cf4bc9e235",
+    "docs/navigation/data/attribution/http/def-ribbon-groupoid-artin-tits-normalisers.html.gz": "c825ec110e96f1df002dba02dcde8b18c7e7a8b6e4cd151dc3ca9c5e80913617",
+    "docs/navigation/data/attribution/http/def-topological-path-assignment-artin-tits-normalisers.html.gz": "179796bf5b7b5ee11aaca54dafb8c4243e900246db3172da150af439e7bc38f5",
+    "docs/navigation/data/attribution/http/lem-author-c81e5a0d2026-longest-conjugation.html.gz": "e001d66c0d48b6696e2502a26d74e30c4c740c23bad185eed3a1bc3e67b9fc0c",
+    "docs/navigation/data/attribution/http/lem-author-c81e5a0d2026-ribbon-endpoints.html.gz": "b273fb70efaa3b46e36ee2c4907b2e2fba7afdb2c8b43c2e0917c787aac25012",
+    "docs/navigation/data/attribution/http/lem-cover-exact-comparison-artin-tits-normalisers.html.gz": "8edef4fa8a567a31bd1dbc0565bef5f6c05ebcc7c4f1c562848083b943b8994f",
+    "docs/navigation/data/attribution/http/lem-deligne-ribbon-cover-artin-tits-normalisers.html.gz": "003e2782de0aa0627f769e323d0d714e2b7b732f717f119f08438221b4927b5f",
+    "docs/navigation/data/attribution/http/lem-deligne-ribbon-functor-artin-tits-normalisers.html.gz": "4af54ef2de6a44f31c872f954f163bc57180d5202278c03cf1bd81d4153f9598",
+    "docs/navigation/data/attribution/http/lem-equivariant-topological-equivalence-artin-tits-normalisers.html.gz": "b78d1748142a0bfacc72b4cf25613ae0140ebac59f1c321c0cad4ad9bb826488",
+    "docs/navigation/data/attribution/http/lem-normaliser-chamber-action-artin-tits-normalisers.html.gz": "8ef8ffcd779c3702933d012468c39d01aac1ed5f4cd99026f2067d6b5b9c1f5e",
+    "docs/navigation/data/attribution/http/lem-normaliser-exact-artin-tits-normalisers.html.gz": "a5499aa8ee70adc6e0c5c155ffa1a0c7ac4e590cc6b49c5a46b275632ba161a9",
+    "docs/navigation/data/attribution/http/lem-normaliser-linear-action-artin-tits-normalisers.html.gz": "10578a35515a1dac2cc9e6a3b5083f127a3b79a2461baa5ccd83d9d2cd748532",
+    "docs/navigation/data/attribution/http/lem-ribbon-lcm-lift-artin-tits-normalisers.html.gz": "edd9260f59568a21ee12274db00a6cad4d8af62fe576f762ddad09eadf904041",
+    "docs/navigation/data/attribution/http/lem-standard-geodesic-artin-tits-normalisers.html.gz": "a1faf1ede1fcb43e243ae6a02434ea1ca218b6a6134a4b2bcd7185fd581668ee",
+    "docs/navigation/data/attribution/http/prop-chamber-open-set-properties-artin-tits-normalisers.html.gz": "e4897e9673874b438c4a9dede84a9b59f377c8517a4c35fb53b1f488ad2dc2db",
+    "docs/navigation/data/attribution/http/prop-deligne-ribbon-quotient-artin-tits-normalisers.html.gz": "cecf93d5d8a0076d3c4ad03aa5b94480f280869500e715aa44278ddf3825980b",
+    "docs/navigation/data/attribution/http/prop-geodesic-additivity-artin-tits-normalisers.html.gz": "153d34fe2d50dab672fa0a3cc4604ed7b90d81897839f903bf51b1593c03c688",
+    "docs/navigation/data/attribution/http/prop-parabolic-face-stabiliser-artin-tits-normalisers.html.gz": "d59859caeaee72c6ee09dc02456ab7c64aa9c729c97f4d9a3f168338121b7905",
+    "docs/navigation/data/attribution/http/prop-relative-cover-artin-tits-normalisers.html.gz": "6a551509b0381430fc1f95568510e71464b9ccf192bd69af5e30fe3ad803d960",
+    "docs/navigation/data/attribution/http/prop-ribbon-lcm-relations-artin-tits-normalisers.html.gz": "be22a2c74aa5a80882653bfa890cb02049e26d43a450306670e5caef9ddbbbfa",
+    "docs/navigation/data/attribution/http/prop-topological-path-properties-artin-tits-normalisers.html.gz": "55001f34ae43b347ee0530dd10b233a5ec4bd37f438b7b7a6fec6fd71e1de497",
+    "docs/navigation/data/attribution/http/rem-finite-classifying-complexes-artin-tits-normalisers.html.gz": "4a997d0ad981e72af79d869b059160e632300ad65efd547f7cca7b8dc5a272fc",
+    "docs/navigation/data/attribution/http/thm-artin-normaliser-splitting-artin-tits-normalisers.html.gz": "4bceb803e62c499c1e5898bf787f7029ca5be9c5bd708de80dc720a4a69a2842",
+    "docs/navigation/data/attribution/http/thm-chamber-labelling-artin-tits-normalisers.html.gz": "911568495af4bd39b4072f31ff59bd5787e3168e94c3fd5b684db2371e8a685d",
+    "docs/navigation/data/attribution/http/thm-finite-simplicial-asphericity-artin-tits-normalisers.html.gz": "d37ea004bb4702bf8b45c79dedfb7267857ae264328a42c441eaa602b99568bc",
+    "docs/navigation/data/attribution/http/thm-main-kpi-summary-artin-tits-normalisers.html.gz": "10bf151741c8a8946b918ae636df16a2a1bcb5af5bd57b65b04a6f5a204e611c",
+    "docs/navigation/data/attribution/http/thm-normaliser-topological-exact-artin-tits-normalisers.html.gz": "7af3f071b7eab4aa1756bcbb35c7def8bb6285da164b57afc5f8e8fecddc5cd6",
+    "docs/navigation/data/attribution/http/thm-spherical-deligne-topology-artin-tits-normalisers.html.gz": "d61accb36de931fdb0e04169d74758529250a1cf1736aade592d3378ba4a7ec7"
+  },
+  "checked_published_whole_source_sha256": {
+    "research-portal/artin-tits-normalisers-2509-21915/item-cor-deligne-normal-cover-artin-tits-normalisers.md": "e9e09f88925658337eb4134f8bbdfd12fc49fed990cdbf68dd7d48fc18d9aa9d",
+    "research-portal/artin-tits-normalisers-2509-21915/item-cor-normaliser-kpi-artin-tits-normalisers.md": "dcb9ed5d3528718814f22cc826cf4818cc62fe5d98185ba09d708267490ddb1a",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-chamber-open-sets-artin-tits-normalisers.md": "adabbdc8fd733ff502a31bebeaf5549fff73ad5deacdd54d489ee827a6e7427c",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-longest-elements-artin-tits-normalisers.md": "450181835f355dd868f8ecb4995d059f56946125417c05dfad442a640d96f3bf",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-normaliser-quotients-artin-tits-normalisers.md": "e9833fe9bcc2c0b699aa2ce6304a9d8d9a52cc1935595d3ed32bfa112df328c3",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-parabolic-faces-artin-tits-normalisers.md": "5d319c1b2d50a38bc109eac78e91ba1dd795647191fd1b87228cdb21d8b56091",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-positive-artin-monoids-artin-tits-normalisers.md": "cb8f9763c253376169413c9e6b01bfdaddfd813e7fa355e74b08f7846c69c7f7",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-reduced-ribbon-artin-tits-normalisers.md": "c999193d56471aa440244dfc44f04eaad0869fa807cb9d2003c4c2fa0733a262",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-relative-complement-artin-tits-normalisers.md": "85e25768a00fcd4234e706ca4a969a78eab0fcf76d5c29e5c5852761449333e8",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-ribbon-generators-artin-tits-normalisers.md": "dff7b33529b1c08b30bbbdb952c7b130066eeea013ea5f172743a94bed3f15cb",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-ribbon-groupoid-artin-tits-normalisers.md": "aeaa174e1027a5e877b2806cd19ef5494a0aff0b956ecc1c2127fc53fc3cd7f2",
+    "research-portal/artin-tits-normalisers-2509-21915/item-def-topological-path-assignment-artin-tits-normalisers.md": "9633db49c93b4549c1b1a820cda02d4ebe48271c74c3703e81c8f35efd4017c4",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-author-c81e5a0d2026-longest-conjugation.md": "537fabcd8244a5ea26c249b21005d0018286ffdc012a6b3c5061ea24b14bd3c5",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-author-c81e5a0d2026-ribbon-endpoints.md": "a5ebbfa0363bbe06f082a73779fba9b2b4fce50948ea04fcc373fd61ed37f901",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-cover-exact-comparison-artin-tits-normalisers.md": "5afea8bd7515dfe8dfd3bc64b3f69ac50d218cfc284eade3c0a18047b55115b1",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-deligne-ribbon-cover-artin-tits-normalisers.md": "a21c3dbc71efc0b025fb98a1490c6e5a58434558265029c973c04d9cb1322297",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-deligne-ribbon-functor-artin-tits-normalisers.md": "2e3789a4d40a0715341c7613fae85ce8732c40d0718022f1e7200bb35ceb2883",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-equivariant-topological-equivalence-artin-tits-normalisers.md": "80a49bee3e25e55d2ae3569b0f772a8a6ec51c5ff6a72e185aa8fecc5ddc5087",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-normaliser-chamber-action-artin-tits-normalisers.md": "996967f7116037cca1070b579f1eeb452310c5b53b3603498c7dbbb924d954cc",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-normaliser-exact-artin-tits-normalisers.md": "7990f1432261f1a0b2ba0fb38d951e38cb9e9ae21b608a89e946e7e45f68a911",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-normaliser-linear-action-artin-tits-normalisers.md": "80650e19a6e6e3ec137bc608c982035ee4f97adb74e9ade2d979e6c3a4595a28",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-ribbon-lcm-lift-artin-tits-normalisers.md": "f78a5c06577294b1d2ec53e4f147a43b2ce2d3f8aa940c1e4a80b8d7f17f97f4",
+    "research-portal/artin-tits-normalisers-2509-21915/item-lem-standard-geodesic-artin-tits-normalisers.md": "2d8ee0d243545e62de60674b25c2ef57cc11443403d4669b4038cf02d54e283b",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-chamber-open-set-properties-artin-tits-normalisers.md": "7eada0e05016716928a0b7fb1ecb0b9c36ae7d758cb7363cd0d4182765849017",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-deligne-ribbon-quotient-artin-tits-normalisers.md": "9da78411d69e6e1c1a430551b5dd149830b85760c7aec1b4ce2196e9c45e5335",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-geodesic-additivity-artin-tits-normalisers.md": "0b5df17a82d63c154596918e85b8233d9da0e7f51163af987fdcfb40ba9c09b8",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-parabolic-face-stabiliser-artin-tits-normalisers.md": "69dbe95d654f7ecd1cd1a84976806583e98456ae1ff02841c37bfae2247e0b50",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-relative-cover-artin-tits-normalisers.md": "f0866fcfd7892b2fbe317095f64d2d58ae81e244c00e5b69060ddda26aa9aef7",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-ribbon-lcm-relations-artin-tits-normalisers.md": "6ecb52bef5a88183e6dd46de2e22fead8300a6035c33a4ed93f452789b8886d7",
+    "research-portal/artin-tits-normalisers-2509-21915/item-prop-topological-path-properties-artin-tits-normalisers.md": "695b397a8d40f76e14ef868dc9d9caeb40c58ee7d4be07dd7b609eddfbc9418d",
+    "research-portal/artin-tits-normalisers-2509-21915/item-rem-finite-classifying-complexes-artin-tits-normalisers.md": "14e104a435a824f26382dca2194f40a8f0d808cb8c62e6e6590b02b4799280e7",
+    "research-portal/artin-tits-normalisers-2509-21915/item-thm-artin-normaliser-splitting-artin-tits-normalisers.md": "398b742d7327b215bdfa8e6688082657b281e941ca87cc0801025cfd723fbd2c",
+    "research-portal/artin-tits-normalisers-2509-21915/item-thm-chamber-labelling-artin-tits-normalisers.md": "dca648cbda813287ae2d586ee6b5095a5befe08ca1ef48492dcff72e9e32dacd",
+    "research-portal/artin-tits-normalisers-2509-21915/item-thm-finite-simplicial-asphericity-artin-tits-normalisers.md": "ad30dc184881631eb7e5078d9b2f72ebbe6869163557af8a2d0692d6534ea2df",
+    "research-portal/artin-tits-normalisers-2509-21915/item-thm-main-kpi-summary-artin-tits-normalisers.md": "306315c8151fe4bcc88c1d99eca0ed9d1ba7e7422d782f00b4757c197129f82b",
+    "research-portal/artin-tits-normalisers-2509-21915/item-thm-normaliser-topological-exact-artin-tits-normalisers.md": "d12128c449a8cecb423b64789bd8ca6525f05c3a8df8ed5e10d7e73a45a20a3b",
+    "research-portal/artin-tits-normalisers-2509-21915/item-thm-spherical-deligne-topology-artin-tits-normalisers.md": "165c3c38865c11428670caef90225b996a24122def48ba348f3e0a8fb72d57fd"
+  },
+  "declarations": [
+    {
+      "name": "ArtinNormalisers.Artin.lemma_2_8",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotient",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Artin.normalizerQuotientMap",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Artin.pureNormalizerImage",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Asphericity5.actualChamber_isSimplicialRegion",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualChamberPoint_equivariant",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualComparison_square",
+      "mapping_status": "alternative-model"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualIntervalForward_equivariant",
+      "mapping_status": "alternative-model"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualIntervalForward_isEquivalence",
+      "mapping_status": "alternative-model"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualRibbonOrbitEquivalence",
+      "mapping_status": "alternative-model"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualTubeContractible",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.actualTubeSet",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.contractibleSpace_tubeSet",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.facetLabelEquivActualChamber",
+      "mapping_status": "alternative-model"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.isOpen_actualTubeSet",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.isOpen_tubeSet",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.landmark_3",
+      "mapping_status": "alternative-model"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.relativeTransport_length_of_between",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.standardFacet",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Chamber3.tubeSet",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.actualComplement_isAspherical",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.actualComplement_isKpi1",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.actualNormalizerDiagrams_proved",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.actualOrbit_isAspherical",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.actualOrbit_isKpi1_at_projection",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.corollary_6_14",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.theorem_1_8",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Landmark1.dominant_fixed_iff",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Landmark1.isQuotientCoveringMap_orbitProjection",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Landmark1.orbitFundamentalGroup_shortExact",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Landmark1.quotientComplement_smul_fixed_iff",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.IsRibbon",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.actualPositiveParabolic",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.elementaryMu",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.elementaryMu_isRibbon",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.elementaryMu_positive",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.landmark_2",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.landmark_2_groupoid_presentation",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.landmark_2_positive_presentation",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.normalizerSemidirectEquiv",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.parabolicDelta",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.parabolicDelta_generator_permutation",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.parabolicDelta_generator_permutation_reverse",
+      "mapping_status": "related-only"
+    },
+    {
+      "name": "ArtinNormalisers.Ribbon2.reducedRibbonNormalizerQuotientEquiv",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Sequence4.landmark_4",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Sequence4.theorem_6_7",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Sequence4.theorem_6_7_positive",
+      "mapping_status": "exact"
+    },
+    {
+      "name": "ArtinNormalisers.Theorem18.Complement",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Theorem18.complementSet",
+      "mapping_status": "specialization"
+    },
+    {
+      "name": "ArtinNormalisers.Theorem18.relativeSubspace",
+      "mapping_status": "exact"
+    }
+  ],
+  "findings": [
+    {
+      "id": "A1",
+      "disposition": "repair-required",
+      "claim": "Corollary6.14 raw excerpt/line range quotes a p26 forward reference and Theorem6.7 instead of the p27 corollary.",
+      "correction": "Use actual original text line1514 and recompute every selected/nested excerpt binding."
+    },
+    {
+      "id": "A2",
+      "disposition": "repair-required",
+      "claim": "The orbit asphericity declaration is not a direct specialization of the two linked Alpha complement/Garside theorems.",
+      "correction": "Identify those links as inputs/related; disclose normal-covering higher-homotopy transfer, or link the actual orbit Kpi1 corollary."
+    },
+    {
+      "id": "A3",
+      "disposition": "scope-qualification-required",
+      "claim": "Alpha lem-cover-exact-comparison contains literal-D intermediate sequence and lift assertions beyond the M4 final-diagram endpoint.",
+      "correction": "Mark it as supporting comparison and identify the final diagram/map clause matched."
+    },
+    {
+      "id": "A4",
+      "disposition": "display-qualification-required",
+      "claim": "Arbitrary-I Lean Lemma2.8 matches the unrestricted article but is more general in rank than the Alpha finite-rank statement.",
+      "correction": "Keep relation direction visible; exact does not mean equal Alpha hypotheses."
+    },
+    {
+      "id": "A5",
+      "disposition": "display-qualification-required",
+      "claim": "Article section2.2 introduces topological Artin groups; Lean uses the standard braid presentation.",
+      "correction": "Retain the model caveat and do not claim a separately formalized topology/presentation equivalence."
+    }
+  ],
+  "own_execution": [
+    "Read-only source reads and SHA256 comparisons",
+    "Saved HTTP h1/URL-metadata/hash verification",
+    "Ordered prose and independent saved-render MathML tree comparisons",
+    "Actual declaration source/range checks and unassigned-row guards"
+  ],
+  "not_executed": [
+    "Lean builds",
+    "Lean audits",
+    "kernel replays",
+    "CI",
+    "new live HTTP requests"
+  ],
+  "limits": [
+    "No review of all275 generated proofs or2295 generated PROJECT pages.",
+    "No second mathematical proof-verification acceptance is conferred by this navigation review."
+  ]
+}

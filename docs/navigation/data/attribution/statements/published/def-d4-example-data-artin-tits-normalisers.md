@@ -1,0 +1,5 @@
+For this example, let $\Gamma=D_4$ denote the Coxeter diagram with vertices $\{1,2,3,4\}$ and three unlabelled edges $\{1,2\}$, $\{2,3\}$ and $\{2,4\}$. Thus vertex $2$ is trivalent: it is incident to exactly three edges. Equivalently, the Coxeter matrix has $m(s_i,s_i)=1$, $m(s_2,s_i)=m(s_i,s_2)=3$ for $i\in\{1,3,4\}$, and $m(s_i,s_j)=2$ for distinct $i,j\in\{1,3,4\}$.
+
+Let $(W,S)$ be the associated Coxeter system, with $S=\{s_1,s_2,s_3,s_4\}$, and set $J=\{2\}$. Write $s=s_1$, $t=s_2$, $u=s_3$ and $v=s_4$; in particular $t$ is the simple reflection at the trivalent vertex.
+
+Let $V=\bigoplus_{i=1}^4\mathbb R\alpha_i$ be the standard geometric representation: its Coxeter form satisfies $B(\alpha_i,\alpha_i)=1$, $B(\alpha_2,\alpha_i)=-1/2$ for $i\in\{1,3,4\}$, and $B(\alpha_i,\alpha_j)=0$ for distinct $i,j\in\{1,3,4\}$; the generator $s_i$ acts by $x\mapsto x-2B(x,\alpha_i)\alpha_i$. Let $\Theta=V^*$ be the space of real linear functionals on $V$, with the contragredient action $(wf)(x)=f(w^{-1}x)$ for $w\in W$, $f\in\Theta$ and $x\in V$.

@@ -1,0 +1,1 @@
+The induced action satisfies $\overline g(x,I)=(y,I)$, where $y$ is the minimal representative of $gxW_I$ for any lift $g$. Two labels with the same second component are in the same orbit. The action is free on chambers and preserves adjacency with $\omega_a(\overline gC)=\overline g\omega_a(C)$.

@@ -1,0 +1,3 @@
+Let $(W,S)$ be a Coxeter system indexed by the vertices $\Gamma_0$ of its Coxeter diagram, let $J\subseteq\Gamma_0$, and let $(x,I)$ be a chamber label: $W_Jx=xW_I$ and $x$ has minimum length in $xW_I$. Choose $a\in\Gamma_0\setminus I$ and put $K=I\cup\{a\}$. Suppose $W_K$ is finite. For a finite parabolic $W_L$, write $w_L$ for its longest element and $\iota_L$ for its opposition permutation, characterized by $w_L\alpha_i=-\alpha_{\iota_L(i)}$ for $i\in L$.
+
+With the simple wall-crossing element $v_{a,I}$ and pair $\omega_{a,I}(x,I)$ defined in [def-simple-wall-crossing-artin-tits-normalisers](item-def-simple-wall-crossing-artin-tits-normalisers), one has $v_{a,I}=w_Iw_K$ and $\omega_{a,I}(x,I)=(xw_Iw_K,K\setminus\{\iota_K(a)\})$.

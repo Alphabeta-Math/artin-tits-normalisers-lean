@@ -1,0 +1,1 @@
+In spherical type, for $I\subseteq\Gamma_0$ and $a\in I^c$, put $\mu_{a,I}=\Delta_{[I,a]-a}^{-1}\Delta_{[I,a]}\in A^+$. It also has the formula $\mu_{a,I}=\Delta_I^{-1}\Delta_{I+a}$.

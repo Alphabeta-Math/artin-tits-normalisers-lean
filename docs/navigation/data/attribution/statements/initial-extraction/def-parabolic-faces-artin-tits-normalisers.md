@@ -1,0 +1,1 @@
+For $I\subseteq\Gamma_0$, let $\Theta_I=\{\varphi\in\Theta:\varphi(\alpha_i)=0\text{ for every }i\in I\}$ and $C_I=\{\varphi\in\Theta_I:\varphi(\alpha_j)>0\text{ for every }j\in I^c\}$.

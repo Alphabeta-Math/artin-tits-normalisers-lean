@@ -1,0 +1,1 @@
+For $f,g\in\mathrm{Cone}$, only finitely many hyperplanes in $\mathcal H$ separate $f$ and $g$.

@@ -1,0 +1,1 @@
+Let $E=\Theta_J$, $T=\mathrm{Cone}(J)$ and $u\in T^\circ$. There is $r>0$ with $B_E(u,r)\subseteq T$ meeting only finitely many distinct hyperplanes in $\mathcal H^J$.

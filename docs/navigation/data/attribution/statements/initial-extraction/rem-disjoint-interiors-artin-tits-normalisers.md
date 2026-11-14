@@ -1,0 +1,1 @@
+Although $\mathrm{Cone}(J)\subseteq\mathrm{Cone}$, it can be disjoint from $\mathrm{Cone}^{\circ}$. If $W_J$ is infinite, then $\mathrm{Cone}(J)\cap\mathrm{Cone}^{\circ}=\varnothing$. Thus local finiteness for the relative interior does not immediately follow by restriction from the full cone interior. Proposition 3.6 also applies to $J=\varnothing$.

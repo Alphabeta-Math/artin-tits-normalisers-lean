@@ -1,0 +1,1 @@
+In the arbitrary-rank setting of [def-coxeter-data-artin-tits-normalisers](item-def-coxeter-data-artin-tits-normalisers) and [def-parabolic-subgroups-artin-tits-normalisers](item-def-parabolic-subgroups-artin-tits-normalisers), let $L\subseteq\Gamma_0$ be finite. Then $W_L$ is finite if and only if $\Phi_L$ is finite.

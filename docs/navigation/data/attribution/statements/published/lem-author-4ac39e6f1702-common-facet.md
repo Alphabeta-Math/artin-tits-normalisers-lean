@@ -1,0 +1,3 @@
+In the finite-rank canonical Coxeter representation with simple-root basis $(\alpha_i)$ and dual space $\Theta$, fix $J$. Let $(x,I),(y,K)\in\mathrm{Cham}(J)$ be algebraic chamber labels such that $xC_I$ and $yC_K$ are adjacent relative chambers in $\Theta_J$, with common closed wall $F$. There are unique indices $a\notin I$ and $b\notin K$ describing this wall, and
+$$F=\overline{xC_{I+a}}=\overline{yC_{K+b}},\qquad I+a=K+b=:L.$$
+Here $I+a=I\cup\{a\}$, and closures are taken in $\Theta_J$. The two chambers lie on opposite sides of the supporting relative hyperplane of $F$.

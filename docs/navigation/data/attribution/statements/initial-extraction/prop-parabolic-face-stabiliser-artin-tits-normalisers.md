@@ -1,0 +1,1 @@
+For every $J\subseteq\Gamma_0$ and every $\varphi\in C_J$, the stabilizer of $\varphi$ under the $W$-action on $\Theta$ is exactly $W_J$.

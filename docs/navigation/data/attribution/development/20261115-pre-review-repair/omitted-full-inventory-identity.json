@@ -1,0 +1,22 @@
+{
+  "original_filename": "full-inventory.json",
+  "original_sha256": "09afcb36c0c23516036dd506597147aa4f7b9fadd7d23f509561ee6b0b5ce0d8",
+  "publicly_preserved": false,
+  "reason": "Erroneous unanchored Remark6.15 excerpt spans most of original article; no full-paper mirror is retained publicly. Exact original draft bytes and initial snapshot receipt remain in private temporary review history.",
+  "erroneous_excerpt": {
+    "key": "article_remark_6_15",
+    "line_start": 152,
+    "line_end": 1534,
+    "sha256": "0599f8526ab6176fc708f11ea73ea3aee60bbd756247a251feab63f5b84fa58f",
+    "character_count": 87380,
+    "diagnostic_first_180_characters": "Remark 6.15.\n  The proof of Theorem 1.8 appears in Section 6 (Theorem 6.7 and Corollary 6.14). Our proof\nuses two groupoids. The first is the Deligne groupoid D associated to (Cone"
+  },
+  "corrected_locator": {
+    "original_label": "Remark 6.15",
+    "printed_page": 27,
+    "pdf_page": 27,
+    "line_start": 1527,
+    "line_end": 1532
+  },
+  "no_assigned_mapping_used_remark_6_15": true
+}

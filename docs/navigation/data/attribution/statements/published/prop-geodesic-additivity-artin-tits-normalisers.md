@@ -1,0 +1,3 @@
+Let $(W,S)$ be a finite-rank Coxeter system with vertex set $\Gamma_0$, and fix $J\subseteq\Gamma_0$. In its relative chamber arrangement, let $p=((x_1,I_1),\ldots,(x_m,I_m))$ be a nonempty chamber path. For each consecutive pair let $a_i$ be its crossing index and $v_{a_i,I_i}\in W$ its simple wall-crossing element. Put $v_p=v_{a_1,I_1}\cdots v_{a_{m-1},I_{m-1}}$, with the empty product equal to the identity. Write $\ell(w)$ for the least length of a word in the simple generators representing $w$.
+
+The path $p$ is geodesic, meaning that its number of crossings is minimal among paths with the same endpoints, if and only if $\ell(v_p)=\sum_{i=1}^{m-1}\ell(v_{a_i,I_i})$. The empty sum is zero.

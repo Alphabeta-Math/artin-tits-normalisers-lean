@@ -1,0 +1,1 @@
+For a group acting freely on the objects of a connected groupoid, each orbit of morphisms has a unique representative with prescribed source. Composition in the quotient is well defined, the quotient is a groupoid, and $Q:\mathcal G\to\mathcal G/N$ is a normal cover with $\mathrm{Deck}(Q)\cong N$ and $1\to\mathcal G_x\to(\mathcal G/N)_{[x]}\to N\to1$.

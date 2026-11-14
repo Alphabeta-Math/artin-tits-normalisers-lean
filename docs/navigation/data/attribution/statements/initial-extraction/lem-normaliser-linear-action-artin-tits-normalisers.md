@@ -1,0 +1,1 @@
+The action of $\mathrm{Norm}_W(W_J)$ preserves $\Theta_J$ and has kernel precisely $W_J$. It induces a faithful linear action of $N(W,J)$ on $\Theta_J$, preserving $\mathrm{Cone}(J)$ and its stratification: $\overline g\,(xC_L)=(gx)C_L$ for any lift $g\in\mathrm{Norm}_W(W_J)$.

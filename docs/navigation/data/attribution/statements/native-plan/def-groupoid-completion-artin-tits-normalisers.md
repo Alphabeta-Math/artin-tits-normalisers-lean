@@ -1,0 +1,7 @@
+Let $\mathcal G^+$ be a small category: its objects and morphisms form sets. A groupoid is a category in which every morphism has a two-sided inverse. Composition of consecutive arrows is read from left to right.
+
+Form a directed graph with the objects of $\mathcal G^+$ as vertices and a tagged edge $[f]:x\to y$ for every morphism $f:x\to y$ of $\mathcal G^+$. Impose the path relations $[1_x]=1_x$ and $[f][g]=[fg]$ whenever $f:x\to y$ and $g:y\to z$ are composable; the right-hand $1_x$ is the empty path. A path is a finite composable sequence of edges. The presented category has these vertices as objects and paths modulo the smallest endpoint-preserving equivalence relation containing the displayed relations and stable under concatenation.
+
+The **groupoid completion** $\mathcal G$ of $\mathcal G^+$ is the groupoid completion of this presented category: adjoin a separately tagged reverse edge $[f]^{-1}:y\to x$ for each edge $[f]$, and impose $[f][f]^{-1}=1_x$ and $[f]^{-1}[f]=1_y$, in addition to the preceding relations. Its arrows are the resulting equivalence classes of paths. The canonical functor $\kappa:\mathcal G^+\to\mathcal G$ is the identity on objects and sends $f$ to the class of $[f]$.
+
+For every small groupoid $\mathcal H$ and functor $F:\mathcal G^+\to\mathcal H$, there is a unique functor $\overline F:\mathcal G\to\mathcal H$ such that $\overline F\circ\kappa=F$. Thus every such $F$ factors through $\kappa$. No connectedness of $\mathcal G^+$ or $\mathcal H$, and no faithfulness of $\kappa$, is assumed.

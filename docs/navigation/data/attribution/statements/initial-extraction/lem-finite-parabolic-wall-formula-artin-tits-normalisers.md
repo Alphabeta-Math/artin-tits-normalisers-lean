@@ -1,0 +1,1 @@
+If $W_{I+a}$ is finite, then $v_{a,I}=w_Iw_{I+a}$ and $\omega_{a,I}(x,I)=(xw_Iw_{I+a},I+a-\iota_{I+a}(a))$.

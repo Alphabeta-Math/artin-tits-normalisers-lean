@@ -1,0 +1,3 @@
+Let $X$ and $a$ be sets. The singleton $\{a\}$ is the set whose only element is $a$. Write $X+a=X\cup\{a\}$ and $X-a=X\setminus\{a\}$. Thus $X+a$ consists of the elements of $X$ together with $a$, while $X-a$ consists of the elements of $X$ other than $a$; no assumption that $a\in X$ is required.
+
+Let $\Gamma_0$ be the vertex set of the Coxeter diagram $\Gamma$. For $I\subseteq\Gamma_0$, write $I^c=\Gamma_0\setminus I$ for the complement of $I$ relative to $\Gamma_0$, namely the set of vertices of $\Gamma$ that are not in $I$.

@@ -1,0 +1,1 @@
+For $\alpha\in\Phi$ let $H_\alpha=\{\varphi\in\Theta:\varphi(\alpha)=0\}$ and $\mathcal H=\{H_\alpha:\alpha\in\Phi\}$. Set $C=\{\varphi:\varphi(\alpha_i)>0\text{ for all }i\in\Gamma_0\}$ and $\mathrm{Cone}=\bigcup_{w\in W}w\overline C$, with interior $\mathrm{Cone}^{\circ}$ in $\Theta$.

@@ -1,0 +1,1 @@
+The doubled adjacency graph has object set $\mathrm{Cham}(J)$ and an arrow in each direction across every common wall. The category $\mathcal D^+(J)$ has paths as morphisms modulo the relations identifying geodesics with the same source and target. Set $\mathcal D(J)$ to be its groupoid completion. In spherical type the article calls $\mathcal D$ the Deligne groupoid.

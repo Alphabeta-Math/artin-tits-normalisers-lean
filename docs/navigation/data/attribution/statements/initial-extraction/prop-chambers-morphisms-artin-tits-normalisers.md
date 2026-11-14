@@ -1,0 +1,1 @@
+For associates $I,K$ of $J$: if $(x,I),(y,K)\in\mathrm{Cham}(J)$, then $x^{-1}y\in\mathrm{Hom}_{\mathcal{BH}}(I,K)$. Conversely, for $w\in\mathrm{Hom}_{\mathcal{BH}}(I,K)$ and any $(x,I)\in\mathrm{Cham}(J)$, one has $(xw,K)\in\mathrm{Cham}(J)$ and $w$ is the unique morphism from $(x,I)$ to $(xw,K)$ in $\widetilde{\mathcal{BH}}$.

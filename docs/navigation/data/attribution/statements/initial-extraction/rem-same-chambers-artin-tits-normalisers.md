@@ -1,0 +1,1 @@
+The arrangements on $\mathrm{Cone}(J)$ and $\mathrm{Cone}(J)^\circ$ have the same chambers and the same adjacency relation. In the locally finite interior arrangement any two chambers are joined by a finite adjacency path.

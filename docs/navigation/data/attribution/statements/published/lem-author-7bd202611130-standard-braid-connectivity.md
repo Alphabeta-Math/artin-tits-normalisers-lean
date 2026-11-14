@@ -1,0 +1,1 @@
+Any two standard expressions of the same article morphism are related by finitely many atomic braid moves, with endpoints preserved and every intermediate expression standard.

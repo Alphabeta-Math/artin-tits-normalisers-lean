@@ -1,0 +1,3 @@
+Let $(W,S)$ be a Coxeter system with $S$ finite, in its canonical real Coxeter representation. Let $\Phi_+$ be its positive roots, $H_\alpha=\{f\in V^*:f(\alpha)=0\}$, and $\mathrm{Cone}$ the union of the translates of the closed fundamental chamber. For $J=\varnothing$, the relative cone is $\mathrm{Cone}$ and the relative hyperplanes are the distinct root hyperplanes $\mathcal H=\{H_\alpha:\alpha\in\Phi_+\}$. If $W$ is infinite, $\mathcal H$ is infinite and the arrangement $(\mathrm{Cone},\mathcal H)$ is not locally finite at the origin.
+
+Here local finiteness at a point means that some neighborhood of the point in the subspace topology on $\mathrm{Cone}$ meets only finitely many distinct members of $\mathcal H$.

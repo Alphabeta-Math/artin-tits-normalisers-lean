@@ -1,0 +1,261 @@
+{
+  "cor-deligne-normal-cover-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 20,
+    "public_math": 20,
+    "errors": []
+  },
+  "cor-normaliser-kpi-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 23,
+    "public_math": 23,
+    "errors": []
+  },
+  "def-chamber-open-sets-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 32,
+    "public_math": 32,
+    "errors": []
+  },
+  "def-longest-elements-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 19,
+    "public_math": 19,
+    "errors": []
+  },
+  "def-normaliser-quotients-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 20,
+    "public_math": 20,
+    "errors": []
+  },
+  "def-parabolic-faces-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 11,
+    "public_math": 11,
+    "errors": []
+  },
+  "def-positive-artin-monoids-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 19,
+    "public_math": 19,
+    "errors": []
+  },
+  "def-reduced-ribbon-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 38,
+    "public_math": 38,
+    "errors": []
+  },
+  "def-relative-complement-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 20,
+    "public_math": 20,
+    "errors": []
+  },
+  "def-ribbon-generators-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 22,
+    "public_math": 22,
+    "errors": []
+  },
+  "def-ribbon-groupoid-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 26,
+    "public_math": 26,
+    "errors": []
+  },
+  "def-topological-path-assignment-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 34,
+    "public_math": 34,
+    "errors": []
+  },
+  "lem-author-c81e5a0d2026-longest-conjugation": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 20,
+    "public_math": 20,
+    "errors": []
+  },
+  "lem-author-c81e5a0d2026-ribbon-endpoints": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 16,
+    "public_math": 16,
+    "errors": []
+  },
+  "lem-cover-exact-comparison-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 55,
+    "public_math": 55,
+    "errors": []
+  },
+  "lem-deligne-ribbon-cover-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 19,
+    "public_math": 19,
+    "errors": []
+  },
+  "lem-deligne-ribbon-functor-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 16,
+    "public_math": 16,
+    "errors": []
+  },
+  "lem-equivariant-topological-equivalence-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 21,
+    "public_math": 21,
+    "errors": []
+  },
+  "lem-normaliser-chamber-action-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 23,
+    "public_math": 23,
+    "errors": []
+  },
+  "lem-normaliser-exact-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 18,
+    "public_math": 18,
+    "errors": []
+  },
+  "lem-normaliser-linear-action-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 24,
+    "public_math": 24,
+    "errors": []
+  },
+  "lem-ribbon-lcm-lift-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 36,
+    "public_math": 36,
+    "errors": []
+  },
+  "lem-standard-geodesic-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 20,
+    "public_math": 20,
+    "errors": []
+  },
+  "prop-chamber-open-set-properties-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 14,
+    "public_math": 14,
+    "errors": []
+  },
+  "prop-deligne-ribbon-quotient-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 25,
+    "public_math": 25,
+    "errors": []
+  },
+  "prop-geodesic-additivity-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 11,
+    "public_math": 11,
+    "errors": []
+  },
+  "prop-parabolic-face-stabiliser-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 9,
+    "public_math": 9,
+    "errors": []
+  },
+  "prop-relative-cover-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 11,
+    "public_math": 11,
+    "errors": []
+  },
+  "prop-ribbon-lcm-relations-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 29,
+    "public_math": 29,
+    "errors": []
+  },
+  "prop-topological-path-properties-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 18,
+    "public_math": 18,
+    "errors": []
+  },
+  "rem-finite-classifying-complexes-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 23,
+    "public_math": 23,
+    "errors": []
+  },
+  "thm-artin-normaliser-splitting-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 17,
+    "public_math": 17,
+    "errors": []
+  },
+  "thm-chamber-labelling-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 3,
+    "public_math": 3,
+    "errors": []
+  },
+  "thm-finite-simplicial-asphericity-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 22,
+    "public_math": 22,
+    "errors": []
+  },
+  "thm-main-kpi-summary-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 42,
+    "public_math": 42,
+    "errors": []
+  },
+  "thm-normaliser-topological-exact-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 24,
+    "public_math": 24,
+    "errors": []
+  },
+  "thm-spherical-deligne-topology-artin-tits-normalisers": {
+    "prose": true,
+    "mathml": true,
+    "local_math": 14,
+    "public_math": 14,
+    "errors": []
+  }
+}

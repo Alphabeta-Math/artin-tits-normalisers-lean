@@ -1,0 +1,1 @@
+The induced $N(W,J)$-action on $\mathcal X_J^{\mathbb C}$ is free and properly discontinuous. Its quotient map is a normal covering and, for $x\in\mathcal X_J^{\mathbb C}$, induces $1\to\pi_1(\mathcal X_J^{\mathbb C},x)\to\pi_1(\mathcal X_J^{\mathbb C}/N(W,J),\overline x)\to N(W,J)\to1$.

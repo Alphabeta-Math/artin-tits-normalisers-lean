@@ -1,0 +1,138 @@
+{
+  "shared_type_table": "../../data/type-expressions.json.gz",
+  "decoder": "../../tools/show_type.py",
+  "declarations": {
+    "ArtinNormalisers.Ribbon2.RibbonObject": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 17,
+          "end_line": 35,
+          "end_utf16": 17,
+          "start_column": 0,
+          "start_line": 32,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 22,
+          "end_line": 34,
+          "end_utf16": 22,
+          "start_column": 10,
+          "start_line": 34,
+          "start_utf16": 10
+        }
+      },
+      "docstring": "A wrapper for a standard parabolic index set, carrying the ribbon\ncategory structure without changing the category structure on plain sets.",
+      "elaborated_type": "{I : Type u_1} → CoxeterMatrix.{u_1} I → Type u_1",
+      "module": "ArtinRibbons.RibbonGroupoid",
+      "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 153696,
+      "type_expression_sha256": "5a3dca51718a53b354b1dc57c36bf65ac11954172f29ac45fcca0468829f5aba",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Ribbon2.PositiveReducedArrow": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 38,
+          "end_line": 118,
+          "end_utf16": 38,
+          "start_column": 0,
+          "start_line": 110,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 30,
+          "end_line": 111,
+          "end_utf16": 30,
+          "start_column": 10,
+          "start_line": 111,
+          "start_utf16": 10
+        }
+      },
+      "docstring": "Positive generated paths, before inverses are allowed.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M →\n        ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M → ArtinNormalisers.Artin.Group.{u_1} M → Prop",
+      "module": "ArtinRibbons.ReducedRibbons",
+      "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 58401,
+      "type_expression_sha256": "9845c1a3b832828d881f230bac6d52fc8dec99971663fb7db26eb76d1183693e",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Ribbon2.ActualReducedRibbonGroupoid": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 71,
+          "end_line": 44,
+          "end_utf16": 71,
+          "start_column": 0,
+          "start_line": 43,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 34,
+          "end_line": 44,
+          "end_utf16": 34,
+          "start_column": 7,
+          "start_line": 44,
+          "start_utf16": 7
+        }
+      },
+      "docstring": "The actual generated subgroupoid with its inherited groupoid structure.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      Set.{u_1} (ArtinNormalisers.Ribbon2.RibbonObject.{u_1} M)",
+      "module": "ArtinRibbons.RibbonUniversal",
+      "name": "ArtinNormalisers.Ribbon2.ActualReducedRibbonGroupoid",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 121399,
+      "type_expression_sha256": "c4b7d1acfe36f870039441c05e1de080cbff526ca3a9cd677cc78f056a3e113e",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    },
+    "ArtinNormalisers.Ribbon2.elementaryMu": {
+      "declaration_ranges": {
+        "declaration": {
+          "end_column": 56,
+          "end_line": 422,
+          "end_utf16": 56,
+          "start_column": 0,
+          "start_line": 418,
+          "start_utf16": 0
+        },
+        "selection": {
+          "end_column": 30,
+          "end_line": 421,
+          "end_utf16": 30,
+          "start_column": 18,
+          "start_line": 421,
+          "start_utf16": 18
+        }
+      },
+      "docstring": "The actual outside elementary label of equation (5.3). Its positivity\nand endpoint ribbon relation are separate theorems, not fields of this\ndefinition.",
+      "elaborated_type": "{I : Type u_1} →\n  (M : CoxeterMatrix.{u_1} I) →\n    [Finite.{u_1 + 1} (CoxeterMatrix.Group.{u_1} M)] →\n      Set.{u_1} I → I → ArtinNormalisers.Artin.Group.{u_1} M",
+      "module": "ArtinRibbons.Fundamental",
+      "name": "ArtinNormalisers.Ribbon2.elementaryMu",
+      "rendering_contains_ellipsis": false,
+      "rendering_role": "Rendered view, not asserted to be independently compilable; full structural type and frozen source are authoritative",
+      "type_expression_format": "shared-json-dag-v1",
+      "type_expression_ref": 95150,
+      "type_expression_sha256": "bbf5ab7f3e35c2199cffc002e382fa8bb6549b1bf30ed2ee485309c3992f8f8d",
+      "type_is_proposition": false,
+      "universe_parameters": [
+        "u_1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,2999 @@
+{
+  "ArtinNormalisers.Deligne5.exists_finite_contractible_positive_enlargement": {
+    "type_dependencies": [
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeightsOn",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "PartialOrder.toPreorder",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Preorder.toLE",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "Membership.mem",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "Set.Elem",
+        "module": "Mathlib.Data.Set.CoeSort",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/CoeSort.lean",
+          "source_sha256": "a6321ae732b4e66276846dbe00faf4bec0ef17eed151ca268d8d29845d47c3fc"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContractibleSpace",
+        "module": "Mathlib.Topology.Homotopy.Contractible",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homotopy/Contractible.lean",
+          "source_sha256": "4b844337f0229bafa358d4bf707e7f1eb9f66477872fb16fa87f90def2ed9359"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.IsPositive",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "LE.le",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.instTopologicalSpaceOrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.partialOrder",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "SetLike.coe",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "Finset.instSetLike",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "instTopologicalSpaceSubtype",
+        "module": "Mathlib.Topology.Defs.Induced",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Induced.lean",
+          "source_sha256": "4043f37980a9dfdc917256c21fdd5677b1941a89dc6d31fc7c2954cea0c22d61"
+        }
+      },
+      {
+        "name": "Subtype.partialOrder",
+        "module": "Mathlib.Order.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Basic.lean",
+          "source_sha256": "4b9e851f92a9d2cd56b61cfdd39aa88652c0c8f1a13e384c970689f0815e501e"
+        }
+      },
+      {
+        "name": "Finset.instPartialOrder",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Set.instMembership",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "SetLike.instMembership",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.garsideWeightsOnSet",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.OrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "ArtinNormalisers.Deligne5.headStep",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.exists_finite_positive_head_closed",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeightsOn",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "PartialOrder.toPreorder",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.incomingRoot",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Preorder.toLE",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "Membership.mem",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "Set.Elem",
+        "module": "Mathlib.Data.Set.CoeSort",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/CoeSort.lean",
+          "source_sha256": "a6321ae732b4e66276846dbe00faf4bec0ef17eed151ca268d8d29845d47c3fc"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContractibleSpace",
+        "module": "Mathlib.Topology.Homotopy.Contractible",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homotopy/Contractible.lean",
+          "source_sha256": "4b844337f0229bafa358d4bf707e7f1eb9f66477872fb16fa87f90def2ed9359"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.IsPositive",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "LE.le",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Finite.of_fintype",
+        "module": "Mathlib.Data.Fintype.EquivFin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Fintype/EquivFin.lean",
+          "source_sha256": "c702aab3a9db996423b6cd6d28fb9903b92564798d2e35a10b81b0149da936d7"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "FinsetCoe.fintype",
+        "module": "Mathlib.Data.Fintype.Sets",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Fintype/Sets.lean",
+          "source_sha256": "6d4cfda9e6f211c3f9112f2fb05715e275c1a1b4c8cc7b8392429c869b9850a0"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.instTopologicalSpaceOrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Subtype.mk",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "And.casesOn",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.partialOrder",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Exists.casesOn",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "SetLike.coe",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "Finset.instSetLike",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "And.intro",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Exists.intro",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "instTopologicalSpaceSubtype",
+        "module": "Mathlib.Topology.Defs.Induced",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Induced.lean",
+          "source_sha256": "4043f37980a9dfdc917256c21fdd5677b1941a89dc6d31fc7c2954cea0c22d61"
+        }
+      },
+      {
+        "name": "Subtype.partialOrder",
+        "module": "Mathlib.Order.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Basic.lean",
+          "source_sha256": "4b9e851f92a9d2cd56b61cfdd39aa88652c0c8f1a13e384c970689f0815e501e"
+        }
+      },
+      {
+        "name": "Finset.instPartialOrder",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Subtype.val",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Set.instMembership",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.contractibleSpace_finite_positive_head_closed",
+        "module": "ArtinDeligne.GarsideFolds",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideFolds.lean",
+          "source_sha256": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "SetLike.instMembership",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.garsideWeightsOnSet",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "rfl",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Subtype.property",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.OrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Deligne5.exists_finite_contractible_positive_enlargement",
+        "module": "ArtinDeligne.GarsideFolds",
+        "important_topic": "13-finite-carriers",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideFolds.lean",
+          "source_sha256": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      }
+    ]
+  },
+  "ArtinNormalisers.Deligne5.GarsideWeights.compact_map_contractible_carrier": {
+    "type_dependencies": [
+      {
+        "name": "ArtinNormalisers.Deligne5.headStep",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.garsideWeightsSet",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeightsOn",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "ContinuousMap",
+        "module": "Mathlib.Topology.ContinuousMap.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Defs.lean",
+          "source_sha256": "a0a62837ec226df5203b9028219e5e277b9e2a441331e363fa5ba79b3e2235fd"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.incomingRoot",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContinuousMap.comp",
+        "module": "Mathlib.Topology.ContinuousMap.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Basic.lean",
+          "source_sha256": "dd30a764c0166b967bedf928ac1b99ec706b18ef99d0a26b3f4fbbd1c232172c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "Membership.mem",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "Set.Elem",
+        "module": "Mathlib.Data.Set.CoeSort",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/CoeSort.lean",
+          "source_sha256": "a6321ae732b4e66276846dbe00faf4bec0ef17eed151ca268d8d29845d47c3fc"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContractibleSpace",
+        "module": "Mathlib.Topology.Homotopy.Contractible",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homotopy/Contractible.lean",
+          "source_sha256": "4b844337f0229bafa358d4bf707e7f1eb9f66477872fb16fa87f90def2ed9359"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.IsPositive",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "CompactSpace",
+        "module": "Mathlib.Topology.Defs.Filter",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Filter.lean",
+          "source_sha256": "ac50e97f542f0c683726c271c062cbae2e1a3e8503e996ec70e73de58b48ee25"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.instTopologicalSpaceOrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "TopologicalSpace",
+        "module": "Mathlib.Topology.Defs.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Basic.lean",
+          "source_sha256": "03b3c6c86eb66cb760f18f5454d2db0fa2b5368aaaa5a3e1b110d6cc8011b744"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.partialOrder",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "SetLike.coe",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "Finset.instSetLike",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Nat",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.unshiftedCarrierMap",
+        "module": "ArtinDeligne.GarsideShifts",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideShifts.lean",
+          "source_sha256": "a850d7afb3a06e172c13d47cb889ff61ce47668f3084e85d6389c9acddfd22b5",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "instTopologicalSpaceSubtype",
+        "module": "Mathlib.Topology.Defs.Induced",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Induced.lean",
+          "source_sha256": "4043f37980a9dfdc917256c21fdd5677b1941a89dc6d31fc7c2954cea0c22d61"
+        }
+      },
+      {
+        "name": "Subtype.partialOrder",
+        "module": "Mathlib.Order.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Basic.lean",
+          "source_sha256": "4b9e851f92a9d2cd56b61cfdd39aa88652c0c8f1a13e384c970689f0815e501e"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Set.instMembership",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "SetLike.instMembership",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.garsideWeightsOnSet",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.OrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "value_dependencies": [
+      {
+        "name": "ArtinNormalisers.Deligne5.headStep",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Iff.mpr",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.weightInclusion",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightInclusion.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "805af9fa8d539d3ddc293f19211a32230d1c94d23228deae2765828274a35086",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightInclusion.lean",
+          "upstream_sha256": "1bc937ba881e7e7629d8757a3236be516b266d85be67661daf7526cba24614af"
+        }
+      },
+      {
+        "name": "ContinuousMap.continuous",
+        "module": "Mathlib.Topology.ContinuousMap.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Defs.lean",
+          "source_sha256": "a0a62837ec226df5203b9028219e5e277b9e2a441331e363fa5ba79b3e2235fd"
+        }
+      },
+      {
+        "name": "Eq.mpr",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.exists_finite_positive_head_closed",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Real",
+        "module": "Mathlib.Basic.Real.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Real/Basic.lean",
+          "source_sha256": "e70cdf17ee369c3701377792e09a85e66c063b06fe98451ec702599831ab82fc"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.garsideWeightsSet",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "le_rfl",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeightsOn",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Real.instZero",
+        "module": "Mathlib.Basic.Real.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Real/Basic.lean",
+          "source_sha256": "e70cdf17ee369c3701377792e09a85e66c063b06fe98451ec702599831ab82fc"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights.continuous_restrict_finite",
+        "module": "ArtinDeligne.GarsideFolds",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideFolds.lean",
+          "source_sha256": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset.mem_image",
+        "module": "Mathlib.Data.Finset.Image",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Image.lean",
+          "source_sha256": "f4a95cbd5b1da920b6b76f9cdd804bf40d7eab250bf44ee1e50cc37a4c9cf957"
+        }
+      },
+      {
+        "name": "Homeomorph.continuous",
+        "module": "Mathlib.Topology.Homeomorph.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homeomorph/Defs.lean",
+          "source_sha256": "a3e55cfd3ce027cb1cce726efd72580bf7d9dbfa042aceb2f90291cd55de8df1"
+        }
+      },
+      {
+        "name": "congrArg",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Subtype.val_injective",
+        "module": "Mathlib.Data.Subtype",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Subtype.lean",
+          "source_sha256": "16f49a005ff000fb4caf2a016d6d94dae1f3a80fb596ebbaec15383de9063267"
+        }
+      },
+      {
+        "name": "Finset",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "ContinuousMap.mk",
+        "module": "Mathlib.Topology.ContinuousMap.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Defs.lean",
+          "source_sha256": "a0a62837ec226df5203b9028219e5e277b9e2a441331e363fa5ba79b3e2235fd"
+        }
+      },
+      {
+        "name": "Set.Finite.mem_toFinset",
+        "module": "Mathlib.Data.Set.Finite.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Finite/Basic.lean",
+          "source_sha256": "c0a490fc9e5e764f91b4698fd9a35c96a09308302bc935b9feaaa4a11b1976af"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.cofinalWeightsShift",
+        "module": "ArtinDeligne.GarsideShifts",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideShifts.lean",
+          "source_sha256": "a850d7afb3a06e172c13d47cb889ff61ce47668f3084e85d6389c9acddfd22b5",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContinuousMap",
+        "module": "Mathlib.Topology.ContinuousMap.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Defs.lean",
+          "source_sha256": "a0a62837ec226df5203b9028219e5e277b9e2a441331e363fa5ba79b3e2235fd"
+        }
+      },
+      {
+        "name": "Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "Continuous.comp",
+        "module": "Mathlib.Topology.Continuous",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Continuous.lean",
+          "source_sha256": "14b6c26b5d22be63134a1bed41bcd9ae7720b1b3fc1c0798a42d71e33feb615c"
+        }
+      },
+      {
+        "name": "PartialOrder.toPreorder",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.incomingRoot",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeightsOn.continuous_include",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContinuousMap.comp",
+        "module": "Mathlib.Topology.ContinuousMap.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Basic.lean",
+          "source_sha256": "dd30a764c0166b967bedf928ac1b99ec706b18ef99d0a26b3f4fbbd1c232172c"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.RibbonObject",
+        "module": "ArtinRibbons.RibbonGroupoid",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/RibbonGroupoid.lean",
+          "source_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.finite_eventually_positive",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Classical.propDecidable",
+        "module": "Init.Classical",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Classical.lean",
+          "source_sha256": "9217cf075cac15875b6fb5073ce5d150037953623fbfacac8a181214d42edd0b"
+        }
+      },
+      {
+        "name": "Preorder.toLE",
+        "module": "Mathlib.Order.Defs.PartialOrder",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Defs/PartialOrder.lean",
+          "source_sha256": "c551e636b3f853c46203252d509fda76cca57072cfd5644e28e2496296cc5a48"
+        }
+      },
+      {
+        "name": "Finsupp.support",
+        "module": "Mathlib.Data.Finsupp.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finsupp/Defs.lean",
+          "source_sha256": "1b460af59962887bd25376aa5b85530e95816fb5936504f50166957b19d09962"
+        }
+      },
+      {
+        "name": "Set.Finite",
+        "module": "Mathlib.Basic.Finite.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Finite/Defs.lean",
+          "source_sha256": "152c2303bb2874ff093b660cb3d92f6eff38fd8110d80abc9d95990cce1381cd"
+        }
+      },
+      {
+        "name": "Membership.mem",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Exists",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "CoxeterMatrix.Group",
+        "module": "Mathlib.GroupTheory.Coxeter.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Basic.lean",
+          "source_sha256": "10c32eb89eb46e24d25b8675020af003d8abfeda2cac35ef22c86951167fd863"
+        }
+      },
+      {
+        "name": "Eq.mp",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Set.Elem",
+        "module": "Mathlib.Data.Set.CoeSort",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/CoeSort.lean",
+          "source_sha256": "a6321ae732b4e66276846dbe00faf4bec0ef17eed151ca268d8d29845d47c3fc"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "id",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ContractibleSpace",
+        "module": "Mathlib.Topology.Homotopy.Contractible",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homotopy/Contractible.lean",
+          "source_sha256": "4b844337f0229bafa358d4bf707e7f1eb9f66477872fb16fa87f90def2ed9359"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.weightMap",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "bd8073b176e58d80de2fe3add08448b65cdbdc82368e912835d36527ebbd386d",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightMap.lean",
+          "upstream_sha256": "b38930e96adcd14ff07dfb12e42bdea7e7133bf8c2993b7fdbd816a897a865b6"
+        }
+      },
+      {
+        "name": "RelIso.instRelHomClass",
+        "module": "Mathlib.Order.RelIso.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/RelIso/Basic.lean",
+          "source_sha256": "f3c11e048633a8429be6319e7404cbf288742fd0a82e339540651375335c4966"
+        }
+      },
+      {
+        "name": "OrderIso",
+        "module": "Mathlib.Order.Hom.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Hom/Basic.lean",
+          "source_sha256": "3c12e075f48ddea86bb5e65ceaae0e4e53fb11c97e1fec3ebf0eee470dd4f62d"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights.restrict",
+        "module": "ArtinDeligne.GarsideFolds",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideFolds.lean",
+          "source_sha256": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.IsPositive",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "LE.le",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "instLENat",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Finite.of_fintype",
+        "module": "Mathlib.Data.Fintype.EquivFin",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Fintype/EquivFin.lean",
+          "source_sha256": "c702aab3a9db996423b6cd6d28fb9903b92564798d2e35a10b81b0149da936d7"
+        }
+      },
+      {
+        "name": "OrderHom.ofClass",
+        "module": "Mathlib.Order.Hom.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Hom/Basic.lean",
+          "source_sha256": "3c12e075f48ddea86bb5e65ceaae0e4e53fb11c97e1fec3ebf0eee470dd4f62d"
+        }
+      },
+      {
+        "name": "CoxeterMatrix",
+        "module": "Mathlib.GroupTheory.Coxeter.Matrix",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/GroupTheory/Coxeter/Matrix.lean",
+          "source_sha256": "c980f7968a90ab2103305acc6cbd81702abb29610c48e86e8b5f2a29b1654a68"
+        }
+      },
+      {
+        "name": "FinsetCoe.fintype",
+        "module": "Mathlib.Data.Fintype.Sets",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Fintype/Sets.lean",
+          "source_sha256": "6d4cfda9e6f211c3f9112f2fb05715e275c1a1b4c8cc7b8392429c869b9850a0"
+        }
+      },
+      {
+        "name": "CompactSpace",
+        "module": "Mathlib.Topology.Defs.Filter",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Filter.lean",
+          "source_sha256": "ac50e97f542f0c683726c271c062cbae2e1a3e8503e996ec70e73de58b48ee25"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.instTopologicalSpaceOrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Subtype.mk",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "And.casesOn",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.source",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "TopologicalSpace",
+        "module": "Mathlib.Topology.Defs.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Basic.lean",
+          "source_sha256": "03b3c6c86eb66cb760f18f5454d2db0fa2b5368aaaa5a3e1b110d6cc8011b744"
+        }
+      },
+      {
+        "name": "OrderHom.instFunLike",
+        "module": "Mathlib.Order.Hom.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Hom/Basic.lean",
+          "source_sha256": "3c12e075f48ddea86bb5e65ceaae0e4e53fb11c97e1fec3ebf0eee470dd4f62d"
+        }
+      },
+      {
+        "name": "Homeomorph.instEquivLike",
+        "module": "Mathlib.Topology.Homeomorph.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homeomorph/Defs.lean",
+          "source_sha256": "a3e55cfd3ce027cb1cce726efd72580bf7d9dbfa042aceb2f90291cd55de8df1"
+        }
+      },
+      {
+        "name": "And",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "ContinuousMap.ext",
+        "module": "Mathlib.Topology.ContinuousMap.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Defs.lean",
+          "source_sha256": "a0a62837ec226df5203b9028219e5e277b9e2a441331e363fa5ba79b3e2235fd"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.partialOrder",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Exists.casesOn",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "SetLike.coe",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "OrderIso.injective",
+        "module": "Mathlib.Order.Hom.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Hom/Basic.lean",
+          "source_sha256": "3c12e075f48ddea86bb5e65ceaae0e4e53fb11c97e1fec3ebf0eee470dd4f62d"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights.include_restrict",
+        "module": "ArtinDeligne.GarsideFolds",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideFolds.lean",
+          "source_sha256": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "instFunLikeOrderIso",
+        "module": "Mathlib.Order.Hom.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Hom/Basic.lean",
+          "source_sha256": "3c12e075f48ddea86bb5e65ceaae0e4e53fb11c97e1fec3ebf0eee470dd4f62d"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights.compact_map_finite_carrier",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset.instSetLike",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Nat.instPreorder",
+        "module": "Mathlib.Data.Nat.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Nat/Basic.lean",
+          "source_sha256": "3ee0baad265fea427696726bba29a30bc778d32ebc976fd615bc42e8f3c9a47f"
+        }
+      },
+      {
+        "name": "Set.Finite.toFinset",
+        "module": "Mathlib.Data.Set.Finite.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Finite/Basic.lean",
+          "source_sha256": "c0a490fc9e5e764f91b4698fd9a35c96a09308302bc935b9feaaa4a11b1976af"
+        }
+      },
+      {
+        "name": "Homeomorph.symm",
+        "module": "Mathlib.Topology.Homeomorph.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homeomorph/Defs.lean",
+          "source_sha256": "a3e55cfd3ce027cb1cce726efd72580bf7d9dbfa042aceb2f90291cd55de8df1"
+        }
+      },
+      {
+        "name": "Nat",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "And.intro",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Exists.intro",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Iff.mp",
+        "module": "Init.Core",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Core.lean",
+          "source_sha256": "c59ce725905c3878be557a5569ccbda9fa7affedfb28b2b930429eb245c1263c"
+        }
+      },
+      {
+        "name": "Homeomorph",
+        "module": "Mathlib.Topology.Homeomorph.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homeomorph/Defs.lean",
+          "source_sha256": "a3e55cfd3ce027cb1cce726efd72580bf7d9dbfa042aceb2f90291cd55de8df1"
+        }
+      },
+      {
+        "name": "Eq.ndrec",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.weightMap_support_embedding",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "bd8073b176e58d80de2fe3add08448b65cdbdc82368e912835d36527ebbd386d",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightMap.lean",
+          "upstream_sha256": "b38930e96adcd14ff07dfb12e42bdea7e7133bf8c2993b7fdbd816a897a865b6"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Ribbon2.PositiveReducedArrow",
+        "module": "ArtinRibbons.ReducedRibbons",
+        "important_topic": "05-ribbons",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": true,
+          "github_blob_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/18f529895b3987103a1813b175aa0b7e54edc3c3/ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "ribbons/ArtinRibbons/ReducedRibbons.lean",
+          "source_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628",
+          "source_status": "committed exact source"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": "12-garside-model",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.unshiftedCarrierMap",
+        "module": "ArtinDeligne.GarsideShifts",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideShifts.lean",
+          "source_sha256": "a850d7afb3a06e172c13d47cb889ff61ce47668f3084e85d6389c9acddfd22b5",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset.finite_toSet",
+        "module": "Mathlib.Data.Set.Finite.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Finite/Basic.lean",
+          "source_sha256": "c0a490fc9e5e764f91b4698fd9a35c96a09308302bc935b9feaaa4a11b1976af"
+        }
+      },
+      {
+        "name": "instTopologicalSpaceSubtype",
+        "module": "Mathlib.Topology.Defs.Induced",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Defs/Induced.lean",
+          "source_sha256": "4043f37980a9dfdc917256c21fdd5677b1941a89dc6d31fc7c2954cea0c22d61"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.value",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Subtype.partialOrder",
+        "module": "Mathlib.Order.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Basic.lean",
+          "source_sha256": "4b9e851f92a9d2cd56b61cfdd39aa88652c0c8f1a13e384c970689f0815e501e"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.OrderWeights.weights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Homeomorph.symm_apply_apply",
+        "module": "Mathlib.Topology.Homeomorph.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/Homeomorph/Defs.lean",
+          "source_sha256": "a3e55cfd3ce027cb1cce726efd72580bf7d9dbfa042aceb2f90291cd55de8df1"
+        }
+      },
+      {
+        "name": "Eq.symm",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Finset.instPartialOrder",
+        "module": "Mathlib.Data.Finset.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Defs.lean",
+          "source_sha256": "b4285f8ddcd64480c7a6da74e4ff9f649fc230af9a040d9b8cdeb706b4786c1f"
+        }
+      },
+      {
+        "name": "Subtype.val",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Eq",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "Set.instMembership",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeightsOn.include",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ContinuousMap.instFunLike",
+        "module": "Mathlib.Topology.ContinuousMap.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Topology/ContinuousMap/Defs.lean",
+          "source_sha256": "a0a62837ec226df5203b9028219e5e277b9e2a441331e363fa5ba79b3e2235fd"
+        }
+      },
+      {
+        "name": "DFunLike.coe",
+        "module": "Mathlib.Basic.FunLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/FunLike/Basic.lean",
+          "source_sha256": "36b1903033f551820b3358c34103bbfca9a852780a24c59b24b76cf9ee8a70a4"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.contractibleSpace_finite_positive_head_closed",
+        "module": "ArtinDeligne.GarsideFolds",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideFolds.lean",
+          "source_sha256": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "Finset.image",
+        "module": "Mathlib.Data.Finset.Image",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Finset/Image.lean",
+          "source_sha256": "f4a95cbd5b1da920b6b76f9cdd804bf40d7eab250bf44ee1e50cc37a4c9cf957"
+        }
+      },
+      {
+        "name": "Classical.decEq",
+        "module": "Mathlib.Basic.Logic.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/Logic/Basic.lean",
+          "source_sha256": "c624cb92c71d803cfc58d634693f4f63b5b077f3b0b3e4ba0bab7ac4bde922e9"
+        }
+      },
+      {
+        "name": "SetLike.instMembership",
+        "module": "Mathlib.Basic.SetLike.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/SetLike/Basic.lean",
+          "source_sha256": "23ca2758d6c48d671123e46d02eec6b9d9b40ff41488bc53101062f7948fd9d4"
+        }
+      },
+      {
+        "name": "OrderHom",
+        "module": "Mathlib.Order.Hom.Basic",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Order/Hom/Basic.lean",
+          "source_sha256": "3c12e075f48ddea86bb5e65ceaae0e4e53fb11c97e1fec3ebf0eee470dd4f62d"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.garsideWeightsOnSet",
+        "module": "ArtinDeligne.GarsideWeights",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideWeights.lean",
+          "source_sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "ArtinNormalisers.Deligne5.IncomingVertex.cofinalShift",
+        "module": "ArtinDeligne.IncomingOrder",
+        "important_topic": null,
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/IncomingOrder.lean",
+          "source_sha256": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      },
+      {
+        "name": "rfl",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "EquivLike.toFunLike",
+        "module": "Mathlib.Basic.FunLike.Equiv",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Basic/FunLike/Equiv.lean",
+          "source_sha256": "33a6a71024beb05b9d0d7289b3f414a92f7d2a301cc1c52543238dfa356cb757"
+        }
+      },
+      {
+        "name": "Subtype.property",
+        "module": "Init.Prelude",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "role": "bundled Lean foundation",
+          "source_path": "Init/Prelude.lean",
+          "source_sha256": "4e328f8f9ab8c511907489e361c418d0d0ea31759d33863f166536c4f827133e"
+        }
+      },
+      {
+        "name": "OAI.HarmonicArtin.OrderWeights",
+        "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "accepted_scope": "entire original module; only import-path relocation",
+          "active_source_path": "deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "cohort": "deligne-weights-supplier",
+          "repository": "https://github.com/openai/math",
+          "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+          "selected_declaration_blocks": [],
+          "source_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+          "status": "Accepted exact supplier cohort; active source may contain declared import/compatibility ports.",
+          "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+          "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b"
+        }
+      },
+      {
+        "name": "Set",
+        "module": "Mathlib.Data.Set.Defs",
+        "important_topic": null,
+        "project_root": false,
+        "source": {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "role": "pinned foundation or transitive Lake dependency",
+          "source_path": "Mathlib/Data/Set/Defs.lean",
+          "source_sha256": "8f267392c231cdf50e524be427e3382fe42aeb13691a6cc7433f2a25eed1db2e"
+        }
+      }
+    ],
+    "structural_dependencies": [
+      {
+        "name": "ArtinNormalisers.Deligne5.GarsideWeights.compact_map_contractible_carrier",
+        "module": "ArtinDeligne.GarsideShifts",
+        "important_topic": "13-finite-carriers",
+        "project_root": true,
+        "source": {
+          "exact_bytes_at_observed_head": false,
+          "observed_base_git_head": "18f529895b3987103a1813b175aa0b7e54edc3c3",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "role": "locally authored project",
+          "source_path": "deligne/ArtinDeligne/GarsideShifts.lean",
+          "source_sha256": "a850d7afb3a06e172c13d47cb889ff61ce47668f3084e85d6389c9acddfd22b5",
+          "source_status": "source snapshot uncommitted or changed against observed HEAD; exact SHA256 binding, not a Git blob claim"
+        }
+      }
+    ]
+  }
+}

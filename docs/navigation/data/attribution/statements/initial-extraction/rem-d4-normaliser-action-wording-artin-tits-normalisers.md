@@ -1,0 +1,1 @@
+In the paragraph describing the free action and the colour orbits, the article states that the action of each $g\in\mathrm{Norm}_W(W_J)$ is free on $\mathrm{Cham}(J)$, and that chambers with the same second label lie in the same orbit.

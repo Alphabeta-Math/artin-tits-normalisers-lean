@@ -1,0 +1,1 @@
+Let $E$ be a finite-dimensional coordinate Euclidean space, $T\subseteq E$, and $u\in\operatorname{int}_E(T)$. If $d=\dim E>0$, there exist an orthonormal basis $e_1,\ldots,e_d$ and $\varepsilon>0$ such that all $p_i^\pm=u\pm\varepsilon e_i$ belong to $T$, and $B_E(u,\varepsilon)\subseteq T$.

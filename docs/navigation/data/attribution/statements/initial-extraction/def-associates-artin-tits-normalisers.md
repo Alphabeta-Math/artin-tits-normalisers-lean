@@ -1,0 +1,1 @@
+An associate of $J\subseteq\Gamma_0$ is $I\subseteq\Gamma_0$ such that $W_I$ and $W_J$ are conjugate in $W$.

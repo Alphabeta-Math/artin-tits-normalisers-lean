@@ -1,0 +1,1 @@
+For $I\subseteq\Gamma_0$ and $a\in I^c$, if $|\Phi_{I+a}\setminus\Phi_I|<\infty$, then $W_{[I,a]}$ is finite.

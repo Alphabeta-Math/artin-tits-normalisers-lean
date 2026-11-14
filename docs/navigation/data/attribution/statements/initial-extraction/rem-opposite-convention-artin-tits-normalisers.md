@@ -1,0 +1,1 @@
+The article uses the opposite of the groupoid in [5]: composition $\mathrm{Hom}(I,K)\times\mathrm{Hom}(K,L)\to\mathrm{Hom}(I,L)$ sends $(x,y)$ to $xy$, matching left-to-right path composition.

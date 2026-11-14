@@ -1,0 +1,1 @@
+For the $D_4$ example, the universal wall groupoid is isomorphic to the fundamental groupoid of the complex formed by attaching two-cells to the generating graph’s two-cycles and its polygonal faces, including the outermost hexagon. Equivalently one fills polygonal faces in the undirected adjacency graph; the source identifies the resulting space as a two-sphere.

@@ -1,0 +1,1 @@
+Let $P$ be the gallery category of a finite central simplicial arrangement. Suppose any two arrows with the same source have a common right multiple. Then outgoing arrows under left divisibility form a lattice at every object, and incoming arrows under right divisibility form a lattice at every object.

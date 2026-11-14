@@ -1,0 +1,1 @@
+Every $x:J\to I$ in $\mathcal{BH}$ lifts uniquely from $(e,J)$ to $(x,I)$. For the $D_4$ example, $N(W,J)\cong\mathcal{BH}_J=\{x:(x,2)\in\mathrm{Cham}(J)\}$, the eight-element subgroup displayed by the red vertices: $\{e,stuts,stuvts,stvts,vtsutv,stuvtsutvtu,vtutv,utsvtu\}$.

@@ -1,0 +1,1 @@
+The quotient $\pi:A\to W$ induces $\overline\pi:N(A,J)\to N(W,J)$ with exact sequence $1\to N(P,J)\to N(A,J)\xrightarrow{\overline\pi}N(W,J)\to1$.

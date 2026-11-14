@@ -1,0 +1,3 @@
+Let $\Gamma$ be a Coxeter diagram with vertex set $\Gamma_0$, let $I\subseteq\Gamma_0$, and let $a\in I^c=\Gamma_0\setminus I$. As in [[def-set-notation-artin-tits-normalisers]], put $I+a=I\cup\{a\}$. Write $\Gamma(I+a)$ for the induced subgraph of $\Gamma$ on $I+a$: its vertices are exactly those in $I+a$, and it contains exactly the edges of $\Gamma$ whose endpoints both lie in $I+a$, with their labels retained.
+
+The notation $[I,a]$ denotes the vertex set of the connected component of $\Gamma(I+a)$ containing $a$. Explicitly, $[I,a]$ consists of the vertices $v\in I+a$ for which a path in $\Gamma(I+a)$ has endpoints $a$ and $v$; a path of length zero is allowed. In particular, $a\in[I,a]\subseteq I+a$.

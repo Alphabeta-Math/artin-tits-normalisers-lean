@@ -1,0 +1,1 @@
+Modulo atomic braid relations and the quadratic relations $tt^{-1}=1$ for elementary inverse pairs, every finite composable elementary-generator path is congruent to a standard expression of its product.

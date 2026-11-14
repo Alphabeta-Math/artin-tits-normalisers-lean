@@ -1,0 +1,1 @@
+For spherical $\Gamma$, $\mathrm{Norm}_A(A_J)\cong A_J\rtimes\mathcal R_J$. In particular the vertex group $\mathcal R_J$ maps isomorphically to $N(A,J)$ under the canonical quotient.

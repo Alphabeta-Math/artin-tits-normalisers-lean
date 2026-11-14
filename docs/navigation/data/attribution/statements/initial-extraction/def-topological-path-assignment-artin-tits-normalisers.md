@@ -1,0 +1,1 @@
+Choose points $a_C\in X_C$ with $a_{gC}=ga_C$ for $g\in N(W,J)$. Send the chamber $C$ to $a_C$. For adjacent $C,C^\prime$, choose $d\in X_{C,C^\prime}$ and paths $\gamma_1$ in $X_C$ from $a_C$ to $d$ and $\gamma_2$ in $X_{C^\prime}$ from $d$ to $a_{C^\prime}$; send the one-step arrow to the homotopy class of $\gamma_1\gamma_2$.

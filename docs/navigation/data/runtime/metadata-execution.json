@@ -1,0 +1,119 @@
+{
+  "attribution_status": "Final generation held for root-confirmed correction/review of source atlas; no result pages generated yet.",
+  "commands": [
+    {
+      "argv": [
+        "/home/lazyinspirit/.elan/bin/lake",
+        "env",
+        "lean",
+        "../docs/navigation/tools/ExportStatements.lean"
+      ],
+      "attempt": 1,
+      "cwd": "deligne",
+      "exit_code": 1,
+      "kind": "metadata-reflection",
+      "log": "docs/navigation/data/reflection-attempt-1.log",
+      "log_sha256": "d8be0a0c7f74c32bec9366ce644ae0aacf746dd41272d91812c82478c69636c9",
+      "note": "Metadata API incompatibility; no dataset emitted",
+      "source": "docs/navigation/data/reflection-tool-attempt-1.lean.txt",
+      "source_sha256": "5ae34ee2fb7c6a8ab3e2b0cd6411122abe804070fd73ea1f05757b1bbab41e1f"
+    },
+    {
+      "argv": [
+        "/home/lazyinspirit/.elan/bin/lake",
+        "env",
+        "lean",
+        "../docs/navigation/tools/ExportStatements.lean"
+      ],
+      "attempt": 2,
+      "cwd": "deligne",
+      "exit_code": 1,
+      "kind": "metadata-reflection",
+      "log": "docs/navigation/data/reflection-attempt-2.log",
+      "log_sha256": "d8be0a0c7f74c32bec9366ce644ae0aacf746dd41272d91812c82478c69636c9",
+      "note": "Failed relative-path setup left same observer; metadata API rejected",
+      "source": "docs/navigation/data/reflection-tool-attempt-1.lean.txt",
+      "source_sha256": "5ae34ee2fb7c6a8ab3e2b0cd6411122abe804070fd73ea1f05757b1bbab41e1f"
+    },
+    {
+      "argv": [
+        "/home/lazyinspirit/.elan/bin/lake",
+        "env",
+        "lean",
+        "../docs/navigation/tools/ExportStatements.lean"
+      ],
+      "attempt": 3,
+      "cwd": "deligne",
+      "exit_code": 1,
+      "kind": "metadata-reflection",
+      "log": "docs/navigation/data/reflection-attempt-3.log",
+      "log_sha256": "d219344fa55a10ef02c834a2656492f284aa06e1ab1729ed1305536fd4b6c36c",
+      "note": "Complete-root guard rejected19 missing older convenience roots; no dataset emitted",
+      "source": "docs/navigation/data/reflection-tool-attempt-3.lean.txt",
+      "source_sha256": "ff442ce75f9e8ed7e2633123f7a8254524f72cf75b743bf9eadf44ae2dc7a02b"
+    },
+    {
+      "argv": [
+        "/home/lazyinspirit/.elan/bin/lake",
+        "env",
+        "lean",
+        "../docs/navigation/tools/ExportStatements.lean"
+      ],
+      "attempt": 4,
+      "cwd": "deligne",
+      "exit_code": 130,
+      "kind": "metadata-reflection",
+      "log": "docs/navigation/data/reflection-attempt-4.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "note": "Cancelled metadata-only duplicate after failed relative-path setup",
+      "source": "docs/navigation/data/reflection-tool-attempt-3.lean.txt",
+      "source_sha256": "ff442ce75f9e8ed7e2633123f7a8254524f72cf75b743bf9eadf44ae2dc7a02b"
+    },
+    {
+      "argv": [
+        "/home/lazyinspirit/.elan/bin/lake",
+        "env",
+        "lean",
+        "../docs/navigation/tools/ExportStatements.lean"
+      ],
+      "attempt": 5,
+      "cwd": "deligne",
+      "exit_code": 0,
+      "kind": "metadata-reflection",
+      "log": "docs/navigation/data/reflection-attempt-5.log",
+      "log_sha256": "8c9078344c97675973fc67edc7a990f920a5bc68a27897af1082a5f274a93287",
+      "note": "Successful full4294-root metadata reflection",
+      "source": "docs/navigation/tools/ExportStatements.lean",
+      "source_sha256": "e41edc12f8e3434c146f57a11d1a5746cbfdbe2dfb1481db1b340d35114be644"
+    }
+  ],
+  "compaction_command": [
+    "python3",
+    "docs/navigation/tools/compact_types.py",
+    "--input",
+    "docs/navigation/data/statements.json"
+  ],
+  "compaction_exit_code": 0,
+  "complete_types": 4294,
+  "kind": "actual-navigation-metadata-execution",
+  "limits": "No mathematical proof, audit, source change or kernel battery executed by this documentation pipeline. No elapsed durations inferred.",
+  "mathematical_verification": false,
+  "proof_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "raw_type_ast_roundtrips": 4294,
+  "roundtrip_command": [
+    "python3",
+    "docs/navigation/tools/compact_types.py",
+    "--input",
+    "docs/navigation/data/statements.json",
+    "--check"
+  ],
+  "roundtrip_exit_code": 0,
+  "shared_type_nodes": 167736,
+  "source_inventory_sha256": "1289ff7d4a510702b3c9e48804148486b99d079f9b4e491943412efc11a81120",
+  "successful_raw_export": {
+    "compressed_sha256": "9a28bce368702e7731822677122d55a6e930b9a1ecf3f0826b5b20efbaac742d",
+    "path": "statements.raw.json.gz",
+    "uncompressed_bytes": 1110859012,
+    "uncompressed_sha256": "6ce44c81e531fe4492872dbe08d218522ab5394787da176bf92a6aedcfc49eea"
+  }
+}

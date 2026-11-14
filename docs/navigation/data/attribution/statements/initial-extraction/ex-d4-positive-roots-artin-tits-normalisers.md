@@ -1,0 +1,1 @@
+With the source’s $D_4$ numbering, $\Phi^+=\{\alpha_1,\alpha_2,\alpha_3,\alpha_4,\alpha_1+\alpha_2,\alpha_3+\alpha_2,\alpha_4+\alpha_2,\alpha_1+\alpha_2+\alpha_3,\alpha_1+\alpha_2+\alpha_4,\alpha_3+\alpha_2+\alpha_4,\alpha_1+\alpha_2+\alpha_3+\alpha_4,\alpha_1+2\alpha_2+\alpha_3+\alpha_4\}$.
