@@ -1,0 +1,10 @@
+name = "artin-theorems13-14"
+version = "0.1.0"
+defaultTargets = ["Proofs"]
+
+[[require]]
+name = "artin-deligne"
+path = "../deligne"
+
+[[lean_lib]]
+name = "Proofs"
