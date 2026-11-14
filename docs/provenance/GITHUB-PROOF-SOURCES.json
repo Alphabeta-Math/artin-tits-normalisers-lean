@@ -19059,7 +19059,7 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 3,
-  "base_repository_commit": "c779c15d6c6cc4ad5b2c50ea841c89caedba660d",
+  "base_repository_commit": "9dacc8befce702eed601430c776da385cab07343",
   "compiled_M4_dependency_graph": {
     "baseline_archives_unchanged": true,
     "clean_CI_closeout": {
@@ -32516,7 +32516,42 @@
     "accepted_homotopy_prerequisites": true,
     "actual_arrangement_asphericity_proved": false,
     "clean_github_ci_status": "pending; no clean CI success claimed by this local checkpoint acceptance",
-    "compiled_dependency_graph": "New versioned complete actual term graph observation authorized; no completed export asserted yet",
+    "compiled_dependency_graph": {
+      "counts": {
+        "physical_project_aliases": 3,
+        "physical_project_occurrences": 2905,
+        "project_roots": 2903,
+        "reachable_declarations": 48582,
+        "reachable_modules": 1898,
+        "references": 1123853
+      },
+      "execution": {
+        "path": "docs/provenance/homotopy/run-20261114T113600Z/execution.json",
+        "sha256": "7064a109aa10807750bd651c82b9de9c7a9f4671849b1e2b51b002582468ef98"
+      },
+      "graph": {
+        "compressed_sha256": "47ac956e0401afece3a556adfe72e241b99fe7fbdd466cd974eb040088455667",
+        "path": "docs/provenance/homotopy/run-20261114T113600Z/graph.json.gz",
+        "uncompressed_bytes": 71381605,
+        "uncompressed_sha256": "7d21fb23064cbe2ca977349d075fb38619fe42f0f86aa108fde45c3947628f60"
+      },
+      "observed_git_head": "9dacc8befce702eed601430c776da385cab07343",
+      "raw_graphs": [
+        {
+          "compressed_sha256": "e9ad3ea22098d0d405eacca2f42abdc0b781539343b7d1ca9cf7249513aa8e78",
+          "path": "docs/provenance/homotopy/run-20261114T113600Z/preliminary.raw.json.gz",
+          "uncompressed_bytes": 61835700,
+          "uncompressed_sha256": "e2f653c4b2d33ec68f35e0b4867c7c4a59546e4f1e350fbee3413225c6dd1ca3"
+        },
+        {
+          "compressed_sha256": "693185b3951306750fe45d6b63d4fe19079022dfb8d3f592588c147b62e4c491",
+          "path": "docs/provenance/homotopy/run-20261114T113600Z/graph.raw.json.gz",
+          "uncompressed_bytes": 61835700,
+          "uncompressed_sha256": "e2f653c4b2d33ec68f35e0b4867c7c4a59546e4f1e350fbee3413225c6dd1ca3"
+        }
+      ],
+      "scope": "All earlier project and239newphysical declarations; private/generated/aliases included. Observation confers no full-target proof."
+    },
     "critical_declarations": [
       "ArtinNormalisers.Homotopy5.actualLocalEquiconnection",
       "ArtinNormalisers.Homotopy5.actualMetricNerve",
@@ -32587,6 +32622,27 @@
     "source_inventory": {
       "path": "homotopy/source-inventory.json",
       "sha256": "c1b4f7a4689f7cc0f3549dd962d186ef57de57a55a39721dc66d990f868c8441"
+    },
+    "source_publication": {
+      "CI_status_at_binding_creation": {
+        "status": "pending/in progress (root supplied); no successful CI result asserted",
+        "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43590812660"
+      },
+      "binding": {
+        "path": "docs/provenance/publications/9dacc8befce702eed601430c776da385cab07343/binding.json",
+        "sha256": "94e285c3549316d66a91428636754b213b6296f518baf5e1d1a22639e93a69cc"
+      },
+      "commit": "9dacc8befce702eed601430c776da385cab07343",
+      "exact_Git_blob_bindings": 1288,
+      "historical_metadata_mismatches": [],
+      "observer_only_metadata_exceptions": [
+        "docs/provenance/homotopy/ExportDependencies.lean",
+        "docs/provenance/homotopy/run_export.py"
+      ],
+      "validation": {
+        "path": "docs/provenance/publications/9dacc8befce702eed601430c776da385cab07343/validation.json",
+        "sha256": "2bc0167f406291ab60b4e7c14a7d4b072b764638047bb30e0292e7436b32517c"
+      }
     },
     "status": "Root-accepted actual homotopy/ribbon prerequisites; clean final-mode CI pending",
     "technical_verification": {
@@ -98351,7 +98407,7 @@
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "c4c16cbd2d63a090b9775e47cece8f9482564cb1ea06a3eb46d0aacc48752ff2"
+    "sha256": "99dd5350e35c8937b6efa14fc74d21e31760cdbfce712814ee7720783ce07d12"
   },
   "github_actions_tooling": [
     {
@@ -100139,8 +100195,8 @@
         "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
         "3165671b648d24521a78d71aac47bd61d0500251",
         "59941e65aece274beb65a3f5c668616a69c0e292",
+        "9dacc8befce702eed601430c776da385cab07343",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
-        "c779c15d6c6cc4ad5b2c50ea841c89caedba660d",
         "e7703926f3e486c0fca3a0fe292ab56d6411c248"
       ],
       "roles": [
@@ -102341,6 +102397,25 @@
       "validation": {
         "path": "docs/provenance/publications/59941e65aece274beb65a3f5c668616a69c0e292/validation.json",
         "sha256": "9a5d39c16a5bae46cd63a0096354ce142efcdcf942ce648aa53d95003c2ebf3a"
+      }
+    },
+    {
+      "binding": {
+        "path": "docs/provenance/publications/9dacc8befce702eed601430c776da385cab07343/binding.json",
+        "sha256": "94e285c3549316d66a91428636754b213b6296f518baf5e1d1a22639e93a69cc"
+      },
+      "clean_github_ci_at_binding_creation": {
+        "status": "pending/in progress (root supplied); no successful CI result asserted",
+        "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43590812660"
+      },
+      "commit": "9dacc8befce702eed601430c776da385cab07343",
+      "exact_repository_source_bindings": 1288,
+      "historical_non_scientific_metadata_differences": [],
+      "milestone_project_source_files": 11,
+      "observation_policy": "Append-only publication binding; original precommit graphs/execution/attribution are not rewritten.",
+      "validation": {
+        "path": "docs/provenance/publications/9dacc8befce702eed601430c776da385cab07343/validation.json",
+        "sha256": "2bc0167f406291ab60b4e7c14a7d4b072b764638047bb30e0292e7436b32517c"
       }
     },
     {

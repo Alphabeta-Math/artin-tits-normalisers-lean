@@ -195,4 +195,30 @@ def build(root: Path):
             "observed_git_head": e["observed_git_head"],
             "scope": "All earlier project and239newphysical declarations; private/generated/aliases included. Observation confers no full-target proof.",
         }
+    publication_path = "docs/provenance/publications/9dacc8befce702eed601430c776da385cab07343/binding.json"
+    if (root / publication_path).exists():
+        bound = load(publication_path)
+        validation_path = str(Path(publication_path).with_name("validation.json"))
+        validation = load(validation_path)
+        assert (
+            bound["ok"]
+            and validation["ok"]
+            and validation["binding_sha256"] == ref(publication_path)["sha256"]
+        )
+        assert bound["accepted_homotopy_prerequisites"] is True and all(
+            bound[k] is False for k in FALSE_FLAGS
+        )
+        checkpoint["source_publication"] = {
+            "commit": bound["commit"],
+            "binding": ref(publication_path),
+            "validation": ref(validation_path),
+            "exact_Git_blob_bindings": bound["exact_source_binding_count"],
+            "historical_metadata_mismatches": list(
+                bound["non_scientific_historical_metadata_differences"]
+            ),
+            "observer_only_metadata_exceptions": list(
+                bound["post_publication_observer_metadata"]
+            ),
+            "CI_status_at_binding_creation": bound["clean_github_ci"],
+        }
     return supplier, checkpoint
