@@ -1,0 +1,1 @@
+{"ok": true, "output": "docs/provenance/m5/validation.json", "counts": {"physical_project_aliases": 3, "physical_project_occurrences": 2666, "project_roots": 2664, "reachable_declarations": 44160, "reachable_modules": 1729, "references": 1019785}, "observed_source_attribution": [91, 7], "no_Lean_commands": true}

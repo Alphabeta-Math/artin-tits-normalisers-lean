@@ -1,0 +1,3156 @@
+{
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.coe_fiberEquivFundamentalGroup_symm"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.proj_basepointLift"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "Path.isOpen_setOf_homotopic_of_semilocallySimplyConnectedOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.recOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering.0.TauCeti.UniversalCover.simplyConnectedSpace._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodIcc._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_source"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instTopologicalSpace"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "SemilocallySimplyConnectedOn.mono"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.U"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "TauCeti.homotopyGroupTransport_map_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.existsUnique_continuousMap_lifts"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.HomotopyGroup.equivOfHomotopyEquiv._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.ext.match_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.zerothHomotopyCongr_mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "name": "IsSeparatedMap.t2Space"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.subsingleton_of_contractibleSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.mulEquivOfHomotopyEquiv_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.liftPath_apply_one_eq_ofBasedPath_append._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.ofBasedPath.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "SemilocallySimplyConnectedAt.exists_mem_nhds_subset_loops_nullhomotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.val_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.noConfusionType"
+    },
+    {
+      "axioms": [],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "semilocallySimplyConnectedOn_iff_paths"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "Path.Homotopic.Quotient.discreteTopology_of_semilocallySimplyConnectedOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodContractible._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.initialSegmentFamily"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.isQuotientMap_ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.of_locallyContractibleSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.V_succ_subset"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.joinedIn_endpoint_preimage_of_homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "Path.isOpen_setOf_homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath_ofPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.continuous_append_initialSegmentFamily"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.of_isEmbedding_of_range_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "SemilocallySimplyConnectedAt.exists_isOpen_mem_isPathConnected_isPathHomotopyTrivial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.semilocallySimplyConnectedAt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.pathConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.isOpen_sheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.recOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.sheet_exhaustive"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basedPathComponent"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.fiberEquivFundamentalGroup_basepointLift"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood.0.Path.IsInTube.exists_rungs"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "SemilocallySimplyConnectedAt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "Path.exists_isInTube_of_semilocallySimplyConnectedOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ofPath_cast"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.equivOfHomotopyEquiv_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.rec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instTopologicalSpace._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.rec"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.exists_deformTerminal_mapsTo._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_12"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.isOpen_V"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube._sizeOf_inst"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.fiberEquivFundamentalGroup"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_append"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.range_subpath_subset"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood.0.Path.IsInTube.exists_rungs_homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.mulEquivOfHomotopyEquiv_symm_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "SemilocallySimplyConnectedOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorphOn.isOpen_image"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "semilocallySimplyConnectedOn_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.equivOfHomotopyEquiv_symm_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.isOpenMap_proj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.deformTerminal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.pairwise_disjoint_sheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorphOn.congr_of_eventuallyEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "semilocallySimplyConnectedAt_def"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.isInTube_iff._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint_append"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.locallyPathConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instTopologicalSpace._aux_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "TauCeti.homotopyGroupTransport_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath_def"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_homotopic_of_joinedIn_pathHomotopyTrivial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum.match_1_9"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.casesOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.instSemilocallySimplyConnectedSpaceOfSimplyConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.append"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.isOpen_setOf_isInTube_path"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instContinuousEvalElemRealUnitInterval"
+    },
+    {
+      "axioms": [],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum.match_1_7"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "name": "IsCoveringMap.t2Space"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.isOpen_setOf_isInTube"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.range_proj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ext_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering.0.TauCeti.UniversalCover.quotient_mk_eq_refl_of_ofBasedPath_append_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath_mem_sheet_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.recOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.isOpen_pathComponent_preimage"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.sheet.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath_mem_sheet_iff._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodContractible._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_3"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_4"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.V_castSucc_subset"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.mulEquivOfHomotopyEquiv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.continuous_proj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.prodIcc_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.Homotopic.comp_homotopic_id_of_comp_homotopic_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.toFun_comp_homotopic_id_of_comp_toFun_homotopic_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.mapsTo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.joined_basepoint_ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.basedPathComponent.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.continuous_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mk.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instFunLikeElemRealUnitInterval._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.joinedIn_preimage_of_append"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.basepointLift.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint_ofPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "TauCeti.GenLoop.homotopic_map_transport"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.of_forall_exists_mem_nhds_isSimplyConnected"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.prodContractible_toFun"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.mem_V"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint_def"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basedPathSheet.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.prodMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.of_comp_of_surjective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "TauCeti.nonempty_homotopyGroupMulEquiv_of_homotopyEquiv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.isOpen_U"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ofPath_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.Homotopic.homotopic_of_comp_homotopic_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.casesOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath_eq_of_homotopic_toPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.HomotopyGroup.mulEquivOfHomotopyEquiv._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.pathConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.isPathHomotopyTrivial_U"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.localInverseAt_comp_eventuallyEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.isOpenMap_endpoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.instSemilocallySimplyConnectedSpaceOfDiscreteTopology"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.equivOfHomotopyEquiv_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.sheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On.0.SemilocallySimplyConnectedAt.exists_isOpen_mem_isPathConnected_isPathHomotopyTrivial._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.locallyPathConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.basepointLift._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mem_sheet_self"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube._sizeOf_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "exists_isOpen_mem_isPathConnected_isPathHomotopyTrivial"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.ctorIdx"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint_initialSegmentFamily"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basepointLift"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.prodContractible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.prodCongr_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.sheet_subset_proj_preimage"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "name": "IsLocallyInjective.isDiscrete_preimage_singleton"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ext_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.map_comp_map_bijective_of_homotopy_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.endpoint_eq_of_ofBasedPath_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ofPath_toPath_self"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.continuous_ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.map_eq_homotopyGroupEquivOfPath_comp_of_homotopy"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.recOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.append.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.locallyPathConnectedSpace.match_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.deformTerminal_apply_of_lt_of_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "name": "IsLocallyInjective.finite_preimage_singleton_inter"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.mk.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.instSemilocallySimplyConnectedSpaceOfStronglyLocallyContractibleSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.surjective_ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint_deformTerminal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.equivOfHomotopyEquiv_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover._sizeOf_inst"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instTopologicalSpace._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.pathComponent_preimage_eq_of_ofBasedPath_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.apply_one_eq_ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.exists_open_nhds_pathComponent_preimage"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.equivOfHomotopyEquiv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.simplyConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.instTopologicalSpaceUniversalCover"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.mk.injEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "SemilocallySimplyConnectedOn.at"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.deformTerminal_apply_mem_of_lt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.isCoveringMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible",
+      "name": "TauCeti.RealTopologicalVectorSpace.stronglyLocallyContractibleSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.sheet_exhaustive.match_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.V"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.prodIcc_symm_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.mk_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.instSemilocallySimplyConnectedSpaceProd"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instFunLikeElemRealUnitInterval"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.deformTerminal_apply_of_le"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "TauCeti.eventually_homotopic_refl_iff_of_semilocallySimplyConnectedOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basepointLift_coe"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodIcc._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "SemilocallySimplyConnectedAt.of_map_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.isPathConnected_V"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.of_map_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.proj_injOn_sheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "semilocallySimplyConnectedAt_iff_paths"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_11"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "SemilocallySimplyConnectedOn.of_semilocallySimplyConnectedSpace"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.path"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.initialSegmentFamily.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.toPath_ofPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.initialSegmentFamily_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basedPathSheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.proj_ofBasedPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.rec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.proj_surjOn_sheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.source"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.casesOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.endpoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.symm_symm"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.exists_deformTerminal_mapsTo._simp_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.pullback_snd"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.exists_isInTube"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.trans_homotopic_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.exists_deformTerminal_mapsTo"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_13"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.map_bijective_of_homotopyEquiv"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.proj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.instTopologicalSpace._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.continuous_initialSegmentFamily"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "TauCeti.isClopen_setOf_homotopic_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.pathComponentIn_ofPath_eq_of_homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.coe_prodContractible"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.fiberEquivFundamentalGroup_apply_mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ofPath"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.zerothHomotopyCongr"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.deformTerminal_apply_of_lt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.continuous_prepend"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "TauCeti.SemilocallySimplyConnectedSpace.casesOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "TauCeti.GenLoop.homotopyAlongMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.initialSegmentFamily_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.toPath_homotopic_of_ofBasedPath_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "name": "IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodIcc._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.ofPath_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.Tube.noConfusionType"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.mem_basedPathComponent_of_ofBasedPath_eq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basedPathSheet_subset_endpoint_preimage"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "name": "IsSeparatedMap.eqOn_of_leftInvOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.liftPath_apply_one_eq_ofBasedPath_append"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "semilocallySimplyConnectedAt_iff_range_eq_bot"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "Path.Homotopic.Quotient.discreteTopology"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover._sizeOf_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.basedPathSheet_mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.rec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.zerothHomotopyCongr_symm_mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "name": "semilocallySimplyConnectedAt_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.map_eq_one_of_nullhomotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.sheet.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ofBasedPath_preimage_sheet"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "name": "ContinuousMap.HomotopyEquiv.prodIcc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "name": "SemilocallySimplyConnectedAt.exists_isOpen_mem_nhds_subset_loops_nullhomotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.mulEquivOfHomotopyEquiv_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.continuous_endpoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.ctorIdx"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "name": "HomotopyGroup.mulEquivOfHomotopyEquiv_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.IsInTube.exists_trans_homotopic"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "Path.isInTube_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mk.injEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "name": "TauCeti.UniversalCover.discreteTopology_fiber"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "name": "BasedPath.initialSegmentFamily_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "name": "unitInterval.Partition.isOpen_setOf_mapsTo_Icc_and_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "name": "TauCeti.UniversalCover.mk._flat_ctor"
+    }
+  ],
+  "physical_modules": [
+    {
+      "declarations": 17,
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "names": [
+        "SemilocallySimplyConnectedAt",
+        "TauCeti.SemilocallySimplyConnectedSpace.of_forall_exists_mem_nhds_isSimplyConnected",
+        "TauCeti.SemilocallySimplyConnectedSpace.of_locallyContractibleSpace",
+        "semilocallySimplyConnectedAt_def",
+        "SemilocallySimplyConnectedAt.exists_mem_nhds_subset_loops_nullhomotopic",
+        "TauCeti.instSemilocallySimplyConnectedSpaceOfDiscreteTopology",
+        "TauCeti.instSemilocallySimplyConnectedSpaceOfStronglyLocallyContractibleSpace",
+        "TauCeti.instSemilocallySimplyConnectedSpaceProd",
+        "TauCeti.SemilocallySimplyConnectedSpace.semilocallySimplyConnectedAt",
+        "SemilocallySimplyConnectedAt.exists_isOpen_mem_nhds_subset_loops_nullhomotopic",
+        "TauCeti.SemilocallySimplyConnectedSpace.rec",
+        "TauCeti.SemilocallySimplyConnectedSpace.recOn",
+        "TauCeti.instSemilocallySimplyConnectedSpaceOfSimplyConnectedSpace",
+        "TauCeti.SemilocallySimplyConnectedSpace",
+        "TauCeti.SemilocallySimplyConnectedSpace.mk._flat_ctor",
+        "TauCeti.SemilocallySimplyConnectedSpace.casesOn",
+        "TauCeti.SemilocallySimplyConnectedSpace.mk"
+      ]
+    },
+    {
+      "declarations": 43,
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "names": [
+        "Path.Tube.V_castSucc_subset",
+        "Path.IsInTube.casesOn",
+        "unitInterval.Partition.isOpen_setOf_mapsTo_Icc_and_mem",
+        "Path.IsInTube.mk",
+        "Path.Tube.isOpen_V",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood.0.Path.IsInTube.exists_rungs",
+        "Path.Tube.U",
+        "Path.Tube.mk.noConfusion",
+        "Path.Tube.isPathConnected_V",
+        "Path.Tube.casesOn",
+        "Path.IsInTube.trans_homotopic_trans",
+        "Path.IsInTube",
+        "Path.Tube.mk._flat_ctor",
+        "Path.Tube.isOpen_setOf_isInTube_path",
+        "Path.Tube.ctorIdx",
+        "Path.Tube._sizeOf_inst",
+        "Path.Tube.isOpen_U",
+        "Path.Tube.noConfusionType",
+        "Path.IsInTube.mem_V",
+        "Path.IsInTube.mk._flat_ctor",
+        "Path.Tube.isPathHomotopyTrivial_U",
+        "Path.Tube.V_succ_subset",
+        "Path.isInTube_iff._simp_1",
+        "Path.Tube.mk",
+        "Path.IsInTube.mapsTo",
+        "Path.Tube.rec",
+        "Path.Tube.mk.inj",
+        "Path.Tube",
+        "Path.Tube.isOpen_setOf_isInTube",
+        "Path.isInTube_iff",
+        "Path.IsInTube.homotopic",
+        "Path.Tube._sizeOf_1",
+        "Path.IsInTube.range_subpath_subset",
+        "Path.IsInTube.exists_trans_homotopic",
+        "Path.Tube.mk.sizeOf_spec",
+        "Path.IsInTube.rec",
+        "Path.Tube.mk.injEq",
+        "Path.IsInTube.recOn",
+        "Path.Tube.noConfusion",
+        "Path.Tube.V",
+        "Path.exists_isInTube",
+        "Path.Tube.recOn",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood.0.Path.IsInTube.exists_rungs_homotopic"
+      ]
+    },
+    {
+      "declarations": 21,
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "names": [
+        "SemilocallySimplyConnectedOn.at",
+        "TauCeti.isClopen_setOf_homotopic_refl",
+        "Path.exists_isInTube_of_semilocallySimplyConnectedOn",
+        "Path.isOpen_setOf_homotopic_of_semilocallySimplyConnectedOn",
+        "semilocallySimplyConnectedAt_iff_paths",
+        "SemilocallySimplyConnectedAt.exists_isOpen_mem_isPathConnected_isPathHomotopyTrivial",
+        "semilocallySimplyConnectedOn_iff_paths",
+        "semilocallySimplyConnectedOn_iff",
+        "Path.Homotopic.Quotient.discreteTopology",
+        "semilocallySimplyConnectedAt_iff_range_eq_bot",
+        "SemilocallySimplyConnectedOn.of_semilocallySimplyConnectedSpace",
+        "exists_isOpen_mem_isPathConnected_isPathHomotopyTrivial",
+        "Path.isOpen_setOf_homotopic",
+        "TauCeti.eventually_homotopic_refl_iff_of_semilocallySimplyConnectedOn",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On.0.SemilocallySimplyConnectedAt.exists_isOpen_mem_isPathConnected_isPathHomotopyTrivial._simp_1_1",
+        "SemilocallySimplyConnectedAt.of_map_injective",
+        "SemilocallySimplyConnectedOn.mono",
+        "TauCeti.SemilocallySimplyConnectedSpace.of_map_injective",
+        "Path.Homotopic.Quotient.discreteTopology_of_semilocallySimplyConnectedOn",
+        "semilocallySimplyConnectedAt_iff",
+        "SemilocallySimplyConnectedOn"
+      ]
+    },
+    {
+      "declarations": 66,
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "names": [
+        "BasedPath.endpoint_def",
+        "BasedPath.instTopologicalSpace._proof_3",
+        "BasedPath.initialSegmentFamily_zero",
+        "BasedPath.ext_iff",
+        "BasedPath.instTopologicalSpace._proof_4",
+        "BasedPath.instFunLikeElemRealUnitInterval",
+        "BasedPath.ofPath_apply",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal._proof_2",
+        "BasedPath.toPath._proof_1",
+        "BasedPath.isOpen_pathComponent_preimage",
+        "BasedPath.endpoint_ofPath",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal._proof_3",
+        "BasedPath.ofPath_toPath_self",
+        "BasedPath.toPath_source",
+        "BasedPath.ofPath",
+        "BasedPath.initialSegmentFamily_apply",
+        "BasedPath.deformTerminal_apply_of_lt",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.initialSegmentFamily.eq_1",
+        "BasedPath.initialSegmentFamily",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.exists_deformTerminal_mapsTo._simp_1_1",
+        "BasedPath.joinedIn_preimage_of_append",
+        "BasedPath.endpoint_initialSegmentFamily",
+        "BasedPath.source",
+        "BasedPath.joinedIn_endpoint_preimage_of_homotopic",
+        "BasedPath.toPath_refl",
+        "BasedPath.toPath_homotopic_of_joinedIn_pathHomotopyTrivial",
+        "BasedPath.append",
+        "BasedPath.instTopologicalSpace",
+        "BasedPath.exists_open_nhds_pathComponent_preimage",
+        "BasedPath.continuous_append_initialSegmentFamily",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal.eq_1",
+        "BasedPath",
+        "BasedPath.instContinuousEvalElemRealUnitInterval",
+        "BasedPath.ext",
+        "BasedPath.pathComponentIn_ofPath_eq_of_homotopic",
+        "BasedPath.toPath",
+        "BasedPath.toPath_target",
+        "BasedPath.mk_apply",
+        "BasedPath.refl",
+        "BasedPath.endpoint",
+        "BasedPath.toPath._proof_2",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.deformTerminal._proof_1",
+        "BasedPath.deformTerminal",
+        "BasedPath.continuous_iff",
+        "BasedPath.endpoint_append",
+        "BasedPath.continuous_endpoint",
+        "BasedPath.instTopologicalSpace._proof_5",
+        "BasedPath.endpoint_refl",
+        "BasedPath.isOpenMap_endpoint",
+        "BasedPath.deformTerminal_apply_of_lt_of_le",
+        "BasedPath.toPath_apply",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.exists_deformTerminal_mapsTo",
+        "BasedPath.append.eq_1",
+        "BasedPath.toPath_append",
+        "BasedPath.instFunLikeElemRealUnitInterval._proof_1",
+        "BasedPath.deformTerminal_apply_mem_of_lt",
+        "BasedPath.deformTerminal_apply_of_le",
+        "BasedPath.initialSegmentFamily_one",
+        "BasedPath.val_apply",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath.0.BasedPath.exists_deformTerminal_mapsTo._simp_1_2",
+        "BasedPath.instTopologicalSpace._aux_1",
+        "BasedPath.ofPath_cast",
+        "BasedPath.toPath_ofPath",
+        "BasedPath.ofPath_refl",
+        "BasedPath.endpoint_deformTerminal",
+        "BasedPath.continuous_initialSegmentFamily"
+      ]
+    },
+    {
+      "declarations": 72,
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "names": [
+        "TauCeti.UniversalCover.continuous_prepend",
+        "TauCeti.UniversalCover.fiberEquivFundamentalGroup",
+        "TauCeti.UniversalCover.basedPathSheet.congr_simp",
+        "TauCeti.UniversalCover.toPath_homotopic_of_ofBasedPath_eq",
+        "TauCeti.UniversalCover.recOn",
+        "TauCeti.UniversalCover.rec",
+        "TauCeti.UniversalCover.basepointLift_coe",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_6",
+        "TauCeti.UniversalCover.coe_fiberEquivFundamentalGroup_symm",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.sheet_exhaustive.match_1_4",
+        "TauCeti.UniversalCover.fiberEquivFundamentalGroup_apply_mk",
+        "TauCeti.UniversalCover.fiberEquivFundamentalGroup_basepointLift",
+        "TauCeti.UniversalCover",
+        "TauCeti.UniversalCover.basedPathSheet_mk",
+        "TauCeti.UniversalCover.endpoint_eq_of_ofBasedPath_eq",
+        "TauCeti.UniversalCover.proj_surjOn_sheet",
+        "TauCeti.UniversalCover.sheet_subset_proj_preimage",
+        "TauCeti.UniversalCover.continuous_ofBasedPath",
+        "TauCeti.UniversalCover._sizeOf_1",
+        "TauCeti.UniversalCover.basedPathSheet",
+        "TauCeti.UniversalCover.mk._flat_ctor",
+        "TauCeti.UniversalCover.isQuotientMap_ofBasedPath",
+        "TauCeti.UniversalCover.surjective_ofBasedPath",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_1",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_4",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_3",
+        "TauCeti.UniversalCover.mk.sizeOf_spec",
+        "TauCeti.UniversalCover.range_proj",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_2",
+        "TauCeti.UniversalCover.noConfusion",
+        "TauCeti.UniversalCover.ofBasedPath_eq_of_homotopic_toPath",
+        "TauCeti.UniversalCover.pairwise_disjoint_sheet",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.ext.match_1",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.sheet.eq_1",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.basepointLift.eq_1",
+        "TauCeti.UniversalCover.sheet",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.basepointLift._proof_1",
+        "TauCeti.UniversalCover.ofBasedPath_mem_sheet_iff._simp_1",
+        "TauCeti.UniversalCover.ext",
+        "TauCeti.UniversalCover.ofBasedPath_preimage_sheet",
+        "TauCeti.UniversalCover.mem_sheet_self",
+        "TauCeti.UniversalCover.proj_injOn_sheet",
+        "TauCeti.UniversalCover.noConfusionType",
+        "TauCeti.UniversalCover.proj_ofBasedPath",
+        "TauCeti.UniversalCover.proj_basepointLift",
+        "TauCeti.UniversalCover.continuous_proj",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.mem_basedPathComponent_of_ofBasedPath_eq",
+        "TauCeti.UniversalCover.path",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.fiberEquivFundamentalGroup._proof_5",
+        "TauCeti.UniversalCover.ofBasedPath_mem_sheet_iff",
+        "TauCeti.UniversalCover.mk",
+        "TauCeti.UniversalCover.isOpen_sheet",
+        "TauCeti.UniversalCover.casesOn",
+        "TauCeti.UniversalCover.basedPathSheet_subset_endpoint_preimage",
+        "TauCeti.UniversalCover.basedPathComponent",
+        "TauCeti.UniversalCover.instTopologicalSpaceUniversalCover",
+        "TauCeti.UniversalCover.basepointLift",
+        "TauCeti.UniversalCover.mk.injEq",
+        "TauCeti.UniversalCover.ctorIdx",
+        "TauCeti.UniversalCover.ofBasedPath_def",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.basedPathComponent.eq_1",
+        "TauCeti.UniversalCover._sizeOf_inst",
+        "TauCeti.UniversalCover.isOpenMap_proj",
+        "TauCeti.UniversalCover.mk.noConfusion",
+        "TauCeti.UniversalCover.ext_iff",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.ofBasedPath.eq_1",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic.0.TauCeti.UniversalCover.pathComponent_preimage_eq_of_ofBasedPath_eq",
+        "TauCeti.UniversalCover.proj",
+        "TauCeti.UniversalCover.sheet_exhaustive",
+        "TauCeti.UniversalCover.ofBasedPath",
+        "TauCeti.UniversalCover.ofBasedPath_ofPath",
+        "TauCeti.UniversalCover.mk.inj"
+      ]
+    },
+    {
+      "declarations": 5,
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "names": [
+        "IsCoveringMap.t2Space",
+        "IsSeparatedMap.t2Space",
+        "IsSeparatedMap.eqOn_of_leftInvOn",
+        "IsLocallyInjective.finite_preimage_singleton_inter",
+        "IsLocallyInjective.isDiscrete_preimage_singleton"
+      ]
+    },
+    {
+      "declarations": 21,
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "names": [
+        "IsLocalHomeomorph.of_comp_of_surjective",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_5",
+        "IsLocalHomeomorphOn.congr_of_eventuallyEq",
+        "IsLocalHomeomorphOn.isOpen_image",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.locallyPathConnectedSpace.match_1_1",
+        "IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_3",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_13",
+        "IsLocalHomeomorph.localInverseAt_comp_eventuallyEq",
+        "IsLocalHomeomorph.locallyPathConnectedSpace",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_1",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_11",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum.match_1_9",
+        "IsLocalHomeomorph.prodMap",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_12",
+        "IsLocalHomeomorph.of_isEmbedding_of_range_eq",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum.match_1_7",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_2",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_4",
+        "_private.ArtinAsphericityVendor.Topology.IsLocalHomeomorph.0.IsLocalHomeomorph.eventually_finsum_mem_preimage_singleton_eq_sum._simp_1_6",
+        "IsLocalHomeomorph.pullback_snd"
+      ]
+    },
+    {
+      "declarations": 13,
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "names": [
+        "TauCeti.UniversalCover.discreteTopology_fiber",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering.0.TauCeti.UniversalCover.simplyConnectedSpace._simp_1",
+        "TauCeti.UniversalCover.simplyConnectedSpace",
+        "TauCeti.UniversalCover.isCoveringMap",
+        "TauCeti.UniversalCover.joined_basepoint_ofBasedPath",
+        "TauCeti.UniversalCover.pathConnectedSpace",
+        "TauCeti.UniversalCover.locallyPathConnectedSpace",
+        "TauCeti.UniversalCover.liftPath_apply_one_eq_ofBasedPath_append",
+        "_private.ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering.0.TauCeti.UniversalCover.quotient_mk_eq_refl_of_ofBasedPath_append_eq",
+        "TauCeti.UniversalCover.sheet.congr_simp",
+        "TauCeti.UniversalCover.apply_one_eq_ofBasedPath",
+        "TauCeti.UniversalCover.liftPath_apply_one_eq_ofBasedPath_append._proof_1",
+        "TauCeti.UniversalCover.existsUnique_continuousMap_lifts"
+      ]
+    },
+    {
+      "declarations": 24,
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "names": [
+        "ContinuousMap.HomotopyEquiv.zerothHomotopyCongr",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodIcc._proof_2",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodIcc._proof_3",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_1",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_4",
+        "ContinuousMap.HomotopyEquiv.zerothHomotopyCongr_mk",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodContractible._proof_1",
+        "ContinuousMap.HomotopyEquiv.prodIcc_symm_apply",
+        "ContinuousMap.HomotopyEquiv.prodContractible",
+        "ContinuousMap.Homotopic.homotopic_of_comp_homotopic_id",
+        "ContinuousMap.HomotopyEquiv.symm_symm",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodContractible._proof_2",
+        "ContinuousMap.Homotopic.comp_homotopic_id_of_comp_homotopic_id",
+        "ContinuousMap.HomotopyEquiv.pathConnectedSpace",
+        "ContinuousMap.HomotopyEquiv.zerothHomotopyCongr_symm_mk",
+        "ContinuousMap.HomotopyEquiv.prodIcc_apply",
+        "ContinuousMap.HomotopyEquiv.coe_prodContractible",
+        "ContinuousMap.HomotopyEquiv.toFun_comp_homotopic_id_of_comp_toFun_homotopic_id",
+        "ContinuousMap.HomotopyEquiv.prodContractible_toFun",
+        "ContinuousMap.HomotopyEquiv.prodIcc",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_2",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.zerothHomotopyCongr._proof_3",
+        "ContinuousMap.HomotopyEquiv.prodCongr_apply",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv.0.ContinuousMap.HomotopyEquiv.prodIcc._proof_1"
+      ]
+    },
+    {
+      "declarations": 27,
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "names": [
+        "HomotopyGroup.equivOfHomotopyEquiv_trans",
+        "HomotopyGroup.equivOfHomotopyEquiv_refl",
+        "TauCeti.GenLoop.homotopic_map_transport",
+        "HomotopyGroup.map_eq_one_of_nullhomotopic",
+        "HomotopyGroup.mulEquivOfHomotopyEquiv_symm_apply",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_2",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_3",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.HomotopyGroup.equivOfHomotopyEquiv._proof_1",
+        "HomotopyGroup.mulEquivOfHomotopyEquiv",
+        "HomotopyGroup.mulEquivOfHomotopyEquiv_trans",
+        "HomotopyGroup.equivOfHomotopyEquiv_symm_apply",
+        "TauCeti.homotopyGroupTransport_map_map",
+        "HomotopyGroup.mulEquivOfHomotopyEquiv_apply",
+        "HomotopyGroup.mulEquivOfHomotopyEquiv_refl",
+        "TauCeti.nonempty_homotopyGroupMulEquiv_of_homotopyEquiv",
+        "HomotopyGroup.map_comp_map_bijective_of_homotopy_id",
+        "HomotopyGroup.subsingleton_of_contractibleSpace",
+        "HomotopyGroup.map_eq_homotopyGroupEquivOfPath_comp_of_homotopy",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.HomotopyGroup.mulEquivOfHomotopyEquiv._proof_1",
+        "TauCeti.homotopyGroupTransport_map",
+        "HomotopyGroup.equivOfHomotopyEquiv",
+        "TauCeti.GenLoop.homotopyAlongMap",
+        "HomotopyGroup.map_bijective_of_homotopyEquiv",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_5",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_1",
+        "_private.ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv.0.TauCeti.GenLoop.homotopyAlongMap._proof_4",
+        "HomotopyGroup.equivOfHomotopyEquiv_apply"
+      ]
+    },
+    {
+      "declarations": 1,
+      "module": "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible",
+      "names": [
+        "TauCeti.RealTopologicalVectorSpace.stronglyLocallyContractibleSpace"
+      ]
+    }
+  ],
+  "duplicates": [],
+  "summary": {
+    "all_physical_type_value_universe_parameters_identical": true,
+    "canonical_axioms_checked": true,
+    "canonical_declarations": 310,
+    "distinct_physical_names": 310,
+    "identical_theorem_duplicates": 0,
+    "modules": 11,
+    "physical_occurrences": 310
+  }
+}

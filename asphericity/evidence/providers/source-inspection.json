@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-14T08:43:12.667298+00:00",
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_pin": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "new_full_module_count": 11,
+  "new_lines": 2783,
+  "new_bytes": 146191,
+  "all_selected_full_source_read": true,
+  "no_proof_or_hypothesis_or_namespace_changes": true,
+  "only_selected_import_relocation": true,
+  "closure_modules": [
+    {
+      "module": "TauCeti.AlgebraicTopology.UniversalCover.Covering",
+      "path": "TauCeti/AlgebraicTopology/UniversalCover/Covering.lean",
+      "bytes": 11337,
+      "lines": 225,
+      "sha256": "534426e574135b6769089b2c5f8ae54e3c1ac4aece8758f94f817e779ae64323",
+      "imports": [
+        "Mathlib.Topology.Homotopy.Lifting",
+        "TauCeti.AlgebraicTopology.UniversalCover.Basic",
+        "TauCeti.Topology.IsLocalHomeomorph"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.AlgebraicTopology.UniversalCover.Basic",
+      "path": "TauCeti/AlgebraicTopology/UniversalCover/Basic.lean",
+      "bytes": 22351,
+      "lines": 451,
+      "sha256": "5f699615485d2d61fbca7fb0b081a24d5916443f56e2b35777dd0af7dbf3a130",
+      "imports": [
+        "TauCeti.AlgebraicTopology.UniversalCover.BasedPath"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.AlgebraicTopology.UniversalCover.BasedPath",
+      "path": "TauCeti/AlgebraicTopology/UniversalCover/BasedPath.lean",
+      "bytes": 24908,
+      "lines": 477,
+      "sha256": "63e3fed7aee220cc5fc44c7267b632768c8b366c4fb9c1c8402061632bc0b003",
+      "imports": [
+        "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.On",
+        "Mathlib.Topology.CompactOpen",
+        "Mathlib.Topology.Constructions",
+        "Mathlib.Topology.Order.Basic",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "path": "TauCeti/AlgebraicTopology/SemilocallySimplyConnected/On.lean",
+      "bytes": 18283,
+      "lines": 323,
+      "sha256": "f84e803d2098a38e1a59d6bbeb80271ed11ebe4e4180841c8bf90d1c8ef4f72c",
+      "imports": [
+        "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+        "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+        "TauCeti.Topology.Homotopy.TubeNeighborhood"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+      "path": "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+      "bytes": 16272,
+      "lines": 304,
+      "sha256": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8",
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+        "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+        "TauCeti.CategoryTheory.Groupoid.SingleObj",
+        "TauCeti.Topology.Homotopy.Path"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "74fe034c0e11978c506004f47eecb3991c585fee33cafdbd07e88663efb972e8",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+      "path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+      "bytes": 4875,
+      "lines": 101,
+      "sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+        "Mathlib.CategoryTheory.Groupoid.Subgroupoid",
+        "Mathlib.CategoryTheory.IsConnected"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "62f7a4311761d65428df47c743f0fdabf34fed381363db6fe359da5d376c29dd",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+      "path": "TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+      "bytes": 7637,
+      "lines": 173,
+      "sha256": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f",
+      "imports": [
+        "Mathlib.CategoryTheory.Groupoid",
+        "Mathlib.CategoryTheory.SingleObj"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "77eb43d59ce816420838c4702d95ba04b25e3a90b8ae4a98c494e3103a9fff3f",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Path",
+      "path": "TauCeti/Topology/Homotopy/Path.lean",
+      "bytes": 41149,
+      "lines": 759,
+      "sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+      "imports": [
+        "Mathlib.Topology.Subpath",
+        "Mathlib.Topology.Homotopy.Contractible",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+        "Mathlib.Topology.Connected.LocallyPathConnected",
+        "TauCeti.Topology.UnitInterval",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "ebe8689ceb6e080a752d5923b04f7a8318d46d0d65b2cca7c28e0cf5002d0caa",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.UnitInterval",
+      "path": "TauCeti/Topology/UnitInterval.lean",
+      "bytes": 4607,
+      "lines": 114,
+      "sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+      "imports": [
+        "Mathlib.Topology.UnitInterval",
+        "Mathlib.Topology.Order.ProjIcc"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "32d24fd7c62b0922912cc6d3454627d438b8042b61ce5c0a912ec6f24539b402",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "path": "TauCeti/AlgebraicTopology/SemilocallySimplyConnected/Basic.lean",
+      "bytes": 10887,
+      "lines": 192,
+      "sha256": "9df487dc8d97ab8f6698c1bbac0978ad26db255a4a4ccd0b0f45b5fcd7c6c316",
+      "imports": [
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps",
+        "Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected",
+        "Mathlib.Topology.Homotopy.LocallyContractible",
+        "Mathlib.Topology.Homotopy.Product",
+        "TauCeti.Topology.Homotopy.Path"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.TubeNeighborhood",
+      "path": "TauCeti/Topology/Homotopy/TubeNeighborhood.lean",
+      "bytes": 11900,
+      "lines": 220,
+      "sha256": "eccfc4602040504a2ee308dee6e56726ce107e6fbe99616e8ef8afee0a457053",
+      "imports": [
+        "Mathlib.Topology.CompactOpen",
+        "TauCeti.Topology.Homotopy.Path"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.Topology.IsLocalHomeomorph",
+      "path": "TauCeti/Topology/IsLocalHomeomorph.lean",
+      "bytes": 15877,
+      "lines": 278,
+      "sha256": "8a4be89c7d7acbd49c0467ab337db8727203bdaed424fec2a8594866df045362",
+      "imports": [
+        "Mathlib.Algebra.BigOperators.Finprod",
+        "Mathlib.Topology.Algebra.Support",
+        "Mathlib.Topology.Connected.LocallyPathConnected",
+        "Mathlib.Topology.IsLocalHomeomorph",
+        "Mathlib.Topology.OpenPartialHomeomorph.Constructions",
+        "TauCeti.Topology.SeparatedMap"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.Topology.SeparatedMap",
+      "path": "TauCeti/Topology/SeparatedMap.lean",
+      "bytes": 3717,
+      "lines": 76,
+      "sha256": "eac59e978c05da3710a99cb396fcab94f83657cb6d0f0d0b7a34a542ff7812f5",
+      "imports": [
+        "Mathlib.Topology.Covering.Basic"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "path": "TauCeti/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean",
+      "sha256": "c21d472fc8061984f6842ea5308bb27103bda00599cb2ae3a826c4aee3dd32a5",
+      "bytes": 15571,
+      "lines": 302,
+      "imports": [
+        "TauCeti.Topology.Homotopy.HomotopyEquiv",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.HomotopyEquiv",
+      "path": "TauCeti/Topology/Homotopy/HomotopyEquiv.lean",
+      "sha256": "f625834a40bf351a1d01e66884119526b2851e0d5b5956a676550e0ec4b56f9f",
+      "bytes": 9461,
+      "lines": 196,
+      "imports": [
+        "Mathlib.Topology.Homotopy.Contractible",
+        "Mathlib.Topology.Homotopy.Equiv",
+        "Mathlib.Topology.Homotopy.Path"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+      "path": "TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean",
+      "sha256": "fb60626e4e08f26f0eab093d3933453ef282d90b187afd3b1103890caf9bc644",
+      "bytes": 27900,
+      "lines": 555,
+      "imports": [
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+        "TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "fb60626e4e08f26f0eab093d3933453ef282d90b187afd3b1103890caf9bc644",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+      "path": "TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean",
+      "sha256": "0d778d590e3e38acbce7e78a43a9d10fe91e1da6254c6a80b81a26f0be3b50e8",
+      "bytes": 13990,
+      "lines": 295,
+      "imports": [
+        "TauCeti.Topology.Homotopy.Cube.OpenBox"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "0d778d590e3e38acbce7e78a43a9d10fe91e1da6254c6a80b81a26f0be3b50e8",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Cube.OpenBox",
+      "path": "TauCeti/Topology/Homotopy/Cube/OpenBox.lean",
+      "sha256": "67a6b62fcaf731dfe223efe6f4bd17b4c90e5698029948ef18092509c3334afa",
+      "bytes": 9836,
+      "lines": 219,
+      "imports": [
+        "TauCeti.Topology.Homotopy.Cube.Radius",
+        "TauCeti.Topology.Homotopy.Extension.Ball"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "67a6b62fcaf731dfe223efe6f4bd17b4c90e5698029948ef18092509c3334afa",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Cube.Radius",
+      "path": "TauCeti/Topology/Homotopy/Cube/Radius.lean",
+      "sha256": "5a7396d737e3d6701f53c36da8ce260088df6b1c2f5611c94b85e05dba9cc4f8",
+      "bytes": 18129,
+      "lines": 390,
+      "imports": [
+        "Mathlib.Topology.Homotopy.HomotopyGroup",
+        "TauCeti.Analysis.Normed.Module.Ball.Homeomorph",
+        "TauCeti.Topology.Homotopy.Cube.Basic"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "5a7396d737e3d6701f53c36da8ce260088df6b1c2f5611c94b85e05dba9cc4f8",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Analysis.Normed.Module.Ball.Homeomorph",
+      "path": "TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean",
+      "sha256": "341012061fcf52ac3e95318f17dd13f40f93e15b631d7a0218fdb1a45cbc2d5c",
+      "bytes": 15870,
+      "lines": 314,
+      "imports": [
+        "Mathlib.Analysis.Convex.GaugeRescale",
+        "Mathlib.Analysis.Normed.Module.Ball.Homeomorph",
+        "Mathlib.Analysis.Normed.Module.Convex",
+        "Mathlib.Topology.Algebra.Module.FiniteDimension",
+        "Mathlib.Topology.UnitInterval"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "341012061fcf52ac3e95318f17dd13f40f93e15b631d7a0218fdb1a45cbc2d5c",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Cube.Basic",
+      "path": "TauCeti/Topology/Homotopy/Cube/Basic.lean",
+      "sha256": "d47877282082a81fca05e4849a644a3e82e17c1f7e30d42282ab32814b1ab17d",
+      "bytes": 20544,
+      "lines": 415,
+      "imports": [
+        "Mathlib.Topology.Homotopy.HomotopyGroup",
+        "Mathlib.Topology.Connected.PathConnected",
+        "Mathlib.Topology.Homotopy.Contractible",
+        "TauCeti.Topology.PiCurry"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "d47877282082a81fca05e4849a644a3e82e17c1f7e30d42282ab32814b1ab17d",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.PiCurry",
+      "path": "TauCeti/Topology/PiCurry.lean",
+      "sha256": "b2058fb9b64716eddae65e22daa0bbab7f9f5b1f1031f9f33b855fe93a799b21",
+      "bytes": 6956,
+      "lines": 147,
+      "imports": [
+        "Mathlib.Topology.Homeomorph.Lemmas"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "b2058fb9b64716eddae65e22daa0bbab7f9f5b1f1031f9f33b855fe93a799b21",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Extension.Ball",
+      "path": "TauCeti/Topology/Homotopy/Extension/Ball.lean",
+      "sha256": "61651b1102c76c45bfa138845e307d9a88407d4d6d5643c15cfd74170c80eaaf",
+      "bytes": 13941,
+      "lines": 277,
+      "imports": [
+        "TauCeti.Topology.Homotopy.Extension.Basic",
+        "Mathlib.Analysis.Convex.Contractible",
+        "Mathlib.Analysis.Normed.Module.Convex"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "61651b1102c76c45bfa138845e307d9a88407d4d6d5643c15cfd74170c80eaaf",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Extension.Basic",
+      "path": "TauCeti/Topology/Homotopy/Extension/Basic.lean",
+      "sha256": "cc8bc6b26ae0c72e6fa227d87514099f5c8518144b5928e9bf5671f1498b3c20",
+      "bytes": 23772,
+      "lines": 443,
+      "imports": [
+        "Mathlib.Topology.Homotopy.Basic"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "cc8bc6b26ae0c72e6fa227d87514099f5c8518144b5928e9bf5671f1498b3c20",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.HomotopyGroup.Map",
+      "path": "TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean",
+      "sha256": "cbc31a7de7227e46ecf33e940775423cdb094dac683c6fa0395d4a4e06b46abd",
+      "bytes": 13276,
+      "lines": 291,
+      "imports": [
+        "TauCeti.Topology.Homotopy.GenLoop.Map"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "cbc31a7de7227e46ecf33e940775423cdb094dac683c6fa0395d4a4e06b46abd",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.GenLoop.Map",
+      "path": "TauCeti/Topology/Homotopy/GenLoop/Map.lean",
+      "sha256": "5c9af11ee60bf2976cac31420b3a3eac13294c3c08b8b545612d0ff8f7350ce9",
+      "bytes": 3685,
+      "lines": 106,
+      "imports": [
+        "Mathlib.Topology.Homotopy.HomotopyGroup"
+      ],
+      "already_vendored": true,
+      "reused_actual_sha256": "5c9af11ee60bf2976cac31420b3a3eac13294c3c08b8b545612d0ff8f7350ce9",
+      "matches_upstream_pin": true,
+      "read_status": "existing accepted dependency; import/definition inspection only in this M5 task, not fresh full proof review"
+    },
+    {
+      "module": "TauCeti.Topology.Algebra.Module.LocallyContractible",
+      "path": "TauCeti/Topology/Algebra/Module/LocallyContractible.lean",
+      "sha256": "fbb7e6c6b321f7d0a2e3b6dcd43f7acfe7657403090e115add21b31d62655957",
+      "bytes": 1899,
+      "lines": 43,
+      "imports": [
+        "Mathlib.Topology.Homotopy.LocallyContractible",
+        "Mathlib.Analysis.Convex.Contractible",
+        "Mathlib.Analysis.LocallyConvex.BalancedCoreHull"
+      ],
+      "already_vendored": false,
+      "read_status": "full literal source read, including definitions, statements and proof bodies, by supplier author in M5 selection pass"
+    }
+  ],
+  "actual_application_records": [
+    {
+      "file": "ArtinAsphericity/DirectedCover.lean",
+      "sha256": "571842b902ee1b214d11671e5f7bd7253adcc59a127e8ba9cf8dad95883c0570",
+      "declaration": "HomotopyGroup.subsingleton_of_contractibleSpace",
+      "status": "consumer author reported real compilation after selected provider build; provider acceptance independent"
+    },
+    {
+      "file": "ArtinAsphericity/UniversalCoverGeometry.lean",
+      "status": "author constructing actual complement wrapper; no asphericity/contractibility conclusion"
+    }
+  ],
+  "limits": [
+    "No full arrangement asphericity proved",
+    "Higher group triviality is conditional on actual contractibility",
+    "Genuine universal cover proves only simple connectivity, not contractibility",
+    "New provider cohort remains subject to independent reviews and root acceptance"
+  ]
+}

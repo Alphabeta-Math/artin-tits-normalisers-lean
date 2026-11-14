@@ -1,0 +1,12 @@
+✔ [5113/5134] Built ArtinAsphericityVendor.Topology.SeparatedMap (876ms)
+✔ [5115/5134] Built ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic (1.2s)
+✔ [5117/5134] Built ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood (1.3s)
+✔ [5119/5134] Built ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv (1.3s)
+✔ [5121/5134] Built ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible (1.0s)
+✔ [5123/5134] Built ArtinAsphericityVendor.Topology.IsLocalHomeomorph (1.0s)
+✔ [5125/5134] Built ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On (877ms)
+✔ [5127/5134] Built ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv (1.2s)
+✔ [5129/5134] Built ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath (1.3s)
+✔ [5131/5134] Built ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic (859ms)
+✔ [5133/5134] Built ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering (761ms)
+Build completed successfully (5134 jobs).

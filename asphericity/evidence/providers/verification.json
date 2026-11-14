@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "created_at": "2026-11-14T08:46:10.497360+00:00",
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "provenance": "vendor/provenance.json",
+  "provenance_sha256": "9691e5dc533a8a01e53a86782e1e7d303e2acc30e698ffdafed0b8452d33854a",
+  "harness": "ProviderAudit.lean",
+  "harness_sha256": "455ab741e7bb89850c0decc2fa3abee30566200ef1f3ab1e719d8a13c3c24fa8",
+  "module_count": 11,
+  "canonical_declarations": 310,
+  "physical_occurrences": 310,
+  "identical_duplicates": 0,
+  "axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_through_replay_inputs_identical": true,
+  "coverage_file": "evidence/providers/coverage.json",
+  "coverage_sha256": "b4cabad0228218a7e134f750bb4925fd86f56890c7ce0d2cd9d90169bd81b331",
+  "environment_file": "evidence/providers/environment.json",
+  "environment_sha256": "da060405ad560b2add337379e97e6985483ff0d86bfad619de42a5acb3a916ad",
+  "kernel_replay_workers": 1,
+  "replay_mode": "one exact module per fresh official leanchecker process",
+  "kernel_replay_relative_to_imports": true,
+  "independent_kernel_implementation": false,
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "source_ports": "Entire upstream source modules; only mechanical import-path relocation",
+  "source_inspection_file": "evidence/providers/source-inspection.json",
+  "source_inspection_sha256": "e2759bdf625b07248ebdb3bf456d2e5b1c738a763eea13c428d66963d63fcdfe",
+  "records": {
+    "build": {
+      "record": "evidence/providers/build-20261114T084411Z/verification.json",
+      "sha256": "f05ccc87ec78744cb3a1ab0e5cc7eb9730eefae73bf0fbfcc87294608ebf8416"
+    },
+    "audit": {
+      "record": "evidence/providers/audit-20261114T084432Z/verification.json",
+      "sha256": "16f48cb03d35900543868893f7ffd1884b7f9215c4ff664e0c49401fe11d1e50"
+    },
+    "replay": {
+      "record": "evidence/providers/replay-20261114T084449Z/verification.json",
+      "sha256": "60a073a04a2821971899795ce048295a8448c90b57e7d50b601f36920c123531"
+    }
+  }
+}

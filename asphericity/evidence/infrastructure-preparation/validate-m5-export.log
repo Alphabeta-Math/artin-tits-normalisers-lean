@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/docs/provenance/validate_m5_export.py", line 330, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/docs/provenance/validate_m5_export.py", line 127, in main
+    require(
+    ~~~~~~~^
+        len(occurrences) == len(roots) + len(aliases),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "Physical/unique/alias counts differ",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/docs/provenance/validate_m5_export.py", line 30, in require
+    raise RuntimeError(message)
+RuntimeError: Physical/unique/alias counts differ

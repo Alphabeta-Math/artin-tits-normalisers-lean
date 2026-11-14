@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "applications": [
+    {
+      "source": "ArtinAsphericity/DirectedCover.lean",
+      "sha256": "571842b902ee1b214d11671e5f7bd7253adcc59a127e8ba9cf8dad95883c0570",
+      "direct_supplier_uses": [
+        "HomotopyGroup.subsingleton_of_contractibleSpace"
+      ],
+      "full_consumer_source_read": true,
+      "execution_status": "consumer author reported explicit actual Lake target build passed; main project verifier owns final project replay/acceptance",
+      "scope": "genuine universal cover / conditional directed cover criterion, no actual arrangement asphericity"
+    },
+    {
+      "source": "ArtinAsphericity/UniversalCoverGeometry.lean",
+      "sha256": "c99fe48e621e2b2a26bd086e066a1cb96afa0176b2ef2e21047a6d9c8765d1a7",
+      "direct_supplier_uses": [
+        "TauCeti.RealTopologicalVectorSpace.stronglyLocallyContractibleSpace",
+        "TauCeti.UniversalCover",
+        "TauCeti.UniversalCover.proj",
+        "TauCeti.UniversalCover.isCoveringMap",
+        "TauCeti.UniversalCover.pathConnectedSpace",
+        "TauCeti.UniversalCover.simplyConnectedSpace",
+        "TauCeti.UniversalCover.basepointLift"
+      ],
+      "full_consumer_source_read": true,
+      "execution_status": "consumer author reported explicit actual Lake target build passed; main project verifier owns final project replay/acceptance",
+      "scope": "genuine universal cover / conditional directed cover criterion, no actual arrangement asphericity"
+    }
+  ],
+  "no_full_landmark_5_or_theorem_1_8_claim": true
+}

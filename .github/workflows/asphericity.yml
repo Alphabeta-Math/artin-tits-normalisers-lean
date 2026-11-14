@@ -1,0 +1,45 @@
+name: Lean asphericity prerequisites (full target unproved)
+
+on:
+  push:
+    paths:
+      - 'asphericity/**'
+      - '.github/workflows/asphericity.yml'
+  pull_request:
+    paths:
+      - 'asphericity/**'
+      - '.github/workflows/asphericity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  asphericity-prerequisites:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env:
+      LEAN_NUM_THREADS: '2'
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - name: Fetch inherited committed pins and whole Mathlib cache
+        run: python3 asphericity/scripts/cache_prerequisites.py
+      - name: Verify frozen prerequisites and replay only new mathematics
+        run: python3 asphericity/scripts/verify.py --execute --mode final --output asphericity/evidence/asphericity-prerequisites-ci
+      - name: Preserve source-bound commands and failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-asphericity-prerequisites-verification
+          path: asphericity/evidence/asphericity-prerequisites-ci/
+          if-no-files-found: warn
+          retention-days: 90

@@ -1,0 +1,11 @@
+--- TauCeti/AlgebraicTopology/UniversalCover/Basic.lean
++++ ArtinAsphericityVendor/AlgebraicTopology/UniversalCover/Basic.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import TauCeti.AlgebraicTopology.UniversalCover.BasedPath
++public import ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath
+ 
+ /-!
+ # Universal cover: quotient model and sheets

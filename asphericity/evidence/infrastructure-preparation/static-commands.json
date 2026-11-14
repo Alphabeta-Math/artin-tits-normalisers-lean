@@ -1,0 +1,148 @@
+[
+  {
+    "argv": [
+      "python3",
+      "asphericity/scripts/verify.py",
+      "--write-audit"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 1,
+    "log": "write-audit.log",
+    "scope": "Static source binding and observer import generation; no Lean execution",
+    "log_sha256": "76f22d444a22a1275c49bc2c2b945d97c6565130b57967a71afdaabd30911382"
+  },
+  {
+    "argv": [
+      "python3",
+      "asphericity/scripts/verify.py",
+      "--write-audit"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "write-audit-02.log",
+    "log_sha256": "8ca5655b74f2b5c3b571bbac182d9fd4f1da6ea7990cd0c4a1a6ac8f0fc80a0e",
+    "scope": "Static preparation only; no Lean execution"
+  },
+  {
+    "argv": [
+      "python3",
+      "asphericity/scripts/cache_prerequisites.py",
+      "--plan"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "cache-plan.log",
+    "log_sha256": "5cdb2482a9615c3fc21873058a1b42b94d9f38a0eee13d7141457bd90cb21bd3",
+    "scope": "Static preparation only; no Lean execution"
+  },
+  {
+    "argv": [
+      "/home/lazyinspirit/.local/bin/ruff",
+      "check",
+      "--select",
+      "F",
+      "asphericity/scripts/verify.py",
+      "asphericity/scripts/cache_prerequisites.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "ruff.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "scope": "Static preparation only; no Lean execution"
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/refresh_ledger.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "ledger-refresh.log",
+    "log_sha256": "88e114224a60e71c6d766dfa583447ae7e3616436793733ad73b4a11e59f53ed",
+    "scope": "Source/provenance metadata only; no proof verification",
+    "immutable_metadata_files_checked": 88,
+    "immutable_metadata_unchanged": true
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/refresh_ledger.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "ledger-refresh-02.log",
+    "log_sha256": "a856e06f423f268f29a32cb661a7782e4eadeab0ef9a21491bb9a261fa55ab6f",
+    "scope": "Actual metadata/source inventory command; no scientific Lean verification performed by this command"
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/m5/freeze_prerequisite_inventory.py",
+      "--technical-record",
+      "asphericity/evidence/prerequisites-technical-20261114T090200Z/verification.json"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "freeze-inventory.log",
+    "log_sha256": "db79b98ae66e2162709c8d39f465854bacdcd9b37fbca32e93980c2619e59b7e",
+    "scope": "Actual metadata/source inventory command; no scientific Lean verification performed by this command"
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/validate_m5_export.py",
+      "--run",
+      "docs/provenance/m5/run-20261114T090600Z",
+      "--output",
+      "docs/provenance/m5/validation.json"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 1,
+    "log": "validate-m5-export.log",
+    "log_sha256": "b018f0c0eaab573179b2c82eacae466a52c78de2bd2a19796e899dba30c1497c",
+    "scope": "Actual metadata/source inventory command; no scientific Lean verification performed by this command"
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/validate_m5_export.py",
+      "--run",
+      "docs/provenance/m5/run-20261114T090600Z",
+      "--output",
+      "docs/provenance/m5/validation.json"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "validate-m5-export-02.log",
+    "log_sha256": "cf7deff1285abaae677d4bfc82b5a8a887d4128ec703275d7f08a834f1c3aebb",
+    "scope": "Actual metadata/source inventory command; no scientific Lean verification performed by this command"
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/refresh_ledger.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "ledger-refresh-03.log",
+    "log_sha256": "a856e06f423f268f29a32cb661a7782e4eadeab0ef9a21491bb9a261fa55ab6f",
+    "scope": "Actual metadata/source inventory command; no scientific Lean verification performed by this command"
+  },
+  {
+    "argv": [
+      "python3",
+      "docs/provenance/refresh_ledger.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "environment": {
+      "ARTIN_PROVENANCE_SYSROOT": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2"
+    },
+    "toolchain_path_basis": "Previously recorded graph observer lean-prefix.log; no Lean command invoked by this refresh",
+    "exit_code": 0,
+    "log": "ledger-root-acceptance-refresh.log",
+    "log_sha256": "a856e06f423f268f29a32cb661a7782e4eadeab0ef9a21491bb9a261fa55ab6f",
+    "immutable_files_checked": 122,
+    "immutable_files_unchanged": true,
+    "scope": "Current central register only: root-accepted prerequisites; full3goalflagsfalse"
+  }
+]

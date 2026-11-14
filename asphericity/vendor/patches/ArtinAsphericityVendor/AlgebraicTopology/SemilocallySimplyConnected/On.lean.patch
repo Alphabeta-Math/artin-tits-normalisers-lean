@@ -1,0 +1,13 @@
+--- TauCeti/AlgebraicTopology/SemilocallySimplyConnected/On.lean
++++ ArtinAsphericityVendor/AlgebraicTopology/SemilocallySimplyConnected/On.lean
+@@ -6,8 +6,8 @@
+ module
+ 
+ public import TauCeti.AlgebraicTopology.FundamentalGroup.Basic
+-public import TauCeti.AlgebraicTopology.SemilocallySimplyConnected.Basic
+-public import TauCeti.Topology.Homotopy.TubeNeighborhood
++public import ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic
++public import ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood
+ 
+ /-!
+ # Semilocally simple connectivity: characterizations and path-homotopy-trivial neighbourhoods

@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity/scripts/verify.py", line 1173, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity/scripts/verify.py", line 713, in main
+    provider, bindings, provider_reviews = provider_bindings(
+                                           ~~~~~~~~~~~~~~~~~^
+        require_reviews=args.execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity/scripts/verify.py", line 380, in provider_bindings
+    require(
+    ~~~~~~~^
+        review["evidence_sha256"] == evidence, "Incomplete provider evidence review"
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity/scripts/verify.py", line 67, in require
+    raise RuntimeError(message)
+RuntimeError: Incomplete provider evidence review

@@ -1,0 +1,13 @@
+--- TauCeti/AlgebraicTopology/UniversalCover/Covering.lean
++++ ArtinAsphericityVendor/AlgebraicTopology/UniversalCover/Covering.lean
+@@ -6,8 +6,8 @@
+ module
+ 
+ public import Mathlib.Topology.Homotopy.Lifting
+-public import TauCeti.AlgebraicTopology.UniversalCover.Basic
+-public import TauCeti.Topology.IsLocalHomeomorph
++public import ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic
++public import ArtinAsphericityVendor.Topology.IsLocalHomeomorph
+ 
+ /-!
+ # Universal cover: covering map, simple connectedness, universal property

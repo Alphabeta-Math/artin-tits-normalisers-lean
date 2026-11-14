@@ -3,12 +3,12 @@
 No proof/config/review file is written. Network is never used.
 """
 from __future__ import annotations
-import datetime as dt, gzip, hashlib, json, re, shutil, subprocess
+import datetime as dt, gzip, hashlib, importlib.util, json, os, re, shutil, subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 OUT=Path(__file__).resolve().parent
 LAKE=shutil.which('lake') or str(Path.home()/'.elan/bin/lake')
-SYSROOT=Path(subprocess.check_output([LAKE,'env','lean','--print-prefix'],cwd=ROOT/'chambers',text=True).strip())
+SYSROOT=Path(os.environ.get('ARTIN_PROVENANCE_SYSROOT') or subprocess.check_output([LAKE,'env','lean','--print-prefix'],cwd=ROOT/'chambers',text=True).strip())
 
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def load(p): return json.loads((ROOT/p).read_text())
@@ -158,7 +158,7 @@ def main():
    path='sequences/'+r['record'];assert sha(ROOT/path)==r['sha256'];data=load(path);phases.append({'phase':phase,'record':ref(path)});commands.extend(data['commands'])
   cohorts.append({'id':'landmark4-basepoint-extraction','repository':d['repository'],'revision':d['upstream_sha'],'module_count':1,'disposition':'Root-accepted two-proof supplier fragment after both independent reviews and technical verification; this acceptance alone does not prove M4','provenance':ref('sequences/vendor/provenance.json'),'source_inventory':ref('sequences/evidence/providers/coverage.json'),'verification':ref('sequences/evidence/providers/verification.json'),'verification_ok':v['ok'],'verification_commands':commands,'verification_phase_records':phases,'license_identifier':d['license']['identifier'],'license_files':[ref('sequences/vendor/'+d['license']['path'])],'files':files,'patches':patches,'assembly_script':ref('sequences/'+d['assembly_script']),'assembly_recipe':ref('sequences/vendor/'+d['assembly_recipe']),'exact_project_or_supplier_declaration_inventory':coverage['declarations'],'root_acceptance':ref('docs/provenance/acceptance-landmark4-basepoint.json'),'independent_reviews_sha256':a['independent_reviews_sha256'],'included_in_throughM2_dependency_graph':False,'included_in_throughM3_dependency_graph':False,'archive_records':[]})
  manifests=[]; dependencies={}
- for p in [Path('lake-manifest.json'),Path('landmarks/lake-manifest.json'),Path('ribbons/lake-manifest.json'),Path('chambers/lake-manifest.json'),Path('sequences/lake-manifest.json')]:
+ for p in [Path('lake-manifest.json'),Path('landmarks/lake-manifest.json'),Path('ribbons/lake-manifest.json'),Path('chambers/lake-manifest.json'),Path('sequences/lake-manifest.json'),Path('asphericity/lake-manifest.json')]:
   if not (ROOT/p).exists():continue
   d=load(p); manifests.append(ref(p))
   for pkg in d['packages']:
@@ -182,6 +182,14 @@ def main():
  for path in sorted((OUT/'searches').glob('m4*-inventory.json')):
   machine_searches.append({'inventory':ref(path.relative_to(ROOT)),'records':json.loads(path.read_text())})
 
+ m5_spec=importlib.util.spec_from_file_location('m5_register_inputs',OUT/'m5/register_inputs.py')
+ m5_module=importlib.util.module_from_spec(m5_spec);m5_spec.loader.exec_module(m5_module)
+ m5_searches,m5_repositories,m5_checkpoint=m5_module.build(ROOT)
+ m5_supplier=m5_module.accepted_supplier(ROOT)
+ if m5_supplier:
+  cohorts.append(m5_supplier)
+  m5_checkpoint["supplier_status"]="Eleven-module supplier root-accepted after technical verification and both independent supplier-only reviews; project prerequisite acceptance remains separate"
+  m5_checkpoint["supplier_root_acceptance"]=m5_supplier["root_acceptance"]
  repo_index={}
  def repo_entry(repo):
   repo=repo.removesuffix('.git')
@@ -205,6 +213,9 @@ def main():
   else:
    for key,item in data.items():
     r=repo_entry('https://github.com/'+key);r['roles'].add('M3 machine search inventory; exact reading/disposition retained in records');r['exact_revisions'].update(item.get('revisions',{}))
+ for repository,item in m5_repositories.items():
+  indexed=repo_entry(repository);indexed['roles'].update(item['roles']);indexed['exact_revisions'].update(item['exact_revisions'])
+ machine_searches.extend(m5_searches)
  tooling=[]
  for workflow in sorted((ROOT/'.github/workflows').glob('*.yml')):
   for line_no,line in enumerate(workflow.read_text().splitlines(),1):
@@ -368,6 +379,7 @@ def main():
   if 'compiled_M4_dependency_graph' in ledger:ledger['compiled_M4_dependency_graph']['clean_CI_status']='passed';ledger['compiled_M4_dependency_graph']['clean_CI_closeout']=ref(m4_closeout_path.relative_to(ROOT))
   for publication in ledger.get('source_publication_bindings',[]):
    if publication['commit']==closed['source_commit']:publication['current_clean_CI_closeout']=ref(m4_closeout_path.relative_to(ROOT))
+ ledger['current_M5_prerequisite_checkpoint']=m5_checkpoint
  save('GITHUB-PROOF-SOURCES.json',ledger)
  # Human index stays compact; machine ledger contains the complete inventories.
  lines=['# GitHub proof source ledger','',f"Accepted scientific suppliers: **2 repositories, {sum(c['module_count'] for c in cohorts)} vendored modules** at the exact revisions below. Mathlib, Lean, transitive Lake dependencies and inspected-only leads are separate categories.",'','| Cohort | Repository and revision | Modules | Exact byte and proof record |','| --- | --- | ---: | --- |']
@@ -386,6 +398,16 @@ def main():
  if m4_closeout_path.exists():
   rendered=rendered.replace('Clean M4 CI is pending; full Theorem1.8/asphericity remains unclaimed.', 'Clean final-mode M4 CI has passed at source `e7703926f3e486c0fca3a0fe292ab56d6411c248`; full Theorem1.8/asphericity remains unclaimed.')
   rendered=rendered.replace('Clean [M4 CI43573814974](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974) is pending.', 'Clean [M4 CI43573814974](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974) has passed: [permanent archive verification](../theorem18/landmarks/github-evidence/run-43573814974/archive-verification.json), [root closeout](../theorem18/landmarks/milestone4-closeout.json). All 13 project and one provider exact replays passed; 57 raw logs, 996 current inputs and 955 unchanged historical inputs were checked. Historical pending export/publication/acceptance records remain unchanged.')
+ rendered += '\n## M5 prerequisite checkpoint; full target unproved\n\nThe new [M5 plan](../theorem18/landmarks/milestone5-PLAN.md) retains the full actual-space target and its unformalized Deligne core. Current source/infrastructure preparation does not accept the prerequisite checkpoint, actual arrangement asphericity, full M5 or Theorem 1.8. The new eleven-module TauCeti supplier has separate technical verification and two supplier-only reviews; root supplier acceptance is recorded separately. All three durable M5 [search inventories](searches/) and reports are included with exact repository pins, sources/declarations, prospective closure graphs and actual reading/execution limits. Query hits and candidate dependencies are not used proofs. Immutable through-M2/M3/M4 graphs remain unchanged; a new versioned prerequisite graph will follow only after the final source frontier and verification are ready.\n'
+ if m5_supplier:
+  rendered=rendered.replace("The new eleven-module TauCeti supplier has separate technical verification and two supplier-only reviews; root supplier acceptance is recorded separately.", "The eleven-module TauCeti supplier (310 canonical/physical declarations) is [root-accepted](acceptance-landmark5-topology.json) after technical verification and two supplier-only reviews. This changes the accepted supplier total to 415 modules; it does not accept the project prerequisite checkpoint or the full target.")
+ if m5_checkpoint.get('source_inventory'):
+  rendered=rendered.replace('Current source/infrastructure preparation does not accept the prerequisite checkpoint, actual arrangement asphericity, full M5 or Theorem 1.8.', 'The [frozen eight-module prerequisite candidate](../../asphericity/source-inventory.json) has passed its source-bound technical build, complete 138-declaration physical/private/std3 audit and 19 fresh replays (eight project and eleven supplier), with all 996 historical inputs unchanged. Final prerequisite review/root acceptance and clean CI remain separate; actual arrangement asphericity, full M5 and Theorem1.8 are unproved.')
+ if m5_checkpoint.get('accepted_asphericity_prerequisites'):
+  rendered=rendered.replace('Final prerequisite review/root acceptance and clean CI remain separate; actual arrangement asphericity, full M5 and Theorem1.8 are unproved.', 'Both independent final prerequisite reviews and [root checkpoint acceptance](../theorem18/landmarks/milestone5-prerequisites-root-acceptance.json) have passed. Clean CI remains separate; actual arrangement asphericity, full M5 and Theorem1.8 are unproved.')
+ if isinstance(m5_checkpoint.get('new_compiled_dependency_graph'),dict):
+  g=m5_checkpoint['new_compiled_dependency_graph'];n=g['counts']
+  rendered=rendered.replace('a new versioned prerequisite graph will follow only after the final source frontier and verification are ready.', f"the separate [M5 prerequisite graph](M5-EXPORT.md) records {n['project_roots']} project roots, {n['reachable_declarations']} reachable declarations and {n['references']} references with complete physical occurrence/alias accounting. This graph is a source observation, not full-target acceptance.")
  (OUT/'GITHUB-PROOF-SOURCES.md').write_text(rendered)
  print(json.dumps({'accepted_repositories':2,'accepted_module_counts':{c['id']:c['module_count'] for c in cohorts},'search_reports':len(records),'promoted_inventories':len(promoted),'graph_status':ledger['compiled_dependency_graph']['status']}))
 

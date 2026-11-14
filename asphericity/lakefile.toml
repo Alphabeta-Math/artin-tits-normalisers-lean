@@ -1,0 +1,18 @@
+name = "artin-asphericity"
+version = "0.1.0"
+defaultTargets = ["ArtinAsphericity"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "artin-sequences"
+path = "../sequences"
+
+[[lean_lib]]
+name = "ArtinAsphericity"
+
+[[lean_lib]]
+name = "ArtinAsphericityVendor"
+srcDir = "vendor"
+leanOptions = { autoImplicit = true }

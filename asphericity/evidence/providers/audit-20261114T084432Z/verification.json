@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "phase": "audit",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+  "started_at": "2026-11-14T08:44:32.420709+00:00",
+  "modules": [
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+    "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+    "ArtinAsphericityVendor.Topology.SeparatedMap",
+    "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 0.02063067301060073,
+      "log": "00-audit.log",
+      "log_sha256": "29d729debc70f8e5c28b19067978b8eccf1a404d228babbdea1a859c1566770f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ProviderAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 2.5335948189895134,
+      "log": "01-audit.log",
+      "log_sha256": "37d8d63cc5036690a4135f772fc21690ec29a87f095bc385c6bd48fa3f1beba3"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib and existing accepted TauCeti dependencies",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T08:44:34.981820+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "40d0c28a678330ca21fca494b50b9ba5064f53fe98637bf7ff6ba5c9a07f6f3b",
+  "inputs_after_sha256": "40d0c28a678330ca21fca494b50b9ba5064f53fe98637bf7ff6ba5c9a07f6f3b"
+}

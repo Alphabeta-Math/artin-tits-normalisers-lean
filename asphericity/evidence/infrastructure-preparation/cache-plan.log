@@ -1,0 +1,78 @@
+{
+  "kind": "asphericity-pinned-cache-plan",
+  "git_pins": {
+    "mathlib": {
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9"
+    },
+    "plausible": {
+      "repository": "https://github.com/leanprover-community/plausible",
+      "revision": "129d1ba9a16bc0660f46c79e9fb041ef5d5d80de"
+    },
+    "LeanSearchClient": {
+      "repository": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "c61286b7b63cbfd563b28e11e81d0a18233a044a"
+    },
+    "importGraph": {
+      "repository": "https://github.com/leanprover-community/import-graph",
+      "revision": "e5d5639bedc7feecfbcb98e30b3bf26463d9f722"
+    },
+    "proofwidgets": {
+      "repository": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "16259c0d07d61ee37d999d05b5cf96338b8daa11"
+    },
+    "aesop": {
+      "repository": "https://github.com/leanprover-community/aesop",
+      "revision": "7d11bfa88558f8d3d90afdf6bd877ed70001498d"
+    },
+    "Qq": {
+      "repository": "https://github.com/leanprover-community/quote4",
+      "revision": "b0256621cb88178e9ad932a53633077b3029e621"
+    },
+    "batteries": {
+      "repository": "https://github.com/leanprover-community/batteries",
+      "revision": "4af7237d146261353907b06a01b6f3fc06cfa067"
+    },
+    "Cli": {
+      "repository": "https://github.com/leanprover/lean4-cli",
+      "revision": "c09cb1e4f1e6e1c231a1175a12b681b075054a1b"
+    }
+  },
+  "resolved_path_packages": {
+    "\u00abartin-sequences\u00bb": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences",
+    "\u00abartin-chambers\u00bb": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers",
+    "\u00abartin-landmarks\u00bb": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/landmarks",
+    "\u00abartin-ribbons\u00bb": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons",
+    "\u00abartin-normalisers\u00bb": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean"
+  },
+  "command": [
+    "lake",
+    "exe",
+    "cache",
+    "get",
+    "Mathlib"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+  "scope": "whole pinned Mathlib import closure; no mathematical verification claimed",
+  "protected_configuration_sha256": {
+    "lakefile.toml": "a4f4bede07139843865bb695f0c939825a54aefcdb5c5e403c067eec83a116ac",
+    "lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "lake-manifest.json": "2b09091fec88c9bc3930b46b4ed3013c2f1d22ed539cc1b7e9cc8380fefb52ba",
+    "ribbons/lakefile.toml": "d2f3aecb0f6cf97f6e457de85b049a87ea0840fd5da5e893afbd3cd7b1123066",
+    "ribbons/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "ribbons/lake-manifest.json": "44ae2c7b2744eb84160daccf52b565faedd2be14b8450be26161d38dc1a728fd",
+    "landmarks/lakefile.toml": "391a36c1e67ff796ab7487d7e2100eb52b7532c71a1eab2f6bed73839f3839a0",
+    "landmarks/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "landmarks/lake-manifest.json": "a8415b907a1da8ff6c0a0c936fef67eb0f3315213afff0d1963653b72a8c5679",
+    "chambers/lakefile.toml": "35683c8bd5b86b7c3e10169c91678810db1d762f492071d41e4d573a3b3dcbf6",
+    "chambers/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "chambers/lake-manifest.json": "e9e97c7ff7ad2eddb4a831b045a85e3a880f4daacb6343498e54cf5c9cc9f287",
+    "sequences/lakefile.toml": "924384ac6ed49fce4bfdc2ac14fc80d9c80669fe90ec16b50b9f79cbda9703a7",
+    "sequences/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "sequences/lake-manifest.json": "7f20d3059fc928e18bd644f6c5a972cd8026bbb4ede20786d041508d1cb4d960",
+    "asphericity/lakefile.toml": "c7e939dd6bfc7eaba64efcc8aa8da2a0de12100452c9395efb536481a0887cb0",
+    "asphericity/lean-toolchain": "11c697aebe5b539d74f5069e497a588e7dfab1c4eeb74313f28357e351c55ca3",
+    "asphericity/lake-manifest.json": "214d140377ac7a94221bb5c5a838c03118a5b3ea199343588f09340c3a47ff0b"
+  },
+  "lake_update": false
+}

@@ -1,0 +1,56 @@
+{
+  "ok": true,
+  "phase": "audit",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+  "started_at": "2026-11-14T08:41:36.193943+00:00",
+  "modules": [
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+    "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+    "ArtinAsphericityVendor.Topology.SeparatedMap",
+    "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 0.021330452000256628,
+      "log": "00-audit.log",
+      "log_sha256": "29d729debc70f8e5c28b19067978b8eccf1a404d228babbdea1a859c1566770f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ProviderAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 3.5109622509917244,
+      "log": "01-audit.log",
+      "log_sha256": "37d8d63cc5036690a4135f772fc21690ec29a87f095bc385c6bd48fa3f1beba3"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T08:41:39.737745+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "7a907d601c1b5a1672b3f1b0fc6ab38dc217ab8f8a3e5d5602623ad1cf2ad7d2",
+  "inputs_after_sha256": "7a907d601c1b5a1672b3f1b0fc6ab38dc217ab8f8a3e5d5602623ad1cf2ad7d2"
+}

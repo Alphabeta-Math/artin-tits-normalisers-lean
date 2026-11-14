@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "phase": "build",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+  "started_at": "2026-11-14T08:44:11.968865+00:00",
+  "modules": [
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+    "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+    "ArtinAsphericityVendor.Topology.SeparatedMap",
+    "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 0.019878233986673877,
+      "log": "00-build.log",
+      "log_sha256": "29d729debc70f8e5c28b19067978b8eccf1a404d228babbdea1a859c1566770f"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+        "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+        "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+        "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+        "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+        "ArtinAsphericityVendor.Topology.SeparatedMap",
+        "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+        "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+        "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+        "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+        "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 1.4550615320040379,
+      "log": "01-build.log",
+      "log_sha256": "b48f6ed15f814933b080fb39935e912b6510d8eb27449734c4a4e0eb2aad22e3"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib and existing accepted TauCeti dependencies",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T08:44:13.446946+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "13d5dd1cd20552cf60c0275f12a3c7fb05a07e0c59ececbb12598887891a6bc5",
+  "inputs_after_sha256": "13d5dd1cd20552cf60c0275f12a3c7fb05a07e0c59ececbb12598887891a6bc5"
+}

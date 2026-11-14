@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "upstream_sha": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+  "module_relocations": {
+    "TauCeti.AlgebraicTopology.UniversalCover.Covering": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+    "TauCeti.AlgebraicTopology.UniversalCover.Basic": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+    "TauCeti.AlgebraicTopology.UniversalCover.BasedPath": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+    "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.On": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+    "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.Basic": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+    "TauCeti.Topology.Homotopy.TubeNeighborhood": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+    "TauCeti.Topology.IsLocalHomeomorph": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+    "TauCeti.Topology.SeparatedMap": "ArtinAsphericityVendor.Topology.SeparatedMap",
+    "TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+    "TauCeti.Topology.Homotopy.HomotopyEquiv": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+    "TauCeti.Topology.Algebra.Module.LocallyContractible": "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+  },
+  "files": [
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/SemilocallySimplyConnected/Basic.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/SemilocallySimplyConnected/Basic.lean.txt",
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+      "path": "ArtinAsphericityVendor/AlgebraicTopology/SemilocallySimplyConnected/Basic.lean",
+      "application": "Local hypotheses for actual complement universal cover"
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.TubeNeighborhood",
+      "upstream_path": "TauCeti/Topology/Homotopy/TubeNeighborhood.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Homotopy/TubeNeighborhood.lean.txt",
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+      "path": "ArtinAsphericityVendor/Topology/Homotopy/TubeNeighborhood.lean",
+      "application": "Actual compact-open based-path neighborhood proof dependency"
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "upstream_path": "TauCeti/AlgebraicTopology/SemilocallySimplyConnected/On.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/SemilocallySimplyConnected/On.lean.txt",
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+      "path": "ArtinAsphericityVendor/AlgebraicTopology/SemilocallySimplyConnected/On.lean",
+      "application": "Local hypotheses for actual complement universal cover"
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.BasedPath",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/BasedPath.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/UniversalCover/BasedPath.lean.txt",
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+      "path": "ArtinAsphericityVendor/AlgebraicTopology/UniversalCover/BasedPath.lean",
+      "application": "Genuine actual based-path universal covering and simply connected total space"
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Basic.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/UniversalCover/Basic.lean.txt",
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+      "path": "ArtinAsphericityVendor/AlgebraicTopology/UniversalCover/Basic.lean",
+      "application": "Genuine actual based-path universal covering and simply connected total space"
+    },
+    {
+      "upstream_module": "TauCeti.Topology.SeparatedMap",
+      "upstream_path": "TauCeti/Topology/SeparatedMap.lean",
+      "original_path": "upstream-original/TauCeti/Topology/SeparatedMap.lean.txt",
+      "module": "ArtinAsphericityVendor.Topology.SeparatedMap",
+      "path": "ArtinAsphericityVendor/Topology/SeparatedMap.lean",
+      "application": "Dependency for local homeomorphism API"
+    },
+    {
+      "upstream_module": "TauCeti.Topology.IsLocalHomeomorph",
+      "upstream_path": "TauCeti/Topology/IsLocalHomeomorph.lean",
+      "original_path": "upstream-original/TauCeti/Topology/IsLocalHomeomorph.lean.txt",
+      "module": "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+      "path": "ArtinAsphericityVendor/Topology/IsLocalHomeomorph.lean",
+      "application": "Local path connectedness of actual universal cover"
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Covering",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Covering.lean",
+      "original_path": "upstream-original/TauCeti/AlgebraicTopology/UniversalCover/Covering.lean.txt",
+      "module": "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+      "path": "ArtinAsphericityVendor/AlgebraicTopology/UniversalCover/Covering.lean",
+      "application": "Genuine actual based-path universal covering and simply connected total space"
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyEquiv",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyEquiv.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Homotopy/HomotopyEquiv.lean.txt",
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+      "path": "ArtinAsphericityVendor/Topology/Homotopy/HomotopyEquiv.lean",
+      "application": "Contractible spaces have trivial actual homotopy groups"
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean.txt",
+      "module": "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "path": "ArtinAsphericityVendor/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean",
+      "application": "Contractible spaces have trivial actual homotopy groups"
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Algebra.Module.LocallyContractible",
+      "upstream_path": "TauCeti/Topology/Algebra/Module/LocallyContractible.lean",
+      "original_path": "upstream-original/TauCeti/Topology/Algebra/Module/LocallyContractible.lean.txt",
+      "module": "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible",
+      "path": "ArtinAsphericityVendor/Topology/Algebra/Module/LocallyContractible.lean",
+      "application": "Actual complement local contractibility from real vector space openness"
+    }
+  ]
+}

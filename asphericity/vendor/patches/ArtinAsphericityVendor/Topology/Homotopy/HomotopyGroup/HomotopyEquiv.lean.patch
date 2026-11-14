@@ -1,0 +1,11 @@
+--- TauCeti/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean
++++ ArtinAsphericityVendor/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import TauCeti.Topology.Homotopy.HomotopyEquiv
++public import ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv
+ public import TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange
+ public import TauCeti.Topology.Homotopy.HomotopyGroup.Map
+ 

@@ -110,7 +110,7 @@ supplier cohorts do not by themselves establish a milestone's main statement.
 | 2: Reduced ribbon normalizer | [Proved](milestone2-REPORT.md); both independent reviews, complete local verification and [fresh CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592) passed |
 | 3: Equivariant geometric comparison | [Proved and mathematically accepted](milestone3-REPORT.md); both final independent reviews and complete local technical battery passed; [final-mode fresh CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942) passed ([closeout plan](milestone3-PLAN.md)) |
 | 4: Compatible exact sequences | [Proved and independently accepted](milestone4-REPORT.md); full local verification and [clean final-mode CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43573814974) passed ([plan](milestone4-PLAN.md)) |
-| 5: Deligne asphericity/full theorem | Not yet proved |
+| 5: Deligne asphericity/full theorem | [Active; not proved](milestone5-PLAN.md). Actual simplicial/local-cover prerequisites are being formalized; the global higher-homotopy argument remains unformalized |
 
 Missing formal proofs are established mathematics to formalize, not open
 problems or defects attributed to the article. No full-theorem completion

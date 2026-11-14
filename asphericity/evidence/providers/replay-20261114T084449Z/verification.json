@@ -1,0 +1,197 @@
+{
+  "ok": true,
+  "phase": "replay",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+  "started_at": "2026-11-14T08:44:49.872838+00:00",
+  "modules": [
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic",
+    "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood",
+    "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic",
+    "ArtinAsphericityVendor.Topology.SeparatedMap",
+    "ArtinAsphericityVendor.Topology.IsLocalHomeomorph",
+    "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+    "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 0.019074023992288858,
+      "log": "00-replay.log",
+      "log_sha256": "29d729debc70f8e5c28b19067978b8eccf1a404d228babbdea1a859c1566770f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.Basic"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.970836327003781,
+      "log": "01-replay.log",
+      "log_sha256": "3e4442c56e3deffe2ca64995c51babebd754974384dc168207ea7ff5a3e5da80"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.Topology.Homotopy.TubeNeighborhood"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.787240856996505,
+      "log": "02-replay.log",
+      "log_sha256": "6e6b525dd939b52cbef28078d75cdf3b6d9c4c5ab42cd1a3122750c484d12cb7"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.AlgebraicTopology.SemilocallySimplyConnected.On"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.805220451991772,
+      "log": "03-replay.log",
+      "log_sha256": "f6d4686983530fed15aeae4cc787fd34becf8b8552371f61ae90aa4c0a0fae87"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.BasedPath"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.88113677300862,
+      "log": "04-replay.log",
+      "log_sha256": "a9231a43fe9e2bc0f099496a97c22418e7817ee53d1172dd4da493393a7b838d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Basic"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.843058707978344,
+      "log": "05-replay.log",
+      "log_sha256": "69caff4c5a4cfd8b7946e1f29203f43bd3183e12447ab4faf81446fafce90372"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.Topology.SeparatedMap"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.701151810004376,
+      "log": "06-replay.log",
+      "log_sha256": "2d98484487872899559986843ac6bb7edc98ba6cf5ce15b95c9ac107194e55d9"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.Topology.IsLocalHomeomorph"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.982193768984871,
+      "log": "07-replay.log",
+      "log_sha256": "7fb433045651ab5cac2ecf2497899cfd40279fa332d33785e319032c85f34d47"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.AlgebraicTopology.UniversalCover.Covering"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.914943558978848,
+      "log": "08-replay.log",
+      "log_sha256": "d7255b88f0ad44d763d1c95a96abdae741854acd6699279b6dbd1420038b8512"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.Topology.Homotopy.HomotopyEquiv"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.81964141401113,
+      "log": "09-replay.log",
+      "log_sha256": "d3f5054826b640e5f6206b660f3d25dd3fc8b7883ff5db4c6d915f51a8e663f2"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.Topology.Homotopy.HomotopyGroup.HomotopyEquiv"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 6.107986515999073,
+      "log": "10-replay.log",
+      "log_sha256": "4fc1793304a96a770091b66bcd0bc8485aa99b623941056b262fc9e9beae3aa4"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinAsphericityVendor.Topology.Algebra.Module.LocallyContractible"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity",
+      "exit_code": 0,
+      "duration_seconds": 5.8735940769838635,
+      "log": "11-replay.log",
+      "log_sha256": "2de9a1fc7e05b5e604cf4cb8cda56be8479c82e7b3b8db0ef8813a6149c39fe3"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib and existing accepted TauCeti dependencies",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T08:45:54.588777+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "40d0c28a678330ca21fca494b50b9ba5064f53fe98637bf7ff6ba5c9a07f6f3b",
+  "inputs_after_sha256": "40d0c28a678330ca21fca494b50b9ba5064f53fe98637bf7ff6ba5c9a07f6f3b"
+}

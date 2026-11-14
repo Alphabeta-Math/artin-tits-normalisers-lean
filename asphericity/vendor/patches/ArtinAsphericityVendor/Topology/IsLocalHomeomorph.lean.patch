@@ -1,0 +1,11 @@
+--- TauCeti/Topology/IsLocalHomeomorph.lean
++++ ArtinAsphericityVendor/Topology/IsLocalHomeomorph.lean
+@@ -10,7 +10,7 @@
+ public import Mathlib.Topology.Connected.LocallyPathConnected
+ public import Mathlib.Topology.IsLocalHomeomorph
+ public import Mathlib.Topology.OpenPartialHomeomorph.Constructions
+-public import TauCeti.Topology.SeparatedMap
++public import ArtinAsphericityVendor.Topology.SeparatedMap
+ 
+ /-!
+ # Local homeomorphisms: path-connectedness, local inverses, fiber sums, products, base change

@@ -1,0 +1,30 @@
+# Asphericity prerequisite dependency record; full M5 unproved
+
+The separate [execution](m5/run-20261114T090600Z/execution.json), [complete annotated graph](m5/run-20261114T090600Z/graph.json.gz) and [metadata validation](m5/validation.json) record the actual compiled prerequisite frontier. They do not establish actual arrangement asphericity, full landmark 5 or Theorem 1.8. The precise missing actual universal-cover contraction/higher-Deligne comparison remains in the [M5 plan](../theorem18/landmarks/milestone5-PLAN.md).
+
+The graph contains 2,664 project roots, 44,160 reachable declarations, 1,019,785 distinct-per-node references and 1,729 defining modules. Every root includes its type/value/structural dependencies, declaration kind, exact source/repository mapping and reachable compiled object-part bindings. The two actual observer passes agree exactly. Compressed and uncompressed hashes/lengths are in the execution record; decompress with `gzip -dc docs/provenance/m5/run-20261114T090600Z/graph.json.gz`. No nodes or edges were dropped during annotation/compression. All immutable through-M2/M3/M4 graphs, observers, execution/validation/publication records remain unchanged.
+
+All 2,526 old through-M4 roots and every old reachable declaration’s kind/value-presence/type/value/structural edges are preserved. The new eight-module prerequisite audit has 138 distinct physical/canonical names and zero duplicates in its own import context. Their union gives 2,526 + 138 = 2,664 roots. The joint observer explicitly reads every new and older project private/server/ordinary physical part: 2,666 project occurrences and three exact theorem alias rows.
+
+Two inherited alias rows are `ArtinNormalisers.Ribbon2.elementaryMu.congr_simp`, physically in `ArtinRibbons.RibbonWords` and `ArtinChambers.PositiveTransport`, canonically in `ArtinRibbons.CofinalRibbons`. The third is `Finite.equivFin.congr_simp`, physically in `ArtinAsphericity.Simpliciality` but canonically in `Mathlib.RingTheory.Spectrum.Prime.ConstructibleSet` under the joint observer’s import order. Exact type, opaque proof value and universe parameters agree. The latter has no canonical occurrence among PROJECT physical files, so it contributes one root and one occurrence, rather than an extra repeated project occurrence. Thus 2,666 = 2,664 + 3 − 1. The isolated prerequisite audit’s zero duplicates and 138 canonical names describe its own import-order context; they are not a claim of globally distinct theorem names in every combined environment. The initial metadata-only validator retained the previous project-owner-only counting formula and failed; its actual diagnostic is preserved in `asphericity/evidence/infrastructure-preparation/validate-m5-export.log`. The corrected validator accounts for external canonical owners without changing either raw export, graph, observer or proof inputs.
+
+The source observation was made before the prerequisite source publication: 91 defining project modules match actual Git blobs at the observed HEAD, while seven new scientific source modules are exact SHA256 snapshots absent or different there. They have no fabricated GitHub blob links. The root aggregate is import-only and contributes no constants. A later immutable publication supplement may bind identical snapshots to their actual source commit without rewriting this observation.
+
+The [frozen candidate inventory](../../asphericity/source-inventory.json) binds all eight project files, three configurations, verification tooling, 996 unchanged inherited inputs, the exact 11-module TauCeti supplier cohort (310 canonical/physical declarations), preserved originals/import-only patches/license/assembly recipe, 16 unchanged supplier dependencies, actual consumer inspections and both supplier-only reviews. [Root supplier acceptance](acceptance-landmark5-topology.json) promotes only those suppliers. There are 415 accepted vendored supplier units from two scientific repositories overall; actual reachable module counts in this graph are a different measurement. Mathlib, Lean and all transitive Lake Git pins/tooling remain separately attributed. No fresh whole-Mathlib replay or second independent kernel is claimed.
+
+The source-bound technical record passed 67 commands, complete 138-project/310-provider std3 and physical audits and 19 fresh exact-module replays: eight new project modules and eleven new supplier modules. The 404 old supplier units were reused from accepted evidence and unchanged source hashes, not freshly replayed here. Technical mode and the frozen candidate inventory retain `accepted_asphericity_prerequisites=false`; final independent project reviews/root acceptance and clean CI are separate. All three full-target flags stay false even if the prerequisite checkpoint is accepted.
+
+Reproduce a future NEW observation only after explicit root readiness, using a fresh output path:
+
+```sh
+python3 docs/provenance/run_m5_export.py --execute \
+  --technical-record asphericity/evidence/prerequisites-technical-20261114T090200Z/verification.json \
+  --output docs/provenance/m5/NEW-RUN
+python3 docs/provenance/validate_m5_export.py \
+  --run docs/provenance/m5/NEW-RUN --output docs/provenance/m5/NEW-VALIDATION.json
+python3 docs/provenance/refresh_ledger.py
+```
+
+The exporter performs read-only compiled-expression observation, not builds, axiom audits, kernel replays or acceptance. The validator performs metadata/graph/Git-source checks with no Lean command. Existing archival output paths must never be overwritten.
+
+Both final independent [A](../../asphericity/reviews/asphericity-prerequisites-a.json) and [B](../../asphericity/reviews/asphericity-prerequisites-b.json) prerequisite reviews and [root acceptance](../theorem18/landmarks/milestone5-prerequisites-root-acceptance.json) now accept this delimited prerequisite checkpoint. `accepted_asphericity_prerequisites=true` in the CURRENT register; actual arrangement asphericity, full M5 and Theorem 1.8 remain false. The frozen candidate inventory, technical record and graph retain their honest earlier status; clean final-mode CI is pending separately.
