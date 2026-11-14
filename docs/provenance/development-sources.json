@@ -4264,5 +4264,5 @@
   "history": "docs/provenance/development-history.jsonl",
   "kind": "active-M3-source-observation",
   "limits": "Historical development observations remain in the append-only history; this current snapshot is the frozen root-accepted M3 source set.",
-  "observed_at": "2026-11-14T06:57:19.184126+00:00"
+  "observed_at": "2026-11-14T07:11:45.948574+00:00"
 }

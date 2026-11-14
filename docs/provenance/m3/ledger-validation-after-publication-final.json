@@ -1,0 +1,24 @@
+{
+  "accepted_vendored_modules": 403,
+  "actual_used_modules_by_repository": {
+    "https://github.com/TauCetiProject/TauCeti": 12,
+    "https://github.com/lazyinspirit/artin-tits-normalisers-lean": 37,
+    "https://github.com/leanprover-community/aesop": 1,
+    "https://github.com/leanprover-community/batteries": 10,
+    "https://github.com/leanprover-community/mathlib4": 1207,
+    "https://github.com/leanprover/lean4": 128,
+    "https://github.com/openai/math": 156
+  },
+  "declarations": 39829,
+  "execution_sha256": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+  "graph_scope": "throughM2 historical graph; current M3 mathematical acceptance and full graph recorded separately, clean CI pending",
+  "graph_sha256": "15ff472bad85f947e823b0c7be7ab98dfcd68bdd0528b98f1f2529d827c21255",
+  "kind": "provenance-and-graph-integrity-only",
+  "ledger_sha256": "ea7b4e45b57c99ba564c5a101e6c9711d20b61d8f37f5d8923a40c9d3f59eccd",
+  "limits": "Checks hashes and complete graph edges, not mathematical validity, statement correspondence or fresh kernel replay.",
+  "ok": true,
+  "reachable_source_modules": 1551,
+  "references": 883870,
+  "roots": 1305,
+  "validator_sha256": "d5ebd01c53730e4216bfe289dddc1e0dff3d35ab31191be68b6f2ab7e402ee74"
+}
