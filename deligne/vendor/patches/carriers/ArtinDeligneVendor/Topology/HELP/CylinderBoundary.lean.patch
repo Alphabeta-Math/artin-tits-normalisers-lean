@@ -1,0 +1,16 @@
+--- upstream/Colib/Topology/HELP/CylinderBoundary.lean
++++ active/ArtinDeligneVendor/Topology/HELP/CylinderBoundary.lean
+@@ -6,10 +6,10 @@
+ 
+ module
+ 
+-public import Colib.Topology.Homotopy.ExtensionContinuous
++public import ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous
+ 
+-public import Colib.Topology.Homotopy.RelativeCylinder
+-public import Colib.Topology.Category.TopCat.CompactHausdorffPushout
++public import ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder
++public import ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout
+ 
+ /-! # The compact endpoint-relative cylinder boundary
+ 

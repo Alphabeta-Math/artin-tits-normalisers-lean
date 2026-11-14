@@ -1,0 +1,60 @@
+{
+  "accepted_deligne_prerequisites": false,
+  "actual_applications": [
+    {
+      "declaration": "ArtinNormalisers.Deligne5.exists_extension_of_hep",
+      "meaning": "Contractible actual target gives extension through any actual HEP map, using reversed nullhomotopy of identity; no target filler assumed.",
+      "supplier_declarations": [
+        "TopCat.homotopyExtensionProperty_continuous"
+      ]
+    },
+    {
+      "declaration": "ArtinNormalisers.Deligne5.exists_homotopy_extension_of_hep",
+      "meaning": "Actual topological pushout glues both endpoint maps with prescribed side homotopy. Constructed full ContinuousMap.Homotopy retains both endpoints and exact side.",
+      "supplier_declarations": [
+        "TopCat.CylinderBoundary.cylinderBoundaryMap",
+        "TopCat.CylinderBoundary.homotopyExtensionProperty_cylinderBoundaryMap",
+        "TopCat.CylinderBoundary.cylinderBoundarySide_map",
+        "TopCat.CylinderBoundary.cylinderBoundaryCaps_map"
+      ]
+    },
+    {
+      "declaration": "ArtinNormalisers.Deligne5.exists_simplex_boundary_homotopy_extension",
+      "meaning": "Literal real geometric simplex and its literal boundary, arbitrary target universe using parameter PUnit; all n including empty zero-simplex boundary.",
+      "supplier_declarations": [
+        "TopCat.parameterizedSimplexBoundaryInclusion",
+        "TopCat.homotopyExtensionProperty_simplexBoundary"
+      ]
+    }
+  ],
+  "actual_arrangement_asphericity_proved": false,
+  "actual_execution_owner": "/root/full28_artin_lift_author",
+  "execution_record": {
+    "command": [
+      "lake",
+      "build",
+      "ArtinDeligne.ContractibleExtension"
+    ],
+    "command_attribution": "Reported intended Lake target command, not a command transcript embedded in the raw log.",
+    "cwd": "deligne",
+    "exit_code": 0,
+    "raw_log": "deligne/evidence/providers/carriers/applications/contractible-extension-build.log",
+    "raw_log_sha256": "ae311d60717774bf610feea70d1067d863ce210848e16bbf71d0bf2cd362438b",
+    "record_basis": "Preserved original success log and execution-owner report; this inspection did not rerun Lean. Raw log explicitly identifies the successful ArtinDeligne.ContractibleExtension target and 3668-job completion; it does not itself print the shell command."
+  },
+  "full_landmark_5_proved": false,
+  "full_source_and_proof_bodies_read": true,
+  "full_theorem_1_8_proved": false,
+  "inspected_at": "2026-11-14T11:30:05.914768+00:00",
+  "inspector": "/root/full28_external_search",
+  "remaining_application_obligations": [
+    "SimplexFaceGluing root is independently compiled/audited/replayed and directly relevant to the planned dimension-by-dimension carrier induction, but is not used by this specific ContractibleExtension client.",
+    "No generic monotone contractible-carrier induction is supplied by this record.",
+    "No actual universal-cover domination, two-sided nerve comparison, arrangement asphericity or Theorem1.8 conclusion is established here."
+  ],
+  "schema": "carriers-actual-consumer-inspection-v1",
+  "source_sha256": {
+    "deligne/ArtinDeligne/ContractibleExtension.lean": "36db317b55852eb6ef0d81ffc5983da976d822fc58f4f9f31684327d78f143a1"
+  },
+  "two_sided_nerve_homotopy_equivalence_proved": false
+}

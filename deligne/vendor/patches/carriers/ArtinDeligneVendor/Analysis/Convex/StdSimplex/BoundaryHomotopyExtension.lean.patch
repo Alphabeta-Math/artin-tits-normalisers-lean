@@ -1,0 +1,11 @@
+--- upstream/Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean
++++ active/ArtinDeligneVendor/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean
+@@ -6,7 +6,7 @@
+ 
+ module
+ 
+-public import Colib.Analysis.Convex.StdSimplex.BoundaryRetraction
++public import ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction
+ public import Mathlib.Topology.Homotopy.Basic
+ 
+ /-! # Homotopy extension from the explicit simplex-boundary retraction

@@ -1,0 +1,58 @@
+⚠ [18238/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18239/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18240/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18241/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18242/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/RealizeSimplex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18243/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/RealizeSimplex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18244/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightDim.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18245/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightDim.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18246/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18247/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18248/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18249/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18250/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✖ [18254/18261] Building ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights (2.8s)
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+trace: .> LEAN_PATH=/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Cli/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/batteries/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/Qq/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/aesop/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/importGraph/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/plausible/.lake/build/lib/lean:/home/lazyinspirit/Projects/workflow-engines/formalizations/artin-normalisers/.lake/packages/mathlib/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/landmarks/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/sequences/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/asphericity/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy/.lake/build/lib/lean:/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne/.lake/build/lib/lean /home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean /home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne/vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean -o /home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne/.lake/build/lib/lean/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.olean -i /home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne/.lake/build/lib/lean/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.ilean -c /home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne/.lake/build/ir/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.c --setup /home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne/.lake/build/ir/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.setup.json --json
+error: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean:130:8: Type mismatch: After simplification, term
+  Continuous.comp continuous_subtype_val continuous_fst
+ has type
+  Continuous (Subtype.val ∘ Prod.fst)
+but is expected to have type
+  Continuous fun z =>
+    Bool.rec (motive := fun x => x.Reflects (v = q) → ℝ) (fun x => 0) (fun x => ↑z.1) (decide (v = q)) ⋯
+error: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean:132:8: Type mismatch: After simplification, term
+  continuous_const
+ has type
+  Continuous fun x => 0
+but is expected to have type
+  Continuous fun z =>
+    Bool.rec (motive := fun x => x.Reflects (v = q) → ℝ) (fun x => 0) (fun x => ↑z.1) (decide (v = q)) ⋯
+⚠ [18256/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightInclusion.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18258/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18260/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Some required targets logged failures:
+- ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights
+error: build failed

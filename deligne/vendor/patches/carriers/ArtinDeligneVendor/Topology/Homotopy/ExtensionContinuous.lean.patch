@@ -1,0 +1,11 @@
+--- upstream/Colib/Topology/Homotopy/ExtensionContinuous.lean
++++ active/ArtinDeligneVendor/Topology/Homotopy/ExtensionContinuous.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Homotopy.Extension
++public import ArtinDeligneVendor.Topology.Homotopy.Extension
+ 
+ /-! # Homotopy extension from ordinary interval coordinates
+ 

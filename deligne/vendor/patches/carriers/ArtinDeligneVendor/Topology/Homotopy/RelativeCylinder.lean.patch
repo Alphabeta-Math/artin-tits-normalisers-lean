@@ -1,0 +1,15 @@
+--- upstream/Colib/Topology/Homotopy/RelativeCylinder.lean
++++ active/ArtinDeligneVendor/Topology/Homotopy/RelativeCylinder.lean
+@@ -6,9 +6,9 @@
+ 
+ module
+ 
+-public import Colib.Topology.Homotopy.Extension
+-public import Colib.Topology.Homotopy.IntervalEndpoints
+-public import Colib.Topology.Realization.SimplexBoundaryHEP
++public import ArtinDeligneVendor.Topology.Homotopy.Extension
++public import ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints
++public import ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP
+ public import Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex
+ 
+ /-!

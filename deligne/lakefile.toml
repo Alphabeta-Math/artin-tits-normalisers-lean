@@ -1,0 +1,18 @@
+name = "artin-deligne"
+version = "0.1.0"
+defaultTargets = ["ArtinDeligne"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "artin-homotopy"
+path = "../homotopy"
+
+[[lean_lib]]
+name = "ArtinDeligne"
+
+[[lean_lib]]
+name = "ArtinDeligneVendor"
+srcDir = "vendor"
+leanOptions = { autoImplicit = true }

@@ -1,0 +1,11 @@
+--- upstream/Colib/Topology/Category/TopCat/Pushouts.lean
++++ active/ArtinDeligneVendor/Topology/Category/TopCat/Pushouts.lean
+@@ -6,7 +6,7 @@
+ 
+ module
+ 
+-public import Colib.Util.References
++public import ArtinHomotopyVendor.Util.References
+ public import Mathlib.Topology.Category.TopCat.Limits.Basic
+ public import Mathlib.CategoryTheory.Limits.Types.Pushouts
+ 

@@ -1,0 +1,28 @@
+--- lean/OAI/Topology/ArtinGroups/Realizations/ConeWeights.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean
+@@ -1,6 +1,6 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.WeightCarrier
+-import OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier
++import ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum
+ 
+ namespace OAI
+ 
+@@ -126,9 +126,13 @@
+     apply Continuous.add
+     · exact (continuous_const.sub (continuous_subtype_val.comp continuous_fst)).mul
+         ((weightEval_continuous q).comp ((chainWeightsChart_continuous _).comp continuous_snd))
+-    · split_ifs
+-      · exact continuous_subtype_val.comp continuous_fst
+-      · exact continuous_const
++    · change Continuous (fun p : I × Convexity.StdSimplex ℝ (Fin (n.len + 1)) =>
++        if v = q then (p.1 : ℝ) else (0 : ℝ))
++      by_cases h : v = q
++      · simp only [ite_eq_left h]
++        fun_prop
++      · simp only [ite_eq_right h]
++        exact continuous_const
+ 
+ noncomputable def coneWeightsContinuous (f:Q→oP) (v:P) (hv:∀q,f q≤v ∨ v≤f q) :
+     C(I×OrderWeights Q,OrderWeights P) :=⟨_,coneWeights_continuous f v hv⟩

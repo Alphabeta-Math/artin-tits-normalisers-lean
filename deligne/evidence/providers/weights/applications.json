@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "cohort": "weights",
+  "supplier_provenance": "vendor/provenance-weights.json",
+  "supplier_technical_verification": "evidence/providers/weights/verification.json",
+  "applications": [
+    {
+      "source": "ArtinDeligne/GarsideWeights.lean",
+      "sha256": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+      "full_consumer_source_read": true,
+      "direct_supplier_uses": [
+        "OAI.HarmonicArtin.OrderWeights",
+        "OAI.HarmonicArtin.finiteWeightsCompact",
+        "OAI.HarmonicArtin.weightEval_continuous",
+        "OAI.HarmonicArtin.OrderWeights.ext",
+        "OAI.HarmonicArtin.weightMap",
+        "OAI.HarmonicArtin.weightInclusion",
+        "OAI.HarmonicArtin.weightMap_continuous",
+        "OAI.HarmonicArtin.weightMap_support_embedding",
+        "OAI.HarmonicArtin.compact_map_finite_carrier"
+      ],
+      "actual_native_conclusions": [
+        "FiniteWeightCoordinates.continuous_iff_coordinates: arbitrary coordinate-continuous map into finite actual OrderWeights is continuous, with no fixed-chain condition",
+        "GarsideWeights.compact_map_finite_carrier: compact map into actual incoming-ribbon simple-chain SUBSPACE factors through a finite actual vertex subspace retaining literal SimpleRibbon support condition",
+        "Actual greatest-simple-head cone and finite positive ancestry conclusions use independently proved native algebra; no actual contraction asserted"
+      ],
+      "actual_build": {
+        "command": [
+          "lake",
+          "build",
+          "ArtinDeligne.GarsideWeights"
+        ],
+        "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+        "exit_code": 0,
+        "execution_owner": "consumer author; independently inspected matching raw success log",
+        "raw_log": "evidence/providers/weights/application-builds/ArtinDeligne.GarsideWeights.log",
+        "raw_log_sha256": "d147424d6c4039bf7e0b6dc19cac28272fc79696d055e91877d8f14e4610b9b5",
+        "reported_own_source_warnings": 0
+      },
+      "scope": "Actual finite-carrier/coordinate continuity prerequisites, not a proof of finite-fold contraction, actual arrangement asphericity or full Theorem1.8"
+    }
+  ],
+  "main_project_audit_replay_acceptance_separate": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "actual_arrangement_asphericity_proved": false
+}

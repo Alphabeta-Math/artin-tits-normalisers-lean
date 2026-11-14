@@ -1,0 +1,11 @@
+--- upstream/Colib/Analysis/Convex/StdSimplex/FaceCharts.lean
++++ active/ArtinDeligneVendor/Analysis/Convex/StdSimplex/FaceCharts.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Analysis.Convex.StdSimplex.Boundary
++public import ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary
+ public import Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex
+ 
+ /-! # Coordinates of native simplex faces

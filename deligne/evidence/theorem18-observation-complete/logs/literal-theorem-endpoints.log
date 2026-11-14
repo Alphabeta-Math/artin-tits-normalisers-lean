@@ -1,0 +1,38 @@
+ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints.{u_1} {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group]
+  (J : Set I) :
+  (∀ (x : Theorem18.Complement M J),
+      actualNormalizerDiagrams M J x ∧
+        TauCeti.IsEilenbergMacLaneSpaceOne (↥(Artin.pureNormalizerImage M J)) (Theorem18.Complement M J) x ∧
+          TauCeti.IsEilenbergMacLaneSpaceOne (Artin.normalizerQuotient M J) (OrbitSpace M J) (orbitProjection M J x)) ∧
+    ∀ (y : OrbitSpace M J), TauCeti.IsEilenbergMacLaneSpaceOne (Artin.normalizerQuotient M J) (OrbitSpace M J) y
+def ArtinNormalisers.Deligne5.actualUniversalCoverComparisonHomotopy.{u_1} : {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ((actualGarsideReturn M J).comp (actualGarsideForward M J)).Homotopy
+          (ContinuousMap.id (Asphericity5.ComplementUniversalCover M J)) :=
+fun {I} M [Finite M.Group] J =>
+  numerableCarrierHomotopy (liftedCanonicalSet M J) ⋯ (actualLiftedCanonicalPartition M J) ⋯
+    (canonicalPacketCarrier M J) ⋯ ⋯ ⋯ ((actualGarsideReturn M J).comp (canonicalGarsideMap M J)) ⋯
+theorem ArtinNormalisers.Deligne5.actualUniversalCover_isAspherical.{u_1} : ∀ {I : Type u_1} (M : CoxeterMatrix I)
+  [inst : Finite M.Group] (J : Set I) (q : Asphericity5.ComplementUniversalCover M J),
+  TauCeti.IsAspherical (Asphericity5.ComplementUniversalCover M J) q :=
+fun {I} M [Finite M.Group] J q =>
+  Homotopy5.isAspherical_of_dominated_by_aspherical (actualGarsideForward M J) (actualGarsideReturn M J)
+    (actualUniversalCoverComparisonHomotopy M J) q
+    (garside_isAspherical M { indices := J } ((actualGarsideForward M J) q))
+theorem ArtinNormalisers.Deligne5.theorem_1_8.{u_1} : ∀ {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group]
+  (J : Set I) (x : Theorem18.Complement M J),
+  actualNormalizerDiagrams M J x ∧
+    TauCeti.IsEilenbergMacLaneSpaceOne (↥(Artin.pureNormalizerImage M J)) (Theorem18.Complement M J) x ∧
+      TauCeti.IsEilenbergMacLaneSpaceOne (Artin.normalizerQuotient M J) (OrbitSpace M J) (orbitProjection M J x) :=
+fun {I} M [Finite M.Group] J x =>
+  ⟨actualNormalizerDiagrams_proved M J x, ⟨actualComplement_isKpi1 M J x, actualOrbit_isKpi1_at_projection M J x⟩⟩
+theorem ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints.{u_1} : ∀ {I : Type u_1} (M : CoxeterMatrix I)
+  [inst : Finite M.Group] (J : Set I),
+  (∀ (x : Theorem18.Complement M J),
+      actualNormalizerDiagrams M J x ∧
+        TauCeti.IsEilenbergMacLaneSpaceOne (↥(Artin.pureNormalizerImage M J)) (Theorem18.Complement M J) x ∧
+          TauCeti.IsEilenbergMacLaneSpaceOne (Artin.normalizerQuotient M J) (OrbitSpace M J) (orbitProjection M J x)) ∧
+    ∀ (y : OrbitSpace M J), TauCeti.IsEilenbergMacLaneSpaceOne (Artin.normalizerQuotient M J) (OrbitSpace M J) y :=
+fun {I} M [Finite M.Group] J => ⟨theorem_1_8 M J, corollary_6_14 M J⟩

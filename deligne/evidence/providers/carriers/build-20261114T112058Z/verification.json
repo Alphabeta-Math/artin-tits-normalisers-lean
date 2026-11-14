@@ -1,0 +1,84 @@
+{
+  "ok": true,
+  "phase": "build",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "started_at": "2026-11-14T11:20:58.927592+00:00",
+  "modules": [
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+    "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+    "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+    "ArtinDeligneVendor.Topology.Realization.Cylinder",
+    "ArtinDeligneVendor.Topology.Homotopy.Extension",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+    "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+    "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+    "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+    "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+    "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/carriers/verify_source.py"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.02059151401044801,
+      "log": "00-build.log",
+      "log_sha256": "47a7737980feace6ff7f84b4d8361fc12019a92756c348a5489357bc33835097"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+        "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+        "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+        "ArtinDeligneVendor.Topology.Realization.Cylinder",
+        "ArtinDeligneVendor.Topology.Homotopy.Extension",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+        "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+        "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+        "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+        "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+        "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+        "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+        "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.9858143030141946,
+      "log": "01-build.log",
+      "log_sha256": "6044c1a2e3797f501b18f0f5fc3ceda11a1310169a4ed9e1061a368f1cf6eb34"
+    }
+  ],
+  "actual_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "tools": {
+    "lean": {
+      "path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean",
+      "sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00"
+    },
+    "leanchecker": {
+      "path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker",
+      "sha256": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798"
+    }
+  },
+  "concurrency": 1,
+  "kernel_scope": "Official exact-module leanchecker, relative to imported pinned Mathlib and accepted supplier contexts; not an independent kernel implementation.",
+  "independent_reviews_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T11:20:59.962516+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "d49067a967c24f5e741f33e87fe5e9bb74443514c600bfcf07848836cc448065",
+  "inputs_after_sha256": "d49067a967c24f5e741f33e87fe5e9bb74443514c600bfcf07848836cc448065"
+}

@@ -1,0 +1,15 @@
+--- upstream/Colib/Topology/Homotopy/IntervalEndpoints.lean
++++ active/ArtinDeligneVendor/Topology/Homotopy/IntervalEndpoints.lean
+@@ -6,9 +6,9 @@
+ 
+ module
+ 
+-public import Colib.Analysis.Convex.StdSimplex.FaceCharts
+-public import Colib.Topology.Realization.SimplexBoundaryHEP
+-public import Colib.Topology.Realization.SimplexBoundaryEndpoints
++public import ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts
++public import ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP
++public import ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints
+ public import Mathlib.Geometry.Convex.ConvexSpace.PathConnectedSpaceStdSimplex
+ public import Mathlib.Topology.Piecewise
+ public import Mathlib.Tactic.FinCases

@@ -1,0 +1,11 @@
+--- upstream/Colib/Topology/Realization/Cylinder.lean
++++ active/ArtinDeligneVendor/Topology/Realization/Cylinder.lean
+@@ -6,7 +6,7 @@
+ 
+ module
+ 
+-public import Colib.Util.References
++public import ArtinHomotopyVendor.Util.References
+ public import Mathlib.Topology.Category.TopCat.Monoidal
+ public import Mathlib.Topology.CompactOpen
+ public import Mathlib.CategoryTheory.Adjunction.Limits

@@ -1,0 +1,450 @@
+{
+  "schema": "artin-colib-carriers-import-relocation-v1",
+  "repository": "https://github.com/kangxyz/colib",
+  "upstream_sha": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+  "roots": [
+    "Colib.Topology.Realization.SimplexBoundaryHEP",
+    "Colib.Topology.HELP.CylinderBoundary",
+    "Colib.Topology.Realization.SimplexFaceGluing"
+  ],
+  "module_mapping": {
+    "Colib.Topology.Realization.SimplexBoundaryHEP": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+    "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension": "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+    "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+    "Colib.Util.References": "ArtinHomotopyVendor.Util.References",
+    "Colib.Analysis.Convex.StdSimplex.Boundary": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+    "Colib.Topology.Realization.SimplexAttachmentCollar": "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+    "Colib.Topology.Category.TopCat.Pushouts": "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+    "Colib.Topology.Realization.SimplexBoundaryCollar": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+    "Colib.Topology.Homotopy.Extension": "ArtinDeligneVendor.Topology.Homotopy.Extension",
+    "Colib.Topology.Realization.Cylinder": "ArtinDeligneVendor.Topology.Realization.Cylinder",
+    "Colib.Topology.HELP.CylinderBoundary": "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+    "Colib.Topology.Homotopy.ExtensionContinuous": "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+    "Colib.Topology.Homotopy.RelativeCylinder": "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+    "Colib.Topology.Homotopy.IntervalEndpoints": "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+    "Colib.Analysis.Convex.StdSimplex.FaceCharts": "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+    "Colib.Topology.Realization.SimplexBoundaryEndpoints": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+    "Colib.Topology.Category.TopCat.CompactHausdorffPushout": "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+    "Colib.Topology.Category.TopCat.PushoutInteriors": "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+    "Colib.Topology.Realization.SimplexFaceGluing": "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+  },
+  "new_topological_order": [
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+    "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+    "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+    "ArtinDeligneVendor.Topology.Realization.Cylinder",
+    "ArtinDeligneVendor.Topology.Homotopy.Extension",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+    "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+    "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+    "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+    "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+    "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+  ],
+  "operation": "Replace ONLY imports of selected new modules with ArtinDeligneVendor and accepted old modules with ArtinHomotopyVendor; namespaces/types/proofs unchanged.",
+  "files": [
+    {
+      "upstream_module": "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+      "upstream_path": "Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean",
+      "module": "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+      "path": "ArtinDeligneVendor/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean",
+      "original_path": "upstream-original/carriers/Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean.patch",
+      "upstream_git_blob_sha": "4fca376a324b26d12fd512df9b8c4d1948209e01",
+      "upstream_sha256": "bfe523904811f58ed82a81e1ad6765fc8920aeeda12e9e4765cd0139ade377e4",
+      "active_sha256": "69ecb51e7f4639597abce6c01cc15aa0b9d8d0423605229d398753799503cd79",
+      "patch_sha256": "26a43be10bf7ac0c28bc10435bebe8fb937c6db1d902b86faf5679306db43bb7",
+      "lines": 163,
+      "original_imports": [
+        "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+        "Mathlib.Topology.Homotopy.Basic"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+        "Mathlib.Topology.Homotopy.Basic"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Category.TopCat.Pushouts",
+      "upstream_path": "Colib/Topology/Category/TopCat/Pushouts.lean",
+      "module": "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+      "path": "ArtinDeligneVendor/Topology/Category/TopCat/Pushouts.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Category/TopCat/Pushouts.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Category/TopCat/Pushouts.lean.patch",
+      "upstream_git_blob_sha": "59bfb2cb37c7bf314033cd8295202d908fe61e33",
+      "upstream_sha256": "53568c8e0d055073de2535250b4b9c29e0080b9a2d1b4069e83322947d0f945c",
+      "active_sha256": "5f79d0bed76cc794da822c16c2f1506359d03c4694df682a1aa1ccf73732b7e5",
+      "patch_sha256": "b3dfba4451f77a55ffd85a50d9677a562937a8e98d766196196cc9cda81486fa",
+      "lines": 82,
+      "original_imports": [
+        "Colib.Util.References",
+        "Mathlib.Topology.Category.TopCat.Limits.Basic",
+        "Mathlib.CategoryTheory.Limits.Types.Pushouts"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "Mathlib.Topology.Category.TopCat.Limits.Basic",
+        "Mathlib.CategoryTheory.Limits.Types.Pushouts"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.SimplexBoundaryCollar",
+      "upstream_path": "Colib/Topology/Realization/SimplexBoundaryCollar.lean",
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+      "path": "ArtinDeligneVendor/Topology/Realization/SimplexBoundaryCollar.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Realization/SimplexBoundaryCollar.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryCollar.lean.patch",
+      "upstream_git_blob_sha": "f02ab118df60eca4ee6f43bb8d62f6ba6cd45c36",
+      "upstream_sha256": "7d527a38eb71ad2eef203525b6dec764d1681b7672735e15f7a9e3337e4a63d1",
+      "active_sha256": "34cc7be804bf29a910364c4569106cb9966865e958bc38f663f11bad380a7382",
+      "patch_sha256": "bbe7cd4f2f54573b4e5421ef9c12c06f1916c4e200f47776c9f24584ebfc6941",
+      "lines": 192,
+      "original_imports": [
+        "Colib.Util.References",
+        "Mathlib.Topology.Homotopy.Equiv",
+        "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "Mathlib.Topology.Homotopy.Equiv",
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.SimplexAttachmentCollar",
+      "upstream_path": "Colib/Topology/Realization/SimplexAttachmentCollar.lean",
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+      "path": "ArtinDeligneVendor/Topology/Realization/SimplexAttachmentCollar.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Realization/SimplexAttachmentCollar.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexAttachmentCollar.lean.patch",
+      "upstream_git_blob_sha": "4b9f8a6ae12cb271f684e03576488ac9cbae4341",
+      "upstream_sha256": "6467f268cde060cb61e335c30869ffc025ef4a51d484710a3c5200dc53b4f1ea",
+      "active_sha256": "fd9df6998365a9a5acd8f9bff11b2f80afdf13c2386b622f27799801b5e117fd",
+      "patch_sha256": "cd55628ad3a26b1ea1a373f20aae2d008049c7c98350464b9166d1b08bc68c84",
+      "lines": 138,
+      "original_imports": [
+        "Colib.Util.References",
+        "Colib.Topology.Category.TopCat.Pushouts",
+        "Colib.Topology.Realization.SimplexBoundaryCollar"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.Cylinder",
+      "upstream_path": "Colib/Topology/Realization/Cylinder.lean",
+      "module": "ArtinDeligneVendor.Topology.Realization.Cylinder",
+      "path": "ArtinDeligneVendor/Topology/Realization/Cylinder.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Realization/Cylinder.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Realization/Cylinder.lean.patch",
+      "upstream_git_blob_sha": "8c8e9dae643f3b5e274f7018387e5e979ebed11c",
+      "upstream_sha256": "510d251008aa8fe91ededea6ed1bf0cc609f3cac5a9578e18157985c781e76e8",
+      "active_sha256": "03550eea323d8b9e2518ef6d4dd89b656642f3f3d18ed34ec84d1db57ce2795e",
+      "patch_sha256": "6baeb6a0edcd0dfa5beaf724266276a84ce6feddcfb81de7f566718a63a1b1ae",
+      "lines": 76,
+      "original_imports": [
+        "Colib.Util.References",
+        "Mathlib.Topology.Category.TopCat.Monoidal",
+        "Mathlib.Topology.CompactOpen",
+        "Mathlib.CategoryTheory.Adjunction.Limits"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "Mathlib.Topology.Category.TopCat.Monoidal",
+        "Mathlib.Topology.CompactOpen",
+        "Mathlib.CategoryTheory.Adjunction.Limits"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Homotopy.Extension",
+      "upstream_path": "Colib/Topology/Homotopy/Extension.lean",
+      "module": "ArtinDeligneVendor.Topology.Homotopy.Extension",
+      "path": "ArtinDeligneVendor/Topology/Homotopy/Extension.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Homotopy/Extension.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Homotopy/Extension.lean.patch",
+      "upstream_git_blob_sha": "dd216dc4ba140ed8af8bf73efaca749aba39199b",
+      "upstream_sha256": "e541f067c3301758c62df536955feda7c6fd399f306f396d0089cb6d9082292c",
+      "active_sha256": "4909ed4cff14c2b00fe878d40b174ee6c8083f64fe9a5b144a568ed460db2a8a",
+      "patch_sha256": "d0985f46be8bd20fba2f112324c6e2dc92718947dd5d01367a3d2aa01e271d31",
+      "lines": 114,
+      "original_imports": [
+        "Colib.Topology.Realization.Cylinder",
+        "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic",
+        "Mathlib.Topology.Homotopy.TopCat.Basic"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Topology.Realization.Cylinder",
+        "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic",
+        "Mathlib.Topology.Homotopy.TopCat.Basic"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.SimplexBoundaryHEP",
+      "upstream_path": "Colib/Topology/Realization/SimplexBoundaryHEP.lean",
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+      "path": "ArtinDeligneVendor/Topology/Realization/SimplexBoundaryHEP.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Realization/SimplexBoundaryHEP.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryHEP.lean.patch",
+      "upstream_git_blob_sha": "72040320c65e62bc73d754cd0955aca9d5be7a1f",
+      "upstream_sha256": "7135847f9611581c21a74cac5bf98eebc6dcafc8801c9c49033f4c2ea6248bbb",
+      "active_sha256": "dbab264c655f3542dd7c7a36bd9a5df81da2b0511a36cb42dd6e1ee86a6cb4fb",
+      "patch_sha256": "ad08b514abb9b2e0c1e86ab394a6256df9aac40b8da8ff1d92a301d5da2c97dd",
+      "lines": 75,
+      "original_imports": [
+        "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+        "Colib.Topology.Realization.SimplexAttachmentCollar",
+        "Colib.Topology.Homotopy.Extension"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+        "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+        "ArtinDeligneVendor.Topology.Homotopy.Extension"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Homotopy.ExtensionContinuous",
+      "upstream_path": "Colib/Topology/Homotopy/ExtensionContinuous.lean",
+      "module": "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+      "path": "ArtinDeligneVendor/Topology/Homotopy/ExtensionContinuous.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Homotopy/ExtensionContinuous.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Homotopy/ExtensionContinuous.lean.patch",
+      "upstream_git_blob_sha": "ca8fd8deb7d3e97ef28cc0ceefe11e07b7980fbe",
+      "upstream_sha256": "aeaf2d18615c501b7440ec330f77fa829319ceab8f8d46f6d769029ee4440fa5",
+      "active_sha256": "24b81aa10febec1b62a0fcb1cc45a1e5d5126afec407b311b985ba71238cb5de",
+      "patch_sha256": "744f660577446cdfa1c78aa36bb9586d547b007f27f7db0276109ebf7d744306",
+      "lines": 46,
+      "original_imports": [
+        "Colib.Topology.Homotopy.Extension"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Topology.Homotopy.Extension"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+      "upstream_path": "Colib/Analysis/Convex/StdSimplex/FaceCharts.lean",
+      "module": "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+      "path": "ArtinDeligneVendor/Analysis/Convex/StdSimplex/FaceCharts.lean",
+      "original_path": "upstream-original/carriers/Colib/Analysis/Convex/StdSimplex/FaceCharts.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Analysis/Convex/StdSimplex/FaceCharts.lean.patch",
+      "upstream_git_blob_sha": "bea298e8de877f46039f9f4c6d687cf3c9f63cdf",
+      "upstream_sha256": "4b672b8b0eea683b58459b7975fe5d15bce5cddfc826550885e107ed1d71f5f3",
+      "active_sha256": "2d5a211a2d5fc30383a2ede1a3496e2d58ceb2e0e61eb0e3a4dadfcc14f78c46",
+      "patch_sha256": "96a7c16f85848071abddf3d1e1396a66b8df387f4c857650a818e37381faf3b6",
+      "lines": 63,
+      "original_imports": [
+        "Colib.Analysis.Convex.StdSimplex.Boundary",
+        "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+        "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.SimplexBoundaryEndpoints",
+      "upstream_path": "Colib/Topology/Realization/SimplexBoundaryEndpoints.lean",
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+      "path": "ArtinDeligneVendor/Topology/Realization/SimplexBoundaryEndpoints.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Realization/SimplexBoundaryEndpoints.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryEndpoints.lean.patch",
+      "upstream_git_blob_sha": "7e6e930aed18c911efa8a52d7eff30e190ff2819",
+      "upstream_sha256": "41eef6753c0bc29f9d67c6bd8e81d8a0d5a18ff6e9b502a8dd5c20c4e07c25d4",
+      "active_sha256": "33bfa52c408bcce7cb1bd422d8e808f9a124c09ac2f48250e7fe88699208aa76",
+      "patch_sha256": "117e0ba7bee2e36e598fa6b8d8859a481a307feda85ff12e41139d637f460109",
+      "lines": 82,
+      "original_imports": [
+        "Colib.Util.References",
+        "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+        "Mathlib.Tactic.FinCases"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+        "Mathlib.Tactic.FinCases"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Homotopy.IntervalEndpoints",
+      "upstream_path": "Colib/Topology/Homotopy/IntervalEndpoints.lean",
+      "module": "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+      "path": "ArtinDeligneVendor/Topology/Homotopy/IntervalEndpoints.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Homotopy/IntervalEndpoints.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Homotopy/IntervalEndpoints.lean.patch",
+      "upstream_git_blob_sha": "1b9776443f5cf5a222372e3681872a2a24a0fd08",
+      "upstream_sha256": "2af45eabed7638de4e006c4cb3fac628d76018223e71888a502e316677eff756",
+      "active_sha256": "e8a686bcbfa6b553d5076531ec6acce6f6fe5c160a9f6ae6c29a8b9673a4d59f",
+      "patch_sha256": "c564b096b0efdde244554b074c98f0ae6f2ca6b0cc4a8be6b06a1e5f39403ca5",
+      "lines": 108,
+      "original_imports": [
+        "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+        "Colib.Topology.Realization.SimplexBoundaryHEP",
+        "Colib.Topology.Realization.SimplexBoundaryEndpoints",
+        "Mathlib.Geometry.Convex.ConvexSpace.PathConnectedSpaceStdSimplex",
+        "Mathlib.Topology.Piecewise",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Topology.Separation.Basic"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+        "Mathlib.Geometry.Convex.ConvexSpace.PathConnectedSpaceStdSimplex",
+        "Mathlib.Topology.Piecewise",
+        "Mathlib.Tactic.FinCases",
+        "Mathlib.Topology.Separation.Basic"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Homotopy.RelativeCylinder",
+      "upstream_path": "Colib/Topology/Homotopy/RelativeCylinder.lean",
+      "module": "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+      "path": "ArtinDeligneVendor/Topology/Homotopy/RelativeCylinder.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Homotopy/RelativeCylinder.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Homotopy/RelativeCylinder.lean.patch",
+      "upstream_git_blob_sha": "987168da3af99d37363b53f67903aabf46de023c",
+      "upstream_sha256": "ec115c697f69c964437a88b63d1dd382ad194cf0a97738f01c193cd4185b81bc",
+      "active_sha256": "e9422d2341a3b493aab634ea0b2bb124aecf8150591f04893486f9bffb01709c",
+      "patch_sha256": "7e08ce3f3e9c803aea00b57f3dec0a8b268f5fc4501ae851dd92bd768a977744",
+      "lines": 375,
+      "original_imports": [
+        "Colib.Topology.Homotopy.Extension",
+        "Colib.Topology.Homotopy.IntervalEndpoints",
+        "Colib.Topology.Realization.SimplexBoundaryHEP",
+        "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Topology.Homotopy.Extension",
+        "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+        "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Category.TopCat.PushoutInteriors",
+      "upstream_path": "Colib/Topology/Category/TopCat/PushoutInteriors.lean",
+      "module": "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+      "path": "ArtinDeligneVendor/Topology/Category/TopCat/PushoutInteriors.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Category/TopCat/PushoutInteriors.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Category/TopCat/PushoutInteriors.lean.patch",
+      "upstream_git_blob_sha": "74b3d98e1e5ebdf5aaa9849eb94511fa5977c51c",
+      "upstream_sha256": "a1099d2394e3eeb777cbc280ec9eb344634b065bb79878578190965a208389c8",
+      "active_sha256": "1b30266316995363f5e64820fe9e427fc0b01d8e67ddacd19f93251590603206",
+      "patch_sha256": "aa34ec9042685e76a693ecd16fa62d2b26e4fafce229b143c87d65c107953b3a",
+      "lines": 219,
+      "original_imports": [
+        "Colib.Util.References",
+        "Colib.Topology.Category.TopCat.Pushouts"
+      ],
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Category.TopCat.CompactHausdorffPushout",
+      "upstream_path": "Colib/Topology/Category/TopCat/CompactHausdorffPushout.lean",
+      "module": "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+      "path": "ArtinDeligneVendor/Topology/Category/TopCat/CompactHausdorffPushout.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Category/TopCat/CompactHausdorffPushout.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Category/TopCat/CompactHausdorffPushout.lean.patch",
+      "upstream_git_blob_sha": "3ed257192b8264aaa8a4f7af6e05274c556c045e",
+      "upstream_sha256": "35f13f8db5181dd296d2bb936bdfb722803e33dbd1d5978ae6a5432470a1eff8",
+      "active_sha256": "de007591eaa7937cc7a4b419f02c2ff74803322602d6c0777f1ba733350c7b4c",
+      "patch_sha256": "91e08a6f29111da53c24e1ae1a7cf85ce7da05c08f8deea79c682075017dd768",
+      "lines": 146,
+      "original_imports": [
+        "Colib.Topology.Category.TopCat.PushoutInteriors",
+        "Mathlib.Topology.Separation.Hausdorff"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+        "Mathlib.Topology.Separation.Hausdorff"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.HELP.CylinderBoundary",
+      "upstream_path": "Colib/Topology/HELP/CylinderBoundary.lean",
+      "module": "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+      "path": "ArtinDeligneVendor/Topology/HELP/CylinderBoundary.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/HELP/CylinderBoundary.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/HELP/CylinderBoundary.lean.patch",
+      "upstream_git_blob_sha": "f769867ef95cc966d73565267c81dd753510f748",
+      "upstream_sha256": "99166c0288e365dced52e7992afb5717c1dcab07727e78356f560cd2d2949bbd",
+      "active_sha256": "3fd1a04da305bb2b7e33674eadb78274f1e3bf31855faa7a27ee514c97b12db6",
+      "patch_sha256": "fc43b6d72394175c17fb686140e84fea654bfe7175cedecb1972fa0861d0da91",
+      "lines": 156,
+      "original_imports": [
+        "Colib.Topology.Homotopy.ExtensionContinuous",
+        "Colib.Topology.Homotopy.RelativeCylinder",
+        "Colib.Topology.Category.TopCat.CompactHausdorffPushout"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+        "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+        "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.SimplexFaceGluing",
+      "upstream_path": "Colib/Topology/Realization/SimplexFaceGluing.lean",
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing",
+      "path": "ArtinDeligneVendor/Topology/Realization/SimplexFaceGluing.lean",
+      "original_path": "upstream-original/carriers/Colib/Topology/Realization/SimplexFaceGluing.lean.txt",
+      "patch_path": "patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexFaceGluing.lean.patch",
+      "upstream_git_blob_sha": "24f21fa6aaa9850b2c4a04420d4dc98f374678a0",
+      "upstream_sha256": "9f655e2fff6f5ceae19ff32bb0964661af71de3d14a817f10ed07b7c39c42ee5",
+      "active_sha256": "61b12da2017f7830cbf1bb8496432d8057c16b834077a86a003730704ae802a8",
+      "patch_sha256": "4edc63e99e8da341c35f7c390badcc314f71b70817abe2916ef4e45dcf218377",
+      "lines": 147,
+      "original_imports": [
+        "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+        "Mathlib.Topology.ContinuousMap.Basic"
+      ],
+      "imports": [
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+        "Mathlib.Topology.ContinuousMap.Basic"
+      ],
+      "full_original_source_read": true,
+      "modifications": "Only import prefixes; all declarations, hypotheses, bodies, namespaces and comments retained byte for byte outside imports."
+    }
+  ]
+}

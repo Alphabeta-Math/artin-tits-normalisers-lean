@@ -1,0 +1,9 @@
+--- lean/OAI/Topology/ArtinGroups/Realizations/WeightMap.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean
+@@ -1,5 +1,5 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.NerveChain
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain
+ 
+ namespace OAI
+ 

@@ -1,0 +1,204 @@
+{
+  "actual_client_inspection": "deligne/evidence/providers/carriers/applications.json",
+  "all_new_source_proof_bodies_read": true,
+  "compatibility_ports": [],
+  "direct_upstream_repository": "https://github.com/kangxyz/colib",
+  "direct_upstream_sha": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+  "exact_total_colib_closure_modules": 19,
+  "files": [
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean",
+      "active_sha256": "69ecb51e7f4639597abce6c01cc15aa0b9d8d0423605229d398753799503cd79",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean.txt",
+      "original_sha256": "bfe523904811f58ed82a81e1ad6765fc8920aeeda12e9e4765cd0139ade377e4",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean.patch",
+      "patch_sha256": "26a43be10bf7ac0c28bc10435bebe8fb937c6db1d902b86faf5679306db43bb7"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Category/TopCat/Pushouts.lean",
+      "active_sha256": "5f79d0bed76cc794da822c16c2f1506359d03c4694df682a1aa1ccf73732b7e5",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Category/TopCat/Pushouts.lean.txt",
+      "original_sha256": "53568c8e0d055073de2535250b4b9c29e0080b9a2d1b4069e83322947d0f945c",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Category/TopCat/Pushouts.lean.patch",
+      "patch_sha256": "b3dfba4451f77a55ffd85a50d9677a562937a8e98d766196196cc9cda81486fa"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryCollar.lean",
+      "active_sha256": "34cc7be804bf29a910364c4569106cb9966865e958bc38f663f11bad380a7382",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Realization/SimplexBoundaryCollar.lean.txt",
+      "original_sha256": "7d527a38eb71ad2eef203525b6dec764d1681b7672735e15f7a9e3337e4a63d1",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryCollar.lean.patch",
+      "patch_sha256": "bbe7cd4f2f54573b4e5421ef9c12c06f1916c4e200f47776c9f24584ebfc6941"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Realization/SimplexAttachmentCollar.lean",
+      "active_sha256": "fd9df6998365a9a5acd8f9bff11b2f80afdf13c2386b622f27799801b5e117fd",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Realization/SimplexAttachmentCollar.lean.txt",
+      "original_sha256": "6467f268cde060cb61e335c30869ffc025ef4a51d484710a3c5200dc53b4f1ea",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexAttachmentCollar.lean.patch",
+      "patch_sha256": "cd55628ad3a26b1ea1a373f20aae2d008049c7c98350464b9166d1b08bc68c84"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Realization/Cylinder.lean",
+      "active_sha256": "03550eea323d8b9e2518ef6d4dd89b656642f3f3d18ed34ec84d1db57ce2795e",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Realization.Cylinder",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Realization/Cylinder.lean.txt",
+      "original_sha256": "510d251008aa8fe91ededea6ed1bf0cc609f3cac5a9578e18157985c781e76e8",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Realization/Cylinder.lean.patch",
+      "patch_sha256": "6baeb6a0edcd0dfa5beaf724266276a84ce6feddcfb81de7f566718a63a1b1ae"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Homotopy/Extension.lean",
+      "active_sha256": "4909ed4cff14c2b00fe878d40b174ee6c8083f64fe9a5b144a568ed460db2a8a",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Homotopy.Extension",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Homotopy/Extension.lean.txt",
+      "original_sha256": "e541f067c3301758c62df536955feda7c6fd399f306f396d0089cb6d9082292c",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Homotopy/Extension.lean.patch",
+      "patch_sha256": "d0985f46be8bd20fba2f112324c6e2dc92718947dd5d01367a3d2aa01e271d31"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryHEP.lean",
+      "active_sha256": "dbab264c655f3542dd7c7a36bd9a5df81da2b0511a36cb42dd6e1ee86a6cb4fb",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Realization/SimplexBoundaryHEP.lean.txt",
+      "original_sha256": "7135847f9611581c21a74cac5bf98eebc6dcafc8801c9c49033f4c2ea6248bbb",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryHEP.lean.patch",
+      "patch_sha256": "ad08b514abb9b2e0c1e86ab394a6256df9aac40b8da8ff1d92a301d5da2c97dd"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Homotopy/ExtensionContinuous.lean",
+      "active_sha256": "24b81aa10febec1b62a0fcb1cc45a1e5d5126afec407b311b985ba71238cb5de",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Homotopy/ExtensionContinuous.lean.txt",
+      "original_sha256": "aeaf2d18615c501b7440ec330f77fa829319ceab8f8d46f6d769029ee4440fa5",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Homotopy/ExtensionContinuous.lean.patch",
+      "patch_sha256": "744f660577446cdfa1c78aa36bb9586d547b007f27f7db0276109ebf7d744306"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Analysis/Convex/StdSimplex/FaceCharts.lean",
+      "active_sha256": "2d5a211a2d5fc30383a2ede1a3496e2d58ceb2e0e61eb0e3a4dadfcc14f78c46",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Analysis/Convex/StdSimplex/FaceCharts.lean.txt",
+      "original_sha256": "4b672b8b0eea683b58459b7975fe5d15bce5cddfc826550885e107ed1d71f5f3",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Analysis/Convex/StdSimplex/FaceCharts.lean.patch",
+      "patch_sha256": "96a7c16f85848071abddf3d1e1396a66b8df387f4c857650a818e37381faf3b6"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryEndpoints.lean",
+      "active_sha256": "33bfa52c408bcce7cb1bd422d8e808f9a124c09ac2f48250e7fe88699208aa76",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Realization/SimplexBoundaryEndpoints.lean.txt",
+      "original_sha256": "41eef6753c0bc29f9d67c6bd8e81d8a0d5a18ff6e9b502a8dd5c20c4e07c25d4",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryEndpoints.lean.patch",
+      "patch_sha256": "117e0ba7bee2e36e598fa6b8d8859a481a307feda85ff12e41139d637f460109"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Homotopy/IntervalEndpoints.lean",
+      "active_sha256": "e8a686bcbfa6b553d5076531ec6acce6f6fe5c160a9f6ae6c29a8b9673a4d59f",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Homotopy/IntervalEndpoints.lean.txt",
+      "original_sha256": "2af45eabed7638de4e006c4cb3fac628d76018223e71888a502e316677eff756",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Homotopy/IntervalEndpoints.lean.patch",
+      "patch_sha256": "c564b096b0efdde244554b074c98f0ae6f2ca6b0cc4a8be6b06a1e5f39403ca5"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Homotopy/RelativeCylinder.lean",
+      "active_sha256": "e9422d2341a3b493aab634ea0b2bb124aecf8150591f04893486f9bffb01709c",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Homotopy/RelativeCylinder.lean.txt",
+      "original_sha256": "ec115c697f69c964437a88b63d1dd382ad194cf0a97738f01c193cd4185b81bc",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Homotopy/RelativeCylinder.lean.patch",
+      "patch_sha256": "7e08ce3f3e9c803aea00b57f3dec0a8b268f5fc4501ae851dd92bd768a977744"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Category/TopCat/PushoutInteriors.lean",
+      "active_sha256": "1b30266316995363f5e64820fe9e427fc0b01d8e67ddacd19f93251590603206",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Category/TopCat/PushoutInteriors.lean.txt",
+      "original_sha256": "a1099d2394e3eeb777cbc280ec9eb344634b065bb79878578190965a208389c8",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Category/TopCat/PushoutInteriors.lean.patch",
+      "patch_sha256": "aa34ec9042685e76a693ecd16fa62d2b26e4fafce229b143c87d65c107953b3a"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Category/TopCat/CompactHausdorffPushout.lean",
+      "active_sha256": "de007591eaa7937cc7a4b419f02c2ff74803322602d6c0777f1ba733350c7b4c",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Category/TopCat/CompactHausdorffPushout.lean.txt",
+      "original_sha256": "35f13f8db5181dd296d2bb936bdfb722803e33dbd1d5978ae6a5432470a1eff8",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Category/TopCat/CompactHausdorffPushout.lean.patch",
+      "patch_sha256": "91e08a6f29111da53c24e1ae1a7cf85ce7da05c08f8deea79c682075017dd768"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/HELP/CylinderBoundary.lean",
+      "active_sha256": "3fd1a04da305bb2b7e33674eadb78274f1e3bf31855faa7a27ee514c97b12db6",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/HELP/CylinderBoundary.lean.txt",
+      "original_sha256": "99166c0288e365dced52e7992afb5717c1dcab07727e78356f560cd2d2949bbd",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/HELP/CylinderBoundary.lean.patch",
+      "patch_sha256": "fc43b6d72394175c17fb686140e84fea654bfe7175cedecb1972fa0861d0da91"
+    },
+    {
+      "active": "deligne/vendor/ArtinDeligneVendor/Topology/Realization/SimplexFaceGluing.lean",
+      "active_sha256": "61b12da2017f7830cbf1bb8496432d8057c16b834077a86a003730704ae802a8",
+      "full_definition_theorem_proof_read": true,
+      "module": "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing",
+      "only_import_prefix_changed": true,
+      "original": "deligne/vendor/upstream-original/carriers/Colib/Topology/Realization/SimplexFaceGluing.lean.txt",
+      "original_sha256": "9f655e2fff6f5ceae19ff32bb0964661af71de3d14a817f10ed07b7c39c42ee5",
+      "patch": "deligne/vendor/patches/carriers/ArtinDeligneVendor/Topology/Realization/SimplexFaceGluing.lean.patch",
+      "patch_sha256": "4edc63e99e8da341c35f7c390badcc314f71b70817abe2916ef4e45dcf218377"
+    }
+  ],
+  "hypothesis_assessment": "Generic actual HEP defines ordinary initial/side extension, proved for literal simplex boundary from explicit radial retraction. CylinderBoundary is actual TopCat pushout; HEP derived from side HEP using actual square extension. Face gluing uses literal geometric face coincidence. No asphericity, carrier coherence, universal comparison or desired filler premise introduced.",
+  "indirect_implementation_origin": {
+    "basis": "Source-origin comments/copyright preserved in Colib originals and active cohort. Direct compilation source remains Colib; no independent Quillen closure imported.",
+    "repository": "https://github.com/kangxyz/quillen-k-theory",
+    "sha": "c561118b7795eb9780be9ed391c3251d6a4d0afd"
+  },
+  "inspected_at": "2026-11-14T11:30:05.914768+00:00",
+  "inspector": "/root/full28_external_search",
+  "license": "Apache-2.0",
+  "limitations": [
+    "Source reading is not an independent proof of kernel correctness.",
+    "Supplier-only; parent and independent reviewers decide acceptance separately.",
+    "All-domain carrier induction and actual arrangement application are not supplied here."
+  ],
+  "new_module_count": 16,
+  "new_source_lines": 2182,
+  "reused_old_modules": 3,
+  "schema": "carriers-complete-source-inspection-v1"
+}

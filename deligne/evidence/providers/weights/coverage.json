@@ -1,0 +1,2804 @@
+{
+  "declarations": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.orderWeightsChart_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightRestrict._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece._sizeOf_inst"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightSimplex._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.noConfusionType"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightVertex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainEnum._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainOrder"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "name": "OAI.HarmonicArtin.compact_map_finite_carrier"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.chain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveConeSimplex_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupported._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.noConfusionType"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightSubset_comp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerve_orderTop_contractible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightSimplex._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.rec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightTime._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.carrierSimplex._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveOfChain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weight_le_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.map_topConeSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.topConeSimplex_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "name": "OAI.HarmonicArtin.finiteWeightsCompact"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightVertex._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMapContinuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights_nonneg"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.recOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.weightCarrier.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.orderWeights_continuous_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendNerve_natural"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.coneWeights_one_vertex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk.injEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights_support"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.orderWeightSupportLinearOrder._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightVertex.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.down"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveConeMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopConeSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveCone_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.carrierSimplex_reconstruct"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.extends_compare"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightVertex._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopCone"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.weightEval_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "name": "OAI.HarmonicArtin.weightRestrict_continuous_finite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightChain._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.supportedWeightMap_chain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.transportContraction._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightRestrict_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupported._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainOrder_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopConeMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete_support"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightSimplex._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.Extends"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.orderWeightsOfChain._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightInclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.orderWeights_prod_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.nerveChain._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.supportedWeightMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.mem_simplexSupport"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.topConeSimplex.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.continuous_of_finite_chain_carrier"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.ctorIdx"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveToWeights_simplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendOrdinal_castSucc"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendNerve"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_comp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendOrdinal_last"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendNerve._simp_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightVertex._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.instT2SpaceOrderWeights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportDim_succ._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights._sizeOf_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.total"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.carrierSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.nonneg"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveToWeights_weightsToNerve"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependNerve_face"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.isClosed_prod_discrete_left"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeightsContinuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependOrdinal_succ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportEnum._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.pathEvaluate._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.chainWeightsChart_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopCone_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightChain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights.eq_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependOrdinal._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveConeSimplex_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.chainWeights_coordinates_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopCone.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsMap"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.hom"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightDim_succ._proof_1_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.orderWeights_isClosed_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendOrdinal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights_support"
+    },
+    {
+      "axioms": [],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightSubset._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.support_nonempty"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveConeSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "name": "OAI.HarmonicArtin.weightFiniteInclusion_closedEmbedding"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopPoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupported"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.nerveChain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_apply_embedding"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.transportContraction"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightTime"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.orderWeightsOfChain_canonical"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_chain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.weights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.ext_iff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveConeMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.topConeSimplex._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.extends_refl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveToWeights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.weightCarrier_finite_of_isCompact"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopConeSimplex_natural"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainEnum._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.ctorIdx"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportDim"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupport.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainOrder._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightDim"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveCone_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightDim_succ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportEnum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.supportedWeightMap_simplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainEnum._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightRestrict._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportDim_succ"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopConeSimplex_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsHomeomorph"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendNerve_face"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.mk.inj"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.transportContraction._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph._proof_6"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveCone.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.chainWeights_support_positive"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.carrier"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.weightCarrier_finite_of_finite"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.extends_trans"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopConeMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.realizeSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupported_map"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightMap_vertex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependOrdinal_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteLinearWeightsCompact"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopConeSimplex_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.instTopologicalSpaceOrderWeights"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weight_eq_vertex_of_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.mk.sizeOf_spec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.casesOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.finiteChainEnum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightSubset_self"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.mk.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.casesOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.mk.injEq"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.pathEvaluate"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendNerve._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependNerve._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerve_orderBot_contractible"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependNerve_natural"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.chainWeights_injective_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.weightsToNerve_continuous"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.supportedWeightMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveBotPoint"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights_total"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightEnum._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveCone"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightChain_injective"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.orderWeightsOfChain"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportInclusion._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightRestrict._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "name": "OAI.HarmonicArtin.weightCarrier"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece._sizeOf_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights_zero"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightSubset"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.recOn"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph._proof_5"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightRestrict"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependNerve"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependOrdinal._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupport"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap_support_embedding"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "name": "OAI.HarmonicArtin.compact_map_factors_cover"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.topConeSimplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "name": "OAI.HarmonicArtin.weightMap._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete._proof_2"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveBotPoint._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveTopCone_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.supportedWeightMap._proof_2"
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.topConeSimplex_one"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.transportContraction._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.carrierSimplex._proof_2"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.realizeSimplex_natural"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupportInclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.orderWeightsChart"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph._proof_4"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.inclusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk.congr_simp"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupported._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights._proof_1"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightSubset_incl"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.weightsToNerve"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "name": "OAI.HarmonicArtin.simplexSupport_nonempty"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "name": "OAI.HarmonicArtin.carrierSimplex._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.prependOrdinal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk.noConfusion"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.map_coneSimplex"
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.weightHomeomorph._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.ext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightDelete._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.weightEnum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.weightsToNerve_simplex"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.mk._flat_ctor"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "name": "OAI.HarmonicArtin.coneWeights.eq_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "name": "OAI.HarmonicArtin.weightRestrict_apply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "name": "OAI.HarmonicArtin.WeightContractionPiece.root_mem"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.appendOrdinal._proof_1"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.coneSimplex._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "name": "OAI.HarmonicArtin.orderWeightSupportLinearOrder"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "name": "OAI.HarmonicArtin.nerveConeSimplex_natural"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights.rec"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.chainWeights_natural"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "name": "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_3"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "name": "OAI.HarmonicArtin.OrderWeights._sizeOf_inst"
+    }
+  ],
+  "physical_modules": [
+    {
+      "declarations": 37,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "names": [
+        "OAI.HarmonicArtin.OrderWeights.mk._flat_ctor",
+        "OAI.HarmonicArtin.nerveChain",
+        "OAI.HarmonicArtin.OrderWeights.mk.sizeOf_spec",
+        "OAI.HarmonicArtin.OrderWeights.chain",
+        "OAI.HarmonicArtin.orderWeightsOfChain",
+        "OAI.HarmonicArtin.OrderWeights.mk.injEq",
+        "OAI.HarmonicArtin.chainWeights_support",
+        "OAI.HarmonicArtin.OrderWeights._sizeOf_1",
+        "OAI.HarmonicArtin.OrderWeights.weights",
+        "OAI.HarmonicArtin.OrderWeights.rec",
+        "OAI.HarmonicArtin.chainWeights_total",
+        "OAI.HarmonicArtin.OrderWeights.noConfusion",
+        "OAI.HarmonicArtin.chainWeights_nonneg",
+        "OAI.HarmonicArtin.OrderWeights.casesOn",
+        "OAI.HarmonicArtin.OrderWeights.support_nonempty",
+        "OAI.HarmonicArtin.orderWeightsChart_continuous",
+        "OAI.HarmonicArtin.instTopologicalSpaceOrderWeights",
+        "OAI.HarmonicArtin.nerveChain._proof_1",
+        "OAI.HarmonicArtin.OrderWeights._sizeOf_inst",
+        "OAI.HarmonicArtin.orderWeightsOfChain._proof_1",
+        "OAI.HarmonicArtin.OrderWeights.ctorIdx",
+        "OAI.HarmonicArtin.OrderWeights.noConfusionType",
+        "OAI.HarmonicArtin.orderWeights_continuous_iff",
+        "OAI.HarmonicArtin.orderWeightsChart",
+        "OAI.HarmonicArtin.OrderWeights.mk",
+        "OAI.HarmonicArtin.chainWeights.eq_1",
+        "OAI.HarmonicArtin.OrderWeights.total",
+        "OAI.HarmonicArtin.chainWeights",
+        "OAI.HarmonicArtin.chainWeights_natural",
+        "OAI.HarmonicArtin.OrderWeights.ext_iff",
+        "OAI.HarmonicArtin.chainWeights_apply",
+        "OAI.HarmonicArtin.OrderWeights.nonneg",
+        "OAI.HarmonicArtin.OrderWeights.mk.noConfusion",
+        "OAI.HarmonicArtin.OrderWeights.ext",
+        "OAI.HarmonicArtin.OrderWeights.mk.inj",
+        "OAI.HarmonicArtin.OrderWeights",
+        "OAI.HarmonicArtin.OrderWeights.recOn"
+      ]
+    },
+    {
+      "declarations": 8,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "names": [
+        "OAI.HarmonicArtin.instT2SpaceOrderWeights",
+        "OAI.HarmonicArtin.weightCarrier.eq_1",
+        "OAI.HarmonicArtin.weightCarrier_finite_of_isCompact",
+        "OAI.HarmonicArtin.weightCarrier_finite_of_finite",
+        "OAI.HarmonicArtin.isClosed_prod_discrete_left",
+        "OAI.HarmonicArtin.weightEval_continuous",
+        "OAI.HarmonicArtin.orderWeights_isClosed_iff",
+        "OAI.HarmonicArtin.weightCarrier"
+      ]
+    },
+    {
+      "declarations": 63,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "names": [
+        "OAI.HarmonicArtin.coneSimplex.eq_1",
+        "OAI.HarmonicArtin.nerveConeSimplex_one",
+        "OAI.HarmonicArtin.nerveCone_one",
+        "OAI.HarmonicArtin.appendOrdinal._proof_1",
+        "OAI.HarmonicArtin.appendOrdinal_last",
+        "OAI.HarmonicArtin.topConeSimplex_zero",
+        "OAI.HarmonicArtin.appendNerve._simp_1",
+        "OAI.HarmonicArtin.pathEvaluate._proof_1",
+        "OAI.HarmonicArtin.pathEvaluate",
+        "OAI.HarmonicArtin.prependOrdinal_zero",
+        "OAI.HarmonicArtin.appendNerve_natural",
+        "OAI.HarmonicArtin.nerveTopConeSimplex_natural",
+        "OAI.HarmonicArtin.prependOrdinal_succ",
+        "OAI.HarmonicArtin.nerveConeSimplex_zero",
+        "OAI.HarmonicArtin.nerveTopCone_one",
+        "OAI.HarmonicArtin.topConeSimplex",
+        "OAI.HarmonicArtin.coneSimplex_one",
+        "OAI.HarmonicArtin.appendNerve._proof_1",
+        "OAI.HarmonicArtin.coneSimplex._proof_1",
+        "OAI.HarmonicArtin.coneSimplex._proof_4",
+        "OAI.HarmonicArtin.nerveCone",
+        "OAI.HarmonicArtin.topConeSimplex_one",
+        "OAI.HarmonicArtin.appendOrdinal_castSucc",
+        "OAI.HarmonicArtin.appendOrdinal",
+        "OAI.HarmonicArtin.topConeSimplex.eq_1",
+        "OAI.HarmonicArtin.prependOrdinal",
+        "OAI.HarmonicArtin.topConeSimplex._proof_1",
+        "OAI.HarmonicArtin.nerveTopConeMap",
+        "OAI.HarmonicArtin.nerveCone_zero",
+        "OAI.HarmonicArtin.coneSimplex",
+        "OAI.HarmonicArtin.coneSimplex_zero",
+        "OAI.HarmonicArtin.nerve_orderTop_contractible",
+        "OAI.HarmonicArtin.nerveConeSimplex_natural",
+        "OAI.HarmonicArtin.nerveTopCone.eq_1",
+        "OAI.HarmonicArtin.nerveConeMap._proof_1",
+        "OAI.HarmonicArtin.nerveConeMap",
+        "OAI.HarmonicArtin.nerve_orderBot_contractible",
+        "OAI.HarmonicArtin.appendNerve_face",
+        "OAI.HarmonicArtin.nerveTopConeSimplex",
+        "OAI.HarmonicArtin.prependNerve",
+        "OAI.HarmonicArtin.realizeSimplex_natural",
+        "OAI.HarmonicArtin.nerveBotPoint",
+        "OAI.HarmonicArtin.prependNerve._proof_1",
+        "OAI.HarmonicArtin.nerveBotPoint._proof_1",
+        "OAI.HarmonicArtin.nerveTopPoint",
+        "OAI.HarmonicArtin.nerveTopConeSimplex_zero",
+        "OAI.HarmonicArtin.prependOrdinal._proof_1",
+        "OAI.HarmonicArtin.nerveConeSimplex",
+        "OAI.HarmonicArtin.nerveTopConeMap._proof_1",
+        "OAI.HarmonicArtin.prependNerve_natural",
+        "OAI.HarmonicArtin.nerveTopConeSimplex_one",
+        "OAI.HarmonicArtin.coneSimplex._proof_3",
+        "OAI.HarmonicArtin.nerveTopCone_zero",
+        "OAI.HarmonicArtin.nerveCone.eq_1",
+        "OAI.HarmonicArtin.coneSimplex._proof_2",
+        "OAI.HarmonicArtin.prependNerve_face",
+        "OAI.HarmonicArtin.map_coneSimplex",
+        "OAI.HarmonicArtin.map_topConeSimplex",
+        "OAI.HarmonicArtin.nerveTopCone",
+        "OAI.HarmonicArtin.appendNerve",
+        "OAI.HarmonicArtin.realizeSimplex",
+        "OAI.HarmonicArtin.prependOrdinal._proof_2",
+        "OAI.HarmonicArtin.coneSimplex._proof_5"
+      ]
+    },
+    {
+      "declarations": 17,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "names": [
+        "OAI.HarmonicArtin.weightDim_succ._proof_1_1",
+        "OAI.HarmonicArtin.orderWeightsOfChain_canonical",
+        "OAI.HarmonicArtin.weightChain_injective",
+        "OAI.HarmonicArtin.weightSimplex._proof_2",
+        "OAI.HarmonicArtin.weightSimplex._proof_3",
+        "OAI.HarmonicArtin.weightEnum._proof_1",
+        "OAI.HarmonicArtin.chainWeights_coordinates_injective",
+        "OAI.HarmonicArtin.weightSimplex",
+        "OAI.HarmonicArtin.weightDim_succ",
+        "OAI.HarmonicArtin.weightDim",
+        "OAI.HarmonicArtin.orderWeightSupportLinearOrder._proof_1",
+        "OAI.HarmonicArtin.orderWeightSupportLinearOrder",
+        "OAI.HarmonicArtin.weightEnum",
+        "OAI.HarmonicArtin.weightChain",
+        "OAI.HarmonicArtin.weightSimplex._proof_1",
+        "OAI.HarmonicArtin.weightChain._proof_1",
+        "OAI.HarmonicArtin.chainWeights_injective_apply"
+      ]
+    },
+    {
+      "declarations": 17,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "names": [
+        "OAI.HarmonicArtin.simplexSupported._proof_1",
+        "OAI.HarmonicArtin.simplexSupported._proof_2",
+        "OAI.HarmonicArtin.simplexSupported._proof_3",
+        "OAI.HarmonicArtin.chainWeights_support_positive",
+        "OAI.HarmonicArtin.simplexSupportDim_succ._proof_1_1",
+        "OAI.HarmonicArtin.simplexSupport",
+        "OAI.HarmonicArtin.mem_simplexSupport",
+        "OAI.HarmonicArtin.simplexSupported_map",
+        "OAI.HarmonicArtin.simplexSupportEnum",
+        "OAI.HarmonicArtin.simplexSupportInclusion._proof_1",
+        "OAI.HarmonicArtin.simplexSupported",
+        "OAI.HarmonicArtin.simplexSupport_nonempty",
+        "OAI.HarmonicArtin.simplexSupport.eq_1",
+        "OAI.HarmonicArtin.simplexSupportDim_succ",
+        "OAI.HarmonicArtin.simplexSupportDim",
+        "OAI.HarmonicArtin.simplexSupportEnum._proof_1",
+        "OAI.HarmonicArtin.simplexSupportInclusion"
+      ]
+    },
+    {
+      "declarations": 21,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "names": [
+        "OAI.HarmonicArtin.supportedWeightMap",
+        "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_5",
+        "OAI.HarmonicArtin.nerveWeightsMap",
+        "OAI.HarmonicArtin.supportedWeightMap_chain",
+        "OAI.HarmonicArtin.weightsToNerve_simplex",
+        "OAI.HarmonicArtin.supportedWeightMap._proof_2",
+        "OAI.HarmonicArtin.nerveWeightsHomeomorph",
+        "OAI.HarmonicArtin.nerveWeightsMap._proof_1",
+        "OAI.HarmonicArtin.nerveToWeights_simplex",
+        "OAI.HarmonicArtin.supportedWeightMap_simplex",
+        "OAI.HarmonicArtin.weightsToNerve",
+        "OAI.HarmonicArtin.nerveOfChain",
+        "OAI.HarmonicArtin.nerveWeightsSimplex",
+        "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_1",
+        "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_4",
+        "OAI.HarmonicArtin.nerveToWeights_weightsToNerve",
+        "OAI.HarmonicArtin.weightsToNerve_continuous",
+        "OAI.HarmonicArtin.supportedWeightMap._proof_1",
+        "OAI.HarmonicArtin.nerveToWeights",
+        "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_2",
+        "OAI.HarmonicArtin.nerveWeightsHomeomorph._proof_3"
+      ]
+    },
+    {
+      "declarations": 13,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "names": [
+        "OAI.HarmonicArtin.weightMap._proof_2",
+        "OAI.HarmonicArtin.weightMap._proof_3",
+        "OAI.HarmonicArtin.weightMap._proof_1",
+        "OAI.HarmonicArtin.weightMap_chain",
+        "OAI.HarmonicArtin.weightMap_id",
+        "OAI.HarmonicArtin.weightMap_continuous",
+        "OAI.HarmonicArtin.weightMap_support_embedding",
+        "OAI.HarmonicArtin.weightMap",
+        "OAI.HarmonicArtin.weightMap_comp",
+        "OAI.HarmonicArtin.weightMap_injective",
+        "OAI.HarmonicArtin.chainWeightsChart_continuous",
+        "OAI.HarmonicArtin.weightMap_apply_embedding",
+        "OAI.HarmonicArtin.weightMapContinuous"
+      ]
+    },
+    {
+      "declarations": 14,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "names": [
+        "OAI.HarmonicArtin.finiteChainEnum",
+        "OAI.HarmonicArtin.carrierSimplex._proof_1",
+        "OAI.HarmonicArtin.carrierSimplex_reconstruct",
+        "OAI.HarmonicArtin.finiteChainOrder._proof_1",
+        "OAI.HarmonicArtin.finiteChainEnum._proof_2",
+        "OAI.HarmonicArtin.finiteChainEnum._proof_3",
+        "OAI.HarmonicArtin.finiteChainEnum._proof_1",
+        "OAI.HarmonicArtin.carrierSimplex",
+        "OAI.HarmonicArtin.finiteChainOrder_injective",
+        "OAI.HarmonicArtin.finiteLinearWeightsCompact",
+        "OAI.HarmonicArtin.carrierSimplex._proof_2",
+        "OAI.HarmonicArtin.carrierSimplex._proof_3",
+        "OAI.HarmonicArtin.finiteChainOrder",
+        "OAI.HarmonicArtin.continuous_of_finite_chain_carrier"
+      ]
+    },
+    {
+      "declarations": 14,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "names": [
+        "OAI.HarmonicArtin.coneWeights.congr_simp",
+        "OAI.HarmonicArtin.coneWeights_support",
+        "OAI.HarmonicArtin.orderWeights_prod_continuous",
+        "OAI.HarmonicArtin.coneWeights",
+        "OAI.HarmonicArtin.coneWeights._proof_1",
+        "OAI.HarmonicArtin.coneWeights.eq_1",
+        "OAI.HarmonicArtin.coneWeights_zero",
+        "OAI.HarmonicArtin.coneWeights_one",
+        "OAI.HarmonicArtin.coneWeights_apply",
+        "OAI.HarmonicArtin.coneWeights_continuous",
+        "OAI.HarmonicArtin.coneWeights._proof_2",
+        "OAI.HarmonicArtin.coneWeights._proof_3",
+        "OAI.HarmonicArtin.OrderWeights.mk.congr_simp",
+        "OAI.HarmonicArtin.coneWeightsContinuous"
+      ]
+    },
+    {
+      "declarations": 24,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "names": [
+        "OAI.HarmonicArtin.coneWeights_one_vertex",
+        "OAI.HarmonicArtin.weightRestrict",
+        "OAI.HarmonicArtin.weightTime._proof_1",
+        "OAI.HarmonicArtin.weightTime",
+        "OAI.HarmonicArtin.weightRestrict._proof_2",
+        "OAI.HarmonicArtin.weightRestrict._proof_3",
+        "OAI.HarmonicArtin.weightDelete",
+        "OAI.HarmonicArtin.weight_le_one",
+        "OAI.HarmonicArtin.weightRestrict_map",
+        "OAI.HarmonicArtin.weightRestrict._proof_1",
+        "OAI.HarmonicArtin.weightDelete_apply",
+        "OAI.HarmonicArtin.weightVertex.eq_1",
+        "OAI.HarmonicArtin.weightDelete_support",
+        "OAI.HarmonicArtin.weightDelete._proof_1",
+        "OAI.HarmonicArtin.weightDelete.eq_1",
+        "OAI.HarmonicArtin.weightRestrict_apply",
+        "OAI.HarmonicArtin.weight_eq_vertex_of_one",
+        "OAI.HarmonicArtin.weightVertex._proof_2",
+        "OAI.HarmonicArtin.weightVertex._proof_3",
+        "OAI.HarmonicArtin.weightVertex._proof_1",
+        "OAI.HarmonicArtin.weightVertex",
+        "OAI.HarmonicArtin.weightInclusion",
+        "OAI.HarmonicArtin.weightDelete._proof_2",
+        "OAI.HarmonicArtin.weightDelete._proof_3"
+      ]
+    },
+    {
+      "declarations": 41,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "names": [
+        "OAI.HarmonicArtin.transportContraction._proof_2",
+        "OAI.HarmonicArtin.transportContraction._proof_3",
+        "OAI.HarmonicArtin.weightHomeomorph._proof_6",
+        "OAI.HarmonicArtin.weightSubset",
+        "OAI.HarmonicArtin.transportContraction._proof_1",
+        "OAI.HarmonicArtin.WeightContractionPiece.rec",
+        "OAI.HarmonicArtin.WeightContractionPiece.mk.inj",
+        "OAI.HarmonicArtin.WeightContractionPiece.recOn",
+        "OAI.HarmonicArtin.WeightContractionPiece.noConfusion",
+        "OAI.HarmonicArtin.weightHomeomorph._proof_1",
+        "OAI.HarmonicArtin.weightHomeomorph._proof_4",
+        "OAI.HarmonicArtin.WeightContractionPiece.mk.injEq",
+        "OAI.HarmonicArtin.weightSubset_comp",
+        "OAI.HarmonicArtin.transportContraction",
+        "OAI.HarmonicArtin.WeightContractionPiece._sizeOf_1",
+        "OAI.HarmonicArtin.WeightContractionPiece.ctorIdx",
+        "OAI.HarmonicArtin.WeightContractionPiece._sizeOf_inst",
+        "OAI.HarmonicArtin.WeightContractionPiece",
+        "OAI.HarmonicArtin.WeightContractionPiece.hom",
+        "OAI.HarmonicArtin.WeightContractionPiece.mk._flat_ctor",
+        "OAI.HarmonicArtin.WeightContractionPiece.casesOn",
+        "OAI.HarmonicArtin.WeightContractionPiece.mk",
+        "OAI.HarmonicArtin.weightHomeomorph._proof_3",
+        "OAI.HarmonicArtin.weightHomeomorph._proof_2",
+        "OAI.HarmonicArtin.WeightContractionPiece.extends_refl",
+        "OAI.HarmonicArtin.weightHomeomorph._proof_5",
+        "OAI.HarmonicArtin.WeightContractionPiece.carrier",
+        "OAI.HarmonicArtin.WeightContractionPiece.down",
+        "OAI.HarmonicArtin.WeightContractionPiece.noConfusionType",
+        "OAI.HarmonicArtin.weightSubset_incl",
+        "OAI.HarmonicArtin.WeightContractionPiece.extends_trans",
+        "OAI.HarmonicArtin.weightSubset._proof_1",
+        "OAI.HarmonicArtin.WeightContractionPiece.mk.noConfusion",
+        "OAI.HarmonicArtin.WeightContractionPiece.Extends",
+        "OAI.HarmonicArtin.weightHomeomorph",
+        "OAI.HarmonicArtin.WeightContractionPiece.root_mem",
+        "OAI.HarmonicArtin.WeightContractionPiece.inclusion",
+        "OAI.HarmonicArtin.weightMap_vertex",
+        "OAI.HarmonicArtin.WeightContractionPiece.mk.sizeOf_spec",
+        "OAI.HarmonicArtin.weightSubset_self",
+        "OAI.HarmonicArtin.WeightContractionPiece.extends_compare"
+      ]
+    },
+    {
+      "declarations": 5,
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "names": [
+        "OAI.HarmonicArtin.weightFiniteInclusion_closedEmbedding",
+        "OAI.HarmonicArtin.finiteWeightsCompact",
+        "OAI.HarmonicArtin.compact_map_factors_cover",
+        "OAI.HarmonicArtin.compact_map_finite_carrier",
+        "OAI.HarmonicArtin.weightRestrict_continuous_finite"
+      ]
+    }
+  ],
+  "duplicates": [],
+  "summary": {
+    "all_physical_type_value_universe_parameters_identical": true,
+    "canonical_axioms_checked": true,
+    "canonical_declarations": 274,
+    "distinct_physical_names": 274,
+    "identical_theorem_duplicates": 0,
+    "modules": 12,
+    "physical_occurrences": 274
+  }
+}

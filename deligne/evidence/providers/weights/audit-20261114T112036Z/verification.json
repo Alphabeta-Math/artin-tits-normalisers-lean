@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "phase": "audit",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "started_at": "2026-11-14T11:20:36.836212+00:00",
+  "modules": [
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/weights/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.019174629007466137,
+      "log": "00-audit.log",
+      "log_sha256": "1ea49b9c9aafdb7721097c42847209f5b06427b6e10ce0f743a0ad22c4d503cb"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "WeightsProviderAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 5.799522060988238,
+      "log": "01-audit.log",
+      "log_sha256": "8dee5fbd2e2271469d969483bf7c19673d538184be54bc974897409f10e9bf1b"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib (all non-Mathlib closure modules selected)",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T11:20:42.660241+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "e13167c4571f5f2d8125935ebf0c4a2699021a319605514a80c6565db9c1d3fe",
+  "inputs_after_sha256": "e13167c4571f5f2d8125935ebf0c4a2699021a319605514a80c6565db9c1d3fe"
+}

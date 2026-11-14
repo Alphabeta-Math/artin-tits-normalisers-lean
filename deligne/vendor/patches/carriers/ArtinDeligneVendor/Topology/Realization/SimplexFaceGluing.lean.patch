@@ -1,0 +1,11 @@
+--- upstream/Colib/Topology/Realization/SimplexFaceGluing.lean
++++ active/ArtinDeligneVendor/Topology/Realization/SimplexFaceGluing.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Analysis.Convex.StdSimplex.FaceCharts
++public import ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts
+ 
+ public import Mathlib.Topology.ContinuousMap.Basic
+ 

@@ -1,0 +1,49 @@
+⚠ [18238/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18239/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18240/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18241/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18242/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/RealizeSimplex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18243/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/RealizeSimplex.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18244/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightDim.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18245/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightDim.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18246/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18247/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18248/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18249/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18250/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18251/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18252/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18253/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18254/18261] Replayed ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18255/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18256/18261] Built ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion (3.1s)
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightInclusion.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18257/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightInclusion.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18258/18261] Built ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph (2.8s)
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18259/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18260/18261] Built ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact (2.7s)
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [18261/18261] Ran ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact:irArts
+warning: vendor/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+Build completed successfully (18261 jobs).

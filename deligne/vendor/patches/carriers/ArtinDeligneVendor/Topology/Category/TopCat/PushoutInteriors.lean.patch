@@ -1,0 +1,13 @@
+--- upstream/Colib/Topology/Category/TopCat/PushoutInteriors.lean
++++ active/ArtinDeligneVendor/Topology/Category/TopCat/PushoutInteriors.lean
+@@ -6,8 +6,8 @@
+ 
+ module
+ 
+-public import Colib.Util.References
+-public import Colib.Topology.Category.TopCat.Pushouts
++public import ArtinHomotopyVendor.Util.References
++public import ArtinDeligneVendor.Topology.Category.TopCat.Pushouts
+ 
+ /-!
+ # Open complements and separation in topological pushouts

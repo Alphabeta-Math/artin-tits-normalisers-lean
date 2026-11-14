@@ -1,0 +1,9 @@
+--- lean/OAI/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean
+@@ -1,5 +1,5 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.WeightMap
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap
+ 
+ namespace OAI
+ 

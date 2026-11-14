@@ -1,0 +1,146 @@
+{
+  "accepted": true,
+  "accepted_at": "2026-11-14T13:19:35.587376+00:00",
+  "accepted_scientific_repositories": 3,
+  "accepted_supplier_units": 464,
+  "actual_arrangement_asphericity_proved": true,
+  "actual_universal_cover_contractible_proved": false,
+  "allowed_transitive_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "canonical_new_supplier_declarations": 475,
+  "canonical_project_declarations": 1391,
+  "canonical_total_new_declarations": 1866,
+  "clean_github_CI": {
+    "status": "pending",
+    "workflow": ".github/workflows/deligne.yml"
+  },
+  "critical_declarations": [
+    "ArtinNormalisers.Deligne5.actualUniversalCoverComparisonHomotopy",
+    "ArtinNormalisers.Deligne5.actualUniversalCover_isAspherical",
+    "ArtinNormalisers.Deligne5.actualComplement_isAspherical",
+    "ArtinNormalisers.Deligne5.actualOrbit_isAspherical",
+    "ArtinNormalisers.Deligne5.actualComplement_isKpi1",
+    "ArtinNormalisers.Deligne5.actualOrbit_isKpi1_at_projection",
+    "ArtinNormalisers.Deligne5.corollary_6_14",
+    "ArtinNormalisers.Deligne5.theorem_1_8",
+    "ArtinNormalisers.Deligne5.theorem_1_8_all_basepoints"
+  ],
+  "dependency_export": {
+    "counts": {
+      "physical_project_aliases": 3,
+      "physical_project_occurrences": 4296,
+      "project_roots": 4294,
+      "reachable_declarations": 51405,
+      "reachable_modules": 1989,
+      "references": 1215678
+    },
+    "path": "docs/provenance/deligne/run-20261114T132100Z/execution.json",
+    "sha256": "289bddec2cc5ce220cc662c91f316ce0b8a686fd824052b84d396b6ec857b4e2"
+  },
+  "dependency_validation": {
+    "path": "docs/provenance/deligne/validation-20261114T132100Z.json",
+    "sha256": "1aac09e4910cf421b21d59df803e339dab6eff09679952039ec239d9ad3a26e8"
+  },
+  "frozen_project_source_sha256": {
+    "deligne/ArtinDeligne.lean": "1d49affc60bc0784d2b16513987a381cc18da81bde8f78d571a368fe90b3ff66",
+    "deligne/ArtinDeligne/AcyclicCarrierFamilies.lean": "0cab3f1032a83bdbc820e677ff0dd0c32d3095356895d11cf7f5fccf4655f9cb",
+    "deligne/ArtinDeligne/CanonicalCarriers.lean": "05f81cb737cd14d2ddbfb2fa0d3181618fbbc145ea1173b1f3049589d89d2c69",
+    "deligne/ArtinDeligne/CanonicalCells.lean": "0c207d3119f3f4498d07de377e892fc0842df2c1726031b35819c897c4b9a417",
+    "deligne/ArtinDeligne/CanonicalCoverWeights.lean": "2530d9fee76a8beb6173ba1b6ec6fe84834ffde2e85c7a156c76b3d2916e256e",
+    "deligne/ArtinDeligne/CanonicalGarsideMap.lean": "3241b8246a375eddabf7caebea3e889340527146e6f4aee3ed4ef8355daca3e1",
+    "deligne/ArtinDeligne/CanonicalPacketCarriers.lean": "f8c1a64e168541a70efd3aaf8b15dcbd399429e32c6fd15f17b516f970129856",
+    "deligne/ArtinDeligne/CarrierDescent.lean": "7a94b0f93f1318fc228de09a3259e387e5eb685bece47ecffa6d3f4be9a2b8e6",
+    "deligne/ArtinDeligne/ContractibleExtension.lean": "36db317b55852eb6ef0d81ffc5983da976d822fc58f4f9f31684327d78f143a1",
+    "deligne/ArtinDeligne/FiniteAncestry.lean": "7ba9f6bd21d223373a7bed68fe623772aef1a66af67e5d56f944720b14595d6a",
+    "deligne/ArtinDeligne/GarsideFolds.lean": "a21be1d908a5e2c5983c668beedae79d4c4a321528e7e00d3a20470c33a472d4",
+    "deligne/ArtinDeligne/GarsideShifts.lean": "a850d7afb3a06e172c13d47cb889ff61ce47668f3084e85d6389c9acddfd22b5",
+    "deligne/ArtinDeligne/GarsideTopology.lean": "1913ad0b0a0b0d283001c26be4ff9d86ac4395dfb69601d3c4a11042598a7f4b",
+    "deligne/ArtinDeligne/GarsideTubeCarriers.lean": "24d0a6f4118792569efef5b2a000ccd98b266d7d5dad892ff9edfc85970e8d59",
+    "deligne/ArtinDeligne/GarsideWeights.lean": "fdf0c6153eb4299d414bed714b9a507ad8bac91e1d851de09e83a1180eae309f",
+    "deligne/ArtinDeligne/GlobalNullity.lean": "2f337a3e28d3f076c66752bfa203e7402c358d339b0dc3eb00e7539dfb6d6088",
+    "deligne/ArtinDeligne/HereditaryWeights.lean": "e3a2d54c83f0771b50f2b5d2e17f876abf059f94929789aa5d17547cc034da3f",
+    "deligne/ArtinDeligne/IncomingJoins.lean": "14a9b849ec9dd932b1c0f04d752bd370dd7b57629bc6eea33e175c6c8995c578",
+    "deligne/ArtinDeligne/IncomingMeets.lean": "94864699f67573e7ac0bd7e837cc64337d266895055e09aee765a97511efd6a5",
+    "deligne/ArtinDeligne/IncomingOrder.lean": "5573ef8fd4b761aaf9c67b4aa770d8fded3be381b06947898dcac54d25ee03d9",
+    "deligne/ArtinDeligne/LiftedCanonicalCover.lean": "b4bd5e25d6abf91c38614e7a2e6b2006d42c83e0e821a6c9236f3d9f62462301",
+    "deligne/ArtinDeligne/LiftedPartition.lean": "f66d339bfcfa8848848b078ce8dce49975d6f54075c6a79a0e610c2dcf0541d9",
+    "deligne/ArtinDeligne/LiftedTubeComponents.lean": "8fda87195ded6f0ff445dd0bef5a3269ef0defff909dfad02502820e359cca69",
+    "deligne/ArtinDeligne/LiftedTubeLabels.lean": "dd9f10700f0bb3626ccc9debdac2fc9892573d2dcfd9d64f002f2ef35eeb2b21",
+    "deligne/ArtinDeligne/LiftedTubes.lean": "84390b75260509ce20291efcf50679480ed205e2e26ca1ae96e775d6e56979bf",
+    "deligne/ArtinDeligne/MonotoneSignInterpolation.lean": "404e02a2e6d10dc534af2dc5bb3e337d7f00ba270b1bce98aaa52b04bacbd540",
+    "deligne/ArtinDeligne/NumerableCarrierHomotopy.lean": "43f89495823cc4726a39c9885970aa43dea23fd74c1ef8917650c8a4394bc857",
+    "deligne/ArtinDeligne/NumerableWeights.lean": "9dde265ca326f0c44f39f796641c2032132ab825c40f84713e8bf319e3a2d362",
+    "deligne/ArtinDeligne/PacketCarrierCompatibility.lean": "707bb8513d23860e7c63a4cf049f2acb85014104b3d63fb4f45155b9c7a95606",
+    "deligne/ArtinDeligne/ParametricExtension.lean": "9f9fe8bd5cffaf8c9246fed9ee52b3ffce03173a85b36faeae028dbbe8a428bf",
+    "deligne/ArtinDeligne/ParametricFaceGluing.lean": "2d1cb06d87d9dd81779a1a2f8d96d4bdda923950fa2d494b535d0fd4cf3c19f4",
+    "deligne/ArtinDeligne/RelativeGarsideCarriers.lean": "513334c22360d657b6e29ca3c960eb6c2de85761581e68e29e6af0690b8b438f",
+    "deligne/ArtinDeligne/SheetIntervals.lean": "b26e7721493cce60785adfef04965226a99e58be0b8691318be278d6f8d73fcf",
+    "deligne/ArtinDeligne/SimpleTransport.lean": "1f3e69ad987bc97a108c06ed14ee9e166b604b7d5487a731d7e9fabeea5d9748",
+    "deligne/ArtinDeligne/Theorem18.lean": "6153e9ce05812013faae0917ee312192d6afc478c378c5819a9568a12ae118f8",
+    "deligne/ArtinDeligne/UniversalCoverComparison.lean": "70a04c0618870c1610b27c3e751f348a104c5f3995b682ad58b4d3ec15ec5f0d"
+  },
+  "full_landmark_5_proved": true,
+  "full_theorem_1_8_proved": true,
+  "independent_reviews_sha256": {
+    "deligne/reviews/theorem18-a.json": "72beafa181cf36b1b186abccde4cafe4e3444e9cb47d368de1d10260c9e4c300",
+    "deligne/reviews/theorem18-a.md": "7af889b1d0ced657106b138a9fa1d468895e07d61c22abe1584db76585bd0de8",
+    "deligne/reviews/theorem18-b.json": "7c94d5a868217b6b90c757cee12c1cc222b07ad106bded371be7d6e34653577f",
+    "deligne/reviews/theorem18-b.md": "b58066b449e7c8b5164ac235d2fce41eb9c9468df1396895665756bc9e96a0b0"
+  },
+  "kernel_limits": [
+    "The accepted exact-module runner uses the pinned official replayFromImports kernel algorithm in 64 fresh Lean processes, checking all serialized public/private/server declarations against physical inventory.",
+    "Replays are relative to pinned imports and accepted older supplier evidence; no fresh whole-Mathlib replay or second independently implemented kernel is claimed."
+  ],
+  "kind": "root-full-theorem-1-8-mathematical-and-local-kernel-acceptance",
+  "literature_findings": {
+    "attribution": "Historical prerequisite-preprint findings and qualified original-article observations retain their exact scope; no generated-code or harness issue is attributed to the original article.",
+    "new_confirmed_mathematical_defects": [],
+    "retained_scoped_records": [
+      "docs/theorem18/landmarks/milestone2-REPORT.md",
+      "docs/theorem18/landmarks/milestone3-source-findings-a.md",
+      "docs/theorem18/landmarks/milestone5-REPORT.md"
+    ]
+  },
+  "model_limits": [
+    "The article topological Artin definition versus standard presentation is not a newly proved general comparison theorem.",
+    "K(G,1) means the literal reviewed TauCeti predicate: path connectedness, every higher based homotopy group vanishes, and the specified fundamental-group isomorphism.",
+    "No universal-cover contraction, finite-CW or universal-principal-bundle classification strengthening is claimed."
+  ],
+  "new_physical_aliases": 0,
+  "new_supplier_modules": 28,
+  "physical_total_new_occurrences": 1866,
+  "project_modules": 36,
+  "proof_route": "Actual incoming-ribbon simple-chain weights have vanishing higher based homotopy groups. Constructed continuous forward and return maps have a proved return-forward homotopy to identity on the original universal cover. Actual surjective covers transfer asphericity; exactly the named M4 equivalences supply both original-space K(G,1) witnesses and complete actual-map diagrams.",
+  "schema_version": 1,
+  "source_article": "https://arxiv.org/abs/2509.21915v3",
+  "source_inventory": {
+    "path": "deligne/source-inventory.json",
+    "sha256": "5b9c1f58867085b8f4d798c235d40a4221c3c8221e45eb3d1d6d4e0c7fecac3f"
+  },
+  "source_locators": [
+    "Theorem 1.8, PDF p.3",
+    "Theorem 6.7 and Remark 6.12, PDF pp.26\u201327",
+    "Corollary 6.14, PDF p.27"
+  ],
+  "source_publication": {
+    "status": "pending exact science commit"
+  },
+  "statement_scope": "Every generator universe, Coxeter matrix with finite actual Coxeter group, every subset J and every actual complement/orbit basepoint. Standard-presentation Artin groups, genuinely generated parabolics, original inherited-topology complement and orbit quotient; no comparison/asphericity premise.",
+  "supplier_acceptance_sha256": {
+    "docs/provenance/acceptance-deligne-carriers.json": "44e503285e4a41110212afeed84702975933a8b5c09a5aeaf4e572d3fcab44f7",
+    "docs/provenance/acceptance-deligne-weights.json": "4a4b49b51c7c1c59f017230fc3878b000989dc11c1056116c6094de73d4fee71"
+  },
+  "technical_verification": {
+    "actual_commands": 159,
+    "exact_fresh_kernel_replays": 64,
+    "inputs_unchanged": true,
+    "mode": "final",
+    "path": "deligne/evidence/theorem18-local-final/verification.json",
+    "real_clean": true,
+    "sha256": "38924ff028d9cf900ec491beba65f937c282734559ac6a0669525793f92be042"
+  },
+  "two_sided_nerve_homotopy_equivalence_proved": false
+}

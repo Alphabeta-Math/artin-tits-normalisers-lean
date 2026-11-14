@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/openai/math",
+  "upstream_sha": "4eaee87548250b2682affda7d05d947c05554bae",
+  "module_relocations": {
+    "OAI.Topology.ArtinGroups.Realizations.OrderWeights": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+    "OAI.Topology.ArtinGroups.Realizations.WeightCarrier": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+    "OAI.Topology.ArtinGroups.Realizations.RealizeSimplex": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+    "OAI.Topology.ArtinGroups.Realizations.WeightDim": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+    "OAI.Topology.ArtinGroups.Harmonic.SimplexSupport": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+    "OAI.Topology.ArtinGroups.Realizations.NerveChain": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+    "OAI.Topology.ArtinGroups.Realizations.WeightMap": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+    "OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+    "OAI.Topology.ArtinGroups.Realizations.ConeWeights": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+    "OAI.Topology.ArtinGroups.Realizations.WeightInclusion": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+    "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+    "OAI.Topology.ArtinGroups.Realizations.FiniteWeightsCompact": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+  },
+  "files": [
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.OrderWeights",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/OrderWeights.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightCarrier.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/WeightCarrier.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/RealizeSimplex.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/RealizeSimplex.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/RealizeSimplex.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/RealizeSimplex.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightDim",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightDim.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/WeightDim.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightDim.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightDim.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Harmonic/SimplexSupport.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Harmonic/SimplexSupport.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.NerveChain",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/NerveChain.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/NerveChain.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightMap",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightMap.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/WeightMap.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightMap.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.ConeWeights",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/ConeWeights.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/ConeWeights.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/ConeWeights.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds",
+      "compatibility_replacements": [
+        {
+          "old_text": "    \u00b7 split_ifs\n      \u00b7 exact continuous_subtype_val.comp continuous_fst\n      \u00b7 exact continuous_const\n",
+          "new_text": "    \u00b7 by_cases h : v = q\n      \u00b7 simpa [h] using (continuous_subtype_val.comp continuous_fst :\n          Continuous fun p : I \u00d7 Convexity.StdSimplex \u211d (Fin (n.len + 1)) => (p.1 : \u211d))\n      \u00b7 simpa [h] using (continuous_const :\n          Continuous fun _ : I \u00d7 Convexity.StdSimplex \u211d (Fin (n.len + 1)) => (0 : \u211d))\n",
+          "old_sha256": "c019c026ac42473005d4aa49cfc757156ed8d1068f5f549a9699dfd5fb2baaee",
+          "new_sha256": "ec661ece2bfe21c00a3ff71b95ee74846f971ff74017bbe1b2b8a230fd6ed0e7",
+          "upstream_start_line": 129,
+          "upstream_end_line": 131,
+          "reason": "Lean4.36 lowered ite to Bool.rec before split_ifs; explicit by_cases proves identical continuity goal with unchanged coordinate/constant cases",
+          "statement_or_hypothesis_change": false
+        }
+      ]
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightInclusion.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/WeightInclusion.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightInclusion.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightInclusion.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    },
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean",
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "original_path": "upstream-original/OAI/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean.txt",
+      "path": "ArtinDeligneVendor/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean",
+      "patch_path": "patches/weights/ArtinDeligneVendor/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean.patch",
+      "application": "Finite compact-domain carrier factorization for actual incoming-order simple-chain weights and finite-coordinate/weak-final topology for native finite folds"
+    }
+  ]
+}

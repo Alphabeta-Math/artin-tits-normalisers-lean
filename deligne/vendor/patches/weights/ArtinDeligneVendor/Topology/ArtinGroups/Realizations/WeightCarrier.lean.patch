@@ -1,0 +1,9 @@
+--- lean/OAI/Topology/ArtinGroups/Realizations/WeightCarrier.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Realizations/WeightCarrier.lean
+@@ -1,5 +1,5 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.OrderWeights
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights
+ 
+ namespace OAI
+ 

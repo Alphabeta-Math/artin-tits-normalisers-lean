@@ -1,0 +1,70 @@
+{
+  "recorded_at": "2026-11-14T11:13:29.457147+00:00",
+  "commands": [
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "stdout": "Lean (version 4.36.0-rc2, x86_64-unknown-linux-gnu, commit b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a, Release)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "stdout": "Lake version 5.0.0-src+b35cb10 (Lean version 4.36.0-rc2)\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "-C",
+        "../.lake/packages/mathlib",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "stdout": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "which",
+        "leanchecker"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "stdout": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "stdout": "c779c15d6c6cc4ad5b2c50ea841c89caedba660d\n",
+      "stderr": ""
+    }
+  ],
+  "leanchecker_path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker",
+  "leanchecker_sha256": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798",
+  "provider_sources_imported_mathlib_only": true,
+  "provider_imports": "Pinned Mathlib plus all12selected OAI closure modules; no unselected OAI dependency",
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "actual_arrangement_asphericity_proved": false
+}

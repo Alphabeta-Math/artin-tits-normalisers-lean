@@ -1,0 +1,37 @@
+name: Lean full Theorem 1.8
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deligne-theorem18:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      LEAN_NUM_THREADS: '2'
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+          use-mathlib-cache: false
+      - name: Fetch inherited committed pins and whole Mathlib cache
+        run: python3 deligne/scripts/cache_prerequisites.py
+      - name: Clean, build, audit every declaration and replay exact modules
+        run: python3 deligne/scripts/verify.py --execute --mode final --output deligne/evidence/theorem18-ci
+      - name: Preserve source-bound commands and failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-deligne-theorem18-verification
+          path: deligne/evidence/theorem18-ci/
+          if-no-files-found: error
+          retention-days: 90

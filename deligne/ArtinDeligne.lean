@@ -1,0 +1,37 @@
+import ArtinDeligne.AcyclicCarrierFamilies
+import ArtinDeligne.CanonicalCarriers
+import ArtinDeligne.CanonicalCells
+import ArtinDeligne.CanonicalCoverWeights
+import ArtinDeligne.CanonicalGarsideMap
+import ArtinDeligne.CanonicalPacketCarriers
+import ArtinDeligne.CarrierDescent
+import ArtinDeligne.ContractibleExtension
+import ArtinDeligne.FiniteAncestry
+import ArtinDeligne.GarsideFolds
+import ArtinDeligne.GarsideShifts
+import ArtinDeligne.GarsideTopology
+import ArtinDeligne.GarsideTubeCarriers
+import ArtinDeligne.GarsideWeights
+import ArtinDeligne.GlobalNullity
+import ArtinDeligne.HereditaryWeights
+import ArtinDeligne.IncomingJoins
+import ArtinDeligne.IncomingMeets
+import ArtinDeligne.IncomingOrder
+import ArtinDeligne.LiftedCanonicalCover
+import ArtinDeligne.LiftedPartition
+import ArtinDeligne.LiftedTubeComponents
+import ArtinDeligne.LiftedTubeLabels
+import ArtinDeligne.LiftedTubes
+import ArtinDeligne.MonotoneSignInterpolation
+import ArtinDeligne.NumerableCarrierHomotopy
+import ArtinDeligne.NumerableWeights
+import ArtinDeligne.PacketCarrierCompatibility
+import ArtinDeligne.ParametricExtension
+import ArtinDeligne.ParametricFaceGluing
+import ArtinDeligne.RelativeGarsideCarriers
+import ArtinDeligne.SheetIntervals
+import ArtinDeligne.SimpleTransport
+import ArtinDeligne.Theorem18
+import ArtinDeligne.UniversalCoverComparison
+
+/-! Full Theorem 1.8 and its locally proved higher-topological prerequisites. -/

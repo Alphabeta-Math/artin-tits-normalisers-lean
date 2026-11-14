@@ -1,0 +1,40 @@
+{
+  "initial_build_without_snapshot": {
+    "raw_log": "deligne/evidence/providers/carriers/build-001.log",
+    "record": "deligne/evidence/providers/carriers/build-001.json",
+    "status": "actual_initial_build_exit0; authentic log preserved; later immutable snapshot build is authoritative"
+  },
+  "records": [
+    {
+      "classification": "retained_actual_audit_failure_harness_endpoint_namespace_typo",
+      "failure_details": "Two #check names omitted TopCat.CylinderBoundary namespace; source compiled and physical201/std3 audit ran, but process exit1 honestly retained. Corrected harness only; subsequent distinct audit run succeeded.",
+      "ok": false,
+      "record": "deligne/evidence/providers/carriers/audit-20261114T111751Z/verification.json"
+    },
+    {
+      "classification": "successful_actual_check",
+      "failure_details": null,
+      "ok": true,
+      "record": "deligne/evidence/providers/carriers/audit-20261114T111812Z/verification.json"
+    },
+    {
+      "classification": "successful_actual_check",
+      "failure_details": null,
+      "ok": true,
+      "record": "deligne/evidence/providers/carriers/build-20261114T111746Z/verification.json"
+    },
+    {
+      "classification": "successful_actual_check",
+      "failure_details": null,
+      "ok": true,
+      "record": "deligne/evidence/providers/carriers/build-20261114T112058Z/verification.json"
+    },
+    {
+      "classification": "successful_actual_check",
+      "failure_details": null,
+      "ok": true,
+      "record": "deligne/evidence/providers/carriers/replay-20261114T111825Z/verification.json"
+    }
+  ],
+  "schema": "carrier-evidence-classification-v1"
+}

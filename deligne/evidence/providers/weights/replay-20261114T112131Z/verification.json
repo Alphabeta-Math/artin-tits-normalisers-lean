@@ -1,0 +1,212 @@
+{
+  "ok": true,
+  "phase": "replay",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "started_at": "2026-11-14T11:21:31.582275+00:00",
+  "modules": [
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/weights/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.019951289985328913,
+      "log": "00-replay.log",
+      "log_sha256": "1ea49b9c9aafdb7721097c42847209f5b06427b6e10ce0f743a0ad22c4d503cb"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.830331906006904,
+      "log": "01-replay.log",
+      "log_sha256": "6de07ee02ef5db7f93ba184ceef4cb348da962dd4a7b4328d48584b05752660e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.430567625007825,
+      "log": "02-replay.log",
+      "log_sha256": "cabca52b0d1b9ee4a5f1c637451b0ee11d12d3ba96690157e782311b947f22a2"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.368773622001754,
+      "log": "03-replay.log",
+      "log_sha256": "88c54a27ddacb954e7da11c9d1b23625a2a4b1dd5fe810dfbf651486d3a02f39"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.312317990988959,
+      "log": "04-replay.log",
+      "log_sha256": "162d95c756044013f7ad6996a860f8949838c3a225c03e8b69866f39e3fda580"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.291129408986308,
+      "log": "05-replay.log",
+      "log_sha256": "8d86215bc0865e5e38d7836752032472e769f43fc8787e472789d5fc64fb8447"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.388196162995882,
+      "log": "06-replay.log",
+      "log_sha256": "1b62304d291dcdc5d1b9b8350afb7ea326b8465113d625581956f7ad3d2cd254"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.318483362003462,
+      "log": "07-replay.log",
+      "log_sha256": "bcce55c44b2a56ab65f2a8d0c73d159f4907d884cb82ce2630d3a5e81c66a0cd"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.2802534560032655,
+      "log": "08-replay.log",
+      "log_sha256": "4b82ed7bb75f0646ba0f29796b0fe1b5503ff7b3e97ac68318f6322ab52a5f82"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.321939817018574,
+      "log": "09-replay.log",
+      "log_sha256": "49300fe58f210db20c7b0a84e15e1bf8ddd09d09372ccbe081e1f063754bfbe8"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.285063463001279,
+      "log": "10-replay.log",
+      "log_sha256": "46824ed9ffc54979db60c64b2d0a582392f92667b8f085cf9a0f56c3cc62b24e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.65777218999574,
+      "log": "11-replay.log",
+      "log_sha256": "6273683e0c1206ba0b29d0f1407c320ec71caac02147578ea5416f2bf418519f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 7.355270956992172,
+      "log": "12-replay.log",
+      "log_sha256": "e35e45c1ace6e3cbcdb945f4d3271957b34892625ab26cfce3b5259c745f792a"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib (all non-Mathlib closure modules selected)",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T11:23:00.452078+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "e13167c4571f5f2d8125935ebf0c4a2699021a319605514a80c6565db9c1d3fe",
+  "inputs_after_sha256": "e13167c4571f5f2d8125935ebf0c4a2699021a319605514a80c6565db9c1d3fe"
+}

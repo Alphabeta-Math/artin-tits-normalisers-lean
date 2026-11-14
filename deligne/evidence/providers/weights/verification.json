@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "created_at": "2026-11-14T11:23:43.808150+00:00",
+  "repository": "https://github.com/openai/math",
+  "upstream_sha": "4eaee87548250b2682affda7d05d947c05554bae",
+  "provenance": "vendor/provenance-weights.json",
+  "provenance_sha256": "3da3355a1befd07f53b52bbd3c8a55191d922a052bfdc001c3ea13346256afa3",
+  "harness": "WeightsProviderAudit.lean",
+  "harness_sha256": "b5b2fa9bf257f5b7eba65a68ed3768ba0881323c73df786c143987e861cbde9e",
+  "module_count": 12,
+  "canonical_declarations": 274,
+  "physical_occurrences": 274,
+  "identical_duplicates": 0,
+  "axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_through_replay_inputs_identical": true,
+  "coverage_file": "evidence/providers/weights/coverage.json",
+  "coverage_sha256": "6b9c29426e62875937288f9113ba9c4ff6a5b4a18fe6ddf893e5cfe25334b534",
+  "environment_file": "evidence/providers/weights/environment.json",
+  "environment_sha256": "a55214780d4dd75cd0843c050d0dbd3ade960ea381cb01897c41ff4aada85949",
+  "kernel_replay_workers": 1,
+  "replay_mode": "one exact module per fresh official leanchecker process",
+  "kernel_replay_relative_to_imports": true,
+  "independent_kernel_implementation": false,
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "source_ports": "Entire upstream source modules; selected import relocation and one recorded Lean-version tactic compatibility block",
+  "source_inspection_file": "evidence/providers/weights/source-inspection.json",
+  "source_inspection_sha256": "c95aaa28c9533533b2bf1413f9231e59fc5b889afa672234cccb009a8554fdfa",
+  "records": {
+    "build": {
+      "record": "evidence/providers/weights/build-20261114T111954Z/verification.json",
+      "sha256": "855d00ea2aff055268ae022db84e1ad5f1b7283b9b1b7281d7edfe738fd885f5"
+    },
+    "audit": {
+      "record": "evidence/providers/weights/audit-20261114T112036Z/verification.json",
+      "sha256": "a9ce14cf288496cb054be21fb4fbcf3167bbd56cc78840bcc40eac01ef28e4c0"
+    },
+    "replay": {
+      "record": "evidence/providers/weights/replay-20261114T112131Z/verification.json",
+      "sha256": "4292db88ca59bb13df27dcb2bef71b07f93171068c2d6073ebaa265e4af3c987"
+    }
+  }
+}

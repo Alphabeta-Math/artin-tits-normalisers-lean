@@ -1,0 +1,9 @@
+--- lean/OAI/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean
+@@ -1,5 +1,5 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph
+ 
+ namespace OAI
+ 

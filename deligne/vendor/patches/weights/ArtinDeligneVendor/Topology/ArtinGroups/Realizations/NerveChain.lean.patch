@@ -1,0 +1,13 @@
+--- lean/OAI/Topology/ArtinGroups/Realizations/NerveChain.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Realizations/NerveChain.lean
+@@ -1,7 +1,7 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.RealizeSimplex
+-import OAI.Topology.ArtinGroups.Realizations.WeightDim
+-import OAI.Topology.ArtinGroups.Harmonic.SimplexSupport
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim
++import ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport
+ 
+ namespace OAI
+ 

@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/openai/math",
+  "pin": "4eaee87548250b2682affda7d05d947c05554bae",
+  "module_count": 12,
+  "lines": 1559,
+  "bytes": 68163,
+  "modules": [
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.OrderWeights",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/OrderWeights.lean",
+      "upstream_sha256": "1cf3b7b580b34789a4844da3a011b37073a63be5ab0d4307cceb6eb6f6559c8b",
+      "imports": [
+        "Mathlib"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightCarrier",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightCarrier.lean",
+      "upstream_sha256": "7270dc1fc547653c6140128ab89ce96ba4c7254e71c800a08009bae35bfb7ce5",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.RealizeSimplex",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/RealizeSimplex.lean",
+      "upstream_sha256": "14ae1a71837261f1f0908ab733ffdaf09517a09be8f26a1838c793587ded20d5",
+      "imports": [
+        "Mathlib"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightDim",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightDim.lean",
+      "upstream_sha256": "d8cba8d6c9441b9190248a78dd702b3b5166aa0d15fdf8b5ad88f07dea7169ba",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "upstream_module": "OAI.Topology.ArtinGroups.Harmonic.SimplexSupport",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Harmonic/SimplexSupport.lean",
+      "upstream_sha256": "c7f94a60f300b7f4372923a11c4c0227c3c9a2c3fe5bd9cc12a1b9c425c7045c",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.NerveChain",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/NerveChain.lean",
+      "upstream_sha256": "a8340ac37f35aee37b9e7ba705484e03c198f5f7f2ed39e5eb535ed86e7c9980",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightMap",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightMap.lean",
+      "upstream_sha256": "b38930e96adcd14ff07dfb12e42bdea7e7133bf8c2993b7fdbd816a897a865b6",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "upstream_module": "OAI.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Harmonic/FiniteChainEnum.lean",
+      "upstream_sha256": "3eb7f9052971959dc089bd8771017ebea8b50339604df354215da901170e0727",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.ConeWeights",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/ConeWeights.lean",
+      "upstream_sha256": "1809832a2288919bf5de7317c03250c58acba973ae39f5017368e98ba477d7c3",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightInclusion",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightInclusion.lean",
+      "upstream_sha256": "1bc937ba881e7e7629d8757a3236be516b266d85be67661daf7526cba24614af",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightHomeomorph.lean",
+      "upstream_sha256": "11ec584c2bd3d3cd0673597adc1fffff0c2f959960267663c3111255d3c045c3",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.FiniteWeightsCompact",
+      "upstream_path": "lean/OAI/Topology/ArtinGroups/Realizations/FiniteWeightsCompact.lean",
+      "upstream_sha256": "2be48eaa8aa6361344784f625b74576498da9e04595059a39ac44aa9c8845e0c",
+      "imports": [
+        "Mathlib",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph"
+      ],
+      "full_source_read": true
+    }
+  ],
+  "all_selected_full_source_read": true,
+  "accepted_OAI_overlap": [],
+  "scope_of_overlap_check": "Exact12upstream module names absent from accepted ribbons/vendor/OAI tree; no recopy of accepted supplier",
+  "other_source_candidates_consulted": [
+    {
+      "path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightAffineValue.lean",
+      "sha256": "0aab2160069714dbfe1a58da1d54586f00433637a93f426d8713cc9b29461181",
+      "read_scope": "full source file including proof bodies",
+      "disposition": "Finite-P affine continuity only; not selected because finite coordinate criterion suffices and global ambient affine map can be proved facewise",
+      "selected": false,
+      "compiled_or_audited_in_this_packet": false
+    },
+    {
+      "path": "lean/OAI/Topology/ArtinGroups/Realizations/AffineWeightMax.lean",
+      "sha256": "3a1eeb998433d59e64c7c1f28325ffa990879349dddb65b20c3abcf2caea916d",
+      "read_scope": "full source file including proof bodies",
+      "disposition": "Affine-max injectivity/inequality hypotheses unrelated to finite fold; rejected",
+      "selected": false,
+      "compiled_or_audited_in_this_packet": false
+    },
+    {
+      "path": "lean/OAI/Topology/ArtinGroups/Realizations/NerveOrderMap.lean",
+      "sha256": "031e1e20093997e065630a94381205008b876911167e1d2f85c059b2ad0a7701",
+      "read_scope": "full source file including proof bodies",
+      "disposition": "Order-map comparison homotopy assumes global order maps and pointwise comparison; not needed for finite contiguous fold",
+      "selected": false,
+      "compiled_or_audited_in_this_packet": false
+    },
+    {
+      "path": "lean/OAI/Topology/ArtinGroups/Realizations/WeightChainCover.lean",
+      "sha256": "7c2c1eb7d2ddbbbd81a1be220d9da072aa84fd419ed99cf435a7844e410b7f2e",
+      "read_scope": "full source file including proof bodies",
+      "disposition": "Compatible whole-chain cover gluing not needed for the finite-carrier contraction",
+      "selected": false,
+      "compiled_or_audited_in_this_packet": false
+    }
+  ],
+  "no_new_broad_github_search": true,
+  "prior_search_inventory": "docs/provenance/searches/m5-next-core-inventory.json",
+  "literal_main_endpoint": "compact_map_finite_carrier {P:Type u}[PartialOrder P] {X:Type v}[TopologicalSpace X][CompactSpace X] (f:C(X,OrderWeights P)) : \u2203 (A:Set P)(_ : A.Finite)(g:C(X,OrderWeights A)), (weightMapContinuous(weightInclusion A)).comp g=f",
+  "space_definition": "Nonnegative finitely supported real weights of total1 with pairwise comparable support; topology coinduced from all genuine nerve-simplex charts with discrete simplex indexing",
+  "no_false_compactness_hypotheses": [
+    "No finite-P hypothesis on compact_map_finite_carrier",
+    "No locally constant-map hypothesis",
+    "No locally finite-poset hypothesis",
+    "weightCarrier_finite_of_isCompact proves the global carrier finite using weak-final closedness of all subsets of a selected discrete set"
+  ],
+  "literal_continuity_apis": [
+    {
+      "name": "orderWeights_continuous_iff",
+      "conclusion": "Continuous f \u2194 continuity of f composed with every genuine simplex chart",
+      "extra_hypotheses": "No finite-P hypothesis; arbitrary target topology"
+    },
+    {
+      "name": "orderWeights_prod_continuous",
+      "conclusion": "Facewise continuity on Z\u00d7each chart implies Continuous f on Z\u00d7OrderWeights P",
+      "extra_hypotheses": "LocallyCompactSpace Z; actual interval satisfies this"
+    },
+    {
+      "name": "continuous_of_finite_chain_carrier",
+      "conclusion": "Coordinate-continuous map with support in one fixed nonempty finite CHAIN is continuous",
+      "extra_hypotheses": "Fixed carrier must be a chain; not sufficient by itself for arbitrary finite non-chain stages"
+    },
+    {
+      "name": "finiteWeightsCompact",
+      "conclusion": "CompactSpace(OrderWeights P)",
+      "extra_hypotheses": "Finite P; no total-order hypothesis"
+    },
+    {
+      "name": "weightFiniteInclusion_closedEmbedding",
+      "conclusion": "IsClosedEmbedding(weightMap(weightInclusion A))",
+      "extra_hypotheses": "A.Finite"
+    }
+  ],
+  "native_scientific_helper_owned_by_mathroute": "ForFinite P, coordinate-map compact/T2 embedding yields Continuous f iff every coordinate is continuous; apply to genuine finite-carrier allowed-simple-chain SUBSPACE folds. No additional upstream affine/prism module selected.",
+  "limits": [
+    "No current arrangement asphericity or contraction theorem accepted by this cohort",
+    "Main scientific native fold/nullity proof remains separate",
+    "Candidates inspected outside12not compiled or accepted",
+    "No global absence claim for further possible upstream APIs"
+  ],
+  "compatibility_ports": [
+    {
+      "upstream_module": "OAI.Topology.ArtinGroups.Realizations.ConeWeights",
+      "changes": [
+        {
+          "old_text": "    \u00b7 split_ifs\n      \u00b7 exact continuous_subtype_val.comp continuous_fst\n      \u00b7 exact continuous_const\n",
+          "new_text": "    \u00b7 change Continuous (fun p : I \u00d7 Convexity.StdSimplex \u211d (Fin (n.len + 1)) =>\n        if v = q then (p.1 : \u211d) else (0 : \u211d))\n      by_cases h : v = q\n      \u00b7 simp only [ite_eq_left h]\n        fun_prop\n      \u00b7 simp only [ite_eq_right h]\n        exact continuous_const\n",
+          "old_sha256": "c019c026ac42473005d4aa49cfc757156ed8d1068f5f549a9699dfd5fb2baaee",
+          "new_sha256": "e808fda50b3ec31d98b241dc4219524f827a2bb23b1b580696e4c42a40e40764",
+          "upstream_start_line": 129,
+          "upstream_end_line": 131,
+          "reason": "Lean4.36 lowered ite to Bool.rec before split_ifs; explicit by_cases proves identical continuity goal with unchanged coordinate/constant cases",
+          "statement_or_hypothesis_change": false
+        }
+      ]
+    }
+  ],
+  "preserved_failed_builds": [
+    "evidence/providers/weights/build-20261114T111308Z/verification.json",
+    "evidence/providers/weights/build-20261114T111531Z/verification.json",
+    "evidence/providers/weights/compatibility-attempts/attempt2-build.json"
+  ],
+  "legacy_module_import_advisories": "Original files retain pre-module-system source form, so Mathlib module-system import advisories are expected and preserved; no broad header rewrite",
+  "compatibility_attempt_evidence": "evidence/providers/weights/compatibility-attempts",
+  "compiled_source_lines": 1563
+}

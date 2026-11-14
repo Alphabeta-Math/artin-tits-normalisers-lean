@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "phase": "build",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "started_at": "2026-11-14T11:19:54.383039+00:00",
+  "modules": [
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/weights/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.02297261299099773,
+      "log": "00-build.log",
+      "log_sha256": "1ea49b9c9aafdb7721097c42847209f5b06427b6e10ce0f743a0ad22c4d503cb"
+    },
+    {
+      "command": [
+        "lake",
+        "build",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightCarrier",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.RealizeSimplex",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightDim",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.SimplexSupport",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.NerveChain",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightMap",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Harmonic.FiniteChainEnum",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightInclusion",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.WeightHomeomorph",
+        "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.FiniteWeightsCompact"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 13.249419160973048,
+      "log": "01-build.log",
+      "log_sha256": "474a6a962d949a7cce9f4e7568548a06cf7db3db0acc8fad6447b6c358bc4b8e"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib (all non-Mathlib closure modules selected)",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T11:20:07.657931+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "f975bc5c607829c52c42ff155ad7c0d4d0ec44d7749f1cde7d5dcb8f5e34329a",
+  "inputs_after_sha256": "f975bc5c607829c52c42ff155ad7c0d4d0ec44d7749f1cde7d5dcb8f5e34329a"
+}

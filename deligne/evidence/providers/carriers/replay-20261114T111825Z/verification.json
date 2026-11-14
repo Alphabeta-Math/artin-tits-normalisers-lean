@@ -1,0 +1,281 @@
+{
+  "ok": true,
+  "phase": "replay",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "started_at": "2026-11-14T11:18:26.262564+00:00",
+  "modules": [
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+    "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+    "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+    "ArtinDeligneVendor.Topology.Realization.Cylinder",
+    "ArtinDeligneVendor.Topology.Homotopy.Extension",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+    "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+    "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+    "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+    "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+    "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/carriers/verify_source.py"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.01792818499961868,
+      "log": "00-replay.log",
+      "log_sha256": "47a7737980feace6ff7f84b4d8361fc12019a92756c348a5489357bc33835097"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.332922560017323,
+      "log": "01-replay.log",
+      "log_sha256": "d9194d26571a5dddc1d44073ca8d686ed74cd899eccef09fea5d37d10a8a8d56"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 5.973229066003114,
+      "log": "02-replay.log",
+      "log_sha256": "bb7c1359a3e1f6deee264d226fe57c956b604524dbced4bdc2b6cb1d0a6e1da8"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.212139548006235,
+      "log": "03-replay.log",
+      "log_sha256": "79da4aa94a39d4533fa78e6b55854d695725cc91c4de3788e5d2b5b2eabe2627"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.030613940994954,
+      "log": "04-replay.log",
+      "log_sha256": "1fae77eb61ff1a6d7701e11976a337c59aa96bc9fb06ba567612a422c428e431"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Realization.Cylinder"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.218641265993938,
+      "log": "05-replay.log",
+      "log_sha256": "138fd9063c4078909acf13646f49269da664e1b0f5ebf81dc2cd63526ecb5908"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Homotopy.Extension"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.694961722998414,
+      "log": "06-replay.log",
+      "log_sha256": "eb1b03706c1bca16c492ce31eae37c7b0a6990429eced8103ebcb53bcd96773e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.311919605010189,
+      "log": "07-replay.log",
+      "log_sha256": "8de50e4f4ed9a1820a04c9b1b30f3b6bcb7d97dd1d77af83db17c79fcbfba342"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.0766726399888285,
+      "log": "08-replay.log",
+      "log_sha256": "66747b863033f242b54ab7673e09d153c1950b009d78d7765e6a2be5a0e9ee55"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.3018673619953915,
+      "log": "09-replay.log",
+      "log_sha256": "cf0acaa9f00ef85b06a52867d26dd73f679cf70a22fe409ea0077eb76b86eda8"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.098493624012917,
+      "log": "10-replay.log",
+      "log_sha256": "469089bde29b91effbe86e9f1fc78173ba5a113d68ddadf30646237557e8cd58"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.134716760017909,
+      "log": "11-replay.log",
+      "log_sha256": "2d16b548ebaa0eba114ba9ff24268b32c2be892ea889075eb2edeaab81b8311d"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.09137203998398,
+      "log": "12-replay.log",
+      "log_sha256": "a4fb12cd0d0ed0d2aa41bee533297dac31fdbcbfeedcd78a59f142a986c8c313"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 5.890495808998821,
+      "log": "13-replay.log",
+      "log_sha256": "4afa9219737d4922158854e74bdc0c4a5f9fc3b915bef4ecb3ce6dd578986f78"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.095575006998843,
+      "log": "14-replay.log",
+      "log_sha256": "b87feea3fb300588da53eff76af71414012f696ae7435d0577fa0fdfa82b878c"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.HELP.CylinderBoundary"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.471226100984495,
+      "log": "15-replay.log",
+      "log_sha256": "5a738c627f616faddfea9a031b1cb0bc7feed63659e53e60c732f8f9c603fef5"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 6.2166173930163495,
+      "log": "16-replay.log",
+      "log_sha256": "19594f49b2c835be3b4a9f4a1642ac9ff7b4604057a578c2f97d22cbc93e9deb"
+    }
+  ],
+  "actual_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "tools": {
+    "lean": {
+      "path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean",
+      "sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00"
+    },
+    "leanchecker": {
+      "path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker",
+      "sha256": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798"
+    }
+  },
+  "concurrency": 1,
+  "kernel_scope": "Official exact-module leanchecker, relative to imported pinned Mathlib and accepted supplier contexts; not an independent kernel implementation.",
+  "independent_reviews_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T11:20:05.509111+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "1110498a8d695a4784d144fd3ddc89f988393556b7c3b1a59a389213081268d9",
+  "inputs_after_sha256": "1110498a8d695a4784d144fd3ddc89f988393556b7c3b1a59a389213081268d9"
+}

@@ -1,0 +1,14 @@
+--- upstream/Colib/Topology/Realization/SimplexBoundaryCollar.lean
++++ active/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryCollar.lean
+@@ -6,9 +6,9 @@
+ 
+ module
+ 
+-public import Colib.Util.References
++public import ArtinHomotopyVendor.Util.References
+ public import Mathlib.Topology.Homotopy.Equiv
+-public import Colib.Analysis.Convex.StdSimplex.BoundaryRetraction
++public import ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction
+ 
+ /-!
+ # A genuine open collar of the geometric simplex boundary

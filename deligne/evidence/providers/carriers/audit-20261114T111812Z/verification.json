@@ -1,0 +1,70 @@
+{
+  "ok": true,
+  "phase": "audit",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "started_at": "2026-11-14T11:18:13.745977+00:00",
+  "modules": [
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+    "ArtinDeligneVendor.Topology.Category.TopCat.Pushouts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryCollar",
+    "ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar",
+    "ArtinDeligneVendor.Topology.Realization.Cylinder",
+    "ArtinDeligneVendor.Topology.Homotopy.Extension",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryHEP",
+    "ArtinDeligneVendor.Topology.Homotopy.ExtensionContinuous",
+    "ArtinDeligneVendor.Analysis.Convex.StdSimplex.FaceCharts",
+    "ArtinDeligneVendor.Topology.Realization.SimplexBoundaryEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.IntervalEndpoints",
+    "ArtinDeligneVendor.Topology.Homotopy.RelativeCylinder",
+    "ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors",
+    "ArtinDeligneVendor.Topology.Category.TopCat.CompactHausdorffPushout",
+    "ArtinDeligneVendor.Topology.HELP.CylinderBoundary",
+    "ArtinDeligneVendor.Topology.Realization.SimplexFaceGluing"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/carriers/verify_source.py"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 0.019069654983468354,
+      "log": "00-audit.log",
+      "log_sha256": "47a7737980feace6ff7f84b4d8361fc12019a92756c348a5489357bc33835097"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "CarrierProviderAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+      "exit_code": 0,
+      "duration_seconds": 2.3198436019883957,
+      "log": "01-audit.log",
+      "log_sha256": "4c9dff98d9432db1eb370b224ba281d44c7af5999ede16b8c5119be78dcdee1f"
+    }
+  ],
+  "actual_mathlib_revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+  "tools": {
+    "lean": {
+      "path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/lean",
+      "sha256": "db7f559d05795e7af52e42bc966c90240a39dcb9712161c54c97afa546e20c00"
+    },
+    "leanchecker": {
+      "path": "/home/lazyinspirit/.elan/toolchains/leanprover--lean4---v4.36.0-rc2/bin/leanchecker",
+      "sha256": "2b2ff08805ace61c935b023f8114ac3f7f1d3bc79cb4e8c47ef7801a5af58798"
+    }
+  },
+  "concurrency": 1,
+  "kernel_scope": "Official exact-module leanchecker, relative to imported pinned Mathlib and accepted supplier contexts; not an independent kernel implementation.",
+  "independent_reviews_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T11:18:16.148924+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "1110498a8d695a4784d144fd3ddc89f988393556b7c3b1a59a389213081268d9",
+  "inputs_after_sha256": "1110498a8d695a4784d144fd3ddc89f988393556b7c3b1a59a389213081268d9"
+}

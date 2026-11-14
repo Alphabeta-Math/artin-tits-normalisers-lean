@@ -1,0 +1,1743 @@
+{
+  "Deligne_physical_inventory_matches_frozen_audit": true,
+  "Lean_build_audit_or_kernel_replay_executed": false,
+  "accepted_supplier_source_units": 464,
+  "all_raw_data_preserved_in_annotation": true,
+  "annotated_graph_sha256": "f15d25fb6510cd23a23b2fe3096b162f1e0c34817a443f5ccb7d61ddfdec8e4e",
+  "attribution_git_commands": [
+    {
+      "argv": [
+        "git",
+        "ls-tree",
+        "-r",
+        "--full-tree",
+        "--name-only",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "0db811398e0c4b18a42a28670eb99e2aa3a7f44eaf9b81aeff87aa69eee9424d"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/ConvexCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b1afe6670992d472e2cb2df9bf8ccf697bd8b7c3805b872adf986e3a5a8d0334"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/DirectedCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "571842b902ee1b214d11671e5f7bd7253adcc59a127e8ba9cf8dad95883c0570"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/FiniteArrangement.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c1b2d520ed3b812f297bf222efe05c0261715835e398dcfba66f75e997fba590"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/FlatCoordinates.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "71bcd71f0e7185eebb087662c1691533e4368ebd20438d0a57b9ad23fa7fc220"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/Prerequisites.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "15971fae5c6ce94e3886382a39cc29f28503a67ee8404de643887748e83b34d7"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/Simpliciality.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "95be73abbfecc0943285659299a0865ad238b894b004b6514ce1272e7330e805"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:asphericity/ArtinAsphericity/UniversalCoverGeometry.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c99fe48e621e2b2a26bd086e066a1cb96afa0176b2ef2e21047a6d9c8765d1a7"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ActualArrangement.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "7655d68bc60ccea16b66a95d438da94a0feae2b1fc446d3b394f4a2444da2437"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ActualComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "858d1ed8efb372d9210d8989daa5bc26f2ef07c78e9b98d366cec5a847309d16"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ActualTubes.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d9a2d2ccc57576fc24c8b311602b7932bb508378b5d02a7a0821e863cb9d4f4b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/Arrangement.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e994fee8544ffea068e2218b652bf49edc47ca415e66b4af25b13eafc68411f1"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/CechCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ee7ac3bb50b23a2e7376114f34e91ea0009c6ce48cd5599fa2a249c0c4fe3b33"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ChamberAction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "1dc4c09413adbcade355aa96f05b6aced3d62282cc7926005ddbf5e0c2f51f0f"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ChamberLabels.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "bb2d51929698bfa083a9ba86710c6b23c537e94ba64e0ae313a0ffb29de6768c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ChamberPoints.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c4d3a26d4f1f25a1b01ec6204314449a4337857da0e31448bbb9673dd4ebeff4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ChamberTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "8f6e41b1549693274395378008a76a449b2a54fe2a5b26708b5daf8089f13223"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/CoverComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "cb786e05eb495e1e68e8a32ecbc4da39dabb9c8d79954d2509dd1d5e794d3ef3"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/CoverQuotient.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "719b23898e697a3fbbe352d80e26c400a73e3daeefddeac4c15b371efff465b9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/CoveringGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "db3908e21b8adcedde4e2833811f1422d974f32f803914cc720ee5ab0a110f3a"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/Dominant.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b0169ce71bd68691d008f0cada853440277890063229c22880dfa4a64df8bef0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/FaceProjection.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "cba7ed1195b7e40be965de76dbcb233805dca4336eaa685c2fa83f829062c1dd"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/FacetTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b208bacc8b4aae7490191f2bd7d1f59925b0f53cf1662b8a952052267852cafd"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/FamilyFunctor.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "686647ee845de28baa38b1885c03f65d6b0fff27e5e7aa78091f7daa975b2198"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/FamilyGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "33bc29d0160356eaeb65d5c3140d5bd025e6261dd024086724fb95e65b634696"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/ForwardEquivariance.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9e3f5243fc5e7ba690d0583c5cbe0ef1abe70e6b35d4426a5d2cd3339e66a4b4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/GroupoidCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "29e5fcf6a54138699ed11db465f48c0069a280507995b2c97d2b059b54574ae0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/IntervalAction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c73fae29b222cb0373c4197234b0f4009aafdfd201cb7f5f4ee044a562aa8f66"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/IntervalEquivalence.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "8b0772faa981737b6242ef8867fb406d6fa1d2b419ab9f0502da19da7199fb25"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/IntervalForward.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "266f702787c4b72a86bcd096fdda6cb4124a26f8abef0a749c2efea1bfddeafb"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/IntervalGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ad354c494dac2be0463846dd57fbd49594c57f6a438f2638875054cd985a96ed"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/InversionLength.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "63ccc4b6b6dd077871c8155e9342798624ea54645285a8ae3761dfac9c3aa558"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/Landmark3.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "10b972bb3569b3fc944be367ada50b00dde2f87f40f2937d339c6557dda261ee"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/OrbitColimit.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "405db94933efde3edefd5d3692fd3956a7bcad00bc92d1269e9abc8575986847"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/OrbitGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "1c83781a116b0cb8572cacbcbcce837c6add63ebe1a380f3fcd15a8703fd6dec"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/PositiveTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "13455de8bdda1548bbb9c7b1f55f5f56dad3eb63932437b41186a74c2e286917"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RegularCriterion.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "eef56162de16884c14d288b0c8f4d19f451fbc35202d4bd903dff0cb4390dc51"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RibbonComponent.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "dd9b23bcea5b0a7a0ac580ba2f34223da07b3e8e3d96cefd30e46d71ce7c450b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RibbonCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "402c1189303aa67cb2ca6069e385ed71e9765fc24c7d1e8247ef6ff846d70133"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RibbonDeckLabels.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d3c6a6e0efd989e0211fdff4af3c33b899d2d118a9819ed727cf5aebde5ec67c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RibbonLiftCompatibility.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ac67fd75d30f6ac6b33adaebb9fa52d5879f1f92cccdddcbb9d44eeead91128b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RibbonLiftUniqueness.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "3f65b88a6a5c03af20127cdcf427df4bbd000329cb9da6b0bfd05baca29236a5"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/RibbonLifting.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "f1305753aab9ca75f1e9971881e8a125a8dceb38ecd9944557460c1943c634cb"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/SignCells.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ad0b4d62161d0621c931b22adcb518f9f75aaa78086b158239333988dbc02472"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/TubeCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "bdef04d49295e12347c87ce6fbca8f51fddbcbe3812ea5066cbc78cb5e77e2c7"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/TubeDescent.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a348c25f70277ee4c219d595a164cfee59a16c92895dc2e09af1186caec0f398"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/TubeIntersections.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "7f427029e9c5b4ac4ccc62955fb4f6a2dcd334dabf85c97b972974cdfab09d76"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/Tubes.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "2857e3ab39bf16e5423dc16fbab71f76c72aec4caf0bceadbe2b21c01b447ff0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/WeakIntervals.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "fa135a5da1bc702fd0dffc90d43699b4ab8a9f5166c51ca196353c41ea2116f6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:chambers/ArtinChambers/WeakInversions.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "598a6fd41c1f3d22e3fe1f2dcf57764588a158f2f15a02af3bb79ab0451a1ebb"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/ComplementConnector.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "adaa54e06bef291d1a429531816ad378d0749cd9705c2687b0e04c685a483bdd"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/Domination.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b25f8627bb5425d161dc743212d304dd604de0a29b48b9783a738a3b49e64955"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/FacePrefixes.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c68b9c805b400405892b68e4469d431b53891fd900b323c0b350f2af50e9af2e"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/FaceResidues.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "edec09bec9cd2c6e7223d19c9a2f45ee3fe609f70c41dc7a62d8e260f694a914"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/NerveComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "f2f517a60f5f98f32183a84198fcb9186d94d7b156fcf8e0d0c0bd20e47341b0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/NerveHomotopy.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a48150ce00a2970e6ea11340e6c7f656e1c8bc3b22aff29d4aa339203f048240"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/ParabolicRootSigns.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "8380a30dee6d98a10081a6ca454e89ae526d9bcfe851496569b443822a18612b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/RibbonGcd.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d3f83a4549d1926fce756539fbb464afd380069fb84acaac271ceb46a3d9189d"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/RibbonLattice.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e0d64c71aad3ecbc0cb30986cdea610c8f81fe8ca41e1df70e6feb323420de5c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:homotopy/ArtinHomotopy/TubeIntervals.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c2d4f597cee07f113a6bbc7e353b3ab5c7ce05987d388a0b9912a0caaa725882"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:landmarks/ArtinLandmarks/Covering.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:landmarks/ArtinLandmarks/Dominant.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "408a97cc6f49b5868d5eafc6aae733b8ae26a1d314b26c81235f5bf493339da4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:landmarks/ArtinLandmarks/RegularStabilizer.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "aeeee397f0fe48325c9f62eee8607e80a1836cb123dc9a022cd8d954c92fd93f"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Artin/Basic.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Artin/CoxeterNormalizer.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Artin/ExactSequence.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Artin/NormalizerLift.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d0a1c617b470e5ce36c41a60ad82b29eac825d9b84cf57106138beccf0922849"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Kernel.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/NormalizerMap.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/QuotientMap.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Theorem18/ArrangementTopology.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e17eb88a02201854c545aa4be4a397f0457845921903676d362b5c94e66e272e"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Theorem18/CoveringSequence.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5173fd6df5bac7b17fb33344e9d042a5d8d4e258bd22bb087ab02f882584d9f3"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Theorem18/Geometry.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "310a600d1d1a1b36aefa9190b2705d48f5115fd26e701a4569a7e791bad36098"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ArtinNormalisers/Theorem18/NormalizerAction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "54b0dc36cf3ef6c399119c8a641e759b1d0474bf94d650c208314f4c4d3c99aa"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/AtomicCoxeter.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ceb1062ad36adc85ad3d1881f0c1dac898eca5f2ffd8766563aebaaaa17e2030"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/CofinalRibbons.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "798d2c8d57ba2b21a840e972d38c9f9fbea17b72bbe25f3570b17f3e33f0d23a"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/CoxeterProjection.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a6d32269fd65204290ae7656eb7d8931150e18a1dc430c7c50ae1011205aa910"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/DeltaDivisibility.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9745034e8c34a21af83f76d196147c379ce2b4fb520faafcf33a90b708b0258c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/FractionNormalForms.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "098f2ebaaca09e3c9c2b23cc0d75671d6bf64eeef0338e2a2edb1b2bc4b24f81"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/Fundamental.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "31af15bb2f724d52c32811fa588d79e67f9bed540cca68b651aaaf1571ce725c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/Landmark2.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "0fcb9db16ee03c6814f7edcc34e46ce09178fa0583a1bf340c687385b6436bb9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/NormalizerSplitting.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/ParabolicReduction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9eab9f076a668e640a7f8a433da8ea5630f9f18f8c8b430f13709ff02c3acfb9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/Positive.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/PositiveEmbedding.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e3c99b5d680624880a89cd776d3508ff4201703d5a5806e760071f277fad1802"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/PositiveReindex.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "373da7768f9c965a027319eb12e7ba5818b170735355ff9c1ae97256e728fd29"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/PositiveRibbons.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "addf21b6027f0bbad264890d4e4f3048888738f28175d7567a8c3d369d045e7c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/PositiveSupport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "96160e94b39c1ac5ed2bb09cc2626e1a43980854596b070273681aa2bc710bc7"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/Presentation.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "f40c1c393705172803299a13a3bd81bf4fdfff18f40718f45aed07101562d5a0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/ReducedRibbons.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/RibbonGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/RibbonLcm.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "2be9ece462f5b1542075d44c683269ced9ba92f4bd2b4502f4e0cf5bfb48fcaa"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/RibbonPositiveCalculus.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "2108bdce858679cb2ce3de88cd24ccad121df11476055bf93ed0bb5cbaa673a9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/RibbonRelations.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "4f85cb104225d482983eb4e224a5881756837ee40665f912d6815f2f00fdb14d"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/RibbonUniversal.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "109fae82d1193fd3200a6b47e7d4302dd7d0c7b0463b9f4d16e19cb8588b54ef"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/RibbonWords.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ef1ed56588571633cd42326d12210b394bc5f808ac38fb5404c08c17708fb639"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:ribbons/ArtinRibbons/SphericalPositive.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9020135c6b1fa1a27ba7c0e0403e9b12b9785cacf8eeb7ebfabfb900136a9d8b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/AllBasepoints.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "6fd0ae5f56fd445bdeb288ec9cb787838b1b09f77ec7ab615a01c4480f7676c4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/BasepointTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "069ac9ced6eb771b0f1af5301a80e4c4e6343d5179d0711527d909fa1048e343"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/EndpointMonodromy.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "457a5244ef7667de091dd9ce8ffa38b9f9b341eacb39963363b04be4247e965f"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/KernelComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5b41a1103c059800cfd0318a57fe2f263043175116203c48f32bda348704a874"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/Landmark4.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "73c1fa143ac1967c44a8f3464c6d6fb1cfe2bc70b30c0b5954c0e494b4ca32b6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/NormalizedExactness.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "67469e5c3ea01644a29440f7bdcddd2b167e734e5fa66a4b0adf8d3377ee2b4b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/PositiveConventions.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d16e582e082d8730d25ebef93d321af2183a285e0a5c2c232538fea05e3e87d6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/RibbonVertex.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "3a46207a4c2ba0b9a9f5ed1ca582df584511ce96ec9c1ba2987b6d8c15335e4e"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/StandardComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "bcfbdcd5c7ce4842c87ba97b5953d8aa3b9cc1256e8900132f3c6ba915c4fda3"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/StandardMonodromy.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ac920ee4360da31d1fb91a327622bc91259caf17dc08a1160f411648971cfd41"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/StandardPureComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "87c5d16a7576aacf4926281bc5ca723adbd437e0308b1f145ffd6ef23000c725"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "18f529895b3987103a1813b175aa0b7e54edc3c3:sequences/ArtinSequences/VertexComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5983151abc14b29fc6e9c66fb5a217cdb854d424228fc8694dbe0ce38c9bc31e"
+    }
+  ],
+  "baseline_archive_sha256_after": {
+    "ExportDependencies.lean": "f9a686d51bedf57d04de4105a2c57538d66a6ec2f908c3b099f30eb4abb681fa",
+    "ExportM3Dependencies.lean": "663ef05a28c98d84fd043fec010405b7a8d44c95f081f35d3b4059c3044e1ea8",
+    "ExportM4Dependencies.lean": "6cdc0a6cb0d7c88ef97939e16c7e97745b0806e5cf61e3c31ab3b4599e0ba228",
+    "ExportM5Dependencies.lean": "189af66d03119d4547d753f8718286b77493c5e3dd6e1235d8b54f777d5f4cbe",
+    "HOMOTOPY-EXPORT.md": "dc22196571375b2fa6500dfb8e4fe41db90aea11880bade346aaa4a23be4595f",
+    "M3-EXPORT.md": "582a476f7ef3e28b5ce2020db8b93301dcb1f6f5ccb4f337b50873e9e64787fb",
+    "M4-EXPORT.md": "9871a214d2a02a0121b8f986214615d5d486ea79cf1db373e93d169d9a30fc60",
+    "M5-EXPORT.md": "54cec221cf502eff5b61988c14ac3a7c05eba2abdafccf858bd10dce51d1491f",
+    "acceptance-deligne-carriers.json": "44e503285e4a41110212afeed84702975933a8b5c09a5aeaf4e572d3fcab44f7",
+    "acceptance-deligne-weights.json": "4a4b49b51c7c1c59f017230fc3878b000989dc11c1056116c6094de73d4fee71",
+    "acceptance-homotopy-colib.json": "60058970da3c04dd377a7f5d0aced233c7fd2ddee8c97bd50e7d27c3cb1dbf44",
+    "acceptance-landmark3-cech.json": "5fb052908ca576a9cefcbc6d68e23418d9a5434d2588010f5300581de68e979e",
+    "acceptance-landmark4-basepoint.json": "b6ace0d55c6e6b1456c4e3a9cc0c951944a2a840857c4fbeb84724ba9e6c19c6",
+    "acceptance-landmark5-topology.json": "d680af294fd4c22afc243c7071578e6cd0fb4de8b5b181e09b18970575b5d895",
+    "bind_m3_publication.py": "6b86eab2418c1287e8ee85f5440ce9334a701ae825e8d50276ef0bf36bfe9a0f",
+    "bind_m4_publication.py": "f60fabcc9eda49db6af36445a19e1b3d6c6a030fc71d5ae38d53f0c329aba6f3",
+    "bind_m5_publication.py": "392fa9bdab6d5f81c2df285fd5e12ebb4516a6690e3fd5e62ad0df8cab7185f8",
+    "dependency-graph.json.gz": "15ff472bad85f947e823b0c7be7ab98dfcd68bdd0528b98f1f2529d827c21255",
+    "dependency-graph.raw.json.gz": "cf1460b8afc4bc802d19cdada9a2ea7027ba0161c32055baf37d0df13c1e9fea",
+    "development-history.jsonl": "c4e6cdb46dbb739955d60693fdd00e002024f172f6f9aabed8d7190cbeaa4663",
+    "development-sources.json": "47239ed3f373de7d01c0c79b2df9548561e1c5a89b53897c4d050ffc4fb8ec65",
+    "export-attempt-1.log": "8f0cedbadcb3dca9374cc5fc8a92ef8c70b21fea1888e0d093840a5e542976e6",
+    "export-attempt-2.log": "03e848e308783c03fe4fb24b840b9c15f1f7c2473b6ed4ddde6209f7bc0cd662",
+    "export-attempt-3.log": "5ef3790a318e404f9aed3ff64cf075bc9a012c791bd3e80b5c9b9a7e0c776505",
+    "export-execution-initial.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-execution.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-final.log": "0e5eeb075c9601376dd9afd2112763aed5aa48240a0ea5c69b0c2ad83b64131c",
+    "homotopy/ExportDependencies.lean": "37967f15eb58f80391d9e34845f3b99d3b8dca40dc6dd95ed697820e7c49d4c7",
+    "homotopy/bind_publication.py": "03eb07d8cf06c3cc68d72bbdd856a8aeeb76edea19d5d2ae78e40564e1f31ff0",
+    "homotopy/closeout-development/command.json": "3dcb0e282b442643df85ab49b83c1e774010277de87a33548b59e9f83f31c3cb",
+    "homotopy/closeout-development/refresh.log": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+    "homotopy/freeze_prerequisite_inventory.py": "d95e8b3ef9a6d0610752fc2405eb81c0a1192b47011bd50a82e4517055e454e5",
+    "homotopy/infrastructure-preparation/accepted-register-refresh.json": "7b631a012e6b8aefecab21cdf6f8d24c5051bb07b28880ae0d79890b28e0f99f",
+    "homotopy/infrastructure-preparation/accepted-register-refresh.log": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+    "homotopy/infrastructure-preparation/bind-publication.log": "36d347c607062d4231478fdccff6636644c66a306fbd3a3d006a08bcbbd29851",
+    "homotopy/infrastructure-preparation/cache-plan.log": "2f212881b923cf6f1ea22a4350d1af903614f3a3c5a712da1bb114732437ad35",
+    "homotopy/infrastructure-preparation/commands.json": "5f93b97e78c8a3745954f6ec43b0dc552c6bf0ac328b52bbccb3ba45bf7c5a34",
+    "homotopy/infrastructure-preparation/freeze-inventory-command.json": "4646dfd7d9049a53eef042af296d37fc965b71ed5078254c4df85420c8b69e93",
+    "homotopy/infrastructure-preparation/freeze-inventory.log": "12572cabf08162dccc4a2d2daf20cbf2c9b0d5aece740d94d71963958fd5ad4f",
+    "homotopy/infrastructure-preparation/provider-root-bindings.json": "c9dedfe5165eacb0f3378a66aeb640967dc358532a35e4850e479bd2701458b8",
+    "homotopy/infrastructure-preparation/published-register-refresh.json": "fba742085daca554dcc246d5d16606b9a84e77bd9f6b994ee0155958546121f8",
+    "homotopy/infrastructure-preparation/published-register-refresh.log": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+    "homotopy/infrastructure-preparation/ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "homotopy/infrastructure-preparation/skip-clean-commands.json": "2189988ffe5d546053f7bc3876c7b35773a19836da76e8f195744d2bdd6cd2ac",
+    "homotopy/infrastructure-preparation/skip-clean-final-rejected.log": "e066ab356474819b636effc4ecfe2a513460533ffb294fe847bc8d50b2fe99fb",
+    "homotopy/infrastructure-preparation/skip-clean-ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "homotopy/infrastructure-preparation/skip-clean-technical-plan.log": "d048a76d783d1e62b4cd11dcec1766c113f3899fad7c5047663b38da2f209cdd",
+    "homotopy/infrastructure-preparation/validate-export.log": "9290500002bf11018562ed83ab65e561f15c99c680a9997258e34b91ce7311db",
+    "homotopy/infrastructure-preparation/validate-publication.log": "9b5f44ef446af1b870d5450a30e53c175ac481e84f58197a7ac2f4176040fcb9",
+    "homotopy/infrastructure-preparation/write-audit-01.log": "868205ea10afffae8f840c9e68177e9faaa8d2e104e3627db995329ee6649c9f",
+    "homotopy/register_inputs.py": "2d2182bc1bac94eb3993d04be78d58421adf668fdf02baf5d6cca90c12437bf6",
+    "homotopy/run-20261114T113600Z/execution.json": "7064a109aa10807750bd651c82b9de9c7a9f4671849b1e2b51b002582468ef98",
+    "homotopy/run-20261114T113600Z/graph.json.gz": "47ac956e0401afece3a556adfe72e241b99fe7fbdd466cd974eb040088455667",
+    "homotopy/run-20261114T113600Z/graph.raw.json.gz": "693185b3951306750fe45d6b63d4fe19079022dfb8d3f592588c147b62e4c491",
+    "homotopy/run-20261114T113600Z/logs/final-observer.log": "f9f91407b313d44668eb16ae671143da6faec2ddf81b1276dd4a5bd8be8c39d9",
+    "homotopy/run-20261114T113600Z/logs/lean-path.log": "59bd47516ada7009d11c0e4c9243f36229878770108b7c643879a096a54d319e",
+    "homotopy/run-20261114T113600Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "homotopy/run-20261114T113600Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "homotopy/run-20261114T113600Z/logs/observed-git-head.log": "38707e8f2203c2f0cdfb0b65747bff514fdffa1301446a736d4a3cdc6d5edc0f",
+    "homotopy/run-20261114T113600Z/logs/observed-git-tree.log": "47c0630244080a7f883d2914ab8c773e52a0a84089e32d47188915ea1628b6e3",
+    "homotopy/run-20261114T113600Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "homotopy/run-20261114T113600Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "homotopy/run-20261114T113600Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "homotopy/run-20261114T113600Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "homotopy/run-20261114T113600Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "homotopy/run-20261114T113600Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "homotopy/run-20261114T113600Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "homotopy/run-20261114T113600Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "homotopy/run-20261114T113600Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "homotopy/run-20261114T113600Z/logs/preliminary-observer.log": "35e37a13092ef2b4c9b670673d44abe106b205f20e31c7e8fafb86d38370032a",
+    "homotopy/run-20261114T113600Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "homotopy/run-20261114T113600Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "homotopy/run-20261114T113600Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "homotopy/run-20261114T113600Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/preliminary.raw.json.gz": "e9ad3ea22098d0d405eacca2f42abdc0b781539343b7d1ca9cf7249513aa8e78",
+    "homotopy/run_export.py": "7694a2ff2cb126e95c1990a869babbbad772f966f5b9d50010bb89bd93fcb74b",
+    "homotopy/validate_export.py": "20b0cba24a899832e0643071d282d07921f1398ac7e502fd69b8f7a58cf317d1",
+    "homotopy/validate_publication.py": "dcbd53af047542a40cf830c28607d98499db75cbf45f978089bebb2f7abb96ef",
+    "homotopy/validation.json": "f18ce5ace03f5fd61fb6080d0176834f6d6dfee68074a533fdf66c818acff806",
+    "m3/ledger-validation-after-publication-final.json": "78e0e4b659c456ca960476c4e10efec39649c57937f2b75f14e86fe6ef6bf1b2",
+    "m3/ledger-validation-after-publication.json": "7642b5b0da53bdc6ded34f9d11731ecb2e82730bec1034c58857a76e1d606965",
+    "m3/run-20261114T065009Z/execution.json": "9f0fd90c475ee78f39c3e213cf7b3829fd1bc442989ad69f4e4b3d85ccbdf817",
+    "m3/run-20261114T065009Z/graph.json.gz": "585acaaa5c6ef4b9320d63f1c23524c9358ef8a57ccdb91a93eea2878b5d0858",
+    "m3/run-20261114T065009Z/graph.raw.json.gz": "71d7ac4e096e7583fa94210496b2bb6d2679fa3925ec42523000c9d43e7be74c",
+    "m3/run-20261114T065009Z/logs/final-observer.log": "e00f2f77a33bf07ed7b61c00fbe588d9d2b04ee99c63d7ca90de29bda159ac06",
+    "m3/run-20261114T065009Z/logs/lean-path.log": "f3f0cfe826ce87c370ba4d9c29bd84ebfa9a5de0b40623bc7f9514ab8d8b89be",
+    "m3/run-20261114T065009Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m3/run-20261114T065009Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m3/run-20261114T065009Z/logs/observed-git-head.log": "3775f6272f2bfd6bb11f6dc1577ae59389ad841b73d99b9acc29c1c9394d2e1b",
+    "m3/run-20261114T065009Z/logs/observed-git-tree.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m3/run-20261114T065009Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m3/run-20261114T065009Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m3/run-20261114T065009Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m3/run-20261114T065009Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m3/run-20261114T065009Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m3/run-20261114T065009Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m3/run-20261114T065009Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m3/run-20261114T065009Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m3/run-20261114T065009Z/logs/preliminary-observer.log": "371baa4b6402f08564fb94f488b8060dda0003f733c5f785043578ce5dfab150",
+    "m3/run-20261114T065009Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m3/run-20261114T065009Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m3/run-20261114T065009Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m3/run-20261114T065009Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/preliminary.raw.json.gz": "efa077fb63e2cab81a59bb33e49d35a860b9aae1571681dc9138c06732ce6b14",
+    "m3/source-attribution.json": "298aa294dbe8e415109cba1c48af4a821dad6012a517f27df9c8a74333efcab2",
+    "m3/validation.json": "6bbc6f1ba6e8d92402d9270fbb514e212f2a7556b909cbadbe8f7d51deb344d8",
+    "m4/development-lint-check.json": "f9db4739a495df9a712ea8ee3c1fbf1d8588a56e7147299e349e3cd9e90e46b8",
+    "m4/development-lint-check.log": "934eff68b3bc38ef81d8a69a9c88bec20bfd6172d61892d22fa1c0deb34614cd",
+    "m4/run-20261114T080416Z/execution.json": "90df0f22aba019ee5a37231373ef26b7b2ea8c60f1481d3c601602a80b1ebaa7",
+    "m4/run-20261114T080416Z/graph.json.gz": "436ceb121742b0b80300532aaffc85aabcb05b0c85bcddeb9f2818c339bbd569",
+    "m4/run-20261114T080416Z/graph.raw.json.gz": "1d41f273e6a2fc94a182fc1179f738873df5aff311e05487ac3a2952bf3f641d",
+    "m4/run-20261114T080416Z/logs/final-observer.log": "82f7aa1d78f6b97f96fe44ce0be66ee8182a58e083a2dac9fe1d0a5ccb9e557a",
+    "m4/run-20261114T080416Z/logs/lean-path.log": "9bdc8140bd972b6d051f766b12c72f6bfec770712a36b9884e81701eddf55336",
+    "m4/run-20261114T080416Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m4/run-20261114T080416Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m4/run-20261114T080416Z/logs/observed-git-head.log": "9acd4496bbf00e30f28bd64b3f03c9bf93b62161e905ac80da072217fc826d64",
+    "m4/run-20261114T080416Z/logs/observed-git-tree.log": "653d21d9a05bb6feaba4a243bbe91a3b6d4b6b3a95ac721b440a913a1bc1aa0a",
+    "m4/run-20261114T080416Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m4/run-20261114T080416Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m4/run-20261114T080416Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m4/run-20261114T080416Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m4/run-20261114T080416Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m4/run-20261114T080416Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m4/run-20261114T080416Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m4/run-20261114T080416Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m4/run-20261114T080416Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m4/run-20261114T080416Z/logs/preliminary-observer.log": "7ce910b904e6111b7594e9c9b557bcf35abe55ca5f2de255e65e5c66e75339b6",
+    "m4/run-20261114T080416Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m4/run-20261114T080416Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m4/run-20261114T080416Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m4/run-20261114T080416Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/preliminary.raw.json.gz": "45b3fe360f7e428c2f678ae716ed576ce02fcd85918206b0435d34d81fc7ab4d",
+    "m4/validation.json": "1813b4391794fe3f8e09fd7d13b81995e8db8dfcedef999e4d7eab3c8dea7713",
+    "m5/freeze_prerequisite_inventory.py": "fe0101d6d58bd1b77dcd79760151ec63c5fd6accb6ba66e40e5c1581ff934609",
+    "m5/publication-development/ledger-refresh.json": "6185bc914cfea775b22ee30a288d1a67472114717cc7969fdcb0049d006c7eb8",
+    "m5/publication-development/ledger-refresh.log": "a856e06f423f268f29a32cb661a7782e4eadeab0ef9a21491bb9a261fa55ab6f",
+    "m5/publication-development/validation-attempt-1.json": "5cca0724075e13dd87ed6cc76723d338164af86f912419e55f6d3edb9c42e97b",
+    "m5/publication-development/validation-attempt-2.log": "c3e74b8fcfc975c1418d4d93473aaccb5f7c843e3230bf3c4511a71ed3ff0a6c",
+    "m5/register_inputs.py": "fb16c9d5f7da70f0537815a54e29bcda1554552fe9c7e10336918d2e3b779e88",
+    "m5/run-20261114T090600Z/execution.json": "0ae83c62290ef1f43bc08eb7115a06f9d949a2b192246e19aefb9264fba176e8",
+    "m5/run-20261114T090600Z/graph.json.gz": "9a9643f95ef6c60c742fdf24c80ef7f15dfc887604eb40cbb4d37395e9aacf1b",
+    "m5/run-20261114T090600Z/graph.raw.json.gz": "0b584f166568f0ce8a6f4041ac1f502595997b1f6cd5d1b2325359edc1fa028c",
+    "m5/run-20261114T090600Z/logs/final-observer.log": "b349e0b914f81e7245416459fdcacdd15d47c5dd20bebae09e65ee42ec87d31f",
+    "m5/run-20261114T090600Z/logs/lean-path.log": "4dc1a4a06f58368012bd819c1aa3a7df841a23328a7c47c36c3db7c99cac00e0",
+    "m5/run-20261114T090600Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m5/run-20261114T090600Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m5/run-20261114T090600Z/logs/observed-git-head.log": "475c3a5d9e55a61b6761ff270db415840ae90918a4e7754451ca7607daa10b11",
+    "m5/run-20261114T090600Z/logs/observed-git-tree.log": "df7aa2141c9ee0160f0aa30ada6bbf92172bc83ac986ef04417fd9aa44b58f0a",
+    "m5/run-20261114T090600Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m5/run-20261114T090600Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m5/run-20261114T090600Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m5/run-20261114T090600Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m5/run-20261114T090600Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m5/run-20261114T090600Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m5/run-20261114T090600Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m5/run-20261114T090600Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m5/run-20261114T090600Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m5/run-20261114T090600Z/logs/preliminary-observer.log": "f790b83a1ff727c1186a1656676206a2edcc72cb72f4b749cf80a22c8697d6eb",
+    "m5/run-20261114T090600Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m5/run-20261114T090600Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m5/run-20261114T090600Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m5/run-20261114T090600Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/preliminary.raw.json.gz": "ffd1dc9ff34396238a2665ea702644baa0521ef2511b59ce779fe41e93047edb",
+    "m5/validation.json": "9b029db323b10ce131abb188dbfca3f58509b1a2140af49c07cfddd324383b16",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json": "73a0ad996ad03ae92624705b249acd0ff442b2190835aeaa1387aecce942cad5",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/git-cat-file.stdin.txt": "94e3354f0960b3814a4cf5217b41bfe11df5bc47f30b82371c146facfeaa91ac",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/git-cat-file.stdout.gz": "af40daad0e4de4ec2356f952d17f43e89ac537331ec69e3e4d3343d90025fa32",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/git-ls-tree.stdout.gz": "441875bfd064fafb9cee04aabd639c35e8b2740f9d8456e69e1128031b057355",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/validation.json": "4a48f64f790f7ea8890a55836c8bf5ffc5e0c546abb511fbc83a58c0bbf6c19e",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json": "d335e6bae0de396b82b3116143a933ec45847add5bf63d8ce835f59382ac65fd",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdin.txt": "48b3b11ee07a1ae0f61d200e89dae7fb93a4badba65682f51bf7a5bed0a9b46d",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdout.gz": "af64a3cf4a5eac9dcb92d90b0bc2a713229cb6fc76258fbab57adc75c9619709",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-ls-tree.stdout.gz": "69b60670561ef9ddc129c53b8ffa137eca26243ae04fcc8012d4f89f4c6cc261",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/validation.json": "9a5d39c16a5bae46cd63a0096354ce142efcdcf942ce648aa53d95003c2ebf3a",
+    "publications/9dacc8befce702eed601430c776da385cab07343/binding.json": "94e285c3549316d66a91428636754b213b6296f518baf5e1d1a22639e93a69cc",
+    "publications/9dacc8befce702eed601430c776da385cab07343/git-cat-file.stdin.txt": "768a762ff885c4b297a765ca5616b5a1872b49aa8f23ef82a4538fc52b3712d2",
+    "publications/9dacc8befce702eed601430c776da385cab07343/git-cat-file.stdout.gz": "2b0db8baa4e0aac2265b5e6bab6a702c6f97f707284dcef4dc82327a588e6f39",
+    "publications/9dacc8befce702eed601430c776da385cab07343/git-ls-tree.stdout.gz": "26ecf24556166cfc25d38904cd3fedbcefb1fe993a808dd2bb2d82e1f30c1063",
+    "publications/9dacc8befce702eed601430c776da385cab07343/observer-sources/ExportDependencies.lean": "37967f15eb58f80391d9e34845f3b99d3b8dca40dc6dd95ed697820e7c49d4c7",
+    "publications/9dacc8befce702eed601430c776da385cab07343/observer-sources/run_export.py": "7694a2ff2cb126e95c1990a869babbbad772f966f5b9d50010bb89bd93fcb74b",
+    "publications/9dacc8befce702eed601430c776da385cab07343/validation.json": "2bc0167f406291ab60b4e7c14a7d4b072b764638047bb30e0292e7436b32517c",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/binding.json": "9f3b5aae9aa3ffdedf26c319e0227104a49682973e354cf6f643d4a9c7d75e47",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/git-cat-file.stdin.txt": "1b8cffd6217acfe55290b6cf542e05d0bd3dd1eb1c545a46dd8217a9a6eb3159",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/git-cat-file.stdout.gz": "11de452dd4dda8c795f8109d5f7146537e1866d5c52a7c6eed4434c462d85aff",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/git-ls-tree.stdout.gz": "74a154d6c7bef1f183126ddb4e4aaf03eb8135116fe004c7904e2ea92a30e472",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/observer-sources/ExportM4Dependencies.lean": "6cdc0a6cb0d7c88ef97939e16c7e97745b0806e5cf61e3c31ab3b4599e0ba228",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/observer-sources/run_m4_export.py": "1a61f84b2ac28c44cc5de4c35e26c61ecd683b294518c1211b7f67d75a8c0242",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/validation.json": "cd780b551d015c2fa1c9d33dd9e03a74349d80e948614f4c5456abe9d25dd2b0",
+    "refresh_ledger.py": "69ee47939efbf19a0880efff2a9c6cf0c9d23ffadb0c636ccb6999aabcd113f6",
+    "run_export.py": "ce4b5cce2c01f33611d124118e4d31735c70b46e3bb797ad34ac36cd997a8083",
+    "run_m3_export.py": "9951ac817a0fb0f02cae368425107cc1d76db03d9d065a43a0749e9e88aaad31",
+    "run_m4_export.py": "1a61f84b2ac28c44cc5de4c35e26c61ecd683b294518c1211b7f67d75a8c0242",
+    "run_m5_export.py": "9059116c067891cd2e9187c661bb345d0bb18763395b242693471bb984b1e9c0",
+    "searches/m3-openai-candidate-register.json": "10b3118109d14b286697c8e334a946c616a739e67c1a2384a180d55fb76d81af",
+    "searches/m3-other-inventory.json": "d5c63ef6978710c9067e4dd10e8f672684bfce5d5a0474a68a2e3e7635346ea7",
+    "searches/m3-qinz-fullgroupoid-closure.json": "bbf63b71575092b259a20a8eac46c9a0629389ff28956741ff12da81fa052cfb",
+    "searches/m4-other-inventory.json": "7944c04dc91fe2b54c009b3322ecda940f5ea9636e97bb564b0124fb580585b4",
+    "searches/m5-carrier-inventory.json": "dfcdc722d5b0a7404e85338b32a27a618edd6a67cdc231f366f8e8b89feb4843",
+    "searches/m5-next-core-inventory.json": "5849ddc02b294bc2a3939f9746f6920f4923245bdcdf7633b6e010588cc01248",
+    "searches/m5-openai-inventory.json": "375da30dc0480df9c664a9126f009b103e85b760777c4f5bfbcfa2a97c6916a5",
+    "searches/m5-other-inventory.json": "bccb1c5cb2dbe9f32ea5f358008dba8c74d2db8176fe40452b50a3465a9c42bd",
+    "searches/m5-tauceti-inventory.json": "41d511ae6fac8437217578cc9e2a2967b2199a4742c13c686ef973ee6faf612e",
+    "searches/oai-salvetti-closure.json": "354182d6aa500ba2a6e635fd23080f647e6c7f0ccc0c2865667dc34fff2c9d2c",
+    "searches/tauceti-cech-closure.json": "45fafddf57b0c576a32d125233d6f5df58424205ea51678475b4359f5707abe6",
+    "validate_ledger.py": "d5ebd01c53730e4216bfe289dddc1e0dff3d35ab31191be68b6f2ab7e402ee74",
+    "validate_m3_export.py": "729f8e9b88fd3fc34db6305cf28e82e544f14893153d42c128bd94a7e906348a",
+    "validate_m4_export.py": "291a2b65bc92518f0dce118d40635b4bf15bccc8aa71dea5d4db754be7633632",
+    "validate_m4_publication.py": "db2e3fe28b26a261a7753a1a312302b16b9995fc7a245555c4d260e52056d674",
+    "validate_m5_export.py": "6a78fcece2897934340700cf874cb60c4043938bcf58df6141116b69cd4caa07",
+    "validate_m5_publication.py": "04be4d1337a77b2f7629ccc0a60329c074bfc2113b7844fa6f1b96e849a5dbdd",
+    "validate_publication.py": "fa935fd36552ea2149121c3a97a801f0aa0c930bdc54d41425bdad1aa3cf18d1",
+    "validation.json": "c189a2095b0a26e9776fa43cc2b5737aca90260f4bd31c226584a45dc07f01d9"
+  },
+  "baseline_archive_sha256_before": {
+    "ExportDependencies.lean": "f9a686d51bedf57d04de4105a2c57538d66a6ec2f908c3b099f30eb4abb681fa",
+    "ExportM3Dependencies.lean": "663ef05a28c98d84fd043fec010405b7a8d44c95f081f35d3b4059c3044e1ea8",
+    "ExportM4Dependencies.lean": "6cdc0a6cb0d7c88ef97939e16c7e97745b0806e5cf61e3c31ab3b4599e0ba228",
+    "ExportM5Dependencies.lean": "189af66d03119d4547d753f8718286b77493c5e3dd6e1235d8b54f777d5f4cbe",
+    "HOMOTOPY-EXPORT.md": "dc22196571375b2fa6500dfb8e4fe41db90aea11880bade346aaa4a23be4595f",
+    "M3-EXPORT.md": "582a476f7ef3e28b5ce2020db8b93301dcb1f6f5ccb4f337b50873e9e64787fb",
+    "M4-EXPORT.md": "9871a214d2a02a0121b8f986214615d5d486ea79cf1db373e93d169d9a30fc60",
+    "M5-EXPORT.md": "54cec221cf502eff5b61988c14ac3a7c05eba2abdafccf858bd10dce51d1491f",
+    "acceptance-deligne-carriers.json": "44e503285e4a41110212afeed84702975933a8b5c09a5aeaf4e572d3fcab44f7",
+    "acceptance-deligne-weights.json": "4a4b49b51c7c1c59f017230fc3878b000989dc11c1056116c6094de73d4fee71",
+    "acceptance-homotopy-colib.json": "60058970da3c04dd377a7f5d0aced233c7fd2ddee8c97bd50e7d27c3cb1dbf44",
+    "acceptance-landmark3-cech.json": "5fb052908ca576a9cefcbc6d68e23418d9a5434d2588010f5300581de68e979e",
+    "acceptance-landmark4-basepoint.json": "b6ace0d55c6e6b1456c4e3a9cc0c951944a2a840857c4fbeb84724ba9e6c19c6",
+    "acceptance-landmark5-topology.json": "d680af294fd4c22afc243c7071578e6cd0fb4de8b5b181e09b18970575b5d895",
+    "bind_m3_publication.py": "6b86eab2418c1287e8ee85f5440ce9334a701ae825e8d50276ef0bf36bfe9a0f",
+    "bind_m4_publication.py": "f60fabcc9eda49db6af36445a19e1b3d6c6a030fc71d5ae38d53f0c329aba6f3",
+    "bind_m5_publication.py": "392fa9bdab6d5f81c2df285fd5e12ebb4516a6690e3fd5e62ad0df8cab7185f8",
+    "dependency-graph.json.gz": "15ff472bad85f947e823b0c7be7ab98dfcd68bdd0528b98f1f2529d827c21255",
+    "dependency-graph.raw.json.gz": "cf1460b8afc4bc802d19cdada9a2ea7027ba0161c32055baf37d0df13c1e9fea",
+    "development-history.jsonl": "c4e6cdb46dbb739955d60693fdd00e002024f172f6f9aabed8d7190cbeaa4663",
+    "development-sources.json": "47239ed3f373de7d01c0c79b2df9548561e1c5a89b53897c4d050ffc4fb8ec65",
+    "export-attempt-1.log": "8f0cedbadcb3dca9374cc5fc8a92ef8c70b21fea1888e0d093840a5e542976e6",
+    "export-attempt-2.log": "03e848e308783c03fe4fb24b840b9c15f1f7c2473b6ed4ddde6209f7bc0cd662",
+    "export-attempt-3.log": "5ef3790a318e404f9aed3ff64cf075bc9a012c791bd3e80b5c9b9a7e0c776505",
+    "export-execution-initial.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-execution.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-final.log": "0e5eeb075c9601376dd9afd2112763aed5aa48240a0ea5c69b0c2ad83b64131c",
+    "homotopy/ExportDependencies.lean": "37967f15eb58f80391d9e34845f3b99d3b8dca40dc6dd95ed697820e7c49d4c7",
+    "homotopy/bind_publication.py": "03eb07d8cf06c3cc68d72bbdd856a8aeeb76edea19d5d2ae78e40564e1f31ff0",
+    "homotopy/closeout-development/command.json": "3dcb0e282b442643df85ab49b83c1e774010277de87a33548b59e9f83f31c3cb",
+    "homotopy/closeout-development/refresh.log": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+    "homotopy/freeze_prerequisite_inventory.py": "d95e8b3ef9a6d0610752fc2405eb81c0a1192b47011bd50a82e4517055e454e5",
+    "homotopy/infrastructure-preparation/accepted-register-refresh.json": "7b631a012e6b8aefecab21cdf6f8d24c5051bb07b28880ae0d79890b28e0f99f",
+    "homotopy/infrastructure-preparation/accepted-register-refresh.log": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+    "homotopy/infrastructure-preparation/bind-publication.log": "36d347c607062d4231478fdccff6636644c66a306fbd3a3d006a08bcbbd29851",
+    "homotopy/infrastructure-preparation/cache-plan.log": "2f212881b923cf6f1ea22a4350d1af903614f3a3c5a712da1bb114732437ad35",
+    "homotopy/infrastructure-preparation/commands.json": "5f93b97e78c8a3745954f6ec43b0dc552c6bf0ac328b52bbccb3ba45bf7c5a34",
+    "homotopy/infrastructure-preparation/freeze-inventory-command.json": "4646dfd7d9049a53eef042af296d37fc965b71ed5078254c4df85420c8b69e93",
+    "homotopy/infrastructure-preparation/freeze-inventory.log": "12572cabf08162dccc4a2d2daf20cbf2c9b0d5aece740d94d71963958fd5ad4f",
+    "homotopy/infrastructure-preparation/provider-root-bindings.json": "c9dedfe5165eacb0f3378a66aeb640967dc358532a35e4850e479bd2701458b8",
+    "homotopy/infrastructure-preparation/published-register-refresh.json": "fba742085daca554dcc246d5d16606b9a84e77bd9f6b994ee0155958546121f8",
+    "homotopy/infrastructure-preparation/published-register-refresh.log": "a27ffe066e58e2fb751aae48edab2f9eab8aceed003db0da4caa320c7801f105",
+    "homotopy/infrastructure-preparation/ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "homotopy/infrastructure-preparation/skip-clean-commands.json": "2189988ffe5d546053f7bc3876c7b35773a19836da76e8f195744d2bdd6cd2ac",
+    "homotopy/infrastructure-preparation/skip-clean-final-rejected.log": "e066ab356474819b636effc4ecfe2a513460533ffb294fe847bc8d50b2fe99fb",
+    "homotopy/infrastructure-preparation/skip-clean-ruff.log": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "homotopy/infrastructure-preparation/skip-clean-technical-plan.log": "d048a76d783d1e62b4cd11dcec1766c113f3899fad7c5047663b38da2f209cdd",
+    "homotopy/infrastructure-preparation/validate-export.log": "9290500002bf11018562ed83ab65e561f15c99c680a9997258e34b91ce7311db",
+    "homotopy/infrastructure-preparation/validate-publication.log": "9b5f44ef446af1b870d5450a30e53c175ac481e84f58197a7ac2f4176040fcb9",
+    "homotopy/infrastructure-preparation/write-audit-01.log": "868205ea10afffae8f840c9e68177e9faaa8d2e104e3627db995329ee6649c9f",
+    "homotopy/register_inputs.py": "2d2182bc1bac94eb3993d04be78d58421adf668fdf02baf5d6cca90c12437bf6",
+    "homotopy/run-20261114T113600Z/execution.json": "7064a109aa10807750bd651c82b9de9c7a9f4671849b1e2b51b002582468ef98",
+    "homotopy/run-20261114T113600Z/graph.json.gz": "47ac956e0401afece3a556adfe72e241b99fe7fbdd466cd974eb040088455667",
+    "homotopy/run-20261114T113600Z/graph.raw.json.gz": "693185b3951306750fe45d6b63d4fe19079022dfb8d3f592588c147b62e4c491",
+    "homotopy/run-20261114T113600Z/logs/final-observer.log": "f9f91407b313d44668eb16ae671143da6faec2ddf81b1276dd4a5bd8be8c39d9",
+    "homotopy/run-20261114T113600Z/logs/lean-path.log": "59bd47516ada7009d11c0e4c9243f36229878770108b7c643879a096a54d319e",
+    "homotopy/run-20261114T113600Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "homotopy/run-20261114T113600Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "homotopy/run-20261114T113600Z/logs/observed-git-head.log": "38707e8f2203c2f0cdfb0b65747bff514fdffa1301446a736d4a3cdc6d5edc0f",
+    "homotopy/run-20261114T113600Z/logs/observed-git-tree.log": "47c0630244080a7f883d2914ab8c773e52a0a84089e32d47188915ea1628b6e3",
+    "homotopy/run-20261114T113600Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "homotopy/run-20261114T113600Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "homotopy/run-20261114T113600Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "homotopy/run-20261114T113600Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "homotopy/run-20261114T113600Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "homotopy/run-20261114T113600Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "homotopy/run-20261114T113600Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "homotopy/run-20261114T113600Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "homotopy/run-20261114T113600Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "homotopy/run-20261114T113600Z/logs/preliminary-observer.log": "35e37a13092ef2b4c9b670673d44abe106b205f20e31c7e8fafb86d38370032a",
+    "homotopy/run-20261114T113600Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "homotopy/run-20261114T113600Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "homotopy/run-20261114T113600Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "homotopy/run-20261114T113600Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "homotopy/run-20261114T113600Z/preliminary.raw.json.gz": "e9ad3ea22098d0d405eacca2f42abdc0b781539343b7d1ca9cf7249513aa8e78",
+    "homotopy/run_export.py": "7694a2ff2cb126e95c1990a869babbbad772f966f5b9d50010bb89bd93fcb74b",
+    "homotopy/validate_export.py": "20b0cba24a899832e0643071d282d07921f1398ac7e502fd69b8f7a58cf317d1",
+    "homotopy/validate_publication.py": "dcbd53af047542a40cf830c28607d98499db75cbf45f978089bebb2f7abb96ef",
+    "homotopy/validation.json": "f18ce5ace03f5fd61fb6080d0176834f6d6dfee68074a533fdf66c818acff806",
+    "m3/ledger-validation-after-publication-final.json": "78e0e4b659c456ca960476c4e10efec39649c57937f2b75f14e86fe6ef6bf1b2",
+    "m3/ledger-validation-after-publication.json": "7642b5b0da53bdc6ded34f9d11731ecb2e82730bec1034c58857a76e1d606965",
+    "m3/run-20261114T065009Z/execution.json": "9f0fd90c475ee78f39c3e213cf7b3829fd1bc442989ad69f4e4b3d85ccbdf817",
+    "m3/run-20261114T065009Z/graph.json.gz": "585acaaa5c6ef4b9320d63f1c23524c9358ef8a57ccdb91a93eea2878b5d0858",
+    "m3/run-20261114T065009Z/graph.raw.json.gz": "71d7ac4e096e7583fa94210496b2bb6d2679fa3925ec42523000c9d43e7be74c",
+    "m3/run-20261114T065009Z/logs/final-observer.log": "e00f2f77a33bf07ed7b61c00fbe588d9d2b04ee99c63d7ca90de29bda159ac06",
+    "m3/run-20261114T065009Z/logs/lean-path.log": "f3f0cfe826ce87c370ba4d9c29bd84ebfa9a5de0b40623bc7f9514ab8d8b89be",
+    "m3/run-20261114T065009Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m3/run-20261114T065009Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m3/run-20261114T065009Z/logs/observed-git-head.log": "3775f6272f2bfd6bb11f6dc1577ae59389ad841b73d99b9acc29c1c9394d2e1b",
+    "m3/run-20261114T065009Z/logs/observed-git-tree.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m3/run-20261114T065009Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m3/run-20261114T065009Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m3/run-20261114T065009Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m3/run-20261114T065009Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m3/run-20261114T065009Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m3/run-20261114T065009Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m3/run-20261114T065009Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m3/run-20261114T065009Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m3/run-20261114T065009Z/logs/preliminary-observer.log": "371baa4b6402f08564fb94f488b8060dda0003f733c5f785043578ce5dfab150",
+    "m3/run-20261114T065009Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m3/run-20261114T065009Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m3/run-20261114T065009Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m3/run-20261114T065009Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/preliminary.raw.json.gz": "efa077fb63e2cab81a59bb33e49d35a860b9aae1571681dc9138c06732ce6b14",
+    "m3/source-attribution.json": "298aa294dbe8e415109cba1c48af4a821dad6012a517f27df9c8a74333efcab2",
+    "m3/validation.json": "6bbc6f1ba6e8d92402d9270fbb514e212f2a7556b909cbadbe8f7d51deb344d8",
+    "m4/development-lint-check.json": "f9db4739a495df9a712ea8ee3c1fbf1d8588a56e7147299e349e3cd9e90e46b8",
+    "m4/development-lint-check.log": "934eff68b3bc38ef81d8a69a9c88bec20bfd6172d61892d22fa1c0deb34614cd",
+    "m4/run-20261114T080416Z/execution.json": "90df0f22aba019ee5a37231373ef26b7b2ea8c60f1481d3c601602a80b1ebaa7",
+    "m4/run-20261114T080416Z/graph.json.gz": "436ceb121742b0b80300532aaffc85aabcb05b0c85bcddeb9f2818c339bbd569",
+    "m4/run-20261114T080416Z/graph.raw.json.gz": "1d41f273e6a2fc94a182fc1179f738873df5aff311e05487ac3a2952bf3f641d",
+    "m4/run-20261114T080416Z/logs/final-observer.log": "82f7aa1d78f6b97f96fe44ce0be66ee8182a58e083a2dac9fe1d0a5ccb9e557a",
+    "m4/run-20261114T080416Z/logs/lean-path.log": "9bdc8140bd972b6d051f766b12c72f6bfec770712a36b9884e81701eddf55336",
+    "m4/run-20261114T080416Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m4/run-20261114T080416Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m4/run-20261114T080416Z/logs/observed-git-head.log": "9acd4496bbf00e30f28bd64b3f03c9bf93b62161e905ac80da072217fc826d64",
+    "m4/run-20261114T080416Z/logs/observed-git-tree.log": "653d21d9a05bb6feaba4a243bbe91a3b6d4b6b3a95ac721b440a913a1bc1aa0a",
+    "m4/run-20261114T080416Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m4/run-20261114T080416Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m4/run-20261114T080416Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m4/run-20261114T080416Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m4/run-20261114T080416Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m4/run-20261114T080416Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m4/run-20261114T080416Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m4/run-20261114T080416Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m4/run-20261114T080416Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m4/run-20261114T080416Z/logs/preliminary-observer.log": "7ce910b904e6111b7594e9c9b557bcf35abe55ca5f2de255e65e5c66e75339b6",
+    "m4/run-20261114T080416Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m4/run-20261114T080416Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m4/run-20261114T080416Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m4/run-20261114T080416Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m4/run-20261114T080416Z/preliminary.raw.json.gz": "45b3fe360f7e428c2f678ae716ed576ce02fcd85918206b0435d34d81fc7ab4d",
+    "m4/validation.json": "1813b4391794fe3f8e09fd7d13b81995e8db8dfcedef999e4d7eab3c8dea7713",
+    "m5/freeze_prerequisite_inventory.py": "fe0101d6d58bd1b77dcd79760151ec63c5fd6accb6ba66e40e5c1581ff934609",
+    "m5/publication-development/ledger-refresh.json": "6185bc914cfea775b22ee30a288d1a67472114717cc7969fdcb0049d006c7eb8",
+    "m5/publication-development/ledger-refresh.log": "a856e06f423f268f29a32cb661a7782e4eadeab0ef9a21491bb9a261fa55ab6f",
+    "m5/publication-development/validation-attempt-1.json": "5cca0724075e13dd87ed6cc76723d338164af86f912419e55f6d3edb9c42e97b",
+    "m5/publication-development/validation-attempt-2.log": "c3e74b8fcfc975c1418d4d93473aaccb5f7c843e3230bf3c4511a71ed3ff0a6c",
+    "m5/register_inputs.py": "fb16c9d5f7da70f0537815a54e29bcda1554552fe9c7e10336918d2e3b779e88",
+    "m5/run-20261114T090600Z/execution.json": "0ae83c62290ef1f43bc08eb7115a06f9d949a2b192246e19aefb9264fba176e8",
+    "m5/run-20261114T090600Z/graph.json.gz": "9a9643f95ef6c60c742fdf24c80ef7f15dfc887604eb40cbb4d37395e9aacf1b",
+    "m5/run-20261114T090600Z/graph.raw.json.gz": "0b584f166568f0ce8a6f4041ac1f502595997b1f6cd5d1b2325359edc1fa028c",
+    "m5/run-20261114T090600Z/logs/final-observer.log": "b349e0b914f81e7245416459fdcacdd15d47c5dd20bebae09e65ee42ec87d31f",
+    "m5/run-20261114T090600Z/logs/lean-path.log": "4dc1a4a06f58368012bd819c1aa3a7df841a23328a7c47c36c3db7c99cac00e0",
+    "m5/run-20261114T090600Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m5/run-20261114T090600Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m5/run-20261114T090600Z/logs/observed-git-head.log": "475c3a5d9e55a61b6761ff270db415840ae90918a4e7754451ca7607daa10b11",
+    "m5/run-20261114T090600Z/logs/observed-git-tree.log": "df7aa2141c9ee0160f0aa30ada6bbf92172bc83ac986ef04417fd9aa44b58f0a",
+    "m5/run-20261114T090600Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m5/run-20261114T090600Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m5/run-20261114T090600Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m5/run-20261114T090600Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m5/run-20261114T090600Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m5/run-20261114T090600Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m5/run-20261114T090600Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m5/run-20261114T090600Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m5/run-20261114T090600Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m5/run-20261114T090600Z/logs/preliminary-observer.log": "f790b83a1ff727c1186a1656676206a2edcc72cb72f4b749cf80a22c8697d6eb",
+    "m5/run-20261114T090600Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m5/run-20261114T090600Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m5/run-20261114T090600Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m5/run-20261114T090600Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m5/run-20261114T090600Z/preliminary.raw.json.gz": "ffd1dc9ff34396238a2665ea702644baa0521ef2511b59ce779fe41e93047edb",
+    "m5/validation.json": "9b029db323b10ce131abb188dbfca3f58509b1a2140af49c07cfddd324383b16",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json": "73a0ad996ad03ae92624705b249acd0ff442b2190835aeaa1387aecce942cad5",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/git-cat-file.stdin.txt": "94e3354f0960b3814a4cf5217b41bfe11df5bc47f30b82371c146facfeaa91ac",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/git-cat-file.stdout.gz": "af40daad0e4de4ec2356f952d17f43e89ac537331ec69e3e4d3343d90025fa32",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/git-ls-tree.stdout.gz": "441875bfd064fafb9cee04aabd639c35e8b2740f9d8456e69e1128031b057355",
+    "publications/3165671b648d24521a78d71aac47bd61d0500251/validation.json": "4a48f64f790f7ea8890a55836c8bf5ffc5e0c546abb511fbc83a58c0bbf6c19e",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json": "d335e6bae0de396b82b3116143a933ec45847add5bf63d8ce835f59382ac65fd",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdin.txt": "48b3b11ee07a1ae0f61d200e89dae7fb93a4badba65682f51bf7a5bed0a9b46d",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdout.gz": "af64a3cf4a5eac9dcb92d90b0bc2a713229cb6fc76258fbab57adc75c9619709",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-ls-tree.stdout.gz": "69b60670561ef9ddc129c53b8ffa137eca26243ae04fcc8012d4f89f4c6cc261",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/validation.json": "9a5d39c16a5bae46cd63a0096354ce142efcdcf942ce648aa53d95003c2ebf3a",
+    "publications/9dacc8befce702eed601430c776da385cab07343/binding.json": "94e285c3549316d66a91428636754b213b6296f518baf5e1d1a22639e93a69cc",
+    "publications/9dacc8befce702eed601430c776da385cab07343/git-cat-file.stdin.txt": "768a762ff885c4b297a765ca5616b5a1872b49aa8f23ef82a4538fc52b3712d2",
+    "publications/9dacc8befce702eed601430c776da385cab07343/git-cat-file.stdout.gz": "2b0db8baa4e0aac2265b5e6bab6a702c6f97f707284dcef4dc82327a588e6f39",
+    "publications/9dacc8befce702eed601430c776da385cab07343/git-ls-tree.stdout.gz": "26ecf24556166cfc25d38904cd3fedbcefb1fe993a808dd2bb2d82e1f30c1063",
+    "publications/9dacc8befce702eed601430c776da385cab07343/observer-sources/ExportDependencies.lean": "37967f15eb58f80391d9e34845f3b99d3b8dca40dc6dd95ed697820e7c49d4c7",
+    "publications/9dacc8befce702eed601430c776da385cab07343/observer-sources/run_export.py": "7694a2ff2cb126e95c1990a869babbbad772f966f5b9d50010bb89bd93fcb74b",
+    "publications/9dacc8befce702eed601430c776da385cab07343/validation.json": "2bc0167f406291ab60b4e7c14a7d4b072b764638047bb30e0292e7436b32517c",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/binding.json": "9f3b5aae9aa3ffdedf26c319e0227104a49682973e354cf6f643d4a9c7d75e47",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/git-cat-file.stdin.txt": "1b8cffd6217acfe55290b6cf542e05d0bd3dd1eb1c545a46dd8217a9a6eb3159",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/git-cat-file.stdout.gz": "11de452dd4dda8c795f8109d5f7146537e1866d5c52a7c6eed4434c462d85aff",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/git-ls-tree.stdout.gz": "74a154d6c7bef1f183126ddb4e4aaf03eb8135116fe004c7904e2ea92a30e472",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/observer-sources/ExportM4Dependencies.lean": "6cdc0a6cb0d7c88ef97939e16c7e97745b0806e5cf61e3c31ab3b4599e0ba228",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/observer-sources/run_m4_export.py": "1a61f84b2ac28c44cc5de4c35e26c61ecd683b294518c1211b7f67d75a8c0242",
+    "publications/e7703926f3e486c0fca3a0fe292ab56d6411c248/validation.json": "cd780b551d015c2fa1c9d33dd9e03a74349d80e948614f4c5456abe9d25dd2b0",
+    "refresh_ledger.py": "69ee47939efbf19a0880efff2a9c6cf0c9d23ffadb0c636ccb6999aabcd113f6",
+    "run_export.py": "ce4b5cce2c01f33611d124118e4d31735c70b46e3bb797ad34ac36cd997a8083",
+    "run_m3_export.py": "9951ac817a0fb0f02cae368425107cc1d76db03d9d065a43a0749e9e88aaad31",
+    "run_m4_export.py": "1a61f84b2ac28c44cc5de4c35e26c61ecd683b294518c1211b7f67d75a8c0242",
+    "run_m5_export.py": "9059116c067891cd2e9187c661bb345d0bb18763395b242693471bb984b1e9c0",
+    "searches/m3-openai-candidate-register.json": "10b3118109d14b286697c8e334a946c616a739e67c1a2384a180d55fb76d81af",
+    "searches/m3-other-inventory.json": "d5c63ef6978710c9067e4dd10e8f672684bfce5d5a0474a68a2e3e7635346ea7",
+    "searches/m3-qinz-fullgroupoid-closure.json": "bbf63b71575092b259a20a8eac46c9a0629389ff28956741ff12da81fa052cfb",
+    "searches/m4-other-inventory.json": "7944c04dc91fe2b54c009b3322ecda940f5ea9636e97bb564b0124fb580585b4",
+    "searches/m5-carrier-inventory.json": "dfcdc722d5b0a7404e85338b32a27a618edd6a67cdc231f366f8e8b89feb4843",
+    "searches/m5-next-core-inventory.json": "5849ddc02b294bc2a3939f9746f6920f4923245bdcdf7633b6e010588cc01248",
+    "searches/m5-openai-inventory.json": "375da30dc0480df9c664a9126f009b103e85b760777c4f5bfbcfa2a97c6916a5",
+    "searches/m5-other-inventory.json": "bccb1c5cb2dbe9f32ea5f358008dba8c74d2db8176fe40452b50a3465a9c42bd",
+    "searches/m5-tauceti-inventory.json": "41d511ae6fac8437217578cc9e2a2967b2199a4742c13c686ef973ee6faf612e",
+    "searches/oai-salvetti-closure.json": "354182d6aa500ba2a6e635fd23080f647e6c7f0ccc0c2865667dc34fff2c9d2c",
+    "searches/tauceti-cech-closure.json": "45fafddf57b0c576a32d125233d6f5df58424205ea51678475b4359f5707abe6",
+    "validate_ledger.py": "d5ebd01c53730e4216bfe289dddc1e0dff3d35ab31191be68b6f2ab7e402ee74",
+    "validate_m3_export.py": "729f8e9b88fd3fc34db6305cf28e82e544f14893153d42c128bd94a7e906348a",
+    "validate_m4_export.py": "291a2b65bc92518f0dce118d40635b4bf15bccc8aa71dea5d4db754be7633632",
+    "validate_m4_publication.py": "db2e3fe28b26a261a7753a1a312302b16b9995fc7a245555c4d260e52056d674",
+    "validate_m5_export.py": "6a78fcece2897934340700cf874cb60c4043938bcf58df6141116b69cd4caa07",
+    "validate_m5_publication.py": "04be4d1337a77b2f7629ccc0a60329c074bfc2113b7844fa6f1b96e849a5dbdd",
+    "validate_publication.py": "fa935fd36552ea2149121c3a97a801f0aa0c930bdc54d41425bdad1aa3cf18d1",
+    "validation.json": "c189a2095b0a26e9776fa43cc2b5737aca90260f4bd31c226584a45dc07f01d9"
+  },
+  "clean_github_ci_status": "separate root-owned evidence; no CI status inferred by this graph validation",
+  "counts": {
+    "physical_project_aliases": 3,
+    "physical_project_occurrences": 4296,
+    "project_roots": 4294,
+    "reachable_declarations": 51405,
+    "reachable_modules": 1989,
+    "references": 1215678
+  },
+  "edges_have_targets": true,
+  "exact_committed_modules_at_observed_HEAD": 108,
+  "external_canonical_owner_aliases": [
+    {
+      "canonical_module": "Mathlib.RingTheory.Spectrum.Prime.ConstructibleSet",
+      "name": "Finite.equivFin.congr_simp",
+      "physical_module": "ArtinAsphericity.Simpliciality",
+      "same_proof": true,
+      "same_type": true,
+      "same_universe_parameters": true
+    }
+  ],
+  "kind": "complete-deligne-graph-and-attribution-integrity",
+  "limits": "Record integrity, complete graph/occurrence accounting and actual Git source-attribution validation only; mathematical acceptance is the separate root receipt.",
+  "mathematical_acceptance_claimed": false,
+  "ok": true,
+  "old_physical_occurrences_and_aliases_preserved": true,
+  "old_roots": 2903,
+  "old_roots_and_edges_preserved": true,
+  "physical_accounting": "physical occurrences = distinct roots + alias rows - aliases whose canonical owner has no project physical occurrence",
+  "precommit_modules_at_observed_HEAD": 35,
+  "run_execution_sha256": "289bddec2cc5ce220cc662c91f316ce0b8a686fd824052b84d396b6ec857b4e2",
+  "shared_name": [
+    "ArtinNormalisers.Ribbon2.elementaryMu.congr_simp",
+    "Finite.equivFin.congr_simp"
+  ],
+  "shared_names": [],
+  "source_attribution": "Actual full-tree/blob checks for published sources; exact source snapshot hashes with no false links for uncommitted source bytes",
+  "technical_prerequisite_physical_distinct_names": 1391,
+  "validator_sha256": "4254193d54f698f5547bfbea93a1f9cbb25b60d8c488e53205286078e11c0581"
+}

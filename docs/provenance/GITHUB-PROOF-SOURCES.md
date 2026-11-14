@@ -1,6 +1,16 @@
 # GitHub proof source ledger
 
-Accepted scientific suppliers: **3 repositories, 436 vendored modules** at the exact revisions below. Mathlib, Lean, transitive Lake dependencies and inspected-only leads are separate categories.
+<!-- CURRENT-FULL-THEOREM18:BEGIN -->
+## Current full Theorem 1.8
+
+[THEOREM18.md](../../THEOREM18.md) is the current entrypoint. The [root acceptance](../../docs/theorem18/landmarks/milestone5-root-acceptance.json), final independent reviews and [actual local battery](../../deligne/evidence/theorem18-local-final/verification.json) bind the full actual-space result. The [combined graph](../../docs/provenance/deligne/run-20261114T132100Z/graph.json.gz) records 4294 project roots, 51405 reachable declarations and 1215678 references, with every prior root/edge and physical project occurrence preserved. [Metadata validation](../../docs/provenance/deligne/validation-20261114T132100Z.json) adds no mathematics.
+
+The [exact supplier inventory](deligne/reuse-inventory.json) retains the prior 436 accepted units and adds 12 OAI weight modules plus 16 Colib carrier modules: 464 units from the same three scientific repositories. Three previously accepted Colib closure modules are reused without recounting. [Actual compiled supplier use](../../docs/provenance/deligne/run-20261114T132100Z/supplier-use.json) distinguishes term dependencies from selected modules with no reachable declaration. Original pins, sources, ports, licenses, upstream metadata and real application evidence are retained. Mathlib and Lean remain separately pinned foundations. Historical sections below describe their own earlier frontiers; their pending/unproved statements are not the current status.
+
+Source publication: pending the exact science commit; no source-commit binding is fabricated. Final clean CI is a separate root-owned record; this registry makes no new CI-success claim.
+<!-- CURRENT-FULL-THEOREM18:END -->
+
+Accepted scientific suppliers: **3 repositories, 464 vendored modules** at the exact revisions below. Mathlib, Lean, transitive Lake dependencies and inspected-only leads are separate categories.
 
 | Cohort | Repository and revision | Modules | Exact byte and proof record |
 | --- | --- | ---: | --- |
@@ -12,6 +22,8 @@ Accepted scientific suppliers: **3 repositories, 436 vendored modules** at the e
 | landmark4-basepoint-extraction | [TauCetiProject/TauCeti](https://github.com/TauCetiProject/TauCeti/tree/62bbc0596dc3539d488232e4e924a338548ea0a9) `62bbc0596dc3539d488232e4e924a338548ea0a9` | 1 | [sequences/evidence/providers/coverage.json](../../sequences/evidence/providers/coverage.json); [sequences/evidence/providers/verification.json](../../sequences/evidence/providers/verification.json) |
 | landmark5-topology-prerequisite-supplier | [TauCetiProject/TauCeti](https://github.com/TauCetiProject/TauCeti/tree/62bbc0596dc3539d488232e4e924a338548ea0a9) `62bbc0596dc3539d488232e4e924a338548ea0a9` | 11 | [asphericity/evidence/providers/coverage.json](../../asphericity/evidence/providers/coverage.json); [asphericity/evidence/providers/verification.json](../../asphericity/evidence/providers/verification.json) |
 | homotopy-colib-domination-supplier | [kangxyz/colib](https://github.com/kangxyz/colib/tree/bac5cab53eb6526e366e861d289253ec81aa89f0) `bac5cab53eb6526e366e861d289253ec81aa89f0` | 21 | [homotopy/evidence/providers/coverage.json](../../homotopy/evidence/providers/coverage.json); [homotopy/evidence/providers/verification.json](../../homotopy/evidence/providers/verification.json) |
+| deligne-weights-supplier | [openai/math](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae) `4eaee87548250b2682affda7d05d947c05554bae` | 12 | [root acceptance](../../docs/provenance/acceptance-deligne-weights.json); [exact original/local/patch/license/application inventory](deligne/reuse-inventory.json) |
+| deligne-carriers-supplier | [kangxyz/colib](https://github.com/kangxyz/colib/tree/bac5cab53eb6526e366e861d289253ec81aa89f0) `bac5cab53eb6526e366e861d289253ec81aa89f0` | 16 | [root acceptance](../../docs/provenance/acceptance-deligne-carriers.json); [exact original/local/patch/license/application inventory](deligne/reuse-inventory.json) |
 
 The [machine ledger](GITHUB-PROOF-SOURCES.json) records every accepted file’s upstream/local paths and SHA256, preserved originals, compatibility changes, licenses, exact declaration inventories, CI verification inputs and raw search-report locators. Original inventories remain authoritative; this consolidation does not replace or edit them. Seven OAI compatibility ports and the one relocated TauCeti Sign import are explicit. Historical provider provenance saying acceptance was pending is retained; later successful CI/reviews supply acceptance.
 

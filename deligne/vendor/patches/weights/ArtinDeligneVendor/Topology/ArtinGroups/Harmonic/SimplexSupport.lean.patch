@@ -1,0 +1,9 @@
+--- lean/OAI/Topology/ArtinGroups/Harmonic/SimplexSupport.lean
++++ ArtinDeligneVendor/Topology/ArtinGroups/Harmonic/SimplexSupport.lean
+@@ -1,5 +1,5 @@
+ import Mathlib
+-import OAI.Topology.ArtinGroups.Realizations.OrderWeights
++import ArtinDeligneVendor.Topology.ArtinGroups.Realizations.OrderWeights
+ 
+ namespace OAI
+ 

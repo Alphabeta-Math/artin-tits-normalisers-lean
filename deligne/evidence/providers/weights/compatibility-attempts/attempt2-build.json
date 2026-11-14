@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "ArtinDeligneVendor.Topology.ArtinGroups.Realizations.ConeWeights"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/deligne",
+  "exit_code": 1,
+  "duration_seconds": 7.800785689003533,
+  "active_source_sha256": "cd209951c92f5ef6c32ef74a5d69c7f1257fe1f161c4285e3bb97ba04ca6c68d",
+  "log_sha256": "055045d3035f6a5a39a3f49519b973e14dd4d252078836deb6b91cd8133f2394"
+}

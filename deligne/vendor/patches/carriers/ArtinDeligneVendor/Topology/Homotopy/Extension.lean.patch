@@ -1,0 +1,11 @@
+--- upstream/Colib/Topology/Homotopy/Extension.lean
++++ active/ArtinDeligneVendor/Topology/Homotopy/Extension.lean
+@@ -6,7 +6,7 @@
+ 
+ module
+ 
+-public import Colib.Topology.Realization.Cylinder
++public import ArtinDeligneVendor.Topology.Realization.Cylinder
+ public import Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic
+ public import Mathlib.Topology.Homotopy.TopCat.Basic
+ 

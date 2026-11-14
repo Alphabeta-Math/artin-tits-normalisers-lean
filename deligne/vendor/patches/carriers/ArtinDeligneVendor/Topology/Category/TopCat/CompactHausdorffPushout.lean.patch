@@ -1,0 +1,11 @@
+--- upstream/Colib/Topology/Category/TopCat/CompactHausdorffPushout.lean
++++ active/ArtinDeligneVendor/Topology/Category/TopCat/CompactHausdorffPushout.lean
+@@ -6,7 +6,7 @@
+ 
+ module
+ 
+-public import Colib.Topology.Category.TopCat.PushoutInteriors
++public import ArtinDeligneVendor.Topology.Category.TopCat.PushoutInteriors
+ public import Mathlib.Topology.Separation.Hausdorff
+ 
+ /-! # Compact Hausdorff topological pushouts along closed embeddings

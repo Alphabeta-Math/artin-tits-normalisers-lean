@@ -1,0 +1,15 @@
+--- upstream/Colib/Topology/Realization/SimplexBoundaryHEP.lean
++++ active/ArtinDeligneVendor/Topology/Realization/SimplexBoundaryHEP.lean
+@@ -6,9 +6,9 @@
+ 
+ module
+ 
+-public import Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension
+-public import Colib.Topology.Realization.SimplexAttachmentCollar
+-public import Colib.Topology.Homotopy.Extension
++public import ArtinDeligneVendor.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension
++public import ArtinDeligneVendor.Topology.Realization.SimplexAttachmentCollar
++public import ArtinDeligneVendor.Topology.Homotopy.Extension
+ 
+ /-! # Homotopy extension from the explicit simplex-boundary retraction
+ 
