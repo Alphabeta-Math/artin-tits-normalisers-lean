@@ -36313,7 +36313,30 @@
     "unchanged_historical_inputs": 996
   },
   "current_full_theorem_1_8": {
-    "clean_github_CI": "No new success inferred; root-owned final CI closeout remains separate.",
+    "clean_github_CI": {
+      "actual_commands": 159,
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+        "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+      },
+      "canonical_and_physical_declarations": 1866,
+      "current_source_inputs_checked": 1529,
+      "final_ci_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+        "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+      },
+      "fresh_exact_kernel_replays": 64,
+      "historical_inputs_checked": 1264,
+      "root_closeout": {
+        "path": "docs/theorem18/landmarks/milestone5-closeout.json",
+        "sha256": "dd87e00f6a74a993a7556f595e7e0bf991b48cc33215a775394e5a650c416e84"
+      },
+      "run_id": 43599459363,
+      "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+      "science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+      "status": "passed",
+      "verified_tag": "theorem-1.8-verified"
+    },
     "dependency_export": {
       "path": "docs/provenance/deligne/run-20261114T132100Z/execution.json",
       "sha256": "289bddec2cc5ce220cc662c91f316ce0b8a686fd824052b84d396b6ec857b4e2"

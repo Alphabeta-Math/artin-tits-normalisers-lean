@@ -8,7 +8,7 @@ GPT-6.1 Sol/high reviews and the successful [final local verification](deligne/e
 All 159 commands, including a real clean/rebuild and 64 fresh exact-module
 kernel replays, passed. The audit covers 1,391 project and 475 new supplier
 declarations, with standard axioms only and zero physical duplicates.
-Clean GitHub CI remains pending; its later result is recorded separately.
+Fresh clean [GitHub CI43599459363](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363) also passed all 159 commands and 64 replays at science commit `3c389334729dbd37d26bdf52dd808e540aae6d37`. The [permanent archive](docs/theorem18/landmarks/github-evidence/run-43599459363/README.md) and [root CI closeout](docs/theorem18/landmarks/milestone5-closeout.json) bind the exact source, reviews and results. The immutable tag `theorem-1.8-verified` points to that science commit.
 
 The endpoint is
 [`ArtinNormalisers.Deligne5.theorem_1_8`](deligne/ArtinDeligne/Theorem18.lean).
@@ -33,7 +33,7 @@ retains the earlier accepted cohorts; the two new supplier inventories are
 [weights](deligne/vendor/provenance-weights.json) and
 [cell extensions](deligne/vendor/provenance-carriers.json).
 
-The older root README and milestone reports are preserved historical
-snapshots. Their earlier “not yet proved” statuses describe their recorded
-checkpoints; this entrypoint identifies the new full scientific endpoint
-without retroactively changing those records.
+The verified root README and milestone reports remain recoverable at
+`theorem-1.8-verified`. Earlier “not yet proved” statuses describe their
+recorded checkpoints. For the complete frozen verifier, use a worktree at
+that tag; current navigation and proof-status summaries may change separately.

@@ -10,7 +10,7 @@ Both independent GPT-6.1 Sol/high reviews accepted its exact frozen scope:
 replays. Complete canonical/physical auditing covered 1,391 project and 475
 new supplier declarations, with zero duplicates and only the three standard
 axioms. All 1,781 bound inputs, including 1,264 accepted historical inputs,
-stayed unchanged. Clean GitHub CI remains pending separately.
+stayed unchanged. Fresh clean [CI43599459363](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363) also passed all 159 commands, the real clean and 64 exact replays at `3c389334729dbd37d26bdf52dd808e540aae6d37`: [permanent archive](../docs/theorem18/landmarks/github-evidence/run-43599459363/README.md), [root closeout](../docs/theorem18/landmarks/milestone5-closeout.json). The immutable `theorem-1.8-verified` tag identifies that exact science snapshot.
 
 For arbitrary `I`, `M : CoxeterMatrix I` with finite actual `M.Group`, and
 any `J : Set I`, the theorem identifies the actual algebraic and covering
@@ -53,7 +53,14 @@ connects these steps to exact files and to Theorem 1.8/Corollary 6.14.
 ## Rebuild and verification
 
 Use the committed Lean `v4.36.0-rc2` and mathlib
-`65d730f7150f21fdfa32f3e73a3f549c1f96a0e9` pins. From this directory:
+`65d730f7150f21fdfa32f3e73a3f549c1f96a0e9` pins. Reproduce the complete frozen verifier from an exact tagged worktree, because current navigation and status documents can evolve. From the repository root:
+
+```bash
+git worktree add ../artin-theorem18-verified theorem-1.8-verified
+cd ../artin-theorem18-verified/deligne
+```
+
+Alternatively dispatch the frozen workflow with `gh workflow run deligne.yml --ref theorem-1.8-verified`. From the tagged package directory:
 
 ```bash
 python3 scripts/cache_prerequisites.py --plan

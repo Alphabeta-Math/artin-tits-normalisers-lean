@@ -1,0 +1,83 @@
+{
+  "tag": "theorem-1.8-verified",
+  "science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "ci_run": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "show-ref",
+        "--verify",
+        "refs/tags/theorem-1.8-verified"
+      ],
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: 'refs/tags/theorem-1.8-verified' - not a valid ref\n",
+      "note": "Actual initial probe failed on absent ref; no mutation occurred. Replaced with quiet rev-parse probe."
+    },
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "--verify",
+        "--quiet",
+        "refs/tags/theorem-1.8-verified"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "--tags",
+        "origin",
+        "refs/tags/theorem-1.8-verified",
+        "refs/tags/theorem-1.8-verified^{}"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "tag",
+        "-a",
+        "theorem-1.8-verified",
+        "3c389334729dbd37d26bdf52dd808e540aae6d37",
+        "-m",
+        "Verified Theorem 1.8 science snapshot; clean CI 43599459363 and permanent source-bound archive."
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "push",
+        "origin",
+        "refs/tags/theorem-1.8-verified"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "To https://github.com/lazyinspirit/artin-tits-normalisers-lean.git\n * [new tag]         theorem-1.8-verified -> theorem-1.8-verified\n"
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "--tags",
+        "origin",
+        "refs/tags/theorem-1.8-verified",
+        "refs/tags/theorem-1.8-verified^{}"
+      ],
+      "exit_code": 0,
+      "stdout": "294577110a8355947152378be7965ef36746717a\trefs/tags/theorem-1.8-verified\n3c389334729dbd37d26bdf52dd808e540aae6d37\trefs/tags/theorem-1.8-verified^{}\n",
+      "stderr": ""
+    }
+  ],
+  "remote_verified": true
+}

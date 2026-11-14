@@ -10,8 +10,7 @@ passed all 159 commands, including a real clean/rebuild (19,433 jobs) and
 covered 1,391 project and 475 new supplier declarations (1,866 total), with
 zero duplicates, standard axioms only and unsafe/partial exclusions. All
 1,781 bound inputs, including 1,264 accepted historical inputs, remained
-unchanged. Clean GitHub CI is pending separately. Older accepted checkpoint
-reports remain unchanged historical records.
+unchanged. Fresh clean [GitHub CI43599459363](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363) also passed all 159 commands and 64 replays at science commit `3c389334729dbd37d26bdf52dd808e540aae6d37`. The [permanent archive](github-evidence/run-43599459363/README.md) and [root closeout](milestone5-closeout.json) preserve the source-bound final result. Older accepted checkpoint reports remain unchanged historical records.
 
 ## Original statement and exact formal endpoint
 
@@ -284,7 +283,6 @@ and [root acceptance](milestone5-root-acceptance.json), SHA256
 bind both final review receipts and all 24 source/context/tooling keys. The
 [complete graph validation](../../provenance/deligne/validation-20261114T132100Z.json)
 preserves all older roots, proof dependencies and physical occurrences.
-The local clean pass and mathematical acceptance are completed; clean
-GitHub CI and the source-publication binding remain pending at this science
-checkpoint. No CI success, two-sided nerve equivalence or actual universal-cover
-contractibility is inferred from the local result.
+The separate [source-publication binding](../../provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/binding.json) records 1,650 exact Git blob bindings at the science commit, with [metadata validation](../../provenance/publications/3c389334729dbd37d26bdf52dd808e540aae6d37/validation.json). Clean GitHub CI43599459363 then passed with 1,529 current source inputs and all 1,264 historical inputs checked, 159 actual commands, 64 fresh exact replays and 1,866 canonical/physical declarations. Its [archive verification](github-evidence/run-43599459363/archive-verification.json) has SHA256 `0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0`; the original artifact ZIP has SHA256 `4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b`.
+
+The immutable `theorem-1.8-verified` tag targets exact science commit `3c389334729dbd37d26bdf52dd808e540aae6d37`. Reproduce the full archived verifier in a worktree at that tag, or dispatch `gh workflow run deligne.yml --ref theorem-1.8-verified`; current navigation/status summaries are separate. The exact source archive exceeds GitHub's per-file size limit and is retained as [lossless checked chunks](github-evidence/run-43599459363/SOURCE-TRANSPORT.md). Historical pending records remain unchanged. Two-sided nerve equivalence and contractibility of the entire universal cover remain unclaimed.

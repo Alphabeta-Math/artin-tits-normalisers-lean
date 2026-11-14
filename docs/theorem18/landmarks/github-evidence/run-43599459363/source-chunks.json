@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "purpose": "Lossless transport of original source archive below the GitHub per-file size limit",
+  "original_filename": "source.tar.gz",
+  "original_size_bytes": 105878979,
+  "original_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423",
+  "chunk_size_bytes": 33554432,
+  "chunks": [
+    {
+      "path": "source-chunks/source.tar.gz.part000",
+      "size_bytes": 33554432,
+      "sha256": "3bf306e18bbcd191c065a1cb676d1c49c853f23f628e9efc70298fef6b70ed0d"
+    },
+    {
+      "path": "source-chunks/source.tar.gz.part001",
+      "size_bytes": 33554432,
+      "sha256": "0542a7843af77c8fac5290dcf5ec0321eff237e1960b76795029150021b62d39"
+    },
+    {
+      "path": "source-chunks/source.tar.gz.part002",
+      "size_bytes": 33554432,
+      "sha256": "83a41da1fe77a801762b15cd2d3a6a1c843f21751773d9e3f8fddc625931361f"
+    },
+    {
+      "path": "source-chunks/source.tar.gz.part003",
+      "size_bytes": 5215683,
+      "sha256": "f3d9a9b717ecdd21299a5a46788eeba18802ae2f916af4f5f17178ae8b76c3e0"
+    }
+  ]
+}

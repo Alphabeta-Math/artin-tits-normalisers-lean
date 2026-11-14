@@ -1,0 +1,68 @@
+{
+  "accepted": true,
+  "accepted_at": "2026-11-14T13:54:50.761072+00:00",
+  "actual_arrangement_asphericity_proved": true,
+  "actual_commands": 159,
+  "actual_universal_cover_contractible_proved": false,
+  "archive_verification": {
+    "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/archive-verification.json",
+    "sha256": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0"
+  },
+  "artifact_sha256": "4dc66d0c31a8ddfe75776b96cfe4c1530812bad1a2b452240e7146cd0937891b",
+  "canonical_and_physical_new_declarations": 1866,
+  "clean_github_ci": "passed",
+  "current_source_inputs_checked": 1529,
+  "final_ci_verification": {
+    "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/verification.json",
+    "sha256": "878f96f090f1f8c165f0aa318e6d0337e34bf7b48a9b3f788597ed1998e0844b"
+  },
+  "fresh_exact_kernel_replays": 64,
+  "full_landmark_5_proved": true,
+  "full_theorem_1_8_proved": true,
+  "historical_inputs_checked": 1264,
+  "independent_final_reviews": 2,
+  "kind": "root-full-theorem-1-8-clean-ci-closeout",
+  "limits": [
+    "Exact replay is relative to pinned imports and prior accepted supplier evidence, using the official bundled kernel; no fresh whole-Mathlib or independent second-kernel claim.",
+    "K(G,1) has the exact TauCeti predicate and standard-presentation Artin model documented in both independent reviews; no universal-cover contraction, finite-CW strengthening or universal-bundle classification claim."
+  ],
+  "navigation_followup": "User subsequently requested new README dependency graphs and per-result PROJECT.md files with direct Alphabeta item URLs and exact original-article result/page citations. Documentation-only organization will preserve verified source/evidence bytes and use the immutable proof tag for full archived verifier reproduction.",
+  "new_physical_aliases": 0,
+  "new_supplier_declarations": 475,
+  "new_supplier_modules_replayed": 28,
+  "project_declarations": 1391,
+  "project_modules_replayed": 36,
+  "replay_scope": "Accepted exact-module runner using LeanChecker.replayFromImports algorithm; CLI prefix selector bypassed",
+  "root_mathematical_acceptance": {
+    "path": "docs/theorem18/landmarks/milestone5-root-acceptance.json",
+    "sha256": "3ddaa380ad25e5f417e74c6e3f49b0d31709bfb80fc234e8b3b16c25977e1445"
+  },
+  "run_id": 43599459363,
+  "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363",
+  "schema_version": 1,
+  "science_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
+  "source_archive_sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423",
+  "source_archive_transport": {
+    "actual_reassembly_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-reassembly-verification.json",
+      "sha256": "7745e61a7aff72cd557fc617910163c1843f2e37cb581d10d4164842ca50ec92"
+    },
+    "kind": "lossless ordered byte chunks",
+    "manifest": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43599459363/source-chunks.json",
+      "sha256": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2"
+    },
+    "reason": "The exact original deterministic source archive exceeds GitHub single-file size limit; chunks reconstruct its original bytes without changing original archive records."
+  },
+  "source_inventory": {
+    "path": "deligne/source-inventory.json",
+    "sha256": "5b9c1f58867085b8f4d798c235d40a4221c3c8221e45eb3d1d6d4e0c7fecac3f"
+  },
+  "two_sided_nerve_homotopy_equivalence_proved": false,
+  "verified_tag": "theorem-1.8-verified",
+  "verified_tag_record": {
+    "path": "docs/provenance/deligne/release-development/verified-tag.json",
+    "sha256": "cf2faacdd92c2e96e100976946111ef3caf5d5c2e4e1d38cddcd739975e84aab"
+  },
+  "verified_tag_target": "3c389334729dbd37d26bdf52dd808e540aae6d37"
+}

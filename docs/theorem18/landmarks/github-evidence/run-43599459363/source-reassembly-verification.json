@@ -1,0 +1,28 @@
+{
+  "purpose": "Actual lossless source archive transport validation; no Lean checks",
+  "command": [
+    "python3",
+    "docs/theorem18/landmarks/github-evidence/run-43599459363/reassemble-source.py",
+    "--output",
+    "/tmp/theorem18-source-transport-lq3wc7ux/source.tar.gz"
+  ],
+  "exit_code": 0,
+  "stdout": {
+    "ok": true,
+    "status": "reconstructed",
+    "output": "/tmp/theorem18-source-transport-lq3wc7ux/source.tar.gz",
+    "size_bytes": 105878979,
+    "sha256": "9c4a9d49d85ebe80ab7359c177e774c3c807474261900eb2b637f8b3d4b63423",
+    "chunks_verified": 4
+  },
+  "stderr": "",
+  "bound_files_sha256": {
+    "source-chunks.json": "ccc034231c71ed75641b827e71ab6d7eddecb25ec2872a0cb48ea66f59f865d2",
+    "reassemble-source.py": "a47bed35b2fe2cd2f880804bd0ed4ebbfc5a2df7c3b5706ba4af6959eb2fe972",
+    "SOURCE-TRANSPORT.md": "0ead959aab4ae0763c1b50edddae4221470c3613d9e15dfda421974cb8b1331d",
+    ".gitignore": "b49763c54e7ab9b48565c7f4fb9ee0842196a7c308eae2eda407add1aeda7a8e",
+    "archive-verification.json": "0bdf94ac80e8b5fd63446a1f23a9df8e83058395963ec9d9ec237650869f8ba0",
+    "SHA256SUMS": "2715a04debc0402e31e89f1848ff9e4ed4df8ceaf7ef7b62c4842877c4796805",
+    "README.md": "d7da24c38521bf723eb57649fd06a7b0c7dcfe87698af8502ba90baf2366b66b"
+  }
+}
