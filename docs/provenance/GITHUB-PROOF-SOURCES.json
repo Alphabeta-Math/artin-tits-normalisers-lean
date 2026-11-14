@@ -11456,7 +11456,15 @@
   ],
   "accepted_local_milestones": [
     {
-      "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43568861942/archive-verification.json",
+        "sha256": "073a236d08311781ad48830d49ee5c62fa4d297528563bd4a7573e968cd02071"
+      },
+      "clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone3-closeout.json",
+        "sha256": "84e1ded77d4fbd3fe1cd6a2357f9f05c36b80ae146ae291cb3813e012635c295"
+      },
+      "clean_github_ci_status": "passed",
       "full_theorem_1_8_proved": false,
       "independent_reviews_sha256": {
         "chambers/reviews/landmark3-a.json": "aa21ed85df5e21b3c462ecb2231533aa65e55482120fa4a5860ef86d4296c752",
@@ -11486,7 +11494,7 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 2,
-  "base_repository_commit": "59941e65aece274beb65a3f5c668616a69c0e292",
+  "base_repository_commit": "29724dc5ee187685dd9d20dfe8927c14ea81992a",
   "compiled_dependency_graph": {
     "actual_used_modules_by_repository": {
       "https://github.com/TauCetiProject/TauCeti": 12,
@@ -24185,6 +24193,31 @@
     },
     "source_commit_binding": "Exact precommit source hashes and observed base HEAD retained; later immutable source commit is appended separately without rewriting graphs."
   },
+  "current_M3_clean_CI": {
+    "archive_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43568861942/archive-verification.json",
+      "sha256": "073a236d08311781ad48830d49ee5c62fa4d297528563bd4a7573e968cd02071"
+    },
+    "artifact_sha256": "b887ee89589297fbf9f14a48b8797ed10ea563f3aa619eaf69a4e13d8a3883fd",
+    "checked_current_inputs": 955,
+    "checked_raw_logs": 132,
+    "closeout": {
+      "path": "docs/theorem18/landmarks/milestone3-closeout.json",
+      "sha256": "84e1ded77d4fbd3fe1cd6a2357f9f05c36b80ae146ae291cb3813e012635c295"
+    },
+    "final_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43568861942/verification.json",
+      "sha256": "f4652dda89f3cd959a543611a6ba76790783d7bd1a77a87e4162cfb24c833fbd"
+    },
+    "full_theorem_1_8_proved": false,
+    "project_exact_replays": 43,
+    "provider_declarations": 232,
+    "provider_exact_replays": 9,
+    "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942",
+    "source_commit": "59941e65aece274beb65a3f5c668616a69c0e292",
+    "status": "passed",
+    "unchanged_old_inputs": 855
+  },
   "current_m3_development": {
     "accepted": true,
     "additional_external_repositories_used": "None identified beyond pinned Mathlib/old providers and the accepted nine Cech modules; direct import classification retained per file.",
@@ -24192,12 +24225,12 @@
       "path": "docs/provenance/development-history.jsonl",
       "sha256": "c4e6cdb46dbb739955d60693fdd00e002024f172f6f9aabed8d7190cbeaa4663"
     },
-    "clean_github_ci_status": "pending; no clean CI result claimed by this local acceptance",
+    "clean_github_ci_status": "passed",
     "complete_term_dependency_graph": "pending finalized root aggregate and explicit root direction",
     "file_count": 43,
     "inventory": {
       "path": "docs/provenance/development-sources.json",
-      "sha256": "04a9b36d9d4c0ab5fbad3638ead24dec4cd55bd10d4ecff55d78806704df27e7"
+      "sha256": "47239ed3f373de7d01c0c79b2df9548561e1c5a89b53897c4d050ffc4fb8ec65"
     }
   },
   "detailed_machine_search_records": [
@@ -26222,7 +26255,7 @@
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "d3c7dbdf85346996898daa0664bffb47b7d87e1f71aafe451cb526ac00e2ebac"
+    "sha256": "cdffb49b7837cb5879eac4dd8dd2c8a0682287da4a9cd76fd4b4dca4797d046c"
   },
   "github_actions_tooling": [
     {
@@ -27288,6 +27321,7 @@
     },
     "https://github.com/lazyinspirit/artin-tits-normalisers-lean": {
       "exact_revisions": [
+        "29724dc5ee187685dd9d20dfe8927c14ea81992a",
         "59941e65aece274beb65a3f5c668616a69c0e292",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4"
       ],
@@ -28797,11 +28831,15 @@
         "path": "docs/provenance/publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json",
         "sha256": "d335e6bae0de396b82b3116143a933ec45847add5bf63d8ce835f59382ac65fd"
       },
-      "clean_github_ci": {
+      "clean_github_ci_at_binding_creation": {
         "status": "pending/in progress (root supplied); no successful CI result asserted",
         "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942"
       },
       "commit": "59941e65aece274beb65a3f5c668616a69c0e292",
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone3-closeout.json",
+        "sha256": "84e1ded77d4fbd3fe1cd6a2357f9f05c36b80ae146ae291cb3813e012635c295"
+      },
       "exact_repository_source_bindings": 970,
       "historical_non_scientific_metadata_differences": [
         "docs/provenance/GITHUB-PROOF-SOURCES.json"

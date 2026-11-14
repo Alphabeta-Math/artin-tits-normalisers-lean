@@ -1,0 +1,39 @@
+{
+  "archive_checked_current_input_count": 955,
+  "archive_checked_raw_log_count": 132,
+  "artifact_digest_matches_github": true,
+  "ci_archive_directory": "docs/theorem18/landmarks/github-evidence/run-43568861942",
+  "ci_archive_sha256": {
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/README.md": "2323307fc7801f106d4645dcdce7fd8d520b3d0fafbf0a690bda236111e1b1d6",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/SHA256SUMS": "87beac05108390d1bfa31eafd69322319a40b2550734f808caf1fb4ca3c3f277",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/actions.log.gz": "8d9c50eb2a4a8eda8861e5b566fada01863678d89140b819e47158044cc3846a",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/archive-verification.json": "073a236d08311781ad48830d49ee5c62fa4d297528563bd4a7573e968cd02071",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/artifacts.json": "486cab23cf21094142950884168951b76180cfe11ad76134423433aa3860c905",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/jobs.json": "81667b0d0c20ec4b44b9aefc3d3d8548961a2448aa3cc09f3f2ed278a3904bdc",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/landmark3-verification.zip": "b887ee89589297fbf9f14a48b8797ed10ea563f3aa619eaf69a4e13d8a3883fd",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/run.json": "9d0aa9393c3fd3dbde6f2e9c133320fc8d56ab0b740f8fb1ad44c226648cc45a",
+    "docs/theorem18/landmarks/github-evidence/run-43568861942/verification.json": "f4652dda89f3cd959a543611a6ba76790783d7bd1a77a87e4162cfb24c833fbd"
+  },
+  "clean_ci_passed": true,
+  "closed_at": "2026-11-14T07:20:08.437196+00:00",
+  "full_landmark_3_proved": true,
+  "full_theorem_1_8_proved": false,
+  "github_run_id": 43568861942,
+  "github_run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942",
+  "independent_statement_reviews_accepted": 2,
+  "kind": "theorem18-landmark3-closeout",
+  "limits": [
+    "CI compiled hashes recorded, not compared to unrelated local compiled binaries.",
+    "Bundled kernel relative to imported environments; old accepted suppliers and Mathlib not freshly replayed."
+  ],
+  "local_mathematical_acceptance_sha256": "2d773541968389ff85f108611128f255e2b6bca4dce180401ffcc691d08edaa7",
+  "project_exact_replays": 43,
+  "proof_scope": "Actual interval/complement equivariant equivalence, actual associate reduced ribbon covering, orbit groupoid comparison and strict covering square, same-Q signed endpoint labels. The literal adjacent-gallery dictionary, compatible based exact sequences and asphericity remain unclaimed.",
+  "provider_exact_replays": 9,
+  "remaining_landmarks": [
+    4,
+    5
+  ],
+  "source_commit": "59941e65aece274beb65a3f5c668616a69c0e292",
+  "source_inventory_sha256": "607626167363747853289eaafd4e6a96e32dbb7d9af88f975c0637818f71d5f5"
+}

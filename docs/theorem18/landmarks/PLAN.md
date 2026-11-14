@@ -74,7 +74,7 @@ with these actual objects; an identification with the paper's literal
 adjacent-gallery presentation is not asserted. The Coxeter endpoint formula
 is proved for all signed ribbon arrows with the same actual quotient
 `N_W(W_J)/W_J`. Both final independent reviews and root mathematical acceptance
-are recorded; final-mode verification and fresh clean CI are pending. See the
+are recorded; final-mode verification and fresh clean CI passed. See the
 [report](milestone3-REPORT.md).
 
 ## 4. The compatible normalizer/fundamental-group exact sequences
@@ -108,7 +108,7 @@ supplier cohorts do not by themselves establish a milestone's main statement.
 | --- | --- |
 | 1: Actual quotient covering | Proved; both statement reviews, local verification and [fresh GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43498322108) passed |
 | 2: Reduced ribbon normalizer | [Proved](milestone2-REPORT.md); both independent reviews, complete local verification and [fresh CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43516856592) passed |
-| 3: Equivariant geometric comparison | [Proved and mathematically accepted](milestone3-REPORT.md); both final independent reviews and complete local technical battery passed; final mode and fresh clean CI pending ([closeout plan](milestone3-PLAN.md)) |
+| 3: Equivariant geometric comparison | [Proved and mathematically accepted](milestone3-REPORT.md); both final independent reviews and complete local technical battery passed; [final-mode fresh CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942) passed ([closeout plan](milestone3-PLAN.md)) |
 | 4: Compatible exact sequences | Not yet proved |
 | 5: Deligne asphericity/full theorem | Not yet proved |
 

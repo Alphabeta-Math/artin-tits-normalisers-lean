@@ -6,7 +6,7 @@ The accounting is `1305 + 1071 − 1 = 2375` distinct root names, and `2375 + 2 
 
 [Source-attribution metadata](m3/source-attribution.json) corrects the original child-directory Git-tree query without rewriting graph/execution bytes: 37 project modules have exact committed bytes at observed HEAD; 42 new modules are precommit source snapshots. Their exact hashes are authoritative. No GitHub blob link is asserted for uncommitted files. A later immutable source commit can be attached separately.
 
-The [root acceptance](../theorem18/landmarks/milestone3-root-acceptance.json) records mathematical acceptance and both final independent reviews; clean GitHub CI remains pending. Graph export is an observation, not another proof acceptance or kernel implementation. Supplier physical duplicates retain their separate accepted inventory records.
+The [root acceptance](../theorem18/landmarks/milestone3-root-acceptance.json) records mathematical acceptance and both final independent reviews; the subsequent clean final-mode GitHub CI passed at source `59941e65aece274beb65a3f5c668616a69c0e292`, bound by the [root closeout](../theorem18/landmarks/milestone3-closeout.json) and [permanent archive verification](../theorem18/landmarks/github-evidence/run-43568861942/archive-verification.json). Graph export is an observation, not another proof acceptance or kernel implementation. Supplier physical duplicates retain their separate accepted inventory records.
 
 To create a new observation after root confirms compiled readiness:
 
@@ -33,4 +33,4 @@ python3 docs/provenance/validate_m3_export.py --output /tmp/m3-graph-validation-
 python3 docs/provenance/validate_publication.py --binding docs/provenance/publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json --output /tmp/m3-publication-validation-59941e6.json
 ```
 
-The clean [GitHub run 43568861942](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942) was in progress when the publication binding was made. No successful CI result is asserted here; its later archive is root-owned and separate.
+The clean [GitHub run 43568861942](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942) was in progress when the publication binding was made. That statement is preserved as historical timing. The run has now **succeeded**: 132 raw logs and 955 current inputs (including 855 unchanged old inputs) were checked; all 43 project and nine provider exact replays passed. The artifact SHA256 is `b887ee89589297fbf9f14a48b8797ed10ea563f3aa619eaf69a4e13d8a3883fd`. Current completion is bound in the [closeout](../theorem18/landmarks/milestone3-closeout.json) and [archive verification](../theorem18/landmarks/github-evidence/run-43568861942/archive-verification.json). Historical root-acceptance, publication, graph and validation records are not rewritten.

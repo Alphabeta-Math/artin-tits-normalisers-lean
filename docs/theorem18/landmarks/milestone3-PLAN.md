@@ -3,7 +3,7 @@
 Status: mathematically accepted after both final independent main reviews and
 the passed complete local technical build/audit/replay battery. The 42
 scientific modules and aggregate compile and remain frozen. Final-mode
-verification and fresh clean CI remain pending. Landmarks 4 and 5 and full
+verification and [fresh clean CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942) passed. Landmarks 4 and 5 and full
 Theorem 1.8 remain unproved. The
 [report](milestone3-REPORT.md) records the evidence and proof boundaries.
 
@@ -58,22 +58,24 @@ No final comparison or universal property is stored as an assumed target
 field. Ambient Coxeter weighted length is not the restricted wall count.
 This route does not require a new simpliciality or asphericity hypothesis.
 
-## Review acceptance and remaining closeout gates
+## Completed review and verification closeout
 
 Both independent final reviews accepted Landmark 3. The
 [root acceptance receipt](milestone3-root-acceptance.json) validates their
 exact bindings and the passed technical evidence; the frozen inventory retains
-its historical candidate status. This is mathematical acceptance, not a claim
-of fresh clean CI or full Theorem 1.8.
+its historical candidate status. The subsequent [closeout receipt](milestone3-closeout.json)
+binds the successful clean-CI final-mode run and permanent archive.
 
-1. Run final verification against both final reviews and the frozen root-owned
-   source inventory. Preserve the passed complete technical battery and
-   record the final receipt, with exact source/context/tool bindings.
-2. Preserve a fresh clean CI compilation record after the authorized commit/push.
-   Do not infer CI success from a local build or from earlier landmarks.
-3. Close the remaining verification/CI gates when these records pass, then proceed sequentially
-   to Landmark 4. The based exact sequences and Deligne asphericity remain
-   separate obligations, not consequences silently added to this closeout.
+1. Final verification passed against both reviews and the frozen source inventory.
+2. [Clean CI run 43568861942](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942)
+   passed for source commit `59941e65aece274beb65a3f5c668616a69c0e292`.
+3. The [permanent archive](github-evidence/run-43568861942/README.md) preserves the
+   original ZIP, complete Actions log and run/job/artifact metadata. Its validator
+   checked the GitHub artifact digest, 132 logs, 955 repository inputs and all
+   43 project plus nine supplier exact-module replays.
+
+Landmark 3 is complete at its stated interval-model scope. Landmark 4 is next;
+its based exact sequences and Landmark 5's asphericity remain unproved.
 
 Reproduction commands and the limitations of technical versus final mode are
 in the [report](milestone3-REPORT.md#verification-checkpoint-and-reproduction).

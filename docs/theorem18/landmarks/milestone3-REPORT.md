@@ -7,7 +7,10 @@ The scientific proof is complete and compiled: all 42 scientific modules in
 The complete source-bound local technical build/audit/replay battery passed.
 Both final independent statement reviews accepted the exact development, and
 the root mathematical acceptance is recorded. Final-mode verification and
-fresh clean Landmark 3 CI remain pending; no CI success is claimed here.
+[fresh clean GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942)
+passed for source commit `59941e65aece274beb65a3f5c668616a69c0e292`.
+The [permanent archive](github-evidence/run-43568861942/README.md) and
+[closeout receipt](milestone3-closeout.json) retain the actual evidence.
 
 The final theorem is
 [`ArtinNormalisers.Chamber3.landmark_3`](../../../chambers/ArtinChambers/Landmark3.lean).
@@ -205,8 +208,8 @@ The independent final receipts are
 | New nine-module supplier build/audit/replay and two supplier reviews | Passed; supplier-only acceptance recorded |
 | Complete source-bound local technical build/audit/replay battery | Passed; receipt and scope above |
 | Both final independent main statement reviews and root mathematical acceptance | Passed; exact-source receipts above |
-| Final-mode verification receipt | Pending |
-| Fresh Landmark 3 GitHub CI | Pending |
+| Final-mode verification receipt | Passed; [actual receipt](github-evidence/run-43568861942/verification.json) |
+| Fresh Landmark 3 GitHub CI | Passed; [run](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43568861942) and [permanent archive](github-evidence/run-43568861942/README.md) |
 | Full Theorem 1.8 | Unproved: Landmarks 4 and 5 outstanding |
 
 From the repository root, with the pinned `lake` on `PATH`:
@@ -232,8 +235,8 @@ a fresh kernel process. Permitted axioms are `propext`, `Classical.choice` and
 
 Technical mode never claims semantic acceptance. Final mode additionally
 requires the root-owned `chambers/source-inventory.json` and two matching
-`accept-landmark3` receipts. Both reviews and root acceptance are now recorded;
-a final-mode execution result is not yet claimed. For ordinary compilation,
+`accept-landmark3` receipts. Both reviews, root acceptance and the successful
+clean-CI final-mode execution are now recorded. For ordinary compilation,
 `lake build ArtinChambers` from `chambers/` is sufficient, but it does not
 replace these checks.
 
@@ -242,6 +245,24 @@ to imported mathlib and accepted older dependencies. It is neither a separate
 kernel implementation nor a fresh replay of every old supplier or mathlib
 declaration. Earlier Landmark 1/2 CI receipts remain historical evidence for
 those landmarks, not new Milestone 3 CI.
+
+## Clean CI and permanent archive
+
+The clean GitHub run passed all 132 recorded commands, all 43 project exact-module
+replays and all nine new supplier replays. Its project audit again covers 1,071
+canonical/physical declarations in that audit context; supplier coverage is
+232/232. The archive validator checked all 132 command-log hashes, both final
+review receipts and 955 current repository inputs, including all 855 historical
+context inputs. The original ZIP digest matches GitHub metadata:
+
+`b887ee89589297fbf9f14a48b8797ed10ea563f3aa619eaf69a4e13d8a3883fd`.
+
+The original ZIP, complete compressed Actions log, run/job/artifact metadata,
+direct verification JSON and archive validation are committed in
+[run-43568861942](github-evidence/run-43568861942/README.md). This gives permanent
+compilation evidence beyond the downloadable Actions artifact's retention period.
+CI compiled-object hashes remain recorded rather than compared to unrelated local
+binaries; the pinned bundled kernel is used relative to imported foundations.
 
 ## Consulted-source findings retained
 
