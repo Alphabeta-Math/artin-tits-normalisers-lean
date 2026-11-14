@@ -6,6 +6,12 @@ higher-homotopy vanishing argument remains unproved. No successful helper
 build, supplier acceptance or prerequisite CI may be labeled as full M5 or
 Theorem 1.8 acceptance.
 
+The implemented prerequisite checkpoint is now independently accepted and has
+passed [clean final-mode CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641).
+The [report](milestone5-REPORT.md) and
+[prerequisite-only closeout](milestone5-prerequisites-closeout.json) bind the
+actual evidence. This does not discharge the unproved core below.
+
 ## Full target retained
 
 For every Coxeter matrix M with finite actual M.Group, arbitrary index

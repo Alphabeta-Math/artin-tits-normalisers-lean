@@ -15204,7 +15204,7 @@
     "https://github.com/openai/math"
   ],
   "accepted_scientific_repository_count": 2,
-  "base_repository_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+  "base_repository_commit": "ae075f42505e17c37ae69d2a92a8d69dccb542da",
   "compiled_M4_dependency_graph": {
     "baseline_archives_unchanged": true,
     "clean_CI_closeout": {
@@ -28060,7 +28060,37 @@
   "current_M5_prerequisite_checkpoint": {
     "accepted_asphericity_prerequisites": true,
     "actual_arrangement_asphericity_proved": false,
-    "clean_github_ci_status": "pending; no clean CI success claimed by this local checkpoint acceptance",
+    "clean_CI": {
+      "accepted_asphericity_prerequisites": true,
+      "actual_arrangement_asphericity_proved": false,
+      "archive_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/archive-verification.json",
+        "sha256": "909d5c5d81a09e57b8ec352e9cff8631820657233e1bec6ab928acb92fd5d367"
+      },
+      "artifact_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+      "checked_current_inputs": 1117,
+      "checked_raw_logs": 67,
+      "closeout": {
+        "path": "docs/theorem18/landmarks/milestone5-prerequisites-closeout.json",
+        "sha256": "d0a563d8c1a0fed179c76177ea09fdc07c56b8bedca9039c02a3675dd9f88f00"
+      },
+      "final_verification": {
+        "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+        "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+      },
+      "full_landmark_5_proved": false,
+      "full_theorem_1_8_proved": false,
+      "limits": "Actual final-mode prerequisite CI only; old suppliers/Mathlib were not freshly replayed, and actual arrangement asphericity/full M5/Theorem 1.8 remain unproved.",
+      "project_declarations": 138,
+      "project_exact_replays": 8,
+      "provider_declarations": 310,
+      "provider_exact_replays": 11,
+      "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641",
+      "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "status": "passed",
+      "unchanged_historical_inputs": 996
+    },
+    "clean_github_ci_status": "passed",
     "critical_declarations": [
       "ArtinNormalisers.Asphericity5.actualChamber_basis_and_closure",
       "ArtinNormalisers.Asphericity5.actualChamber_closure_isSimplicialCone",
@@ -28098,6 +28128,10 @@
         "reachable_declarations": 44160,
         "reachable_modules": 1729,
         "references": 1019785
+      },
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone5-prerequisites-closeout.json",
+        "sha256": "d0a563d8c1a0fed179c76177ea09fdc07c56b8bedca9039c02a3675dd9f88f00"
       },
       "execution": {
         "path": "docs/provenance/m5/run-20261114T090600Z/execution.json",
@@ -28140,7 +28174,7 @@
     },
     "plan": {
       "path": "docs/theorem18/landmarks/milestone5-PLAN.md",
-      "sha256": "f65670aa63d1a45d71b51ff40d78b5c274370a0dd9438fa5edecb235b57cd4f3"
+      "sha256": "5b4b6b6d549ddd227d441b1df88cd420774134a128b6fb296810844bfb4720df"
     },
     "project_source_sha256": {
       "asphericity/ArtinAsphericity.lean": "55b3127be52c48d1856c18ce0fca9eedf3c42a46b47882d54e89c2128dac6490",
@@ -28171,6 +28205,10 @@
         "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
       },
       "commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone5-prerequisites-closeout.json",
+        "sha256": "d0a563d8c1a0fed179c76177ea09fdc07c56b8bedca9039c02a3675dd9f88f00"
+      },
       "exact_git_blob_bindings": 1141,
       "historical_metadata_exceptions": [
         "docs/provenance/GITHUB-PROOF-SOURCES.json"
@@ -28181,7 +28219,7 @@
         "sha256": "4a48f64f790f7ea8890a55836c8bf5ffc5e0c546abb511fbc83a58c0bbf6c19e"
       }
     },
-    "status": "Root-accepted asphericity prerequisites only; clean CI separate and full actual-space target remains unproved",
+    "status": "Root-accepted asphericity prerequisites; clean final-mode CI passed; actual arrangement asphericity/full M5/Theorem 1.8 remain unproved",
     "supplier_complete_file_patch_license_endpoint_inventory": {
       "actual_arrangement_asphericity_proved": false,
       "assembly_recipe": "import-relocation-recipe.json",
@@ -28588,6 +28626,36 @@
       "sha256": "225cc1c2bf46f2bf9f8722512b38e223334884d6c02fc1be9c0dc8fe44d6b114"
     },
     "unproved_core": "No contraction or higher-homotopy vanishing of the actual ComplementUniversalCover M J, no actual lifted nerve/higher-Deligne comparison, no arrangement asphericity or full Theorem 1.8."
+  },
+  "current_M5_prerequisite_clean_CI": {
+    "accepted_asphericity_prerequisites": true,
+    "actual_arrangement_asphericity_proved": false,
+    "archive_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/archive-verification.json",
+      "sha256": "909d5c5d81a09e57b8ec352e9cff8631820657233e1bec6ab928acb92fd5d367"
+    },
+    "artifact_sha256": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+    "checked_current_inputs": 1117,
+    "checked_raw_logs": 67,
+    "closeout": {
+      "path": "docs/theorem18/landmarks/milestone5-prerequisites-closeout.json",
+      "sha256": "d0a563d8c1a0fed179c76177ea09fdc07c56b8bedca9039c02a3675dd9f88f00"
+    },
+    "final_verification": {
+      "path": "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json",
+      "sha256": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+    },
+    "full_landmark_5_proved": false,
+    "full_theorem_1_8_proved": false,
+    "limits": "Actual final-mode prerequisite CI only; old suppliers/Mathlib were not freshly replayed, and actual arrangement asphericity/full M5/Theorem 1.8 remain unproved.",
+    "project_declarations": 138,
+    "project_exact_replays": 8,
+    "provider_declarations": 310,
+    "provider_exact_replays": 11,
+    "run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641",
+    "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+    "status": "passed",
+    "unchanged_historical_inputs": 996
   },
   "current_m3_development": {
     "accepted": true,
@@ -86122,7 +86190,7 @@
   ],
   "generation_script": {
     "path": "docs/provenance/refresh_ledger.py",
-    "sha256": "1ee568118cb33aee480a62a00f356c48eb4dfaed8b0417a6629bccecadbeb901"
+    "sha256": "5cf75fc930188ebdda32fe8635bedd4b63ebaff97bb6fc3bd933260a5f335de8"
   },
   "github_actions_tooling": [
     {
@@ -87836,6 +87904,7 @@
         "1aa55a9ee5f13c9e3a8e64b4aec4675c0435a9c0",
         "3165671b648d24521a78d71aac47bd61d0500251",
         "59941e65aece274beb65a3f5c668616a69c0e292",
+        "ae075f42505e17c37ae69d2a92a8d69dccb542da",
         "b793bf9dd4c5c9637d8dde51c6a635f849b943c4",
         "e7703926f3e486c0fca3a0fe292ab56d6411c248"
       ],
@@ -89899,6 +89968,10 @@
         "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641"
       },
       "commit": "3165671b648d24521a78d71aac47bd61d0500251",
+      "current_clean_CI_closeout": {
+        "path": "docs/theorem18/landmarks/milestone5-prerequisites-closeout.json",
+        "sha256": "d0a563d8c1a0fed179c76177ea09fdc07c56b8bedca9039c02a3675dd9f88f00"
+      },
       "exact_repository_source_bindings": 1141,
       "historical_non_scientific_metadata_differences": [
         "docs/provenance/GITHUB-PROOF-SOURCES.json"

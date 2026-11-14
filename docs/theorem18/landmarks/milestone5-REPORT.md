@@ -4,7 +4,8 @@
 not proved.** This report concerns a prerequisite checkpoint only. Seven
 scientific modules plus the aggregate compile. The full prerequisite
 technical battery and both independent final main A/B reviews passed.
-Root accepted this prerequisite checkpoint; fresh clean CI is pending. The separate
+Root accepted this prerequisite checkpoint and [clean final-mode CI passed](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641).
+The separate
 eleven-module topology supplier cohort is already independently reviewed,
 technically verified and root-accepted.
 
@@ -125,10 +126,24 @@ The 996 inherited accepted inputs remain byte-identical. Both independent
 GPT-6.1 Sol/high final reviews ([A](../../../asphericity/reviews/asphericity-prerequisites-a.md),
 [B](../../../asphericity/reviews/asphericity-prerequisites-b.md)) accept these
 exact statements and bindings. [Root acceptance](milestone5-prerequisites-root-acceptance.json)
-records prerequisite acceptance separately from the still-pending clean CI.
+records local prerequisite acceptance. The later
+[closeout](milestone5-prerequisites-closeout.json) binds the actual successful
+clean CI at source commit `3165671b648d24521a78d71aac47bd61d0500251`.
 All scopes retain `full_landmark_5_proved=false`,
 `actual_arrangement_asphericity_proved=false` and
 `full_theorem_1_8_proved=false`, including after a prerequisite-only closeout.
+
+The [permanent archive](github-evidence/run-43579352641/README.md) preserves
+the original artifact ZIP, complete compressed Actions log, run/job/artifact
+metadata, inventory and both reviews. Its
+[validation](github-evidence/run-43579352641/archive-verification.json)
+checked the GitHub artifact digest, all **67 successful command logs**,
+**1,117 current repository source/record inputs**, the **996 unchanged
+historical inputs**, all fifteen review-binding keys, the complete
+138-project/310-provider physical coverage and all nineteen exact-module
+replay results. Runner-specific compiled/toolchain hashes are recorded,
+not compared to unrelated local binaries. Historical pending acceptance,
+export and publication records remain unchanged.
 
 From `asphericity/`, reproduction is:
 

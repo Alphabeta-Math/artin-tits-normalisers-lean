@@ -379,6 +379,10 @@ def main():
   if 'compiled_M4_dependency_graph' in ledger:ledger['compiled_M4_dependency_graph']['clean_CI_status']='passed';ledger['compiled_M4_dependency_graph']['clean_CI_closeout']=ref(m4_closeout_path.relative_to(ROOT))
   for publication in ledger.get('source_publication_bindings',[]):
    if publication['commit']==closed['source_commit']:publication['current_clean_CI_closeout']=ref(m4_closeout_path.relative_to(ROOT))
+ if m5_checkpoint.get('clean_CI'):
+  ledger['current_M5_prerequisite_clean_CI']=m5_checkpoint['clean_CI']
+  for publication in ledger.get('source_publication_bindings',[]):
+   if publication['commit']==m5_checkpoint['clean_CI']['source_commit']:publication['current_clean_CI_closeout']=m5_checkpoint['clean_CI']['closeout']
  ledger['current_M5_prerequisite_checkpoint']=m5_checkpoint
  save('GITHUB-PROOF-SOURCES.json',ledger)
  # Human index stays compact; machine ledger contains the complete inventories.
@@ -410,6 +414,9 @@ def main():
   rendered=rendered.replace('a new versioned prerequisite graph will follow only after the final source frontier and verification are ready.', f"the separate [M5 prerequisite graph](M5-EXPORT.md) records {n['project_roots']} project roots, {n['reachable_declarations']} reachable declarations and {n['references']} references with complete physical occurrence/alias accounting. This graph is a source observation, not full-target acceptance.")
  if m5_checkpoint.get('source_publication'):
   rendered += '\nThe prerequisite source is published at `3165671b648d24521a78d71aac47bd61d0500251`: [1,141 exact Git blob bindings](publications/3165671b648d24521a78d71aac47bd61d0500251/binding.json) and [metadata validation](publications/3165671b648d24521a78d71aac47bd61d0500251/validation.json). All eight project files and frozen source/configuration/provider/review inputs match. The sole exception is the historical mutable registry JSON snapshot; no mathematical source differs. The immutable precommit graph remains unchanged. Clean [prerequisite CI43579352641](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641) is pending; no full asphericity claim is inferred.\n'
+ if m5_checkpoint.get('clean_CI'):
+  rendered=rendered.replace('Clean CI remains separate; actual arrangement asphericity, full M5 and Theorem1.8 are unproved.', 'Clean final-mode prerequisite CI has passed; actual arrangement asphericity, full M5 and Theorem1.8 remain unproved.')
+  rendered=rendered.replace('Clean [prerequisite CI43579352641](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641) is pending; no full asphericity claim is inferred.', 'Clean [prerequisite CI43579352641](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641) has passed, bound by the [permanent archive verification](../theorem18/landmarks/github-evidence/run-43579352641/archive-verification.json) and [root closeout](../theorem18/landmarks/milestone5-prerequisites-closeout.json). All eight project and eleven provider exact replays passed, with 138+310 declarations, 67 command logs and 996 unchanged historical inputs checked. Only prerequisites are accepted; all three full-target flags remain false. Historical pending acceptance/export/publication records are preserved unchanged.')
  (OUT/'GITHUB-PROOF-SOURCES.md').write_text(rendered)
  print(json.dumps({'accepted_repositories':2,'accepted_module_counts':{c['id']:c['module_count'] for c in cohorts},'search_reports':len(records),'promoted_inventories':len(promoted),'graph_status':ledger['compiled_dependency_graph']['status']}))
 

@@ -1,0 +1,51 @@
+{
+  "accepted_asphericity_prerequisites": true,
+  "actual_arrangement_asphericity_proved": false,
+  "archive_checked_current_input_count": 1117,
+  "archive_checked_raw_log_count": 67,
+  "artifact_digest_matches_github": true,
+  "ci_archive_directory": "docs/theorem18/landmarks/github-evidence/run-43579352641",
+  "ci_archive_sha256": {
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/README.md": "a31a0a902fbd8d23648bbd857a6bb717ba88b3a8e7b03651e0b53078d2b226a0",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/SHA256SUMS": "3e9482ae4bb17e9b53fbd532aabbff18c6854cbf94c8425299af038655a0319a",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/actions.log.gz": "ca771ebdb59841442c045ef883a9a3ef9c2168f0e25f568b03d06b7f364589a9",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/archive-verification.json": "909d5c5d81a09e57b8ec352e9cff8631820657233e1bec6ab928acb92fd5d367",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/artifacts.json": "0bd2246d4b9d50b85d9eca37a55ede2eecb1ec2f805c3b263a7a7712922670ac",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/asphericity-prerequisites-verification.zip": "8a82ae56855afb3ead5406980764479a4a6c7ce35afde70717ddb64814bf589e",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/jobs.json": "c09f1c0d3d63a02d6ce6cae17f11ffc54514d5430f979a1c5054b718db8e9785",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/review-a.json": "00149555daae61f73eb7c77556056c09e4ede2235b83cb1e37f56ad4224db5a2",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/review-a.md": "783639ce02ecd28d20a8b02fc65990a5ea1e2d6030295ed4a4513aac7f0ce099",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/review-b.json": "f364780142e02cf740346f8ebbc55359de376e8ffe32b11540fd695f1a686399",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/review-b.md": "d3dc323e9b16e8ba18bfd33ad811dfe4870c884804a1863d5f6cc051f79e3e22",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/run.json": "a75e476b1aee867db731beae9f85355807f556543579a54f3fc9d446ff89f1d9",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/source-inventory.json": "e2b38ddcc4aacfeec5a55634cbc684684311dc81c0b7ecc44858c84bf187230b",
+    "docs/theorem18/landmarks/github-evidence/run-43579352641/verification.json": "cdfc219c56bc0f078c0bbe0a7b55d6c1ab1e304a80debb226892df7fc4a9942d"
+  },
+  "clean_ci_passed": true,
+  "closed_at": "2026-11-14T09:31:19.888668+00:00",
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "github_run_id": 43579352641,
+  "github_run_url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43579352641",
+  "independent_statement_reviews_accepted": 2,
+  "kind": "theorem18-landmark5-prerequisites-closeout",
+  "limits": [
+    "Prerequisites only: actual arrangement asphericity, full M5 and Theorem 1.8 remain unproved.",
+    "CI compiled/toolchain hashes recorded, not compared to unrelated local binaries.",
+    "Bundled kernel relative to imported environments; old accepted suppliers and Mathlib not freshly replayed."
+  ],
+  "local_mathematical_acceptance_sha256": "93dadce09b2d8d0a00f686272cfcca3a90e8774fb51c4c68a589533c80e44e0d",
+  "new_provider_declarations": 310,
+  "project_canonical_declarations": 138,
+  "project_exact_replays": 8,
+  "project_physical_occurrences": 138,
+  "proof_scope": "Actual finite central proper closed codimension-one restricted arrangement; every actual chamber is a genuine finite-basis positive cone with simplicial closure; actual finite convex good cover with both nonempty guards; genuine surjective simply connected universal cover and covering-induced higher-homotopy equivalences; generic conditional directed open contractible-cover criterion. Seven scientific modules plus aggregate, original spaces, finite actual Coxeter group and arbitrary index universe/J. No actual asphericity, contraction, actual directed filtration or higher Deligne/model comparison.",
+  "provider_exact_replays": 11,
+  "remaining_landmarks": [
+    5
+  ],
+  "remaining_obligation": "Actual universal-cover higher-homotopy vanishing or genuine contraction, with any required actual-space nerve/Deligne homotopy comparison proved. Simple connectedness, groupoid equivalence and good-cover existence do not suffice.",
+  "source_commit": "3165671b648d24521a78d71aac47bd61d0500251",
+  "source_inventory_sha256": "e2b38ddcc4aacfeec5a55634cbc684684311dc81c0b7ecc44858c84bf187230b",
+  "unchanged_historical_inputs": 996
+}
