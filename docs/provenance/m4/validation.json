@@ -1,0 +1,1157 @@
+{
+  "Lean_build_audit_or_kernel_replay_executed": false,
+  "M4_physical_inventory_matches_frozen_audit": true,
+  "all_raw_data_preserved_in_annotation": true,
+  "annotated_graph_sha256": "436ceb121742b0b80300532aaffc85aabcb05b0c85bcddeb9f2818c339bbd569",
+  "attribution_git_commands": [
+    {
+      "argv": [
+        "git",
+        "ls-tree",
+        "-r",
+        "--full-tree",
+        "--name-only",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "653d21d9a05bb6feaba4a243bbe91a3b6d4b6b3a95ac721b440a913a1bc1aa0a"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ActualArrangement.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "7655d68bc60ccea16b66a95d438da94a0feae2b1fc446d3b394f4a2444da2437"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ActualComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "858d1ed8efb372d9210d8989daa5bc26f2ef07c78e9b98d366cec5a847309d16"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ActualTubes.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d9a2d2ccc57576fc24c8b311602b7932bb508378b5d02a7a0821e863cb9d4f4b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/Arrangement.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e994fee8544ffea068e2218b652bf49edc47ca415e66b4af25b13eafc68411f1"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/CechCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ee7ac3bb50b23a2e7376114f34e91ea0009c6ce48cd5599fa2a249c0c4fe3b33"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ChamberAction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "1dc4c09413adbcade355aa96f05b6aced3d62282cc7926005ddbf5e0c2f51f0f"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ChamberLabels.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "bb2d51929698bfa083a9ba86710c6b23c537e94ba64e0ae313a0ffb29de6768c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ChamberPoints.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c4d3a26d4f1f25a1b01ec6204314449a4337857da0e31448bbb9673dd4ebeff4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ChamberTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "8f6e41b1549693274395378008a76a449b2a54fe2a5b26708b5daf8089f13223"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/CoverComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "cb786e05eb495e1e68e8a32ecbc4da39dabb9c8d79954d2509dd1d5e794d3ef3"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/CoverQuotient.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "719b23898e697a3fbbe352d80e26c400a73e3daeefddeac4c15b371efff465b9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/CoveringGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "db3908e21b8adcedde4e2833811f1422d974f32f803914cc720ee5ab0a110f3a"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/Dominant.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b0169ce71bd68691d008f0cada853440277890063229c22880dfa4a64df8bef0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/FaceProjection.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "cba7ed1195b7e40be965de76dbcb233805dca4336eaa685c2fa83f829062c1dd"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/FacetTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b208bacc8b4aae7490191f2bd7d1f59925b0f53cf1662b8a952052267852cafd"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/FamilyFunctor.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "686647ee845de28baa38b1885c03f65d6b0fff27e5e7aa78091f7daa975b2198"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/FamilyGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "33bc29d0160356eaeb65d5c3140d5bd025e6261dd024086724fb95e65b634696"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/ForwardEquivariance.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9e3f5243fc5e7ba690d0583c5cbe0ef1abe70e6b35d4426a5d2cd3339e66a4b4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/GroupoidCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "29e5fcf6a54138699ed11db465f48c0069a280507995b2c97d2b059b54574ae0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/IntervalAction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "c73fae29b222cb0373c4197234b0f4009aafdfd201cb7f5f4ee044a562aa8f66"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/IntervalEquivalence.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "8b0772faa981737b6242ef8867fb406d6fa1d2b419ab9f0502da19da7199fb25"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/IntervalForward.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "266f702787c4b72a86bcd096fdda6cb4124a26f8abef0a749c2efea1bfddeafb"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/IntervalGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ad354c494dac2be0463846dd57fbd49594c57f6a438f2638875054cd985a96ed"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/InversionLength.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "63ccc4b6b6dd077871c8155e9342798624ea54645285a8ae3761dfac9c3aa558"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/Landmark3.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "10b972bb3569b3fc944be367ada50b00dde2f87f40f2937d339c6557dda261ee"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/OrbitColimit.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "405db94933efde3edefd5d3692fd3956a7bcad00bc92d1269e9abc8575986847"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/OrbitGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "1c83781a116b0cb8572cacbcbcce837c6add63ebe1a380f3fcd15a8703fd6dec"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/PositiveTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "13455de8bdda1548bbb9c7b1f55f5f56dad3eb63932437b41186a74c2e286917"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RegularCriterion.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "eef56162de16884c14d288b0c8f4d19f451fbc35202d4bd903dff0cb4390dc51"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RibbonComponent.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "dd9b23bcea5b0a7a0ac580ba2f34223da07b3e8e3d96cefd30e46d71ce7c450b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RibbonCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "402c1189303aa67cb2ca6069e385ed71e9765fc24c7d1e8247ef6ff846d70133"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RibbonDeckLabels.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d3c6a6e0efd989e0211fdff4af3c33b899d2d118a9819ed727cf5aebde5ec67c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RibbonLiftCompatibility.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ac67fd75d30f6ac6b33adaebb9fa52d5879f1f92cccdddcbb9d44eeead91128b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RibbonLiftUniqueness.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "3f65b88a6a5c03af20127cdcf427df4bbd000329cb9da6b0bfd05baca29236a5"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/RibbonLifting.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "f1305753aab9ca75f1e9971881e8a125a8dceb38ecd9944557460c1943c634cb"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/SignCells.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ad0b4d62161d0621c931b22adcb518f9f75aaa78086b158239333988dbc02472"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/TubeCover.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "bdef04d49295e12347c87ce6fbca8f51fddbcbe3812ea5066cbc78cb5e77e2c7"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/TubeDescent.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a348c25f70277ee4c219d595a164cfee59a16c92895dc2e09af1186caec0f398"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/TubeIntersections.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "7f427029e9c5b4ac4ccc62955fb4f6a2dcd334dabf85c97b972974cdfab09d76"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/Tubes.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "2857e3ab39bf16e5423dc16fbab71f76c72aec4caf0bceadbe2b21c01b447ff0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/WeakIntervals.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "fa135a5da1bc702fd0dffc90d43699b4ab8a9f5166c51ca196353c41ea2116f6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:chambers/ArtinChambers/WeakInversions.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "598a6fd41c1f3d22e3fe1f2dcf57764588a158f2f15a02af3bb79ab0451a1ebb"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:landmarks/ArtinLandmarks/Covering.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5c700e4c42bdb72e81c4a7499ebab13d1d742bd1e98058446057c12eb389cd94"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:landmarks/ArtinLandmarks/Dominant.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "408a97cc6f49b5868d5eafc6aae733b8ae26a1d314b26c81235f5bf493339da4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:landmarks/ArtinLandmarks/RegularStabilizer.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "aeeee397f0fe48325c9f62eee8607e80a1836cb123dc9a022cd8d954c92fd93f"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Artin/Basic.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b9160bf44e7ae7aca86f7757158f742d5ca33c1eec527215e8238bd38a47c1da"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Artin/CoxeterNormalizer.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "113bd2214165e5266fef11269aeb801bc591c2d19cc6d0ace5ab3f477d1dc23c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Artin/ExactSequence.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5db15f23bf713b20a25958569f9feea218926861089c12646d367cec33e460a1"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Artin/NormalizerLift.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d0a1c617b470e5ce36c41a60ad82b29eac825d9b84cf57106138beccf0922849"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Kernel.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "b6a55545a3bc4029ca936a2c2b10f77cfeb049ee1cef38074c61db59f75c30ff"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/NormalizerMap.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5ea6d9a6b7add5ea6d20a3a3fe225ac1094ab28d31d4515e04088b99bc1124d9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/QuotientMap.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "544b3a7f491df63d313d75b7b8a87c201f6d90f8838d4979a498ccefa3677eb6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Theorem18/ArrangementTopology.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e17eb88a02201854c545aa4be4a397f0457845921903676d362b5c94e66e272e"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Theorem18/CoveringSequence.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5173fd6df5bac7b17fb33344e9d042a5d8d4e258bd22bb087ab02f882584d9f3"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Theorem18/Geometry.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "310a600d1d1a1b36aefa9190b2705d48f5115fd26e701a4569a7e791bad36098"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ArtinNormalisers/Theorem18/NormalizerAction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "54b0dc36cf3ef6c399119c8a641e759b1d0474bf94d650c208314f4c4d3c99aa"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/AtomicCoxeter.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ceb1062ad36adc85ad3d1881f0c1dac898eca5f2ffd8766563aebaaaa17e2030"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/CofinalRibbons.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "798d2c8d57ba2b21a840e972d38c9f9fbea17b72bbe25f3570b17f3e33f0d23a"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/CoxeterProjection.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a6d32269fd65204290ae7656eb7d8931150e18a1dc430c7c50ae1011205aa910"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/DeltaDivisibility.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9745034e8c34a21af83f76d196147c379ce2b4fb520faafcf33a90b708b0258c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/FractionNormalForms.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "098f2ebaaca09e3c9c2b23cc0d75671d6bf64eeef0338e2a2edb1b2bc4b24f81"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/Fundamental.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "31af15bb2f724d52c32811fa588d79e67f9bed540cca68b651aaaf1571ce725c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/Landmark2.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "0fcb9db16ee03c6814f7edcc34e46ce09178fa0583a1bf340c687385b6436bb9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/NormalizerSplitting.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "040404d3a5f5452e8a249802a91ca4b733259a771e623fa91c2cee4c7855671c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/ParabolicReduction.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9eab9f076a668e640a7f8a433da8ea5630f9f18f8c8b430f13709ff02c3acfb9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/Positive.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e845ca0bb0f7b7761d373d23107919055b7af05b7960d2995f8a21dc1accb970"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/PositiveEmbedding.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "e3c99b5d680624880a89cd776d3508ff4201703d5a5806e760071f277fad1802"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/PositiveReindex.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "373da7768f9c965a027319eb12e7ba5818b170735355ff9c1ae97256e728fd29"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/PositiveRibbons.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "addf21b6027f0bbad264890d4e4f3048888738f28175d7567a8c3d369d045e7c"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/PositiveSupport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "96160e94b39c1ac5ed2bb09cc2626e1a43980854596b070273681aa2bc710bc7"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/Presentation.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "f40c1c393705172803299a13a3bd81bf4fdfff18f40718f45aed07101562d5a0"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/ReducedRibbons.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "124de76e11280d5784184c4702391486da68801bfcad1a70639423e2ff379628"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/RibbonGroupoid.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "a14477fe92250650d98f5a57d22973228495ba688e765a4e369a4db0f890ce5d"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/RibbonLcm.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "2be9ece462f5b1542075d44c683269ced9ba92f4bd2b4502f4e0cf5bfb48fcaa"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/RibbonPositiveCalculus.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "2108bdce858679cb2ce3de88cd24ccad121df11476055bf93ed0bb5cbaa673a9"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/RibbonRelations.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "4f85cb104225d482983eb4e224a5881756837ee40665f912d6815f2f00fdb14d"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/RibbonUniversal.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "109fae82d1193fd3200a6b47e7d4302dd7d0c7b0463b9f4d16e19cb8588b54ef"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/RibbonWords.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ef1ed56588571633cd42326d12210b394bc5f808ac38fb5404c08c17708fb639"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:ribbons/ArtinRibbons/SphericalPositive.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "9020135c6b1fa1a27ba7c0e0403e9b12b9785cacf8eeb7ebfabfb900136a9d8b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/AllBasepoints.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "6fd0ae5f56fd445bdeb288ec9cb787838b1b09f77ec7ab615a01c4480f7676c4"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/BasepointTransport.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "069ac9ced6eb771b0f1af5301a80e4c4e6343d5179d0711527d909fa1048e343"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/EndpointMonodromy.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "457a5244ef7667de091dd9ce8ffa38b9f9b341eacb39963363b04be4247e965f"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/KernelComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5b41a1103c059800cfd0318a57fe2f263043175116203c48f32bda348704a874"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/Landmark4.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "73c1fa143ac1967c44a8f3464c6d6fb1cfe2bc70b30c0b5954c0e494b4ca32b6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/NormalizedExactness.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "67469e5c3ea01644a29440f7bdcddd2b167e734e5fa66a4b0adf8d3377ee2b4b"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/PositiveConventions.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "d16e582e082d8730d25ebef93d321af2183a285e0a5c2c232538fea05e3e87d6"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/RibbonVertex.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "3a46207a4c2ba0b9a9f5ed1ca582df584511ce96ec9c1ba2987b6d8c15335e4e"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/StandardComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "bcfbdcd5c7ce4842c87ba97b5953d8aa3b9cc1256e8900132f3c6ba915c4fda3"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/StandardMonodromy.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "ac920ee4360da31d1fb91a327622bc91259caf17dc08a1160f411648971cfd41"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/StandardPureComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "87c5d16a7576aacf4926281bc5ca723adbd437e0308b1f145ffd6ef23000c725"
+    },
+    {
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "e7703926f3e486c0fca3a0fe292ab56d6411c248:sequences/ArtinSequences/VertexComparison.lean"
+      ],
+      "cwd": "repository root",
+      "exit_code": 0,
+      "stdout_sha256": "5983151abc14b29fc6e9c66fb5a217cdb854d424228fc8694dbe0ce38c9bc31e"
+    }
+  ],
+  "baseline_archive_sha256_after": {
+    "ExportDependencies.lean": "f9a686d51bedf57d04de4105a2c57538d66a6ec2f908c3b099f30eb4abb681fa",
+    "ExportM3Dependencies.lean": "663ef05a28c98d84fd043fec010405b7a8d44c95f081f35d3b4059c3044e1ea8",
+    "dependency-graph.json.gz": "15ff472bad85f947e823b0c7be7ab98dfcd68bdd0528b98f1f2529d827c21255",
+    "dependency-graph.raw.json.gz": "cf1460b8afc4bc802d19cdada9a2ea7027ba0161c32055baf37d0df13c1e9fea",
+    "export-attempt-1.log": "8f0cedbadcb3dca9374cc5fc8a92ef8c70b21fea1888e0d093840a5e542976e6",
+    "export-attempt-2.log": "03e848e308783c03fe4fb24b840b9c15f1f7c2473b6ed4ddde6209f7bc0cd662",
+    "export-attempt-3.log": "5ef3790a318e404f9aed3ff64cf075bc9a012c791bd3e80b5c9b9a7e0c776505",
+    "export-execution-initial.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-execution.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-final.log": "0e5eeb075c9601376dd9afd2112763aed5aa48240a0ea5c69b0c2ad83b64131c",
+    "m3/ledger-validation-after-publication-final.json": "78e0e4b659c456ca960476c4e10efec39649c57937f2b75f14e86fe6ef6bf1b2",
+    "m3/ledger-validation-after-publication.json": "7642b5b0da53bdc6ded34f9d11731ecb2e82730bec1034c58857a76e1d606965",
+    "m3/run-20261114T065009Z/execution.json": "9f0fd90c475ee78f39c3e213cf7b3829fd1bc442989ad69f4e4b3d85ccbdf817",
+    "m3/run-20261114T065009Z/graph.json.gz": "585acaaa5c6ef4b9320d63f1c23524c9358ef8a57ccdb91a93eea2878b5d0858",
+    "m3/run-20261114T065009Z/graph.raw.json.gz": "71d7ac4e096e7583fa94210496b2bb6d2679fa3925ec42523000c9d43e7be74c",
+    "m3/run-20261114T065009Z/logs/final-observer.log": "e00f2f77a33bf07ed7b61c00fbe588d9d2b04ee99c63d7ca90de29bda159ac06",
+    "m3/run-20261114T065009Z/logs/lean-path.log": "f3f0cfe826ce87c370ba4d9c29bd84ebfa9a5de0b40623bc7f9514ab8d8b89be",
+    "m3/run-20261114T065009Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m3/run-20261114T065009Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m3/run-20261114T065009Z/logs/observed-git-head.log": "3775f6272f2bfd6bb11f6dc1577ae59389ad841b73d99b9acc29c1c9394d2e1b",
+    "m3/run-20261114T065009Z/logs/observed-git-tree.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m3/run-20261114T065009Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m3/run-20261114T065009Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m3/run-20261114T065009Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m3/run-20261114T065009Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m3/run-20261114T065009Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m3/run-20261114T065009Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m3/run-20261114T065009Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m3/run-20261114T065009Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m3/run-20261114T065009Z/logs/preliminary-observer.log": "371baa4b6402f08564fb94f488b8060dda0003f733c5f785043578ce5dfab150",
+    "m3/run-20261114T065009Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m3/run-20261114T065009Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m3/run-20261114T065009Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m3/run-20261114T065009Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/preliminary.raw.json.gz": "efa077fb63e2cab81a59bb33e49d35a860b9aae1571681dc9138c06732ce6b14",
+    "m3/source-attribution.json": "298aa294dbe8e415109cba1c48af4a821dad6012a517f27df9c8a74333efcab2",
+    "m3/validation.json": "6bbc6f1ba6e8d92402d9270fbb514e212f2a7556b909cbadbe8f7d51deb344d8",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json": "d335e6bae0de396b82b3116143a933ec45847add5bf63d8ce835f59382ac65fd",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdin.txt": "48b3b11ee07a1ae0f61d200e89dae7fb93a4badba65682f51bf7a5bed0a9b46d",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdout.gz": "af64a3cf4a5eac9dcb92d90b0bc2a713229cb6fc76258fbab57adc75c9619709",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-ls-tree.stdout.gz": "69b60670561ef9ddc129c53b8ffa137eca26243ae04fcc8012d4f89f4c6cc261",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/validation.json": "9a5d39c16a5bae46cd63a0096354ce142efcdcf942ce648aa53d95003c2ebf3a",
+    "run_export.py": "ce4b5cce2c01f33611d124118e4d31735c70b46e3bb797ad34ac36cd997a8083",
+    "run_m3_export.py": "9951ac817a0fb0f02cae368425107cc1d76db03d9d065a43a0749e9e88aaad31",
+    "validation.json": "c189a2095b0a26e9776fa43cc2b5737aca90260f4bd31c226584a45dc07f01d9"
+  },
+  "baseline_archive_sha256_before": {
+    "ExportDependencies.lean": "f9a686d51bedf57d04de4105a2c57538d66a6ec2f908c3b099f30eb4abb681fa",
+    "ExportM3Dependencies.lean": "663ef05a28c98d84fd043fec010405b7a8d44c95f081f35d3b4059c3044e1ea8",
+    "dependency-graph.json.gz": "15ff472bad85f947e823b0c7be7ab98dfcd68bdd0528b98f1f2529d827c21255",
+    "dependency-graph.raw.json.gz": "cf1460b8afc4bc802d19cdada9a2ea7027ba0161c32055baf37d0df13c1e9fea",
+    "export-attempt-1.log": "8f0cedbadcb3dca9374cc5fc8a92ef8c70b21fea1888e0d093840a5e542976e6",
+    "export-attempt-2.log": "03e848e308783c03fe4fb24b840b9c15f1f7c2473b6ed4ddde6209f7bc0cd662",
+    "export-attempt-3.log": "5ef3790a318e404f9aed3ff64cf075bc9a012c791bd3e80b5c9b9a7e0c776505",
+    "export-execution-initial.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-execution.json": "8f54f9708700e08f641abfe6b3c060526cad8b885c8bfa97a0c55d9c0de38db2",
+    "export-final.log": "0e5eeb075c9601376dd9afd2112763aed5aa48240a0ea5c69b0c2ad83b64131c",
+    "m3/ledger-validation-after-publication-final.json": "78e0e4b659c456ca960476c4e10efec39649c57937f2b75f14e86fe6ef6bf1b2",
+    "m3/ledger-validation-after-publication.json": "7642b5b0da53bdc6ded34f9d11731ecb2e82730bec1034c58857a76e1d606965",
+    "m3/run-20261114T065009Z/execution.json": "9f0fd90c475ee78f39c3e213cf7b3829fd1bc442989ad69f4e4b3d85ccbdf817",
+    "m3/run-20261114T065009Z/graph.json.gz": "585acaaa5c6ef4b9320d63f1c23524c9358ef8a57ccdb91a93eea2878b5d0858",
+    "m3/run-20261114T065009Z/graph.raw.json.gz": "71d7ac4e096e7583fa94210496b2bb6d2679fa3925ec42523000c9d43e7be74c",
+    "m3/run-20261114T065009Z/logs/final-observer.log": "e00f2f77a33bf07ed7b61c00fbe588d9d2b04ee99c63d7ca90de29bda159ac06",
+    "m3/run-20261114T065009Z/logs/lean-path.log": "f3f0cfe826ce87c370ba4d9c29bd84ebfa9a5de0b40623bc7f9514ab8d8b89be",
+    "m3/run-20261114T065009Z/logs/lean-prefix.log": "c41b7bc57545e7b9b842a126fa1d868b2e76d0ba4d05abbd9fbcdc4cabb6994f",
+    "m3/run-20261114T065009Z/logs/lean-version.log": "955694f512f952d3685473c771c4403ff33ed28867f0377b8e4a2d7b60e6392d",
+    "m3/run-20261114T065009Z/logs/observed-git-head.log": "3775f6272f2bfd6bb11f6dc1577ae59389ad841b73d99b9acc29c1c9394d2e1b",
+    "m3/run-20261114T065009Z/logs/observed-git-tree.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/pin-Cli.log": "0b02d5a4fe5d5a01df3f882e32757cc69f05e71e5d59c7040e7b97247844b0c6",
+    "m3/run-20261114T065009Z/logs/pin-LeanSearchClient.log": "df76e5f43db81d985270a3dc5f7a74fc917f6d3cbd5f4bdf15c6ec980351a9e8",
+    "m3/run-20261114T065009Z/logs/pin-Qq.log": "0ba1fc76cd54030c3df3776efadc0661e3d3ed564cf79deffae8f497445ac8e5",
+    "m3/run-20261114T065009Z/logs/pin-aesop.log": "7a0045c4e5bcf720cef4810d8cee9ece03fb53a9528a2bb1bcd7ae3c0553edf8",
+    "m3/run-20261114T065009Z/logs/pin-batteries.log": "2c7e6971a14aad332993375c8ae8dbaff6eaa2a91552281f4d181a3f686f1522",
+    "m3/run-20261114T065009Z/logs/pin-importGraph.log": "c0dfd2b721ccb80eb90d576e0737d2f318c17f1e1cbe0e1e8097b2f8413862d6",
+    "m3/run-20261114T065009Z/logs/pin-mathlib.log": "3256c86b304af9a058b076f993189521ac7c02fe2f121e19292af3e285343f8b",
+    "m3/run-20261114T065009Z/logs/pin-plausible.log": "c9e30a21a5211c839b956481f7e19258973d98c00141c23d28ea70ff743fdf7c",
+    "m3/run-20261114T065009Z/logs/pin-proofwidgets.log": "342bd44e6bf8fd528f06e3992b4fde1433b3e13bd15e7c5fe2a696f6481a3241",
+    "m3/run-20261114T065009Z/logs/preliminary-observer.log": "371baa4b6402f08564fb94f488b8060dda0003f733c5f785043578ce5dfab150",
+    "m3/run-20261114T065009Z/logs/resolve-lake.log": "e66d5bbd096e3c90020ab12f5b7148a1306e7a2fa305d1506c78fef66aea1b94",
+    "m3/run-20261114T065009Z/logs/resolve-lean.log": "e29d6a00723112f05d92022bc40365fd16377eda8cb6c9a059a0d7f3c2e00993",
+    "m3/run-20261114T065009Z/logs/resolve-leanchecker.log": "3972a378975a66541182e33e3de3e8daeef2bb91a16f09d86032e18ad1a029b3",
+    "m3/run-20261114T065009Z/logs/tracked-Cli.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-LeanSearchClient.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-Qq.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-aesop.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-batteries.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-importGraph.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-mathlib.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-plausible.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/logs/tracked-proofwidgets.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "m3/run-20261114T065009Z/preliminary.raw.json.gz": "efa077fb63e2cab81a59bb33e49d35a860b9aae1571681dc9138c06732ce6b14",
+    "m3/source-attribution.json": "298aa294dbe8e415109cba1c48af4a821dad6012a517f27df9c8a74333efcab2",
+    "m3/validation.json": "6bbc6f1ba6e8d92402d9270fbb514e212f2a7556b909cbadbe8f7d51deb344d8",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/binding.json": "d335e6bae0de396b82b3116143a933ec45847add5bf63d8ce835f59382ac65fd",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdin.txt": "48b3b11ee07a1ae0f61d200e89dae7fb93a4badba65682f51bf7a5bed0a9b46d",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-cat-file.stdout.gz": "af64a3cf4a5eac9dcb92d90b0bc2a713229cb6fc76258fbab57adc75c9619709",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/git-ls-tree.stdout.gz": "69b60670561ef9ddc129c53b8ffa137eca26243ae04fcc8012d4f89f4c6cc261",
+    "publications/59941e65aece274beb65a3f5c668616a69c0e292/validation.json": "9a5d39c16a5bae46cd63a0096354ce142efcdcf942ce648aa53d95003c2ebf3a",
+    "run_export.py": "ce4b5cce2c01f33611d124118e4d31735c70b46e3bb797ad34ac36cd997a8083",
+    "run_m3_export.py": "9951ac817a0fb0f02cae368425107cc1d76db03d9d065a43a0749e9e88aaad31",
+    "validation.json": "c189a2095b0a26e9776fa43cc2b5737aca90260f4bd31c226584a45dc07f01d9"
+  },
+  "clean_github_ci_status": "pending/in progress; no successful CI result asserted",
+  "counts": {
+    "physical_project_aliases": 2,
+    "physical_project_occurrences": 2528,
+    "project_roots": 2526,
+    "reachable_declarations": 42603,
+    "reachable_modules": 1670,
+    "references": 973914
+  },
+  "edges_have_targets": true,
+  "exact_committed_modules_at_observed_HEAD": 91,
+  "kind": "complete-M4-graph-and-attribution-integrity",
+  "limits": "Record integrity, complete graph/occurrence accounting and actual Git source-attribution validation only; mathematical acceptance is the separate root receipt.",
+  "ok": true,
+  "old_roots": 2375,
+  "old_roots_and_edges_preserved": true,
+  "precommit_modules_at_observed_HEAD": 0,
+  "run_execution_sha256": "90df0f22aba019ee5a37231373ef26b7b2ea8c60f1481d3c601602a80b1ebaa7",
+  "shared_name": "ArtinNormalisers.Ribbon2.elementaryMu.congr_simp",
+  "shared_names": 0,
+  "source_attribution": "Direct full-tree published source blob checks; no correction supplement needed",
+  "technical_M4_physical_distinct_names": 151,
+  "validator_sha256": "291a2b65bc92518f0dce118d40635b4bf15bccc8aa71dea5d4db754be7633632"
+}

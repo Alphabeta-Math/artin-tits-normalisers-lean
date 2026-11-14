@@ -1,0 +1,14 @@
+F841 Local variable `search` is assigned to but never used
+   --> docs/provenance/run_m4_export.py:202:9
+    |
+200 |         ).strip()
+201 |         lean_path = run("lean-path", [LAKE, "env", "printenv", "LEAN_PATH"]).strip()
+202 |         search = [
+    |         ^^^^^^
+203 |             Path(p) if Path(p).is_absolute() else SEQUENCES / p
+204 |             for p in lean_path.split(os.pathsep)
+    |
+help: Remove assignment to unused variable `search`
+
+Found 1 error.
+No fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).

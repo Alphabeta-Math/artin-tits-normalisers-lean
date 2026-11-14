@@ -1,0 +1,15 @@
+{
+  "kind": "observer-development-lint-record",
+  "argv": [
+    "ruff",
+    "check",
+    "--select",
+    "F",
+    "docs/provenance/run_m4_export.py"
+  ],
+  "exit_code": 1,
+  "log": "docs/provenance/m4/development-lint-check.log",
+  "log_sha256": "934eff68b3bc38ef81d8a69a9c88bec20bfd6172d61892d22fa1c0deb34614cd",
+  "observer_sha256": "1a61f84b2ac28c44cc5de4c35e26c61ecd683b294518c1211b7f67d75a8c0242",
+  "disposition": "Unused local search list inherited from the earlier observer wrapper. It has no effect on executed graph construction or source/physical checks. Source is intentionally preserved after input-bound export; independent graph and Git publication validations passed. No compiler/kernel check is represented by this lint result."
+}

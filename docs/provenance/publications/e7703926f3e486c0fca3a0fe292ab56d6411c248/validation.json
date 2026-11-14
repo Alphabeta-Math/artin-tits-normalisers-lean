@@ -1,0 +1,22 @@
+{
+  "Lean_commands_executed": false,
+  "M4_project_source_files": 13,
+  "actual_Git_tree_matches_preserved_output": true,
+  "all_frozen_source_config_provider_review_bindings_match": true,
+  "all_raw_blobs_match_Git_object_IDs": true,
+  "all_repository_owned_observed_snapshots_accounted_for": true,
+  "allowed_historical_non_scientific_differences": [],
+  "baseline_archive_unchanged": true,
+  "binding_sha256": "9f3b5aae9aa3ffdedf26c319e0227104a49682973e354cf6f643d4a9c7d75e47",
+  "clean_CI_result_asserted": false,
+  "commit": "e7703926f3e486c0fca3a0fe292ab56d6411c248",
+  "exact_source_bindings": 1014,
+  "kind": "publication-blob-integrity-validation",
+  "limits": "Validates exact source-publication and evidence integrity; clean CI and mathematical acceptance remain separate records.",
+  "ok": true,
+  "post_publication_observer_inputs_preserved_without_false_Git_links": [
+    "docs/provenance/ExportM4Dependencies.lean",
+    "docs/provenance/run_m4_export.py"
+  ],
+  "validator_sha256": "db2e3fe28b26a261a7753a1a312302b16b9995fc7a245555c4d260e52056d674"
+}
