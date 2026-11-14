@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "phase": "audit",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+  "started_at": "2026-11-14T10:31:11.615096+00:00",
+  "modules": [
+    "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+    "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+    "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+    "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross",
+    "ArtinHomotopyVendor.Util.References",
+    "ArtinHomotopyVendor.Topology.Realization.Basic",
+    "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+    "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts",
+    "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier",
+    "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+    "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+    "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts",
+    "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone",
+    "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation",
+    "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces",
+    "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence",
+    "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap",
+    "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination",
+    "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius",
+    "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement",
+    "ArtinHomotopyVendor.Topology.Realization.MetricRealizationDomination"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 0.019258746004197747,
+      "log": "00-audit.log",
+      "log_sha256": "3102c2075b8b570bd3c42c3e0c9ca675e64c0aaad6591bac84ef3441682441b7"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "ProviderAudit.lean"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 4.719858624972403,
+      "log": "01-audit.log",
+      "log_sha256": "3196a66ea292782f9001f39f5238c75e90b0393236e1aeb820f05d032e3ba142"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib (all non-Mathlib closure modules selected)",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T10:31:16.364103+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "42630f1d17e52858eea78c6cca6584282464ff295ee0880cb2f2ebd72871709f",
+  "inputs_after_sha256": "42630f1d17e52858eea78c6cca6584282464ff295ee0880cb2f2ebd72871709f"
+}

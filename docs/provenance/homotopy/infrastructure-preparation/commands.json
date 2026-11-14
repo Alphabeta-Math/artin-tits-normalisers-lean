@@ -1,0 +1,44 @@
+[
+  {
+    "argv": [
+      "python3",
+      "homotopy/scripts/verify.py",
+      "--write-audit"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "docs/provenance/homotopy/infrastructure-preparation/write-audit-01.log",
+    "log_sha256": "868205ea10afffae8f840c9e68177e9faaa8d2e104e3627db995329ee6649c9f",
+    "executed_at": "2026-11-14T11:09:59.577591+00:00",
+    "scope": "Static source/config/review binding preparation only; no Lean command or mathematical acceptance"
+  },
+  {
+    "argv": [
+      "python3",
+      "homotopy/scripts/cache_prerequisites.py",
+      "--plan"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "docs/provenance/homotopy/infrastructure-preparation/cache-plan.log",
+    "log_sha256": "2f212881b923cf6f1ea22a4350d1af903614f3a3c5a712da1bb114732437ad35",
+    "executed_at": "2026-11-14T11:09:59.612460+00:00",
+    "scope": "Static source/config/review binding preparation only; no Lean command or mathematical acceptance"
+  },
+  {
+    "argv": [
+      "/home/lazyinspirit/.local/bin/ruff",
+      "check",
+      "--select",
+      "F",
+      "homotopy/scripts/verify.py",
+      "homotopy/scripts/cache_prerequisites.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "log": "docs/provenance/homotopy/infrastructure-preparation/ruff.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "executed_at": "2026-11-14T11:09:59.621632+00:00",
+    "scope": "Static source/config/review binding preparation only; no Lean command or mathematical acceptance"
+  }
+]

@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/Basic.lean
++++ ArtinHomotopyVendor/Topology/Realization/Basic.lean
+@@ -6,7 +6,7 @@
+ 
+ module
+ 
+-public import Colib.Util.References
++public import ArtinHomotopyVendor.Util.References
+ public import Mathlib.AlgebraicTopology.SimplicialSet.TopAdj
+ 
+ /-!

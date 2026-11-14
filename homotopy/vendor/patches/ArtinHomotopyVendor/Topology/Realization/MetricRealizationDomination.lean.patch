@@ -1,0 +1,15 @@
+--- Colib/Topology/Realization/MetricRealizationDomination.lean
++++ ArtinHomotopyVendor/Topology/Realization/MetricRealizationDomination.lean
+@@ -5,9 +5,9 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.NumerableRealizationDomination
+-public import Colib.Topology.MetricSpace.CoverRadius
+-public import Colib.Topology.Realization.MetricPointStarRefinement
++public import ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination
++public import ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius
++public import ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement
+ public import Mathlib.Topology.EMetricSpace.Paracompact
+ 
+ /-!

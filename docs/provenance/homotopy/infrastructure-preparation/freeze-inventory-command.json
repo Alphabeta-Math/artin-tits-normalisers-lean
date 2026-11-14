@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "python3",
+    "docs/provenance/homotopy/freeze_prerequisite_inventory.py",
+    "--technical-record",
+    "homotopy/evidence/prerequisites-technical-20261114T111954Z/verification.json"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+  "exit_code": 0,
+  "log": "docs/provenance/homotopy/infrastructure-preparation/freeze-inventory.log",
+  "log_sha256": "12572cabf08162dccc4a2d2daf20cbf2c9b0d5aece740d94d71963958fd5ad4f",
+  "inventory_freezer_sha256": "d95e8b3ef9a6d0610752fc2405eb81c0a1192b47011bd50a82e4517055e454e5",
+  "scope": "Actual observed technical coverage frozen for independent prerequisite reviews; no full-target acceptance"
+}

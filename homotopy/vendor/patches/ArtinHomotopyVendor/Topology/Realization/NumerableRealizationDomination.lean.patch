@@ -1,0 +1,13 @@
+--- Colib/Topology/Realization/NumerableRealizationDomination.lean
++++ ArtinHomotopyVendor/Topology/Realization/NumerableRealizationDomination.lean
+@@ -5,8 +5,8 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.POUNerveClassifier
+-public import Colib.Topology.Realization.OrderedNerveRealizationMap
++public import ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier
++public import ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap
+ 
+ /-!
+ # Constructed numerable domination by an actual cover-nerve realization

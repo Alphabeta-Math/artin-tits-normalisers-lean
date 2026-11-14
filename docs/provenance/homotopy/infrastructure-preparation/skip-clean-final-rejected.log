@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy/scripts/verify.py", line 1280, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy/scripts/verify.py", line 801, in main
+    require(
+    ~~~~~~~^
+        not args.skip_clean or args.mode == "technical",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        "--skip-clean is permitted only in technical mode; final mode always cleans",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy/scripts/verify.py", line 71, in require
+    raise RuntimeError(message)
+RuntimeError: --skip-clean is permitted only in technical mode; final mode always cleans

@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/OrderedConnectorInterpolation.lean
++++ ArtinHomotopyVendor/Topology/Realization/OrderedConnectorInterpolation.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.ConnectorSimplexCone
++public import ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone
+ 
+ /-!
+ # Constructed finite ordered connector interpolation

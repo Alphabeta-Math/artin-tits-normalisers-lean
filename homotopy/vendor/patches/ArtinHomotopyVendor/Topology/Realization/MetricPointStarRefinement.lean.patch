@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/MetricPointStarRefinement.lean
++++ ArtinHomotopyVendor/Topology/Realization/MetricPointStarRefinement.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.NumerableConnectorCover
++public import ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover
+ public import Mathlib.Topology.MetricSpace.Lipschitz
+ public import Mathlib.Tactic.Linarith
+ public import Mathlib.Tactic.NormNum

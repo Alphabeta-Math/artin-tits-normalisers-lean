@@ -1,0 +1,2132 @@
+{
+  "schema": "m5-topological-carrier-search-v1",
+  "prepared_utc": "2026-11-14T11:19:12.525352+00:00",
+  "scope": "Bounded GitHub code search for actual topological acyclic carriers / cell extensions; all returned repositories retained, no global nonexistence claim.",
+  "search_commands_and_complete_results": [
+    {
+      "name": "acyclic-carrier",
+      "query": "AcyclicCarrier",
+      "command": [
+        "gh",
+        "search",
+        "code",
+        "AcyclicCarrier",
+        "--extension",
+        "lean",
+        "--limit",
+        "100",
+        "--json",
+        "path,repository,url"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "results": [
+        {
+          "path": "Reg/D5/S3/HomologicalAlgebra/AcyclicCarrier.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMjk2Nzk5MDI0",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "the-omega-institute/trureturing",
+            "url": "https://github.com/the-omega-institute/trureturing"
+          },
+          "url": "https://github.com/the-omega-institute/trureturing/blob/f40f8f7890746e30727a89c827884db32dc0688f/Reg/D5/S3/HomologicalAlgebra/AcyclicCarrier.lean"
+        },
+        {
+          "path": "D5/S3/HomologicalAlgebra/AcyclicCarrier.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMjk2Nzk5MDI0",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "the-omega-institute/trureturing",
+            "url": "https://github.com/the-omega-institute/trureturing"
+          },
+          "url": "https://github.com/the-omega-institute/trureturing/blob/f40f8f7890746e30727a89c827884db32dc0688f/D5/S3/HomologicalAlgebra/AcyclicCarrier.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/AcyclicCarrierAssembly.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/AcyclicCarrierAssembly.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular_comparison.lean"
+        },
+        {
+          "path": "BondalThomsen.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_acyclic_carrier.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_acyclic_carrier.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_incidence_face_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_incidence_face_comparison.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/acyclic_carrier_assembly.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/acyclic_carrier_assembly.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/DualCochainComparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/DualCochainComparison.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/SmallSingularComparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/SmallSingularComparison.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_order_closure_homotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_order_closure_homotopy.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/small_singular_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/small_singular_comparison.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/realization_api.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/realization_api.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/open_neighborhoods.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/open_neighborhoods.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_incidence_chains.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_incidence_chains.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/barycentric_homotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/barycentric_homotopy.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/closed_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/closed_comparison.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/small_chain_quasi_iso.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/small_chain_quasi_iso.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/IncidenceSingularGlobalEquivalence.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/IncidenceSingularGlobalEquivalence.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/IncidenceSingularChainEquivalence.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/IncidenceSingularChainEquivalence.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/reduced_cochain_acyclicity.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/reduced_cochain_acyclicity.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/small_chain_mesh_shrinking.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/small_chain_mesh_shrinking.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/incidence_homology_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/incidence_homology_comparison.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/realization_equivalence.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/realization_equivalence.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/global_carrier_homotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/global_carrier_homotopy.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/subdivision_cell_expansion.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/subdivision_cell_expansion.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/incidence_singular_chain_equivalence.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/incidence_singular_chain_equivalence.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/small_chain_positive_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/small_chain_positive_comparison.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/incidence_singular_global_equivalence.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/incidence_singular_global_equivalence.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/AugmentedCochainComparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/AugmentedCochainComparison.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/SmallChainQuasiIso.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/SmallChainQuasiIso.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/SmallChainMeshShrinking.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/SmallChainMeshShrinking.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/SubdivisionCellExpansion.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/SubdivisionCellExpansion.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/SmallChainPositiveComparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/SmallChainPositiveComparison.lean"
+        }
+      ]
+    },
+    {
+      "name": "carrier-homotopy",
+      "query": "carrierHomotopy",
+      "command": [
+        "gh",
+        "search",
+        "code",
+        "carrierHomotopy",
+        "--extension",
+        "lean",
+        "--limit",
+        "100",
+        "--json",
+        "path,repository,url"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "results": [
+        {
+          "path": "lean/OAI/GroupTheory/UniversalGroup/MilnorProducts.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/UniversalGroup/MilnorProducts.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Topology/CarrierHomotopy/CarrierHomotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Topology/CarrierHomotopy/CarrierHomotopy.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Chains/FiniteChainMesh.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/Chains/FiniteChainMesh.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/AcyclicKanSimplexLifting.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/Simplicial/AcyclicKanSimplexLifting.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/PointwiseCarrierHomotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/PointwiseCarrierHomotopy.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/BarycentricSupportInclusion.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/Simplicial/BarycentricSupportInclusion.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/RelativeCollar.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/RelativeCollar.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/CoordinateMesh.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/CoordinateMesh.lean"
+        },
+        {
+          "path": "Colib/Topology/LocalEquiconnection.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2NTUxMDI5",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/colib",
+            "url": "https://github.com/kangxyz/colib"
+          },
+          "url": "https://github.com/kangxyz/colib/blob/bac5cab53eb6526e366e861d289253ec81aa89f0/Colib/Topology/LocalEquiconnection.lean"
+        },
+        {
+          "path": "Quillen/Topology/LocalEquiconnection.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDEyMTI0MzQx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/quillen-k-theory",
+            "url": "https://github.com/kangxyz/quillen-k-theory"
+          },
+          "url": "https://github.com/kangxyz/quillen-k-theory/blob/c561118b7795eb9780be9ed391c3251d6a4d0afd/Quillen/Topology/LocalEquiconnection.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/ApproximationAssembly.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/ApproximationAssembly.lean"
+        },
+        {
+          "path": "Colib/Topology/Realization/NumerableRealizationDomination.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2NTUxMDI5",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/colib",
+            "url": "https://github.com/kangxyz/colib"
+          },
+          "url": "https://github.com/kangxyz/colib/blob/bac5cab53eb6526e366e861d289253ec81aa89f0/Colib/Topology/Realization/NumerableRealizationDomination.lean"
+        },
+        {
+          "path": "Quillen/Topology/Realization/NumerableRealizationDomination.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDEyMTI0MzQx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/quillen-k-theory",
+            "url": "https://github.com/kangxyz/quillen-k-theory"
+          },
+          "url": "https://github.com/kangxyz/quillen-k-theory/blob/c561118b7795eb9780be9ed391c3251d6a4d0afd/Quillen/Topology/Realization/NumerableRealizationDomination.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/FixedInternalPathMaps.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA3OTUwMjcx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "openai/math",
+            "url": "https://github.com/openai/math"
+          },
+          "url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/Simplicial/FixedInternalPathMaps.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/CarrierHomotopyStatement.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/CarrierHomotopyStatement.lean"
+        },
+        {
+          "path": "data/exports/openai-math/OAI.GroupTheory.UniversalGroup.MilnorProducts.expanded.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzY3Njc5OTAx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "competemath/emissary-archangel",
+            "url": "https://github.com/competemath/emissary-archangel"
+          },
+          "url": "https://github.com/competemath/emissary-archangel/blob/d1d783ae85b9236500e4a03c6068b97bd604a25c/data/exports/openai-math/OAI.GroupTheory.UniversalGroup.MilnorProducts.expanded.lean"
+        },
+        {
+          "path": "lean4/BEDC/Derived/HomotopyExtensionPropertyUp/TasteGate.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMjI0OTkwMDQz",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "the-omega-institute/newmath",
+            "url": "https://github.com/the-omega-institute/newmath"
+          },
+          "url": "https://github.com/the-omega-institute/newmath/blob/223bff05b2227f278d34738b20c15a95a5f64e86/lean4/BEDC/Derived/HomotopyExtensionPropertyUp/TasteGate.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/GlobalCarrierHomotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/GlobalCarrierHomotopy.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/Zeeman.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/Zeeman.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/CollarSelfMap.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/CollarSelfMap.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/CollarHomotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/CollarHomotopy.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/PointwiseCarrierHomotopyStatement.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/PointwiseCarrierHomotopyStatement.lean"
+        },
+        {
+          "path": "BondalThomsen/Toric/Cohomology/NegativeSupportContractibility.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Toric/Cohomology/NegativeSupportContractibility.lean"
+        },
+        {
+          "path": "BondalThomsen.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_acyclic_carrier.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_acyclic_carrier.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/AcyclicCarrierAssembly.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/AcyclicCarrierAssembly.lean"
+        },
+        {
+          "path": "GromovFilling/NormalFormBoundaryObstruction.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzQ3Njg5NjQ1",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "lowrank/gromov-filling-lower-bound",
+            "url": "https://github.com/lowrank/gromov-filling-lower-bound"
+          },
+          "url": "https://github.com/lowrank/gromov-filling-lower-bound/blob/d63b2618df02cb9c8bee04d6612b5241079949c9/GromovFilling/NormalFormBoundaryObstruction.lean"
+        },
+        {
+          "path": "BondalThomsen/Toric/Cohomology/DemazureAllDegree.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Toric/Cohomology/DemazureAllDegree.lean"
+        },
+        {
+          "path": "BondalThomsen/Cohomology/ConvexNerve/ReducedCochainAcyclicity.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDAyMzI0MjEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/BondalThomsen",
+            "url": "https://github.com/AxiomMath/BondalThomsen"
+          },
+          "url": "https://github.com/AxiomMath/BondalThomsen/blob/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/ReducedCochainAcyclicity.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/reduced_cochain_acyclicity.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/reduced_cochain_acyclicity.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/star_convex_nerve.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/star_convex_nerve.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/global_carrier_homotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/global_carrier_homotopy.lean"
+        },
+        {
+          "path": "toric_power_maps/source/toric_power/cech_singular/compact_carrier_comparison.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2Mjk2MjIw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "caiusdfolkerts/lean",
+            "url": "https://github.com/caiusdfolkerts/lean"
+          },
+          "url": "https://github.com/caiusdfolkerts/lean/blob/4e40a35e9894c584de3c7aa34a3e6b0749a3929d/toric_power_maps/source/toric_power/cech_singular/compact_carrier_comparison.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/VertexStarApproximationStatement.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/VertexStarApproximationStatement.lean"
+        },
+        {
+          "path": "HomotopyHypothesis/Approximation/Zeeman/VertexStarApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDIwMTQzNDEw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "cadamcat/homotopy-hypothesis-lean4",
+            "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4"
+          },
+          "url": "https://github.com/cadamcat/homotopy-hypothesis-lean4/blob/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/VertexStarApproximation.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfBallBoundaryCollapse.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfBallBoundaryCollapse.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfBallInteriorBoundaryCollapse.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfBallInteriorBoundaryCollapse.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneTrisectionInterfaceHomotopy.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneTrisectionInterfaceHomotopy.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/FiniteOrderedComplexCarrierCollapse.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/FiniteOrderedComplexCarrierCollapse.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfTargetCollapse.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfTargetCollapse.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfComplementCollapse.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfComplementCollapse.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfBallCollapse.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneMinimalHopfBallCollapse.lean"
+        },
+        {
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneTrisectionInterfacePiOne.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzI2NTM3NDEy",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "Vilin97/homotopy-groups-lean",
+            "url": "https://github.com/Vilin97/homotopy-groups-lean"
+          },
+          "url": "https://github.com/Vilin97/homotopy-groups-lean/blob/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/ComplexProjectivePlaneTrisectionInterfacePiOne.lean"
+        },
+        {
+          "path": "lean/OAI/GroupTheory/UniversalGroup/MilnorProducts.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/GroupTheory/UniversalGroup/MilnorProducts.lean"
+        },
+        {
+          "path": "lean/OAI/GroupTheory/UniversalGroup/MilnorProducts.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/GroupTheory/UniversalGroup/MilnorProducts.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Chains/FiniteChainMesh.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/Chains/FiniteChainMesh.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Chains/FiniteChainMesh.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/Chains/FiniteChainMesh.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/AcyclicKanSimplexLifting.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/Simplicial/AcyclicKanSimplexLifting.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/AcyclicKanSimplexLifting.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/Simplicial/AcyclicKanSimplexLifting.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/BarycentricSupportInclusion.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/Simplicial/BarycentricSupportInclusion.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/BarycentricSupportInclusion.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/Simplicial/BarycentricSupportInclusion.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/FixedInternalPathMaps.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQwNDMyMDY3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "jingyuanli-hk/openai_math",
+            "url": "https://github.com/jingyuanli-hk/openai_math"
+          },
+          "url": "https://github.com/jingyuanli-hk/openai_math/blob/746117c6ca34e6831fdfae4c25d02f3e1414691a/lean/OAI/CategoryTheory/Thomason/Simplicial/FixedInternalPathMaps.lean"
+        },
+        {
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/FixedInternalPathMaps.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDM5MjMxNjIx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "igor024/math",
+            "url": "https://github.com/igor024/math"
+          },
+          "url": "https://github.com/igor024/math/blob/37fa9a502d652590420333ea1e18a2140cf7ebe3/lean/OAI/CategoryTheory/Thomason/Simplicial/FixedInternalPathMaps.lean"
+        }
+      ]
+    },
+    {
+      "name": "simplex-extension",
+      "query": "simplexBoundary_homotopy_extension",
+      "command": [
+        "gh",
+        "search",
+        "code",
+        "simplexBoundary_homotopy_extension",
+        "--extension",
+        "lean",
+        "--limit",
+        "100",
+        "--json",
+        "path,repository,url"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "results": [
+        {
+          "path": "Colib/Topology/Realization/SimplexBoundaryHEP.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2NTUxMDI5",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/colib",
+            "url": "https://github.com/kangxyz/colib"
+          },
+          "url": "https://github.com/kangxyz/colib/blob/bac5cab53eb6526e366e861d289253ec81aa89f0/Colib/Topology/Realization/SimplexBoundaryHEP.lean"
+        },
+        {
+          "path": "Quillen/Topology/Realization/SimplexBoundaryHEP.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDEyMTI0MzQx",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/quillen-k-theory",
+            "url": "https://github.com/kangxyz/quillen-k-theory"
+          },
+          "url": "https://github.com/kangxyz/quillen-k-theory/blob/c561118b7795eb9780be9ed391c3251d6a4d0afd/Quillen/Topology/Realization/SimplexBoundaryHEP.lean"
+        },
+        {
+          "path": "Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ2NTUxMDI5",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "kangxyz/colib",
+            "url": "https://github.com/kangxyz/colib"
+          },
+          "url": "https://github.com/kangxyz/colib/blob/bac5cab53eb6526e366e861d289253ec81aa89f0/Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean"
+        }
+      ]
+    },
+    {
+      "name": "contractible-extension",
+      "query": "contractible extension",
+      "command": [
+        "gh",
+        "search",
+        "code",
+        "contractible extension",
+        "--extension",
+        "lean",
+        "--limit",
+        "100",
+        "--json",
+        "path,repository,url"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "results": [
+        {
+          "path": "stacks_project/Chap61/Remark_61_11_4.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA4MjAzMjU4",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "optpku/stacks",
+            "url": "https://github.com/optpku/stacks"
+          },
+          "url": "https://github.com/optpku/stacks/blob/e2299cf97f975b08e7b5b59202ed00adc80ff6b7/stacks_project/Chap61/Remark_61_11_4.lean"
+        },
+        {
+          "path": "StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCoverCardinality.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ1MTgzNTI2",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/Stacks",
+            "url": "https://github.com/AxiomMath/Stacks"
+          },
+          "url": "https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractibleCoverCardinality.lean"
+        },
+        {
+          "path": "StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ProetaleTestingFamily.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ1MTgzNTI2",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/Stacks",
+            "url": "https://github.com/AxiomMath/Stacks"
+          },
+          "url": "https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ProetaleTestingFamily.lean"
+        },
+        {
+          "path": "StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ClopenRefinement.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ1MTgzNTI2",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/Stacks",
+            "url": "https://github.com/AxiomMath/Stacks"
+          },
+          "url": "https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ClopenRefinement.lean"
+        },
+        {
+          "path": "WeilConjectures/AlgebraicGeometry/ProEtaleAffineContractibleExtension.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzA5NTA4NTUw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "formal-arithmetic-geometry/weil-conjectures",
+            "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures/blob/c63c75a53b7da88c4403dcdc5b7b60bc56121bf7/WeilConjectures/AlgebraicGeometry/ProEtaleAffineContractibleExtension.lean"
+        },
+        {
+          "path": "WeilConjectures/ProEtaleCoefficients/SingleWContractibleCover.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzA5NTA4NTUw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "formal-arithmetic-geometry/weil-conjectures",
+            "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures/blob/c63c75a53b7da88c4403dcdc5b7b60bc56121bf7/WeilConjectures/ProEtaleCoefficients/SingleWContractibleCover.lean"
+        },
+        {
+          "path": "WeilConjectures/AlgebraicGeometry/ProEtaleCoefficients/HypercoverExistence.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzA5NTA4NTUw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "formal-arithmetic-geometry/weil-conjectures",
+            "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures/blob/c63c75a53b7da88c4403dcdc5b7b60bc56121bf7/WeilConjectures/AlgebraicGeometry/ProEtaleCoefficients/HypercoverExistence.lean"
+        },
+        {
+          "path": "WeilConjectures/AlgebraicGeometry/Finite/FiniteLisseTowerSectionCover.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzA5NTA4NTUw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "formal-arithmetic-geometry/weil-conjectures",
+            "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures/blob/c63c75a53b7da88c4403dcdc5b7b60bc56121bf7/WeilConjectures/AlgebraicGeometry/Finite/FiniteLisseTowerSectionCover.lean"
+        },
+        {
+          "path": "lean/mettapedia/Mettapedia/GSLT/LanguageDef/GSLTILGeneratedCellReflection.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMjY3MzEwNzU3",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "zariuq/MeTTapedia",
+            "url": "https://github.com/zariuq/MeTTapedia"
+          },
+          "url": "https://github.com/zariuq/MeTTapedia/blob/fa7b8c8161d63351886f8e99026557b3e4cd2a1a/lean/mettapedia/Mettapedia/GSLT/LanguageDef/GSLTILGeneratedCellReflection.lean"
+        },
+        {
+          "path": "StacksFrontier/AlgebraicGeometry/ProEtale/Site/AffineIndEtaleRestriction.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ1MTgzNTI2",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/Stacks",
+            "url": "https://github.com/AxiomMath/Stacks"
+          },
+          "url": "https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AffineIndEtaleRestriction.lean"
+        },
+        {
+          "path": "StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleTopos.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDQ1MTgzNTI2",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "AxiomMath/Stacks",
+            "url": "https://github.com/AxiomMath/Stacks"
+          },
+          "url": "https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/SiteFunctoriality/AffineIndEtaleTopos.lean"
+        },
+        {
+          "path": "ReasLib/RingTheory/Etale/WContractible/Cardinality.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxNDA4MjAzMjU4",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "optpku/stacks",
+            "url": "https://github.com/optpku/stacks"
+          },
+          "url": "https://github.com/optpku/stacks/blob/e2299cf97f975b08e7b5b59202ed00adc80ff6b7/ReasLib/RingTheory/Etale/WContractible/Cardinality.lean"
+        },
+        {
+          "path": "WeilConjectures/AlgebraicGeometry/Finite/Etale/FiniteEtaleTowerCover.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzA5NTA4NTUw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "formal-arithmetic-geometry/weil-conjectures",
+            "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures/blob/c63c75a53b7da88c4403dcdc5b7b60bc56121bf7/WeilConjectures/AlgebraicGeometry/Finite/Etale/FiniteEtaleTowerCover.lean"
+        },
+        {
+          "path": "WeilConjectures/RingTheory/ProperBaseChange/BoundedWContractibleExtension.lean",
+          "repository": {
+            "id": "MDEwOlJlcG9zaXRvcnkxMzA5NTA4NTUw",
+            "isFork": false,
+            "isPrivate": false,
+            "nameWithOwner": "formal-arithmetic-geometry/weil-conjectures",
+            "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures"
+          },
+          "url": "https://github.com/formal-arithmetic-geometry/weil-conjectures/blob/c63c75a53b7da88c4403dcdc5b7b60bc56121bf7/WeilConjectures/RingTheory/ProperBaseChange/BoundedWContractibleExtension.lean"
+        }
+      ]
+    },
+    {
+      "name": "topological-carrier",
+      "query": "carrier ContinuousMap.Homotopy",
+      "command": [
+        "gh",
+        "search",
+        "code",
+        "carrier ContinuousMap.Homotopy",
+        "--extension",
+        "lean",
+        "--limit",
+        "100",
+        "--json",
+        "path,repository,url"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "results": []
+    },
+    {
+      "name": "boundary-extension",
+      "query": "boundary ContractibleSpace",
+      "command": [
+        "gh",
+        "search",
+        "code",
+        "boundary ContractibleSpace",
+        "--extension",
+        "lean",
+        "--limit",
+        "100",
+        "--json",
+        "path,repository,url"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "results": []
+    }
+  ],
+  "repositories": {
+    "the-omega-institute/trureturing": {
+      "repository": "https://github.com/the-omega-institute/trureturing",
+      "revisions": [
+        "f40f8f7890746e30727a89c827884db32dc0688f"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "AxiomMath/BondalThomsen": {
+      "repository": "https://github.com/AxiomMath/BondalThomsen",
+      "revisions": [
+        "9a2bdcdcf6b25710459f7f476c9c62de3039b7bb"
+      ],
+      "status": "source_inspected",
+      "source_files": [
+        {
+          "repo": "AxiomMath/BondalThomsen",
+          "sha": "9a2bdcdcf6b25710459f7f476c9c62de3039b7bb",
+          "path": "BondalThomsen/Cohomology/ConvexNerve/AcyclicCarrierAssembly.lean",
+          "url": "https://raw.githubusercontent.com/AxiomMath/BondalThomsen/9a2bdcdcf6b25710459f7f476c9c62de3039b7bb/BondalThomsen/Cohomology/ConvexNerve/AcyclicCarrierAssembly.lean",
+          "sha256": "3210e688f36d939512e4983e484e76145214340ab286190dc19ce0e77e1f7653",
+          "lines": 656,
+          "read_extent": "Declaration inventory plus actual IntegralAcyclicCarrier definition lines203\u2013240 inspected; other proof bodies not read."
+        }
+      ],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates.",
+      "domain_assessment": "IntegralAcyclicCarrier target is ChainComplex AddCommGrpCat; exactness hypotheses and chain homotopies do not give actual ContinuousMap.Homotopy."
+    },
+    "caiusdfolkerts/lean": {
+      "repository": "https://github.com/caiusdfolkerts/lean",
+      "revisions": [
+        "4e40a35e9894c584de3c7aa34a3e6b0749a3929d"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "openai/math": {
+      "repository": "https://github.com/openai/math",
+      "revisions": [
+        "4eaee87548250b2682affda7d05d947c05554bae"
+      ],
+      "status": "source_inspected",
+      "source_files": [
+        {
+          "repo": "openai/math",
+          "sha": "4eaee87548250b2682affda7d05d947c05554bae",
+          "path": "lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean",
+          "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/SimplicialApproximation.lean",
+          "sha256": "3338ac79c381dad547c83b54cd909db2c00a9e5c70ac5cf3924e3562a44e603b",
+          "lines": 769,
+          "read_extent": "Fetched; only declaration/term search and selected endpoint context read, not complete proof closure."
+        },
+        {
+          "repo": "openai/math",
+          "sha": "4eaee87548250b2682affda7d05d947c05554bae",
+          "path": "lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean",
+          "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/RelativeContiguity.lean",
+          "sha256": "a9167955bfa407a6914f050ac93f4615790b55e7d130284e81b7a158a8463015",
+          "lines": 778,
+          "read_extent": "Fetched; only declaration/term search and selected endpoint context read, not complete proof closure."
+        },
+        {
+          "repo": "openai/math",
+          "sha": "4eaee87548250b2682affda7d05d947c05554bae",
+          "path": "lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean",
+          "url": "https://raw.githubusercontent.com/openai/math/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/Simplicial/SimplicialApproximation.lean",
+          "sha256": "ba0c541c7d6c0c3acc6549e3df6c0da76033ce22133aed7177aa99c0d04fb831",
+          "lines": 417,
+          "read_extent": "Fetched; only declaration/term search and selected endpoint context read, not complete proof closure."
+        }
+      ],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates.",
+      "domain_assessment": "Inspected Thomason endpoints concern finite-poset affine/nerve carriers or SSet homotopies; arbitrary contractible topological carriers not established by inspected endpoints."
+    },
+    "cadamcat/homotopy-hypothesis-lean4": {
+      "repository": "https://github.com/cadamcat/homotopy-hypothesis-lean4",
+      "revisions": [
+        "6766fc567cfbf82a49843c698826c0d6aa47f7b5"
+      ],
+      "status": "source_inspected",
+      "source_files": [
+        {
+          "repo": "cadamcat/homotopy-hypothesis-lean4",
+          "sha": "6766fc567cfbf82a49843c698826c0d6aa47f7b5",
+          "path": "HomotopyHypothesis/Topology/CarrierHomotopy/CarrierHomotopy.lean",
+          "url": "https://raw.githubusercontent.com/cadamcat/homotopy-hypothesis-lean4/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Topology/CarrierHomotopy/CarrierHomotopy.lean",
+          "sha256": "749178845172a4506a4315f786bc3f68a19cbf2c6406a44f3a5e3e66c536a45d",
+          "lines": 205,
+          "read_extent": "Full source/proof read."
+        },
+        {
+          "repo": "cadamcat/homotopy-hypothesis-lean4",
+          "sha": "6766fc567cfbf82a49843c698826c0d6aa47f7b5",
+          "path": "HomotopyHypothesis/Approximation/Zeeman/CarrierHomotopyStatement.lean",
+          "url": "https://raw.githubusercontent.com/cadamcat/homotopy-hypothesis-lean4/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/CarrierHomotopyStatement.lean",
+          "sha256": "a2e2443690906962aadcae17c4b1a5c1fb60a682837d8c965417de07986eb42e",
+          "lines": 34,
+          "read_extent": "Full source/proof read."
+        },
+        {
+          "repo": "cadamcat/homotopy-hypothesis-lean4",
+          "sha": "6766fc567cfbf82a49843c698826c0d6aa47f7b5",
+          "path": "HomotopyHypothesis/Approximation/Zeeman/PointwiseCarrierHomotopy.lean",
+          "url": "https://raw.githubusercontent.com/cadamcat/homotopy-hypothesis-lean4/6766fc567cfbf82a49843c698826c0d6aa47f7b5/HomotopyHypothesis/Approximation/Zeeman/PointwiseCarrierHomotopy.lean",
+          "sha256": "1472ca8e81b3c74950d927db00d9aea463e330c907cf4023e4b82d2332cfb6e9",
+          "lines": 145,
+          "read_extent": "Fetched only; not read."
+        }
+      ],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates.",
+      "domain_assessment": "Genuine HomotopicRel for maps into a finite target simplicial complex, requiring each source simplex factors through one COMMON actual target simplex. Not arbitrary monotone contractible carrier subspaces; no general carrier map existence endpoint established."
+    },
+    "kangxyz/colib": {
+      "repository": "https://github.com/kangxyz/colib",
+      "revisions": [
+        "bac5cab53eb6526e366e861d289253ec81aa89f0"
+      ],
+      "status": "technically_verified_supplier_independent_reviews_and_acceptance_pending",
+      "source_files": [],
+      "proofs_used": [
+        "Convexity.StdSimplex.simplexBoundary_homotopy_extension",
+        "TopCat.homotopyExtensionProperty_simplexBoundary",
+        "TopCat.CylinderBoundary.homotopyExtensionProperty_cylinderBoundaryMap",
+        "Convexity.StdSimplex.exists_simplex_boundary_track_of_faces"
+      ],
+      "compile_audit_replay": "All16 explicit builds passed with import-only relocation. Std3 canonical/physical audit201/201 passed, no duplicate names. All16 official exact-module kernel replays passed in99.15seconds sequential with unchanged source/artifact snapshots. Independent A/B and parent acceptance remain external.",
+      "license_toolchain_import_closure": "Complete selected16 new source bodies read; full19 Colib-module closure computed. Three prior accepted modules reused, no duplicate source.",
+      "license": "Apache-2.0",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "provenance": "deligne/vendor/provenance-carriers.json",
+      "selected_sources": [
+        {
+          "module": "Colib.Topology.Realization.SimplexBoundaryHEP",
+          "path": "Colib/Topology/Realization/SimplexBoundaryHEP.lean",
+          "lines": 75,
+          "sha256": "7135847f9611581c21a74cac5bf98eebc6dcafc8801c9c49033f4c2ea6248bbb",
+          "imports": [
+            "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+            "Colib.Topology.Realization.SimplexAttachmentCollar",
+            "Colib.Topology.Homotopy.Extension"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+          "path": "Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean",
+          "lines": 163,
+          "sha256": "bfe523904811f58ed82a81e1ad6765fc8920aeeda12e9e4765cd0139ade377e4",
+          "imports": [
+            "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+            "Mathlib.Topology.Homotopy.Basic"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+          "path": "Colib/Analysis/Convex/StdSimplex/BoundaryRetraction.lean",
+          "lines": 290,
+          "sha256": "513835ca0ee143ba96c45039051f6262a625a2705073620e0beddd26f48c2a47",
+          "imports": [
+            "Colib.Util.References",
+            "Colib.Analysis.Convex.StdSimplex.Boundary",
+            "Mathlib.Topology.ContinuousMap.Basic",
+            "Mathlib.Topology.UnitInterval",
+            "Mathlib.Tactic.Linarith",
+            "Mathlib.Tactic.FunProp",
+            "Mathlib.Tactic.Positivity",
+            "Mathlib.Tactic.Ring",
+            "Mathlib.Topology.Order.Lattice",
+            "Mathlib.Tactic.FieldSimp"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Util.References",
+          "path": "Colib/Util/References.lean",
+          "lines": 111,
+          "sha256": "b4a284af63e677ff4838495bd0ab68466757efb3e19fd89d0b6f52d6f66810a1",
+          "imports": [
+            "Mathlib.Tactic.CrossRefAttribute"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Analysis.Convex.StdSimplex.Boundary",
+          "path": "Colib/Analysis/Convex/StdSimplex/Boundary.lean",
+          "lines": 43,
+          "sha256": "7c0b0bbaf641537f113836ec8e5c3b20abd149a728f60ed2c4b59601bbb758c9",
+          "imports": [
+            "Mathlib.Geometry.Convex.ConvexSpace.Topology",
+            "Mathlib.Topology.UnitInterval"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Realization.SimplexAttachmentCollar",
+          "path": "Colib/Topology/Realization/SimplexAttachmentCollar.lean",
+          "lines": 138,
+          "sha256": "6467f268cde060cb61e335c30869ffc025ef4a51d484710a3c5200dc53b4f1ea",
+          "imports": [
+            "Colib.Util.References",
+            "Colib.Topology.Category.TopCat.Pushouts",
+            "Colib.Topology.Realization.SimplexBoundaryCollar"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Category.TopCat.Pushouts",
+          "path": "Colib/Topology/Category/TopCat/Pushouts.lean",
+          "lines": 82,
+          "sha256": "53568c8e0d055073de2535250b4b9c29e0080b9a2d1b4069e83322947d0f945c",
+          "imports": [
+            "Colib.Util.References",
+            "Mathlib.Topology.Category.TopCat.Limits.Basic",
+            "Mathlib.CategoryTheory.Limits.Types.Pushouts"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Realization.SimplexBoundaryCollar",
+          "path": "Colib/Topology/Realization/SimplexBoundaryCollar.lean",
+          "lines": 192,
+          "sha256": "7d527a38eb71ad2eef203525b6dec764d1681b7672735e15f7a9e3337e4a63d1",
+          "imports": [
+            "Colib.Util.References",
+            "Mathlib.Topology.Homotopy.Equiv",
+            "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Homotopy.Extension",
+          "path": "Colib/Topology/Homotopy/Extension.lean",
+          "lines": 114,
+          "sha256": "e541f067c3301758c62df536955feda7c6fd399f306f396d0089cb6d9082292c",
+          "imports": [
+            "Colib.Topology.Realization.Cylinder",
+            "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic",
+            "Mathlib.Topology.Homotopy.TopCat.Basic"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Realization.Cylinder",
+          "path": "Colib/Topology/Realization/Cylinder.lean",
+          "lines": 76,
+          "sha256": "510d251008aa8fe91ededea6ed1bf0cc609f3cac5a9578e18157985c781e76e8",
+          "imports": [
+            "Colib.Util.References",
+            "Mathlib.Topology.Category.TopCat.Monoidal",
+            "Mathlib.Topology.CompactOpen",
+            "Mathlib.CategoryTheory.Adjunction.Limits"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.HELP.CylinderBoundary",
+          "path": "Colib/Topology/HELP/CylinderBoundary.lean",
+          "lines": 156,
+          "sha256": "99166c0288e365dced52e7992afb5717c1dcab07727e78356f560cd2d2949bbd",
+          "imports": [
+            "Colib.Topology.Homotopy.ExtensionContinuous",
+            "Colib.Topology.Homotopy.RelativeCylinder",
+            "Colib.Topology.Category.TopCat.CompactHausdorffPushout"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Homotopy.ExtensionContinuous",
+          "path": "Colib/Topology/Homotopy/ExtensionContinuous.lean",
+          "lines": 46,
+          "sha256": "aeaf2d18615c501b7440ec330f77fa829319ceab8f8d46f6d769029ee4440fa5",
+          "imports": [
+            "Colib.Topology.Homotopy.Extension"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Homotopy.RelativeCylinder",
+          "path": "Colib/Topology/Homotopy/RelativeCylinder.lean",
+          "lines": 375,
+          "sha256": "ec115c697f69c964437a88b63d1dd382ad194cf0a97738f01c193cd4185b81bc",
+          "imports": [
+            "Colib.Topology.Homotopy.Extension",
+            "Colib.Topology.Homotopy.IntervalEndpoints",
+            "Colib.Topology.Realization.SimplexBoundaryHEP",
+            "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Homotopy.IntervalEndpoints",
+          "path": "Colib/Topology/Homotopy/IntervalEndpoints.lean",
+          "lines": 108,
+          "sha256": "2af45eabed7638de4e006c4cb3fac628d76018223e71888a502e316677eff756",
+          "imports": [
+            "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+            "Colib.Topology.Realization.SimplexBoundaryHEP",
+            "Colib.Topology.Realization.SimplexBoundaryEndpoints",
+            "Mathlib.Geometry.Convex.ConvexSpace.PathConnectedSpaceStdSimplex",
+            "Mathlib.Topology.Piecewise",
+            "Mathlib.Tactic.FinCases",
+            "Mathlib.Topology.Separation.Basic"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+          "path": "Colib/Analysis/Convex/StdSimplex/FaceCharts.lean",
+          "lines": 63,
+          "sha256": "4b672b8b0eea683b58459b7975fe5d15bce5cddfc826550885e107ed1d71f5f3",
+          "imports": [
+            "Colib.Analysis.Convex.StdSimplex.Boundary",
+            "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Realization.SimplexBoundaryEndpoints",
+          "path": "Colib/Topology/Realization/SimplexBoundaryEndpoints.lean",
+          "lines": 82,
+          "sha256": "41eef6753c0bc29f9d67c6bd8e81d8a0d5a18ff6e9b502a8dd5c20c4e07c25d4",
+          "imports": [
+            "Colib.Util.References",
+            "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+            "Mathlib.Tactic.FinCases"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Category.TopCat.CompactHausdorffPushout",
+          "path": "Colib/Topology/Category/TopCat/CompactHausdorffPushout.lean",
+          "lines": 146,
+          "sha256": "35f13f8db5181dd296d2bb936bdfb722803e33dbd1d5978ae6a5432470a1eff8",
+          "imports": [
+            "Colib.Topology.Category.TopCat.PushoutInteriors",
+            "Mathlib.Topology.Separation.Hausdorff"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Category.TopCat.PushoutInteriors",
+          "path": "Colib/Topology/Category/TopCat/PushoutInteriors.lean",
+          "lines": 219,
+          "sha256": "a1099d2394e3eeb777cbc280ec9eb344634b065bb79878578190965a208389c8",
+          "imports": [
+            "Colib.Util.References",
+            "Colib.Topology.Category.TopCat.Pushouts"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        },
+        {
+          "module": "Colib.Topology.Realization.SimplexFaceGluing",
+          "path": "Colib/Topology/Realization/SimplexFaceGluing.lean",
+          "lines": 147,
+          "sha256": "9f655e2fff6f5ceae19ff32bb0964661af71de3d14a817f10ed07b7c39c42ee5",
+          "imports": [
+            "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+            "Mathlib.Topology.ContinuousMap.Basic"
+          ],
+          "read_extent": "Complete proof body read for each new module; three reused sources verified against prior accepted provenance."
+        }
+      ],
+      "technical_summary": "deligne/evidence/providers/carriers/technical-summary.json"
+    },
+    "kangxyz/quillen-k-theory": {
+      "repository": "https://github.com/kangxyz/quillen-k-theory",
+      "revisions": [
+        "c561118b7795eb9780be9ed391c3251d6a4d0afd"
+      ],
+      "status": "indirect_implementation_origin_preserved_in_selected_colib_comments",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates.",
+      "indirect_origin_revision": "c561118b7795eb9780be9ed391c3251d6a4d0afd",
+      "direct_source_imported_from_this_repo": false,
+      "origin_read_limit": "Selected Colib proof bodies and their preserved Quillen source-origin comments read. No fresh Quillen cohort imported or accepted in this task.",
+      "proofs_used_via_colib_origin_comments": [
+        "actual cylinder HEP and continuous conversion",
+        "relative cylinder square extension",
+        "simplex boundary collars and HEP",
+        "actual topological pushout helpers"
+      ]
+    },
+    "competemath/emissary-archangel": {
+      "repository": "https://github.com/competemath/emissary-archangel",
+      "revisions": [
+        "d1d783ae85b9236500e4a03c6068b97bd604a25c"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "the-omega-institute/newmath": {
+      "repository": "https://github.com/the-omega-institute/newmath",
+      "revisions": [
+        "223bff05b2227f278d34738b20c15a95a5f64e86"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "lowrank/gromov-filling-lower-bound": {
+      "repository": "https://github.com/lowrank/gromov-filling-lower-bound",
+      "revisions": [
+        "d63b2618df02cb9c8bee04d6612b5241079949c9"
+      ],
+      "status": "source_inspected",
+      "source_files": [
+        {
+          "repo": "lowrank/gromov-filling-lower-bound",
+          "sha": "d63b2618df02cb9c8bee04d6612b5241079949c9",
+          "path": "GromovFilling/NormalFormBoundaryObstruction.lean",
+          "url": "https://raw.githubusercontent.com/lowrank/gromov-filling-lower-bound/d63b2618df02cb9c8bee04d6612b5241079949c9/GromovFilling/NormalFormBoundaryObstruction.lean",
+          "sha256": "1aa87103578a6645265fffdf581c81cc31078a8bc425d149babea28889365d75",
+          "lines": 2092,
+          "read_extent": "Fetched; only declaration/term search and selected endpoint context read, not complete proof closure."
+        }
+      ],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates.",
+      "domain_assessment": "Inspected carrier occurrences concern surface/complementary arcs/parity obstruction; no generic acyclic-carrier theorem established in bounded inspection."
+    },
+    "Vilin97/homotopy-groups-lean": {
+      "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+      "revisions": [
+        "c66523531ff172d7f41913d94e56921e790a1b47"
+      ],
+      "status": "source_inspected",
+      "source_files": [
+        {
+          "repo": "Vilin97/homotopy-groups-lean",
+          "sha": "c66523531ff172d7f41913d94e56921e790a1b47",
+          "path": "examples/submissions/sphere_lower_homotopy_subsingleton/Submission/FiniteOrderedComplexCarrierCollapse.lean",
+          "url": "https://raw.githubusercontent.com/Vilin97/homotopy-groups-lean/c66523531ff172d7f41913d94e56921e790a1b47/examples/submissions/sphere_lower_homotopy_subsingleton/Submission/FiniteOrderedComplexCarrierCollapse.lean",
+          "sha256": "24654039229bec6aa0d34fabd6a16b9383c4c9dc72788ec0c5063669d7cd70e9",
+          "lines": 1175,
+          "read_extent": "First100 source lines and later theorem signatures/occurrences inspected; full1175-line proof not read."
+        }
+      ],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates.",
+      "domain_assessment": "Actual finite affine simplicial elementary-collapse deformation maps; no arbitrary contractible-target cell extension found in inspected portion. Full closure uninspected."
+    },
+    "jingyuanli-hk/openai_math": {
+      "repository": "https://github.com/jingyuanli-hk/openai_math",
+      "revisions": [
+        "746117c6ca34e6831fdfae4c25d02f3e1414691a"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "igor024/math": {
+      "repository": "https://github.com/igor024/math",
+      "revisions": [
+        "37fa9a502d652590420333ea1e18a2140cf7ebe3"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "optpku/stacks": {
+      "repository": "https://github.com/optpku/stacks",
+      "revisions": [
+        "e2299cf97f975b08e7b5b59202ed00adc80ff6b7"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "AxiomMath/Stacks": {
+      "repository": "https://github.com/AxiomMath/Stacks",
+      "revisions": [
+        "c496df0d9beea9deaeabcea8492605f9a0a2313b"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "formal-arithmetic-geometry/weil-conjectures": {
+      "repository": "https://github.com/formal-arithmetic-geometry/weil-conjectures",
+      "revisions": [
+        "c63c75a53b7da88c4403dcdc5b7b60bc56121bf7"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    },
+    "zariuq/MeTTapedia": {
+      "repository": "https://github.com/zariuq/MeTTapedia",
+      "revisions": [
+        "fa7b8c8161d63351886f8e99026557b3e4cd2a1a"
+      ],
+      "status": "search_hit_only",
+      "source_files": [],
+      "proofs_used": [],
+      "compile_audit_replay": "Not attempted; not accepted or imported.",
+      "license_toolchain_import_closure": "Not inspected for query-only candidates."
+    }
+  },
+  "selected_colib_closure": {
+    "roots": [
+      "Colib.Topology.Realization.SimplexBoundaryHEP",
+      "Colib.Topology.HELP.CylinderBoundary",
+      "Colib.Topology.Realization.SimplexFaceGluing"
+    ],
+    "files": {
+      "Colib.Topology.Realization.SimplexBoundaryHEP": {
+        "path": "Colib/Topology/Realization/SimplexBoundaryHEP.lean",
+        "lines": 75,
+        "sha256": "7135847f9611581c21a74cac5bf98eebc6dcafc8801c9c49033f4c2ea6248bbb",
+        "imports": [
+          "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+          "Colib.Topology.Realization.SimplexAttachmentCollar",
+          "Colib.Topology.Homotopy.Extension"
+        ]
+      },
+      "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension": {
+        "path": "Colib/Analysis/Convex/StdSimplex/BoundaryHomotopyExtension.lean",
+        "lines": 163,
+        "sha256": "bfe523904811f58ed82a81e1ad6765fc8920aeeda12e9e4765cd0139ade377e4",
+        "imports": [
+          "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+          "Mathlib.Topology.Homotopy.Basic"
+        ]
+      },
+      "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction": {
+        "path": "Colib/Analysis/Convex/StdSimplex/BoundaryRetraction.lean",
+        "lines": 290,
+        "sha256": "513835ca0ee143ba96c45039051f6262a625a2705073620e0beddd26f48c2a47",
+        "imports": [
+          "Colib.Util.References",
+          "Colib.Analysis.Convex.StdSimplex.Boundary",
+          "Mathlib.Topology.ContinuousMap.Basic",
+          "Mathlib.Topology.UnitInterval",
+          "Mathlib.Tactic.Linarith",
+          "Mathlib.Tactic.FunProp",
+          "Mathlib.Tactic.Positivity",
+          "Mathlib.Tactic.Ring",
+          "Mathlib.Topology.Order.Lattice",
+          "Mathlib.Tactic.FieldSimp"
+        ]
+      },
+      "Colib.Util.References": {
+        "path": "Colib/Util/References.lean",
+        "lines": 111,
+        "sha256": "b4a284af63e677ff4838495bd0ab68466757efb3e19fd89d0b6f52d6f66810a1",
+        "imports": [
+          "Mathlib.Tactic.CrossRefAttribute"
+        ]
+      },
+      "Colib.Analysis.Convex.StdSimplex.Boundary": {
+        "path": "Colib/Analysis/Convex/StdSimplex/Boundary.lean",
+        "lines": 43,
+        "sha256": "7c0b0bbaf641537f113836ec8e5c3b20abd149a728f60ed2c4b59601bbb758c9",
+        "imports": [
+          "Mathlib.Geometry.Convex.ConvexSpace.Topology",
+          "Mathlib.Topology.UnitInterval"
+        ]
+      },
+      "Colib.Topology.Realization.SimplexAttachmentCollar": {
+        "path": "Colib/Topology/Realization/SimplexAttachmentCollar.lean",
+        "lines": 138,
+        "sha256": "6467f268cde060cb61e335c30869ffc025ef4a51d484710a3c5200dc53b4f1ea",
+        "imports": [
+          "Colib.Util.References",
+          "Colib.Topology.Category.TopCat.Pushouts",
+          "Colib.Topology.Realization.SimplexBoundaryCollar"
+        ]
+      },
+      "Colib.Topology.Category.TopCat.Pushouts": {
+        "path": "Colib/Topology/Category/TopCat/Pushouts.lean",
+        "lines": 82,
+        "sha256": "53568c8e0d055073de2535250b4b9c29e0080b9a2d1b4069e83322947d0f945c",
+        "imports": [
+          "Colib.Util.References",
+          "Mathlib.Topology.Category.TopCat.Limits.Basic",
+          "Mathlib.CategoryTheory.Limits.Types.Pushouts"
+        ]
+      },
+      "Colib.Topology.Realization.SimplexBoundaryCollar": {
+        "path": "Colib/Topology/Realization/SimplexBoundaryCollar.lean",
+        "lines": 192,
+        "sha256": "7d527a38eb71ad2eef203525b6dec764d1681b7672735e15f7a9e3337e4a63d1",
+        "imports": [
+          "Colib.Util.References",
+          "Mathlib.Topology.Homotopy.Equiv",
+          "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction"
+        ]
+      },
+      "Colib.Topology.Homotopy.Extension": {
+        "path": "Colib/Topology/Homotopy/Extension.lean",
+        "lines": 114,
+        "sha256": "e541f067c3301758c62df536955feda7c6fd399f306f396d0089cb6d9082292c",
+        "imports": [
+          "Colib.Topology.Realization.Cylinder",
+          "Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Basic",
+          "Mathlib.Topology.Homotopy.TopCat.Basic"
+        ]
+      },
+      "Colib.Topology.Realization.Cylinder": {
+        "path": "Colib/Topology/Realization/Cylinder.lean",
+        "lines": 76,
+        "sha256": "510d251008aa8fe91ededea6ed1bf0cc609f3cac5a9578e18157985c781e76e8",
+        "imports": [
+          "Colib.Util.References",
+          "Mathlib.Topology.Category.TopCat.Monoidal",
+          "Mathlib.Topology.CompactOpen",
+          "Mathlib.CategoryTheory.Adjunction.Limits"
+        ]
+      },
+      "Colib.Topology.HELP.CylinderBoundary": {
+        "path": "Colib/Topology/HELP/CylinderBoundary.lean",
+        "lines": 156,
+        "sha256": "99166c0288e365dced52e7992afb5717c1dcab07727e78356f560cd2d2949bbd",
+        "imports": [
+          "Colib.Topology.Homotopy.ExtensionContinuous",
+          "Colib.Topology.Homotopy.RelativeCylinder",
+          "Colib.Topology.Category.TopCat.CompactHausdorffPushout"
+        ]
+      },
+      "Colib.Topology.Homotopy.ExtensionContinuous": {
+        "path": "Colib/Topology/Homotopy/ExtensionContinuous.lean",
+        "lines": 46,
+        "sha256": "aeaf2d18615c501b7440ec330f77fa829319ceab8f8d46f6d769029ee4440fa5",
+        "imports": [
+          "Colib.Topology.Homotopy.Extension"
+        ]
+      },
+      "Colib.Topology.Homotopy.RelativeCylinder": {
+        "path": "Colib/Topology/Homotopy/RelativeCylinder.lean",
+        "lines": 375,
+        "sha256": "ec115c697f69c964437a88b63d1dd382ad194cf0a97738f01c193cd4185b81bc",
+        "imports": [
+          "Colib.Topology.Homotopy.Extension",
+          "Colib.Topology.Homotopy.IntervalEndpoints",
+          "Colib.Topology.Realization.SimplexBoundaryHEP",
+          "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+        ]
+      },
+      "Colib.Topology.Homotopy.IntervalEndpoints": {
+        "path": "Colib/Topology/Homotopy/IntervalEndpoints.lean",
+        "lines": 108,
+        "sha256": "2af45eabed7638de4e006c4cb3fac628d76018223e71888a502e316677eff756",
+        "imports": [
+          "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+          "Colib.Topology.Realization.SimplexBoundaryHEP",
+          "Colib.Topology.Realization.SimplexBoundaryEndpoints",
+          "Mathlib.Geometry.Convex.ConvexSpace.PathConnectedSpaceStdSimplex",
+          "Mathlib.Topology.Piecewise",
+          "Mathlib.Tactic.FinCases",
+          "Mathlib.Topology.Separation.Basic"
+        ]
+      },
+      "Colib.Analysis.Convex.StdSimplex.FaceCharts": {
+        "path": "Colib/Analysis/Convex/StdSimplex/FaceCharts.lean",
+        "lines": 63,
+        "sha256": "4b672b8b0eea683b58459b7975fe5d15bce5cddfc826550885e107ed1d71f5f3",
+        "imports": [
+          "Colib.Analysis.Convex.StdSimplex.Boundary",
+          "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+        ]
+      },
+      "Colib.Topology.Realization.SimplexBoundaryEndpoints": {
+        "path": "Colib/Topology/Realization/SimplexBoundaryEndpoints.lean",
+        "lines": 82,
+        "sha256": "41eef6753c0bc29f9d67c6bd8e81d8a0d5a18ff6e9b502a8dd5c20c4e07c25d4",
+        "imports": [
+          "Colib.Util.References",
+          "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+          "Mathlib.Tactic.FinCases"
+        ]
+      },
+      "Colib.Topology.Category.TopCat.CompactHausdorffPushout": {
+        "path": "Colib/Topology/Category/TopCat/CompactHausdorffPushout.lean",
+        "lines": 146,
+        "sha256": "35f13f8db5181dd296d2bb936bdfb722803e33dbd1d5978ae6a5432470a1eff8",
+        "imports": [
+          "Colib.Topology.Category.TopCat.PushoutInteriors",
+          "Mathlib.Topology.Separation.Hausdorff"
+        ]
+      },
+      "Colib.Topology.Category.TopCat.PushoutInteriors": {
+        "path": "Colib/Topology/Category/TopCat/PushoutInteriors.lean",
+        "lines": 219,
+        "sha256": "a1099d2394e3eeb777cbc280ec9eb344634b065bb79878578190965a208389c8",
+        "imports": [
+          "Colib.Util.References",
+          "Colib.Topology.Category.TopCat.Pushouts"
+        ]
+      },
+      "Colib.Topology.Realization.SimplexFaceGluing": {
+        "path": "Colib/Topology/Realization/SimplexFaceGluing.lean",
+        "lines": 147,
+        "sha256": "9f655e2fff6f5ceae19ff32bb0964661af71de3d14a817f10ed07b7c39c42ee5",
+        "imports": [
+          "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+          "Mathlib.Topology.ContinuousMap.Basic"
+        ]
+      }
+    },
+    "new_modules": [
+      "Colib.Topology.Realization.SimplexBoundaryHEP",
+      "Colib.Analysis.Convex.StdSimplex.BoundaryHomotopyExtension",
+      "Colib.Topology.Realization.SimplexAttachmentCollar",
+      "Colib.Topology.Category.TopCat.Pushouts",
+      "Colib.Topology.Realization.SimplexBoundaryCollar",
+      "Colib.Topology.Homotopy.Extension",
+      "Colib.Topology.Realization.Cylinder",
+      "Colib.Topology.HELP.CylinderBoundary",
+      "Colib.Topology.Homotopy.ExtensionContinuous",
+      "Colib.Topology.Homotopy.RelativeCylinder",
+      "Colib.Topology.Homotopy.IntervalEndpoints",
+      "Colib.Analysis.Convex.StdSimplex.FaceCharts",
+      "Colib.Topology.Realization.SimplexBoundaryEndpoints",
+      "Colib.Topology.Category.TopCat.CompactHausdorffPushout",
+      "Colib.Topology.Category.TopCat.PushoutInteriors",
+      "Colib.Topology.Realization.SimplexFaceGluing"
+    ],
+    "reused_modules": [
+      "Colib.Analysis.Convex.StdSimplex.Boundary",
+      "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+      "Colib.Util.References"
+    ]
+  },
+  "mathlib": {
+    "repository": "https://github.com/leanprover-community/mathlib4",
+    "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+    "read_limits": "Bounded rg in topology/CW/simplicial realization. No generic arbitrary-contractible-carrier endpoint located. Homotopy.extend only extends time I to real line; not a cell filler. NonsingularColimit actual realization colimit available and already consumed by accepted homotopy21 context."
+  },
+  "proof_acceptance_is_external_to_inventory": true,
+  "full_theorem_1_8_proved": false
+}

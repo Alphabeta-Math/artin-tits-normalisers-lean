@@ -1,0 +1,1394 @@
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.complementMetricSpace_topology: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  PseudoMetricSpace.toUniformSpace.toTopologicalSpace = inferInstance
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.complementMetricSpace_topology"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_3: ∀
+  {α : Type u_1} [inst : DivisionMonoid α] (a : α) (m n : ℤ), (a ^ m) ^ n = a ^ (m * n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.isOpen_actualNerveCover: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J),
+  IsOpen (ArtinNormalisers.Homotopy5.actualNerveCover M J x)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.isOpen_actualNerveCover"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.faceResidueEquivSimpleFaceDivisor: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) →
+          (T : Set I) →
+            ArtinNormalisers.Homotopy5.FaceResidue M J L T ≃
+              ArtinNormalisers.Homotopy5.SimpleFaceDivisor M { indices := L.indices } T
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.faceResidueEquivSimpleFaceDivisor"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.RibbonPrefix: {I : Type u_1} →
+  (M : CoxeterMatrix I) → ArtinNormalisers.Artin.Group M → ArtinNormalisers.Artin.Group M → Prop
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.RibbonPrefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues _private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.positive_coefficient_outside: ∀
+  {I : Type u_1} {U : Set I} {r : ArtinNormalisers.Theorem18.Vector I},
+  0 < r → (ArtinNormalisers.Landmark1.canonicalDominant U) r ≠ 0 → ∃ i ∉ U, 0 < r i
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.positive_coefficient_outside"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ∃ U d a,
+      ArtinNormalisers.Homotopy5.SimpleRibbon M X U d ∧
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M U Y a ∧
+          p = d * a ∧
+            (∀ (V : ArtinNormalisers.Ribbon2.RibbonObject M) (e : ArtinNormalisers.Artin.Group M),
+                ArtinNormalisers.Homotopy5.SimpleRibbon M X V e →
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M e p → ArtinNormalisers.Homotopy5.RibbonPrefix M e d) ∧
+              (p ≠ 1 → d ≠ 1 ∧ ArtinNormalisers.Ribbon2.degree M a < ArtinNormalisers.Ribbon2.degree M p)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.ribbonPrefix_generator_mul: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p l : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.IsRibbon M X Y p →
+    ArtinNormalisers.Homotopy5.RibbonPrefix M p l →
+      ∀ {i : I}, i ∈ X.indices → ArtinNormalisers.Homotopy5.RibbonPrefix M p (ArtinNormalisers.Artin.generator M i * l)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_generator_mul"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.Domination ArtinNormalisers.Homotopy5.homotopyGroupMap_injective_of_domination: ∀
+  {X : Type u} {Y : Type v} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] (f : C(X, Y)) (g : C(Y, X))
+  (H : (g.comp f).Homotopy (ContinuousMap.id X)) (N : Type w) [Finite N] (x : X),
+  Function.Injective (HomotopyGroup.map f ⋯)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.Domination","name":"ArtinNormalisers.Homotopy5.homotopyGroupMap_injective_of_domination"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_1: SMulCommClass
+  ℝ ℝ ℝ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.SimpleRibbon: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      ArtinNormalisers.Ribbon2.RibbonObject M →
+        ArtinNormalisers.Ribbon2.RibbonObject M → ArtinNormalisers.Artin.Group M → Prop
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.SimpleRibbon"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector Topology.LocalEquiconnection.mk.congr_simp: ∀ {A : Type u}
+  [inst : TopologicalSpace A] (domain : Set (A × A)) (isOpen_domain : IsOpen domain)
+  (diagonal_mem : ∀ (x : A), (x, x) ∈ domain) (connector connector_1 : C(↑domain × ↑unitInterval, A))
+  (e_connector : connector = connector_1) (connector_zero : ∀ (p : ↑domain), connector (p, 0) = (↑p).1)
+  (connector_one : ∀ (p : ↑domain), connector (p, 1) = (↑p).2)
+  (connector_diagonal : ∀ (x : A) (t : ↑unitInterval), connector (⟨(x, x), ⋯⟩, t) = x),
+  { domain := domain, isOpen_domain := isOpen_domain, diagonal_mem := diagonal_mem, connector := connector,
+      connector_zero := connector_zero, connector_one := connector_one, connector_diagonal := connector_diagonal } =
+    { domain := domain, isOpen_domain := isOpen_domain, diagonal_mem := diagonal_mem, connector := connector_1,
+      connector_zero := ⋯, connector_one := ⋯, connector_diagonal := ⋯ }
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"Topology.LocalEquiconnection.mk.congr_simp"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeAtFace_incident: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  [ContinuousAdd E] [ContinuousSMul ℝ E] [inst_5 : Finite H] (z : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ),
+  ArtinNormalisers.Homotopy5.ChamberIncident ℓ z (ArtinNormalisers.Homotopy5.oppositeAtFace ℓ z C)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeAtFace_incident"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.faceResidueEquivSimpleFaceDivisor._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  Function.Injective (ArtinNormalisers.Homotopy5.residueToFaceDivisor M J L T) ∧
+    Function.Surjective (ArtinNormalisers.Homotopy5.residueToFaceDivisor M J L T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.faceResidueEquivSimpleFaceDivisor._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefix_projection: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I),
+  (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M X T) =
+    (ArtinNormalisers.Ribbon2.parabolicLongest M X.indices)⁻¹ *
+      ArtinNormalisers.Ribbon2.parabolicLongest M (X.indices ∪ T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefix_projection"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_3: ∀
+  {α : Type u_1} [inst : DivisionMonoid α] (a : α) (m n : ℤ), (a ^ m) ^ n = a ^ (m * n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice _private.ArtinHomotopy.RibbonLattice.0.ArtinNormalisers.Homotopy5.positive_degree_one_generator._proof_1_1: ∀
+  {I : Type u_1} (w : List I), ↑w.length = 1 → ¬w.length = 1 → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"_private.ArtinHomotopy.RibbonLattice.0.ArtinNormalisers.Homotopy5.positive_degree_one_generator._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeChamber: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} → (ℓ : H → E →L[ℝ] ℝ) → ArtinNormalisers.Chamber3.Chamber ℓ → ArtinNormalisers.Chamber3.Chamber ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeChamber"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_3: ∀
+  {I : Type u_1}, SMulMemClass (Submodule ℝ (ArtinNormalisers.Theorem18.Dual I)) ℝ (ArtinNormalisers.Theorem18.Dual I)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Z q →
+      ∃ U l,
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U l ∧
+          (∃ a, ArtinNormalisers.Ribbon2.PositiveReducedArrow M Y U a ∧ l = p * a) ∧
+            (∃ b, ArtinNormalisers.Ribbon2.PositiveReducedArrow M Z U b ∧ l = q * b) ∧
+              ∀ (V : ArtinNormalisers.Ribbon2.RibbonObject M) (r : ArtinNormalisers.Artin.Group M),
+                ArtinNormalisers.Ribbon2.PositiveReducedArrow M X V r →
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M p r →
+                    ArtinNormalisers.Homotopy5.RibbonPrefix M q r →
+                      ∃ t, ArtinNormalisers.Ribbon2.PositiveReducedArrow M U V t ∧ r = l * t
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_7: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a * a ^ n = a ^ (1 + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection.eq_1: ∀
+  {E : Type u_2} {H : Type u_3} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] [inst_5 : Finite H] (ℓ : H → E →L[ℝ] ℝ),
+  ArtinNormalisers.Homotopy5.convexLocalEquiconnection ℓ =
+    { domain := ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ, isOpen_domain := ⋯, diagonal_mem := ⋯,
+      connector := ArtinNormalisers.Homotopy5.convexConnector ℓ, connector_zero := ⋯, connector_one := ⋯,
+      connector_diagonal := ⋯ }
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.residueToFaceDivisor: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) →
+          (T : Set I) →
+            ArtinNormalisers.Homotopy5.FaceResidue M J L T →
+              ArtinNormalisers.Homotopy5.SimpleFaceDivisor M { indices := L.indices } T
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.residueToFaceDivisor"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) {l : ArtinNormalisers.Artin.Group M} (a : ArtinNormalisers.Artin.Group M),
+  1 + ArtinNormalisers.Ribbon2.degree M l = ArtinNormalisers.Ribbon2.degree M l + ArtinNormalisers.Ribbon2.degree M a →
+    ¬ArtinNormalisers.Ribbon2.degree M a = 1 → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeChamber_signs: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  (C : ArtinNormalisers.Chamber3.Chamber ℓ) (h : H),
+  (ArtinNormalisers.Homotopy5.oppositeChamber ℓ C).signs h = !C.signs h
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeChamber_signs"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_6: ∀
+  {A : Type u_2} {B : Type u_1} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B) (x : A), (h x, h x) ∈ F.domain
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.ribbonPrefix_antisymm: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) {a b : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Homotopy5.RibbonPrefix M a b → ArtinNormalisers.Homotopy5.RibbonPrefix M b a → a = b
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_antisymm"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_1: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (x : G), x⁻¹ = x ^ (-1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_2: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [Finite H] (ℓ : H → E →L[ℝ] ℝ),
+  IsOpen (⋃ i, ArtinNormalisers.Asphericity5.convexCoverSet ℓ i ×ˢ ArtinNormalisers.Asphericity5.convexCoverSet ℓ i)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_8: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a * a ^ n = a ^ (1 + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_8"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNervePartition: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) →
+        PartitionOfUnity (ArtinNormalisers.Theorem18.Complement M J) (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNervePartition"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixFiberTarget._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M)
+  (T : Set I),
+  Subgroup.map
+      (MulEquiv.toMonoidHom
+        (MulAut.conj ((ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M X T))))
+      (ArtinNormalisers.Artin.coxeterParabolic M (ArtinNormalisers.Homotopy5.facePrefixTarget M X T).indices) =
+    ArtinNormalisers.Artin.coxeterParabolic M X.indices
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixFiberTarget._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Homotopy5.actualLocalEquiconnection M J).domain =
+    ArtinNormalisers.Homotopy5.actualConnectorDomain M J
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.isConvex_pullbackLocalEquiconnection: ∀
+  {A : Type u_2} {B : Type u_3} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B) {V : Set B},
+  F.IsConvex V → (ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection h F).IsConvex (⇑h ⁻¹' V)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.isConvex_pullbackLocalEquiconnection"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues _private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.canonical_eval_zero_of_supported: ∀
+  {I : Type u_1} (U : Set I) (r : ArtinNormalisers.Theorem18.Vector I),
+  (∀ i ∉ U, r i = 0) → (ArtinNormalisers.Landmark1.canonicalDominant U) r = 0
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.canonical_eval_zero_of_supported"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.chamberIncident_iff_between_oppositeAtFace: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2}
+  (ℓ : H → E →L[ℝ] ℝ) [ContinuousAdd E] [ContinuousSMul ℝ E] [inst_5 : Finite H] {z : E}
+  {C : ArtinNormalisers.Chamber3.Chamber ℓ},
+  ArtinNormalisers.Homotopy5.ChamberIncident ℓ z C →
+    ∀ (D : ArtinNormalisers.Chamber3.Chamber ℓ),
+      ArtinNormalisers.Homotopy5.ChamberIncident ℓ z D ↔
+        ArtinNormalisers.Chamber3.ChamberBetween C D (ArtinNormalisers.Homotopy5.oppositeAtFace ℓ z C)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.chamberIncident_iff_between_oppositeAtFace"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_3: ∀
+  {α : Type u_1} [inst : DivisionMonoid α] (a : α) (m n : ℤ), (a ^ m) ^ n = a ^ (m * n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_greatest: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ∀ (T : Set I),
+      ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Homotopy5.facePrefix M X T) p →
+        ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Homotopy5.facePrefix M X T)
+          (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_greatest"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint._proof_2: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  ∀ i ∈ L.indices,
+    (ArtinNormalisers.Landmark1.canonicalDominant (L.indices ∪ T)) (ArtinNormalisers.Theorem18.simpleRoot i) = 0
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint._proof_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.ribbonPrefix_leftReduced: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) {X : ArtinNormalisers.Ribbon2.RibbonObject M} {l r : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.IsLeftParabolicallyReduced M X.indices r →
+    ArtinNormalisers.Homotopy5.RibbonPrefix M l r → ArtinNormalisers.Ribbon2.IsLeftParabolicallyReduced M X.indices l
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_leftReduced"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_1: ∀
+  {α : Type u_1} [inst : SubtractionMonoid α] {a : α}, (-a ≠ 0) = (a ≠ 0)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix_of_disjoint: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M),
+  ∀ T ⊆ X.indicesᶜ, ArtinNormalisers.Homotopy5.outsideAtomDescents M X (ArtinNormalisers.Homotopy5.facePrefix M X T) = T
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix_of_disjoint"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.ribbonPrefix_eq_of_degree_le: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) {a b : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Homotopy5.RibbonPrefix M a b →
+    ArtinNormalisers.Ribbon2.degree M b ≤ ArtinNormalisers.Ribbon2.degree M a → a = b
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_eq_of_degree_le"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.tubeWitness: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} →
+          [Finite H] →
+            (ℓ : H → E →L[ℝ] ℝ) → ArtinNormalisers.Chamber3.ComplexComplement ℓ → ArtinNormalisers.Chamber3.Chamber ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.tubeWitness"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.residueToFaceDivisor_surjective: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  Function.Surjective (ArtinNormalisers.Homotopy5.residueToFaceDivisor M J L T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.residueToFaceDivisor_surjective"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualConvexCover_isConnectorConvex: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (σ : ArtinNormalisers.Chamber3.RelativeRoot M J → Fin 4),
+  (ArtinNormalisers.Homotopy5.actualLocalEquiconnection M J).IsConvex
+    (ArtinNormalisers.Asphericity5.actualConvexCoverSet M J σ)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualConvexCover_isConnectorConvex"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q l : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.IsRibbon M X Y p →
+    ArtinNormalisers.Ribbon2.IsRibbon M X Z q →
+      l ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ →
+        ArtinNormalisers.Homotopy5.RibbonPrefix M p l →
+          ArtinNormalisers.Homotopy5.RibbonPrefix M q l →
+            (∀ r ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ,
+                ArtinNormalisers.Homotopy5.RibbonPrefix M p r →
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M q r → ArtinNormalisers.Homotopy5.RibbonPrefix M l r) →
+              ArtinNormalisers.Ribbon2.IsRibbon M X
+                { indices := ArtinNormalisers.Homotopy5.ribbonLcmTargetIndices M X l } l
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveDominationHomotopy: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        ((ArtinNormalisers.Homotopy5.actualNerveReturn M J).comp
+              (ArtinNormalisers.Homotopy5.actualNerveForward M J)).Homotopy
+          (ContinuousMap.id (ArtinNormalisers.Theorem18.Complement M J))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveDominationHomotopy"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualComplementMetric: {I : Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → (J : Set I) → MetricSpace (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualComplementMetric"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues _private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.rawRelativeTransport_self: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (L : ArtinNormalisers.Chamber3.RawFacetLabel M J),
+  ArtinNormalisers.Chamber3.rawRelativeTransport M L L = 1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.rawRelativeTransport_self"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnector.congr_simp: ∀
+  {E : Type u_2} {H : Type u_3} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] (ℓ : H → E →L[ℝ] ℝ),
+  ArtinNormalisers.Homotopy5.convexConnector ℓ = ArtinNormalisers.Homotopy5.convexConnector ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnector.congr_simp"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFaceType: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] → ArtinNormalisers.Ribbon2.RibbonObject M → ArtinNormalisers.Artin.Group M → Set I
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFaceType"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_degree_pos._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M} (a : I) (q : ArtinNormalisers.Artin.Group M),
+  ArtinNormalisers.Ribbon2.degree M
+        (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) =
+      ArtinNormalisers.Ribbon2.degree M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a) +
+        ArtinNormalisers.Ribbon2.degree M q →
+    0 < ArtinNormalisers.Ribbon2.degree M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a) →
+      0 ≤ ArtinNormalisers.Ribbon2.degree M q →
+        ¬0 <
+              ArtinNormalisers.Ribbon2.degree M
+                (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) →
+          False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_degree_pos._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.tubeLowerChamber: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} →
+          [Finite H] →
+            (ℓ : H → E →L[ℝ] ℝ) → ArtinNormalisers.Chamber3.ComplexComplement ℓ → ArtinNormalisers.Chamber3.Chamber ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.tubeLowerChamber"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) → ArtinNormalisers.Chamber3.RawFacetLabel M J → Set I → ↥(ArtinNormalisers.Theorem18.relativeSubspace J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Z q →
+      ∃ U d,
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U d ∧
+          (∃ a, ArtinNormalisers.Ribbon2.PositiveReducedArrow M U Y a ∧ p = d * a) ∧
+            (∃ b, ArtinNormalisers.Ribbon2.PositiveReducedArrow M U Z b ∧ q = d * b) ∧
+              ∀ (V : ArtinNormalisers.Ribbon2.RibbonObject M) (e : ArtinNormalisers.Artin.Group M),
+                ArtinNormalisers.Ribbon2.PositiveReducedArrow M X V e →
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M e p →
+                    ArtinNormalisers.Homotopy5.RibbonPrefix M e q →
+                      ∃ t, ArtinNormalisers.Ribbon2.PositiveReducedArrow M V U t ∧ d = e * t
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixLabel._proof_1: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (L : ArtinNormalisers.Chamber3.RawFacetLabel M J)
+  (T : Set I),
+  Subgroup.map
+      (MulEquiv.toMonoidHom
+        (MulAut.conj
+          ((ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M { indices := L.indices } T))))
+      (ArtinNormalisers.Artin.coxeterParabolic M
+        (ArtinNormalisers.Homotopy5.facePrefixTarget M { indices := L.indices } T).indices) =
+    ArtinNormalisers.Artin.coxeterParabolic M L.indices
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixLabel._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_2: ∀
+  {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B) (p : ↑((fun p => (h p.1, h p.2)) ⁻¹' F.domain)),
+  { toFun := fun z => h.symm (F.connector (⟨(h (↑z.1).1, h (↑z.1).2), ⋯⟩, z.2)), continuous_toFun := ⋯ } (p, 0) = (↑p).1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNervePartition_subordinate: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  (ArtinNormalisers.Homotopy5.actualNervePartition M J).IsSubordinate (ArtinNormalisers.Homotopy5.actualNerveCover M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNervePartition_subordinate"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection: {A :
+    Type u_2} →
+  {B : Type u_3} →
+    [inst : TopologicalSpace A] →
+      [inst_1 : TopologicalSpace B] → A ≃ₜ B → Topology.LocalEquiconnection B → Topology.LocalEquiconnection A
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_tail_degree_lt._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M} (q : ArtinNormalisers.Artin.Group M),
+  ArtinNormalisers.Ribbon2.degree M p =
+      ArtinNormalisers.Ribbon2.degree M
+          (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) +
+        ArtinNormalisers.Ribbon2.degree M q →
+    0 <
+        ArtinNormalisers.Ribbon2.degree M
+          (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) →
+      ¬ArtinNormalisers.Ribbon2.degree M q < ArtinNormalisers.Ribbon2.degree M p → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_tail_degree_lt._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_7: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a ^ n * a = a ^ (n + 1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint_incident_iff_ribbonPrefix: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I) (D : ArtinNormalisers.Chamber3.ActualChamber M J),
+  ArtinNormalisers.Homotopy5.ChamberIncident (ArtinNormalisers.Chamber3.actualForms M J)
+      (ArtinNormalisers.Homotopy5.rawFacePoint M J L T) D ↔
+    ArtinNormalisers.Homotopy5.RibbonPrefix M
+      (ArtinNormalisers.Chamber3.transporterPositiveLift M
+        (ArtinNormalisers.Chamber3.relativeTransport M J (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L) D))
+      (ArtinNormalisers.Homotopy5.facePrefix M { indices := L.indices } T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint_incident_iff_ribbonPrefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes _private.ArtinHomotopy.FacePrefixes.0.ArtinNormalisers.Homotopy5.selected_positive_univ: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) {p : ArtinNormalisers.Artin.Group M},
+  p ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M J →
+    p ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"_private.ArtinHomotopy.FacePrefixes.0.ArtinNormalisers.Homotopy5.selected_positive_univ"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_1: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (x : G), x⁻¹ = x ^ (-1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals _private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.halfSpace_sign_unique: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] (f : E →L[ℝ] ℝ)
+  {x : E} {s t : Bool},
+  x ∈ ArtinNormalisers.Chamber3.signHalfSpace f s → x ∈ ArtinNormalisers.Chamber3.signHalfSpace f t → s = t
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"_private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.halfSpace_sign_unique"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.RibbonPrefix.trans: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) {a b c : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Homotopy5.RibbonPrefix M a b →
+    ArtinNormalisers.Homotopy5.RibbonPrefix M b c → ArtinNormalisers.Homotopy5.RibbonPrefix M a c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.RibbonPrefix.trans"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveCover_pointStarRefines: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  Topology.NumerableConnectorCover.PointStarRefines (ArtinNormalisers.Homotopy5.actualNerveCover M J)
+    (ArtinNormalisers.Asphericity5.actualConvexCoverSet M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveCover_pointStarRefines"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ∃ U d,
+      ArtinNormalisers.Homotopy5.SimpleRibbon M X U d ∧
+        ArtinNormalisers.Homotopy5.RibbonPrefix M d p ∧
+          ∀ (V : ArtinNormalisers.Ribbon2.RibbonObject M) (e : ArtinNormalisers.Artin.Group M),
+            ArtinNormalisers.Homotopy5.SimpleRibbon M X V e →
+              ArtinNormalisers.Homotopy5.RibbonPrefix M e p → ArtinNormalisers.Homotopy5.RibbonPrefix M e d
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues _private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.nonneg_support_of_canonical_eval_zero: ∀
+  {I : Type u_1} (U : Set I) {r : ArtinNormalisers.Theorem18.Vector I},
+  0 ≤ r → (ArtinNormalisers.Landmark1.canonicalDominant U) r = 0 → ∀ i ∉ U, r i = 0
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.nonneg_support_of_canonical_eval_zero"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint_pairing: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I)
+  (r : ArtinNormalisers.Theorem18.Vector I),
+  ↑(ArtinNormalisers.Homotopy5.rawFacePoint M J L T) ((M.toCoxeterSystem.geometricRepresentation L.representative) r) =
+    (ArtinNormalisers.Landmark1.canonicalDominant (L.indices ∪ T)) r
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint_pairing"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFaceType_subset_compl: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M)
+  (p : ArtinNormalisers.Artin.Group M), ArtinNormalisers.Homotopy5.maximalFaceType M X p ⊆ X.indicesᶜ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFaceType_subset_compl"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.Domination ArtinNormalisers.Homotopy5.homotopyGroupPi_subsingleton_of_domination: ∀
+  {X : Type u} {Y : Type v} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] (f : C(X, Y)) (g : C(Y, X))
+  (H : (g.comp f).Homotopy (ContinuousMap.id X)) (x : X) (n : ℕ) [Subsingleton (HomotopyGroup.Pi (n + 2) Y (f x))],
+  Subsingleton (HomotopyGroup.Pi (n + 2) X x)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.Domination","name":"ArtinNormalisers.Homotopy5.homotopyGroupPi_subsingleton_of_domination"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.complementMetrizableSpace: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group] (J : Set I),
+  TopologicalSpace.MetrizableSpace (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.complementMetrizableSpace"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnectorDomain.eq_1: ∀
+  {E : Type u_2} {H : Type u_3} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  (ℓ : H → E →L[ℝ] ℝ),
+  ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ =
+    ⋃ σ, ArtinNormalisers.Asphericity5.convexCoverSet ℓ σ ×ˢ ArtinNormalisers.Asphericity5.convexCoverSet ℓ σ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnectorDomain.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p r : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Z r →
+      ArtinNormalisers.Homotopy5.RibbonPrefix M p r →
+        ∃ a, ArtinNormalisers.Ribbon2.PositiveReducedArrow M Y Z a ∧ r = p * a
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualComplementVertexOrder._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  IsWellOrder (ArtinNormalisers.Theorem18.Complement M J) WellOrderingRel
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualComplementVertexOrder._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_5: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (m n : ℤ), a ^ m * a ^ n = a ^ (m + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_7: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a * a ^ n = a ^ (1 + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.canonicalDominant_root_zero_iff_support: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) {U : Set I} {r : ArtinNormalisers.Theorem18.Vector I},
+  r ∈ M.toCoxeterSystem.geometricRoots → ((ArtinNormalisers.Landmark1.canonicalDominant U) r = 0 ↔ ∀ i ∉ U, r i = 0)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.canonicalDominant_root_zero_iff_support"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawRelativeTransport_facePrefixLabel: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  ArtinNormalisers.Chamber3.rawRelativeTransport M L (ArtinNormalisers.Homotopy5.facePrefixLabel M J L T) =
+    (ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M { indices := L.indices } T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawRelativeTransport_facePrefixLabel"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_2: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (x : G), x⁻¹ = x ^ (-1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.ribbonPrefix_degree_le: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) {a b : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Homotopy5.RibbonPrefix M a b →
+    ArtinNormalisers.Ribbon2.degree M a ≤ ArtinNormalisers.Ribbon2.degree M b
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_degree_le"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualConnectorDomain: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    (J : Set I) → Set (ArtinNormalisers.Theorem18.Complement M J × ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualConnectorDomain"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_3: ∀
+  {α : Type u} [inst : AddGroup α] [inst_1 : LT α] [AddLeftStrictMono α] {a : α}, (0 < -a) = (a < 0)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveHomotopy ArtinNormalisers.Homotopy5.complement_isAspherical_of_actualNerve_higher_vanishing: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  (∀ (n : ℕ),
+      Subsingleton
+        (HomotopyGroup.Pi (n + 2) (↑(SSet.toTop.obj (ArtinNormalisers.Homotopy5.actualMetricNerve M J)))
+          ((ArtinNormalisers.Homotopy5.actualNerveForward M J) x))) →
+    TauCeti.IsAspherical (ArtinNormalisers.Theorem18.Complement M J) x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveHomotopy","name":"ArtinNormalisers.Homotopy5.complement_isAspherical_of_actualNerve_higher_vanishing"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_4: ∀
+  {G : Type u_1} [inst : Semigroup G] (a b c : G), a * (b * c) = a * b * c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X : ArtinNormalisers.Ribbon2.RibbonObject M} (a : I),
+  ArtinNormalisers.Ribbon2.degree M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a) ≤ 0 →
+    0 < ArtinNormalisers.Ribbon2.degree M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a) → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection.eq_1: ∀
+  {A : Type u_2} {B : Type u_3} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B),
+  ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection h F =
+    { domain := (fun p => (h p.1, h p.2)) ⁻¹' F.domain, isOpen_domain := ⋯, diagonal_mem := ⋯,
+      connector :=
+        { toFun := fun z => h.symm (F.connector (⟨(h (↑z.1).1, h (↑z.1).2), ⋯⟩, z.2)), continuous_toFun := ⋯ },
+      connector_zero := ⋯, connector_one := ⋯, connector_diagonal := ⋯ }
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) {p : ArtinNormalisers.Artin.Group M} (d a : ArtinNormalisers.Artin.Group M),
+  0 ≤ ArtinNormalisers.Ribbon2.degree M d →
+    ArtinNormalisers.Ribbon2.degree M d ≠ 0 →
+      ArtinNormalisers.Ribbon2.degree M p = ArtinNormalisers.Ribbon2.degree M d + ArtinNormalisers.Ribbon2.degree M a →
+        ¬ArtinNormalisers.Ribbon2.degree M a < ArtinNormalisers.Ribbon2.degree M p → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.ribbonLcmTargetIndices: {I : Type u_1} →
+  (M : CoxeterMatrix I) → ArtinNormalisers.Ribbon2.RibbonObject M → ArtinNormalisers.Artin.Group M → Set I
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.ribbonLcmTargetIndices"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] → ArtinNormalisers.Ribbon2.RibbonObject M → Set I → ArtinNormalisers.Artin.Group M
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.chamberWeakRegion: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] → {H : Type u_2} → (ℓ : H → E →L[ℝ] ℝ) → ArtinNormalisers.Chamber3.Chamber ℓ → Set E
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.chamberWeakRegion"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefix_projection_minimal: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M)
+  (T : Set I),
+  M.toCoxeterSystem.IsMinimalCosetRep (ArtinNormalisers.Homotopy5.facePrefixTarget M X T).indices
+    ((ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M X T))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefix_projection_minimal"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ParabolicRootSigns ArtinNormalisers.Homotopy5.geometricRepresentation_apply_outside_parabolic: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (U : Set I) {w : M.Group},
+  w ∈ ArtinNormalisers.Artin.coxeterParabolic M U →
+    ∀ (r : ArtinNormalisers.Theorem18.Vector I) {i : I},
+      i ∉ U → ((M.toCoxeterSystem.geometricRepresentation w) r) i = r i
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ParabolicRootSigns","name":"ArtinNormalisers.Homotopy5.geometricRepresentation_apply_outside_parabolic"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_4: ∀
+  {I : Type u_1} (J : Set I), ContinuousSMul ℝ ↥(ArtinNormalisers.Theorem18.relativeSubspace J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_7: ∀
+  {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B) (z : ↑((fun p => (h p.1, h p.2)) ⁻¹' F.domain) × ↑unitInterval),
+  ↑z.1 ∈ (fun p => (h p.1, h p.2)) ⁻¹' F.domain
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_1: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (x : G), x⁻¹ = x ^ (-1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_5: ∀
+  {G : Type u_1} [inst : Semigroup G] (a b c : G), a * (b * c) = a * b * c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualConnectorDomain.eq_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I),
+  ArtinNormalisers.Homotopy5.actualConnectorDomain M J =
+    ⋃ σ,
+      ArtinNormalisers.Asphericity5.actualConvexCoverSet M J σ ×ˢ
+        ArtinNormalisers.Asphericity5.actualConvexCoverSet M J σ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualConnectorDomain.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.closure_chamber_region: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  [ContinuousAdd E] [ContinuousSMul ℝ E] (C : ArtinNormalisers.Chamber3.Chamber ℓ),
+  closure C.region = ArtinNormalisers.Homotopy5.chamberWeakRegion ℓ C
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.closure_chamber_region"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection: {E :
+    Type u_2} →
+  {H : Type u_3} →
+    [inst : AddCommGroup E] →
+      [inst_1 : _root_.Module ℝ E] →
+        [inst_2 : TopologicalSpace E] →
+          [ContinuousAdd E] →
+            [ContinuousSMul ℝ E] →
+              [Finite H] →
+                (ℓ : H → E →L[ℝ] ℝ) → Topology.LocalEquiconnection (ArtinNormalisers.Chamber3.ComplexComplement ℓ)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveCover: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) → ArtinNormalisers.Theorem18.Complement M J → Set (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveCover"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_3: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] (ℓ : H → E →L[ℝ] ℝ)
+  (p : ↑(ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ)),
+  (ArtinNormalisers.Homotopy5.convexConnector ℓ) (p, 0) = (↑p).1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.Domination ArtinNormalisers.Homotopy5.isAspherical_of_dominated_by_aspherical: ∀
+  {X : Type u} {Y : Type v} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] (f : C(X, Y)) (g : C(Y, X))
+  (H : (g.comp f).Homotopy (ContinuousMap.id X)) [PathConnectedSpace X] (x : X),
+  TauCeti.IsAspherical Y (f x) → TauCeti.IsAspherical X x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.Domination","name":"ArtinNormalisers.Homotopy5.isAspherical_of_dominated_by_aspherical"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint_incident: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group] (J : Set I) (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  ArtinNormalisers.Homotopy5.ChamberIncident (ArtinNormalisers.Chamber3.actualForms M J)
+    (ArtinNormalisers.Homotopy5.rawFacePoint M J L T) (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint_incident"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_2: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (a : G) (n : ℕ), a ^ n = a ^ ↑n
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefix_eq_simpleLift: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I),
+  ArtinNormalisers.Homotopy5.facePrefix M X T =
+    ArtinNormalisers.Chamber3.transporterPositiveLift M
+      ((ArtinNormalisers.Ribbon2.parabolicLongest M X.indices)⁻¹ *
+        ArtinNormalisers.Ribbon2.parabolicLongest M (X.indices ∪ T))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefix_eq_simpleLift"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection.eq_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  ArtinNormalisers.Homotopy5.actualLocalEquiconnection M J =
+    ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection (ArtinNormalisers.Chamber3.actualComplementHomeomorph M J)
+      (ArtinNormalisers.Homotopy5.convexLocalEquiconnection (ArtinNormalisers.Chamber3.actualForms M J))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_2: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (a : G) (n : ℕ), a ^ n = a ^ ↑n
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_5: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (m n : ℤ), a ^ m * a ^ n = a ^ (m + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.ambient_positive_left_lcm: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [Finite M.Group] {p q : ArtinNormalisers.Artin.Group M},
+  p ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ →
+    q ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ →
+      ∃ l ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ,
+        ArtinNormalisers.Homotopy5.RibbonPrefix M p l ∧
+          ArtinNormalisers.Homotopy5.RibbonPrefix M q l ∧
+            ∀ r ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ,
+              ArtinNormalisers.Homotopy5.RibbonPrefix M p r →
+                ArtinNormalisers.Homotopy5.RibbonPrefix M q r → ArtinNormalisers.Homotopy5.RibbonPrefix M l r
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.ambient_positive_left_lcm"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_6: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a ^ n * a = a ^ (n + 1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_tail: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ∃ q,
+      ArtinNormalisers.Ribbon2.PositiveReducedArrow M
+          (ArtinNormalisers.Homotopy5.facePrefixTarget M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) Y q ∧
+        p = ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p) * q
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_tail"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail_of_elementary_prefixes: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ∀ (T : Set I),
+      (∀ a ∈ T, ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a) p) →
+        ∃ q,
+          ArtinNormalisers.Ribbon2.PositiveReducedArrow M (ArtinNormalisers.Homotopy5.facePrefixTarget M X T) Y q ∧
+            p = ArtinNormalisers.Homotopy5.facePrefix M X T * q
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail_of_elementary_prefixes"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_2: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (a : G) (n : ℕ), a ^ n = a ^ ↑n
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2}
+  [inst_3 : Finite H] (ℓ : H → E →L[ℝ] ℝ) (x : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ) (h : H),
+  (ArtinNormalisers.Chamber3.faceChamber ℓ x C).signs h = (ArtinNormalisers.Chamber3.faceChamber ℓ (-x) C).signs h ↔
+    (ℓ h) x = 0
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_3: ∀
+  {α : Type u_1} [inst : DivisionMonoid α] (a : α) (m n : ℤ), (a ^ m) ^ n = a ^ (m * n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnector: {E : Type u_2} →
+  {H : Type u_3} →
+    [inst : AddCommGroup E] →
+      [inst_1 : _root_.Module ℝ E] →
+        [inst_2 : TopologicalSpace E] →
+          [ContinuousAdd E] →
+            [ContinuousSMul ℝ E] →
+              (ℓ : H → E →L[ℝ] ℝ) →
+                C(↑(ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ) × ↑unitInterval,
+                  ArtinNormalisers.Chamber3.ComplexComplement ℓ)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnector"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_1: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (x : G), x⁻¹ = x ^ (-1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_4: ∀
+  {G : Type u_1} [inst : Semigroup G] (a b c : G), a * (b * c) = a * b * c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector _private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_8: ∀
+  {α : Type u} {β : Type v} {s : Set α} {t : Set β} {p : α × β}, (p ∈ s ×ˢ t) = (p.1 ∈ s ∧ p.2 ∈ t)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.ComplementConnector","name":"_private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_8"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_positive: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I),
+  ArtinNormalisers.Homotopy5.facePrefix M X T ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_positive"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals _private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff._simp_1_2: ∀
+  {α : Type u_1} [inst : SubtractionMonoid α] {a : α}, (-a = 0) = (a = 0)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.TubeIntervals","name":"_private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix.congr_simp: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X X_1 : ArtinNormalisers.Ribbon2.RibbonObject M),
+  X = X_1 →
+    ∀ (T T_1 : Set I),
+      T = T_1 → ArtinNormalisers.Homotopy5.facePrefix M X T = ArtinNormalisers.Homotopy5.facePrefix M X_1 T_1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix.congr_simp"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_6: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a ^ n * a = a ^ (n + 1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_3: ∀
+  {α : Type u_1} [inst : DivisionMonoid α] (a : α) (m n : ℤ), (a ^ m) ^ n = a ^ (m * n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.residueToFaceDivisor._proof_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I) (D : ArtinNormalisers.Homotopy5.FaceResidue M J L T),
+  ∃ Y,
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M { indices := L.indices } Y
+        (ArtinNormalisers.Chamber3.transporterPositiveLift M
+          (ArtinNormalisers.Chamber3.relativeTransport M J (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L)
+            ↑D)) ∧
+      ArtinNormalisers.Chamber3.transporterPositiveLift M
+            (ArtinNormalisers.Chamber3.relativeTransport M J (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L)
+              ↑D) =
+          ArtinNormalisers.Chamber3.transporterPositiveLift M
+            ((ArtinNormalisers.Artin.projection M)
+              (ArtinNormalisers.Chamber3.transporterPositiveLift M
+                (ArtinNormalisers.Chamber3.relativeTransport M J
+                  (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L) ↑D))) ∧
+        ArtinNormalisers.Homotopy5.RibbonPrefix M
+          (ArtinNormalisers.Chamber3.transporterPositiveLift M
+            (ArtinNormalisers.Chamber3.relativeTransport M J (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L)
+              ↑D))
+          (ArtinNormalisers.Homotopy5.facePrefix M { indices := L.indices } T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.residueToFaceDivisor._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_1: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  (ℓ : H → E →L[ℝ] ℝ) (x : ArtinNormalisers.Chamber3.ComplexComplement ℓ),
+  (x, x) ∈ ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_2: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (a : G) (n : ℕ), a ^ n = a ^ ↑n
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_6: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a ^ n * a = a ^ (n + 1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_2: ∀
+  {α : Type u} [inst : AddGroup α] [inst_1 : LT α] [AddLeftStrictMono α] {a : α}, (-a < 0) = (0 < a)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_leftReduced: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I),
+  ArtinNormalisers.Ribbon2.IsLeftParabolicallyReduced M X.indices (ArtinNormalisers.Homotopy5.facePrefix M X T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_leftReduced"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_1: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (x : G), x⁻¹ = x ^ (-1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_nonempty: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    p ≠ 1 → (ArtinNormalisers.Homotopy5.outsideAtomDescents M X p).Nonempty
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_nonempty"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeChamber._proof_1: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  (C : ArtinNormalisers.Chamber3.Chamber ℓ), (ArtinNormalisers.Chamber3.signCell ℓ fun h => !C.signs h).Nonempty
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeChamber._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection_connector_val: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (p : ↑(ArtinNormalisers.Homotopy5.actualLocalEquiconnection M J).domain) (t : ↑unitInterval),
+  ↑((ArtinNormalisers.Homotopy5.actualLocalEquiconnection M J).connector (p, t)) = (1 - ↑t) • ↑(↑p).1 + ↑t • ↑(↑p).2
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection_connector_val"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.SimpleFaceDivisor: {I : Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → ArtinNormalisers.Ribbon2.RibbonObject M → Set I → Type (max 0 u_1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.SimpleFaceDivisor"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefix_eq_simpleLift_projection: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M)
+  (T : Set I),
+  ArtinNormalisers.Homotopy5.facePrefix M X T =
+    ArtinNormalisers.Chamber3.transporterPositiveLift M
+      ((ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M X T))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefix_eq_simpleLift_projection"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualComplementVertexOrder: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → (J : Set I) → LinearOrder (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualComplementVertexOrder"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.fiberTarget_facePrefixLabel: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  ↑(ArtinNormalisers.Homotopy5.facePrefixFiberTarget M J { indices := L.indices } T
+        ⟨ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L, ⋯⟩) =
+    ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J (ArtinNormalisers.Homotopy5.facePrefixLabel M J L T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.fiberTarget_facePrefixLabel"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_2: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (a : G) (n : ℕ), a ^ n = a ^ ↑n
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ParabolicRootSigns ArtinNormalisers.Homotopy5.parabolicLongest_positive_supported_negative._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (U : Set I) (i : I),
+  M.toCoxeterSystem.length (ArtinNormalisers.Ribbon2.parabolicLongest M U * M.toCoxeterSystem.simple i) =
+      M.toCoxeterSystem.length (ArtinNormalisers.Ribbon2.parabolicLongest M U) + 1 →
+    M.toCoxeterSystem.length (ArtinNormalisers.Ribbon2.parabolicLongest M U * M.toCoxeterSystem.simple i) ≤
+        M.toCoxeterSystem.length (ArtinNormalisers.Ribbon2.parabolicLongest M U) →
+      False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ParabolicRootSigns","name":"ArtinNormalisers.Homotopy5.parabolicLongest_positive_supported_negative._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_4: ∀
+  {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B) (x : A) (t : ↑unitInterval),
+  { toFun := fun z => h.symm (F.connector (⟨(h (↑z.1).1, h (↑z.1).2), ⋯⟩, z.2)), continuous_toFun := ⋯ }
+      (⟨(x, x), ⋯⟩, t) =
+    x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.diagonal_mem_actualConnectorDomain: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J),
+  (x, x) ∈ ArtinNormalisers.Homotopy5.actualConnectorDomain M J
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.diagonal_mem_actualConnectorDomain"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Z q →
+      ∃ U l,
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U l ∧
+          (∃ a, ArtinNormalisers.Ribbon2.PositiveReducedArrow M Y U a ∧ l = p * a) ∧
+            (∃ b, ArtinNormalisers.Ribbon2.PositiveReducedArrow M Z U b ∧ l = q * b) ∧
+              ∀ r ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ,
+                ArtinNormalisers.Homotopy5.RibbonPrefix M p r →
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M q r → ArtinNormalisers.Homotopy5.RibbonPrefix M l r
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint_coordinates: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) (J : Set I) (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I)
+  (i : { i // i ∉ L.indices }),
+  (ArtinNormalisers.Asphericity5.rawFacetCoordinates L) (ArtinNormalisers.Homotopy5.rawFacePoint M J L T) i =
+    if ↑i ∈ T then 0 else 1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint_coordinates"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_5: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] (ℓ : H → E →L[ℝ] ℝ)
+  (x : ArtinNormalisers.Chamber3.ComplexComplement ℓ) (t : ↑unitInterval),
+  (ArtinNormalisers.Homotopy5.convexConnector ℓ) (⟨(x, x), ⋯⟩, t) = x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  (fun n =>
+        ∃ U d,
+          ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U d ∧
+            ArtinNormalisers.Homotopy5.RibbonPrefix M d p ∧
+              ArtinNormalisers.Homotopy5.RibbonPrefix M d q ∧ (ArtinNormalisers.Ribbon2.degree M d).toNat = n)
+      0 →
+    ∀ (d l : ArtinNormalisers.Artin.Group M),
+      ArtinNormalisers.Ribbon2.degree M l ≤ ArtinNormalisers.Ribbon2.degree M p →
+        ¬(ArtinNormalisers.Ribbon2.degree M l).toNat ≤ (ArtinNormalisers.Ribbon2.degree M p).toNat → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left._proof_1_2: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  (fun n =>
+        ∃ U d,
+          ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U d ∧
+            ArtinNormalisers.Homotopy5.RibbonPrefix M d p ∧
+              ArtinNormalisers.Homotopy5.RibbonPrefix M d q ∧ (ArtinNormalisers.Ribbon2.degree M d).toNat = n)
+      0 →
+    ∀ (d : ArtinNormalisers.Artin.Group M),
+      (ArtinNormalisers.Ribbon2.degree M d).toNat =
+          Nat.findGreatest
+            (fun n =>
+              ∃ U d,
+                ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U d ∧
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M d p ∧
+                    ArtinNormalisers.Homotopy5.RibbonPrefix M d q ∧ (ArtinNormalisers.Ribbon2.degree M d).toNat = n)
+            (ArtinNormalisers.Ribbon2.degree M p).toNat →
+        ∀ (l : ArtinNormalisers.Artin.Group M),
+          (ArtinNormalisers.Ribbon2.degree M l).toNat ≤ (ArtinNormalisers.Ribbon2.degree M p).toNat →
+            (ArtinNormalisers.Ribbon2.degree M l).toNat ≤
+                Nat.findGreatest
+                  (fun n =>
+                    ∃ U d,
+                      ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U d ∧
+                        ArtinNormalisers.Homotopy5.RibbonPrefix M d p ∧
+                          ArtinNormalisers.Homotopy5.RibbonPrefix M d q ∧
+                            (ArtinNormalisers.Ribbon2.degree M d).toNat = n)
+                  (ArtinNormalisers.Ribbon2.degree M p).toNat →
+              0 ≤ ArtinNormalisers.Ribbon2.degree M l →
+                0 ≤ ArtinNormalisers.Ribbon2.degree M d →
+                  ¬ArtinNormalisers.Ribbon2.degree M l ≤ ArtinNormalisers.Ribbon2.degree M d → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left._proof_1_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector _private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_6: ∀
+  {α : Type u} {β : Type v} {f : α → β} {s : Set β} {a : α}, (a ∈ f ⁻¹' s) = (f a ∈ s)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.ComplementConnector","name":"_private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_isRibbon: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I),
+  ArtinNormalisers.Ribbon2.IsRibbon M X (ArtinNormalisers.Homotopy5.facePrefixTarget M X T)
+    (ArtinNormalisers.Homotopy5.facePrefix M X T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_isRibbon"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint_coordinates._simp_1_1: ∀
+  {α : Type u} (x : α) (a b : Set α), (x ∈ a ∪ b) = (x ∈ a ∨ x ∈ b)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint_coordinates._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_prefix: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Homotopy5.RibbonPrefix M
+      (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) p
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_prefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_5: ∀
+  {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B), IsOpen ((fun x => ((⇑h ∘ Prod.fst) x, (⇑h ∘ Prod.snd) x)) ⁻¹' F.domain)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveForward: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        C(ArtinNormalisers.Theorem18.Complement M J,
+          ↑(SSet.toTop.obj (ArtinNormalisers.Homotopy5.actualMetricNerve M J)))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveForward"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] → ArtinNormalisers.Ribbon2.RibbonObject M → ArtinNormalisers.Artin.Group M → Set I
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I)
+  {p : ArtinNormalisers.Artin.Group M},
+  p ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ →
+    (ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Homotopy5.facePrefix M X T) p ↔
+      ∀ a ∈ T, ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a) p)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnector._proof_2: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [ContinuousAdd E] [ContinuousSMul ℝ E] (ℓ : H → E →L[ℝ] ℝ),
+  Continuous fun z => ⟨(1 - ↑z.2) • ↑(↑z.1).1 + ↑z.2 • ↑(↑z.1).2, ⋯⟩
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnector._proof_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_6: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a ^ n * a = a ^ (n + 1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.canonicalDominant_root_zero_iff_support._simp_1_1: ∀
+  {α : Type u_1} [inst : SubtractionMonoid α] {a : α}, (-a = 0) = (a = 0)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.canonicalDominant_root_zero_iff_support._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_4: ∀
+  {G : Type u_1} [inst : Semigroup G] (a b c : G), a * (b * c) = a * b * c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint_incident_iff_between_facePrefix: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I) (D : ArtinNormalisers.Chamber3.ActualChamber M J),
+  ArtinNormalisers.Homotopy5.ChamberIncident (ArtinNormalisers.Chamber3.actualForms M J)
+      (ArtinNormalisers.Homotopy5.rawFacePoint M J L T) D ↔
+    ArtinNormalisers.Chamber3.ChamberBetween (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L) D
+      (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J (ArtinNormalisers.Homotopy5.facePrefixLabel M J L T))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint_incident_iff_between_facePrefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.tubeUpperChamber: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} →
+          [Finite H] →
+            (ℓ : H → E →L[ℝ] ℝ) → ArtinNormalisers.Chamber3.ComplexComplement ℓ → ArtinNormalisers.Chamber3.Chamber ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.tubeUpperChamber"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnectorDomain: {E :
+    Type u_2} →
+  {H : Type u_3} →
+    [inst : AddCommGroup E] →
+      [inst_1 : _root_.Module ℝ E] →
+        [inst_2 : TopologicalSpace E] →
+          (ℓ : H → E →L[ℝ] ℝ) →
+            Set (ArtinNormalisers.Chamber3.ComplexComplement ℓ × ArtinNormalisers.Chamber3.ComplexComplement ℓ)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnectorDomain"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_3: ∀
+  {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B) (p : ↑((fun p => (h p.1, h p.2)) ⁻¹' F.domain)),
+  { toFun := fun z => h.symm (F.connector (⟨(h (↑z.1).1, h (↑z.1).2), ⋯⟩, z.2)), continuous_toFun := ⋯ } (p, 1) = (↑p).2
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_reduced_ribbon_common_upper_bound: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Z q →
+      ∃ r,
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M X X r ∧
+          ArtinNormalisers.Homotopy5.RibbonPrefix M p r ∧ ArtinNormalisers.Homotopy5.RibbonPrefix M q r
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_common_upper_bound"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.ribbonPrefix_simpleLift_iff: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group] (u v : M.Group),
+  ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Chamber3.transporterPositiveLift M u)
+      (ArtinNormalisers.Chamber3.transporterPositiveLift M v) ↔
+    M.toCoxeterSystem.length v = M.toCoxeterSystem.length u + M.toCoxeterSystem.length (u⁻¹ * v)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_simpleLift_iff"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_7: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a * a ^ n = a ^ (1 + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues _private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.relativeTransport_injective: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (C : ArtinNormalisers.Chamber3.ActualChamber M J),
+  Function.Injective (ArtinNormalisers.Chamber3.relativeTransport M J C)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.relativeTransport_injective"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues _private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.parabolicLongest_inv: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (U : Set I),
+  (ArtinNormalisers.Ribbon2.parabolicLongest M U)⁻¹ = ArtinNormalisers.Ribbon2.parabolicLongest M U
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.parabolicLongest_inv"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.Domination ArtinNormalisers.Homotopy5.homotopyGroup_subsingleton_of_domination: ∀
+  {X : Type u} {Y : Type v} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] (f : C(X, Y)) (g : C(Y, X))
+  (H : (g.comp f).Homotopy (ContinuousMap.id X)) (N : Type w) [Finite N] (x : X)
+  [Subsingleton (HomotopyGroup N Y (f x))], Subsingleton (HomotopyGroup N X x)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.Domination","name":"ArtinNormalisers.Homotopy5.homotopyGroup_subsingleton_of_domination"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualMetricNerve: {I : Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → Set I → _root_.SSet
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualMetricNerve"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] → (J : Set I) → Topology.LocalEquiconnection (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefixTarget: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] → ArtinNormalisers.Ribbon2.RibbonObject M → Set I → ArtinNormalisers.Ribbon2.RibbonObject M
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefixTarget"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixFiberTarget: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        (X : ArtinNormalisers.Ribbon2.RibbonObject M) →
+          (T : Set I) →
+            ArtinNormalisers.Chamber3.ChamberFiber M J X →
+              ArtinNormalisers.Chamber3.ChamberFiber M J (ArtinNormalisers.Homotopy5.facePrefixTarget M X T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixFiberTarget"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.center_mem_actualNerveCover: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J), x ∈ ArtinNormalisers.Homotopy5.actualNerveCover M J x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.center_mem_actualNerveCover"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.ChamberIncident.eq_1: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  (z : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ),
+  ArtinNormalisers.Homotopy5.ChamberIncident ℓ z C = (z ∈ closure C.region)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.ChamberIncident.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_tail_degree_lt: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    p ≠ 1 →
+      ∃ q,
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M
+            (ArtinNormalisers.Homotopy5.facePrefixTarget M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p)) Y q ∧
+          p = ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p) * q ∧
+            ArtinNormalisers.Ribbon2.degree M q < ArtinNormalisers.Ribbon2.degree M p
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_tail_degree_lt"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection_connector_val: ∀
+  {E : Type u_2} {H : Type u_3} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] [inst_5 : Finite H] (ℓ : H → E →L[ℝ] ℝ)
+  (p : ↑(ArtinNormalisers.Homotopy5.convexLocalEquiconnection ℓ).domain) (t : ↑unitInterval),
+  ↑((ArtinNormalisers.Homotopy5.convexLocalEquiconnection ℓ).connector (p, t)) = (1 - ↑t) • ↑(↑p).1 + ↑t • ↑(↑p).2
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection_connector_val"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_4: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] (ℓ : H → E →L[ℝ] ℝ)
+  (p : ↑(ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ)),
+  (ArtinNormalisers.Homotopy5.convexConnector ℓ) (p, 1) = (↑p).2
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M)
+  (T : Set I),
+  ArtinNormalisers.Homotopy5.outsideAtomDescents M X (ArtinNormalisers.Homotopy5.facePrefix M X T) = T \ X.indices
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.chamberIncident_iff_signs: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  [ContinuousAdd E] [ContinuousSMul ℝ E] (z : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ),
+  ArtinNormalisers.Homotopy5.ChamberIncident ℓ z C ↔ ArtinNormalisers.Homotopy5.IncidentSigns ℓ z C
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.chamberIncident_iff_signs"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J (ArtinNormalisers.Homotopy5.facePrefixLabel M J L T) =
+    ArtinNormalisers.Homotopy5.oppositeAtFace (ArtinNormalisers.Chamber3.actualForms M J)
+      (ArtinNormalisers.Homotopy5.rawFacePoint M J L T) (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice _private.ArtinHomotopy.RibbonLattice.0.ArtinNormalisers.Homotopy5.positive_degree_one_generator: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) {a : ArtinNormalisers.Artin.Group M},
+  a ∈ ArtinNormalisers.Ribbon2.actualPositiveParabolic M Set.univ →
+    ArtinNormalisers.Ribbon2.degree M a = 1 → ∃ k, a = ArtinNormalisers.Artin.generator M k
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonLattice","name":"_private.ArtinHomotopy.RibbonLattice.0.ArtinNormalisers.Homotopy5.positive_degree_one_generator"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveHomotopy ArtinNormalisers.Homotopy5.actualNerveForward_homotopyGroupMap_injective: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (N : Type v) [Finite N]
+  (x : ArtinNormalisers.Theorem18.Complement M J),
+  Function.Injective (HomotopyGroup.map (ArtinNormalisers.Homotopy5.actualNerveForward M J) ⋯)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveHomotopy","name":"ArtinNormalisers.Homotopy5.actualNerveForward_homotopyGroupMap_injective"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.IncidentSigns: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} → (ℓ : H → E →L[ℝ] ℝ) → E → ArtinNormalisers.Chamber3.Chamber ℓ → Prop
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.IncidentSigns"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_6: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (m n : ℤ), a ^ m * a ^ n = a ^ (m + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.elementary_prefix_facePrefix: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I)
+  {a : I},
+  a ∈ T →
+    ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Ribbon2.elementaryMu M X.indices a)
+      (ArtinNormalisers.Homotopy5.facePrefix M X T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.elementary_prefix_facePrefix"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.rawFacePoint._proof_1: SMulCommClass ℝ ℝ ℝ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.rawFacePoint._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeAtFace_signs_zero: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  [inst_3 : Finite H] (z : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ) {h : H},
+  (ℓ h) z = 0 → (ArtinNormalisers.Homotopy5.oppositeAtFace ℓ z C).signs h = !C.signs h
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeAtFace_signs_zero"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeAtFace: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} →
+          (ℓ : H → E →L[ℝ] ℝ) →
+            [Finite H] → E → ArtinNormalisers.Chamber3.Chamber ℓ → ArtinNormalisers.Chamber3.Chamber ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeAtFace"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector _private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_7: ∀
+  {α : Type u} {ι : Sort v} {x : α} {s : ι → Set α}, (x ∈ ⋃ i, s i) = ∃ i, x ∈ s i
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.ComplementConnector","name":"_private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_4: ∀
+  {α : Type u_1} [inst : DivisionMonoid α] (a : α) (m n : ℤ), (a ^ m) ^ n = a ^ (m * n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y Z : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p q : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Z q →
+      ∃ U d,
+        ArtinNormalisers.Ribbon2.PositiveReducedArrow M X U d ∧
+          ArtinNormalisers.Homotopy5.RibbonPrefix M d p ∧
+            ArtinNormalisers.Homotopy5.RibbonPrefix M d q ∧
+              ∀ (V : ArtinNormalisers.Ribbon2.RibbonObject M) (e : ArtinNormalisers.Artin.Group M),
+                ArtinNormalisers.Ribbon2.PositiveReducedArrow M X V e →
+                  ArtinNormalisers.Homotopy5.RibbonPrefix M e p →
+                    ArtinNormalisers.Homotopy5.RibbonPrefix M e q → ArtinNormalisers.Homotopy5.RibbonPrefix M e d
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M)
+  (T U : Set I),
+  X.indices ∪ T ⊆ X.indices ∪ U →
+    ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Homotopy5.facePrefix M X T)
+      (ArtinNormalisers.Homotopy5.facePrefix M X U)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnector._proof_1: ∀
+  {E : Type u_1} {H : Type u_2} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  (ℓ : H → E →L[ℝ] ℝ) (z : ↑(ArtinNormalisers.Homotopy5.convexConnectorDomain ℓ) × ↑unitInterval),
+  (1 - ↑z.2) • ↑(↑z.1).1 + ↑z.2 • ↑(↑z.1).2 ∈ ArtinNormalisers.Chamber3.complexComplementSet ℓ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnector._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.complementMetricSpace: {I :
+    Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → (J : Set I) → MetricSpace (ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.complementMetricSpace"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveRadius.congr_simp: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (a a_1 : ArtinNormalisers.Theorem18.Complement M J),
+  a = a_1 → ArtinNormalisers.Homotopy5.actualNerveRadius M J a = ArtinNormalisers.Homotopy5.actualNerveRadius M J a_1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveRadius.congr_simp"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_2: ∀
+  {I : Type u_1} (J : Set I), ContinuousAdd ↥(ArtinNormalisers.Theorem18.relativeSubspace J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_2"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.isOpen_actualConnectorDomain: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [Finite M.Group] (J : Set I),
+  IsOpen (ArtinNormalisers.Homotopy5.actualConnectorDomain M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.isOpen_actualConnectorDomain"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_3: ∀
+  {G : Type u_1} [inst : DivInvMonoid G] (a : G) (n : ℕ), a ^ n = a ^ ↑n
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_3"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefix_inverse_positive_of_nonzero: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I)
+  {r : ArtinNormalisers.Theorem18.Vector I},
+  r ∈ M.toCoxeterSystem.geometricRoots →
+    0 < r →
+      (ArtinNormalisers.Landmark1.canonicalDominant (X.indices ∪ T)) r ≠ 0 →
+        0 <
+          (M.toCoxeterSystem.geometricRepresentation
+              ((ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M X T))⁻¹)
+            r
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefix_inverse_positive_of_nonzero"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.FaceResidue: {I : Type u_1} →
+  (M : CoxeterMatrix I) → (J : Set I) → ArtinNormalisers.Chamber3.RawFacetLabel M J → Set I → Type (max 0 u_1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.FaceResidue"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefixLabel: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [Finite M.Group] →
+      (J : Set I) → ArtinNormalisers.Chamber3.RawFacetLabel M J → Set I → ArtinNormalisers.Chamber3.RawFacetLabel M J
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefixLabel"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.chamberBetween_faceChamber_pos_neg_iff: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2}
+  [inst_3 : Finite H] (ℓ : H → E →L[ℝ] ℝ) (x : E) (C D : ArtinNormalisers.Chamber3.Chamber ℓ),
+  ArtinNormalisers.Chamber3.ChamberBetween (ArtinNormalisers.Chamber3.faceChamber ℓ x C) D
+      (ArtinNormalisers.Chamber3.faceChamber ℓ (-x) C) ↔
+    ∀ (h : H), (ℓ h) x = 0 → D.signs h = C.signs h
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.chamberBetween_faceChamber_pos_neg_iff"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.oppositeAtFace_signs_nonzero: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2}
+  (ℓ : H → E →L[ℝ] ℝ) [inst_3 : Finite H] (z : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ) {h : H},
+  (ℓ h) z ≠ 0 → (ArtinNormalisers.Homotopy5.oppositeAtFace ℓ z C).signs h = decide (0 < (ℓ h) z)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.oppositeAtFace_signs_nonzero"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexCover_isConnectorConvex: ∀
+  {E : Type u_2} {H : Type u_3} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] [inst_5 : Finite H] (ℓ : H → E →L[ℝ] ℝ) (σ : H → Fin 4),
+  (ArtinNormalisers.Homotopy5.convexLocalEquiconnection ℓ).IsConvex (ArtinNormalisers.Asphericity5.convexCoverSet ℓ σ)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexCover_isConnectorConvex"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.exists_mem_actualNerveCover: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (x : ArtinNormalisers.Theorem18.Complement M J), ∃ y, x ∈ ArtinNormalisers.Homotopy5.actualNerveCover M J y
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.exists_mem_actualNerveCover"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p d : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    p ≠ 1 →
+      (∀ (V : ArtinNormalisers.Ribbon2.RibbonObject M) (e : ArtinNormalisers.Artin.Group M),
+          ArtinNormalisers.Homotopy5.SimpleRibbon M X V e →
+            ArtinNormalisers.Homotopy5.RibbonPrefix M e p → ArtinNormalisers.Homotopy5.RibbonPrefix M e d) →
+        d ≠ 1
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_4: ∀
+  {G : Type u_1} [inst : Semigroup G] (a b c : G), a * (b * c) = a * b * c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.maximalFacePrefix_degree_pos: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    p ≠ 1 →
+      0 <
+        ArtinNormalisers.Ribbon2.degree M
+          (ArtinNormalisers.Homotopy5.facePrefix M X (ArtinNormalisers.Homotopy5.maximalFaceType M X p))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.maximalFacePrefix_degree_pos"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_5: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (m n : ℤ), a ^ m * a ^ n = a ^ (m + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_6: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a ^ n * a = a ^ (n + 1)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_6"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.incidentSigns_iff_weak: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} (ℓ : H → E →L[ℝ] ℝ)
+  (z : E) (C : ArtinNormalisers.Chamber3.Chamber ℓ),
+  ArtinNormalisers.Homotopy5.IncidentSigns ℓ z C ↔ z ∈ ArtinNormalisers.Homotopy5.chamberWeakRegion ℓ C
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.incidentSigns_iff_weak"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonLattice ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_5: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (m n : ℤ), a ^ m * a ^ n = a ^ (m + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.RibbonLattice","name":"ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.residueToFaceDivisor_injective: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  Function.Injective (ArtinNormalisers.Homotopy5.residueToFaceDivisor M J L T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.residueToFaceDivisor_injective"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.mem_tubeSet_iff_chamberBetween: ∀
+  {E : Type u_1} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2}
+  [inst_3 : Finite H] (ℓ : H → E →L[ℝ] ℝ) (p : ArtinNormalisers.Chamber3.ComplexComplement ℓ)
+  (D : ArtinNormalisers.Chamber3.Chamber ℓ),
+  p ∈ ArtinNormalisers.Chamber3.tubeSet D ↔
+    ArtinNormalisers.Chamber3.ChamberBetween (ArtinNormalisers.Homotopy5.tubeLowerChamber ℓ p) D
+      (ArtinNormalisers.Homotopy5.tubeUpperChamber ℓ p)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.mem_tubeSet_iff_chamberBetween"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals ArtinNormalisers.Homotopy5.mem_tubeWitness: ∀ {E : Type u_1}
+  [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E] {H : Type u_2} [inst_3 : Finite H]
+  (ℓ : H → E →L[ℝ] ℝ) (p : ArtinNormalisers.Chamber3.ComplexComplement ℓ),
+  p ∈ ArtinNormalisers.Chamber3.tubeSet (ArtinNormalisers.Homotopy5.tubeWitness ℓ p)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.TubeIntervals","name":"ArtinNormalisers.Homotopy5.mem_tubeWitness"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.exists_actualNervePartition: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I),
+  ∃ ρ, ρ.IsSubordinate (ArtinNormalisers.Homotopy5.actualNerveCover M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.exists_actualNervePartition"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveCover._proof_1: (7 +
+    1).AtLeastTwo
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveCover._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.convexConnector.eq_1: ∀
+  {E : Type u_2} {H : Type u_3} [inst : AddCommGroup E] [inst_1 : _root_.Module ℝ E] [inst_2 : TopologicalSpace E]
+  [inst_3 : ContinuousAdd E] [inst_4 : ContinuousSMul ℝ E] (ℓ : H → E →L[ℝ] ℝ),
+  ArtinNormalisers.Homotopy5.convexConnector ℓ =
+    { toFun := fun z => ⟨(1 - ↑z.2) • ↑(↑z.1).1 + ↑z.2 • ↑(↑z.1).2, ⋯⟩, continuous_toFun := ⋯ }
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.convexConnector.eq_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.facePrefix_inverse_negative_of_zero: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I)
+  {r : ArtinNormalisers.Theorem18.Vector I},
+  r ∈ M.toCoxeterSystem.geometricRoots →
+    0 < r →
+      (ArtinNormalisers.Landmark1.canonicalDominant X.indices) r ≠ 0 →
+        (ArtinNormalisers.Landmark1.canonicalDominant (X.indices ∪ T)) r = 0 →
+          (M.toCoxeterSystem.geometricRepresentation
+                ((ArtinNormalisers.Artin.projection M) (ArtinNormalisers.Homotopy5.facePrefix M X T))⁻¹)
+              r <
+            0
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.facePrefix_inverse_negative_of_zero"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.RibbonGcd ArtinNormalisers.Homotopy5.ribbonPrefix_eq_of_degree_le._proof_1_1: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) {a b : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.degree M b ≤ ArtinNormalisers.Ribbon2.degree M a →
+    ∀ (c : ArtinNormalisers.Artin.Group M),
+      0 ≤ ArtinNormalisers.Ribbon2.degree M c →
+        ArtinNormalisers.Ribbon2.degree M b =
+            ArtinNormalisers.Ribbon2.degree M a + ArtinNormalisers.Ribbon2.degree M c →
+          ¬ArtinNormalisers.Ribbon2.degree M c = 0 → False
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.RibbonGcd","name":"ArtinNormalisers.Homotopy5.ribbonPrefix_eq_of_degree_le._proof_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.fiberTarget_facePrefix_oppositeAtFace: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I)
+  (L : ArtinNormalisers.Chamber3.RawFacetLabel M J) (T : Set I),
+  ↑(ArtinNormalisers.Homotopy5.facePrefixFiberTarget M J { indices := L.indices } T
+        ⟨ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L, ⋯⟩) =
+    ArtinNormalisers.Homotopy5.oppositeAtFace (ArtinNormalisers.Chamber3.actualForms M J)
+      (ArtinNormalisers.Homotopy5.rawFacePoint M J L T) (ArtinNormalisers.Chamber3.actualChamberOfRawLabel M J L)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.fiberTarget_facePrefix_oppositeAtFace"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_generated: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (X : ArtinNormalisers.Ribbon2.RibbonObject M) (T : Set I),
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X (ArtinNormalisers.Homotopy5.facePrefixTarget M X T)
+    (ArtinNormalisers.Homotopy5.facePrefix M X T)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_generated"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveRadius: {I : Type u_1} →
+  (M : CoxeterMatrix I) → [Finite M.Group] → (J : Set I) → ArtinNormalisers.Theorem18.Complement M J → ℝ
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveRadius"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FaceResidues ArtinNormalisers.Homotopy5.ChamberIncident: {E : Type u_1} →
+  [inst : AddCommGroup E] →
+    [inst_1 : _root_.Module ℝ E] →
+      [inst_2 : TopologicalSpace E] →
+        {H : Type u_2} → (ℓ : H → E →L[ℝ] ℝ) → E → ArtinNormalisers.Chamber3.Chamber ℓ → Prop
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FaceResidues","name":"ArtinNormalisers.Homotopy5.ChamberIncident"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_7: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a * a ^ n = a ^ (1 + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ParabolicRootSigns ArtinNormalisers.Homotopy5.parabolicLongest_positive_supported_negative: ∀
+  {I : Type u_1} (M : CoxeterMatrix I) [inst : Finite M.Group] (U : Set I) {r : ArtinNormalisers.Theorem18.Vector I},
+  r ∈ M.toCoxeterSystem.geometricRoots →
+    0 < r →
+      (∀ i ∉ U, r i = 0) →
+        (M.toCoxeterSystem.geometricRepresentation (ArtinNormalisers.Ribbon2.parabolicLongest M U)) r < 0
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ParabolicRootSigns","name":"ArtinNormalisers.Homotopy5.parabolicLongest_positive_supported_negative"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveReturn: {I : Type u_1} →
+  (M : CoxeterMatrix I) →
+    [inst : Finite M.Group] →
+      (J : Set I) →
+        C(↑(SSet.toTop.obj (ArtinNormalisers.Homotopy5.actualMetricNerve M J)),
+          ArtinNormalisers.Theorem18.Complement M J)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveReturn"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] {X Y : ArtinNormalisers.Ribbon2.RibbonObject M}
+  {p : ArtinNormalisers.Artin.Group M},
+  ArtinNormalisers.Ribbon2.PositiveReducedArrow M X Y p →
+    ∀ (T : Set I),
+      ArtinNormalisers.Homotopy5.RibbonPrefix M (ArtinNormalisers.Homotopy5.facePrefix M X T) p →
+        ∃ q,
+          ArtinNormalisers.Ribbon2.PositiveReducedArrow M (ArtinNormalisers.Homotopy5.facePrefixTarget M X T) Y q ∧
+            p = ArtinNormalisers.Homotopy5.facePrefix M X T * q
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_5: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (m n : ℤ), a ^ m * a ^ n = a ^ (m + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_5"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_7: ∀
+  {G : Type u_3} [inst : Group G] (a : G) (n : ℤ), a * a ^ n = a ^ (1 + n)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_7"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.FacePrefixes ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_4: ∀
+  {G : Type u_1} [inst : Semigroup G] (a b c : G), a * (b * c) = a * b * c
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":[],"module":"ArtinHomotopy.FacePrefixes","name":"ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_4"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.TubeIntervals _private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff._simp_1_1: ∀
+  {α : Type u_1} [inst : SubtractionMonoid α] {a : α}, (-a ≠ 0) = (a ≠ 0)
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext"],"module":"ArtinHomotopy.TubeIntervals","name":"_private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff._simp_1_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.Domination ArtinNormalisers.Homotopy5.isAspherical_of_domination: ∀ {X : Type u}
+  {Y : Type v} [inst : TopologicalSpace X] [inst_1 : TopologicalSpace Y] (f : C(X, Y)) (g : C(Y, X))
+  (H : (g.comp f).Homotopy (ContinuousMap.id X)) [PathConnectedSpace X] (x : X),
+  (∀ (n : ℕ), Subsingleton (HomotopyGroup.Pi (n + 2) Y (f x))) → TauCeti.IsAspherical X x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.Domination","name":"ArtinNormalisers.Homotopy5.isAspherical_of_domination"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.ComplementConnector ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_1: ∀
+  {A : Type u_1} {B : Type u_2} [inst : TopologicalSpace A] [inst_1 : TopologicalSpace B] (h : A ≃ₜ B)
+  (F : Topology.LocalEquiconnection B), Continuous fun z => h.symm (F.connector (⟨(h (↑z.1).1, h (↑z.1).2), ⋯⟩, z.2))
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.ComplementConnector","name":"ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_1"}
+HOMOTOPY_PROJECT_TYPE ArtinHomotopy.NerveComparison ArtinNormalisers.Homotopy5.actualNerveRadius_pos: ∀ {I : Type u_1}
+  (M : CoxeterMatrix I) [inst : Finite M.Group] (J : Set I) (x : ArtinNormalisers.Theorem18.Complement M J),
+  0 < ArtinNormalisers.Homotopy5.actualNerveRadius M J x
+HOMOTOPY_PROJECT_DECL_JSON {"axioms":["propext","Classical.choice","Quot.sound"],"module":"ArtinHomotopy.NerveComparison","name":"ArtinNormalisers.Homotopy5.actualNerveRadius_pos"}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":0,"module":"ArtinHomotopy","names":[]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":0,"import_only_aggregate":true,"imported":true,"module":"ArtinHomotopy","physical_declarations":0}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":46,"module":"ArtinHomotopy.ComplementConnector","names":["ArtinNormalisers.Homotopy5.actualLocalEquiconnection.eq_1","ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain","ArtinNormalisers.Homotopy5.complementMetricSpace","ArtinNormalisers.Homotopy5.convexConnector.congr_simp","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection.eq_1","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_1","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_4","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection","ArtinNormalisers.Homotopy5.convexConnector.eq_1","ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_5","ArtinNormalisers.Homotopy5.convexConnector._proof_1","ArtinNormalisers.Homotopy5.isOpen_actualConnectorDomain","ArtinNormalisers.Homotopy5.convexLocalEquiconnection.eq_1","ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_1","ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_4","ArtinNormalisers.Homotopy5.convexLocalEquiconnection_connector_val","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_6","Topology.LocalEquiconnection.mk.congr_simp","ArtinNormalisers.Homotopy5.diagonal_mem_actualConnectorDomain","ArtinNormalisers.Homotopy5.convexConnector._proof_2","ArtinNormalisers.Homotopy5.isConvex_pullbackLocalEquiconnection","_private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_8","ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_3","ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_2","ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_1","ArtinNormalisers.Homotopy5.convexLocalEquiconnection._proof_4","ArtinNormalisers.Homotopy5.actualLocalEquiconnection","ArtinNormalisers.Homotopy5.complementMetrizableSpace","ArtinNormalisers.Homotopy5.convexConnectorDomain.eq_1","ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_2","ArtinNormalisers.Homotopy5.actualLocalEquiconnection._proof_3","ArtinNormalisers.Homotopy5.convexLocalEquiconnection","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_5","ArtinNormalisers.Homotopy5.convexConnectorDomain","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_2","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_3","ArtinNormalisers.Homotopy5.actualConnectorDomain.eq_1","ArtinNormalisers.Homotopy5.actualConnectorDomain","ArtinNormalisers.Homotopy5.complementMetricSpace_topology","ArtinNormalisers.Homotopy5.actualConvexCover_isConnectorConvex","ArtinNormalisers.Homotopy5.actualLocalEquiconnection_connector_val","ArtinNormalisers.Homotopy5.convexCover_isConnectorConvex","ArtinNormalisers.Homotopy5.convexConnector","_private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_7","_private.ArtinHomotopy.ComplementConnector.0.ArtinNormalisers.Homotopy5.actualLocalEquiconnection_domain._simp_1_6","ArtinNormalisers.Homotopy5.pullbackLocalEquiconnection._proof_7"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":46,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.ComplementConnector","physical_declarations":46}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":5,"module":"ArtinHomotopy.Domination","names":["ArtinNormalisers.Homotopy5.homotopyGroupMap_injective_of_domination","ArtinNormalisers.Homotopy5.isAspherical_of_dominated_by_aspherical","ArtinNormalisers.Homotopy5.homotopyGroupPi_subsingleton_of_domination","ArtinNormalisers.Homotopy5.isAspherical_of_domination","ArtinNormalisers.Homotopy5.homotopyGroup_subsingleton_of_domination"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":5,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.Domination","physical_declarations":5}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":56,"module":"ArtinHomotopy.FacePrefixes","names":["ArtinNormalisers.Homotopy5.elementary_prefix_facePrefix","ArtinNormalisers.Homotopy5.facePrefix_generated","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_6","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_7","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_4","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_2","ArtinNormalisers.Homotopy5.maximalFaceType","ArtinNormalisers.Homotopy5.maximalFacePrefix_prefix","ArtinNormalisers.Homotopy5.maximalFacePrefix_degree_pos","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_5","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_5","ArtinNormalisers.Homotopy5.facePrefix_leftReduced","ArtinNormalisers.Homotopy5.maximalFacePrefix_degree_pos._proof_1_1","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_3","ArtinNormalisers.Homotopy5.maximalFacePrefix_tail","ArtinNormalisers.Homotopy5.RibbonPrefix","ArtinNormalisers.Homotopy5.facePrefix_isRibbon","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail_of_elementary_prefixes","ArtinNormalisers.Homotopy5.facePrefix.congr_simp","ArtinNormalisers.Homotopy5.outsideAtomDescents_nonempty","ArtinNormalisers.Homotopy5.maximalFacePrefix_tail_degree_lt","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_4","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_4","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_1","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_2","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_2","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_7","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_7","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_6","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_6","ArtinNormalisers.Homotopy5.facePrefixTarget","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix_of_disjoint","ArtinNormalisers.Homotopy5.RibbonPrefix.trans","ArtinNormalisers.Homotopy5.facePrefix_positive","ArtinNormalisers.Homotopy5.facePrefix","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_5","ArtinNormalisers.Homotopy5.maximalFacePrefix_tail_degree_lt._proof_1_1","_private.ArtinHomotopy.FacePrefixes.0.ArtinNormalisers.Homotopy5.selected_positive_univ","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_3","ArtinNormalisers.Homotopy5.maximalFacePrefix_greatest","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_5","ArtinNormalisers.Homotopy5.outsideAtomDescents","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_1","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_1","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_2","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_6","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_4","ArtinNormalisers.Homotopy5.facePrefix_prefix_iff._simp_1_7","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail._simp_1_1","ArtinNormalisers.Homotopy5.maximalFaceType_subset_compl","ArtinNormalisers.Homotopy5.positive_ribbon_face_tail","ArtinNormalisers.Homotopy5.outsideAtomDescents_facePrefix._simp_1_3","ArtinNormalisers.Homotopy5.facePrefix_prefix_of_union_subset._simp_1_3"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":56,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.FacePrefixes","physical_declarations":56}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":58,"module":"ArtinHomotopy.FaceResidues","names":["_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.positive_coefficient_outside","ArtinNormalisers.Homotopy5.IncidentSigns","ArtinNormalisers.Homotopy5.rawFacePoint_incident_iff_ribbonPrefix","ArtinNormalisers.Homotopy5.chamberIncident_iff_signs","ArtinNormalisers.Homotopy5.oppositeChamber._proof_1","ArtinNormalisers.Homotopy5.oppositeChamber","ArtinNormalisers.Homotopy5.oppositeAtFace_incident","ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace","ArtinNormalisers.Homotopy5.residueToFaceDivisor._proof_1","ArtinNormalisers.Homotopy5.residueToFaceDivisor","ArtinNormalisers.Homotopy5.residueToFaceDivisor_surjective","ArtinNormalisers.Homotopy5.rawFacePoint_coordinates._simp_1_1","ArtinNormalisers.Homotopy5.ChamberIncident.eq_1","ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_3","ArtinNormalisers.Homotopy5.rawFacePoint_incident_iff_between_facePrefix","ArtinNormalisers.Homotopy5.facePrefix_inverse_negative_of_zero","ArtinNormalisers.Homotopy5.oppositeAtFace","ArtinNormalisers.Homotopy5.rawRelativeTransport_facePrefixLabel","ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_1","_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.relativeTransport_injective","ArtinNormalisers.Homotopy5.closure_chamber_region","_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.canonical_eval_zero_of_supported","ArtinNormalisers.Homotopy5.SimpleFaceDivisor","ArtinNormalisers.Homotopy5.residueToFaceDivisor_injective","ArtinNormalisers.Homotopy5.facePrefix_projection_minimal","ArtinNormalisers.Homotopy5.ChamberIncident","ArtinNormalisers.Homotopy5.rawFacePoint_incident","ArtinNormalisers.Homotopy5.canonicalDominant_root_zero_iff_support","ArtinNormalisers.Homotopy5.facePrefix_projection","ArtinNormalisers.Homotopy5.oppositeAtFace_signs_nonzero","_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.rawRelativeTransport_self","ArtinNormalisers.Homotopy5.rawFacePoint_coordinates","ArtinNormalisers.Homotopy5.chamberIncident_iff_between_oppositeAtFace","ArtinNormalisers.Homotopy5.fiberTarget_facePrefix_oppositeAtFace","ArtinNormalisers.Homotopy5.fiberTarget_facePrefixLabel","ArtinNormalisers.Homotopy5.facePrefixLabel","ArtinNormalisers.Homotopy5.facePrefix_inverse_positive_of_nonzero","ArtinNormalisers.Homotopy5.oppositeChamber_signs","ArtinNormalisers.Homotopy5.ribbonPrefix_simpleLift_iff","ArtinNormalisers.Homotopy5.faceResidueEquivSimpleFaceDivisor","ArtinNormalisers.Homotopy5.oppositeAtFace_signs_zero","ArtinNormalisers.Homotopy5.facePrefix_eq_simpleLift_projection","ArtinNormalisers.Homotopy5.rawFacePoint._proof_2","ArtinNormalisers.Homotopy5.facePrefixLabel_eq_oppositeAtFace._simp_1_2","ArtinNormalisers.Homotopy5.rawFacePoint._proof_1","ArtinNormalisers.Homotopy5.facePrefixFiberTarget._proof_1","ArtinNormalisers.Homotopy5.FaceResidue","ArtinNormalisers.Homotopy5.rawFacePoint","ArtinNormalisers.Homotopy5.facePrefixFiberTarget","ArtinNormalisers.Homotopy5.chamberWeakRegion","ArtinNormalisers.Homotopy5.faceResidueEquivSimpleFaceDivisor._proof_1","ArtinNormalisers.Homotopy5.rawFacePoint_pairing","ArtinNormalisers.Homotopy5.incidentSigns_iff_weak","ArtinNormalisers.Homotopy5.facePrefix_eq_simpleLift","ArtinNormalisers.Homotopy5.canonicalDominant_root_zero_iff_support._simp_1_1","_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.nonneg_support_of_canonical_eval_zero","_private.ArtinHomotopy.FaceResidues.0.ArtinNormalisers.Homotopy5.parabolicLongest_inv","ArtinNormalisers.Homotopy5.facePrefixLabel._proof_1"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":58,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.FaceResidues","physical_declarations":58}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":19,"module":"ArtinHomotopy.NerveComparison","names":["ArtinNormalisers.Homotopy5.actualNerveCover_pointStarRefines","ArtinNormalisers.Homotopy5.actualComplementVertexOrder","ArtinNormalisers.Homotopy5.actualNerveRadius_pos","ArtinNormalisers.Homotopy5.exists_mem_actualNerveCover","ArtinNormalisers.Homotopy5.actualNerveRadius","ArtinNormalisers.Homotopy5.actualNerveForward","ArtinNormalisers.Homotopy5.isOpen_actualNerveCover","ArtinNormalisers.Homotopy5.actualComplementVertexOrder._proof_1","ArtinNormalisers.Homotopy5.actualNervePartition_subordinate","ArtinNormalisers.Homotopy5.center_mem_actualNerveCover","ArtinNormalisers.Homotopy5.actualNerveReturn","ArtinNormalisers.Homotopy5.actualNerveCover._proof_1","ArtinNormalisers.Homotopy5.actualNerveCover","ArtinNormalisers.Homotopy5.actualComplementMetric","ArtinNormalisers.Homotopy5.exists_actualNervePartition","ArtinNormalisers.Homotopy5.actualNerveDominationHomotopy","ArtinNormalisers.Homotopy5.actualMetricNerve","ArtinNormalisers.Homotopy5.actualNervePartition","ArtinNormalisers.Homotopy5.actualNerveRadius.congr_simp"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":19,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.NerveComparison","physical_declarations":19}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":2,"module":"ArtinHomotopy.NerveHomotopy","names":["ArtinNormalisers.Homotopy5.complement_isAspherical_of_actualNerve_higher_vanishing","ArtinNormalisers.Homotopy5.actualNerveForward_homotopyGroupMap_injective"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":2,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.NerveHomotopy","physical_declarations":2}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":3,"module":"ArtinHomotopy.ParabolicRootSigns","names":["ArtinNormalisers.Homotopy5.parabolicLongest_positive_supported_negative._proof_1_1","ArtinNormalisers.Homotopy5.parabolicLongest_positive_supported_negative","ArtinNormalisers.Homotopy5.geometricRepresentation_apply_outside_parabolic"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":3,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.ParabolicRootSigns","physical_declarations":3}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":14,"module":"ArtinHomotopy.RibbonGcd","names":["ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail","ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left","ArtinNormalisers.Homotopy5.ribbonPrefix_degree_le","ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one","ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_ne_one._proof_1_1","ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left._proof_1_2","ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix","ArtinNormalisers.Homotopy5.ribbonPrefix_eq_of_degree_le._proof_1_1","ArtinNormalisers.Homotopy5.ribbonPrefix_antisymm","ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left_with_tails","ArtinNormalisers.Homotopy5.positive_reduced_ribbon_gcd_left._proof_1_1","ArtinNormalisers.Homotopy5.ribbonPrefix_eq_of_degree_le","ArtinNormalisers.Homotopy5.SimpleRibbon","ArtinNormalisers.Homotopy5.greatest_simple_ribbon_prefix_with_tail._proof_1_1"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":14,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.RibbonGcd","physical_declarations":14}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":26,"module":"ArtinHomotopy.RibbonLattice","names":["ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left_with_tails","ArtinNormalisers.Homotopy5.ambient_positive_left_lcm","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_3","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_5","ArtinNormalisers.Homotopy5.positive_reduced_ribbon_common_upper_bound","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_3","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_1","_private.ArtinHomotopy.RibbonLattice.0.ArtinNormalisers.Homotopy5.positive_degree_one_generator","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._proof_1_1","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_4","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_2","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_6","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_7","_private.ArtinHomotopy.RibbonLattice.0.ArtinNormalisers.Homotopy5.positive_degree_one_generator._proof_1_1","ArtinNormalisers.Homotopy5.ribbonPrefix_leftReduced","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_5","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm._simp_1_8","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_2","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_6","ArtinNormalisers.Homotopy5.ribbonLcmTargetIndices","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_4","ArtinNormalisers.Homotopy5.positive_ribbon_prefix_tail._simp_1_7","ArtinNormalisers.Homotopy5.ribbonPrefix_generator_mul","ArtinNormalisers.Homotopy5.isRibbon_of_ambient_positive_left_lcm","ArtinNormalisers.Homotopy5.positive_reduced_ribbon_lcm_left"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":26,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.RibbonLattice","physical_declarations":26}
+HOMOTOPY_PROJECT_COMPILED_MODULE_JSON {"declarations":10,"module":"ArtinHomotopy.TubeIntervals","names":["ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff","_private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff._simp_1_1","ArtinNormalisers.Homotopy5.mem_tubeWitness","ArtinNormalisers.Homotopy5.tubeLowerChamber","_private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.halfSpace_sign_unique","ArtinNormalisers.Homotopy5.tubeWitness","ArtinNormalisers.Homotopy5.mem_tubeSet_iff_chamberBetween","_private.ArtinHomotopy.TubeIntervals.0.ArtinNormalisers.Homotopy5.faceChamber_pos_neg_sign_eq_iff._simp_1_2","ArtinNormalisers.Homotopy5.tubeUpperChamber","ArtinNormalisers.Homotopy5.chamberBetween_faceChamber_pos_neg_iff"]}
+HOMOTOPY_PROJECT_MODULE_JSON {"declarations":10,"import_only_aggregate":false,"imported":true,"module":"ArtinHomotopy.TubeIntervals","physical_declarations":10}
+HOMOTOPY_PROJECT_SUMMARY_JSON {"all_physical_type_value_universe_parameters_identical":true,"canonical_axioms_checked":true,"canonical_project_declarations":239,"distinct_physical_names":239,"external_canonical_names":0,"identical_theorem_duplicates":0,"modules":11,"physical_occurrences":239}

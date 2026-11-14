@@ -1,0 +1,53 @@
+[
+  {
+    "argv": [
+      "python3",
+      "homotopy/scripts/verify.py",
+      "--plan",
+      "--mode",
+      "final",
+      "--skip-clean"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "log": "docs/provenance/homotopy/infrastructure-preparation/skip-clean-final-rejected.log",
+    "log_sha256": "e066ab356474819b636effc4ecfe2a513460533ffb294fe847bc8d50b2fe99fb",
+    "verifier_sha256": "191814fc67387cd63f5cf1ff0e7e343d702e3e63b12deb683eab8587b4037ce6",
+    "executed_at": "2026-11-14T11:19:49.038791+00:00",
+    "scope": "Static technical-only skip-clean option checks; no Lean execution"
+  },
+  {
+    "argv": [
+      "python3",
+      "homotopy/scripts/verify.py",
+      "--plan",
+      "--skip-clean"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "log": "docs/provenance/homotopy/infrastructure-preparation/skip-clean-technical-plan.log",
+    "log_sha256": "d048a76d783d1e62b4cd11dcec1766c113f3899fad7c5047663b38da2f209cdd",
+    "verifier_sha256": "191814fc67387cd63f5cf1ff0e7e343d702e3e63b12deb683eab8587b4037ce6",
+    "executed_at": "2026-11-14T11:19:49.167892+00:00",
+    "scope": "Static technical-only skip-clean option checks; no Lean execution"
+  },
+  {
+    "argv": [
+      "/home/lazyinspirit/.local/bin/ruff",
+      "check",
+      "--select",
+      "F",
+      "homotopy/scripts/verify.py"
+    ],
+    "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean",
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "log": "docs/provenance/homotopy/infrastructure-preparation/skip-clean-ruff.log",
+    "log_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "verifier_sha256": "191814fc67387cd63f5cf1ff0e7e343d702e3e63b12deb683eab8587b4037ce6",
+    "executed_at": "2026-11-14T11:19:49.175903+00:00",
+    "scope": "Static technical-only skip-clean option checks; no Lean execution"
+  }
+]

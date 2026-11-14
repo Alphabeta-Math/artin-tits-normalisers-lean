@@ -1,0 +1,13 @@
+--- Colib/Topology/Realization/DescAcross.lean
++++ ArtinHomotopyVendor/Topology/Realization/DescAcross.lean
+@@ -5,8 +5,8 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Category.TopCat.ColimitAcross
+-public import Colib.Topology.Realization.Basic
++public import ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross
++public import ArtinHomotopyVendor.Topology.Realization.Basic
+ 
+ /-!
+ # Geometric-realization descent across universes

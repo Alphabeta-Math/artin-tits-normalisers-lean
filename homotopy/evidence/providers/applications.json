@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "applications": [
+    {
+      "source": "ArtinHomotopy/ComplementConnector.lean",
+      "sha256": "adaa54e06bef291d1a429531816ad378d0749cd9705c2687b0e04c685a483bdd",
+      "module": "ArtinHomotopy.ComplementConnector",
+      "full_consumer_source_read": true,
+      "direct_supplier_uses": [
+        "Topology.LocalEquiconnection",
+        "Topology.LocalEquiconnection.IsConvex"
+      ],
+      "actual_build": {
+        "command": [
+          "lake",
+          "build",
+          "ArtinHomotopy.ComplementConnector"
+        ],
+        "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+        "exit_code": 0,
+        "execution_owner": "consumer author; independently inspected matching raw success log",
+        "raw_log": "evidence/providers/application-builds/ArtinHomotopy.ComplementConnector.log",
+        "raw_log_sha256": "f504c492f5c75f6a09d561f07a57e113b10418692d10d5582334fc3c5eec4131"
+      },
+      "scope": "Actual original complement compatible metric/local connector and concrete small-ball ordered nerve with named actual classifier/return/composite homotopy; no opposite composite homotopy or asphericity conclusion"
+    },
+    {
+      "source": "ArtinHomotopy/NerveComparison.lean",
+      "sha256": "f2f517a60f5f98f32183a84198fcb9186d94d7b156fcf8e0d0c0bd20e47341b0",
+      "module": "ArtinHomotopy.NerveComparison",
+      "full_consumer_source_read": true,
+      "direct_supplier_uses": [
+        "Topology.MetricCoverRadius.radius",
+        "Topology.MetricCoverRadius.radius_pos",
+        "Topology.MetricCoverRadius.lipschitz_radius",
+        "Topology.MetricCoverRadius.half_radius_subordinate",
+        "Topology.NumerableConnectorCover.pointStarRefines_radius",
+        "Topology.NumerableConnectorCover.orderedNerve",
+        "Topology.NumerableConnectorCover.partitionNerveMap",
+        "Topology.NumerableConnectorCover.nerveReturnMap",
+        "Topology.NumerableConnectorCover.numerableDominationHomotopy"
+      ],
+      "actual_build": {
+        "command": [
+          "lake",
+          "build",
+          "ArtinHomotopy.NerveComparison"
+        ],
+        "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+        "exit_code": 0,
+        "execution_owner": "consumer author; independently inspected matching raw success log",
+        "raw_log": "evidence/providers/application-builds/ArtinHomotopy.NerveComparison.log",
+        "raw_log_sha256": "dfdde8c4b6f679e511940e5cff13792d8fd9acd617dd8fac220f43e6e781a7a9"
+      },
+      "scope": "Actual original complement compatible metric/local connector and concrete small-ball ordered nerve with named actual classifier/return/composite homotopy; no opposite composite homotopy or asphericity conclusion"
+    }
+  ],
+  "supplier_provenance": "vendor/provenance.json",
+  "supplier_technical_verification": "evidence/providers/verification.json",
+  "scope": "Actual direct applications of selected Colib supplier; main source acceptance/audit/replay remains separate",
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "actual_arrangement_asphericity_proved": false,
+  "two_sided_nerve_homotopy_equivalence_proved": false
+}

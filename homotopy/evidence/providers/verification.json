@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "created_at": "2026-11-14T10:34:12.183211+00:00",
+  "repository": "https://github.com/kangxyz/colib",
+  "upstream_sha": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+  "provenance": "vendor/provenance.json",
+  "provenance_sha256": "56dd5ebe0684f7b72e6212a2c745921771071f89edabb0bcb65c5c4da4a9a7f6",
+  "harness": "ProviderAudit.lean",
+  "harness_sha256": "9c9f7bd55fd44fb32754942c1c8a8564063f2da94a630f9dd8979f44f9d3daab",
+  "module_count": 21,
+  "canonical_declarations": 338,
+  "physical_occurrences": 338,
+  "identical_duplicates": 0,
+  "axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audit_through_replay_inputs_identical": true,
+  "coverage_file": "evidence/providers/coverage.json",
+  "coverage_sha256": "95ffeb7131464b1f77cfe02ec2449dd22e831cdb17234cdef2f20249311cec63",
+  "environment_file": "evidence/providers/environment.json",
+  "environment_sha256": "1d6019a47cd7cb1d68199c92eb982a7b5bd06efda8eb1c938ed4b94a6672d188",
+  "kernel_replay_workers": 1,
+  "replay_mode": "one exact module per fresh official leanchecker process",
+  "kernel_replay_relative_to_imports": true,
+  "independent_kernel_implementation": false,
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "source_ports": "Entire upstream source modules; only mechanical import-path relocation",
+  "source_inspection_file": "evidence/providers/source-inspection.json",
+  "source_inspection_sha256": "e09b6b364ec28dc20a2af98956fdd189a3ed0f1187656fe1ee1986b5cf5d489a",
+  "records": {
+    "build": {
+      "record": "evidence/providers/build-20261114T103025Z/verification.json",
+      "sha256": "598483d5959a3f8c5d169df19b8a2e1dc7c4b079b2ecd8749419aad90b1ac061"
+    },
+    "audit": {
+      "record": "evidence/providers/audit-20261114T103111Z/verification.json",
+      "sha256": "2c2852df0326798b97e81182756617744284cf7ad9c71a964a0f7353d836fba7"
+    },
+    "replay": {
+      "record": "evidence/providers/replay-20261114T103147Z/verification.json",
+      "sha256": "6707bec8c80708001ee2fd93c0eea1c1aac34b24cd61219250c9fc224b0df232"
+    }
+  }
+}

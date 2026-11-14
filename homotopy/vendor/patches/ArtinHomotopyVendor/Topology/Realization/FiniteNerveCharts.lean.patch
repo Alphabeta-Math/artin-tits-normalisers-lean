@@ -1,0 +1,15 @@
+--- Colib/Topology/Realization/FiniteNerveCharts.lean
++++ ArtinHomotopyVendor/Topology/Realization/FiniteNerveCharts.lean
+@@ -5,9 +5,9 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.OrderedCoverNerve
+-public import Colib.Topology.Realization.NumerableConnectorCover
+-public import Colib.Topology.Realization.DescAcross
++public import ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve
++public import ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover
++public import ArtinHomotopyVendor.Topology.Realization.DescAcross
+ public import Mathlib.Data.Finset.Sort
+ 
+ /-!

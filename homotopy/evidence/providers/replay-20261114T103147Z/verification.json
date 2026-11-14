@@ -1,0 +1,347 @@
+{
+  "ok": true,
+  "phase": "replay",
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+  "started_at": "2026-11-14T10:31:47.330686+00:00",
+  "modules": [
+    "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+    "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+    "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+    "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross",
+    "ArtinHomotopyVendor.Util.References",
+    "ArtinHomotopyVendor.Topology.Realization.Basic",
+    "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+    "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts",
+    "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier",
+    "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+    "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+    "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts",
+    "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone",
+    "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation",
+    "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces",
+    "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence",
+    "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap",
+    "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination",
+    "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius",
+    "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement",
+    "ArtinHomotopyVendor.Topology.Realization.MetricRealizationDomination"
+  ],
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/providers/assemble.py",
+        "--check"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 0.01954584801569581,
+      "log": "00-replay.log",
+      "log_sha256": "3102c2075b8b570bd3c42c3e0c9ca675e64c0aaad6591bac84ef3441682441b7"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 6.546484857011819,
+      "log": "01-replay.log",
+      "log_sha256": "62540c15b54efef2fd87f3808c7ada0d1c06dcb8dafb05e801df90433b0cb7d1"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.LocalEquiconnection"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.9637376710015815,
+      "log": "02-replay.log",
+      "log_sha256": "7d2ac61a224243cbd62518dc8d9520c656312a5097e3392417091b7612887671"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.969298898999114,
+      "log": "03-replay.log",
+      "log_sha256": "9a555749be9830bbbc8373f2e52d5940c52d88fea9ee4b1d80d775202be28d51"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.717041733994847,
+      "log": "04-replay.log",
+      "log_sha256": "deccbfb1395c5636f1abd2dedbc8b8dfe308ba8cd3e553fc86d7966492555094"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Util.References"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.5363571110065095,
+      "log": "05-replay.log",
+      "log_sha256": "4ea5d4ac5d9222baece201968233cef222f6cd7b51976d0bf074ee97bee6a072"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.Basic"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.927743918990018,
+      "log": "06-replay.log",
+      "log_sha256": "11a2d72939efd9e63715db0b402084611f5734a0bc0f89ad1d4537f6a9db6757"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.DescAcross"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.917229121987475,
+      "log": "07-replay.log",
+      "log_sha256": "88b10eb3638095c3b491a090c6bfea55e5febda9ed410ab82b84ac06473bfa83"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.981393065012526,
+      "log": "08-replay.log",
+      "log_sha256": "d41e300768e87476325e73e6ad859718cf957300bf86523adea468d03e07a608"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.968271074001677,
+      "log": "09-replay.log",
+      "log_sha256": "febe0baf74df06888610dd328cb71d44dee45882a04f1b17b7de2648bfaac1c9"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.924031216010917,
+      "log": "10-replay.log",
+      "log_sha256": "15a5991621f57fce6e42324b416375c5d99b8973def718a928298d2b4b732467"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.9806198489968665,
+      "log": "11-replay.log",
+      "log_sha256": "52e5195f22139491d58a46c7a7cf8538689d191aba470df9afa0696e2277133f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.94341253300081,
+      "log": "12-replay.log",
+      "log_sha256": "5165e57d3917bd6b8bec5e445f12ee10085e2f4acfb1f45d40ae364f9161b62f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.913137171010021,
+      "log": "13-replay.log",
+      "log_sha256": "7d59dc51d7cb9c0cdabc0440cc9c9b0e854a370ae05cd60b5fdfdbacdf38a19e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.7809535739943385,
+      "log": "14-replay.log",
+      "log_sha256": "c78f8b4f6d4a3849eb84fdd3ccfdd76485d58d2ecce7aa1d9c3d5f18d6bb4c68"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.972725567000452,
+      "log": "15-replay.log",
+      "log_sha256": "5376c32bf6aa9cab4fca19bb7653b4edddbb3d41d4d93baaf0997fce06f90787"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.952576256007887,
+      "log": "16-replay.log",
+      "log_sha256": "26057b4781a3be6132608ec29e0542d83db3cee158a9f07ea3d74aa0f5722a8e"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 6.4342444279755,
+      "log": "17-replay.log",
+      "log_sha256": "6a2a4369cbfce60d823408a4024b403efa389270933925713b2cb9cfc4a2b3ec"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 6.141883006028365,
+      "log": "18-replay.log",
+      "log_sha256": "f1fc65802fc046c0127fc29c6ef0e7a6a4b1d566308621d9c67c7c5d1f24f409"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 5.880549305002205,
+      "log": "19-replay.log",
+      "log_sha256": "bf84048cd567ff6e4232120ec536fced9d6c67a74ef5b03b99050b701d445e8f"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 6.0205812670174055,
+      "log": "20-replay.log",
+      "log_sha256": "a8322d6b13f7379181d4cf5c10d4b02d41d50561678f39b11271632f043fb415"
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--verbose",
+        "ArtinHomotopyVendor.Topology.Realization.MetricRealizationDomination"
+      ],
+      "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+      "exit_code": 0,
+      "duration_seconds": 6.006686420994811,
+      "log": "21-replay.log",
+      "log_sha256": "76a5e8434dde79af7f1aba404bfbe79599e5dc2850426b0940492569b59b3697"
+    }
+  ],
+  "scope": "Exact selected provider declarations; replay relative to pinned imported Mathlib (all non-Mathlib closure modules selected)",
+  "build_mode": "explicit Lake provider target; no dependency update or cache cleanup",
+  "independent_statement_reviews_pending": true,
+  "root_mathematical_acceptance_pending": true,
+  "full_landmark_5_proved": false,
+  "full_theorem_1_8_proved": false,
+  "ended_at": "2026-11-14T10:33:52.845616+00:00",
+  "inputs_unchanged": true,
+  "inputs_before_sha256": "42630f1d17e52858eea78c6cca6584282464ff295ee0880cb2f2ebd72871709f",
+  "inputs_after_sha256": "42630f1d17e52858eea78c6cca6584282464ff295ee0880cb2f2ebd72871709f"
+}

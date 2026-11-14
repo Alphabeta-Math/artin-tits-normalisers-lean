@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/ConnectorMonoCoherence.lean
++++ ArtinHomotopyVendor/Topology/Realization/ConnectorMonoCoherence.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.ConnectorSimplexFaces
++public import ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces
+ public import Mathlib.AlgebraicTopology.SimplexCategory.Basic
+ 
+ /-!

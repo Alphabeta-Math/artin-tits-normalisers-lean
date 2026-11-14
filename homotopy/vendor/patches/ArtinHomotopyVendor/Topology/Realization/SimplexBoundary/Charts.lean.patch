@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/SimplexBoundary/Charts.lean
++++ ArtinHomotopyVendor/Topology/Realization/SimplexBoundary/Charts.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Analysis.Convex.StdSimplex.BoundaryRetraction
++public import ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction
+ public import Mathlib.Topology.Homotopy.Equiv
+ 
+ /-!

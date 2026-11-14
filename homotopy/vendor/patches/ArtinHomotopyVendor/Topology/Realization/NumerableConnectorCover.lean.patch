@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/NumerableConnectorCover.lean
++++ ArtinHomotopyVendor/Topology/Realization/NumerableConnectorCover.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Topology.LocalEquiconnection
++public import ArtinHomotopyVendor.Topology.LocalEquiconnection
+ public import Mathlib.Topology.PartitionOfUnity
+ public import Mathlib.Geometry.Convex.ConvexSpace.Topology
+ 

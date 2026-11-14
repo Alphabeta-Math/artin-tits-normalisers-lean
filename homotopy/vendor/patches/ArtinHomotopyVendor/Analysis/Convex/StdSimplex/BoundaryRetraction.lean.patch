@@ -1,0 +1,13 @@
+--- Colib/Analysis/Convex/StdSimplex/BoundaryRetraction.lean
++++ ArtinHomotopyVendor/Analysis/Convex/StdSimplex/BoundaryRetraction.lean
+@@ -6,8 +6,8 @@
+ 
+ module
+ 
+-public import Colib.Util.References
+-public import Colib.Analysis.Convex.StdSimplex.Boundary
++public import ArtinHomotopyVendor.Util.References
++public import ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary
+ public import Mathlib.Topology.ContinuousMap.Basic
+ public import Mathlib.Topology.UnitInterval
+ public import Mathlib.Tactic.Linarith

@@ -1,0 +1,17 @@
+--- Colib/Topology/Realization/OrderedNerveRealizationMap.lean
++++ ArtinHomotopyVendor/Topology/Realization/OrderedNerveRealizationMap.lean
+@@ -5,10 +5,10 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.ConnectorMonoCoherence
+-public import Colib.Topology.Realization.OrderedCoverNerve
+-public import Colib.Topology.Realization.NumerableConnectorCover
+-public import Colib.Topology.Realization.DescAcross
++public import ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence
++public import ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve
++public import ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover
++public import ArtinHomotopyVendor.Topology.Realization.DescAcross
+ public import Mathlib.AlgebraicTopology.SimplicialSet.NonsingularColimit
+ 
+ /-!

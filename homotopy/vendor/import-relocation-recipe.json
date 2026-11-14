@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/kangxyz/colib",
+  "upstream_sha": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+  "module_relocations": {
+    "Colib.Topology.Realization.OrderedCoverNerve": "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+    "Colib.Topology.LocalEquiconnection": "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+    "Colib.Topology.Realization.NumerableConnectorCover": "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+    "Colib.Topology.Category.TopCat.ColimitAcross": "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross",
+    "Colib.Util.References": "ArtinHomotopyVendor.Util.References",
+    "Colib.Topology.Realization.Basic": "ArtinHomotopyVendor.Topology.Realization.Basic",
+    "Colib.Topology.Realization.DescAcross": "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+    "Colib.Topology.Realization.FiniteNerveCharts": "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts",
+    "Colib.Topology.Realization.POUNerveClassifier": "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier",
+    "Colib.Analysis.Convex.StdSimplex.Boundary": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+    "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+    "Colib.Topology.Realization.SimplexBoundary.Charts": "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts",
+    "Colib.Topology.Realization.ConnectorSimplexCone": "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone",
+    "Colib.Topology.Realization.OrderedConnectorInterpolation": "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation",
+    "Colib.Topology.Realization.ConnectorSimplexFaces": "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces",
+    "Colib.Topology.Realization.ConnectorMonoCoherence": "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence",
+    "Colib.Topology.Realization.OrderedNerveRealizationMap": "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap",
+    "Colib.Topology.Realization.NumerableRealizationDomination": "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination",
+    "Colib.Topology.MetricSpace.CoverRadius": "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius",
+    "Colib.Topology.Realization.MetricPointStarRefinement": "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement",
+    "Colib.Topology.Realization.MetricRealizationDomination": "ArtinHomotopyVendor.Topology.Realization.MetricRealizationDomination"
+  },
+  "files": [
+    {
+      "upstream_module": "Colib.Topology.Realization.OrderedCoverNerve",
+      "upstream_path": "Colib/Topology/Realization/OrderedCoverNerve.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+      "original_path": "upstream-original/Colib/Topology/Realization/OrderedCoverNerve.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/OrderedCoverNerve.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.LocalEquiconnection",
+      "upstream_path": "Colib/Topology/LocalEquiconnection.lean",
+      "module": "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+      "original_path": "upstream-original/Colib/Topology/LocalEquiconnection.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/LocalEquiconnection.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.NumerableConnectorCover",
+      "upstream_path": "Colib/Topology/Realization/NumerableConnectorCover.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+      "original_path": "upstream-original/Colib/Topology/Realization/NumerableConnectorCover.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/NumerableConnectorCover.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Category.TopCat.ColimitAcross",
+      "upstream_path": "Colib/Topology/Category/TopCat/ColimitAcross.lean",
+      "module": "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross",
+      "original_path": "upstream-original/Colib/Topology/Category/TopCat/ColimitAcross.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Category/TopCat/ColimitAcross.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Util.References",
+      "upstream_path": "Colib/Util/References.lean",
+      "module": "ArtinHomotopyVendor.Util.References",
+      "original_path": "upstream-original/Colib/Util/References.lean.txt",
+      "path": "ArtinHomotopyVendor/Util/References.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.Basic",
+      "upstream_path": "Colib/Topology/Realization/Basic.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.Basic",
+      "original_path": "upstream-original/Colib/Topology/Realization/Basic.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/Basic.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.DescAcross",
+      "upstream_path": "Colib/Topology/Realization/DescAcross.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+      "original_path": "upstream-original/Colib/Topology/Realization/DescAcross.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/DescAcross.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.FiniteNerveCharts",
+      "upstream_path": "Colib/Topology/Realization/FiniteNerveCharts.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts",
+      "original_path": "upstream-original/Colib/Topology/Realization/FiniteNerveCharts.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/FiniteNerveCharts.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.POUNerveClassifier",
+      "upstream_path": "Colib/Topology/Realization/POUNerveClassifier.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier",
+      "original_path": "upstream-original/Colib/Topology/Realization/POUNerveClassifier.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/POUNerveClassifier.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Analysis.Convex.StdSimplex.Boundary",
+      "upstream_path": "Colib/Analysis/Convex/StdSimplex/Boundary.lean",
+      "module": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+      "original_path": "upstream-original/Colib/Analysis/Convex/StdSimplex/Boundary.lean.txt",
+      "path": "ArtinHomotopyVendor/Analysis/Convex/StdSimplex/Boundary.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+      "upstream_path": "Colib/Analysis/Convex/StdSimplex/BoundaryRetraction.lean",
+      "module": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+      "original_path": "upstream-original/Colib/Analysis/Convex/StdSimplex/BoundaryRetraction.lean.txt",
+      "path": "ArtinHomotopyVendor/Analysis/Convex/StdSimplex/BoundaryRetraction.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.SimplexBoundary.Charts",
+      "upstream_path": "Colib/Topology/Realization/SimplexBoundary/Charts.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts",
+      "original_path": "upstream-original/Colib/Topology/Realization/SimplexBoundary/Charts.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/SimplexBoundary/Charts.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.ConnectorSimplexCone",
+      "upstream_path": "Colib/Topology/Realization/ConnectorSimplexCone.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone",
+      "original_path": "upstream-original/Colib/Topology/Realization/ConnectorSimplexCone.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/ConnectorSimplexCone.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.OrderedConnectorInterpolation",
+      "upstream_path": "Colib/Topology/Realization/OrderedConnectorInterpolation.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation",
+      "original_path": "upstream-original/Colib/Topology/Realization/OrderedConnectorInterpolation.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/OrderedConnectorInterpolation.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.ConnectorSimplexFaces",
+      "upstream_path": "Colib/Topology/Realization/ConnectorSimplexFaces.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces",
+      "original_path": "upstream-original/Colib/Topology/Realization/ConnectorSimplexFaces.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/ConnectorSimplexFaces.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.ConnectorMonoCoherence",
+      "upstream_path": "Colib/Topology/Realization/ConnectorMonoCoherence.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence",
+      "original_path": "upstream-original/Colib/Topology/Realization/ConnectorMonoCoherence.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/ConnectorMonoCoherence.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.OrderedNerveRealizationMap",
+      "upstream_path": "Colib/Topology/Realization/OrderedNerveRealizationMap.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap",
+      "original_path": "upstream-original/Colib/Topology/Realization/OrderedNerveRealizationMap.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/OrderedNerveRealizationMap.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.NumerableRealizationDomination",
+      "upstream_path": "Colib/Topology/Realization/NumerableRealizationDomination.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination",
+      "original_path": "upstream-original/Colib/Topology/Realization/NumerableRealizationDomination.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/NumerableRealizationDomination.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.MetricSpace.CoverRadius",
+      "upstream_path": "Colib/Topology/MetricSpace/CoverRadius.lean",
+      "module": "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius",
+      "original_path": "upstream-original/Colib/Topology/MetricSpace/CoverRadius.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/MetricSpace/CoverRadius.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.MetricPointStarRefinement",
+      "upstream_path": "Colib/Topology/Realization/MetricPointStarRefinement.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement",
+      "original_path": "upstream-original/Colib/Topology/Realization/MetricPointStarRefinement.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/MetricPointStarRefinement.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    },
+    {
+      "upstream_module": "Colib.Topology.Realization.MetricRealizationDomination",
+      "upstream_path": "Colib/Topology/Realization/MetricRealizationDomination.lean",
+      "module": "ArtinHomotopyVendor.Topology.Realization.MetricRealizationDomination",
+      "original_path": "upstream-original/Colib/Topology/Realization/MetricRealizationDomination.lean.txt",
+      "path": "ArtinHomotopyVendor/Topology/Realization/MetricRealizationDomination.lean",
+      "application": "Construct genuine named ordered nerve/partition classifier/continuous connector return map and composite homotopy for actual complement, via metric point-star refinement"
+    }
+  ]
+}

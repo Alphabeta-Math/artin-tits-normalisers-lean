@@ -1,0 +1,13 @@
+--- Colib/Topology/Realization/ConnectorSimplexCone.lean
++++ ArtinHomotopyVendor/Topology/Realization/ConnectorSimplexCone.lean
+@@ -5,8 +5,8 @@
+ -/
+ module
+ 
+-public import Colib.Topology.LocalEquiconnection
+-public import Colib.Topology.Realization.SimplexBoundary.Charts
++public import ArtinHomotopyVendor.Topology.LocalEquiconnection
++public import ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts
+ public import Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex
+ 
+ /-!

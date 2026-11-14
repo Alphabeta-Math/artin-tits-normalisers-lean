@@ -1,0 +1,11 @@
+--- Colib/Topology/Realization/POUNerveClassifier.lean
++++ ArtinHomotopyVendor/Topology/Realization/POUNerveClassifier.lean
+@@ -5,7 +5,7 @@
+ -/
+ module
+ 
+-public import Colib.Topology.Realization.FiniteNerveCharts
++public import ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts
+ 
+ /-!
+ # The actual partition-of-unity map into the weak cover-nerve realization

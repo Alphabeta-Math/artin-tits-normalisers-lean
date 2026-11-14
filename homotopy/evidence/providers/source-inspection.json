@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/kangxyz/colib",
+  "pin": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+  "modules": [
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+      "upstream_module": "Colib.Topology.Realization.OrderedCoverNerve",
+      "upstream_path": "Colib/Topology/Realization/OrderedCoverNerve.lean",
+      "upstream_sha256": "1d99a4d5a6d8ef9b1d2eafd9e04ce00b75164a8fb96cef69652ffbbcb6c83b82",
+      "imports": [
+        "Mathlib.AlgebraicTopology.SimplicialSet.Nerve",
+        "Mathlib.AlgebraicTopology.SimplicialSet.Subcomplex"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+      "upstream_module": "Colib.Topology.LocalEquiconnection",
+      "upstream_path": "Colib/Topology/LocalEquiconnection.lean",
+      "upstream_sha256": "b8c8818762cc20aa0d607c49ae974ef730ff15a323b3bfcb19154ff435f79f9a",
+      "imports": [
+        "Mathlib.Topology.Homotopy.Basic"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+      "upstream_module": "Colib.Topology.Realization.NumerableConnectorCover",
+      "upstream_path": "Colib/Topology/Realization/NumerableConnectorCover.lean",
+      "upstream_sha256": "a8c92876d3db87fdb8b46b81fdca362b686d48111181e0d819fe8f1540f5b792",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+        "Mathlib.Topology.PartitionOfUnity",
+        "Mathlib.Geometry.Convex.ConvexSpace.Topology"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross",
+      "upstream_module": "Colib.Topology.Category.TopCat.ColimitAcross",
+      "upstream_path": "Colib/Topology/Category/TopCat/ColimitAcross.lean",
+      "upstream_sha256": "35b9c97ea98032310cc866129328d01bee993cf7f0625f1fa2155dc3924ac336",
+      "imports": [
+        "Mathlib.Topology.Category.TopCat.ULift"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Util.References",
+      "upstream_module": "Colib.Util.References",
+      "upstream_path": "Colib/Util/References.lean",
+      "upstream_sha256": "b4a284af63e677ff4838495bd0ab68466757efb3e19fd89d0b6f52d6f66810a1",
+      "imports": [
+        "Mathlib.Tactic.CrossRefAttribute"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.Basic",
+      "upstream_module": "Colib.Topology.Realization.Basic",
+      "upstream_path": "Colib/Topology/Realization/Basic.lean",
+      "upstream_sha256": "23496f2e7d2ed7435780f9755b5bbdac232910b5cc245520c9cc81fb18f210d1",
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "Mathlib.AlgebraicTopology.SimplicialSet.TopAdj"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+      "upstream_module": "Colib.Topology.Realization.DescAcross",
+      "upstream_path": "Colib/Topology/Realization/DescAcross.lean",
+      "upstream_sha256": "7702e9ab5b9ee2a577dfabb4b6f877445eeac4bef25a99b3b68bb5ced1c655da",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Category.TopCat.ColimitAcross",
+        "ArtinHomotopyVendor.Topology.Realization.Basic"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts",
+      "upstream_module": "Colib.Topology.Realization.FiniteNerveCharts",
+      "upstream_path": "Colib/Topology/Realization/FiniteNerveCharts.lean",
+      "upstream_sha256": "5dd14c6318dd4e92ef8e2a2ee5c2b596fc88c67f8b9f40950c2feb8e6fa99ed2",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+        "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+        "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+        "Mathlib.Data.Finset.Sort"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier",
+      "upstream_module": "Colib.Topology.Realization.POUNerveClassifier",
+      "upstream_path": "Colib/Topology/Realization/POUNerveClassifier.lean",
+      "upstream_sha256": "f455c31db628ad6f3962a9b615592e1952e7b3fbfc32cdf3d2ecb7ef932e6ba9",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.FiniteNerveCharts"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+      "upstream_module": "Colib.Analysis.Convex.StdSimplex.Boundary",
+      "upstream_path": "Colib/Analysis/Convex/StdSimplex/Boundary.lean",
+      "upstream_sha256": "7c0b0bbaf641537f113836ec8e5c3b20abd149a728f60ed2c4b59601bbb758c9",
+      "imports": [
+        "Mathlib.Geometry.Convex.ConvexSpace.Topology",
+        "Mathlib.Topology.UnitInterval"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+      "upstream_module": "Colib.Analysis.Convex.StdSimplex.BoundaryRetraction",
+      "upstream_path": "Colib/Analysis/Convex/StdSimplex/BoundaryRetraction.lean",
+      "upstream_sha256": "513835ca0ee143ba96c45039051f6262a625a2705073620e0beddd26f48c2a47",
+      "imports": [
+        "ArtinHomotopyVendor.Util.References",
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.Boundary",
+        "Mathlib.Topology.ContinuousMap.Basic",
+        "Mathlib.Topology.UnitInterval",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.FunProp",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Topology.Order.Lattice",
+        "Mathlib.Tactic.FieldSimp"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts",
+      "upstream_module": "Colib.Topology.Realization.SimplexBoundary.Charts",
+      "upstream_path": "Colib/Topology/Realization/SimplexBoundary/Charts.lean",
+      "upstream_sha256": "b6bba9d073234dea745150760a3ead197522c81d202a940cab12f3458d325eea",
+      "imports": [
+        "ArtinHomotopyVendor.Analysis.Convex.StdSimplex.BoundaryRetraction",
+        "Mathlib.Topology.Homotopy.Equiv"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone",
+      "upstream_module": "Colib.Topology.Realization.ConnectorSimplexCone",
+      "upstream_path": "Colib/Topology/Realization/ConnectorSimplexCone.lean",
+      "upstream_sha256": "9946d9c686f4517b2e5371f0849bf81dff719ab95fc52b234cbfbaff64e92f74",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.LocalEquiconnection",
+        "ArtinHomotopyVendor.Topology.Realization.SimplexBoundary.Charts",
+        "Mathlib.Geometry.Convex.ConvexSpace.CompactSpaceStdSimplex"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation",
+      "upstream_module": "Colib.Topology.Realization.OrderedConnectorInterpolation",
+      "upstream_path": "Colib/Topology/Realization/OrderedConnectorInterpolation.lean",
+      "upstream_sha256": "6cf5d4b6fef332a05084fb210099468aa9c2fcfd14bf3971122a3429b01e0edb",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexCone"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces",
+      "upstream_module": "Colib.Topology.Realization.ConnectorSimplexFaces",
+      "upstream_path": "Colib/Topology/Realization/ConnectorSimplexFaces.lean",
+      "upstream_sha256": "29705da18fe2fedfe4855829ab6eec814f5b5b8a0f90bbcd6b825bffb9764d17",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.OrderedConnectorInterpolation",
+        "Mathlib.Data.Fin.SuccPred"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence",
+      "upstream_module": "Colib.Topology.Realization.ConnectorMonoCoherence",
+      "upstream_path": "Colib/Topology/Realization/ConnectorMonoCoherence.lean",
+      "upstream_sha256": "4a60a8b51e0124f6ae007f73f7534b9d5c2499c4a204b62e6aff4d195b0e64e9",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.ConnectorSimplexFaces",
+        "Mathlib.AlgebraicTopology.SimplexCategory.Basic"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap",
+      "upstream_module": "Colib.Topology.Realization.OrderedNerveRealizationMap",
+      "upstream_path": "Colib/Topology/Realization/OrderedNerveRealizationMap.lean",
+      "upstream_sha256": "9f08f5e4f309053af2cf32b0df2f5a4e2259476a93d9bf71d67322fc8e6979d4",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.ConnectorMonoCoherence",
+        "ArtinHomotopyVendor.Topology.Realization.OrderedCoverNerve",
+        "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+        "ArtinHomotopyVendor.Topology.Realization.DescAcross",
+        "Mathlib.AlgebraicTopology.SimplicialSet.NonsingularColimit"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination",
+      "upstream_module": "Colib.Topology.Realization.NumerableRealizationDomination",
+      "upstream_path": "Colib/Topology/Realization/NumerableRealizationDomination.lean",
+      "upstream_sha256": "b3a7e8c7f683a3f3c9dc4e38b336daecc1011d7ef3f1965b0d74a2ecb28c6e33",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.POUNerveClassifier",
+        "ArtinHomotopyVendor.Topology.Realization.OrderedNerveRealizationMap"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius",
+      "upstream_module": "Colib.Topology.MetricSpace.CoverRadius",
+      "upstream_path": "Colib/Topology/MetricSpace/CoverRadius.lean",
+      "upstream_sha256": "3d58805af950ded0d977ee7d8e7f2b764869533ea522264debc39dbb737ac1dd",
+      "imports": [
+        "Mathlib.Order.ConditionallyCompleteLattice.Basic",
+        "Mathlib.Topology.MetricSpace.Lipschitz",
+        "Mathlib.Tactic.Linarith"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement",
+      "upstream_module": "Colib.Topology.Realization.MetricPointStarRefinement",
+      "upstream_path": "Colib/Topology/Realization/MetricPointStarRefinement.lean",
+      "upstream_sha256": "f08e28b1e9fb6f78392940d8169647b5d4164a1955e52d0e2632ea1c13fb2def",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.NumerableConnectorCover",
+        "Mathlib.Topology.MetricSpace.Lipschitz",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "full_source_read": true
+    },
+    {
+      "module": "ArtinHomotopyVendor.Topology.Realization.MetricRealizationDomination",
+      "upstream_module": "Colib.Topology.Realization.MetricRealizationDomination",
+      "upstream_path": "Colib/Topology/Realization/MetricRealizationDomination.lean",
+      "upstream_sha256": "223cd95655aa97ff92339ebd44a89471c5dba3b119bc08773c99807e534474d4",
+      "imports": [
+        "ArtinHomotopyVendor.Topology.Realization.NumerableRealizationDomination",
+        "ArtinHomotopyVendor.Topology.MetricSpace.CoverRadius",
+        "ArtinHomotopyVendor.Topology.Realization.MetricPointStarRefinement",
+        "Mathlib.Topology.EMetricSpace.Paracompact"
+      ],
+      "full_source_read": true
+    }
+  ],
+  "module_count": 21,
+  "lines": 2372,
+  "bytes": 103689,
+  "full_source_read": true,
+  "read_scope": "All21entire source files, all definitions/statements/proof bodies; metadata source also read",
+  "new_github_source_repositories_consulted": [
+    {
+      "repository": "https://github.com/kangxyz/colib",
+      "pin": "bac5cab53eb6526e366e861d289253ec81aa89f0",
+      "source_scope": "Exact21moduleclosure plus rootlicense/configmetadata"
+    }
+  ],
+  "prior_search_inventory": "docs/provenance/searches/m5-other-inventory.json",
+  "no_new_broad_search": true,
+  "exact_endpoint": "exists K:SSet.{u}, exists a:C(A,|K|), exists b:C(|K|,A), Nonempty((b.comp a).Homotopy(ContinuousMap.id A))",
+  "actual_premises": [
+    "MetricSpace A",
+    "Topology.LocalEquiconnection A: open neighborhood of entire diagonal, actualcontinuousconnector, endpoint and diagonal equations",
+    "V:\u03ba\u2192Set A, allIsOpen, allE.IsConvex, pointwisecoverage"
+  ],
+  "named_constructions": [
+    "Topology.MetricCoverRadius.radius V",
+    "W x=Metric.ball x(radius V x/8)",
+    "Topology.NumerableConnectorCover.orderedNerve W",
+    "Topology.NumerableConnectorCover.partitionNerveMap W \u03c1 h\u03c1",
+    "Topology.NumerableConnectorCover.nerveReturnMap E W V hconvex href vertex hvertex",
+    "Topology.NumerableConnectorCover.numerableDominationHomotopy E W V hconvex href hcover vertex hvertex \u03c1 h\u03c1"
+  ],
+  "limitations": [
+    "No opposite composite homotopy",
+    "No asphericity or contractible nerve conclusion",
+    "No assumption of desired homotopy comparison in LocalEquiconnection or IsConvex",
+    "No newlyselected supplier accepted beforebuild/audit/replay/reviews/rootacceptance"
+  ]
+}

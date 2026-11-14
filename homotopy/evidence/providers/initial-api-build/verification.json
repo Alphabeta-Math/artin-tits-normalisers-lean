@@ -1,0 +1,13 @@
+{
+  "command": [
+    "lake",
+    "build",
+    "ArtinHomotopyVendor.Topology.LocalEquiconnection"
+  ],
+  "cwd": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/homotopy",
+  "exit_code": 0,
+  "duration_seconds": 1.5398222130024806,
+  "log_sha256": "f66ef4f6735d6718a02b007936d791e785e908a6fa7b94ba4e3854d0c10af55a",
+  "source_sha256": "b8c8818762cc20aa0d607c49ae974ef730ff15a323b3bfcb19154ff435f79f9a",
+  "supplier_accepted": false
+}
