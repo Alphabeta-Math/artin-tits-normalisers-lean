@@ -1,0 +1,28 @@
+{
+  "source_sha256": "b4db1dda9919fbf5969e6779558fc6097c21fe359b49ae0015bbe60aff986d9d",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/UniversalWallGroupoid.olean",
+      "Proofs/UniversalWallGroupoid.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/UniversalWallGroupoid-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/UniversalWallGroupoid.lean:8:0: warning: Definition `UniversalWallGroupoid` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this\ndefinition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'UniversalWallGroupoid' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

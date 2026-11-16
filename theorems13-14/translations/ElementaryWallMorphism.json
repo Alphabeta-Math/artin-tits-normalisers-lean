@@ -1,0 +1,6 @@
+{
+  "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J I : Set S) (hI : ∃ w : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj w)) (CoxeterSystem.parabolic cs I) = CoxeterSystem.parabolic cs J) (a : S) (ha : a ∉ I), let D : Set S := {b | b ∈ Set.insert a I ∧ Relation.ReflTransGen (fun i j : S => i ∈ Set.insert a I ∧ j ∈ Set.insert a I ∧ i ≠ j ∧ M i j ≠ 2) a b}; ∀ hD : Finite (CoxeterSystem.parabolic cs D), let crossing := SimpleWallCrossings S W M cs I a ha hD; ∃ hK : ∃ w : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj w)) (CoxeterSystem.parabolic cs crossing.2.1) = CoxeterSystem.parabolic cs J, ∃ f : (BrinkHowlettGroupoid cs J).Hom ⟨I, hI⟩ ⟨crossing.2.1, hK⟩, f.val = crossing.1",
+  "value": null,
+  "source": "article",
+  "sourceReason": "The report does not identify this endpoint statement as defective."
+}

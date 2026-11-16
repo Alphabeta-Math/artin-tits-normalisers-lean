@@ -1,0 +1,28 @@
+{
+  "source_sha256": "7a373536609dd86d30bb6dc50c91f1317287d5dd30d9da15c71fc0fe9de37cbe",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/NormaliserChamberAction.olean",
+      "Proofs/NormaliserChamberAction.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/NormaliserChamberAction-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/NormaliserChamberAction.lean:277:4: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/NormaliserChamberAction.lean:287:6: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/NormaliserChamberAction.lean:908:2: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/NormaliserChamberAction.lean:178:10: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'NormaliserChamberAction' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

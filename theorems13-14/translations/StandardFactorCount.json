@@ -1,0 +1,6 @@
+{
+  "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J : Set S) (I K : { L : Set S // ∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs L) = CoxeterSystem.parabolic cs J }) (w : (BrinkHowlettGroupoid cs J).Hom I K), let roots : Set (Finsupp S Real) := CoxeterSystem.geometricRoots cs; let act := CoxeterSystem.geometricRepresentation cs; let parallelClass : Finsupp S Real → Set (Finsupp S Real) := fun α => { β | β ∈ roots ∧ ∀ L, ∀ f : (BrinkHowlettGroupoid cs J).Hom L I, (0 < act f.val α ↔ 0 < act f.val β) }; let realRoot : Finsupp S Real → Prop := fun α => α ∈ roots ∧ ∃ L, ∃ f : (BrinkHowlettGroupoid cs J).Hom L I, ¬ (0 < α ↔ 0 < act f.val α); let inversions : Set (Finsupp S Real) := { α | α ∈ roots ∧ 0 < α } ∩ Set.image (act w.val) { α | α ∈ roots ∧ α < 0 }; let classes : Set (Set (Finsupp S Real)) := { c | (∃ α, realRoot α ∧ c = parallelClass α) ∧ c ⊆ inversions }; Nonempty (StandardExpressions cs J I K w) ∧ Set.Finite classes ∧ ∀ e : StandardExpressions cs J I K w, List.length e.val = Nat.card { c : Set (Finsupp S Real) // c ∈ classes }",
+  "value": null,
+  "source": "article",
+  "sourceReason": "The report does not identify this endpoint statement as defective."
+}

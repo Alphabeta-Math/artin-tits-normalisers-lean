@@ -1,0 +1,28 @@
+{
+  "source_sha256": "a0a632c83fc78e5b4257a62d2230123d81fd84a5e1d6080bc280c5d447d91d5b",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/SimpleWallCrossings.olean",
+      "Proofs/SimpleWallCrossings.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/SimpleWallCrossings-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": ""
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'SimpleWallCrossings' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

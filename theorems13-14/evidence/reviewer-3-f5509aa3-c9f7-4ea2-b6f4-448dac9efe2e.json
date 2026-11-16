@@ -1,0 +1,1334 @@
+{
+  "role": "reviewer-3",
+  "context": {
+    "input": {
+      "title": "Artin–Tits normalisers: Theorems 1.3 and 1.4",
+      "request": "Formalize exactly Theorem 1.3 (= Theorem 4.7, printed p. 2) and Theorem 1.4 (= Theorem 4.21 Atomic Matsumoto, printed p. 3) of arXiv:2509.21915. Preserve all original assumptions and arbitrary-Coxeter-type scope, not merely finite/spherical type. Skip repository creation. Fully utilize existing proofs at /home/lazyinspirit/Projects/artin-tits-normalisers-lean; search actual declarations first and record exact paths/commit. Theorem 1.8 is already completed and is not a new obligation. All existing packages are available via import ArtinDeligne, including chambers/ and ribbons/; inspect those, deligne/ and docs/navigation/. Original PDF and extracted text are /home/lazyinspirit/Projects/workflow-engines/.research-workflow/artin-tits-normalisers-2509-21915-20261113/article.pdf and article.txt. Full local Alphabeta Research portal graph and numbered proofs: /home/lazyinspirit/Projects/prestige-math-library/research-portal/artin-tits-normalisers-2509-21915/. Shared library items: /home/lazyinspirit/Projects/prestige-math-library/items/. Study the full dependency graph structurally; read the full article and source context needed to select the most important prerequisites, not only search snippets. You need not fully read every transitive dependency source before selecting up to 20 important items; report what you read and relevant gaps honestly. Use supplied public portal URL for direct item citations. Existing declarations can supply prerequisites directly by imported name; do not add new items merely to reprove available results. Review only endpoints, never individual proof steps. Use numbered Alphabeta steps as inspiration. New local helpers without original standalone statements must truthfully say so and cite parent result/page/portal, never invent attribution. Keep all source outside this new package read-only. Existing source commit: 8668c70d25e6c5d63c313bac756052f9c83ee7f0 Prior prerequisite investigation produced a partial source/graph report at /home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14/evidence/prerequisites-9d02fc77-236f-4ba3-b56f-1c73158cdabd.json; inspect and reuse its actual findings, reuse its recorded source reading and GitHub searches, and do not claim unfinished reading as complete. The subsequent investigation is /home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14/evidence/prerequisites-c4f3934a-ee4c-4a84-be76-023266192596.json; it contains fresh GitHub search and both main endpoints. Use its findings, complete the selection now, and identify unresolved assumptions and reading limits without inventing coverage. The user asks for up to 20 important prerequisites, not semantic review of every transitive supplier; actual external use is recorded later when proofs are authored. Scope correction: RelativeCone’s earlier accepted Lean type added [Finite ι], while the article §2.2 and §3.1 statements do not explicitly impose finite rank. Its acceptance is withdrawn for a fresh independent translation/review. Determine the original rank convention from the article, preserve the exact assumptions, and do not use a finite-rank definition as an unqualified supplier for arbitrary-rank conclusions. If genuine scope uncertainty remains, report it rather than silently narrowing.",
+      "article": "https://arxiv.org/pdf/2509.21915",
+      "portal": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915",
+      "directory": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14",
+      "github": "lazyinspirit/artin-tits-normalisers-lean",
+      "visibility": "public",
+      "lean": "leanprover/lean4:v4.36.0-rc2",
+      "mathlib": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+      "imports": [
+        "ArtinDeligne"
+      ],
+      "existing": true
+    },
+    "item": {
+      "id": "RelativeCone",
+      "title": "Tits cone intersection and relative arrangement",
+      "kind": "definition",
+      "main": false,
+      "article": {
+        "statement": "For J ⊆ Γ₀, let Θ_J = {f ∈ V*: f(α_j)=0 for every j∈J}. Define Cone(J)=Cone∩Θ_J, taking its interior in Θ_J. Define Φ^J={α∈Φ: Θ_J is not contained in H_α}=Φ\\Φ_J and H^J={H_α∩Θ_J: α∈Φ^J_+}, counting coincident traces once.",
+        "locator": "§3.1, printed p. 7, equations (3.1)–(3.3); §1.1.2, printed p. 2.",
+        "url": "https://arxiv.org/pdf/2509.21915#page=7"
+      },
+      "portal": {
+        "statement": "The same relative cone, roots and distinct hyperplane traces, explicitly using finite Γ₀ and the induced coordinate Euclidean topology. Neither W nor W_J is required to be finite.",
+        "locator": "Definition and Source notes of def-relative-cone-artin-tits-normalisers.",
+        "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-relative-cone-artin-tits-normalisers"
+      },
+      "deps": [],
+      "external": [
+        "existing-vector",
+        "existing-dual",
+        "existing-relative-subspace",
+        "existing-dual-coordinates",
+        "existing-retained-roots",
+        "existing-restricted-hyperplane",
+        "existing-dual-action",
+        "existing-dominant",
+        "mathlib-coxeter-group",
+        "mathlib-induced-topology",
+        "mathlib-interior",
+        "mathlib-set-image"
+      ]
+    },
+    "translation": {
+      "type": "/- RelativeCone: supported finite-rank geometric definition only. The article §§2.2 and 3.1 follow Iyama–Wemyss [24]; that source §1.1 (printed p. 3, PDF p. 27) explicitly starts with an n×n Coxeter matrix on {1,...,n}, and §1.3 uses its finite dual-coordinate realization. Independently inspected: https://www.maths.gla.ac.uk/~mwemyss/MainFile_for_web.pdf . The portal explicitly adopts this convention: https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-relative-cone-artin-tits-normalisers . The article itself does not explicitly specify a global rank restriction or an infinite-rank topology. That scope uncertainty remains unresolved; this definition must not supply arbitrary-rank geometric conclusions. Neither W nor W_J is assumed finite. Components: Cone(J), its interior in Θ_J, Φ^J, and distinct positive-root hyperplane traces. -/\n∀ {ι : Type*} [Finite ι] (M : CoxeterMatrix ι) (J : Set ι), Set (ArtinNormalisers.Theorem18.relativeSubspace J) × Set (ArtinNormalisers.Theorem18.relativeSubspace J) × Set (ArtinNormalisers.Theorem18.Vector ι) × Set (Submodule Real (ArtinNormalisers.Theorem18.relativeSubspace J))",
+      "value": "/- Existing suppliers at commit 8668c70d25e6c5d63c313bac756052f9c83ee7f0 of lazyinspirit/artin-tits-normalisers-lean: ArtinNormalisers/Theorem18/Geometry.lean; ArtinNormalisers/Theorem18/NormalizerAction.lean; landmarks/ArtinLandmarks/Dominant.lean. -/\nfun {ι} _inst M J =>\n  let coordinateTopology : TopologicalSpace (ArtinNormalisers.Theorem18.relativeSubspace J) :=\n    TopologicalSpace.induced\n      (fun f : ArtinNormalisers.Theorem18.relativeSubspace J =>\n        ArtinNormalisers.Theorem18.dualCoordinates f.val)\n      (inferInstance : TopologicalSpace (ι → Real))\n  let cone : Set (ArtinNormalisers.Theorem18.relativeSubspace J) :=\n    {f | ∃ (w : CoxeterMatrix.Group M) (g : ArtinNormalisers.Theorem18.Dual ι),\n      ArtinNormalisers.Landmark1.IsDominant g ∧\n      ArtinNormalisers.Theorem18.dualAction M w g = f.val}\n  let relativeRoots : Set (ArtinNormalisers.Theorem18.Vector ι) :=\n    ArtinNormalisers.Theorem18.retainedRoots M J\n  let positiveRelativeRoots : Set (ArtinNormalisers.Theorem18.Vector ι) :=\n    {r | r ∈ relativeRoots ∧ ∀ i : ι, (0 : Real) ≤ r i}\n  (cone,\n    @interior (ArtinNormalisers.Theorem18.relativeSubspace J) coordinateTopology cone,\n    relativeRoots,\n    Set.image (ArtinNormalisers.Theorem18.restrictedHyperplane J) positiveRelativeRoots)"
+    },
+    "plan": {
+      "items": [
+        {
+          "id": "RelativeCone",
+          "title": "Tits cone intersection and relative arrangement",
+          "kind": "definition",
+          "main": false,
+          "article": {
+            "statement": "For J ⊆ Γ₀, let Θ_J = {f ∈ V*: f(α_j)=0 for every j∈J}. Define Cone(J)=Cone∩Θ_J, taking its interior in Θ_J. Define Φ^J={α∈Φ: Θ_J is not contained in H_α}=Φ\\Φ_J and H^J={H_α∩Θ_J: α∈Φ^J_+}, counting coincident traces once.",
+            "locator": "§3.1, printed p. 7, equations (3.1)–(3.3); §1.1.2, printed p. 2.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=7"
+          },
+          "portal": {
+            "statement": "The same relative cone, roots and distinct hyperplane traces, explicitly using finite Γ₀ and the induced coordinate Euclidean topology. Neither W nor W_J is required to be finite.",
+            "locator": "Definition and Source notes of def-relative-cone-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-relative-cone-artin-tits-normalisers"
+          },
+          "deps": [],
+          "external": [
+            "existing-vector",
+            "existing-dual",
+            "existing-relative-subspace",
+            "existing-dual-coordinates",
+            "existing-retained-roots",
+            "existing-restricted-hyperplane",
+            "existing-dual-action",
+            "existing-dominant",
+            "mathlib-coxeter-group",
+            "mathlib-induced-topology",
+            "mathlib-interior",
+            "mathlib-set-image"
+          ]
+        },
+        {
+          "id": "RelativeLocalFiniteness",
+          "title": "Local finiteness in the relative interior",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "Every u∈Cone(J)° belongs to an open ball in Cone(J) meeting only finitely many members of H^J. Consequently (Cone(J)°,H^J) is locally finite.",
+            "locator": "Proposition 3.6, printed p. 9; Remark 3.7 distinguishes this from ambient local finiteness.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=9"
+          },
+          "portal": {
+            "statement": "For finite Γ₀ and arbitrary J, every point of the relative interior has a relative Euclidean ball contained in Cone(J) meeting finitely many distinct relative hyperplanes. No spherical-type hypothesis is imposed.",
+            "locator": "Statement and Facts & Assumptions of prop-relative-local-finiteness-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-prop-relative-local-finiteness-artin-tits-normalisers"
+          },
+          "deps": [
+            "RelativeCone"
+          ],
+          "external": []
+        },
+        {
+          "id": "ChamberLabelling",
+          "title": "Minimal coset labels classify relative chambers",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "The map (x,I)↦xC_I bijects the chambers of (Cone(J)°,H^J) with Cham(J)={(x,I): W_Jx=xW_I and x has minimum length in xW_I}. Here C_I={f∈Θ_I: f(α_i)>0 for i∉I}.",
+            "locator": "Theorem 3.9 and equation (3.10), printed pp. 9–10; equation (3.2), printed p. 7.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=9"
+          },
+          "portal": {
+            "statement": "The same chamber-labelling bijection under the finite-rank geometric convention, for arbitrary Coxeter type and arbitrary J. The algebraic label set itself is available at arbitrary rank.",
+            "locator": "Statement, Facts & Assumptions and Source notes of thm-chamber-labelling-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-thm-chamber-labelling-artin-tits-normalisers"
+          },
+          "deps": [
+            "RelativeCone",
+            "RelativeLocalFiniteness"
+          ],
+          "external": []
+        },
+        {
+          "id": "SimpleWallCrossings",
+          "title": "Elementary crossing elements from spherical components",
+          "kind": "definition",
+          "main": false,
+          "article": {
+            "statement": "For a∉I, let D=[I,a] be the component containing a in the diagram induced on I∪{a}. When W_D is finite, define v_{a,I}=w_{D\\{a}}w_D, K=(I∪{a})\\{ι_D(a)}, and ω_{a,I}(x,I)=(xv_{a,I},K). The opposition permutation satisfies w_Dα_i=−α_{ι_D(i)}. Finiteness is required of W_D, not of W_I or W_{I∪{a}}.",
+            "locator": "Notation 3.13 and equations (3.14)–(3.15), printed p. 10; Notation 2.5 and equation (2.6), printed p. 5.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=10"
+          },
+          "portal": {
+            "statement": "The same component-based construction on algebraic labels. Its definition initially gives a pair in W×P(Γ₀); preservation of chamber labels and geometric adjacency require subsequent results.",
+            "locator": "Definition of def-simple-wall-crossing-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-simple-wall-crossing-artin-tits-normalisers"
+          },
+          "deps": [],
+          "external": [
+            "parabolic",
+            "parabolic-mono",
+            "geometric-representation",
+            "coxeter-length",
+            "finite-injection",
+            "finite-maximum",
+            "equiv-refl",
+            "simple-root",
+            "component-path",
+            "insert-membership",
+            "difference-subset",
+            "choose",
+            "epsilon",
+            "subtype-ext",
+            "congr-arg"
+          ]
+        },
+        {
+          "id": "AdjacentWallFormula",
+          "title": "Adjacent chambers and inverse elementary crossings",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "For adjacent chambers (x,I),(y,K), the common wall has unique describing indices a∉I and a′∉K, with I∪{a}=K∪{a′}. Their crossing components coincide and are spherical. The crossings satisfy ω_{a,I}(x,I)=(y,K), ω_{a′,K}(y,K)=(x,I), and v_{a,I}v_{a′,K}=v_{a′,K}v_{a,I}=1.",
+            "locator": "Proposition 3.17 and following sentence, printed p. 11.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=11"
+          },
+          "portal": {
+            "statement": "In finite rank, the common closed wall is the closure of xC_{I∪{a}} and of yC_{K∪{a′}}. The describing indices, finite crossing components, prescribed opposite labels and inverse products have the stated properties. Neither W_I nor W_{I∪{a}} is assumed finite.",
+            "locator": "Statement and Source notes of prop-adjacent-wall-formula-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-prop-adjacent-wall-formula-artin-tits-normalisers"
+          },
+          "deps": [
+            "ChamberLabelling",
+            "SimpleWallCrossings"
+          ],
+          "external": []
+        },
+        {
+          "id": "FiniteWallPaths",
+          "title": "Finite crossing paths connect relative chambers",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "Any two chambers are related by a finite sequence of simple wall crossings.",
+            "locator": "Lemma 3.20(3) and Remark 3.22, printed p. 11; Remark 3.8, printed p. 9.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=11"
+          },
+          "portal": {
+            "statement": "For a finite-rank Coxeter system and arbitrary J, any two relative chambers are joined by finitely many component-based simple crossings. The empty sequence is allowed for equal endpoints.",
+            "locator": "Statement and Facts & Assumptions of lem-finite-wall-path-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-finite-wall-path-artin-tits-normalisers"
+          },
+          "deps": [
+            "RelativeLocalFiniteness",
+            "ChamberLabelling",
+            "AdjacentWallFormula"
+          ],
+          "external": []
+        },
+        {
+          "id": "NormaliserChamberAction",
+          "title": "Free normaliser-quotient action on chamber labels",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "For ḡ∈N(W,J)=Norm_W(W_J)/W_J and any representative g, let y be the minimum-length element of gxW_I. Then ḡ·(x,I)=(y,I). Labels with the same second component form one orbit; the action is free and commutes with each defined adjacent crossing ω_{a,I}, preserving its index.",
+            "locator": "Lemma 3.24(1)–(4), printed p. 12; underlying linear action in Lemma 3.23, printed p. 12.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=12"
+          },
+          "portal": {
+            "statement": "The same free action, fibre-orbit description and crossing equivariance in the finite-rank relative chamber geometry, without requiring W or W_J finite.",
+            "locator": "Statement and Facts & Assumptions of lem-normaliser-chamber-action-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-normaliser-chamber-action-artin-tits-normalisers"
+          },
+          "deps": [
+            "RelativeCone",
+            "ChamberLabelling",
+            "AdjacentWallFormula"
+          ],
+          "external": []
+        },
+        {
+          "id": "GeodesicAdditivity",
+          "title": "Geodesicity equals Coxeter-length additivity",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "For a chamber path p with consecutive crossing elements v₁,…,v_m and product v_p, p is geodesic if and only if ℓ(v_p)=Σ_i ℓ(v_i). Geodesic means having the minimum number of crossings between its endpoints.",
+            "locator": "Proposition 3.29, printed pp. 13–14; path and geodesic conventions in §3.4, printed p. 13.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=13"
+          },
+          "portal": {
+            "statement": "The same equivalence for finite-rank relative chamber paths, including the one-chamber path with empty product and sum. Its suppliers include the length/half-space criterion and translation between relative arrangements.",
+            "locator": "Statement and Facts & Assumptions of prop-geodesic-additivity-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-prop-geodesic-additivity-artin-tits-normalisers"
+          },
+          "deps": [
+            "RelativeLocalFiniteness",
+            "ChamberLabelling",
+            "AdjacentWallFormula"
+          ],
+          "external": []
+        },
+        {
+          "id": "BrinkHowlettGroupoid",
+          "title": "Brink–Howlett groupoid with the article's composition convention",
+          "kind": "definition",
+          "main": false,
+          "article": {
+            "statement": "Fix a Coxeter diagram Γ, its Coxeter group W and J⊆Γ₀. An associate I of J has W_I conjugate to W_J. The groupoid BH(J) has these associates as objects and Hom_BH(I,K)={x∈W: x{α_k:k∈K}={α_i:i∈I}}. If x:I→K and y:K→L, their left-to-right composite is xy:I→L.",
+            "locator": "§4.1, definition preceding Remark 4.1, printed p. 15; associates in Definition 2.7, printed p. 5.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=15"
+          },
+          "portal": {
+            "statement": "The same small connected groupoid, with arrows tagged by source and target and multiplication read left to right. No finite-rank or spherical-type restriction is imposed.",
+            "locator": "Definition of def-brink-howlett-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-brink-howlett-artin-tits-normalisers"
+          },
+          "deps": [],
+          "external": [
+            "existing-geometric-representation",
+            "existing-parabolic",
+            "mathlib-groupoid",
+            "mathlib-single",
+            "mathlib-image",
+            "mathlib-image-image",
+            "mathlib-image-id",
+            "mathlib-map-mul",
+            "mathlib-map-one",
+            "mathlib-mul-apply",
+            "mathlib-one-apply",
+            "mathlib-representation-inverse",
+            "mathlib-one-mul",
+            "mathlib-mul-one",
+            "mathlib-mul-assoc",
+            "mathlib-inv-mul",
+            "mathlib-mul-inv",
+            "lean-subtype-ext",
+            "lean-congrarg",
+            "mathlib-subgroup-map",
+            "mathlib-conjugation",
+            "mathlib-equiv-hom"
+          ]
+        },
+        {
+          "id": "ElementaryWallMorphism",
+          "title": "Elementary crossings are Brink–Howlett arrows",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "If I is an associate of J, a∉I and W_[I,a] is finite, then v_{a,I}∈Hom_BH(I,(I∪{a})\\{ι_[I,a](a)}).",
+            "locator": "Lemma 4.2, printed p. 15.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=15"
+          },
+          "portal": {
+            "statement": "At arbitrary rank, the prescribed target K is an associate of J and v_{a,I}{α_k:k∈K}={α_i:i∈I}. Only the crossing component is required to be spherical.",
+            "locator": "Statement of lem-wall-is-morphism-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-wall-is-morphism-artin-tits-normalisers"
+          },
+          "deps": [
+            "SimpleWallCrossings",
+            "BrinkHowlettGroupoid"
+          ],
+          "external": []
+        },
+        {
+          "id": "UniversalWallGroupoid",
+          "title": "Singleton-arrow groupoid on chamber labels",
+          "kind": "definition",
+          "main": false,
+          "article": {
+            "statement": "The groupoid BH̃(J) has objects Cham(J), with Hom((x,I),(y,K)) the singleton labelled x⁻¹y. Composition multiplies labels on the right. For adjacent chambers its arrow is labelled by their elementary crossing element.",
+            "locator": "Definition 4.3 and following paragraph, printed p. 15.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=15"
+          },
+          "portal": {
+            "statement": "The algebraic singleton-arrow construction applies at arbitrary rank, retaining endpoint tags. Its geometric chamber and adjacent-crossing interpretation additionally uses finite rank, without assuming W, W_I or W_{I∪{a}} finite.",
+            "locator": "Definition of def-universal-wall-groupoid-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-universal-wall-groupoid-artin-tits-normalisers"
+          },
+          "deps": [
+            "ChamberLabelling",
+            "AdjacentWallFormula"
+          ],
+          "external": []
+        },
+        {
+          "id": "UniversalGenerators",
+          "title": "Adjacent crossings generate the universal wall groupoid",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "For any chamber labels (x,I),(y,K), there is a finite crossing path p between them whose product v_p equals x⁻¹y. Thus the adjacent-crossing arrows generate BH̃(J). The path need not be unique.",
+            "locator": "Proposition 4.4, printed p. 16.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=16"
+          },
+          "portal": {
+            "statement": "The same factorization through finite paths in the finite-rank relative-interior arrangement, with endpoint-tagged arrows and the zero-crossing case included.",
+            "locator": "Statement of prop-universal-generators-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-prop-universal-generators-artin-tits-normalisers"
+          },
+          "deps": [
+            "FiniteWallPaths",
+            "UniversalWallGroupoid",
+            "SimpleWallCrossings"
+          ],
+          "external": []
+        },
+        {
+          "id": "ChamberMorphismCorrespondence",
+          "title": "Chamber labels and prescribed-source arrow lifting",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "For associates I,K of J: (1) chamber labels (x,I),(y,K) satisfy x⁻¹y∈Hom_BH(I,K); (2) if w∈Hom_BH(I,K) and (x,I)∈Cham(J), then (xw,K)∈Cham(J), and w labels the arrow upstairs from (x,I) to (xw,K).",
+            "locator": "Proposition 4.6(1)–(2), printed p. 16.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=16"
+          },
+          "portal": {
+            "statement": "The same assertions are stated with finite-rank hypotheses and geometric chamber identification. The main covering entry separately supplies an arbitrary-rank algebraic correspondence using canonical simple systems.",
+            "locator": "Statement and Source notes of prop-chambers-morphisms-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-prop-chambers-morphisms-artin-tits-normalisers"
+          },
+          "deps": [
+            "ChamberLabelling",
+            "BrinkHowlettGroupoid",
+            "UniversalWallGroupoid"
+          ],
+          "external": []
+        },
+        {
+          "id": "UniversalBrinkHowlettCover",
+          "title": "Theorem 1.3 / 4.7: universal covering, wall crossings and deck quotient",
+          "kind": "theorem",
+          "main": true,
+          "article": {
+            "statement": "Let Γ be a Coxeter diagram with Coxeter group W and J⊆Γ₀. The functor F:BH̃(J)→BH(J), defined by F(x,I)=I and F(x⁻¹y)=x⁻¹y, is a universal groupoid covering with Deck(F)≅N(W,J). Preserve also Theorem 1.3's geometric content: its upstairs objects are the chambers of (Cone(J)°,H^J), its generating morphisms are simple crossings between adjacent chambers, and BH(J) is obtained as the N(W,J)-quotient of BH̃(J). No spherical-type restriction on W or W_J is stated.",
+            "locator": "Theorem 1.3 and following paragraph, printed p. 2; Theorem 4.7, printed pp. 16–17; Definition 4.3, printed p. 15; Proposition 4.4, printed p. 16.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=2"
+          },
+          "portal": {
+            "statement": "At arbitrary rank, the algebraic label groupoid covers BH(J) universally, has deck group N(W,J), and has quotient isomorphic to BH(J). Its geometric chamber identification, adjacent-generator interpretation and generation assertion explicitly use finite rank. Neither W nor W_J is required finite. This scope distinction remains explicit and is not substituted for the original requested statement.",
+            "locator": "Statement, External input and Source notes of thm-universal-brink-howlett-cover-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-thm-universal-brink-howlett-cover-artin-tits-normalisers"
+          },
+          "deps": [
+            "BrinkHowlettGroupoid",
+            "UniversalWallGroupoid",
+            "UniversalGenerators",
+            "ChamberMorphismCorrespondence",
+            "NormaliserChamberAction"
+          ],
+          "external": []
+        },
+        {
+          "id": "StandardExpressions",
+          "title": "Length-additive elementary expressions",
+          "kind": "definition",
+          "main": false,
+          "article": {
+            "statement": "For w∈Hom_BH(I,K), a standard expression is a finite composable product w=v_{a₁,I₁}⋯v_{a_m,I_m}, starting at I and ending at K, with ℓ(w)=Σ_iℓ(v_{a_i,I_i}). Its expression length is m. Existence and independence of the expression are subsequent assertions, not assumptions of this definition.",
+            "locator": "Definition 4.9, printed p. 17.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=17"
+          },
+          "portal": {
+            "statement": "The same definition at arbitrary rank. Each elementary factor requires its crossing component spherical. The empty expression represents an identity. The notation ℓ_BH(w) is introduced only after existence and invariance of factor count are established.",
+            "locator": "Definition and Source notes of def-standard-expressions-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-standard-expressions-artin-tits-normalisers"
+          },
+          "deps": [
+            "BrinkHowlettGroupoid",
+            "SimpleWallCrossings",
+            "ElementaryWallMorphism"
+          ],
+          "external": []
+        },
+        {
+          "id": "StandardGeodesicCorrespondence",
+          "title": "Standard expressions lift to geodesic paths",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "A composable sequence of simple wall crossings is a geodesic path exactly when its product is a standard expression in BH. Every w∈Hom_BH(I,K) has a standard expression; its lift from (x,I) ends at (xw,K).",
+            "locator": "Lemma 4.10 and equations (4.11)–(4.12), printed p. 18.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=18"
+          },
+          "portal": {
+            "statement": "In finite rank, each standard expression has a unique geodesic lift from any prescribed chamber of its source type. For specified crossings, target-source compatibility is required. The empty expression corresponds to a one-chamber path. This geometric supplier alone does not establish arbitrary-rank existence.",
+            "locator": "Statement and Facts & Assumptions of lem-standard-geodesic-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-standard-geodesic-artin-tits-normalisers"
+          },
+          "deps": [
+            "StandardExpressions",
+            "GeodesicAdditivity",
+            "UniversalBrinkHowlettCover",
+            "UniversalGenerators",
+            "ChamberMorphismCorrespondence"
+          ],
+          "external": []
+        },
+        {
+          "id": "StandardFactorCount",
+          "title": "Arbitrary-rank existence and parallel-class factor count",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "No standalone article statement gives the parallel-class formula selected here. This is a portal helper supporting existence of standard expressions and invariance of their factor count; the parent article assertions are Lemma 4.10 and Corollary 4.13.",
+            "locator": "Parent results: Lemma 4.10 and Corollary 4.13, printed p. 18. The formula m=|C(w)| is not attributed to an article lemma.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=18"
+          },
+          "portal": {
+            "statement": "Every article morphism w has a standard expression. If an expression has m factors, then m=|C(w)|, using the opposite root-action arrow with the same label. Here C(w) is the finite set of real parallel classes contained in its positive inversion set. Its declared algebraic suppliers allow arbitrary rank.",
+            "locator": "Statement and Facts & Assumptions of lem-author-b19d43a8e520-bh-standard-factor-count; source references are empty, so article attribution is only through the stated parent results.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-author-b19d43a8e520-bh-standard-factor-count"
+          },
+          "deps": [
+            "BrinkHowlettGroupoid",
+            "StandardExpressions"
+          ],
+          "external": []
+        },
+        {
+          "id": "GeneratorsAndStandardLength",
+          "title": "Elementary generation and invariance of standard length",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "BH(J) is generated by v_{a,I} for associates I and a∉I with W_[I,a] finite. Any two standard expressions of the same morphism, with the same source, have the same number of factors.",
+            "locator": "Corollary 4.13(1)–(2), printed p. 18.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=18"
+          },
+          "portal": {
+            "statement": "The same generation and equal-factor-count assertions. Its current proof suppliers use the arbitrary-rank StandardFactorCount endpoint rather than relying on finite-rank chamber geometry.",
+            "locator": "Statement and Source notes of cor-brink-howlett-generators-length-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-cor-brink-howlett-generators-length-artin-tits-normalisers"
+          },
+          "deps": [
+            "StandardExpressions",
+            "StandardFactorCount"
+          ],
+          "external": []
+        },
+        {
+          "id": "FiniteRelativeLongest",
+          "title": "Finite relative longest element inside an arbitrary system",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "No standalone article lemma states this full construction and inversion-set formula. It is a portal helper for Lemma 4.15: finite Φ_{I∪{a,b}}\\Φ_I allows construction inside the union of the components meeting {a,b}, without making I or the ambient system spherical.",
+            "locator": "Parent result: Lemma 4.15 and equation (4.16), printed p. 19; related inverse characterization in Remark 4.17, printed p. 19.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=19"
+          },
+          "portal": {
+            "statement": "At arbitrary rank, let a,b∉I be distinct, T=I∪{a,b}, and Φ_T\\Φ_I finite. Let D be the union of components of T meeting {a,b}. Then W_D is finite. For r=w_Dw_{D∩I}, rΠ_I=Π_K for an associate K⊆T; q=r⁻¹ is an article morphism I→K and N(q)=Φ_T⁺\\Φ_I⁺, where N(x)=Φ⁺∩xΦ⁻.",
+            "locator": "Statement and External input of lem-author-a7d202611130-finite-relative-longest.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-author-a7d202611130-finite-relative-longest"
+          },
+          "deps": [
+            "BrinkHowlettGroupoid"
+          ],
+          "external": []
+        },
+        {
+          "id": "TwoGeneratorMinimal",
+          "title": "Minimal common prefix and its two standard expressions",
+          "kind": "theorem",
+          "main": false,
+          "article": {
+            "statement": "Let I be an associate of J and a,b∉I distinct, with |Φ_{I∪{a,b}}\\Φ_I|<∞. There is an associate K and v_{a,b,I}:I→K left-divisible by v_{a,I},v_{b,I}, with exactly two standard expressions of equal factor count, starting respectively with these generators. Every BH morphism from I having both generators as length-additive left divisors has v_{a,b,I} as a left divisor. Thus this common multiple is minimal for left divisibility and standard-expression length.",
+            "locator": "Lemma 4.15(1)–(2) and equation (4.16), printed p. 19.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=19"
+          },
+          "portal": {
+            "statement": "The same theorem with its finite relative-root hypothesis retained. It chooses v_{a,b,I}=(w_Dw_{D∩I})⁻¹ using FiniteRelativeLongest. The declared supporting endpoints separately establish elementary prefixes, simultaneous-prefix minimality and exactly two standard words.",
+            "locator": "Statement and Source notes of lem-two-generator-minimal-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-lem-two-generator-minimal-artin-tits-normalisers"
+          },
+          "deps": [
+            "StandardExpressions",
+            "FiniteRelativeLongest",
+            "StandardFactorCount",
+            "GeneratorsAndStandardLength"
+          ],
+          "external": []
+        },
+        {
+          "id": "AtomicBraidRelations",
+          "title": "Atomic braid relations and contextual replacements",
+          "kind": "definition",
+          "main": false,
+          "article": {
+            "statement": "Under Lemma 4.15's hypotheses, equating the two standard expressions of v_{a,b,I} in (4.16) is an atomic braid relation.",
+            "locator": "Definition 4.18, Lemma 4.15 and equation (4.16), printed p. 19.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=19"
+          },
+          "portal": {
+            "statement": "For distinct a,b outside an associate I with finite Φ_{I∪{a,b}}\\Φ_I, the equality of the two supplied standard expressions defines the atomic braid relation. In the main theorem a move replaces either side inside a composable expression, retaining the surrounding factors.",
+            "locator": "Definition of def-atomic-braid-artin-tits-normalisers; contextual use in the Statement of thm-atomic-matsumoto-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-atomic-braid-artin-tits-normalisers"
+          },
+          "deps": [
+            "StandardExpressions",
+            "TwoGeneratorMinimal"
+          ],
+          "external": []
+        },
+        {
+          "id": "AtomicMatsumoto",
+          "title": "Theorem 1.4 / 4.21: Atomic Matsumoto",
+          "kind": "theorem",
+          "main": true,
+          "article": {
+            "statement": "Let Γ be a Coxeter diagram, J⊆Γ₀, BH(J) its Brink–Howlett groupoid, and I,K associates of J. Any two standard expressions of w∈Hom_BH(I,K) are related by a sequence of atomic braid relations. Preserve the arbitrary-Coxeter-type scope: neither W, W_J, nor the enlarged parabolics W_{I∪{a}} are globally assumed finite. Standard expressions and atomic braid relations have exactly the meanings of Definitions 4.9 and 4.18.",
+            "locator": "Theorem 1.4, printed p. 3; Theorem 4.21 and Remark 4.22, printed p. 20; Definitions 4.9 and 4.18, printed pp. 17 and 19.",
+            "url": "https://arxiv.org/pdf/2509.21915#page=20"
+          },
+          "portal": {
+            "statement": "For a Coxeter system without rank or type restriction, arbitrary J and associates I,K, any two finite length-additive elementary expressions of the same morphism w:I→K are connected by finitely many atomic braid relations. The finite relative-root condition needed for a two-generator relation is derived from the common prefixes; it is not added as a hypothesis of the main theorem.",
+            "locator": "Statement, Facts & Assumptions and External input of thm-atomic-matsumoto-artin-tits-normalisers.",
+            "url": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-thm-atomic-matsumoto-artin-tits-normalisers"
+          },
+          "deps": [
+            "StandardExpressions",
+            "StandardFactorCount",
+            "GeneratorsAndStandardLength",
+            "TwoGeneratorMinimal",
+            "AtomicBraidRelations"
+          ],
+          "external": []
+        }
+      ],
+      "external": [
+        {
+          "id": "existing-vector",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.Vector",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/Geometry.lean#L23",
+          "usage": "Root vector type. Inspected local source at /home/lazyinspirit/Projects/artin-tits-normalisers-lean/ArtinNormalisers/Theorem18/Geometry.lean; unchanged between the recorded revision and local HEAD."
+        },
+        {
+          "id": "existing-dual",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.Dual",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/Geometry.lean#L26",
+          "usage": "Ambient algebraic dual space."
+        },
+        {
+          "id": "existing-relative-subspace",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.relativeSubspace",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/Geometry.lean#L85",
+          "usage": "Defines ΘJ by vanishing on the simple roots indexed by J."
+        },
+        {
+          "id": "existing-dual-coordinates",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.dualCoordinates",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/Geometry.lean#L32",
+          "usage": "Induces the coordinate Euclidean topology on ΘJ in finite rank."
+        },
+        {
+          "id": "existing-retained-roots",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.retainedRoots",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/Geometry.lean#L124",
+          "usage": "Defines the relative roots by existence of a nonzero evaluation on ΘJ."
+        },
+        {
+          "id": "existing-restricted-hyperplane",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.restrictedHyperplane",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/Geometry.lean#L128",
+          "usage": "Constructs each restricted evaluation kernel as a submodule of ΘJ."
+        },
+        {
+          "id": "existing-dual-action",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Theorem18.dualAction",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/ArtinNormalisers/Theorem18/NormalizerAction.lean#L23",
+          "usage": "Defines the translates of the closed fundamental chamber forming the Tits cone. Inspected local source; unchanged at local HEAD."
+        },
+        {
+          "id": "existing-dominant",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "ArtinNormalisers.Landmark1.IsDominant",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/landmarks/ArtinLandmarks/Dominant.lean#L25",
+          "usage": "Membership in the closed fundamental chamber. Inspected local source; unchanged at local HEAD."
+        },
+        {
+          "id": "mathlib-coxeter-group",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterMatrix.Group",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/GroupTheory/Coxeter/Basic.lean#L108",
+          "usage": "The Coxeter group indexing chamber translates; inspected the pinned local mathlib source."
+        },
+        {
+          "id": "mathlib-induced-topology",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "TopologicalSpace.induced",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Topology/Defs/Induced.lean#L65",
+          "usage": "Pulls the coordinate topology back to ΘJ."
+        },
+        {
+          "id": "mathlib-interior",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "interior",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Topology/Defs/Basic.lean#L122",
+          "usage": "Takes the interior of Cone(J) as a subset of ΘJ with the explicitly supplied topology."
+        },
+        {
+          "id": "mathlib-set-image",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Set.image",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Set/Defs.lean#L261",
+          "usage": "Forms the set of distinct traces of positive relative roots."
+        },
+        {
+          "id": "existing-geometric-representation",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterSystem.geometricRepresentation",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean#L475",
+          "usage": "Defines the action used in the arrow predicate. Inspected the corresponding local source; unchanged at local HEAD 1bdd7a76d6447fe84bc46aab09120f20292bf334. The expression compiled with import ArtinDeligne in a noncomputable example under Lean v4.36.0-rc2."
+        },
+        {
+          "id": "existing-parabolic",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterSystem.parabolic",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean#L115",
+          "usage": "The supplied endpoint uses parabolic conjugacy to define its object subtype."
+        },
+        {
+          "id": "mathlib-groupoid",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "CategoryTheory.Groupoid",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/CategoryTheory/Groupoid.lean#L46",
+          "usage": "Constructs the groupoid directly, including its inherited category fields. Inspected this pinned source. A fresh bounded GitHub search for '\"Brink\" \"Howlett\" language:Lean' returned no results; no specialized external construction is assumed."
+        },
+        {
+          "id": "mathlib-single",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Finsupp.single",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Finsupp/Single.lean#L47",
+          "usage": "Represents each simple root by its basis vector."
+        },
+        {
+          "id": "mathlib-image",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Set.image",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Set/Defs.lean#L261",
+          "usage": "Forms simple-root sets and their images under the geometric representation."
+        },
+        {
+          "id": "mathlib-image-image",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Set.image_image",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Set/Image.lean#L235",
+          "usage": "Combines successive images in both local action identities."
+        },
+        {
+          "id": "mathlib-image-id",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Set.image_id'",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Set/Image.lean#L308",
+          "usage": "Closes the identity-arrow and inverse-action image calculations."
+        },
+        {
+          "id": "mathlib-map-mul",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "map_mul",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Hom/Defs.lean#L326",
+          "usage": "Expands the representation of a product."
+        },
+        {
+          "id": "mathlib-map-one",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "map_one",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Hom/Defs.lean#L234",
+          "usage": "Expands the representation of the identity."
+        },
+        {
+          "id": "mathlib-mul-apply",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "mul_apply_eq_comp",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/IsApply.lean#L118",
+          "usage": "Identifies multiplication of representation endomorphisms with composition."
+        },
+        {
+          "id": "mathlib-one-apply",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "one_apply_eq_self",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/IsApply.lean#L96",
+          "usage": "The identity endomorphism fixes each root."
+        },
+        {
+          "id": "mathlib-representation-inverse",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Representation.inv_self_apply",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/RepresentationTheory/Basic.lean#L92",
+          "usage": "Cancels the inverse representation action in the local image_inv proof."
+        },
+        {
+          "id": "mathlib-one-mul",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "one_mul",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Monoid.lean#L91",
+          "usage": "Proves id_comp on arrow labels."
+        },
+        {
+          "id": "mathlib-mul-one",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "mul_one",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Monoid.lean#L95",
+          "usage": "Proves comp_id on arrow labels."
+        },
+        {
+          "id": "mathlib-mul-assoc",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "mul_assoc",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Semigroup.lean#L166",
+          "usage": "Proves associativity of composition on labels."
+        },
+        {
+          "id": "mathlib-inv-mul",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "inv_mul_cancel",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Defs.lean#L54",
+          "usage": "Proves inv_comp on labels."
+        },
+        {
+          "id": "mathlib-mul-inv",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "mul_inv_cancel",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Defs.lean#L62",
+          "usage": "Proves comp_inv on labels."
+        },
+        {
+          "id": "lean-subtype-ext",
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "license": "Apache-2.0",
+          "declaration": "Subtype.ext",
+          "url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/src/Init/Core.lean#L1377",
+          "usage": "Lifts equality of group labels to equality of subtype arrows."
+        },
+        {
+          "id": "lean-congrarg",
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "license": "Apache-2.0",
+          "declaration": "congrArg",
+          "url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/src/Init/Prelude.lean#L415",
+          "usage": "Applies inverse-action image to the reversed arrow predicate."
+        },
+        {
+          "id": "mathlib-subgroup-map",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Subgroup.map",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Subgroup/Map.lean#L112",
+          "usage": "Occurs in the supplied object subtype's conjugacy condition."
+        },
+        {
+          "id": "mathlib-conjugation",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "MulAut.conj",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/End.lean#L721",
+          "usage": "Occurs in the supplied object subtype's conjugacy condition."
+        },
+        {
+          "id": "mathlib-equiv-hom",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "MulEquiv.toMonoidHom",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Algebra/Group/Equiv/Defs.lean#L517",
+          "usage": "Converts conjugation to the homomorphism used in the supplied object subtype."
+        },
+        {
+          "id": "parabolic",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterSystem.parabolic",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean#L114",
+          "usage": "Standard parabolic subgroup. Inspected local vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean; unchanged at local HEAD 1bdd7a76d6447fe84bc46aab09120f20292bf334."
+        },
+        {
+          "id": "parabolic-mono",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterSystem.parabolic_mono",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean#L129",
+          "usage": "Constructs W_L → W_D from L ⊆ D. Inspected the local declaration; unchanged at local HEAD."
+        },
+        {
+          "id": "geometric-representation",
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterSystem.geometricRepresentation",
+          "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean#L475",
+          "usage": "Defines the root action appearing in the opposition choice predicate. Inspected local source; unchanged at local HEAD."
+        },
+        {
+          "id": "coxeter-length",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "CoxeterSystem.length",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/GroupTheory/Coxeter/Length.lean#L73",
+          "usage": "Ambient Coxeter length maximized on each finite subparabolic; inspected pinned local source."
+        },
+        {
+          "id": "finite-injection",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Finite.of_injective",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Fintype/EquivFin.lean#L181",
+          "usage": "Transfers finiteness from W_D to W_L through the explicit injective inclusion."
+        },
+        {
+          "id": "finite-maximum",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Finite.exists_max",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Fintype/Lattice.lean#L54",
+          "usage": "Provides a maximum-length witness. Fresh GitHub search for \"Finite.exists_max\" repo:leanprover-community/mathlib4 found this declaration at indexed revision bb3798b8ca9bdd3c81ccdbcf5273fea6cef76a6f; actual proof use and source inspection are at the pinned revision recorded here."
+        },
+        {
+          "id": "equiv-refl",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Equiv.refl",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Logic/Equiv/Defs.lean#L138",
+          "usage": "Supplies inhabitedness of D ≃ D, without asserting the opposition equation."
+        },
+        {
+          "id": "simple-root",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Finsupp.single",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Finsupp/Single.lean#L47",
+          "usage": "Expresses simple roots as coordinate basis vectors in the opposition predicate."
+        },
+        {
+          "id": "component-path",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Relation.ReflTransGen; Relation.ReflTransGen.refl",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Logic/Relation.lean#L382",
+          "usage": "Encodes induced-diagram connectivity and the zero-edge path establishing a ∈ D."
+        },
+        {
+          "id": "insert-membership",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Set.mem_insert",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Data/Set/Insert.lean#L53",
+          "usage": "Shows a ∈ insert a I."
+        },
+        {
+          "id": "difference-subset",
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "license": "Apache-2.0",
+          "declaration": "Set.sdiff_subset",
+          "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/Order/BooleanAlgebra/Set.lean#L230",
+          "usage": "Provides D \\ {a} ⊆ D for the first longest-element factor."
+        },
+        {
+          "id": "choose",
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "license": "Apache-2.0",
+          "declaration": "Classical.choose",
+          "url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/src/Init/Classical.lean#L29",
+          "usage": "Selects the witness from Finite.exists_max. Inspected installed source; revision confirmed against the v4.36.0-rc2 tag."
+        },
+        {
+          "id": "epsilon",
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "license": "Apache-2.0",
+          "declaration": "Classical.epsilon",
+          "url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/src/Init/Classical.lean#L109",
+          "usage": "Implements the supplied raw-data opposition choice. No epsilon specification theorem is invoked or presumed."
+        },
+        {
+          "id": "subtype-ext",
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "license": "Apache-2.0",
+          "declaration": "Subtype.ext",
+          "url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/src/Init/Core.lean#L1377",
+          "usage": "Proves injectivity of parabolic inclusion from equality of underlying elements."
+        },
+        {
+          "id": "congr-arg",
+          "repository": "https://github.com/leanprover/lean4",
+          "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+          "license": "Apache-2.0",
+          "declaration": "congrArg",
+          "url": "https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/src/Init/Prelude.lean#L415",
+          "usage": "Projects equality in W_D to equality in W."
+        }
+      ],
+      "investigation": {
+        "status": "selection_complete_with_explicit_scope_and_formalization_gaps",
+        "selected_intermediate_items": 20,
+        "selected_main_theorems": 2,
+        "preserved_request": {
+          "title": "Artin–Tits normalisers: Theorems 1.3 and 1.4",
+          "request": "Formalize exactly Theorem 1.3 (= Theorem 4.7, printed p. 2) and Theorem 1.4 (= Theorem 4.21 Atomic Matsumoto, printed p. 3) of arXiv:2509.21915. Preserve all original assumptions and arbitrary-Coxeter-type scope, not merely finite/spherical type. Skip repository creation. Fully utilize existing proofs at /home/lazyinspirit/Projects/artin-tits-normalisers-lean; search actual declarations first and record exact paths/commit. Theorem 1.8 is already completed and is not a new obligation. All existing packages are available via import ArtinDeligne, including chambers/ and ribbons/; inspect those, deligne/ and docs/navigation/. Original PDF and extracted text are /home/lazyinspirit/Projects/workflow-engines/.research-workflow/artin-tits-normalisers-2509-21915-20261113/article.pdf and article.txt. Full local Alphabeta Research portal graph and numbered proofs: /home/lazyinspirit/Projects/prestige-math-library/research-portal/artin-tits-normalisers-2509-21915/. Shared library items: /home/lazyinspirit/Projects/prestige-math-library/items/. Study the full dependency graph structurally; read the full article and source context needed to select the most important prerequisites, not only search snippets. You need not fully read every transitive dependency source before selecting up to 20 important items; report what you read and relevant gaps honestly. Use supplied public portal URL for direct item citations. Existing declarations can supply prerequisites directly by imported name; do not add new items merely to reprove available results. Review only endpoints, never individual proof steps. Use numbered Alphabeta steps as inspiration. New local helpers without original standalone statements must truthfully say so and cite parent result/page/portal, never invent attribution. Keep all source outside this new package read-only. Existing source commit: 8668c70d25e6c5d63c313bac756052f9c83ee7f0 Prior prerequisite investigation produced a partial source/graph report at /home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14/evidence/prerequisites-9d02fc77-236f-4ba3-b56f-1c73158cdabd.json; inspect and reuse its actual findings, reuse its recorded source reading and GitHub searches, and do not claim unfinished reading as complete. The subsequent investigation is /home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14/evidence/prerequisites-c4f3934a-ee4c-4a84-be76-023266192596.json; it contains fresh GitHub search and both main endpoints. Use its findings, complete the selection now, and identify unresolved assumptions and reading limits without inventing coverage. The user asks for up to 20 important prerequisites, not semantic review of every transitive supplier; actual external use is recorded later when proofs are authored.",
+          "article": "https://arxiv.org/pdf/2509.21915",
+          "portal": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915",
+          "directory": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14",
+          "github": "lazyinspirit/artin-tits-normalisers-lean",
+          "visibility": "public",
+          "lean": "leanprover/lean4:v4.36.0-rc2",
+          "mathlib": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "imports": [
+            "ArtinDeligne"
+          ],
+          "existing": true
+        },
+        "execution_contract": {
+          "repository_created": false,
+          "source_repositories_modified": false,
+          "agents_spawned": false,
+          "writes": "Only investigation files, downloaded source material and rendered endpoint pages under /tmp/lean-agent-9U2rM6.",
+          "review_scope": "Endpoint statements, assumptions, imports, source attribution and graph structure; no individual Lean or numbered portal proof-step audit.",
+          "theorem_1_8": "Completed existing work, inspected for context and excluded from the new obligations."
+        },
+        "prior_reports": [
+          {
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14/evidence/prerequisites-9d02fc77-236f-4ba3-b56f-1c73158cdabd.json",
+            "sha256": "759d1f1de40ba65b17c4df09664b799cc5e67a4fb779f1c43d6b8f3f87f945fb",
+            "reused": "Structural graph findings, article locators, existing declaration candidates and finite-group scope warnings. Its unsuccessful network searches were retained as historical failures, not successful searches."
+          },
+          {
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14/evidence/prerequisites-c4f3934a-ee4c-4a84-be76-023266192596.json",
+            "sha256": "aff21a94407c6bf23e7fa47fbc308ccbf7bf1666932141e070818b7bc820ae97",
+            "reused": "Both main endpoints, completed bounded GitHub searches, pinned TauCeti source comparison and resolved network-access findings. Its unfinished article/dependency reading was not credited as complete."
+          }
+        ],
+        "repository_inspection": {
+          "inspected_before_selection": true,
+          "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+          "requested_revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+          "observed_local_head": "1bdd7a76d6447fe84bc46aab09120f20292bf334",
+          "revision_comparison": "A fresh diff found no changes between these commits in ArtinNormalisers, chambers, ribbons, deligne, docs/navigation or vendor.",
+          "license": "Apache-2.0, read from the repository LICENSE.",
+          "existing_package": "theorems13-14/Proofs.lean contains only '-- Generated imports follow.'. Existing state.json modifications and untracked evidence were left untouched.",
+          "imports": "Read deligne/ArtinDeligne.lean and the chamber/ribbon aggregate modules. A bounded textual import traversal from ArtinDeligne reached the listed weak-inversion, covering, chamber-label, atomic-ribbon, normaliser and TauCeti modules. No fresh Lean elaboration was performed.",
+          "navigation": "Read docs/navigation/tools/README.md and important-dependencies.md. Navigation metadata describes compiled-source provenance; it is not a fresh build or mathematical verification."
+        },
+        "existing_declarations": [
+          {
+            "declaration": "ArtinNormalisers.Chamber3.length_eq_add_iff_rootInversions_subset_system",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers/ArtinChambers/WeakInversions.lean:76",
+            "import": "ArtinChambers.WeakInversions",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {I W : Type*} [Group W] {M : CoxeterMatrix I}, cs : CoxeterSystem M W, and d f : W: cs.length f = cs.length d + cs.length (d⁻¹ * f) ↔ ∀ r ∈ cs.geometricRoots, 0 < r → cs.geometricRepresentation d⁻¹ r < 0 → cs.geometricRepresentation f⁻¹ r < 0.",
+            "disposition": "Reuse this completed arbitrary-type endpoint for prefix/inversion equivalence; no new item requests its reconstruction."
+          },
+          {
+            "declaration": "ArtinNormalisers.Coxeter.exists_minimal_normalizer",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ArtinNormalisers/Artin/CoxeterNormalizer.lean:98",
+            "import": "ArtinNormalisers.Artin.CoxeterNormalizer",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {I W : Type*} [Group W] {M : CoxeterMatrix I}, cs : CoxeterSystem M W, {J : Set I}, and {w : W}, if hw : w ∈ Subgroup.normalizer (cs.parabolic J : Set W), then ∃ d v, v ∈ cs.parabolic J ∧ d = w * v ∧ d ∈ Subgroup.normalizer (cs.parabolic J : Set W) ∧ cs.IsMinimalCosetRep J d.",
+            "disposition": "Reuse the existing arbitrary-type minimal normaliser representative theorem."
+          },
+          {
+            "declaration": "CoxeterSystem.exists_isMinimalCosetRep",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean:263",
+            "import": "TauCeti.GroupTheory.Coxeter.Parabolic",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {B W : Type*} [Group W] {M : CoxeterMatrix B}, cs : CoxeterSystem M W, J : Set B and w : W: ∃ v ∈ cs.parabolic J, cs.IsMinimalCosetRep J (w * v).",
+            "disposition": "Existing arbitrary-rank parabolic foundation; reuse directly."
+          },
+          {
+            "declaration": "CoxeterSystem.length_mul_of_isMinimalCosetRep",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean:307",
+            "import": "TauCeti.GroupTheory.Coxeter.Parabolic",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {B W : Type*} [Group W] {M : CoxeterMatrix B}, cs : CoxeterSystem M W, {J : Set B} {u : W}, hu : cs.IsMinimalCosetRep J u, {v : W}, and hv : v ∈ cs.parabolic J: cs.length (u * v) = cs.length u + cs.length v.",
+            "disposition": "Reuse completed parabolic length additivity without adding finiteness."
+          },
+          {
+            "declaration": "CoxeterSystem.IsMinimalCosetRep.eq_of_inv_mul_mem",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean:407",
+            "import": "TauCeti.GroupTheory.Coxeter.Parabolic",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {B W : Type*} [Group W] {M : CoxeterMatrix B}, cs : CoxeterSystem M W, {J : Set B} {u v : W}, hu : cs.IsMinimalCosetRep J u, hv : cs.IsMinimalCosetRep J v, and h : u⁻¹ * v ∈ cs.parabolic J: u = v.",
+            "disposition": "Reuse completed uniqueness of minimal coset representatives."
+          },
+          {
+            "declaration": "ArtinNormalisers.Chamber3.IsCoveringFunctor",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers/ArtinChambers/GroupoidCover.lean:34",
+            "import": "ArtinChambers.GroupoidCover",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For C : Type u, D : Type u′, [Category.{v} C], [Category.{v′} D], and F : C ⥤ D, IsCoveringFunctor F := ∀ X, Function.Bijective (mapOutgoing F X). Here Outgoing C X := Σ Y : C, X ⟶ Y, and mapOutgoing sends ⟨Y,f⟩ to ⟨F.obj Y,F.map f⟩.",
+            "disposition": "Reuse the general covering definition and its existing lifting API; do not reconstruct them."
+          },
+          {
+            "declaration": "ArtinNormalisers.Chamber3.RawFacetLabel",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers/ArtinChambers/FacetTransport.lean:28",
+            "import": "ArtinChambers.FacetTransport",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {I : Type*}, M : CoxeterMatrix I and J : Set I, the structure has indices : Set I, representative : M.Group, and parabolic_conjugacy : (Artin.coxeterParabolic M indices).map (MulAut.conj representative).toMonoidHom = Artin.coxeterParabolic M J.",
+            "disposition": "Reusable arbitrary-type conjugacy-label data. It does not itself impose the minimum-representative condition of Cham(J)."
+          },
+          {
+            "declaration": "ArtinNormalisers.Chamber3.facetLabelEquivActualChamber",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/chambers/ArtinChambers/ChamberLabels.lean:169",
+            "import": "ArtinChambers.ChamberLabels",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {I : Type*}, M : CoxeterMatrix I, [Finite M.Group], and J : Set I: FacetLabel M J ≃ ActualChamber M J.",
+            "disposition": "Inspected existing finite-Coxeter-group theorem. It cannot discharge ChamberLabelling for arbitrary Coxeter type."
+          },
+          {
+            "declaration": "ArtinNormalisers.Ribbon2.AtomicWord.pairLcm_coxeter_length_additive",
+            "path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/ribbons/ArtinRibbons/AtomicCoxeter.lean:80",
+            "import": "ArtinRibbons.AtomicCoxeter",
+            "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+            "full_statement": "For {I : Type*}, {M : CoxeterMatrix I}, [Finite M.Group], {X Y : RibbonObject M}, p : AtomicWord M X Y, a b : I, and he : p.eval = pairRibbonLcm M X.indices a b: M.toCoxeterSystem.length (Artin.projection M p.eval) = p.coxeterWeight.",
+            "disposition": "Inspected spherical ribbon result, alongside RibbonLcm. It is not the arbitrary-type Atomic Matsumoto theorem. Applying finite results inside a spherical component would require an explicit restricted-system and ambient-compatibility argument."
+          }
+        ],
+        "graph_coverage": {
+          "path": "/home/lazyinspirit/Projects/prestige-math-library/research-portal/artin-tits-normalisers-2509-21915/graph.json",
+          "sha256": "778504bc0c09a3c5c0f282ca6be8e05bfa4324a9f1dfb377a5da63584572c41a",
+          "fresh_structural_traversal": {
+            "portal_nodes": 275,
+            "shared_library_nodes": 2463,
+            "total_nodes": 2738,
+            "dependency_edges": 15683,
+            "missing_dependency_nodes": 0,
+            "cycles": 0
+          },
+          "requested_endpoint_closure": {
+            "portal_nodes_including_endpoints": 105,
+            "shared_library_nodes": 1346,
+            "total_nodes": 1451,
+            "missing_source_files": 0,
+            "shared_source_hash_mismatches": 0
+          },
+          "selection_semantics": "The items are a curated prerequisite selection, not an enumeration of every transitive supplier. Internal deps summarize relevant selected prerequisites and article/portal routes. GeodesicAdditivity, ChamberMorphismCorrespondence and StandardGeodesicCorrespondence are selected from the article's route although outside the current portal graph's two-endpoint closure. All selected portal files exist.",
+          "semantic_reading_of_entire_closure": false,
+          "omitted_support": "Existing Coxeter, root, parabolic, normaliser-quotient and general category APIs remain imported suppliers. Portal component, compressed-root and two-generator sublemmas remain supporting sources rather than additional selected obligations."
+        },
+        "reading": {
+          "article": {
+            "text": "/home/lazyinspirit/Projects/workflow-engines/.research-workflow/artin-tits-normalisers-2509-21915-20261113/article.txt",
+            "coverage": "Read the complete supplied extracted text, PDF pages 1–33, including background, Sections 3–4, spherical Sections 5–6, the D4 example and references.",
+            "visual_checks": "Rendered and inspected PDF pages 16, 17, 19 and 20 to check the main endpoints, Lemma 4.15's finite-root condition, definitions and notation.",
+            "limits": "No claim of visual inspection of every page or figure, or reading every bibliography source."
+          },
+          "portal": {
+            "coverage": "Read the selected endpoint statements/definitions, assumptions and relevant source notes. Reused the subsequent report's full reading of both main entries. Inspected the supporting opposite-identification, parallel-root-class, general-rank-input, compressed-additivity, elementary-root-prefix, simultaneous-prefix and rank-two-standard-word endpoints.",
+            "numbered_proofs": "Consulted the supplied portal material for organization and source context; no individual numbered step is certified by this investigation.",
+            "limits": "Did not semantically read all 105 portal or 1346 shared sources in the requested closure."
+          },
+          "shared_library": {
+            "inspected_endpoints": [
+              "items/thm-arbitrary-rank-finite-parabolics-and-bruhat-subword.md",
+              "items/thm-hh-parabolic-minimal-representatives-and-length-additivity.md",
+              "items/thm-cg-root-inversion-formulas-and-strong-exchange.md"
+            ],
+            "finding": "The latter two displayed endpoints assume a finite generating set. Their statements must not be silently generalized to arbitrary rank; the arbitrary-rank supplier and existing Lean endpoints have separate scope.",
+            "limits": "Endpoint/source-context inspection, not proof-step review or complete shared-library reading."
+          },
+          "independent_source": {
+            "url": "https://arxiv.org/pdf/2606.12937v1",
+            "title": "Root systems, Tits cones and imaginary cones of Brink–Howlett groupoids",
+            "fresh_access": "HTTP 200; PDF downloaded and text extracted in the temporary directory.",
+            "read": "Relevant definitions and endpoint context in §§1.1–1.9, §§1.18–1.28, Theorem 1.22, Lemma 1.25, Remark 1.26, the rank-two statement in §1.27, Theorem 2.9, Propositions 2.10–2.11, Lemma 3.12 and Proposition 3.13.",
+            "locators": "PDF pp. 3–5, 8–11, 22–23 and 42–43.",
+            "limits": "Not the entire paper or its cited background proofs. Original Brink–Howlett (1999), Vinberg and the Iyama–Wemyss draft were not independently read in this pass; their portal source notes remain attributed reports."
+          }
+        },
+        "search_findings": {
+          "mathlib": {
+            "repository": "leanprover-community/mathlib4",
+            "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+            "license": "Apache-2.0",
+            "fresh_local_search": "Searched the pinned Coxeter directory and CategoryTheory/Groupoid.lean for Matsumoto, Brink, Howlett, atomic and groupoid terminology.",
+            "direct_result": "GroupTheory/Coxeter/Basic.lean:78 still lists stating and proving Matsumoto's theorem as future work. No direct Atomic Matsumoto endpoint was found in the searched paths.",
+            "indirect_candidate": {
+              "declaration": "CategoryTheory.Groupoid.ofHomUnique",
+              "import": "Mathlib.CategoryTheory.Groupoid",
+              "full_statement": "For C : Type u with [Category.{v} C], all_unique : ∀ {X Y : C}, Unique (X ⟶ Y) supplies Groupoid.{v} C.",
+              "url": "https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/Mathlib/CategoryTheory/Groupoid.lean#L140",
+              "disposition": "Inspected general singleton-hom groupoid construction; candidate only, no authored proof use."
+            },
+            "fresh_github_query": {
+              "query": "Matsumoto language:Lean repo:leanprover-community/mathlib4",
+              "total_count": 0,
+              "qualification": "GitHub indexed-branch search is distinct from the pinned local search and does not establish universal absence."
+            }
+          },
+          "github": {
+            "method": "Fresh authenticated gh code searches plus explicitly reused searches from the subsequent report.",
+            "fresh_queries": [
+              {
+                "query": "\"atomic\" \"Matsumoto\" language:Lean",
+                "total_count": 0
+              },
+              {
+                "query": "\"Brink\" \"Howlett\" language:Lean",
+                "total_count": 0
+              }
+            ],
+            "reused_searches": [
+              {
+                "query": "\"Matsumoto\" language:Lean",
+                "recorded_total_count": 139,
+                "recorded_review": "First 15 results inspected in the subsequent report."
+              },
+              {
+                "query": "\"atomic\" \"braid\" language:Lean",
+                "recorded_total_count": 22
+              },
+              {
+                "query": "\"covering\" \"groupoid\" language:Lean repo:leanprover-community/mathlib4",
+                "recorded_total_count": 6
+              }
+            ],
+            "candidates": [
+              {
+                "repository": "TauCetiProject/TauCeti",
+                "revision": "62bbc0596dc3539d488232e4e924a338548ea0a9",
+                "license": "Apache-2.0",
+                "declaration": "TauCeti.braidEquivalent_of_isReduced_wordProd_eq",
+                "import": "TauCeti.GroupTheory.Coxeter.Matsumoto",
+                "full_statement": "For {B W : Type*} [Group W] {M : CoxeterMatrix B}, cs : CoxeterSystem M W, and {ω ω′ : List B}, hypotheses cs.IsReduced ω, cs.IsReduced ω′, and cs.wordProd ω = cs.wordProd ω′ imply TauCeti.BraidEquivalent M ω ω′.",
+                "url": "https://github.com/TauCetiProject/TauCeti/blob/62bbc0596dc3539d488232e4e924a338548ea0a9/TauCeti/GroupTheory/Coxeter/Matsumoto.lean",
+                "local_path": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/vendor/TauCeti/GroupTheory/Coxeter/Matsumoto.lean:76",
+                "provenance": "The subsequent report fetched this pinned upstream file and recorded SHA256 64892e2cdee487ad98c98b4e9ca0f078ca3529d7eca2121187e0d3ed9df3f627 matching the vendored file. Its local endpoint was inspected again here.",
+                "disposition": "Completed classical arbitrary-type Matsumoto supplier, already vendored and reachable through ArtinDeligne. It is not itself Atomic Matsumoto; no new proof use is claimed."
+              },
+              {
+                "repository": "AxiomMath/CFSG",
+                "revision": "5437cdc31389dd9aeaa5c2a9465a4e164f8dea33",
+                "url": "https://github.com/AxiomMath/CFSG/blob/5437cdc31389dd9aeaa5c2a9465a4e164f8dea33/CFSG/GroupActions/ExchangeMatsumoto.lean",
+                "disposition": "Historical candidate from the subsequent report. Its complete endpoint and license review remain unfinished; it is not accepted as a supplier."
+              }
+            ],
+            "qualification": "These are bounded searches and named candidates, not proof-use claims or an exhaustive nonexistence result."
+          }
+        },
+        "unresolved_assumptions_and_limits": [
+          {
+            "issue": "Geometric rank convention",
+            "detail": "The article states Theorems 1.3 and 4.7 without an explicit global finite-rank qualifier, while its geometric context uses finite-dimensional arguments. The portal explicitly separates arbitrary-rank algebraic covering from finite-rank chamber geometry. The selected main item preserves the full original statement. An exact Lean endpoint must resolve the intended geometric convention explicitly; neither finiteness of W nor an unstated rank restriction may replace it."
+          },
+          {
+            "issue": "Two-generator applicability",
+            "detail": "Lemma 4.15 requires finite Φ_{I∪{a,b}}\\Φ_I. For Atomic Matsumoto this must follow from the two elementary prefixes of the given morphism, rather than become a new main hypothesis. The portal invokes elementary inversion formulas, arbitrary-rank weak-prefix inclusion and Dyer–Gimenez Lemma 3.12(a), with arrow orientation translated by inversion. This bridge remains to be formalized using compatible existing declarations."
+          },
+          {
+            "issue": "Arbitrary-rank factor count and exactly-two supplier",
+            "detail": "The portal's compressed-root factor count, finite-relative-longest construction and exactly-two standard-word assertions are mathematical endpoints, not existing Lean proofs established by this investigation. Their supporting endpoints and relevant independent source statements were inspected. No semantic audit of every transitive supplier or kernel verification is claimed."
+          },
+          {
+            "issue": "Source-version and indexing observations",
+            "detail": "The portal records different theorem numbering in its Iyama–Wemyss draft and an indexing problem in the subsequent factor description of Dyer–Gimenez §1.27. It uses the exactly-two minimum-word assertion while obtaining initial factors separately. These observations do not establish a defect in the requested article."
+          },
+          {
+            "issue": "Finite existing endpoints",
+            "detail": "The existing chamber classification and atomic ribbon/lcm results carry [Finite M.Group]. They remain completed reusable work within those hypotheses, but cannot supply the requested arbitrary-Coxeter-type endpoints directly."
+          }
+        ],
+        "source_access": {
+          "required_local_sources_accessible": true,
+          "fresh_public_portal_check": "The direct UniversalBrinkHowlettCover portal URL returned HTTP 200 with browser headers.",
+          "reused_public_checks": "The subsequent report recorded HTTP 200 for both direct main-result portal URLs.",
+          "unresolved_required_access": [],
+          "qualification": "Unread bibliography sources and unfinished candidate review are reported as reading limits, not falsely reported as inaccessible or read."
+        },
+        "external_use_policy": {
+          "actual_new_external_uses": 0,
+          "explanation": "The top-level external list and each item's external list are empty because this task selects endpoints and no new Lean proofs were authored. Existing declarations and search candidates are recorded above with their hypotheses and provenance. Actual declaration uses must be populated when proofs are authored; shared mathematical graph nodes are not treated as compiled Lean suppliers."
+        },
+        "completion": {
+          "selection_completed": true,
+          "new_proofs_created": false,
+          "lean_verification_run": false,
+          "formalization_claim": "No claim that Theorems 1.3 or 1.4 have already been formalized. The requested endpoint selection is complete, retaining both full main obligations, reusable existing declarations, source-scope differences and explicit reading limits."
+        }
+      }
+    },
+    "translations": {
+      "BrinkHowlettGroupoid": {
+        "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J : Set S), CategoryTheory.Groupoid { I : Set S // ∃ w : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj w)) (CoxeterSystem.parabolic cs I) = CoxeterSystem.parabolic cs J }",
+        "value": "by\n  intro S W inst M cs J\n  let roots : Set S → Set (Finsupp S Real) :=\n    fun I => Set.image (fun i : S => Finsupp.single i (1 : Real)) I\n  exact {\n    Hom := fun I K => { w : W //\n      Set.image (CoxeterSystem.geometricRepresentation cs w) (roots K.val) = roots I.val }\n    id := fun I => ⟨1, by simp⟩\n    comp := fun {I K L} x y => ⟨x.val * y.val, by\n      calc\n        Set.image (CoxeterSystem.geometricRepresentation cs (x.val * y.val)) (roots L.val)\n            = Set.image (CoxeterSystem.geometricRepresentation cs x.val)\n                (Set.image (CoxeterSystem.geometricRepresentation cs y.val) (roots L.val)) := by\n                  simp only [map_mul, mul_apply_eq_comp, Set.image_image]\n        _ = roots I.val := by rw [y.property, x.property]⟩\n    id_comp := fun x => Subtype.ext (one_mul x.val)\n    comp_id := fun x => Subtype.ext (mul_one x.val)\n    assoc := fun x y z => Subtype.ext (mul_assoc x.val y.val z.val)\n    inv := fun {I K} x => ⟨x.val⁻¹, by\n      calc\n        Set.image (CoxeterSystem.geometricRepresentation cs x.val⁻¹) (roots I.val)\n            = Set.image (CoxeterSystem.geometricRepresentation cs x.val⁻¹)\n                (Set.image (CoxeterSystem.geometricRepresentation cs x.val) (roots K.val)) :=\n                  congrArg (Set.image (CoxeterSystem.geometricRepresentation cs x.val⁻¹)) x.property.symm\n        _ = roots K.val := by\n          simp only [Set.image_image, Representation.inv_self_apply, Set.image_id']⟩\n    inv_comp := fun x => Subtype.ext (inv_mul_cancel x.val)\n    comp_inv := fun x => Subtype.ext (mul_inv_cancel x.val)\n  }"
+      },
+      "SimpleWallCrossings": {
+        "type": "∀ (S : Type _) (W : Type _) [Group W] (M : CoxeterMatrix S) (cs : CoxeterSystem M W) (I : Set S) (a : S) (_ha : a ∉ I), let D : Set S := {b | b ∈ Set.insert a I ∧ Relation.ReflTransGen (fun i j : S => i ∈ Set.insert a I ∧ j ∈ Set.insert a I ∧ i ≠ j ∧ M i j ≠ 2) a b}; Finite (CoxeterSystem.parabolic cs D) → W × Set S × (W → W × Set S)",
+        "value": "fun S W _inst M cs I a _ha =>\n  let D : Set S := {b | b ∈ Set.insert a I ∧ Relation.ReflTransGen (fun i j : S => i ∈ Set.insert a I ∧ j ∈ Set.insert a I ∧ i ≠ j ∧ M i j ≠ 2) a b}\n  fun hD =>\n    letI : Finite (CoxeterSystem.parabolic cs D) := hD\n    let longest : (L : Set S) → L ⊆ D → W := fun L hL =>\n      letI : Finite (CoxeterSystem.parabolic cs L) :=\n        Finite.of_injective\n          (fun w : CoxeterSystem.parabolic cs L => (⟨(w : W), (CoxeterSystem.parabolic_mono cs hL) w.property⟩ : CoxeterSystem.parabolic cs D))\n          (fun _ _ h => Subtype.ext (congrArg (fun z : CoxeterSystem.parabolic cs D => (z : W)) h))\n      (Classical.choose (Finite.exists_max (fun w : CoxeterSystem.parabolic cs L => CoxeterSystem.length cs (w : W)))).val\n    let wD := longest D (fun _ h => h)\n    let opposition : Equiv D D :=\n      @Classical.epsilon (Equiv D D) ⟨Equiv.refl D⟩ (fun e => ∀ i : D, CoxeterSystem.geometricRepresentation cs wD (Finsupp.single (i : S) (1 : Real)) = -Finsupp.single (e i : S) (1 : Real))\n    let aD : D := ⟨a, ⟨Set.mem_insert a I, Relation.ReflTransGen.refl⟩⟩\n    let v := longest (D \\ {a}) Set.sdiff_subset * wD\n    let K : Set S := Set.insert a I \\ {(opposition aD : S)}\n    (v, K, fun x => (x * v, K))"
+      },
+      "ElementaryWallMorphism": {
+        "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J I : Set S) (hI : ∃ w : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj w)) (CoxeterSystem.parabolic cs I) = CoxeterSystem.parabolic cs J) (a : S) (ha : a ∉ I), let D : Set S := {b | b ∈ Set.insert a I ∧ Relation.ReflTransGen (fun i j : S => i ∈ Set.insert a I ∧ j ∈ Set.insert a I ∧ i ≠ j ∧ M i j ≠ 2) a b}; ∀ hD : Finite (CoxeterSystem.parabolic cs D), let crossing := SimpleWallCrossings S W M cs I a ha hD; ∃ hK : ∃ w : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj w)) (CoxeterSystem.parabolic cs crossing.2.1) = CoxeterSystem.parabolic cs J, ∃ f : (BrinkHowlettGroupoid cs J).Hom ⟨I, hI⟩ ⟨crossing.2.1, hK⟩, f.val = crossing.1",
+        "value": null
+      },
+      "FiniteRelativeLongest": {
+        "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (I : Set S) (a b : S), a ∉ I → b ∉ I → a ≠ b → let T : Set S := Set.insert a (Set.insert b I); let parabolicRoots : Set S → Set (Finsupp S Real) := fun L => {α | ∃ w : W, w ∈ CoxeterSystem.parabolic cs L ∧ ∃ i : S, i ∈ L ∧ CoxeterSystem.geometricRepresentation cs w (Finsupp.single i (1 : Real)) = α}; let simpleRoots : Set S → Set (Finsupp S Real) := fun L => Set.image (fun i : S => Finsupp.single i (1 : Real)) L; let positiveRoots : Set (Finsupp S Real) := {α | α ∈ CoxeterSystem.geometricRoots cs ∧ 0 < α}; let negativeRoots : Set (Finsupp S Real) := {α | α ∈ CoxeterSystem.geometricRoots cs ∧ α < 0}; let D : Set S := {i | i ∈ T ∧ (Relation.ReflTransGen (fun j k : S => j ∈ T ∧ k ∈ T ∧ j ≠ k ∧ M j k ≠ 2) a i ∨ Relation.ReflTransGen (fun j k : S => j ∈ T ∧ k ∈ T ∧ j ≠ k ∧ M j k ≠ 2) b i)}; Set.Finite (parabolicRoots T \\ parabolicRoots I) → Finite (CoxeterSystem.parabolic cs D) ∧ ∃ wD : CoxeterSystem.parabolic cs D, ∃ wDI : CoxeterSystem.parabolic cs (D ∩ I), (∀ u : CoxeterSystem.parabolic cs D, CoxeterSystem.length cs (u : W) ≤ CoxeterSystem.length cs (wD : W)) ∧ (∀ u : CoxeterSystem.parabolic cs (D ∩ I), CoxeterSystem.length cs (u : W) ≤ CoxeterSystem.length cs (wDI : W)) ∧ (let r : W := (wD : W) * (wDI : W); let q : W := r⁻¹; ∃ K : Set S, K ⊆ T ∧ (∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs K) = CoxeterSystem.parabolic cs I) ∧ Set.image (CoxeterSystem.geometricRepresentation cs r) (simpleRoots I) = simpleRoots K ∧ Set.image (CoxeterSystem.geometricRepresentation cs q) (simpleRoots K) = simpleRoots I ∧ positiveRoots ∩ Set.image (CoxeterSystem.geometricRepresentation cs q) negativeRoots = (parabolicRoots T ∩ positiveRoots) \\ (parabolicRoots I ∩ positiveRoots))",
+        "value": null
+      },
+      "StandardExpressions": {
+        "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J : Set S) (I K : { L : Set S // ∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs L) = CoxeterSystem.parabolic cs J }) (w : (BrinkHowlettGroupoid cs J).Hom I K), Type _",
+        "value": "fun {S W} _inst {M} cs J I K w =>\n  let Obj := { L : Set S // ∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs L) = CoxeterSystem.parabolic cs J }\n  let component : Set S → S → Set S := fun L a =>\n    { b | b ∈ Set.insert a L ∧ Relation.ReflTransGen\n      (fun i j : S => i ∈ Set.insert a L ∧ j ∈ Set.insert a L ∧ i ≠ j ∧ M i j ≠ 2) a b }\n  let Atom := { p : Obj × S // p.2 ∉ p.1.val ∧ Finite (CoxeterSystem.parabolic cs (component p.1.val p.2)) }\n  let crossing := fun e : Atom => SimpleWallCrossings S W M cs e.val.1.val e.val.2 e.property.1 e.property.2\n  { es : List Atom //\n    List.foldr\n      (fun e tail L => L = e.val.1.val ∧ tail (crossing e).2.1)\n      (fun L => L = K.val) es I.val ∧\n    List.prod (List.map (fun e => (crossing e).1) es) = w.val ∧\n    CoxeterSystem.length cs w.val =\n      List.sum (List.map (fun e => CoxeterSystem.length cs (crossing e).1) es) }"
+      }
+    }
+  },
+  "answer": {
+    "accept": true,
+    "reasons": "Accepted as the explicitly limited finite-rank definition. The portal assumes finite Γ₀; independently checked Iyama–Wemyss §§1.1–1.3 likewise use an n×n matrix and finite dual coordinates. The imported definitions give the stated relative subspace, Tits-cone intersection, relative interior, retained roots and distinct positive-root hyperplane traces. Neither W nor W_J is assumed finite. The article’s global rank convention remains unresolved and is explicitly reported; this acceptance does not authorize using this endpoint for arbitrary-rank conclusions."
+  }
+}

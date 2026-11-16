@@ -1,0 +1,6 @@
+{
+  "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J : Set S) (I K : { L : Set S // ∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs L) = CoxeterSystem.parabolic cs J }) (w : (BrinkHowlettGroupoid cs J).Hom I K) (e f : StandardExpressions cs J I K w), Relation.ReflTransGen (AtomicBraidRelations cs J) e.val f.val",
+  "value": null,
+  "source": "article",
+  "sourceReason": "The report does not identify this endpoint statement as defective."
+}

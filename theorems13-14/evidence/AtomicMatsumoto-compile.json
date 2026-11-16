@@ -1,0 +1,28 @@
+{
+  "source_sha256": "90b8e744af5302b22cd8a6861a209b723507d47d2a59c0d06a683f5ead26b445",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/AtomicMatsumoto.olean",
+      "Proofs/AtomicMatsumoto.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/AtomicMatsumoto-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/AtomicMatsumoto.lean:612:6: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/AtomicMatsumoto.lean:620:8: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/AtomicMatsumoto.lean:800:8: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```\nProofs/AtomicMatsumoto.lean:87:10: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:404:68: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:650:66: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:663:66: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:820:25: warning: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [t, root, hab]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:823:25: warning: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [t, root, hab.symm]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:829:27: warning: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [t, root, hz, hka, hkb]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/AtomicMatsumoto.lean:835:10: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_sub, map_smul, Finsupp.sub_apply, Finsupp.smul_apply, smul_eq_mul] at hh\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'AtomicMatsumoto' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

@@ -1,0 +1,28 @@
+{
+  "source_sha256": "80d8db3b8c3073b3696fbaaef0c1b1d335353e87eb4371b3cd8439254aa9c267",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/AtomicBraidRelations.olean",
+      "Proofs/AtomicBraidRelations.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/AtomicBraidRelations-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/AtomicBraidRelations.lean:34:10: warning: Variable name `hDa` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hDa\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nProofs/AtomicBraidRelations.lean:36:10: warning: Variable name `hDb` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hDb\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nProofs/AtomicBraidRelations.lean:38:10: warning: Variable name `K` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _K\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nProofs/AtomicBraidRelations.lean:40:10: warning: Variable name `q` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _q\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'AtomicBraidRelations' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

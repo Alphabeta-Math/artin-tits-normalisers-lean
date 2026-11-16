@@ -1,0 +1,28 @@
+{
+  "source_sha256": "d7acbb4c5dcc8e78b17f38cb2ffe9cb3579798ba630dd4d8c5b4681383fd5405",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/StandardExpressions.olean",
+      "Proofs/StandardExpressions.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/StandardExpressions-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/StandardExpressions.lean:7:275: warning: Variable name `w` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _w\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'StandardExpressions' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

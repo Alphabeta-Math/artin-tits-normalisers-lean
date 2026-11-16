@@ -1,0 +1,28 @@
+{
+  "source_sha256": "d9d20bd0874041984f5b48fb582f3d20d9e78105469ebf53e4de0989a2ea1e01",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/ChamberLabelling.olean",
+      "Proofs/ChamberLabelling.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/ChamberLabelling-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": ""
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'ChamberLabelling' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

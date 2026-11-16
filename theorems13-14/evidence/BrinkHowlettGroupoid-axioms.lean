@@ -1,0 +1,2 @@
+import Proofs.BrinkHowlettGroupoid
+#print axioms BrinkHowlettGroupoid

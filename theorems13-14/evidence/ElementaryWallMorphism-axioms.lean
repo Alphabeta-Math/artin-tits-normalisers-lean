@@ -1,0 +1,2 @@
+import Proofs.ElementaryWallMorphism
+#print axioms ElementaryWallMorphism

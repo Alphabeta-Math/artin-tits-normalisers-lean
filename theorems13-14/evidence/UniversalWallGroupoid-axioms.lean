@@ -1,0 +1,2 @@
+import Proofs.UniversalWallGroupoid
+#print axioms UniversalWallGroupoid

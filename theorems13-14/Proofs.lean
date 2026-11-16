@@ -1,1 +1,22 @@
--- Generated imports follow.
+import Proofs.RelativeCone
+import Proofs.RelativeLocalFiniteness
+import Proofs.ChamberLabelling
+import Proofs.SimpleWallCrossings
+import Proofs.AdjacentWallFormula
+import Proofs.FiniteWallPaths
+import Proofs.NormaliserChamberAction
+import Proofs.GeodesicAdditivity
+import Proofs.BrinkHowlettGroupoid
+import Proofs.ElementaryWallMorphism
+import Proofs.UniversalWallGroupoid
+import Proofs.UniversalGenerators
+import Proofs.ChamberMorphismCorrespondence
+import Proofs.UniversalBrinkHowlettCover
+import Proofs.StandardExpressions
+import Proofs.StandardGeodesicCorrespondence
+import Proofs.StandardFactorCount
+import Proofs.GeneratorsAndStandardLength
+import Proofs.FiniteRelativeLongest
+import Proofs.TwoGeneratorMinimal
+import Proofs.AtomicBraidRelations
+import Proofs.AtomicMatsumoto

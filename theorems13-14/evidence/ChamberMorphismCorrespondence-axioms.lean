@@ -1,0 +1,2 @@
+import Proofs.ChamberMorphismCorrespondence
+#print axioms ChamberMorphismCorrespondence

@@ -1,0 +1,28 @@
+{
+  "source_sha256": "ca810210e61a00445113253684183d002e29ddfef01196a4219498e15cbaa93a",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/UniversalGenerators.olean",
+      "Proofs/UniversalGenerators.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/UniversalGenerators-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": ""
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'UniversalGenerators' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

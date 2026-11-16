@@ -1,0 +1,28 @@
+{
+  "source_sha256": "188d1a99ab9ebb002d9594ce2c9ddcf4206159373d11b0d59185e2c64707c94c",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/StandardGeodesicCorrespondence.olean",
+      "Proofs/StandardGeodesicCorrespondence.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/StandardGeodesicCorrespondence-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/StandardGeodesicCorrespondence.lean:1118:10: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardGeodesicCorrespondence.lean:1126:12: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardGeodesicCorrespondence.lean:1319:38: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead\n\nHint: Replace the deprecated name:\n  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲\nProofs/StandardGeodesicCorrespondence.lean:1378:10: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardGeodesicCorrespondence.lean:1388:12: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardGeodesicCorrespondence.lean:488:12: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardGeodesicCorrespondence.lean:692:70: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardGeodesicCorrespondence.lean:870:70: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardGeodesicCorrespondence.lean:883:70: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardGeodesicCorrespondence.lean:974:27: warning: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [t, hh, hja]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardGeodesicCorrespondence.lean:979:14: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_sub, map_smul, Finsupp.sub_apply, Finsupp.smul_apply, smul_eq_mul] at htimage\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardGeodesicCorrespondence.lean:1273:70: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'StandardGeodesicCorrespondence' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

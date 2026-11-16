@@ -1,0 +1,28 @@
+{
+  "source_sha256": "e01cb4ca53ab05ac063cdebbc7187e8d080fe9c9fdf6b319d93035f0cde7da05",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/BrinkHowlettGroupoid.olean",
+      "Proofs/BrinkHowlettGroupoid.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/BrinkHowlettGroupoid-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/BrinkHowlettGroupoid.lean:5:0: warning: Definition `BrinkHowlettGroupoid` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this\ndefinition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'BrinkHowlettGroupoid' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

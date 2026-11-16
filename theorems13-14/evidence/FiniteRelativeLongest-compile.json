@@ -1,0 +1,28 @@
+{
+  "source_sha256": "08b3c101a99314b19ec5b2dab180dac6ab85339f8328c2387b525b51f5f53dbd",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/FiniteRelativeLongest.olean",
+      "Proofs/FiniteRelativeLongest.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/FiniteRelativeLongest-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/FiniteRelativeLongest.lean:810:2: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/FiniteRelativeLongest.lean:817:2: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/FiniteRelativeLongest.lean:392:8: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/FiniteRelativeLongest.lean:599:63: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'FiniteRelativeLongest' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

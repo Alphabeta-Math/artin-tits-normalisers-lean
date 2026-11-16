@@ -1,0 +1,132 @@
+{
+  "role": "prerequisites",
+  "context": {
+    "title": "Artin–Tits normalisers: Theorems 1.3 and 1.4",
+    "request": "Formalize exactly Theorem 1.3 (= Theorem 4.7, printed p. 2) and Theorem 1.4 (= Theorem 4.21 Atomic Matsumoto, printed p. 3) of arXiv:2509.21915. Preserve all original assumptions and arbitrary-Coxeter-type scope, not merely finite/spherical type. Skip repository creation. Fully utilize existing proofs at /home/lazyinspirit/Projects/artin-tits-normalisers-lean; search actual declarations first and record exact paths/commit. Theorem 1.8 is already completed and is not a new obligation. All existing packages are available via import ArtinDeligne, including chambers/ and ribbons/; inspect those, deligne/ and docs/navigation/. Original PDF and extracted text are /home/lazyinspirit/Projects/workflow-engines/.research-workflow/artin-tits-normalisers-2509-21915-20261113/article.pdf and article.txt. Full local Alphabeta Research portal graph and numbered proofs: /home/lazyinspirit/Projects/prestige-math-library/research-portal/artin-tits-normalisers-2509-21915/. Shared library items: /home/lazyinspirit/Projects/prestige-math-library/items/. Read full sources and graph, not only snippets. Use supplied public portal URL for direct item citations. Existing declarations can supply prerequisites directly by imported name; do not add new items merely to reprove available results. Review only endpoints, never individual proof steps. Use numbered Alphabeta steps as inspiration. New local helpers without original standalone statements must truthfully say so and cite parent result/page/portal, never invent attribution. Keep all source outside this new package read-only. Existing source commit: 8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+    "article": "https://arxiv.org/pdf/2509.21915",
+    "portal": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915",
+    "directory": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14",
+    "github": "lazyinspirit/artin-tits-normalisers-lean",
+    "visibility": "public",
+    "lean": "leanprover/lean4:v4.36.0-rc2",
+    "mathlib": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+    "imports": [
+      "ArtinDeligne"
+    ],
+    "existing": true
+  },
+  "answer": {
+    "items": [],
+    "external": [],
+    "investigation": {
+      "status": "failed",
+      "reason": "The required GitHub search could not be completed: requests to api.github.com and github.com failed with 'Temporary failure in name resolution'. The public Alphabeta item URL failed with the same error. Local article, portal, shared-library and repository files are accessible, but the complete source-reading investigation remains unfinished. No dependency selection or proof-use inventory is presented as complete.",
+      "preserved_request": {
+        "title": "Artin–Tits normalisers: Theorems 1.3 and 1.4",
+        "request": "Formalize exactly Theorem 1.3 (= Theorem 4.7, printed p. 2) and Theorem 1.4 (= Theorem 4.21 Atomic Matsumoto, printed p. 3) of arXiv:2509.21915. Preserve all original assumptions and arbitrary-Coxeter-type scope, not merely finite/spherical type. Skip repository creation. Fully utilize existing proofs at /home/lazyinspirit/Projects/artin-tits-normalisers-lean; search actual declarations first and record exact paths/commit. Theorem 1.8 is already completed and is not a new obligation. All existing packages are available via import ArtinDeligne, including chambers/ and ribbons/; inspect those, deligne/ and docs/navigation/. Original PDF and extracted text are /home/lazyinspirit/Projects/workflow-engines/.research-workflow/artin-tits-normalisers-2509-21915-20261113/article.pdf and article.txt. Full local Alphabeta Research portal graph and numbered proofs: /home/lazyinspirit/Projects/prestige-math-library/research-portal/artin-tits-normalisers-2509-21915/. Shared library items: /home/lazyinspirit/Projects/prestige-math-library/items/. Read full sources and graph, not only snippets. Use supplied public portal URL for direct item citations. Existing declarations can supply prerequisites directly by imported name; do not add new items merely to reprove available results. Review only endpoints, never individual proof steps. Use numbered Alphabeta steps as inspiration. New local helpers without original standalone statements must truthfully say so and cite parent result/page/portal, never invent attribution. Keep all source outside this new package read-only. Existing source commit: 8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+        "article": "https://arxiv.org/pdf/2509.21915",
+        "portal": "https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915",
+        "directory": "/home/lazyinspirit/Projects/artin-tits-normalisers-lean/theorems13-14",
+        "github": "lazyinspirit/artin-tits-normalisers-lean",
+        "visibility": "public",
+        "lean": "leanprover/lean4:v4.36.0-rc2",
+        "mathlib": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+        "imports": [
+          "ArtinDeligne"
+        ],
+        "existing": true
+      },
+      "repository_inspection": {
+        "observed_head": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+        "changes_made": false,
+        "findings": [
+          "Inspected actual declarations before selecting prerequisites. The untracked theorems13-14 package contains initialization files; its Proofs.lean contains only a generated-import comment.",
+          "ArtinNormalisers/Artin/CoxeterNormalizer.lean provides minimal normalizer representative results without a finite-group assumption.",
+          "chambers/ArtinChambers/ChamberLabels.lean requires [Finite M.Group] for facetLabelEquivActualChamber and the chamber classification leading to it.",
+          "ribbons/ArtinRibbons/AtomicCoxeter.lean and RibbonLcm.lean provide spherical-type atomic length and lcm results. These were not accepted as prerequisites for arbitrary-type conclusions.",
+          "deligne/README.md and ArtinDeligne/Theorem18.lean identify the completed Theorem 1.8 endpoint. It remains outside the new obligations.",
+          "docs/navigation/tools/README.md distinguishes structural declaration metadata from a mathematical verification run."
+        ]
+      },
+      "graph_coverage": {
+        "path": "/home/lazyinspirit/Projects/prestige-math-library/research-portal/artin-tits-normalisers-2509-21915/graph.json",
+        "sha256": "778504bc0c09a3c5c0f282ca6be8e05bfa4324a9f1dfb377a5da63584572c41a",
+        "structural_traversal": {
+          "portal_nodes": 275,
+          "shared_library_nodes": 2463,
+          "dependency_edges": 15683,
+          "missing_dependency_nodes": 0,
+          "cycles": 0
+        },
+        "requested_endpoint_transitive_closure": {
+          "portal_nodes_including_endpoints": 105,
+          "shared_library_nodes": 1346,
+          "missing_shared_library_files": 0
+        },
+        "reading_limit": "The entire graph was parsed and structurally traversed. This does not constitute semantic reading of every source. Full reading of the article and all dependency sources was not completed."
+      },
+      "verified_article_locators": [
+        {
+          "result": "Theorem 1.3",
+          "locator": "Printed p. 2; detailed Theorem 4.7 begins on printed p. 16 and continues on p. 17.",
+          "url": "https://arxiv.org/pdf/2509.21915#page=2"
+        },
+        {
+          "result": "Theorem 1.4",
+          "locator": "Printed p. 3; detailed Theorem 4.21 on printed p. 20.",
+          "url": "https://arxiv.org/pdf/2509.21915#page=3"
+        }
+      ],
+      "scope_finding": "The portal's universal-cover entry explicitly distinguishes arbitrary-rank algebraic covering statements from finite-rank geometric chamber statements. This distinction requires reconciliation with the original theorem before claiming an exact formalization. Neither finite rank nor finite Coxeter group may be silently added to the requested statement.",
+      "search_findings": {
+        "mathlib": {
+          "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+          "method": "Local text searches in Coxeter and groupoid modules.",
+          "result": "The searched Mathlib/GroupTheory/Coxeter/Basic.lean lists Matsumoto's theorem as future work. No direct atomic Matsumoto declaration was found in the searched paths. This is a bounded search."
+        },
+        "local_candidates": [
+          {
+            "declaration": "ArtinNormalisers.Chamber3.length_eq_add_of_rootInversions_subset_system",
+            "path": "chambers/ArtinChambers/InversionLength.lean:23",
+            "import": "ArtinChambers.InversionLength",
+            "hypotheses": "A Coxeter system cs : CoxeterSystem M W, elements d f : W, and inclusion of their positive geometric-root inversion sets.",
+            "conclusion": "cs.length f = cs.length d + cs.length (d⁻¹ * f)",
+            "disposition": "Inspected candidate without finiteness assumptions; no new proof use established."
+          },
+          {
+            "declaration": "ArtinNormalisers.Coxeter.exists_minimal_normalizer",
+            "path": "ArtinNormalisers/Artin/CoxeterNormalizer.lean:98",
+            "import": "ArtinNormalisers.Artin.CoxeterNormalizer",
+            "hypotheses": "A Coxeter system cs : CoxeterSystem M W, J : Set I, and w belonging to the normalizer of cs.parabolic J.",
+            "conclusion": "There exist d and v with v in the parabolic, d = w * v, d still in its normalizer, and cs.IsMinimalCosetRep J d.",
+            "disposition": "Inspected reusable candidate; no new proof use established."
+          },
+          {
+            "declaration": "ArtinNormalisers.Chamber3.IsCoveringFunctor",
+            "path": "chambers/ArtinChambers/GroupoidCover.lean:34",
+            "import": "ArtinChambers.GroupoidCover",
+            "hypotheses": "A functor between categories with the declared universe parameters.",
+            "conclusion": "Defines covering by bijectivity on outgoing stars.",
+            "disposition": "Existing general definition; should be reused rather than reconstructed."
+          },
+          {
+            "declaration": "TauCeti.matsumoto",
+            "path": "vendor/TauCeti/GroupTheory/Coxeter/Matsumoto.lean:136",
+            "import": "TauCeti.GroupTheory.Coxeter.Matsumoto",
+            "disposition": "Located classical Coxeter Matsumoto candidate. It was not treated as the atomic groupoid theorem or recorded as a new actual use."
+          }
+        ],
+        "github": {
+          "status": "unresolved",
+          "attempted_urls": [
+            "https://api.github.com/search/code?q=%22Brink%22+%22Howlett%22+language%3ALean",
+            "https://github.com/search?q=%22atomic%22+%22Matsumoto%22+language%3ALean&type=code"
+          ],
+          "error": "URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+          "historical_evidence": "Existing repository GitHub search and provenance reports were consulted as historical records, not represented as fresh searches or newly read upstream proofs."
+        }
+      },
+      "completion": "No proofs were created, no Lean verification was run, and no agents were spawned. Completing the requested investigation requires resolving GitHub access and finishing full source reading before selecting the intermediate items and recording actual external uses."
+    }
+  }
+}

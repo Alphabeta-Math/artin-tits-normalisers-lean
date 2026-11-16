@@ -1,0 +1,50 @@
+{
+  "proof": "/- Definition 4.18, equation (4.16), printed p. 19.\nSource: https://alphabetamath.cc/research-portal/artin-tits-normalisers-2509-21915/item-def-atomic-braid-artin-tits-normalisers\nThis portal definition has an unnumbered Justification, not numbered proof\nsteps. No step numbers are invented. Its two standard expressions are selected\nfrom the completed TwoGeneratorMinimal theorem using exactly its hypotheses:\nassociate source, distinct outside indices and finite relative-root difference.\nThe contextual replacement retains both surrounding lists and checks the\ncomposability of both complete expressions with the same endpoints, as in the\nstatement of Theorem 4.21 (printed p. 20). This is a definition; the uniqueness\nargument in the portal Justification is not needed to construct the predicate.\nNo additional prerequisite or literature correction is used here. -/\nfun {S W} _inst {M} cs J =>\n  let Obj := { L : Set S // ∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs L) = CoxeterSystem.parabolic cs J }\n  let component : Set S → S → Set S := fun L a =>\n    { b | b ∈ Set.insert a L ∧ Relation.ReflTransGen\n      (fun i j : S => i ∈ Set.insert a L ∧ j ∈ Set.insert a L ∧ i ≠ j ∧ M i j ≠ 2) a b }\n  let Atom := { p : Obj × S // p.2 ∉ p.1.val ∧ Finite (CoxeterSystem.parabolic cs (component p.1.val p.2)) }\n  let crossing := fun e : Atom => SimpleWallCrossings S W M cs e.val.1.val e.val.2 e.property.1 e.property.2\n  let composable : List Atom → Set S → Set S → Prop := fun es L K =>\n    List.foldr\n      (fun e tail N => N = e.val.1.val ∧ tail (crossing e).2.1)\n      (fun N => N = K) es L\n  let parabolicRoots : Set S → Set (Finsupp S Real) := fun L =>\n    { α | ∃ u : W, u ∈ CoxeterSystem.parabolic cs L ∧ ∃ i : S, i ∈ L ∧\n      CoxeterSystem.geometricRepresentation cs u (Finsupp.single i (1 : Real)) = α }\n  let braid : List Atom → List Atom → Prop := fun u v =>\n    ∃ (L : Obj) (a b : S) (ha : a ∉ L.val) (hb : b ∉ L.val)\n      (hab : a ≠ b)\n      (hfin : Set.Finite (parabolicRoots (Set.insert a (Set.insert b L.val)) \\ parabolicRoots L.val)),\n      let h0 := TwoGeneratorMinimal cs J L a b ha hb hab hfin\n      let hDa := Classical.choose h0\n      let h1 := Classical.choose_spec h0\n      let hDb := Classical.choose h1\n      let h2 := Classical.choose_spec h1\n      let K := Classical.choose h2\n      let h3 := Classical.choose_spec h2\n      let q := Classical.choose h3\n      let h4 := Classical.choose_spec h3\n      let ea := Classical.choose h4\n      let eb := Classical.choose (Classical.choose_spec h4)\n      (u = ea.val ∧ v = eb.val) ∨ (u = eb.val ∧ v = ea.val)\n  fun es fs =>\n    ∃ pre u v post : List Atom,\n      braid u v ∧\n      es = pre ++ u ++ post ∧\n      fs = pre ++ v ++ post ∧\n      ∃ L K : Obj, composable es L.val K.val ∧ composable fs L.val K.val",
+  "helpers": [],
+  "substantial": false,
+  "prerequisites": [],
+  "external": [
+    {
+      "id": "abr-parabolic",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+      "license": "Apache-2.0",
+      "declaration": "CoxeterSystem.parabolic",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Parabolic.lean",
+      "usage": "Defines associates and the finite crossing-component condition. Inspected actual provider under /home/lazyinspirit/Projects/artin-tits-normalisers-lean; fresh diff from the cited revision through HEAD 1bdd7a76d6447fe84bc46aab09120f20292bf334 and working tree is empty."
+    },
+    {
+      "id": "abr-action",
+      "repository": "https://github.com/lazyinspirit/artin-tits-normalisers-lean",
+      "revision": "8668c70d25e6c5d63c313bac756052f9c83ee7f0",
+      "license": "Apache-2.0",
+      "declaration": "CoxeterSystem.geometricRepresentation",
+      "url": "https://github.com/lazyinspirit/artin-tits-normalisers-lean/blob/8668c70d25e6c5d63c313bac756052f9c83ee7f0/vendor/TauCeti/GroupTheory/Coxeter/Geometric/Basic.lean",
+      "usage": "Defines parabolic roots in the finite relative-root hypothesis. Inspected actual provider under /home/lazyinspirit/Projects/artin-tits-normalisers-lean; fresh diff from the cited revision through HEAD 1bdd7a76d6447fe84bc46aab09120f20292bf334 and working tree is empty."
+    },
+    {
+      "id": "abr-mathlib",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "revision": "65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+      "license": "Apache-2.0",
+      "declaration": "Mathlib/Algebra/Group/Basic.lean: DivisionMonoid.toDivInvOneMonoid\nMathlib/Algebra/Group/Defs.lean: Group, Group.toDivInvMonoid, Group.toDivisionMonoid\nMathlib/Algebra/Group/DivInvMonoid.lean: DivInvMonoid.toMonoid, DivInvOneMonoid.toInvOneClass, InvOneClass.toInv, InvOneClass.toOne\nMathlib/Algebra/Group/End.lean: MulAut, MulAut.conj, MulAut.instGroup\nMathlib/Algebra/Group/Equiv/Defs.lean: MulEquiv.toMonoidHom\nMathlib/Algebra/Group/Finsupp.lean: Finsupp.instAddCommMonoid\nMathlib/Algebra/Group/Hom/Defs.lean: MonoidHom, MonoidHom.instFunLike\nMathlib/Algebra/Group/Monoid.lean: Monoid.toMulOneClass, MulOne.toMul, MulOneClass.toMulOne\nMathlib/Algebra/Group/Subgroup/Defs.lean: Subgroup, Subgroup.instSetLike\nMathlib/Algebra/Group/Subgroup/Map.lean: Subgroup.map\nMathlib/Algebra/GroupWithZero/Defs.lean: MulZeroClass.toZero, MulZeroOneClass.toMulOneClass\nMathlib/Algebra/GroupWithZero/Nat.lean: Nat.instMulZeroClass\nMathlib/Algebra/Module/Defs.lean: Semiring.toModule\nMathlib/Algebra/Module/LinearMap/Defs.lean: LinearMap, LinearMap.instFunLike\nMathlib/Algebra/Module/LinearMap/End.lean: Module.End.instSemiring\nMathlib/Algebra/Ring/Defs.lean: Semiring.toNonAssocSemiring, instMulZeroOneClassOfSemiring\nMathlib/Algebra/Ring/Hom/Defs.lean: RingHom.id\nMathlib/Basic/Finite/Defs.lean: Finite, Set.Finite\nMathlib/Basic/FunLike/Basic.lean: DFunLike.coe\nMathlib/Basic/Real/Basic.lean: Real, Real.instAddCommMonoid, Real.instOne, Real.instZero, Real.semiring\nMathlib/Basic/SetLike/Basic.lean: SetLike.instMembership\nMathlib/CategoryTheory/Category/Basic.lean: CategoryTheory.Category.toCategoryStruct, CategoryTheory.CategoryStruct.toQuiver\nMathlib/CategoryTheory/Groupoid.lean: CategoryTheory.Groupoid.toCategory\nMathlib/Combinatorics/Quiver/Basic.lean: Quiver.Hom\nMathlib/Data/Finsupp/Defs.lean: Finsupp\nMathlib/Data/Finsupp/SMul.lean: Finsupp.module\nMathlib/Data/Finsupp/Single.lean: Finsupp.single\nMathlib/Data/Set/Defs.lean: Set, Set.image, Set.insert, Set.instMembership, Set.instSDiff, Set.ofPred\nMathlib/GroupTheory/Coxeter/Basic.lean: CoxeterSystem\nMathlib/GroupTheory/Coxeter/Length.lean: CoxeterSystem.length\nMathlib/GroupTheory/Coxeter/Matrix.lean: CoxeterMatrix, CoxeterMatrix.M\nMathlib/Logic/Relation.lean: Relation.ReflTransGen\nMathlib/RepresentationTheory/Basic.lean: Representation",
+      "url": "https://github.com/leanprover-community/mathlib4/tree/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9",
+      "usage": "Coxeter length and component paths, sets, subgroup conjugacy, root vectors, category projections and inferred instances. Fresh GitHub code search for \"atomic\" \"braid\" language:Lean repo:leanprover-community/mathlib4 returned 0 hits; bounded local searches in chambers/, ribbons/, deligne/ and pinned mathlib Coxeter sources found no specialized atomic-braid declaration. Complete module-grouped inventory of 59 direct constants in the compiled expression and type, including inferred instances. Each displayed path p has exact URL https://github.com/leanprover-community/mathlib4/blob/65d730f7150f21fdfa32f3e73a3f549c1f96a0e9/p. Imported bodies are not transitively expanded. Internal BrinkHowlettGroupoid, SimpleWallCrossings, StandardExpressions (including generated proof constants) and TwoGeneratorMinimal are excluded from external attribution."
+    },
+    {
+      "id": "abr-core",
+      "repository": "https://github.com/leanprover/lean4",
+      "revision": "b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+      "license": "Apache-2.0",
+      "declaration": "src/Init/Classical.lean: Classical.choose, Classical.choose_spec\nsrc/Init/Core.lean: Exists, Ne, SDiff.sdiff\nsrc/Init/Data/List/Basic.lean: List.foldr, List.instAppend, List.prod, List.sum\nsrc/Init/Data/Zero.lean: One.toOfNat1\nsrc/Init/Prelude.lean: And, And.intro, And.left, And.right, Eq, HAdd.hAdd, HAppend.hAppend, HMul.hMul, Inv.inv, LE.le, List, List.cons, List.length, List.map, Membership.mem, Nat, Not, OfNat.ofNat, Or, Prod, Prod.fst, Prod.mk, Prod.snd, Subtype, Subtype.mk, Subtype.property, Subtype.val, instAddNat, instHAdd, instHAppendOfAppend, instHMul, instLENat, instOfNatNat",
+      "url": "https://github.com/leanprover/lean4/tree/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a",
+      "usage": "Logic, subtype projections, lists and classical selection of the actual witnesses supplied by the completed internal TwoGeneratorMinimal. Exact expression compiled under Lean 4.36.0-rc2, exit 0; axiom audit only propext, Classical.choice, Quot.sound. No new prerequisites, agents or remote modifications. Artifacts: /tmp/lean-agent-higKOG/Check.lean, Audit.lean, constants.json and audit.log. Existing compiled dependencies checked, not rebuilt. Complete module-grouped inventory of 43 direct constants in the compiled expression and type, including inferred instances. Each displayed path p has exact URL https://github.com/leanprover/lean4/blob/b35cb10cf2ced51a2fd1880cfdbf75c71ab7a35a/p. Imported bodies are not transitively expanded. Internal BrinkHowlettGroupoid, SimpleWallCrossings, StandardExpressions (including generated proof constants) and TwoGeneratorMinimal are excluded from external attribution."
+    }
+  ],
+  "used": [
+    "abr-parabolic",
+    "abr-action",
+    "abr-mathlib",
+    "abr-core"
+  ]
+}

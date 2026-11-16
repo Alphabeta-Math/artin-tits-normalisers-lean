@@ -1,0 +1,28 @@
+{
+  "source_sha256": "3519093339e164363ace810b2b631e2c4dd438647bff88ac46bc02fb6910bddb",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/GeneratorsAndStandardLength.olean",
+      "Proofs/GeneratorsAndStandardLength.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/GeneratorsAndStandardLength-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": ""
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'GeneratorsAndStandardLength' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

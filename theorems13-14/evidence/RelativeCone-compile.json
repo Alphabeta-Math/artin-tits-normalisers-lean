@@ -1,0 +1,28 @@
+{
+  "source_sha256": "d396a88b3d1eb6ec5534711440ef4366849581590f6648c8268c57e47f143d73",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/RelativeCone.olean",
+      "Proofs/RelativeCone.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/RelativeCone-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/RelativeCone.lean:5:60: warning: Variable name `M` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _M\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'RelativeCone' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

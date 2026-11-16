@@ -1,0 +1,2 @@
+import Proofs.AtomicBraidRelations
+#print axioms AtomicBraidRelations

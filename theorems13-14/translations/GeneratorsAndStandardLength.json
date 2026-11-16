@@ -1,0 +1,6 @@
+{
+  "type": "∀ {S W : Type*} [Group W] {M : CoxeterMatrix S} (cs : CoxeterSystem M W) (J : Set S),\n  let Obj := { L : Set S // ∃ g : W, Subgroup.map (MulEquiv.toMonoidHom (MulAut.conj g)) (CoxeterSystem.parabolic cs L) = CoxeterSystem.parabolic cs J }\n  let component : Set S → S → Set S := fun L a =>\n    { b | b ∈ Set.insert a L ∧ Relation.ReflTransGen\n      (fun i j : S => i ∈ Set.insert a L ∧ j ∈ Set.insert a L ∧ i ≠ j ∧ M i j ≠ 2) a b }\n  let Atom := { p : Obj × S // p.2 ∉ p.1.val ∧ Finite (CoxeterSystem.parabolic cs (component p.1.val p.2)) }\n  let crossing := fun e : Atom => SimpleWallCrossings S W M cs e.val.1.val e.val.2 e.property.1 e.property.2\n  (∀ (I K : Obj) (w : (BrinkHowlettGroupoid cs J).Hom I K),\n    ∃ es : List Atom,\n      List.foldr\n        (fun e tail L => L = e.val.1.val ∧ tail (crossing e).2.1)\n        (fun L => L = K.val) es I.val ∧\n      List.prod (List.map (fun e => (crossing e).1) es) = w.val) ∧\n  (∀ (I K : Obj) (w : (BrinkHowlettGroupoid cs J).Hom I K)\n    (e f : StandardExpressions cs J I K w), List.length e.val = List.length f.val)",
+  "value": null,
+  "source": "article",
+  "sourceReason": "The report does not identify this endpoint statement as defective."
+}

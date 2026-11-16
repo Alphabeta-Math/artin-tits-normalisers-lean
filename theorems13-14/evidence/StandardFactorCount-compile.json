@@ -1,0 +1,28 @@
+{
+  "source_sha256": "0bd3bc0008dd615666ece4ca00042b46e6558e73721b5ca067a7ebc7b1f7edcb",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/StandardFactorCount.olean",
+      "Proofs/StandardFactorCount.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/StandardFactorCount-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": "Proofs/StandardFactorCount.lean:1033:8: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardFactorCount.lean:1041:10: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardFactorCount.lean:1287:8: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardFactorCount.lean:1297:10: warning: Try this: \n  letI̵\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nProofs/StandardFactorCount.lean:404:10: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:608:68: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:785:68: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:798:68: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul, Finsupp.coe_zero, Pi.zero_apply]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:889:25: warning: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [t, hh, hja]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:894:12: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [map_sub, map_smul, Finsupp.sub_apply, Finsupp.smul_apply, smul_eq_mul] at htimage\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:1188:68: warning: This simp argument is unused:\n  Pi.smul_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Finset.sum_apply', map_smul, Finsupp.smul_apply, smul_eq_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nProofs/StandardFactorCount.lean:1228:28: warning: This simp argument is unused:\n  Finsupp.single_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [β, sroot, he, hs i (by intro hh; rcases hh with hh | hh; exact he hh; exact hi hh)]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n"
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'StandardFactorCount' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

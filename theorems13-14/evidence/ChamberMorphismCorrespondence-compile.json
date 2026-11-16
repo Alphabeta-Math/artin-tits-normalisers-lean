@@ -1,0 +1,28 @@
+{
+  "source_sha256": "d48f3066dabc6531059299a162548078a58aea9f557ab8c43d623d083beaf86b",
+  "commands": [
+    [
+      "lake",
+      "env",
+      "lean",
+      "-o",
+      ".lake/build/lib/lean/Proofs/ChamberMorphismCorrespondence.olean",
+      "Proofs/ChamberMorphismCorrespondence.lean"
+    ],
+    [
+      "lake",
+      "env",
+      "lean",
+      "evidence/ChamberMorphismCorrespondence-axioms.lean"
+    ]
+  ],
+  "build": {
+    "code": 0,
+    "output": ""
+  },
+  "axioms": {
+    "code": 0,
+    "output": "'ChamberMorphismCorrespondence' depends on axioms: [propext, Classical.choice, Quot.sound]\n"
+  },
+  "ok": true
+}

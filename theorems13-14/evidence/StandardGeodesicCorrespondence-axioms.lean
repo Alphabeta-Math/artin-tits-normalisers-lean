@@ -1,0 +1,2 @@
+import Proofs.StandardGeodesicCorrespondence
+#print axioms StandardGeodesicCorrespondence
