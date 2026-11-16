@@ -12,80 +12,70 @@ graph TD
   RelativeLocalFiniteness["RelativeLocalFiniteness"]
   RelativeCone --> RelativeLocalFiniteness
   ChamberLabelling["ChamberLabelling"]
-  RelativeCone --> ChamberLabelling
   RelativeLocalFiniteness --> ChamberLabelling
+  RelativeCone --> ChamberLabelling
   SimpleWallCrossings["SimpleWallCrossings"]
   AdjacentWallFormula["AdjacentWallFormula"]
-  ChamberLabelling --> AdjacentWallFormula
   SimpleWallCrossings --> AdjacentWallFormula
+  ChamberLabelling --> AdjacentWallFormula
   FiniteWallPaths["FiniteWallPaths"]
-  RelativeLocalFiniteness --> FiniteWallPaths
-  ChamberLabelling --> FiniteWallPaths
   AdjacentWallFormula --> FiniteWallPaths
+  ChamberLabelling --> FiniteWallPaths
+  RelativeLocalFiniteness --> FiniteWallPaths
   NormaliserChamberAction["NormaliserChamberAction"]
-  RelativeCone --> NormaliserChamberAction
-  ChamberLabelling --> NormaliserChamberAction
   AdjacentWallFormula --> NormaliserChamberAction
+  ChamberLabelling --> NormaliserChamberAction
+  RelativeCone --> NormaliserChamberAction
   GeodesicAdditivity["GeodesicAdditivity"]
-  RelativeLocalFiniteness --> GeodesicAdditivity
-  ChamberLabelling --> GeodesicAdditivity
   AdjacentWallFormula --> GeodesicAdditivity
+  ChamberLabelling --> GeodesicAdditivity
+  RelativeLocalFiniteness --> GeodesicAdditivity
   BrinkHowlettGroupoid["BrinkHowlettGroupoid"]
-  ElementaryWallMorphism["ElementaryWallMorphism"]
-  SimpleWallCrossings --> ElementaryWallMorphism
-  BrinkHowlettGroupoid --> ElementaryWallMorphism
   UniversalWallGroupoid["UniversalWallGroupoid"]
-  ChamberLabelling --> UniversalWallGroupoid
   AdjacentWallFormula --> UniversalWallGroupoid
+  ChamberLabelling --> UniversalWallGroupoid
   UniversalGenerators["UniversalGenerators"]
-  FiniteWallPaths --> UniversalGenerators
-  UniversalWallGroupoid --> UniversalGenerators
   SimpleWallCrossings --> UniversalGenerators
+  UniversalWallGroupoid --> UniversalGenerators
+  FiniteWallPaths --> UniversalGenerators
   ChamberMorphismCorrespondence["ChamberMorphismCorrespondence"]
-  ChamberLabelling --> ChamberMorphismCorrespondence
-  BrinkHowlettGroupoid --> ChamberMorphismCorrespondence
   UniversalWallGroupoid --> ChamberMorphismCorrespondence
+  BrinkHowlettGroupoid --> ChamberMorphismCorrespondence
+  ChamberLabelling --> ChamberMorphismCorrespondence
   UniversalBrinkHowlettCover["UniversalBrinkHowlettCover"]
-  BrinkHowlettGroupoid --> UniversalBrinkHowlettCover
-  UniversalWallGroupoid --> UniversalBrinkHowlettCover
-  UniversalGenerators --> UniversalBrinkHowlettCover
-  ChamberMorphismCorrespondence --> UniversalBrinkHowlettCover
   NormaliserChamberAction --> UniversalBrinkHowlettCover
+  ChamberMorphismCorrespondence --> UniversalBrinkHowlettCover
+  UniversalGenerators --> UniversalBrinkHowlettCover
+  UniversalWallGroupoid --> UniversalBrinkHowlettCover
+  BrinkHowlettGroupoid --> UniversalBrinkHowlettCover
   StandardExpressions["StandardExpressions"]
   BrinkHowlettGroupoid --> StandardExpressions
   SimpleWallCrossings --> StandardExpressions
-  ElementaryWallMorphism --> StandardExpressions
-  StandardGeodesicCorrespondence["StandardGeodesicCorrespondence"]
-  StandardExpressions --> StandardGeodesicCorrespondence
-  GeodesicAdditivity --> StandardGeodesicCorrespondence
-  UniversalBrinkHowlettCover --> StandardGeodesicCorrespondence
-  UniversalGenerators --> StandardGeodesicCorrespondence
-  ChamberMorphismCorrespondence --> StandardGeodesicCorrespondence
   StandardFactorCount["StandardFactorCount"]
-  BrinkHowlettGroupoid --> StandardFactorCount
   StandardExpressions --> StandardFactorCount
+  BrinkHowlettGroupoid --> StandardFactorCount
   GeneratorsAndStandardLength["GeneratorsAndStandardLength"]
-  StandardExpressions --> GeneratorsAndStandardLength
   StandardFactorCount --> GeneratorsAndStandardLength
+  StandardExpressions --> GeneratorsAndStandardLength
   FiniteRelativeLongest["FiniteRelativeLongest"]
   BrinkHowlettGroupoid --> FiniteRelativeLongest
   TwoGeneratorMinimal["TwoGeneratorMinimal"]
-  StandardExpressions --> TwoGeneratorMinimal
-  FiniteRelativeLongest --> TwoGeneratorMinimal
-  StandardFactorCount --> TwoGeneratorMinimal
   GeneratorsAndStandardLength --> TwoGeneratorMinimal
+  StandardFactorCount --> TwoGeneratorMinimal
+  FiniteRelativeLongest --> TwoGeneratorMinimal
+  StandardExpressions --> TwoGeneratorMinimal
   AtomicBraidRelations["AtomicBraidRelations"]
-  StandardExpressions --> AtomicBraidRelations
   TwoGeneratorMinimal --> AtomicBraidRelations
+  StandardExpressions --> AtomicBraidRelations
   AtomicMatsumoto["AtomicMatsumoto"]
-  StandardExpressions --> AtomicMatsumoto
-  StandardFactorCount --> AtomicMatsumoto
-  GeneratorsAndStandardLength --> AtomicMatsumoto
-  TwoGeneratorMinimal --> AtomicMatsumoto
   AtomicBraidRelations --> AtomicMatsumoto
+  TwoGeneratorMinimal --> AtomicMatsumoto
+  GeneratorsAndStandardLength --> AtomicMatsumoto
+  StandardFactorCount --> AtomicMatsumoto
+  StandardExpressions --> AtomicMatsumoto
 ```
 
-The graph shows up to 20 important prerequisites and all main theorems. Additional proof lemmas and all immediate edges are in [PROJECT.md](PROJECT.md).
+The graph shows 20 important definitions/results, including both main theorems. Two supporting endpoints are omitted from this overview; all 22 checked endpoints and their exact immediate dependencies remain in [PROJECT.md](PROJECT.md).
 
 ## External proofs
 

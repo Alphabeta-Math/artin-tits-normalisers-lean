@@ -1,0 +1,96 @@
+{
+  "kind": "original-main-results-step5-closeout",
+  "created_at": "2026-11-16T11:03:13.095745+00:00",
+  "completed_step": 5,
+  "main_theorems": [
+    "1.3",
+    "1.4",
+    "1.8"
+  ],
+  "new_package": "theorems13-14",
+  "driver_commit": "dfd9122db8bcb19cfdc8c655e6a539e98bacec88",
+  "accepted_new_package_items": 22,
+  "main_endpoint_ids": [
+    "UniversalBrinkHowlettCover",
+    "AtomicMatsumoto"
+  ],
+  "state_sha256": "67e1b7bceba1c881e58ce846fafacbbdd83496bc8039348341bd4735f80b78b4",
+  "full_build": {
+    "path": "theorems13-14/evidence/final-build.txt",
+    "sha256": "9cb6bec5c8753d5cb8ac389821f9453df455a6b53a7f780a5ef455d59d01fa89",
+    "successful": true,
+    "jobs": 19480
+  },
+  "source_sha256": {
+    "theorems13-14/Proofs/RelativeCone.lean": "d396a88b3d1eb6ec5534711440ef4366849581590f6648c8268c57e47f143d73",
+    "theorems13-14/Proofs/SimpleWallCrossings.lean": "a0a632c83fc78e5b4257a62d2230123d81fd84a5e1d6080bc280c5d447d91d5b",
+    "theorems13-14/Proofs/BrinkHowlettGroupoid.lean": "e01cb4ca53ab05ac063cdebbc7187e8d080fe9c9fdf6b319d93035f0cde7da05",
+    "theorems13-14/Proofs/RelativeLocalFiniteness.lean": "85a295cc7dd4f5c00785f1f6db36ba7559f28f6fa288ba3fd7d50fa92ef8144a",
+    "theorems13-14/Proofs/ElementaryWallMorphism.lean": "376bf7160877573abca7a9be1752925f55078aaeb694959b5154087055bfb969",
+    "theorems13-14/Proofs/FiniteRelativeLongest.lean": "08b3c101a99314b19ec5b2dab180dac6ab85339f8328c2387b525b51f5f53dbd",
+    "theorems13-14/Proofs/ChamberLabelling.lean": "d9d20bd0874041984f5b48fb582f3d20d9e78105469ebf53e4de0989a2ea1e01",
+    "theorems13-14/Proofs/StandardExpressions.lean": "d7acbb4c5dcc8e78b17f38cb2ffe9cb3579798ba630dd4d8c5b4681383fd5405",
+    "theorems13-14/Proofs/AdjacentWallFormula.lean": "75e9b770638952906ce154f1708cd59c5809c673333ccf295e99061c4f602bba",
+    "theorems13-14/Proofs/StandardFactorCount.lean": "0bd3bc0008dd615666ece4ca00042b46e6558e73721b5ca067a7ebc7b1f7edcb",
+    "theorems13-14/Proofs/FiniteWallPaths.lean": "e7227a71cac73a6e54f1e64654c620816e0c91c0e366c3e3a50a36c8b9c3f985",
+    "theorems13-14/Proofs/NormaliserChamberAction.lean": "7a373536609dd86d30bb6dc50c91f1317287d5dd30d9da15c71fc0fe9de37cbe",
+    "theorems13-14/Proofs/GeodesicAdditivity.lean": "6d4a6b56bf38b872a314144e28d53d3b1e994c0077217f9d1f8546cb84da0473",
+    "theorems13-14/Proofs/UniversalWallGroupoid.lean": "b4db1dda9919fbf5969e6779558fc6097c21fe359b49ae0015bbe60aff986d9d",
+    "theorems13-14/Proofs/GeneratorsAndStandardLength.lean": "3519093339e164363ace810b2b631e2c4dd438647bff88ac46bc02fb6910bddb",
+    "theorems13-14/Proofs/UniversalGenerators.lean": "ca810210e61a00445113253684183d002e29ddfef01196a4219498e15cbaa93a",
+    "theorems13-14/Proofs/ChamberMorphismCorrespondence.lean": "d48f3066dabc6531059299a162548078a58aea9f557ab8c43d623d083beaf86b",
+    "theorems13-14/Proofs/TwoGeneratorMinimal.lean": "d6b76a8c87fc09cb3004fa4e255aa0a57ba4d6b5e28b8887de29787b075202a8",
+    "theorems13-14/Proofs/UniversalBrinkHowlettCover.lean": "5bec24ee4d24bbe7f15779e89d053bb1b8be0d99d27937460143a241236730d7",
+    "theorems13-14/Proofs/AtomicBraidRelations.lean": "80d8db3b8c3073b3696fbaaef0c1b1d335353e87eb4371b3cd8439254aa9c267",
+    "theorems13-14/Proofs/StandardGeodesicCorrespondence.lean": "188d1a99ab9ebb002d9594ce2c9ddcf4206159373d11b0d59185e2c64707c94c",
+    "theorems13-14/Proofs/AtomicMatsumoto.lean": "90b8e744af5302b22cd8a6861a209b723507d47d2a59c0d06a683f5ead26b445"
+  },
+  "compilation_axiom_records_sha256": {
+    "theorems13-14/evidence/RelativeCone-compile.json": "7113ab55f283cf3d5bc2b2d216647a2a31cbe82ddaf95e9e1779296185ee27f5",
+    "theorems13-14/evidence/SimpleWallCrossings-compile.json": "014b37913ac1026cc51f6168e07d944a9378e623508835b826dc78c3dc46b59f",
+    "theorems13-14/evidence/BrinkHowlettGroupoid-compile.json": "d10d308b2c645ceb45ba378c352f063420303ca56b815e54b619dc797b7912f0",
+    "theorems13-14/evidence/RelativeLocalFiniteness-compile.json": "7590a19325fe15cc0688eccf9e44badc49a8eda855dcfa63dd666264faf59d8a",
+    "theorems13-14/evidence/ElementaryWallMorphism-compile.json": "81bdc6bf0b905b11789a70f81e2ae6526ebb495894672efa4e6bb2228acbb8c7",
+    "theorems13-14/evidence/FiniteRelativeLongest-compile.json": "57e6eb32b31168f93d2f7a3c0536bca16779a8cc867757339de676394ffe894f",
+    "theorems13-14/evidence/ChamberLabelling-compile.json": "74ebcd99225c3730afb2fcd877b89bd6d0f28f6b8e5e1ea99d6d1f0982eb334e",
+    "theorems13-14/evidence/StandardExpressions-compile.json": "6fedc752845c31e2c7a20f31228f424d686b60429b282cc1c7ca688bf9c11278",
+    "theorems13-14/evidence/AdjacentWallFormula-compile.json": "e635ea49c687a6c0b628f6a290738566e24a55b74fb1b12437d2ca3ae9b086f7",
+    "theorems13-14/evidence/StandardFactorCount-compile.json": "080385eecca0e6a96749d63386062d1400b00ddbbf8c0f2b4253874f3700b78a",
+    "theorems13-14/evidence/FiniteWallPaths-compile.json": "b885c7e8deb768f535d74e2596ca8cc6671e03f207321d2635715e4ebbb60f32",
+    "theorems13-14/evidence/NormaliserChamberAction-compile.json": "b07e1a40cd4b9bd03e32e16f30a7b3628952dab27094f49efad9618351e59fcf",
+    "theorems13-14/evidence/GeodesicAdditivity-compile.json": "699f8ae9ad74295fc77177ea308896d540ef69620d7020e433ae4eda8a445e0c",
+    "theorems13-14/evidence/UniversalWallGroupoid-compile.json": "1494d0d575d0743fbc46428ea07aec2ac859248c1e1dba303dbdd018f390c0ac",
+    "theorems13-14/evidence/GeneratorsAndStandardLength-compile.json": "3f0b908f1302ec57828acde026bb1c00481fcfdc8abe38593a87e8b9abc1f377",
+    "theorems13-14/evidence/UniversalGenerators-compile.json": "3f3ce31d13c538d472fe9507b4bcbfdcf8457621a7f64b1983db6ad031c59d9a",
+    "theorems13-14/evidence/ChamberMorphismCorrespondence-compile.json": "4e28ff8a169b82f6cb56c00c653a924d1a4d4b19ac39ee942a581f30c750281a",
+    "theorems13-14/evidence/TwoGeneratorMinimal-compile.json": "a79cd6f5ee45c17c9cf4b451dadaef8c0c57e57fbecfd0bd417d02233186e68b",
+    "theorems13-14/evidence/UniversalBrinkHowlettCover-compile.json": "4f56eea990d25b42a68367fe8126de86957c4a68d2724b1f57b30c31188151dd",
+    "theorems13-14/evidence/AtomicBraidRelations-compile.json": "a0208d8633edb5401fa925f997ae87456d779c67d9b87bfb89ab83a0f2e5adc1",
+    "theorems13-14/evidence/StandardGeodesicCorrespondence-compile.json": "1019b88718563921e71b3b9b945c17e9fa07a5bde4fbfcd65f2ba030d3cfe4ac",
+    "theorems13-14/evidence/AtomicMatsumoto-compile.json": "88ed74ecb6220b47c69808de608220ce098e187ae6a816e12a84cadd19a2ce06"
+  },
+  "theorem_1_8": {
+    "existing_proof": "deligne/ArtinDeligne/Theorem18.lean",
+    "sha256": "6153e9ce05812013faae0917ee312192d6afc478c378c5819a9568a12ae118f8",
+    "verified_source_tag": "theorem-1.8-verified",
+    "existing_closeout": "docs/theorem18/landmarks/milestone5-closeout.json",
+    "included_by_import": "ArtinDeligne"
+  },
+  "scope_limits": {
+    "theorem_1_3_geometry": "Finite-rank portal convention explicitly directed by owner; algebraic covering retains arbitrary rank.",
+    "theorem_1_4": "Arbitrary Coxeter type; no spherical-type restriction.",
+    "theorem_1_8": "Existing finite-actual-Coxeter-group result and original recorded model scope retained."
+  },
+  "preserved_research_work": {
+    "branch": "wip/research-insights-artin-tits-2026-11-16",
+    "commit": "8cc20420b8aa7a45b04681345254a8821000ab7e",
+    "pushed": false,
+    "in_main_git_tree": false,
+    "ancestor_of_main": false,
+    "scope": "Incomplete new results from open-questions/solutions page; no completion or publication claimed."
+  },
+  "primary_graph_nodes": 20,
+  "new_translation_or_proof_authoring_dispatched": false,
+  "new_step5_math_checks": "Native driver revalidated each accepted endpoint in dependency order with real Lean compilation and axioms, then built the full package; no source/endpoint changes.",
+  "owner_authorization": "Commit and push original main results and prerequisites only; preserve research work locally without pushing."
+}

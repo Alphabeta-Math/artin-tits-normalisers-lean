@@ -8,12 +8,19 @@
     "docs/navigation/reviews/source-correspondence-b.json": "4536cf3b30ffd3f2c136e693fa109b66ff01285ba70b98d7aad074927e2cb881"
   },
   "key_formal_declarations": 49,
-  "local_links_checked": 757,
+  "local_links_checked": 873,
+  "main_results": [
+    "Theorem 1.3",
+    "Theorem 1.4",
+    "Theorem 1.8"
+  ],
   "ok": true,
+  "primary_dependency_graph": "docs/main-results-dependencies.mmd",
   "project_files": 20,
   "proof_commit": "3c389334729dbd37d26bdf52dd808e540aae6d37",
   "readme_graph_nodes": 20,
-  "readme_sha256": "ea892cc2821a66c3f14ed70848cf17b589f8a9054529025366a7d7e8f0aab147",
+  "readme_sha256": "2740d5b6eb8258c94d4ddf565347a3fabf63a716a73442af99d54f4ef5cd8072",
   "scope": "Curated documentation metadata validation; no Lean build/audit/replay",
+  "step5_main_run_items": 22,
   "unchanged_scientific_source_modules": 153
 }

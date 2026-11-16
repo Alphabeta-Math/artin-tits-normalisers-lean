@@ -2,82 +2,86 @@
 
 Formal proofs for Garnier–Heng–Licata–Yacobi, [*Normalisers of parabolic subgroups of Artin–Tits groups and Tits cone intersections*, arXiv:2509.21915v3](https://arxiv.org/abs/2509.21915v3).
 
-The main results below are proved and verified. [Clean GitHub CI](https://github.com/lazyinspirit/artin-tits-normalisers-lean/actions/runs/43599459363) passed 159 commands, a clean rebuild, 64 exact kernel replays and an audit of 1,866 new declarations. The immutable [verified source tag](https://github.com/lazyinspirit/artin-tits-normalisers-lean/tree/theorem-1.8-verified) points to `3c389334729dbd37d26bdf52dd808e540aae6d37`.
+The original main results **Theorems 1.3, 1.4 and 1.8** are formally proved in this repository. [Main-results guide](docs/MAIN_RESULTS.md) links their statements, Lean proof files and compilation evidence. Theorems 1.3–1.4 and their 20 prerequisites passed the native Step 5 complete-library build and per-endpoint axiom checks; Theorem 1.8 retains its [clean CI archive](docs/theorem18/landmarks/github-evidence/run-43599459363/README.md) and immutable `theorem-1.8-verified` source tag.
+
+New-result work from the open-questions/solutions page is preserved separately on an **unpushed local branch**; it is outside this main-results release.
 
 ## Start here
 
-- [20 important results and definitions](docs/navigation/index.md), each with a focused `PROJECT.md`.
-- [Dependency graph of the 20 important entries](docs/navigation/important-dependencies.md).
+- [Theorems 1.3, 1.4 and 1.8](docs/MAIN_RESULTS.md): statements, formalization scope, proof files and evidence.
+- [Theorems 1.3–1.4 PROJECT](theorems13-14/PROJECT.md): all accepted endpoints and prerequisites.
+- [Detailed finite-type proof guide](docs/navigation/index.md): Theorem 1.8 and its supporting definitions/results.
+- [Main-results dependency graph](docs/main-results-dependencies.mmd): 20 important results and definitions.
 - [External Lean proofs and libraries](docs/navigation/external/modules.md): exact repositories, commits, source modules and proof references.
 - [Proof architecture and mathematical scope](docs/theorem18/landmarks/milestone5-final-report.md).
 - [Compilation and verification evidence](docs/navigation/data/evidence-atlas.json), [final CI archive](docs/theorem18/landmarks/github-evidence/run-43599459363/README.md), and [closeout](docs/theorem18/landmarks/milestone5-closeout.json).
 
 ## Main results
 
-| Article result | Formally proved scope | Statement, sources and evidence |
+| Article result | Scope | Proof and source dossier |
 |---|---|---|
-| [Lemma 2.8](https://arxiv.org/pdf/2509.21915v3#page=6), p. 6 | Algebraic normalizer short exact sequence; arbitrary Coxeter matrix and subset. | [PROJECT.md](docs/navigation/projects/03-lemma-2-8/PROJECT.md) |
-| [Theorem 6.7](https://arxiv.org/pdf/2509.21915v3#page=26), p. 26 | Compatible topological/algebraic exact diagrams in finite type. | [PROJECT.md](docs/navigation/projects/08-exact-diagrams/PROJECT.md) |
-| [Theorem 1.8](https://arxiv.org/pdf/2509.21915v3#page=3), p. 3 | Both original-space K(G,1) conclusions and both exact diagrams, at every complement basepoint. | [PROJECT.md](docs/navigation/projects/19-theorem-1-8/PROJECT.md) |
-| [Corollary 6.14](https://arxiv.org/pdf/2509.21915v3#page=27), p. 27 | Normalizer quotient orbit space is K(G,1), at every orbit basepoint. | [PROJECT.md](docs/navigation/projects/20-corollary-6-14/PROJECT.md) |
+| [Theorem 1.3](https://arxiv.org/pdf/2509.21915v3#page=2), p. 2 / Theorem 4.7, pp. 16–17 | Arbitrary-rank algebraic covering; finite-rank geometric convention directed by the owner | [PROJECT](theorems13-14/PROJECT.md#universalbrinkhowlettcover-theorem-13--47-universal-covering-wall-crossings-and-deck-quotient) · [proof](theorems13-14/Proofs/UniversalBrinkHowlettCover.lean) |
+| [Theorem 1.4](https://arxiv.org/pdf/2509.21915v3#page=3), p. 3 / Theorem 4.21, p. 20 | Atomic Matsumoto at arbitrary Coxeter type | [PROJECT](theorems13-14/PROJECT.md#atomicmatsumoto-theorem-14--421-atomic-matsumoto) · [proof](theorems13-14/Proofs/AtomicMatsumoto.lean) |
+| [Theorem 1.8](https://arxiv.org/pdf/2509.21915v3#page=3), p. 3 | Finite actual Coxeter group; all subsets/basepoints, exact diagrams and K(G,1) conclusions | [PROJECT](docs/navigation/projects/19-theorem-1-8/PROJECT.md) · [proof](deligne/ArtinDeligne/Theorem18.lean) |
 
-The finite-type results quantify every actual finite Coxeter group, every subset, and every indicated basepoint. Empty/full subsets, rank zero, reducible and noncrystallographic types are included. Lean uses the standard-presentation Artin group and genuinely generated parabolics. The general all-types identification with the article's topological Artin definition in §2.2 is recorded as a model convention; the project proves the specific finite-space fundamental-group equivalences used here. Its K(G,1) predicate consists of path connectedness, vanishing higher based homotopy groups, and the specified fundamental-group isomorphism. Per-result correspondence notes explain differences from broader original statements, including general-arrangement or finite-CW claims.
+See the dossiers for the full original and portal statements, all quantified assumptions, direct dependencies and verified source records.
 
 ## Dependency graph: 20 important results and definitions
 
-Arrows summarize checked prerequisite paths through internal implementation helpers. Redundant transitive arrows are omitted for readability. Each `PROJECT.md` links the complete immediate internal and external dependency records. The simplicial-geometry entry is retained as verified context for the article's Deligne argument; the completed Lean comparison uses its explicit carrier construction.
+This overview keeps the main-results branches and important prerequisites readable. The general Coxeter theorems use their own arbitrary-type constructions; the existing finite-type proof of Theorem 1.8 is retained. Exact immediate dependencies and rank conventions are recorded in the linked PROJECT files.
 
 ```mermaid
 flowchart TD
-  n1["1. Groups and normalizer quotients"]
-  n2["2. Relative complement and orbit space"]
-  n3["3. Lemma 2.8: algebraic exact sequence"]
-  n4["4. Normalizer orbit covering"]
+  n1["1. Coxeter/Artin groups and normalizers"]
+  n2["2. Relative cones and complements"]
+  n3["3. Lemma 2.8 exact sequence"]
+  n4["4. Orbit covering"]
   n5["5. Reduced ribbons"]
-  n6["6. Ribbon normalizer quotient and presentation"]
-  n7["7. Chamber/groupoid comparison"]
+  n6["6. Ribbon presentation"]
+  n7["7. Finite chamber/groupoid comparison"]
   n8["8. Compatible exact diagrams"]
-  n9["9. Finite simplicial arrangement geometry"]
-  n10["10. The actual universal cover"]
-  n11["11. Ribbon lcms, gcds and simple prefixes"]
-  n12["12. The Garside weight model"]
-  n13["13. Finite contractible carriers"]
-  n14["14. Higher homotopy vanishing of the model"]
-  n15["15. Canonical packet carriers"]
-  n16["16. The coherent carrier homotopy"]
-  n17["17. Comparison with the actual universal cover"]
-  n18["18. Asphericity of the original spaces"]
-  n19["19. Theorem 1.8"]
-  n20["20. Corollary 6.14"]
+  n9["9. Universal cover"]
+  n10["10. Ribbon lattice"]
+  n11["11. Garside weight model"]
+  n12["12. Finite carriers and model nullity"]
+  n13["13. Packet and coherent carriers"]
+  n14["14. Actual cover comparison"]
+  n15["15. Original-space asphericity"]
+  n16["16. General BH groupoid and expressions"]
+  n17["17. Chamber labels and wall paths"]
+  n18["18. Theorem 1.3"]
+  n19["19. Theorem 1.4"]
+  n20["20. Theorem 1.8"]
   n1 --> n3
   n1 --> n5
+  n1 --> n16
   n2 --> n4
-  n2 --> n10
+  n2 --> n9
+  n2 --> n17
   n3 --> n8
   n4 --> n7
   n5 --> n6
   n5 --> n7
-  n5 --> n12
+  n5 --> n11
   n6 --> n8
-  n6 --> n20
   n7 --> n8
-  n7 --> n15
-  n8 --> n19
-  n10 --> n15
+  n7 --> n13
+  n9 --> n13
+  n10 --> n12
+  n11 --> n10
   n11 --> n13
-  n11 --> n17
-  n12 --> n11
   n12 --> n15
   n13 --> n14
-  n14 --> n18
-  n15 --> n17
-  n16 --> n17
+  n10 --> n14
+  n14 --> n15
+  n8 --> n20
+  n15 --> n20
+  n16 --> n18
   n17 --> n18
-  n18 --> n20
-  n20 --> n19
+  n16 --> n19
 ```
 
-[The 20 focused dossiers](docs/navigation/index.md) provide the statement, proof and evidence paths. Exhaustive machine-readable dependency records remain in [provenance](docs/provenance/deligne/run-20261114T132100Z/graph.json.gz).
+[Main-results guide](docs/MAIN_RESULTS.md) · [Theorems 1.3–1.4 prerequisites](theorems13-14/PROJECT.md) · [Detailed finite-type guide](docs/navigation/index.md). Exhaustive machine records remain in provenance.
 
 ## What each PROJECT.md contains
 
@@ -93,6 +97,8 @@ Each of the 20 important entries records:
 Correspondence categories and scope differences are explicit. Local formalization helpers have no invented article or Alphabeta original; related parent results are linked separately. [Original-source snapshots and attribution](docs/navigation/data/attribution/README.md) retain exact source identities and verified public-item links.
 
 ## External Lean proofs used
+
+[Theorems 1.3–1.4 external-proof ledger](theorems13-14/EXTERNAL_PROOFS.md) records their actual uses and existing-repository dependencies. The detailed reference counts below describe the preserved Theorem 1.8 compiled graph; they are not newly recomputed counts for the added package.
 
 <!-- Root README fragment: resolve local links from the repository root. -->
 
@@ -159,6 +165,7 @@ The verifier uses the official bundled kernel algorithm through an exact-module 
 | Location | Contents |
 |---|---|
 | `ArtinNormalisers/`, root aggregates | Algebraic Lemma 2.8 and arrangement foundations |
+| `theorems13-14/` | Original Theorems 1.3 and 1.4, reviewed translations, proofs, prerequisites and Step 5 evidence |
 | `landmarks/` | Landmark 1: normalizer action and covering |
 | `ribbons/` | Landmark 2: positive ribbons and presentation |
 | `chambers/` | Landmark 3: actual chamber/groupoid comparison |
